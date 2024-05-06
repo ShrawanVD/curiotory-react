@@ -1,11 +1,11 @@
 import React from 'react'
-import Footer from './components/Footer/Footer'
+import Navv from './components/Navv/Navv';
 
 const App = () => {
   return (
     
      <>
-     <Footer/>
+     <Navv/>
      </>
       
   );
