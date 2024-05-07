@@ -1,21 +1,22 @@
-import React from 'react'
+import Footer from '../Footer/Footer'
+import Navv from '../Navv/Navv'
 import './TermsNCond.css'
 
 function TermsNCond() {
   return (
     <div>
-        
-        <div class="continer-background">
-    <div class="container">
-      <div class="row">
-        <div class="col">
+        <Navv />
+        <div className="continer-background">
+    <div className="container">
+      <div className="row">
+        <div className="col">
           {/* <!-- Empty column to maintain spacing --> */}
         </div>
-        <div class="policy col-lg-8">
-          <div class="policy-header">
+        <div className="policy col-lg-8">
+          <div className="policy-header">
             <h2>Terms and Condition’s</h2>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>OVERVIEW :-</h5>
             <p>
               This website is operated by Curiotory Pvt Ltd . Throughout the
@@ -56,7 +57,7 @@ function TermsNCond() {
               acceptance of those changes.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>ONLINE STORE TERMS :-</h5>
             <p>
               By agreeing to these Terms of Service, you represent that you
@@ -80,7 +81,7 @@ function TermsNCond() {
               immediate termination of your Services.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>GENERAL CONDITIONS :-</h5>
             <p>
               We reserve the right to refuse service to anyone for any reason
@@ -106,7 +107,7 @@ function TermsNCond() {
               only and will not limit or otherwise affect these Terms.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION :-</h5>
             <p>
               We are not responsible if information made available on this
@@ -126,7 +127,7 @@ function TermsNCond() {
               responsibility to monitor changes to our site.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>MODIFICATIONS TO THE SERVICE AND PRICES :-</h5>
             <p>
               Prices for our products are subject to change without notice.
@@ -142,7 +143,7 @@ function TermsNCond() {
               Service.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>PRODUCTS OR SERVICES :-</h5>
             <p>
               Certain products or services may be available exclusively online
@@ -174,7 +175,7 @@ function TermsNCond() {
               be corrected.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>ACCURACY OF BILLING AND ACCOUNT INFORMATION :-</h5>
             <p>
               We reserve the right to refuse any order you place with us. We
@@ -199,7 +200,7 @@ function TermsNCond() {
             </p>
             <p>For more detail, please review our Returns Policy.</p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>OPTIONAL TOOLS :-</h5>
             <p>
               We may provide you with access to third-party tools over which
@@ -225,7 +226,7 @@ function TermsNCond() {
               subject to these Terms of Service.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>THIRD-PARTY LINKS :-</h5>
             <p>
               Certain content, products and services available via our Service
@@ -250,7 +251,7 @@ function TermsNCond() {
               third-party.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS :-</h5>
             <p>
               If, at our request, you send certain specific submissions (for
@@ -287,14 +288,14 @@ function TermsNCond() {
               third-party.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>PERSONAL INFORMATION :-</h5>
             <p>
               Your submission of personal information through the store is
               governed by our Privacy Policy.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>ERRORS, INACCURACIES AND OMISSIONS :-</h5>
             <p>
               Occasionally there may be information on our site or in the
@@ -317,7 +318,7 @@ function TermsNCond() {
               modified or updated.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>PROHIBITED USES :-</h5>
             <p>
               In addition to other prohibitions as set forth in the Terms of
@@ -344,7 +345,7 @@ function TermsNCond() {
               of the prohibited uses.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY :-</h5>
             <p>
               We do not guarantee, represent or warrant that your use of our
@@ -393,7 +394,7 @@ function TermsNCond() {
               maximum extent permitted by law.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>INDEMNIFICATION :-</h5>
             <p>
               You agree to indemnify, defend and hold harmless Curiotory Pvt
@@ -407,7 +408,7 @@ function TermsNCond() {
               rights of a third-party.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>SEVERABILITY :-</h5>
             <p>
               In the event that any provision of these Terms of Service is
@@ -419,7 +420,7 @@ function TermsNCond() {
               remaining provisions.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>TERMINATION :-</h5>
             <p>
               The obligations and liabilities of the parties incurred prior to
@@ -441,7 +442,7 @@ function TermsNCond() {
               deny you access to our Services (or any part thereof).
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>ENTIRE AGREEMENT :-</h5>
             <p>
               These Terms of Service and any policies or operating rules
@@ -463,7 +464,7 @@ function TermsNCond() {
               shall not be construed against the drafting party.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>GOVERNING LAW :-</h5>
             <p>
               These Terms of Service and any separate agreements whereby we
@@ -472,7 +473,7 @@ function TermsNCond() {
               Maharashtra.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>CHANGES TO TERMS OF SERVICE :-</h5>
             <p>
               You can review the most current version of the Terms of Service
@@ -488,7 +489,7 @@ function TermsNCond() {
               those changes.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>CONTACT INFORMATION :-</h5>
             <p>
               Questions about the Terms of Service should be sent to us at
@@ -496,12 +497,13 @@ function TermsNCond() {
             </p>
           </div>
         </div>
-        <div class="col">
+        <div className="col">
           {/* <!-- Empty column to maintain spacing --> */}
         </div>
       </div>
     </div>
   </div>
+  <Footer />
     </div>
   )
 }

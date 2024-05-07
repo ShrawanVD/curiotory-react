@@ -1,17 +1,18 @@
-import React from 'react'
-import './Languages.css'
+import '../Languages.css'
+import Footer from "../../../components/Footer/Footer";
+import Navv from "../../../components/Navv/Navv";
 
 function German() {
   return (
     <div>
-        
-        <div class="hero">
+        <Navv />
+        <div className="hero">
     <h1>German Language</h1>
   </div>
   {/* <!-- TW0 COLUMN LAYOUT --> */}
-  <div class="row">
-    <div class="col sp-2">
-      <img src="../images/Languages/german - 1.jpeg" alt="Language Learning" style="margin: 2rem 0" />
+  <div className="row">
+    <div className="col sp-2">
+      <img src="/Languages/german - 1.jpeg" alt="Language Learning" style={{margin: '2rem 0'}} />
       <h3>From Beginner to Advanced Proficiency</h3>
       <p>
         Embark on a transformative journey toward mastering German, beginning
@@ -29,8 +30,8 @@ function German() {
         proficiency.
       </p>
     </div>
-    <div class="col sp-2">
-      <img src="../images/Languages/german - 2.jpeg" alt="Certification Exams" style="margin: 2rem 0" />
+    <div className="col sp-2">
+      <img src="/Languages/german - 2.jpeg" alt="Certification Exams" style={{margin: '2rem 0'}} />
       <h3>Certification Exams and Proficiency Levels</h3>
       <p>
         Certify your German language proficiency through esteemed exams like
@@ -48,13 +49,13 @@ function German() {
       </p>
 
       <p>
-        <a href="./registrationForm.html" class="btn plain">Discover More</a>
+        <a href="/TeacherForm" className="btn plain">Discover More</a>
       </p>
     </div>
   </div>
 
   {/* <!-- BANNER SECTION --> */}
-  <div class="banner">
+  <div className="banner">
     <h2 id="banner-title">Application</h2>
     <p>
       Proficiency in German unlocks opportunities in international business,
@@ -65,6 +66,7 @@ function German() {
       and fosters meaningful connections in an interconnected world.
     </p>
   </div>
+  <Footer />
     </div>
   )
 }

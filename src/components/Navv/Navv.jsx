@@ -1,17 +1,16 @@
-import Logo from "../../assets/Index/logo.png";
-import Play from "../../assets/Index/play.png";
-
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import './Navv.css';
 
 function Navv() {
 
 
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    
+    <Navbar expand="lg" className="bg-body-tertiary" style={{backgroundColor: '#EBFAFF',color: 'black'}}>
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
-            src={Logo}
+            src="/Index/logo.png"
             width="80%"
             height="30"
             className="d-inline-block align-top"
@@ -22,27 +21,27 @@ function Navv() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto">
             <NavDropdown title="Language Solution" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">French</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Spanish</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">German</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Russian</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.5">English</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.6">Mandarin</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7">Dutch</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.8">Portuguese</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.9">Japanese</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.10">Korean</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.11">Arabic</NavDropdown.Item>
+              <NavDropdown.Item href="/French">French</NavDropdown.Item>
+              <NavDropdown.Item href="/Spanish">Spanish</NavDropdown.Item>
+              <NavDropdown.Item href="/German">German</NavDropdown.Item>
+              <NavDropdown.Item href="/Russian">Russian</NavDropdown.Item>
+              <NavDropdown.Item href="/English">English</NavDropdown.Item>
+              <NavDropdown.Item href="Mandarin">Mandarin</NavDropdown.Item>
+              <NavDropdown.Item href="/Dutch">Dutch</NavDropdown.Item>
+              <NavDropdown.Item href="/Portuguese">Portuguese</NavDropdown.Item>
+              <NavDropdown.Item href="/Japanese">Japanese</NavDropdown.Item>
+              <NavDropdown.Item href="/Korean">Korean</NavDropdown.Item>
+              <NavDropdown.Item href="Arabic">Arabic</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="#home">Blogs</Nav.Link>
-            <Nav.Link href="#link">Meet the Tutors</Nav.Link>
-            <Nav.Link href="#link">About Us</Nav.Link>
-            <Nav.Link href="#link">Contact Us</Nav.Link>
+            <Nav.Link href="/Blogs">Blogs</Nav.Link>
+            <Nav.Link href="/MeetTheTutor">Meet the Tutors</Nav.Link>
+            <Nav.Link href="/About">About Us</Nav.Link>
+            <Nav.Link href="/Contact">Contact Us</Nav.Link>
           </Nav>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
             <img
-              src={Play}
+              src="/Index/play.png"
               width="50"
               height="20"
               className="d-inline-block align-top"

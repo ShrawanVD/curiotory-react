@@ -1,20 +1,21 @@
-import React from 'react'
+import Footer from '../Footer/Footer'
+import Navv from '../Navv/Navv'
 import './PrivacyPolicy.css'
 
 function PrivacyPolicy() {
   return (
     <div>
-        
-        <div class="continer-background">
-    <div class="container">
-      <div class="row">
-        <div class="col">
+        <Navv/>
+        <div className="continer-background">
+    <div className="container">
+      <div className="row">
+        <div className="col">
         </div>
-        <div class="policy col-lg-8">
-          <div class="policy-header">
+        <div className="policy col-lg-8">
+          <div className="policy-header">
             <h2>Privacy Policy</h2>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <p>
               Chalkbord Academy Pvt Ltd. (“Curiotory” or “We”) is a private limited company incorporated
               under the Companies Act of India with registered office at A1/101, Gera Song of Joy, Grant
@@ -39,7 +40,7 @@ function PrivacyPolicy() {
               information practices.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>COLLECTION OF YOUR INFORMATION BY US :-</h5>
             <p>
               When you use Curiotory, You provide us with two types of information: (i) information you submit
@@ -89,7 +90,7 @@ function PrivacyPolicy() {
                 occasional company news, updates, related product or service information, etc.</li>
             </ul>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>USE OF YOUR INFORMATION BY US :-</h5>
             <p>
               Curiotory may use the information collected by you for the following purposes:
@@ -106,7 +107,7 @@ function PrivacyPolicy() {
               law to help an investigation or legal proceeding.</p>
 
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>SHARING OF YOUR INFORMATION WITH THIRD PARTIE :-</h5>
             <p>
               Curiotory gives highest importance to the safety of your information. However, there are certain
@@ -129,7 +130,7 @@ function PrivacyPolicy() {
               with any such external parties.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>AGGREGATED STATISTICS :-</h5>
             <p>
               Curiotory may collect statistics about the behavior of users to its Services. When in the
@@ -137,7 +138,7 @@ function PrivacyPolicy() {
               publicly or provide it to others.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>PAYMENT :-</h5>
             <p>
               We may use and share the User information with reliable and reputed third-party payment
@@ -160,33 +161,33 @@ function PrivacyPolicy() {
             </p>
             <p>For in-app purchases, we use Razorpay as our payment processing service provider. Razorpay
               collects certain billing information, such as your payment method details, to process your
-              transactions. Razorpay's privacy policy, which governs their collection and use of your data, can
+              transactions. Razorpay&apos;s privacy policy, which governs their collection and use of your data, can
               be found here: https://razorpay.com/privacy/.
             </p>
             <p>Please note that we do not share any personally identifiable information (PII) with Razorpay
               beyond what is necessary to process your payment.</p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>Opt-Out Rights :-</h5>
             <p>
               You can stop all collection of information by the Application by uninstalling it. You can also
-              control some data collection practices through the app's settings menu [if applicable]. For
+              control some data collection practices through the app&apos;s settings menu [if applicable]. For
               example, you may be able to disable location sharing or other permissions.
 
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>Data Retention Policy :-
             </h5>
             <p>
               The Service Provider will retain User Provided data for as long as you use the Application and
-              for a reasonable time thereafter. If you'd like us to delete User Provided Data that you have
+              for a reasonable time thereafter. If you&apos;d like us to delete User Provided Data that you have
               provided via the Application, please contact us at support@curiotory.com and we will respond in
               a reasonable time.
 
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>SECURITY OF YOUR INFORMATION :-
             </h5>
             <p>
@@ -197,7 +198,7 @@ function PrivacyPolicy() {
               breach.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>THIRD PARTY LINKS / ADVERTISERS :-
             </h5>
             <p>
@@ -220,7 +221,7 @@ function PrivacyPolicy() {
               these site.
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>UPDATION/DELETION OF YOUR INFORMATION :-</h5>
             <p>
               Once you update/delete your personally identifiable information through your account settings
@@ -232,7 +233,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>REVISION OF POLICY :-
             </h5>
             <p>
@@ -244,7 +245,7 @@ function PrivacyPolicy() {
             </p>
           </div>
 
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>DEVELOPED BY :-
             </h5>
             <p>
@@ -253,7 +254,7 @@ function PrivacyPolicy() {
             </p>
           </div>
 
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>MORE INFORMATION :-
             </h5>
             <p>
@@ -263,11 +264,12 @@ function PrivacyPolicy() {
             </p>
           </div>
         </div>
-        <div class="col">
+        <div className="col">
         </div>
       </div>
     </div>
   </div>
+  <Footer />
   </div>
   )
 }

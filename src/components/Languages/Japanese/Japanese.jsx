@@ -1,17 +1,18 @@
-import React from 'react'
-import './Languages.css'
+import '../Languages.css'
+import Footer from "../../../components/Footer/Footer";
+import Navv from "../../../components/Navv/Navv";
 
 function Japanese() {
   return (
     <div>
-        
-        <div class="hero">
+        <Navv />
+        <div className="hero">
     <h1>Japanese Language</h1>
   </div>
   {/* <!-- TW0 COLUMN LAYOUT --> */}
-  <div class="row">
-    <div class="col sp-2">
-      <img src="../images/Languages/japan - 1.jpeg" alt="Language Learning" style="margin: 2rem 0" />
+  <div className="row">
+    <div className="col sp-2">
+      <img src="/Languages/japan - 1.jpeg" alt="Language Learning" style={{margin: '2rem 0'}} />
       <h3>From Beginner to Advanced Proficiency</h3>
       <p>
         Embark on an exciting journey to master Japanese, starting with
@@ -29,8 +30,8 @@ function Japanese() {
         to achieve genuine proficiency.
       </p>
     </div>
-    <div class="col sp-2">
-      <img src="../images/Languages/japan - 2.jpeg" alt="Certification Exams" style="margin: 2rem 0" />
+    <div className="col sp-2">
+      <img src="/Languages/japan - 2.jpeg" alt="Certification Exams" style={{margin: '2rem 0'}} />
 
       <h3>Certification Exams and Proficiency Levels</h3>
       <p>
@@ -46,13 +47,13 @@ function Japanese() {
       </p>
 
       <p>
-        <a href="./registrationForm.html" class="btn plain">Discover More</a>
+        <a href="/TeacherForm" className="btn plain">Discover More</a>
       </p>
     </div>
   </div>
 
   {/* <!-- BANNER SECTION --> */}
-  <div class="banner">
+  <div className="banner">
     <h2 id="banner-title">Application</h2>
     <p>
       Proficiency in Japanese opens doors to various opportunities in
@@ -60,10 +61,11 @@ function Japanese() {
       facilitating connections and enriching global experiences. Whether
       navigating Japanese markets, fostering cross-cultural relationships, or
       immersing yourself in Japanese-speaking communities, fluency in Japanese
-      enhances career prospects and fosters meaningful interactions in today's
+      enhances career prospects and fosters meaningful interactions in today&apos;s
       interconnected world.
     </p>
   </div>
+  <Footer />
     </div>
   )
 }

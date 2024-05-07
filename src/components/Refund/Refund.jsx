@@ -1,21 +1,22 @@
-import React from 'react'
+import Footer from '../Footer/Footer'
+import Navv from '../Navv/Navv'
 import './Refund.css'
 
 function Refund() {
   return (
     <div>
-        
-        <div class="continer-background">
-    <div class="container">
-      <div class="row">
-        <div class="col">
+        <Navv />
+        <div className="continer-background">
+    <div className="container">
+      <div className="row">
+        <div className="col">
           {/* <!-- Empty column to maintain spacing --> */}
         </div>
-        <div class="policy col-lg-8">
-          <div class="policy-header">
+        <div className="policy col-lg-8">
+          <div className="policy-header">
             <h2>Refund Policy</h2>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>Cancellation and Refund Policy :-</h5>
             <ul>
               <li>
@@ -58,7 +59,7 @@ function Refund() {
               </li>
             </ul>
           </div>
-          <div class="policy-content">
+          <div className="policy-content">
             <h5>Policy for NDNC :-</h5>
             <ul>
               <li>
@@ -90,12 +91,13 @@ function Refund() {
             </ul>
           </div>
         </div>
-        <div class="col">
+        <div className="col">
           {/* <!-- Empty column to maintain spacing --> */}
         </div>
       </div>
     </div>
   </div>
+  <Footer />
     </div>
   )
 }
