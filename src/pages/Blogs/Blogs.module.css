@@ -1,8 +1,8 @@
-.blog-heading {
+.blogHeading {
     padding: 4rem 0rem 2rem;
     text-align: center;
   }
-  .blog-heading h1 {
+  .blogHeading h1 {
     font-size: 60px;
     font-weight: 600;
     color: #033753;
@@ -10,7 +10,7 @@
     font-family: "Poppins", Sans-serif;
   }
   
-  .loading-spinner{
+  .loadingSpinner{
     margin: 0 auto;
     padding: 5rem 0rem 5rem;
     display: flex;
@@ -20,11 +20,6 @@
     height: 3rem; 
   
   }
-  
-  /* .loading-spinner mat-spinner {
-    width: 30px; 
-    height: 30px; 
-  } */
   
   
   /* new updated loading  */
@@ -83,6 +78,7 @@
   
   .words {
     overflow: hidden;
+    background-color: rgb(253, 250, 250);
   }
   
   .word {
@@ -146,14 +142,14 @@
     padding: 0rem 4rem 4rem;
     font-family: "Poppins", sans-serif;
   }
-  .blog-container {
+  .blogContainer {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     color: rgb(38, 37, 37);
   }
   
-  .blog-card {
+  .blogCard {
     width: calc(33.33% - 20px);
     border-radius: 7%;
     margin-bottom: 20px;
@@ -173,7 +169,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
   }
   
-  .blog-card:hover {
+  .blogCard:hover {
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
@@ -190,30 +186,27 @@
     -o-transition-duration: 0.4s;
   }
   
-  .blog-container h2{
+  .blogContainer h2{
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 600;
     margin-top: 1rem;
   }
   
-  .blog-container h3{
+  .blogContainer h3{
     font-family: "Poppins", sans-serif;
     font-size: 15px;
   }
   
-  .blog-container img{
+  .blogContainer img{
     width: 100%;
   }
   
-  .mat-card-content {
-    text-align: center;
-  }
-  .blog-container mat-card-title {
+  .blogContainer mat-card-title {
     margin-top: 1rem;
     line-height: 1.6rem;
   }
-  .blog-container mat-card-subtitle {
+  .blogContainer mat-card-subtitle {
     margin-top: 0.2rem;
   }
   
@@ -225,17 +218,17 @@
     text-overflow: ellipsis !important;
     height: auto !important;
   }
-  .read-more{
+  .readMore{
     color: #0e82c0;
     cursor: pointer;
     font-size: 16px;
   }
-  .read-more :hover {
+  .readMore :hover {
     color: black;
   }
   
   @media screen and (max-width: 600px) {
-    .blog-card {
+    .blogCard {
       width: 100%;
     }
     .blogs {
@@ -244,7 +237,7 @@
   }
   
   @media screen and (min-width: 601px) and (max-width: 1000px) {
-    .blog-card {
+    .blogCard {
       width: calc(50% - 20px);
     }
     .blogs {

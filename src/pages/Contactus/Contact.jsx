@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer/Footer";
 import Navv from "../../components/Navv/Navv";
-import "./Contact.css";
+import Contactcss from "./Contact.module.css";
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -10,32 +10,35 @@ function Contact() {
     formData.forEach((value, key) => {
       formDataObject[key] = value;
     });
-  
+
     try {
-      const response = await fetch('https://backendapi-ay7s.onrender.com/sendMsg', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formDataObject),
-      });
-  
+      const response = await fetch(
+        "https://backendapi-ay7s.onrender.com/sendMsg",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formDataObject),
+        }
+      );
+
       if (response.ok) {
         const data = await response.json();
         if (data.message) {
           alert(data.message);
         } else {
-          alert('Form submitted successfully!');
+          alert("Form submitted successfully!");
         }
         window.location.reload();
       } else {
         // console.error('Error:', response.statusText);
-        alert('Form submitted successfully!');
+        alert("Form submitted successfully!");
         window.location.reload();
       }
     } catch (error) {
       // console.error('Error:', error);
-      alert('Form submitted successfully!');
+      alert("Form submitted successfully!");
       window.location.reload();
     }
   };
@@ -43,12 +46,12 @@ function Contact() {
   return (
     <>
       <Navv />
-      <div className="contact-us">
-        <div className="contactus-details">
+      <div className={Contactcss.contactUs}>
+        <div className={Contactcss.contactusDetails}>
           <img
             width="143"
             height="143"
-            src="../images/contact us/contact us page logo.png"
+            src="/contact us/contact us page logo.png"
           />
           <h1>Contact Us</h1>
           <p>
@@ -62,12 +65,12 @@ function Contact() {
             </span>
           </p>
         </div>
-        <div className="form-section">
+        <div className={Contactcss.formSection}>
           <form
             method="POST"
             action="https://backendapi-ay7s.onrender.com/sendMsg"
             id="contactFormUrl"
-            className="allForm"
+            className={Contactcss.allForm}
             onSubmit={handleSubmit}
           >
             <label htmlFor="sender_name">Your Name</label>

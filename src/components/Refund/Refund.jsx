@@ -1,22 +1,22 @@
 import Footer from '../Footer/Footer'
 import Navv from '../Navv/Navv'
-import './Refund.css'
+import refundcss from './Refund.module.css';
 
 function Refund() {
   return (
     <div>
         <Navv />
-        <div className="continer-background">
-    <div className="container">
-      <div className="row">
-        <div className="col">
+        <div className={refundcss.continerBackground}>
+    <div className={refundcss.container}>
+      <div className={refundcss.row}>
+        <div className={refundcss.col}>
           {/* <!-- Empty column to maintain spacing --> */}
         </div>
-        <div className="policy col-lg-8">
-          <div className="policy-header">
+        <div className={`${refundcss.policy} ${refundcss.colLg8}`}>
+          <div className={refundcss.policyHeader}>
             <h2>Refund Policy</h2>
           </div>
-          <div className="policy-content">
+          <div className={refundcss.policyContent}>
             <h5>Cancellation and Refund Policy :-</h5>
             <ul>
               <li>
@@ -59,7 +59,7 @@ function Refund() {
               </li>
             </ul>
           </div>
-          <div className="policy-content">
+          <div className={refundcss.policyContent}>
             <h5>Policy for NDNC :-</h5>
             <ul>
               <li>

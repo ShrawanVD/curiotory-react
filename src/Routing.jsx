@@ -28,7 +28,7 @@ export default (
         <Route path="/About" element={<Aboutus/>} />
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/Blogs" element={<Blogs/>} />
-        <Route path="/Blogs/:id" element={<Singleblog/>} />
+        <Route path="/BlogsId" element={<Singleblog/>} />
         <Route path="/MeetTheTutor" element={<Tutor/>} />
         <Route path="/Refund" element={<Refund/>} />
         <Route path="/Privacy" element={<Privacy/>} />

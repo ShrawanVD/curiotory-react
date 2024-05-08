@@ -1,6 +1,6 @@
 import Footer from "../../components/Footer/Footer"
 import Navv from "../../components/Navv/Navv"
-import './Blogs.css';
+import Blogscss from './Blogs.module.css';
 import { useEffect, useState } from 'react';
 
 function Blogs() {
@@ -33,46 +33,46 @@ function Blogs() {
   };
 
   const openBlog = (postId) => {
-    window.location.href = `/Singleblog?id=${postId}`;
+    window.location.href = `/BlogsId?id=${postId}`;
   };
 
   return (
     <>
       <Navv />
-      <div>
+      <div style={{backgroundColor: 'rgb(253, 250, 250)'}}>
 
-      <div className="blog-heading">
+      <div className={Blogscss.blogHeading}>
     <h1>Blogs</h1>
   </div>
 
       {loading && (
-      <div id="loadingSpinner" className="loading-spinner">
-        <div className="spinnerContainer">
-          <div className="spinner"></div>
-          <div className="loader">
+      <div id="loadingSpinner" className={Blogscss.loadingSpinner}>
+        <div className={Blogscss.spinnerContainer}>
+          <div className={Blogscss.spinner}></div>
+          <div className={Blogscss.loader}>
             <p>Loading</p>
-            <div className="words">
-              <span className="word">Posts</span>
-              <span className="word">Images</span>
-              <span className="word">Data</span>
-              <span className="word">Title</span>
-              <span className="word">Posts</span>
+            <div className={Blogscss.words}>
+              <span className={Blogscss.word}>Posts</span>
+              <span className={Blogscss.word}>Images</span>
+              <span className={Blogscss.word}>Data</span>
+              <span className={Blogscss.word}>Title</span>
+              <span className={Blogscss.word}>Posts</span>
             </div>
           </div>
         </div>
       </div>
     )}
-<div className="blogs" id="blogsSection">
-  <div className="blog-container" style={{ display: loading ? 'none' : 'flex', flexWrap: 'wrap' }}>
+<div className={Blogscss.blogs} id="blogsSection">
+  <div className={Blogscss.blogContainer} style={{ display: loading ? 'none' : 'flex', flexWrap: 'wrap' }}>
     {blogPosts.map((post) => (
-      <div key={post.id} className="blog-card" onClick={() => openBlog(post.id)}>
+      <div key={post.id} className={Blogscss.blogCard} onClick={() => openBlog(post.id)}>
         <img src={post.imageUrl} alt="Blog Image" />
         <div style={{ fontFamily: "'Poppins', sans-serif" }}>
           <h2>{post.title}</h2>
           <h3>{post.date}</h3>
           <hr />
-          <p style={{ textAlign: 'justify' }} className="cardtitle">{post.intro}</p>
-          <h3 className="read-more">Read More</h3>
+          <p style={{ textAlign: 'justify' }} className={Blogscss.cardtitle}>{post.intro}</p>
+          <h3 className={Blogscss.readMore}>Read More</h3>
         </div>
       </div>
     ))}

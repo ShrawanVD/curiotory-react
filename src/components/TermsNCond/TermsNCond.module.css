@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .continerBackground{
+      background-color: #ebfaff;
+  }
+  
+  .policy {
+    text-align: center;
+    line-height: 2rem;
+    font-family: "Nunito Sans", Sans-serif;
+  padding: 0rem 15rem 4rem;
+}
+  .policyHeader h2 {
+    color: rgb(37, 37, 113);
+    font-family: "Nunito Sans", Sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0rem 0rem 3rem;
+    padding: 2rem 0rem 0rem;
+  }
+  .policyContent {
+    text-align: justify;
+  }
+  .policyContent h5{
+      font-weight: 800;
+      margin: 3rem 0rem 1rem;
+  }
+  .policyContent p{
+      font-size: 1.1rem;
+  }
+  
+  
+  
+  /* responsive page css */
+  @media screen and (max-width: 900px) {
+    .policy{
+    padding: 0rem 5rem 2rem;
+    }
+  }
+  @media screen and (max-width: 580px){
+    .policy{
+      padding: 0rem 3rem 2rem;
+        
+      }
+  .policyContent{
+    padding: 0rem 2rem;
+  }
+  .policyHeader h2{
+    font-size: 2rem;
+  }
+  .policyContent h5{
+    font-weight: 700;
+  }
+  }
+  @media screen and (max-width: 385px){
+  .policyHeader h2{
+    font-size: 1.8rem;
+  }
+  .policyContent h5{
+    font-weight: 600;
+    font-size: 18px;
+  }
+  }

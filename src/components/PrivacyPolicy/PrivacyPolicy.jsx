@@ -1,21 +1,21 @@
 import Footer from '../Footer/Footer'
 import Navv from '../Navv/Navv'
-import './PrivacyPolicy.css'
+import ppcss from './PrivacyPolicy.module.css'
 
 function PrivacyPolicy() {
   return (
     <div>
         <Navv/>
-        <div className="continer-background">
-    <div className="container">
-      <div className="row">
-        <div className="col">
+        <div className={ppcss.continerBackground}>
+    <div className={ppcss.container}>
+      <div className={ppcss.row}>
+        <div className={ppcss.col}>
         </div>
-        <div className="policy col-lg-8">
-          <div className="policy-header">
+        <div className={`${ppcss.policy} ${ppcss.colLg8}`}>
+          <div className={ppcss.policyHeader}>
             <h2>Privacy Policy</h2>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <p>
               Chalkbord Academy Pvt Ltd. (“Curiotory” or “We”) is a private limited company incorporated
               under the Companies Act of India with registered office at A1/101, Gera Song of Joy, Grant
@@ -40,7 +40,7 @@ function PrivacyPolicy() {
               information practices.
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>COLLECTION OF YOUR INFORMATION BY US :-</h5>
             <p>
               When you use Curiotory, You provide us with two types of information: (i) information you submit
@@ -90,7 +90,7 @@ function PrivacyPolicy() {
                 occasional company news, updates, related product or service information, etc.</li>
             </ul>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>USE OF YOUR INFORMATION BY US :-</h5>
             <p>
               Curiotory may use the information collected by you for the following purposes:
@@ -107,7 +107,7 @@ function PrivacyPolicy() {
               law to help an investigation or legal proceeding.</p>
 
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>SHARING OF YOUR INFORMATION WITH THIRD PARTIE :-</h5>
             <p>
               Curiotory gives highest importance to the safety of your information. However, there are certain
@@ -130,7 +130,7 @@ function PrivacyPolicy() {
               with any such external parties.
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>AGGREGATED STATISTICS :-</h5>
             <p>
               Curiotory may collect statistics about the behavior of users to its Services. When in the
@@ -138,7 +138,7 @@ function PrivacyPolicy() {
               publicly or provide it to others.
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>PAYMENT :-</h5>
             <p>
               We may use and share the User information with reliable and reputed third-party payment
@@ -167,7 +167,7 @@ function PrivacyPolicy() {
             <p>Please note that we do not share any personally identifiable information (PII) with Razorpay
               beyond what is necessary to process your payment.</p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>Opt-Out Rights :-</h5>
             <p>
               You can stop all collection of information by the Application by uninstalling it. You can also
@@ -176,7 +176,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>Data Retention Policy :-
             </h5>
             <p>
@@ -187,7 +187,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>SECURITY OF YOUR INFORMATION :-
             </h5>
             <p>
@@ -198,7 +198,7 @@ function PrivacyPolicy() {
               breach.
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>THIRD PARTY LINKS / ADVERTISERS :-
             </h5>
             <p>
@@ -221,7 +221,7 @@ function PrivacyPolicy() {
               these site.
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>UPDATION/DELETION OF YOUR INFORMATION :-</h5>
             <p>
               Once you update/delete your personally identifiable information through your account settings
@@ -233,7 +233,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>REVISION OF POLICY :-
             </h5>
             <p>
@@ -244,8 +244,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>DEVELOPED BY :-
             </h5>
             <p>
@@ -253,8 +252,7 @@ function PrivacyPolicy() {
 
             </p>
           </div>
-
-          <div className="policy-content">
+          <div className={ppcss.policyContent}>
             <h5>MORE INFORMATION :-
             </h5>
             <p>

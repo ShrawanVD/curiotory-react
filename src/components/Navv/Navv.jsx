@@ -6,13 +6,13 @@ function Navv() {
 
   return (
     
-    <Navbar expand="lg" className="bg-body-tertiary" style={{backgroundColor: '#EBFAFF',color: 'black'}}>
-      <Container>
+    <Navbar expand="lg" className="bg-body-tertiary" style={{backgroundColor: '#EBFAFF',color: 'black' }}>
+      <Container className="navbarContainer">
         <Navbar.Brand href="/">
           <img
             src="/Index/logo.png"
-            width="80%"
-            height="30"
+            width="auto"
+            height="40"
             className="d-inline-block align-top"
             alt="React"
           />
@@ -42,8 +42,8 @@ function Navv() {
           <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
             <img
               src="/Index/play.png"
-              width="50"
-              height="20"
+              width="45"
+              height="auto"
               className="d-inline-block align-top"
               alt="React"
             />

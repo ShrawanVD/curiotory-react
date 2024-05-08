@@ -10,6 +10,7 @@ function Arabic() {
         <h1>Arabic Language</h1>
       </div>
       {/* <!-- TW0 COLUMN LAYOUT --> */}
+      <div className="lang-row-dive">
       <div className="row">
         <div className="col sp-2">
           <img
@@ -64,6 +65,8 @@ function Arabic() {
           </p>
         </div>
       </div>
+      </div>
+
 
       {/* <!-- BANNER SECTION --> */}
       <div className="banner">

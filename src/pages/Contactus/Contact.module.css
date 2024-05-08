@@ -1,0 +1,164 @@
+/* Contact us css section */
+.contactUs {
+  width: auto;
+  background-color: #ebfaff;
+  padding-bottom: 2rem;
+}
+.contactUs .contactusDetails {
+  padding: 1% 3%;
+  text-align: center;
+}
+.contactUs .contactusDetails img {
+  margin: 0rem 0rem 1rem;
+}
+
+.contactUs .contactusDetails h1 {
+  margin: 0rem 0rem 1rem;
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  color: #1d2951;
+  box-shadow: none;
+}
+.contactUs .contactusDetails p {
+  text-align: center;
+  margin: 0rem 0rem 1rem;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "Nunito Sans", Sans-serif;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1200px) {
+  .contactusDetailsh1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 3%;
+  }
+
+  .contactusDetails p {
+    margin: 0 3% 6%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contactusDetails h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 3%;
+  }
+
+  .contactusDetails p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contactusDetails h1 {
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 3%;
+  }
+
+  .contactusDetails p {
+    text-align: center;
+    margin-left: 10%;
+    font-size: 1.2em;
+  }
+}
+
+/* form section */
+.contactUs .formSection {
+  margin: 0rem 15rem 2rem;
+  border-radius: 30px;
+  background-color: white;
+  padding: 4rem 7rem;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  background-color: #1d2951;
+  background-image: linear-gradient(315deg, #a3bac2 0%, #e2edff 74%);
+}
+.contactUs .formSection form label,.contactUs .formSection form input,.contactUs .formSection form textarea {
+  width: 100%;
+}
+.contactUs .formSection form label {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.contactUs .formSection form input {
+  padding: 20px 10px;
+  margin: 0px 0px 18px;
+  border-radius: 7px;
+  font-size: 16px;
+  border: 1px solid black;
+  background-color: rgb(231, 229, 229);
+}
+.contactUs .formSection form textarea {
+  padding: 10px 10px;
+  margin: 0px 0px;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 10rem;
+  border: 1px solid black;
+  background-color: rgb(231, 229, 229);
+}
+.contactUs .formSection form button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  border: 1px solid rgb(71, 71, 156);
+  color: rgb(71, 71, 156);
+  cursor: pointer;
+}
+.contactUs .formSection form button:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: rgb(71, 71, 156);
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 1200px) {
+  .contactUs .formSection {
+    padding: 4rem 2rem;
+    margin: 0rem 10rem 2rem;
+  }
+
+  .contactUs .formSectionform input, .contactUs .formSection form textarea {
+    width: 100%;
+    margin: 18px 0rem;
+  }
+
+  .contactUs .formSection form label {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .contactUs .formSection {
+    padding: 4rem 2rem;
+    margin: 0rem 5rem 2rem;
+  }
+
+  .contactUs .formSection form input,
+  .contactUs .formSection form textarea {
+    width: 100%;
+    margin: 18px 0rem;
+  }
+
+  .contactUs .formSection form label {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 540px) {
+  .contactUs .formSection {
+    padding: 4rem 2rem;
+    margin: 0rem 2rem 2rem;
+  }
+
+}

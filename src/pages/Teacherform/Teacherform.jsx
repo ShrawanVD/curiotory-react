@@ -1,4 +1,4 @@
-import './Teacherform.css';
+import teachercss from './Teacherform.module.css';
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import Navv from '../../components/Navv/Navv';
@@ -37,15 +37,14 @@ class Teacherform extends React.Component {
     return (
       <div>
         <Navv />
-      <div className="content">
-        <img src="../assets/a.jpg" />
-        <div className="title">
+      <div className={teachercss.content}>
+        <div className={teachercss.title}>
           <h1>Teacher Registration Form</h1>
         </div>
-        <div className="images">
-          <img src="../images/registration/registration-form-image.png" alt="" />
+        <div className={teachercss.images}>
+          <img src="/registration/registerTeacher.png" alt="" />
         </div>
-        <div className="registration-form">
+        <div className={teachercss.registrationForm}>
           <form ref={this.formRef} onSubmit={this.handleSubmit} className="teachers">
           <label htmlFor="firstName">First Name:</label>
           <input type="text" id="firstName" name="firstName" required /><br />
@@ -53,7 +52,7 @@ class Teacherform extends React.Component {
           <label htmlFor="lastName">Last Name:</label>
           <input type="text" id="lastName" name="lastName" required /><br />
           <label htmlFor="gender">Gender:</label>
-        <div className="gender-options">
+        <div className={teachercss.genderOptions}>
           <input type="radio" id="male" name="gender" value="male" />Male
           <input type="radio" id="female" name="gender" value="female" />Female
           <input type="radio" id="preferNotToDisclose" name="gender" value="preferNotToDisclose" />Prefer not to say
@@ -69,7 +68,7 @@ class Teacherform extends React.Component {
         <input type="text" id="currentLocation" name="currentLocation"  required/><br />
 
         <label htmlFor="languages">I want to teach:</label>
-        <div className="languages-options">
+        <div className={teachercss.languagesOptions}>
           <input type="checkbox" id="german" name="languages[]" value="german" />German
           <input type="checkbox" id="spanish" name="languages[]" value="spanish" />Spanish
           <input type="checkbox" id="french" name="languages[]" value="french" />French
@@ -88,7 +87,7 @@ class Teacherform extends React.Component {
           <input type="checkbox" id="russian" name="languages[]" value="russian" />Russian
         </div>
 
-        <div className="qualification">
+        <div className={teachercss.qualification}>
           <label htmlFor="qualification">Highest Qualification:</label>
           <div className="qualification-section">
             <select id="qualification" name="qualification" required>
@@ -126,7 +125,7 @@ class Teacherform extends React.Component {
 
 
         <label htmlFor="student-group">I want to teach:</label>
-        <div className="student-group-options">
+        <div className={teachercss.studentGroupOptions}>
           <input type="checkbox" id="kids" name="student_group" value="kids" />Kids( 6 - 14 years)
           <input type="checkbox" id="young" name="student_group" value="young" />Young adults
           <input type="checkbox" id="working" name="student_group" value="working" />Working professionals
@@ -134,7 +133,7 @@ class Teacherform extends React.Component {
 
 
         <label htmlFor="english-proficiency">I want to teach:</label>
-        <div className="english-language-proficiency">
+        <div className={teachercss.englishLanguageProficiency}>
           <input type="checkbox" id="native" name="english_proficiency" value="native" />Native
           <input type="checkbox" id="bilingual" name="english_proficiency" value="bilingual" />Bilingual
           <input type="checkbox" id="professional" name="english_proficiency" value="professional" />Professional
@@ -142,7 +141,7 @@ class Teacherform extends React.Component {
 
 
         <label htmlFor="experience">Teaching Experience:</label>
-        <div className="experience-options">
+        <div className={teachercss.experienceOptions}>
           <input type="radio" id="one-year" name="experience" value="one-year" />1 year
           <input type="radio" id="two-five-years" name="experience" value="two-five-years" />2-5 years
           <input type="radio" id="five-ten-years" name="experience" value="five-ten-years" />5-10 years
@@ -151,7 +150,7 @@ class Teacherform extends React.Component {
 
 
         <label htmlFor="any-certificates">Do you have any teaching certificates?</label>
-        <div className="certificates-have-or-not-options">
+        <div className={teachercss.certificatesHaveOrNotOptions}>
           <input type="radio" id="yes" name="certificates" value="yes" />Yes
           <input type="radio" id="no" name="certificates" value="no" />No
         </div>
@@ -171,18 +170,18 @@ class Teacherform extends React.Component {
           ></textarea><br />
 
 
-        <div className="rate-container">
+        <div className={teachercss.rateContainer}>
           <label htmlFor="ratePerHour">Rate Per Hour:</label>
-          <div className="rate-input">
+          <div className={teachercss.rateInput}>
             <input type="number" id="ratePerHour" name="ratePerHour" placeholder="Enter rate" min="0" step="1"
                />
           </div>
         </div>
 
 
-        <div className="rate-container">
+        <div className={teachercss.rateContainer}>
           <label htmlFor="ratePerMonth">Rate Per Month:</label>
-          <div className="rate-input">
+          <div className={teachercss.rateInput}>
             <input type="number" id="ratePerMonth" name="ratePerMonth" placeholder="Enter rate" min="0" step="1"
                />
           </div>

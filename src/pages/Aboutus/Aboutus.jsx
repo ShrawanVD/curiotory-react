@@ -1,6 +1,6 @@
 import Footer from '../../components/Footer/Footer';
 import Navv from '../../components/Navv/Navv';
-import './About.css';
+import Aboutuscss from  './About.module.css';
 
 function Aboutus() {
   return (
@@ -8,44 +8,44 @@ function Aboutus() {
     <Navv />
       {/* <!-- Heading section - top --> */}
 
-      <div className="heading-tag">
+      <div className={Aboutuscss.headingTag}>
         <h1>
           We are one of the India&apos;s <br />
           fastest growing language <br />
           learning platforms
         </h1>
-        <div className="stats">
+        <div className={Aboutuscss.stats}>
           <ul>
-            + +{" "}
+            {/* + +{" "}  */}
             <li>
-              <span className="bold-first">30+ years</span> of combined language
+              <span className={Aboutuscss.boldFirst}>30+ years</span> of combined language
               training experience
             </li>
             <li>
               Network of
-              <span className="bold-first">5K+ language specialists</span> & growing
+              <span className={Aboutuscss.boldFirst}> 5K+ language specialists</span> & growing
             </li>
             <li>
-              Students from <span className="bold-first">15 + countries</span> on 3
+              Students from <span className={Aboutuscss.boldFirst}>15+ countries</span> on 3
               continents
             </li>
           </ul>
         </div>
         {/* <!-- <a className="register-button" href="">Get Started</a> --> */}
-        <a className="register-button" href="#" onClick="openSidebar()">
+        <a className={Aboutuscss.registerButton} href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform" target='_blank'>
           Get Started
         </a>
       </div>
 
       {/* <!-- sidebar to be opened after clicking the register button --> */}
 
-      <div className="sidebar" id="sidebar">
-        <div className="close-btn" onClick="closeSidebar()">
+      <div className={Aboutuscss.sidebar} id="sidebar">
+        <div className={Aboutuscss.closeBtn} onClick="closeSidebar()">
           ×
         </div>
         <h1>Quick and Simple enrollment</h1>
         <form
-          className="registration-form allForm"
+          className={Aboutuscss.registrationForm}
           action="https://backendapi-ay7s.onrender.com/enroll"
           method="post"
           id="quickFormUrl"
@@ -76,7 +76,7 @@ function Aboutus() {
             <option value="Italian">Italian</option>
           </select>
           {/* <!-- onClick="registerNow()" --> */}
-          <button type="submit" className="register-now-btn">
+          <button type="submit" className={Aboutuscss.registerNowBtn}>
             Register Now
           </button>
         </form>
@@ -84,7 +84,7 @@ function Aboutus() {
 
       {/* <!-- bio section --> */}
 
-      <div className="bio">
+      <div className={Aboutuscss.bio}>
         <p>
           Right about now, more than 1.2 billion people across the world are
           speaking a foreign language. But we, at Curiotory, are not in the
@@ -98,7 +98,7 @@ function Aboutus() {
 
       {/* <!-- tabular section --> */}
 
-      <div className="table-comparison">
+      <div className={Aboutuscss.tableComparison}>
         <table>
           <tr>
             <td>
@@ -135,12 +135,12 @@ function Aboutus() {
 
       {/* <!-- origin story section --> */}
 
-      <div className="origin-story-section">
-        <div className="left-side">
+      <div className={Aboutuscss.originStorySection}>
+        <div className={Aboutuscss.leftSide}>
           <img src="/about us/origin.png" alt="" />
         </div>
 
-        <div className="right-side">
+        <div className={Aboutuscss.rightSide}>
           <h1>Origin Story</h1>
           <br />
           <br />
@@ -160,18 +160,18 @@ function Aboutus() {
 
       {/* <!-- vision section --> */}
 
-      <div className="vision-section">
+      <div className={Aboutuscss.visionSection}>
         <h1>Why we are here</h1>
 
-        <div className="vision-of-ours">
-          <div className="left-side">
+        <div className={Aboutuscss.visionOfOurs}>
+          <div className={Aboutuscss.leftSide}>
             <img src="/about us/vision.png" alt="" />
           </div>
 
-          <div className="right-side">
+          <div className={Aboutuscss.rightSide}>
             <h1>
               Our <br />
-              <span className="bold-first">Vision</span>
+              <span className={Aboutuscss.boldFirst}>Vision</span>
             </h1>
             <br />
             <br />
@@ -186,10 +186,10 @@ function Aboutus() {
 
       {/* <!-- mission section --> */}
 
-      <div className="mission-section">
-        <div className="left-side">
+      <div className={Aboutuscss.missionSection}>
+        <div className={Aboutuscss.leftSide}>
           <h1>
-            Our <span className="bold-first">Mission</span> <br />
+            Our <span className={Aboutuscss.boldFirst}>Mission</span> <br />
           </h1>
           <br />
           <p>
@@ -199,7 +199,7 @@ function Aboutus() {
           </p>
         </div>
 
-        <div className="right-side">
+        <div className={Aboutuscss.rightSide}>
           <img
             loading="lazy"
             decoding="async"
@@ -213,20 +213,20 @@ function Aboutus() {
 
       {/* <!-- founder sections --> */}
 
-      <div className="founder-section">
+      <div className={Aboutuscss.founderSection}>
         <h1>Meet our Founders</h1>
 
-        <div className="persons">
-          <div className="sheetal-mam">
-            <div className="image">
+        <div className={Aboutuscss.persons}>
+          <div className={Aboutuscss.sheetalMam}>
+            <div className={Aboutuscss.image}>
               <img src="/about us/Sheetal-mam.jpeg" alt="" />
             </div>
-            <div className="name">
+            <div className={Aboutuscss.name}>
               <h1>
-                <span className="bold-first">Sheetal</span> Ramkumar
+                <span className={Aboutuscss.boldFirst}>Sheetal</span> Ramkumar
               </h1>
             </div>
-            <div className="info">
+            <div className={Aboutuscss.info}>
               <p>
                 Sheetal, CEO of Curiotory, brings two decades of education
                 experience and is celebrated among India&apos;s influential women and
@@ -241,16 +241,16 @@ function Aboutus() {
             </div>
           </div>
 
-          <div className="ram-sir">
-            <div className="image">
+          <div className={Aboutuscss.ramSir}>
+            <div className={Aboutuscss.image}>
               <img src="/about us/Ram-sir.jpg" alt="" />
             </div>
-            <div className="name">
+            <div className={Aboutuscss.name}>
               <h1>
-                <span className="bold-first">Ramkumar</span> Kayarat
+                <span className={Aboutuscss.boldFirst}>Ramkumar</span> Kayarat
               </h1>
             </div>
-            <div className="info">
+            <div className={Aboutuscss.info}>
               <p>
                 Ram, Curiotory&apos;s Chief People and Culture Officer, brings over
                 two decades of Telecom industry experience, prioritizing

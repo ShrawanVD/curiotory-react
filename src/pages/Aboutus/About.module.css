@@ -3,340 +3,17 @@
     margin: 0;
   }
   
-  .button {
-    align-content: center;
-    align-items: center;
-  }
-  
-  .button button {
-    background-color: #007EF3;
-    border: none;
-    color: white;
-    border-radius: 40px 40px 40px 40px;
-    padding: 5px 40px;
-    font-family: "Nunito Sans", Sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    margin-left: 100px;
-    cursor: pointer;
-  }
-  
-  .button button:hover {
-    color: #007EF3;
-    background-color: white;
-    border: 1px solid #007EF3;
-  }
-  
-  .button img {
-    cursor: pointer;
-  }
-  
-  
-  /* try nav code  */
-    
-  #navbar {
-    display: grid;
-    min-height: 100px;
-    grid-auto-flow: column;
-    background-color: #EBFAFF;
-    grid-gap: 1.5em;
-    padding: 0 40px;
-  }
-  
-  #logo {
-    display: grid;
-    justify-content: start;
-    align-content: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    color: #000;
-    text-transform: uppercase;
-  }
-  
-  .logo {
-    cursor: pointer;
-  }
-  
-  #links {
-    display: grid;
-    justify-content: right;
-    align-content: center;
-    grid-auto-flow: column;
-    grid-gap: 1.5em;
-    font-family: "Nunito Sans", Sans-serif;
-  }
-  
-  #links a {
-    text-decoration: none;
-    color: black;
-    font-family: "Nunito Sans", Sans-serif;
-  }
-  
-  #links a:hover {
-    color: #007EF3;
-  }
-  
-  /* =======================
-  ******* Mobile Menu ******
-  ========================*/
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#EBFAFF;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: rgb(75, 75, 75);
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #007EF3;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  a {
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  /* Mobile to Tablet  */
-  @media (min-width: 320px) and (max-width: 767px) {
-    #links,
-    .mobile-menu {
-      display: none;
-    }
-    #logo {
-      display: inline-grid;
-      grid-template-columns: auto auto;
-      grid-gap: 2rem;
-      align-items: center;
-    }
-  }
-  
-  
-  /* Tablet to Desktop */
-  @media (min-width: 768px) {
-    .mobile-btn {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 854px){
-    #navbar{
-        padding: 0px 10px;
-        width: 100%;
-        grid-gap: 20px;
-    }
-    #links{
-        grid-gap: 0px;
-        align-items: baseline;;
-    }
-    #links a{
-        padding: 1em 1em 1em 1em;
-        font-size: 10px;
-    }
-    #logo img{
-        width:120px;
-        height: 30px;
-    }
-    .button button{
-        border-radius: 13px;
-        padding: 5px 8px;
-        font-size: 11px;
-        margin-left: 2px;
-    }
-  }
-  
-  @media screen and (min-width:855px) and (max-width: 990px){
-    #navbar{
-        padding: 0px 10px;
-        width: 100%;
-        /* grid-gap: 20px; */
-    }
-    .reverse img{
-        width: 7rem;
-        height: 2rem;
-    }
-    #links{
-        grid-gap: 1rem;
-        align-items: center;;
-    }
-    #links a{
-        font-size: 0.8rem;
-    }
-    .button button{
-        padding: 0.2rem 0.7rem;
-        font-size: 11px;
-        margin-left: 0px;
-    }
-    #playstore-img{
-        width: 3.2rem;
-        height: 2.8rem;
-    }
-  }
-  
-  
-  @media screen and (min-width:991px) and (max-width: 1200px){
-    #navbar{
-        padding: 10px 20px;
-    }
-    .reverse img{
-        width: 7rem;
-        height: 2.3rem;
-    }
-    #links{
-        grid-gap: 1.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 0.8rem;
-    }
-    .button button{
-        padding: 0.2rem 1.2rem;
-        margin-left: 0rem;
-    }
-    #playstore-img{
-        width: 3.7rem;
-        height: 3rem;
-    }
-  }
-  
-  /* for 4k view */
-  @media screen and (min-width:1200px) and (max-width: 1800px){
-    #navbar{
-        padding: 20px 30px;
-    }
-    .reverse img{
-        width: 10rem;
-        height: 3rem;
-    }
-    #links{
-        grid-gap: 1.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 1rem;
-    }
-    .button button{
-        padding: 0.4rem 1.5rem;
-        margin-left: 0rem;
-    }
-  }
-  @media screen and (min-width:1801px) and (max-width: 2600px){
-    #navbar{
-        padding: 1rem 2rem;
-    }
-    .reverse img{
-        width: 14vw;
-        height: 6vh;
-    }
-    #links{
-        grid-gap: 2.5rem;
-        align-items: center;
-    }
-    #links a{
-        font-size: 1.5rem;
-    }
-    .button button{
-        padding: 0.6rem 2rem;
-        margin-left: 0;
-    }
-  }
-  
-  /* Language dropdown */
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #EBFAFF;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 20px;
-    padding: 10px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 0.9rem;
-    box-sizing: border-box;
-  }
-  
-  
-  .dropdown-content a:hover {
-  color: white;
-  }
-  
-  .dropdown:hover .dropdown-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  }
-  
-  @media (max-width: 767px) {
-  .dropdown-content {
-    position: relative;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: none;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    color: rgb(75, 75, 75);
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .dropdown-content a:hover {
-    color: #007EF3;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  }
-  
-  
-  
-  
   
   /* heading - top section */
   
-  .heading-tag {
+  .headingTag {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   
-  .heading-tag h1 {
+  .headingTag h1 {
     margin: 5rem 0 3rem;
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
@@ -346,18 +23,18 @@
     text-align: center;
   }
   
-  .heading-tag .stats ul li {
+  .headingTag .stats ul li {
     font-family: "Nunito Sans", Sans-serif;
     font-size: 1.3rem;
     margin: 2% 2em;
     color: #464646;
   }
   
-  .bold-first {
+  .boldFirst {
     font-weight: 900;
   }
   
-  .register-button {
+  .registerButton {
     margin-top: 4%;
     border-radius: 25px;
     background-color: #45b9ef;
@@ -374,7 +51,7 @@
     font-family: "Nunito Sans", Sans-serif;
   }
   
-  .register-button:hover {
+  .registerButton:hover {
     background-color: black;
     color: white;
   }
@@ -404,7 +81,7 @@
     text-align: center;
   }
   
-  .sidebar .close-btn {
+  .sidebar .closeBtn {
     font-size: 2rem;
     position: absolute;
     top: 20px;
@@ -413,18 +90,18 @@
     color: black;
   }
   
-  .registration-form {
+  .registrationForm {
     padding: 20px;
   }
   
-  .registration-form label {
+  .registrationForm label {
     display: block;
     margin-bottom: 8px;
     color: black;
   }
   
-  .registration-form input,
-  .registration-form select {
+  .registrationForm input,
+  .registrationForm select {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
@@ -434,7 +111,7 @@
     color: black;
   }
   
-  .registration-form button {
+  .registrationForm button {
     width: calc(100% - 20px);
     width: 100%;
     padding: 15px;
@@ -449,7 +126,7 @@
     transition: background-color 0.3s;
   }
   
-  .registration-form button:hover {
+  .registrationForm button:hover {
     background-color: black;
     color: white;
   }
@@ -457,17 +134,17 @@
   /* Media queries for responsiveness */
   
   @media screen and (max-width: 1200px) {
-    .heading-tag h1 {
+    .headingTag h1 {
       font-size: 40px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .heading-tag .stats ul li {
+    .headingTag .stats ul li {
       font-size: 1.2em;
     }
   
-    .register-button {
+    .registerButton {
       font-size: 1em;
       padding: 15px;
       margin-bottom: 3%;
@@ -475,17 +152,17 @@
   }
   
   @media screen and (max-width: 850px) {
-    .heading-tag h1 {
+    .headingTag h1 {
       font-size: 40px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .heading-tag .stats ul li {
+    .headingTag .stats ul li {
       font-size: 1.2em;
     }
   
-    .register-button {
+    .registerButton {
       font-size: 1em;
       padding: 15px;
       margin-bottom: 3%;
@@ -493,26 +170,26 @@
   }
   
   @media screen and (max-width: 500px) {
-    .heading-tag h1 {
+    .headingTag h1 {
       font-size: 2rem;
       margin-top: 3%;
     }
   }
   
   @media screen and (max-width: 450px) {
-    .heading-tag h1 {
+    .headingTag h1 {
       font-size: 1.5rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .heading-tag .stats ul li {
+    .headingTag .stats ul li {
       text-align: justify;
       margin-left: 10%;
       font-size: 1.2em;
     }
   
-    .register-button {
+    .registerButton {
       font-size: 1.2em;
       padding: 10px;
       margin-bottom: 3%;
@@ -566,7 +243,7 @@
   
   /* tabular  */
   
-  .table-comparison {
+  .tableComparison {
     margin: 0 12%;
     /* padding: 5%; */
     display: flex;
@@ -635,20 +312,20 @@
   
   /* origin section */
   
-  .origin-story-section {
+  .originStorySection {
     margin: 14% 15% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .origin-story-section .left-side {
+  .originStorySection .leftSide {
     /* width: 50%; */
     margin-right: 10%;
     box-sizing: border-box;
   }
   
-  .origin-story-section .right-side h1 {
+  .originStorySection .rightSide h1 {
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
     font-size: 3.5em;
@@ -656,7 +333,7 @@
     text-align: justify;
   }
   
-  .origin-story-section .right-side p {
+  .originStorySection .rightSide p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -670,33 +347,33 @@
   
   
   @media screen and (max-width: 1300px) {
-    .origin-story-section {
+    .originStorySection {
       display: flex;
       justify-content: space-evenly;
       text-align: center;
     }
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       margin-right: 1rem;
       width: 35vw;
       height: 30vh;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 40px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 1200px) {
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       width: 35vw;
       height: 30vh;
     }
@@ -705,27 +382,27 @@
   
   @media screen and (max-width: 990px) {
   
-    .origin-story-section .left-side{
+    .originStorySection .leftSide{
       width: 30vw;
     }
   
-    .origin-story-section .right-side{
+    .originStorySection .rightSide{
       width: 70vw;
     }
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 20rem;
       height: 15rem;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1.2em;
       line-height: 25px
     }
@@ -733,19 +410,19 @@
   
   @media screen and (max-width: 870px) {
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 15rem;
       height: 12rem;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1.2em;
       line-height: 25px
     }
@@ -753,27 +430,27 @@
   
   @media screen and (max-width: 690px) {
   
-    .origin-story-section .left-side{
+    .originStorySection .leftSide{
       width: 20vw;
     }
   
-    .origin-story-section .right-side{
+    .originStorySection .rightSide{
       margin-left: 2%;
       width: 80vw;
     }
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.5rem;
       margin-top: 3%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1em;
       line-height: 20px
     }
@@ -781,18 +458,18 @@
   
   @media screen and (max-width: 600px) {
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 9rem;
       height: 7rem;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 3%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1rem;
       line-height: 20px
     }
@@ -800,68 +477,68 @@
   
   @media screen and (max-width: 550px) {
   
-    .origin-story-section {
+    .originStorySection {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-direction: column;
     }
   
-    .origin-story-section .left-side{
+    .originStorySection .leftSide{
       margin-right: 7rem;
       order: 1;
     }
   
-    .origin-story-section .right-side{
+    .originStorySection .rightSide{
       margin-right: 10%;
       order: 2;
     }
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 12rem;
       height: 10rem;
     }
   
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
       margin-bottom: -9%;
     }
   
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 1rem;
       line-height: 20px
     }
   }
   
   @media screen and (max-width: 450px) {
-    .origin-story-section {
+    .originStorySection {
       flex-direction: column;
       text-align: center;
       height: auto;
     }
   
-    .origin-story-section .left-side {
+    .originStorySection .leftSide {
       margin-right: 8rem;
       order: 1;
     }
   
-    .origin-story-section .right-side {
+    .originStorySection .rightSide {
       order: 2;
     }
   
-    .origin-story-section .left-side img {
+    .originStorySection .leftSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
-    .origin-story-section .right-side h1 {
+    .originStorySection .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
       margin-bottom: -9%;
     }
-    .origin-story-section .right-side p {
+    .originStorySection .rightSide p {
       font-size: 0.9rem;
       line-height: 22px
     }
@@ -869,7 +546,7 @@
   
   /* vision section */
   
-  .vision-section {
+  .visionSection {
     margin: 10% 0 2%;
     display: flex;
     justify-content: center;
@@ -877,7 +554,7 @@
     flex-direction: column;
   }
   
-  .vision-section h1 {
+  .visionSection h1 {
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
     font-size: 3.5em;
@@ -885,20 +562,20 @@
     text-align: justify;
   }
   
-  .vision-of-ours {
+  .visionOfOurs {
     margin: 1% 15% 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
   
-  .vision-of-ours .left-side {
+  .visionOfOurs .leftSide {
     width: 50%;
     margin-right: 10%;
     box-sizing: border-box;
   }
   
-  .vision-of-ours .right-side h1 {
+  .visionOfOurs .rightSide h1 {
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
     font-size: 2.2em;
@@ -906,7 +583,7 @@
     text-align: justify;
   }
   
-  .vision-of-ours .right-side p {
+  .visionOfOurs .rightSide p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -920,33 +597,33 @@
   
   
   @media screen and (max-width: 1300px) {
-    .vision-of-ours {
+    .visionOfOurs {
       display: flex;
       justify-content: space-evenly;
       text-align: center;
     }
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       margin-right: 1rem;
       width: 35vw;
       height: 30vh;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 40px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 1200px) {
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       width: 35vw;
       height: 30vh;
     }
@@ -955,30 +632,30 @@
   
   @media screen and (max-width: 990px) {
   
-    .vision-section h1 {
+    .visionSection h1 {
       font-size: 2.5rem;
     }
   
-    .vision-of-ours{
+    .visionOfOurs{
       display: flex;
       justify-content: center;
       align-items: center;
     }
   
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 20rem;
       height: 15rem;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 1.2em;
       line-height: 25px
     }
@@ -986,19 +663,19 @@
   
   @media screen and (max-width: 850px) {
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 15rem;
       height: 12rem;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       margin-right: 7%;
       font-size: 1.2em;
       line-height: 25px
@@ -1007,28 +684,28 @@
   
   @media screen and (max-width: 690px) {
   
-    .vision-section h1 {
+    .visionSection h1 {
       font-size: 2.2rem;
     }
   
   
-    .vision-of-ours .right-side{
+    .visionOfOurs .rightSide{
       margin-left: 2%;
     }
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.5rem;
       margin-top: 3%;
       line-height: 30px;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 1em;
       line-height: 20px;
     }
@@ -1036,22 +713,22 @@
   
   @media screen and (max-width: 600px) {
   
-    .vision-of-ours .right-side{
+    .visionOfOurs .rightSide{
       margin-left: -10%;
     }
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 9rem;
       height: 7rem;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 3%;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 1rem;
       line-height: 20px
     }
@@ -1059,44 +736,44 @@
   
   @media screen and (max-width: 550px) {
   
-    .vision-section{
+    .visionSection{
       padding: 0;
     }
   
-    .vision-section h1 {
+    .visionSection h1 {
       font-size: 2rem;
     }
   
-    .vision-of-ours {
+    .visionOfOurs {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-direction: column;
     }
   
-    .vision-of-ours .left-side{
+    .visionOfOurs .leftSide{
       order: 1;
     }
   
-    .vision-of-ours .right-side{
+    .visionOfOurs .rightSide{
       margin: 0 -10%;
       order: 2;
     }
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 12rem;
       height: 10rem;
     }
   
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
       line-height: 25px;
       margin-bottom: -9%;
     }
   
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 1rem;
       line-height: 20px
     }
@@ -1104,36 +781,36 @@
   
   @media screen and (max-width: 450px) {
   
-    .vision-section h1 {
+    .visionSection h1 {
       font-size: 1.8rem;
     }
   
-    .vision-of-ours {
+    .visionOfOurs {
       flex-direction: column;
       text-align: center;
       height: auto;
     }
   
-    .vision-of-ours .left-side {
+    .visionOfOurs .leftSide {
       margin-right: 2rem;
       order: 1;
     }
   
-    .vision-of-ours .right-side {
+    .visionOfOurs .rightSide {
       order: 2;
     }
   
-    .vision-of-ours .left-side img {
+    .visionOfOurs .leftSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
-    .vision-of-ours .right-side h1 {
+    .visionOfOurs .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
       margin-bottom: -9%;
     }
-    .vision-of-ours .right-side p {
+    .visionOfOurs .rightSide p {
       font-size: 0.9rem;
       line-height: 22px
     }
@@ -1141,20 +818,20 @@
   
   /* mission section */
   
-  .mission-section {
+  .missionSection {
     margin: 0 15% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .mission-section .left-side {
+  .missionSection .leftSide {
     width: 50%;
     margin-right: 10%;
     box-sizing: border-box;
   }
   
-  .mission-section .left-side h1{
+  .missionSection .leftSide h1{
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
     font-size: 2.2em;
@@ -1162,7 +839,7 @@
     text-align: justify;
   }
   
-  .mission-section .left-side p {
+  .missionSection .leftSide p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -1174,33 +851,33 @@
   
   
   @media screen and (max-width: 1300px) {
-    .mission-section {
+    .missionSection {
       display: flex;
       justify-content: space-evenly;
       text-align: center;
     }
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       margin-right: 1rem;
       width: 35vw;
       height: 30vh;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 40px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 1200px) {
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       width: 35vw;
       height: 30vh;
     }
@@ -1209,26 +886,26 @@
   
   @media screen and (max-width: 990px) {
   
-    .mission-section{
+    .missionSection{
       display: flex;
       justify-content: center;
       align-items: center;
     }
   
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 20rem;
       height: 15rem;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       font-size: 1.2em;
       line-height: 25px
     }
@@ -1236,19 +913,19 @@
   
   @media screen and (max-width: 850px) {
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 15rem;
       height: 12rem;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.8rem;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       margin-right: 7%;
       font-size: 1.2em;
       line-height: 25px
@@ -1258,23 +935,23 @@
   @media screen and (max-width: 690px) {
   
   
-    .mission-section .left-side{
+    .missionSection .leftSide{
       margin-left: 2%;
     }
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.5rem;
       margin-top: 3%;
       line-height: 30px;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       font-size: 1em;
       line-height: 20px;
     }
@@ -1282,18 +959,18 @@
   
   @media screen and (max-width: 600px) {
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 9rem;
       height: 7rem;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.4rem;
       margin-top: 3%;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       font-size: 1rem;
       line-height: 20px
     }
@@ -1301,38 +978,38 @@
   
   @media screen and (max-width: 550px) {
   
-    .mission-section {
+    .missionSection {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-direction: column;
     }
   
-    .mission-section .right-side{
+    .missionSection .rightSide{
       order: 1;
     }
   
-    .mission-section .left-side{
+    .missionSection .leftSide{
       margin-left: 10%;
       width: 120%;
       /* margin: 0 -10%; */
       order: 2;
     }
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 12rem;
       height: 10rem;
     }
   
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
       line-height: 25px;
       margin-bottom: -9%;
     }
   
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       margin-top: 5%;
       font-size: 1rem;
       line-height: 20px
@@ -1341,34 +1018,34 @@
   
   @media screen and (max-width: 450px) {
   
-    .mission-section {
+    .missionSection {
       flex-direction: column;
       text-align: center;
       height: auto;
       margin-bottom: 15%;
     }
   
-    .mission-section .right-side {
+    .missionSection .rightSide {
       margin-right: 2rem;
       order: 1;
     }
   
-    .mission-section .left-side {
+    .missionSection .leftSide {
       margin-left: 10%;
       width: 120%;
       order: 2;
     }
   
-    .mission-section .right-side img {
+    .missionSection .rightSide img {
       margin-top: 4%;
       width: 10rem;
       height: 8rem;
     }
-    .mission-section .left-side h1 {
+    .missionSection .leftSide h1 {
       font-size: 1.4rem;
       margin-top: 5%;
     }
-    .mission-section .left-side p {
+    .missionSection .leftSide p {
       font-size: 0.9rem;
       line-height: 20px
     }
@@ -1376,7 +1053,7 @@
   
   /* founder's section */
   
-  .founder-section {
+  .founderSection {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1384,7 +1061,7 @@
     background: linear-gradient(to bottom, white 50%, #ebfaff 50%);
   }
   
-  .founder-section h1 {
+  .founderSection h1 {
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
     font-size: 2.8em;
@@ -1392,7 +1069,7 @@
     text-align: justify;
   }
   
-  .founder-section .persons {
+  .founderSection .persons {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1402,7 +1079,7 @@
   
   /* sheetal mam's section */
   
-  .founder-section .persons .sheetal-mam {
+  .founderSection .persons .sheetalMam {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1410,7 +1087,7 @@
     margin: 5% 5%;
   }
   
-  .founder-section .persons .sheetal-mam .image {
+  .founderSection .persons .sheetalMam .image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1418,12 +1095,12 @@
     width: 40%;
   }
   
-  .founder-section .persons .sheetal-mam .image img {
+  .founderSection .persons .sheetalMam .image img {
     width: 30rem;
     height: 37rem;
   }
   
-  .founder-section .persons .sheetal-mam .name h1 {
+  .founderSection .persons .sheetalMam .name h1 {
     margin-top: 5%;
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
@@ -1432,7 +1109,7 @@
     font-size: 2rem;
   }
   
-  .founder-section .persons .sheetal-mam .info p {
+  .founderSection .persons .sheetalMam .info p {
     margin-top: 10%;
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -1444,7 +1121,7 @@
   
   /* ram sir's section */
   
-  .founder-section .persons .ram-sir {
+  .founderSection .persons .ramSir {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1452,7 +1129,7 @@
     margin: 5% 5%;
   }
   
-  .founder-section .persons .ram-sir .image {
+  .founderSection .persons .ramSir .image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1460,12 +1137,12 @@
     width: 40%;
   }
   
-  .founder-section .persons .ram-sir .image img {
+  .founderSection .persons .ramSir .image img {
     width: 30rem;
     height: 37rem;
   }
   
-  .founder-section .persons .ram-sir h1 {
+  .founderSection .persons .ramSir h1 {
     margin-top: 5%;
     color: #2f327d;
     font-family: "Nunito Sans", Sans-serif;
@@ -1474,7 +1151,7 @@
     font-size: 2rem;
   }
   
-  .founder-section .persons .ram-sir .info p {
+  .founderSection .persons .ramSir .info p {
     margin-top: 10%;
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -1487,51 +1164,51 @@
   /* Media queries for responsiveness */
   
   @media screen and (max-width: 1100px) {
-    .founder-section {
+    .founderSection {
       background: linear-gradient(to bottom, white 30%, #ebfaff 70%);
     }
   
-    .founder-section h1 {
+    .founderSection h1 {
       font-size: 45px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons {
+    .founderSection .persons {
       width: 90%;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       margin-top: 4%;
       width: 30vw;
       height: 30vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 1.2em;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       margin-top: 4%;
       width: 30vw;
       height: 30vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 1.2em;
     }
   }
@@ -1539,20 +1216,20 @@
   
   @media screen and (max-width: 990px) {
   
-    .founder-section h1{
+    .founderSection h1{
       font-size: 2rem;
       font-weight: bold;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       font-size: 1.5rem;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       margin-top: 3.5rem;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       font-size: 1.5rem;
     }
   
@@ -1560,223 +1237,223 @@
   
   
   @media screen and (max-width: 850px) {
-    .founder-section {
+    .founderSection {
       background: linear-gradient(to bottom, white 30%, #ebfaff 70%);
     }
   
-    .founder-section h1 {
+    .founderSection h1 {
       font-size: 45px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .image{
+    .founderSection .persons .sheetalMam .image{
       margin-top: 4rem;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       width: 30vw;
       height: 20vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 1.2em;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       margin-top: 4%;
       width: 20vw;
       height: 20vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 1.2em;
     }
   }
   
   
   @media screen and (max-width: 850px) {
-    .founder-section {
+    .founderSection {
       background: #ebfaff;
     }
   
-    .founder-section h1 {
+    .founderSection h1 {
       font-size: 45px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons {
+    .founderSection .persons {
       flex-direction: column;
       text-align: center;
       height: auto;
     }
   
-    .founder-section .persons .sheetal-mam {
+    .founderSection .persons .sheetalMam {
       order: 1;
     }
   
-    .founder-section .persons .ram-sir {
+    .founderSection .persons .ramSir {
       order: 2;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       margin-top: -10%;
       margin-left: 0%;
       width: 40vw;
       height: 35vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 1.2em;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       width: 40vw;
       height: 35vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 700px) {
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       width: 40vw;
       height: 30vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 1.2em;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       width: 40vw;
       height: 30vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 35px;
       line-height: 50px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 1.2em;
     }
   }
   
   @media screen and (max-width: 550px) {
   
-    .founder-section h1{
+    .founderSection h1{
       font-size: 2.6rem;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       width: 35vw;
       height: 25vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 1.5rem;
       line-height: 20px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 1rem;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       width: 35vw;
       height: 25vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 1.5rem;
       line-height: 20px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 1rem;
     }
   }
   
   @media screen and (max-width: 450px) {
   
-    .founder-section h1{
+    .founderSection h1{
       font-size: 1.5rem;
     }
   
-    .founder-section .persons .sheetal-mam .image img {
+    .founderSection .persons .sheetalMam .image img {
       width: 60vw;
       height: 40vh;
     }
   
-    .founder-section .persons .sheetal-mam .name h1 {
+    .founderSection .persons .sheetalMam .name h1 {
       text-align: center;
       font-size: 1rem;
       line-height: 20px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .sheetal-mam .info p {
+    .founderSection .persons .sheetalMam .info p {
       font-size: 0.9rem;
     }
   
-    .founder-section .persons .ram-sir .image img {
+    .founderSection .persons .ramSir .image img {
       width: 60vw;
       height: 40vh;
     }
   
-    .founder-section .persons .ram-sir .name h1 {
+    .founderSection .persons .ramSir .name h1 {
       text-align: center;
       font-size: 1rem;
       line-height: 20px;
       margin-top: 3%;
     }
   
-    .founder-section .persons .ram-sir .info p {
+    .founderSection .persons .ramSir .info p {
       font-size: 0.9rem;
     }
   }

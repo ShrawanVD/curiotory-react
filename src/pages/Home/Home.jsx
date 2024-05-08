@@ -3,23 +3,28 @@ import Footer from "../../components/Footer/Footer";
 import Navv from "../../components/Navv/Navv";
 import "./Home.css";
 
-// adding swiper 
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay  } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// adding swiper
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 // adding react-slick for sliding section
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import { Settings } from "@mui/icons-material";
 
 function Home() {
-
   // for infinite slike
   const settings = {
     autoplay: true,
@@ -28,24 +33,23 @@ function Home() {
     arrows: false,
     swipe: false,
     slidesToShow: 6,
-    cssEase: 'linear',
+    cssEase: "linear",
     pauseOnFocus: false,
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 600, 
+        breakpoint: 600,
         settings: {
           slidesToShow: 3,
-        }
+        },
       },
       {
-        breakpoint: 800, 
+        breakpoint: 800,
         settings: {
           slidesToShow: 4,
-        }
-      }
-
-    ]
+        },
+      },
+    ],
   };
 
   return (
@@ -82,138 +86,135 @@ function Home() {
               <h1>Language we teach</h1>
             </div>
             <div className="sliding-container">
-
               <Slider {...settings}>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266pxpx"
-                    src="/Index/Group-292.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-293.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-294.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-295.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-296.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-297.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-298.png"
-                  />
-                </a>
-              </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266pxpx"
+                      src="/Index/Group-292.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-293.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-294.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-295.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-296.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-297.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-298.png"
+                    />
+                  </a>
+                </div>
 
-
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266pxpx"
-                    src="/Index/Group-292.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-293.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-294.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-295.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-296.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-297.png"
-                  />
-                </a>
-              </div>
-              <div className="sliding-card">
-                <a>
-                  <img
-                    width="216px"
-                    height="266px"
-                    src="/Index/Group-298.png"
-                  />
-                </a>
-              </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266pxpx"
+                      src="/Index/Group-292.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-293.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-294.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-295.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-296.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-297.png"
+                    />
+                  </a>
+                </div>
+                <div className="sliding-card">
+                  <a>
+                    <img
+                      width="216px"
+                      height="266px"
+                      src="/Index/Group-298.png"
+                    />
+                  </a>
+                </div>
               </Slider>
-
             </div>
           </div>
 
@@ -224,11 +225,7 @@ function Home() {
             </div>
             <div className="lang-card">
               <div className="cards">
-                <img
-                  width="173"
-                  height="187"
-                  src="/Index/Picture1.png"
-                />
+                <img width="173" height="187" src="/Index/Picture1.png" />
                 <h4>Cohorts</h4>
                 <p>
                   There are no age restrictions or skill gaps to learning new
@@ -237,11 +234,7 @@ function Home() {
                 </p>
               </div>
               <div className="cards">
-                <img
-                  width="282"
-                  height="186"
-                  src="/Index/Picture2.png"
-                />
+                <img width="282" height="186" src="/Index/Picture2.png" />
                 <h4>School & College Partnerships</h4>
                 <p>
                   Multilingual students are better equipped to ace academics and
@@ -250,11 +243,7 @@ function Home() {
                 </p>
               </div>
               <div className="cards">
-                <img
-                  width="151"
-                  height="186"
-                  src="/Index/Picture3.png"
-                />
+                <img width="151" height="186" src="/Index/Picture3.png" />
                 <h4>Corporate Training</h4>
                 <p>
                   There are no age restrictions or skill gaps to learning new
@@ -617,138 +606,129 @@ function Home() {
 
           {/* <!-- REVIEWS SECTION --> */}
 
-          <div>
-          <Swiper
-    // install Swiper modules
-    modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}
-    spaceBetween={50}
-    slidesPerView={2
-    }
-
-    // navigation
-    // pagination={{ clickable: true }}
-    // scrollbar={{ draggable: true }}
-    autoplay={{
-      delay: 1000,
-      disableOnInteraction: false, // Resume autoplay after interaction
-    }}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
-  >
-    
-    <SwiperSlide>
-      <div className="swiper-slide">
-        <div className="profile-picture">
-          <img src="/Index/review - swapna.png" alt="Swapna Jain" />
-        </div>
-        <div className="name">Swapna Jain</div>
-        <div className="designation">
-          Korean TOPIK 1 Level 1 - Brewer – Maine, US
-        </div>
-        <div className="reviews">
-          <p>
-            Being part of a big organization, one of my 2023 goals was to
-            learn a foreign language. So, I got to learn from Priya Nagpal, my
-            Korean tutor at Curiotory. And what an experience it has been! I
-            like everything about the course.I would recommend Curiotory and
-            Priya Nagpal to everyone!
-          </p>
-        </div>
-      </div>
-      
-      </SwiperSlide>
-    <SwiperSlide>
-    <div className="swiper-slide">
-                <div className="profile-picture">
-                  <img
-                    src="/Index/review - reeva.png"
-                    alt="Reeva Arsingha"
-                  />
+          <div className="review-swiper-css">
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+              spaceBetween={20}
+              slidesPerView={1}
+              // navigation
+              // pagination={{ clickable: true }}
+              // scrollbar={{ draggable: true }}
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false, // Resume autoplay after interaction
+              }}
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+              breakpoints={{
+                // when window width is >= 768px
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className="swiper-slide">
+                  <div className="profile-picture">
+                    <img src="/Index/review - swapna.png" alt="Swapna Jain" />
+                  </div>
+                  <div className="name">Swapna Jain</div>
+                  <div className="designation">
+                    Korean TOPIK 1 Level 1 - Brewer – Maine, US
+                  </div>
+                  <div className="reviews">
+                    <p>
+                      Being part of a big organization, one of my 2023 goals was
+                      to learn a foreign language. So, I got to learn from Priya
+                      Nagpal, my Korean tutor at Curiotory. And what an
+                      experience it has been! I like everything about the
+                      course.I would recommend Curiotory and Priya Nagpal to
+                      everyone!
+                    </p>
+                  </div>
                 </div>
-                <div className="name">Reeva Arsinghakar</div>
-                <div className="designation">
-                  Spanish B1 - Akola Maharashtra
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper-slide">
+                  <div className="profile-picture">
+                    <img src="/Index/review - reeva.png" alt="Reeva Arsingha" />
+                  </div>
+                  <div className="name">Reeva Arsinghakar</div>
+                  <div className="designation">
+                    Spanish B1 - Akola Maharashtra
+                  </div>
+                  <div className="reviews">
+                    <p>
+                      “Firstly, it was a lot of fun to learn with Curiotory. The
+                      teaching process was perfect, and the tutor ensured I was
+                      thoroughly engaged. So I enjoyed it a lot! Their material
+                      helped me a lot too. Moreover, the platform is very
+                      organized and systematic. It was overall a great learning
+                      experience.”
+                    </p>
+                  </div>
                 </div>
-                <div className="reviews">
-                  <p>
-                    “Firstly, it was a lot of fun to learn with Curiotory. The
-                    teaching process was perfect, and the tutor ensured I was
-                    thoroughly engaged. So I enjoyed it a lot! Their material
-                    helped me a lot too. Moreover, the platform is very
-                    organized and systematic. It was overall a great learning
-                    experience.”
-                  </p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper-slide">
+                  <div className="profile-picture">
+                    <img src="/Index/review - riya.png" alt="Riya Malhotra" />
+                  </div>
+                  <div className="name">Riya Malhotra</div>
+                  <div className="designation">German A1 - Germany</div>
+                  <div className="reviews">
+                    <p>
+                      “The German course was very good. I also found it very
+                      convenient as I could attend the course per my schedule.
+                      As I am studying medicine in Germany my language knowledge
+                      came handy. My tutor, Disha, was kind enough to make
+                      adjustments many times so that I could easily recover
+                      whenever I missed a session. I am definitely satisfied!”
+                    </p>
+                  </div>
                 </div>
-              </div>
-      
-      </SwiperSlide>
-
-    <SwiperSlide>
-    <div className="swiper-slide">
-                <div className="profile-picture">
-                  <img
-                    src="/Index/review - riya.png"
-                    alt="Riya Malhotra"
-                  />
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="swiper-slide">
+                  <div className="profile-picture">
+                    <img
+                      src="/Index/review - bhavana.png"
+                      alt="Bhawana Pawar HR"
+                    />
+                  </div>
+                  <div className="name">Bhawana Pawar HR</div>
+                  <div className="designation">
+                    Jabil Manufacturing Pvt. Ltd. - Mandarin (Ranjangaon,
+                    Maharashtra)
+                  </div>
+                  <div className="reviews">
+                    <p>
+                      “We are happy to receive Curiotory language service, as
+                      our teams gained a lot of knowledge. It went a long way to
+                      help improve their efficiency at work . We hope to work
+                      again with Curiotory in future &nbsp;.”
+                    </p>
+                  </div>
                 </div>
-                <div className="name">Riya Malhotra</div>
-                <div className="designation">German A1 - Germany</div>
-                <div className="reviews">
-                  <p>
-                    “The German course was very good. I also found it very
-                    convenient as I could attend the course per my schedule. As
-                    I am studying medicine in Germany my language knowledge came
-                    handy. My tutor, Disha, was kind enough to make adjustments
-                    many times so that I could easily recover whenever I missed
-                    a session. I am definitely satisfied!”
-                  </p>
-                </div>
-              </div>
-      
-      </SwiperSlide>
-    <SwiperSlide>
-    <div className="swiper-slide">
-                <div className="profile-picture">
-                  <img
-                    src="/Index/review - bhavana.png"
-                    alt="Bhawana Pawar HR"
-                  />
-                </div>
-                <div className="name">Bhawana Pawar HR</div>
-                <div className="designation">
-                  Jabil Manufacturing Pvt. Ltd. - Mandarin (Ranjangaon,
-                  Maharashtra)
-                </div>
-                <div className="reviews">
-                  <p>
-                    “We are happy to receive Curiotory language service, as our
-                    teams gained a lot of knowledge. It went a long way to help
-                    improve their efficiency at work . We hope to work again
-                    with Curiotory in future &nbsp;.”
-                  </p>
-                </div>
-              </div>
-      
-      </SwiperSlide>
-    <SwiperSlide>
-     
-      
-      </SwiperSlide>
-    ...
-  </Swiper>
+              </SwiperSlide>
+              <SwiperSlide></SwiperSlide>
+              ...
+            </Swiper>
           </div>
-
 
           {/* <!-- REVIEWS SECTION ENDS --> */}
 
           {/* <!-- FAQ SECTION --> */}
-
-          <h1
-            className="faq-heading"
-            style={{ color: "#002e5b", texAlign: "center" }}
-          >
-            Frequently Asked Questions
-          </h1>
+          <div className="faqHeadingDivCss">
+            <h1
+              className="faq-heading"
+              style={{ color: "#002e5b", texAlign: "center" }}
+            >
+              Frequently Asked Questions
+            </h1>
+          </div>
           <div className="body-faq">
             <div className="image-container">
               <img src="/Index/faq.png" alt="here is an image" />
