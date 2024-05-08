@@ -89,7 +89,7 @@ class Teacherform extends React.Component {
 
         <div className={teachercss.qualification}>
           <label htmlFor="qualification">Highest Qualification:</label>
-          <div className="qualification-section">
+          <div className={teachercss.qualificationSection}>
             <select id="qualification" name="qualification" required>
               <option value="" disabled selected>
                 Please choose an option
@@ -157,11 +157,11 @@ class Teacherform extends React.Component {
 
 
         <label htmlFor="uploadPhoto">Upload Your Recent Photo:</label>
-          <input type="file"  name="uploadPhoto" required/><br />
+          <input type="file"  name="uploadPhoto" required className={teachercss.chooseFile}/><br />
 
 
         <label htmlFor="uploadCV">Upload Your Updated CV:</label>
-          <input type="file" id="uploadCV" name="uploadCV" required/><br />
+          <input type="file" id="uploadCV" name="uploadCV" required className={teachercss.chooseFile}/><br />
 
 
         <label htmlFor="expTranslation">Experience in Translation and Interpretation:</label>

@@ -5,9 +5,23 @@
   height: auto;
 }
 
+.mascot-div{
+  height: 100%;
+  text-align: center;
+  padding-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mascot-video{
+  width: 10px;
+  height: 30px;
+}
+
 /* Base styles for desktop */
 .cover-page {
-  padding: 8rem 11rem 5rem;
+  padding: 1.5rem 11rem 5rem;
   /* padding: 0rem 11rem; */
   margin-bottom: 0px;
   justify-content: center;

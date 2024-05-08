@@ -27,10 +27,10 @@ function Footer() {
                     <a href="/About">About Us</a>
                   </li>
                   <li>
-                    <a href="MeetTheTutor">Meet Our Tutor</a>
+                    <a href="/MeetTheTutor">Meet Our Tutor</a>
                   </li>
                   <li>
-                    <a href="TeacherForm">Become a Tutor</a>
+                    <a href="Becometutor">Become a Tutor</a>
                   </li>
                 </ul>
               </div>
@@ -55,7 +55,7 @@ function Footer() {
             </div>
 
             {/* Contacting Us */}
-            <div className="ss col-lg-3">
+            <div className="ss col-lg-">
               <div className="single_footer single_footer_address">
                 <h4>Contact Us</h4>
                 <ul>

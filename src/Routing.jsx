@@ -21,6 +21,7 @@ import Mandarin from './components/Languages/Mandarin/Mandarin';
 import Portuguese from './components/Languages/Portuguese/Portuguese';
 import Russian from './components/Languages/Russian/Russian';
 import Spanish from './components/Languages/Spanish/Spanish';
+import Becometutor from './pages/Becometutor/Becometutor';
 
 export default (
     <Routes>
@@ -33,8 +34,11 @@ export default (
         <Route path="/Refund" element={<Refund/>} />
         <Route path="/Privacy" element={<Privacy/>} />
         <Route path="/Terms" element={<Terms />} />
+        <Route path="/Becometutor" element={<Becometutor />} />
         <Route path="/TeacherForm" element={<Teacherform />} />
         <Route path="/Download" element={<Download />} />
+        
+        {/* Languages pages routing */}
         <Route path="/Arabic" element={<Arabic />} />
         <Route path="/Dutch" element={<Dutch />} />
         <Route path="/English" element={<English />} />

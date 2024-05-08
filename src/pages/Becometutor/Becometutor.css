@@ -1,0 +1,878 @@
+/* ------ */
+
+/* first and third section of the become tutor page */
+
+.become-tutor-first-section {
+    margin: 5% 7% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .become-tutor-first-section .left-side {
+    width: 50%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .become-tutor-first-section .left-side .left-main-heading {
+    color: #2f327d;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .bold-first {
+    font-weight: 900;
+    font-size: larger;
+  }
+  
+  .become-tutor-first-section .left-side .left-sub-heading {
+    font-size: 1.5em;
+    margin: 2% 0;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+  }
+  
+  .become-tutor-first-section .left-side .left-paragraph {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+  }
+  
+  .become-tutor-first-section .right-side img{
+    width: 80%;
+  }
+  
+  
+  .register-button {
+    border-radius: 25px;
+    background-color: black;
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  .register-button:hover {
+    background-color: #45b9ef;
+    color: black;
+  }
+  
+  
+  /* For screens up to 1200px */
+  @media screen and (max-width: 1200px) {
+    .become-tutor-first-section .left-side {
+      width: 70vw;
+    }
+  }
+  
+  /* For screens up to 900px */
+  @media screen and (max-width: 900px) {
+    .become-tutor-first-section .left-side {
+      width: 80vw;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .become-tutor-first-section .left-side {
+      width: 90vw;
+    }
+    .become-tutor-first-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+    }
+    .become-tutor-first-section .left-side .left-sub-heading h5{
+      font-size: 1.2rem;
+    }
+    .become-tutor-first-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+    .register-button {
+      font-size: 1rem;
+      padding: 4%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .become-tutor-first-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 6%;
+    } 
+    .become-tutor-first-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .become-tutor-first-section .right-side img{
+      /* margin-left: 20%; */
+      margin-bottom: 10%;
+      width: 80%;
+    }
+    .become-tutor-first-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .become-tutor-first-section .left-side .left-sub-heading h5{
+      font-size: 1.2rem;
+    }
+    .become-tutor-first-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+    .register-button {
+      align-items: center;
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  
+  /* For screens up to 500px */
+  @media screen and (max-width: 500px) {
+    .become-tutor-first-section{
+      padding: 6%;
+    } 
+    .become-tutor-first-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .become-tutor-first-section .right-side img{
+      margin-left: 5%;
+      margin-bottom: 10%;
+      width: 70%;
+    }
+    .become-tutor-first-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .become-tutor-first-section .left-side .left-sub-heading h5{
+      font-size: 1.2rem;
+    }
+    .become-tutor-first-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+    .register-button {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For screens up to 400px */
+  @media screen and (max-width: 400px) {
+    .become-tutor-first-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .become-tutor-first-section .right-side img{
+      margin-left: 20%;
+      margin-bottom: 10%;
+      width: 50%;
+    }
+    .become-tutor-first-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .become-tutor-first-section .left-side .left-sub-heading h5{
+      font-size: 1.2rem;
+    }
+    .become-tutor-first-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+    .register-button {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* second and fourth section of the become tutor page */
+  
+  .second-section-become-tutor {
+    margin: 20% 7% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .second-section-become-tutor .left-side {
+    width: 50%;
+    margin-right: 10%;
+    box-sizing: border-box;
+  }
+  
+  .second-section-become-tutor .right-side h1 {
+    color: #2f327d;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .second-section-become-tutor .right-side p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+  }
+  
+  .bold-second {
+    font-weight: 900;
+    font-size: larger;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  
+  @media screen and (max-width: 1300px) {
+    .second-section-become-tutor {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      margin-right: 1rem;
+      width: 35vw;
+      height: 30vh;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 40px;
+      line-height: 50px;
+      margin-top: 3%;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+  
+    .second-section-become-tutor .left-side img {
+      width: 35vw;
+      height: 30vh;
+    }
+  
+  }
+  
+  @media screen and (max-width: 990px) {
+  
+    .second-section-become-tutor .left-side{
+      width: 30vw;
+    }
+  
+    .second-section-become-tutor .right-side{
+      width: 70vw;
+    }
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 20rem;
+      height: 15rem;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.8rem;
+      line-height: 50px;
+      margin-top: 3%;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1.2em;
+      line-height: 25px
+    }
+  }
+  
+  @media screen and (max-width: 870px) {
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 15rem;
+      height: 12rem;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.8rem;
+      line-height: 50px;
+      margin-top: 3%;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1.2em;
+      line-height: 25px
+    }
+  }
+  
+  @media screen and (max-width: 690px) {
+  
+    .second-section-become-tutor .left-side{
+      width: 20vw;
+    }
+  
+    .second-section-become-tutor .right-side{
+      margin-left: 2%;
+      width: 80vw;
+    }
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 10rem;
+      height: 8rem;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.5rem;
+      margin-top: 3%;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1em;
+      line-height: 20px
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 9rem;
+      height: 7rem;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.4rem;
+      margin-top: 3%;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1rem;
+      line-height: 20px
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .second-section-become-tutor {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    .second-section-become-tutor .left-side{
+      margin-right: 7rem;
+      order: 1;
+    }
+  
+    .second-section-become-tutor .right-side{
+      margin-right: 10%;
+      order: 2;
+    }
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 12rem;
+      height: 10rem;
+    }
+  
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.4rem;
+      margin-top: 5%;
+      margin-bottom: -9%;
+      line-height: 40px;
+    }
+  
+    .second-section-become-tutor .right-side p {
+      font-size: 1rem;
+      line-height: 20px
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .second-section-become-tutor{
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+  
+    .second-section-become-tutor .left-side {
+      margin-right: 8rem;
+      order: 1;
+    }
+  
+    .second-section-become-tutor .right-side {
+      order: 2;
+    }
+  
+    .second-section-become-tutor .left-side img {
+      margin-top: 4%;
+      width: 10rem;
+      height: 8rem;
+    }
+    .second-section-become-tutor .right-side h1 {
+      font-size: 1.3rem;
+      margin-top: 5%;
+      margin-bottom: -9%;
+    }
+    .second-section-become-tutor .right-side p {
+      font-size: 0.9rem;
+      line-height: 22px
+    }
+  }
+  
+  
+  /* third section */
+  
+  .third-section {
+    margin: 5% 7% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .third-section .left-side {
+    width: 50%;
+    margin-right: 5%;
+    box-sizing: border-box;
+  }
+  
+  .third-section .left-side .left-main-heading {
+    color: #2f327d;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .third-section .left-side .left-sub-heading {
+    font-size: 1.5em;
+    margin: 2% 0;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+  }
+  
+  .third-section .left-side .left-paragraph {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+  }
+  
+  .third-section .right-side img{
+    width: 80%;
+  }
+  
+  /* media queries */
+  @media screen and (max-width: 1200px) {
+    .third-section .left-side {
+      width: 70vw;
+    }
+  }
+  
+  /* For screens up to 900px */
+  @media screen and (max-width: 900px) {
+    .third-section .left-side {
+      width: 80vw;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .third-section .left-side {
+      width: 90vw;
+    }
+    .third-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+    }
+    .third-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .third-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 6%;
+    } 
+    .third-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .third-section .right-side img{
+      margin: -35% 0;
+      width: 80%;
+    }
+    .third-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .third-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  
+  /* For screens up to 500px */
+  @media screen and (max-width: 500px) {
+    .third-section{
+      padding: 6%;
+    } 
+    .third-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .third-section .right-side img{
+      margin: -65% 0;
+      width: 70%;
+    }
+    .third-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .third-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+  }
+  
+  /* For screens up to 400px */
+  @media screen and (max-width: 400px) {
+    .third-section .left-side {
+      order: 2;
+      width: 90vw;
+    }
+    .third-section .right-side{
+      padding: -50%;
+      height: fit-content;
+    }
+    .third-section .right-side img{
+      margin-left: 20%;
+      width: 50%;
+    }
+    .third-section .left-side .left-main-heading h2{
+      font-size: 1.3rem;
+      margin-bottom: 4%;
+    }
+    .third-section .left-side .left-paragraph p{
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /* why with us section */
+  
+  .why-with-us {
+    position: relative;
+    margin: 15% 0 10%;
+  }
+  
+  .why-with-us .background {
+    background-color: #2f327d;
+    height: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3%;
+    box-sizing: border-box;
+  }
+  
+  .why-with-us .left-side-img {
+    position: relative;
+    z-index: 1;
+    margin-top: -10%;
+  }
+  
+  .why-with-us .left-side-img img {
+    width: 30vw;
+  }
+  
+  .why-with-us .right-side-info {
+    color: #fff;
+    font-family: "Nunito Sans", Sans-serif;
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+  
+  .why-with-us .right-side-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .why-with-us .right-side-info ul li{
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .why-with-us .right-side-info li::before {
+    content: "\2605"; /* Unicode character for a star */
+    color: #ffd700; /* Yellow color for the star */
+    font-size: 1.5em;
+    position: absolute;
+    left: -1.5em; /* to align it to right side and not to collide with the info */
+    top: 50%; /* to make it in same line and not upwards */
+    transform: translateY(-50%); /* to make it in same line and not downwards */
+  }
+  
+  
+  /* media queries for responsiveness */
+  
+  @media screen and (max-width: 1200px) {
+  
+    .why-with-us .right-side-info {
+      font-size: 1.2rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1040px) {
+  
+    .why-with-us .right-side-info {
+      font-size: 1.1rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 960px) {
+  
+    .why-with-us .right-side-info {
+      font-size: 1rem;
+    }
+  
+    .why-with-us .right-side-info ul li{
+      margin-bottom: -5px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 900px) {
+  
+    .why-with-us .background {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .why-with-us .left-side-img img {
+      width: 50vw;
+      margin-bottom: 10%;
+      margin-left: -10%;
+    }
+  
+    .why-with-us .right-side-info {
+      font-size: 1.3rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 760px) {
+  
+    .why-with-us .left-side-img img {
+      width: 50vw;
+      margin-bottom: 10%;
+      margin-left: -10%;
+    }
+  
+    .why-with-us .right-side-info {
+      font-size: 1.1rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 650px) {
+  
+    .why-with-us .right-side-info {
+      font-size: 1rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 570px) {
+  
+    .why-with-us .left-side-img img {
+      width: 70vw;
+      margin-top: -4%;
+    }
+  
+    .why-with-us .right-side-info ul {
+      padding: 0 7%;
+    }
+  
+    .why-with-us .right-side-info {
+      font-size: 0.9rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 450px) {
+    .why-with-us .left-side-img img {
+      margin-top: -1%;
+      width: 80vw;
+    }
+    .why-with-us .right-side-info {
+      font-size: 0.8rem;
+    }
+    
+  }
+  
+  
+  /* phases section */
+  
+  /* section 1 */
+  .enroll-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .enroll-container .enroll-title {
+    color: #2f327d;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .phases-for-enroll {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30%;
+  }
+  
+  .phases-for-enroll .phase {
+    margin: 5% 7% 10%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .phases-for-enroll .phase:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 70%;
+    left: 70%;
+    right: 80%;
+    width: 12em;
+    border-top: 4px dotted #000;
+    z-index: -1;
+  }
+  
+  
+  .phases-for-enroll .phase img {
+    padding-bottom: 15%;
+  }
+  
+  .phases-for-enroll .phase p {
+    font-weight: bolder;
+    width: max-content;
+    align-items: center;
+    font-family: "Nunito Sans", Sans-serif;
+  }
+  
+  .enroll-container .register-button{
+    margin-bottom: 10%;
+  }
+  
+  @media (max-width: 1400px) {
+    .phases-for-enroll .phase {
+      margin: 5%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .phases-for-enroll .phase {
+      margin: 3%;
+    }
+    .phases-for-enroll .phase:not(:last-child)::after {
+      width: 10em;
+    }
+    
+  }
+  
+  
+  /* section 2 code */
+  
+  .section-2 {
+    display: none;
+  }
+  
+  .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  .timeline-item {
+    position: relative;
+    padding: 20px 0;
+  }
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    height: 100%;
+    background-color: #007bff;
+    z-index: 1;
+  }
+  .timeline-item .timeline-content {
+    position: relative;
+    width: 50%;
+    padding: 0 20px;
+  }
+  .timeline-item .timeline-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Show section 2 at widths less than or equal to 900px */
+  @media (max-width: 900px) {
+    .timeline-item .timeline-content {
+      width: 100%;
+    }
+    .section-2 {
+      display: block;
+    }
+    .section-1 {
+      display: none;
+    }
+  }
+  
+  .regTeacherButton{
+    height: auto;
+  }

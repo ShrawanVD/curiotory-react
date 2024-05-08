@@ -1,4 +1,7 @@
-
+.content {
+  margin-top: -25%;
+  padding: 20% 5% 10%;
+}
 .content .registrationForm {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +33,7 @@
     z-index: 1;
   }
   
-  .registrationForm::after {
+  .content .registrationForm::after {
     content: "";
     position: absolute;
     top: 0;
@@ -41,65 +44,64 @@
     border-radius: 0 20px 20px 0;
   }
   
-  form {
+  .content .registrationForm form {
     display: flex;
     flex-direction: column;
   }
   
-  label {
+  .content .registrationForm label {
     margin-bottom: 8px;
   }
   
-  .genderOptions {
+  .content .registrationForm .genderOptions {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
   }
   
-  .genderOptions input[type="radio"] {
+  .content .registrationForm .genderOptions input {
     margin: 0 5px 0 10px;
   }
   
-  .genderOptions input {
+  .content .registrationForm .genderOptions input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
   }
   
-  .languagesOptions {
+  .content .registrationForm .languagesOptions {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 5%;
   }
   
-  .languagesOptions input[type="checkbox"] {
+  .content .registrationForm .languagesOptions input {
     margin: 0 2px 0 10px;
   }
   
-  .languagesOptions input {
+  .content .registrationForm .languagesOptions input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
   }
   
-  input,
-  textarea {
+  .content .registrationForm input, .content .registrationForm textarea {
     margin-bottom: 16px;
     padding: 8px;
     width: calc(100% - 10px);
     box-sizing: border-box;
   }
   
-  .qualification {
+  .content .registrationForm .qualification {
     margin-bottom: 4%;
   }
   
-  .qualification label {
+  .content .registrationForm .qualification label {
     display: block;
   }
   
-  .qualificationSection select {
+  .content .registrationForm .qualificationSection select {
     width: calc(100% - 10px);
     padding: 8px;
     font-size: 16px;
@@ -109,72 +111,72 @@
     overflow: hidden;
   }
   
-  .qualificationSection select:hover,
-  .qualificationSection select:focus {
+  .content .registrationForm .qualificationSection select:hover,
+  .content .registrationForm .qualificationSection select:focus {
     border-color: #666;
   }
   
-  .studentGroupOptions {
+  .content .registrationForm .studentGroupOptions {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 5%;
   }
   
-  .studentGroupOptions input[type="checkbox"] {
+  .content .registrationForm .studentGroupOptions input {
     margin: 0 2px 0 10px;
   }
   
-  .studentGroupOptions input {
+  .content .registrationForm .studentGroupOptions input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
   }
   
-  .englishLanguageProficiency {
+  .content .registrationForm .englishLanguageProficiency {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 5%;
   }
   
-  .englishLanguageProficiency input[type="checkbox"] {
+  .content .registrationForm .englishLanguageProficiency input[type="checkbox"] {
     margin: 0 2px 0 10px;
   }
   
-  .englishLanguageProficiency input {
+  .content .registrationForm .englishLanguageProficiency input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
   }
   
-  .experienceOptions {
+  .content .registrationForm .experienceOptions {
     display: flex;
     align-items: center;
     margin-bottom: 4%;
   }
   
-  .experienceOptions input[type="radio"] {
+    .content .registrationForm .experienceOptions input[type="radio"] {
     margin: 0 5px 0 10px;
   }
   
-  .experienceOptions input {
+    .content .registrationForm .experienceOptions input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
   }
   
-  .certificatesHaveOrNotOptions {
+    .content .registrationForm .certificatesHaveOrNotOptions {
     display: flex;
     align-items: center;
     margin-bottom: 4%;
   }
   
-  .certificatesHaveOrNotOptions input[type="radio"] {
+    .content .registrationForm .certificatesHaveOrNotOptions input {
     margin: 0 5px 0 10px;
   }
   
-  .certificatesHaveOrNotOptions input {
+  .content .registrationForm .certificatesHaveOrNotOptions input {
     padding: 8px;
     width: 30px;
     box-sizing: border-box;
@@ -185,10 +187,16 @@
     font-size: 1.3em;
     font-family: "Nunito Sans", sans-serif;
   }
+
+  .chooseFile{
+    background-color: white;
+    height: auto;
+    cursor: pointer;
+  }
   
   /* rate per hour */
   
-  .rateContainer {
+    .rateContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -196,7 +204,7 @@
     margin-bottom: 2%;
   }
   
-  .rateInput {
+    .content .registrationForm .rateInput {
     display: flex;
     align-items: center;
     width: calc(100% - 10px);
@@ -218,7 +226,7 @@
     margin-right: 5px;
   }
   
-  .rateControls button {
+  .content .registrationForm .rateControls button {
     padding: 8px;
     font-size: 16px;
     cursor: pointer;
@@ -228,12 +236,11 @@
     border-radius: 4px;
   }
   
-  #ratePerHour:hover,
-  #ratePerHour:focus {
+  #ratePerHour:hover, #ratePerHour:focus {
     border-color: #666;
   }
   
-  textarea.limited-height {
+  .content .registrationForm textarea {
     max-height: 100px;
     resize: vertical;
   }
@@ -242,7 +249,7 @@
     text-align: center;
   }
   
-  button {
+  .content .registrationForm button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #8bc34a;
@@ -253,7 +260,19 @@
     transition: background-color 0.3s ease-in-out;
   }
   
-  button:hover {
+  .content .registrationForm button:hover {
     color: white;
-    background-color: green; /* Adjust the color on hover as needed */
+    background-color: green; 
+  }
+
+  @media screen and  (max-width: 800px) {
+    .content .title h1{
+      font-size: 2.2rem;
+    }
+  }
+
+  @media screen and  (max-width: 580px) {
+    .content .title h1{
+      font-size: 1.9rem;
+    }
   }

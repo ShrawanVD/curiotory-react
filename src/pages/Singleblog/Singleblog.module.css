@@ -319,3 +319,27 @@ ul li.active {
     padding: 2rem 13rem;
     background-color: #ebf8fc;
 }
+
+@media screen and (max-width: 1300px) {
+  .singleBlogContainer{
+    padding: 2rem 8rem;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .singleBlogContainer{
+    padding: 2rem 5rem;
+}
+}
+
+@media screen and (max-width: 700px) {
+  .singleBlogContainer{
+    padding: 2rem 3rem;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .singleBlogContainer{
+    padding: 2rem 1rem;
+}
+}
