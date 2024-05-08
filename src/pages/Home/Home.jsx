@@ -555,25 +555,25 @@ function Home() {
                       </h2>
                     </div>
                     <div className="european-lang-right-part">
-                      <a id="afterbutton" href="./html/french.html">
+                      <a id="afterbutton" href="French">
                         <button className="lang-button">French</button>
                       </a>
-                      <a id="afterbutton" href="./html/german.html">
+                      <a id="afterbutton" href="German">
                         <button className="lang-button">German</button>
                       </a>
-                      <a id="afterbutton" href="./html/dutch.html">
+                      <a id="afterbutton" href="Dutch">
                         <button className="lang-button">Dutch</button>
                       </a>
-                      <a id="afterbutton" href="./html/russian.html">
+                      <a id="afterbutton" href="Russian">
                         <button className="lang-button">Russian</button>
                       </a>
-                      <a id="afterbutton" href="./html/spanish.html">
+                      <a id="afterbutton" href="Spanish">
                         <button className="lang-button">Spanish</button>
                       </a>
-                      <a id="afterbutton" href="./html/english.html">
+                      <a id="afterbutton" href="English">
                         <button className="lang-button">English</button>
                       </a>
-                      <a id="afterbutton" href="./html/portuguese.html">
+                      <a id="afterbutton" href="Portuguese">
                         <button className="lang-button">Portuguese</button>
                       </a>
                     </div>
@@ -586,16 +586,16 @@ function Home() {
                       </h2>
                     </div>
                     <div className="asian-lang-right-part">
-                      <a id="afterbutton" href="./html/mandarin.html">
+                      <a id="afterbutton" href="Mandarin">
                         <button className="lang-button">Mandarin</button>
                       </a>
-                      <a id="afterbutton" href="./html/korean.html">
+                      <a id="afterbutton" href="Korean">
                         <button className="lang-button">Korean</button>
                       </a>
-                      <a id="afterbutton" href="./html/arabic.html">
+                      <a id="afterbutton" href="Arabic">
                         <button className="lang-button">Arabic</button>
                       </a>
-                      <a id="afterbutton" href="./html/japanese.html">
+                      <a id="afterbutton" href="Japanese">
                         <button className="lang-button">Japanese</button>
                       </a>
                     </div>

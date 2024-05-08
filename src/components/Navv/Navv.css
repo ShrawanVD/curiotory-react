@@ -3,4 +3,10 @@
     justify-content: space-around;
 }
 .navbarContainer{
+    /* background-color: red; */
+    color: black;
+    margin: 0rem 0rem;
+    padding: 0rem;
+    align-items: center;
+    justify-content: center;
 }
