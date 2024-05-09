@@ -21,16 +21,16 @@ function Footer() {
                 <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <a href="/Blogs">Blogs</a>
+                    <a href="/blogs">Blogs</a>
                   </li>
                   <li>
-                    <a href="/About">About Us</a>
+                    <a href="/aboutus">About Us</a>
                   </li>
                   <li>
-                    <a href="/MeetTheTutor">Meet Our Tutor</a>
+                    <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
                   <li>
-                    <a href="Becometutor">Become a Tutor</a>
+                    <a href="becometutor">Become a Tutor</a>
                   </li>
                 </ul>
               </div>
@@ -42,13 +42,13 @@ function Footer() {
                 <h4>Legal</h4>
                 <ul>
                   <li>
-                    <a href="/Privacy">Privacy Policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="/Refund">Refund Policy & NDNC</a>
+                    <a href="/refund">Refund Policy & NDNC</a>
                   </li>
                   <li>
-                    <a href="/Terms">Terms and Conditions</a>
+                    <a href="/terms">Terms and Conditions</a>
                   </li>
                 </ul>
               </div>

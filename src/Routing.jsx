@@ -26,29 +26,29 @@ import Becometutor from './pages/Becometutor/Becometutor';
 export default (
     <Routes>
         <Route index element={<Home/>} />
-        <Route path="/About" element={<Aboutus/>} />
-        <Route path="/Contact" element={<Contact/>} />
-        <Route path="/Blogs" element={<Blogs/>} />
-        <Route path="/BlogsId" element={<Singleblog/>} />
-        <Route path="/MeetTheTutor" element={<Tutor/>} />
-        <Route path="/Refund" element={<Refund/>} />
-        <Route path="/Privacy" element={<Privacy/>} />
-        <Route path="/Terms" element={<Terms />} />
-        <Route path="/Becometutor" element={<Becometutor />} />
-        <Route path="/TeacherForm" element={<Teacherform />} />
-        <Route path="/Download" element={<Download />} />
+        <Route path="/aboutus" element={<Aboutus/>} />
+        <Route path="/contactus" element={<Contact/>} />
+        <Route path="/blogs" element={<Blogs/>} />
+        <Route path="/blogsId" element={<Singleblog/>} />
+        <Route path="/meetthetutor" element={<Tutor/>} />
+        <Route path="/refund" element={<Refund/>} />
+        <Route path="/privacy" element={<Privacy/>} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/becometutor" element={<Becometutor />} />
+        <Route path="/teacherform" element={<Teacherform />} />
+        <Route path="/download" element={<Download />} />
         
         {/* Languages pages routing */}
-        <Route path="/Arabic" element={<Arabic />} />
-        <Route path="/Dutch" element={<Dutch />} />
-        <Route path="/English" element={<English />} />
-        <Route path="/French" element={<French />} />
-        <Route path="/German" element={<German />} />
-        <Route path="/Japanese" element={<Japanese />} />
-        <Route path="/Korean" element={<Korean />} />
-        <Route path="/Mandarin" element={<Mandarin />} />
-        <Route path="/Portuguese" element={<Portuguese />} />
-        <Route path="/Russian" element={<Russian />} />
-        <Route path="/Spanish" element={<Spanish />} />
+        <Route path="/arabic" element={<Arabic />} />
+        <Route path="/dutch" element={<Dutch />} />
+        <Route path="/english" element={<English />} />
+        <Route path="/french" element={<French />} />
+        <Route path="/german" element={<German />} />
+        <Route path="/japanese" element={<Japanese />} />
+        <Route path="/korean" element={<Korean />} />
+        <Route path="/mandarin" element={<Mandarin />} />
+        <Route path="/portuguese" element={<Portuguese />} />
+        <Route path="/russian" element={<Russian />} />
+        <Route path="/spanish" element={<Spanish />} />
     </Routes>
 );

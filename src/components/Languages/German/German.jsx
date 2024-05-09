@@ -49,7 +49,7 @@ function German() {
       </p>
 
       <p>
-        <a href="/TeacherForm" className="btn plain">Discover More</a>
+        <a href="/teacherform" className="btn plain">Discover More</a>
       </p>
     </div>
   </div>

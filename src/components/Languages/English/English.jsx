@@ -59,7 +59,7 @@ function English() {
           </p>
 
           <p>
-            <a href="/TeacherForm" className="btn plain">
+            <a href="/teacherform" className="btn plain">
               Discover More
             </a>
           </p>

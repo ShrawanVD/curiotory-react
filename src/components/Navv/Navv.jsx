@@ -6,13 +6,13 @@ function Navv() {
 
   return (
     // className="navbarContainer"
-    <Navbar expand="lg" className="bg-body-tertiary navbarContainer" style={{backgroundColor: '#EBFAFF',color: 'black',width: '100%', margin: 'auto', padding: '7px 30px 2px' }}>
+    <Navbar expand="lg" className="bg-body-tertiary navbarContainer" style={{backgroundColor: '#EBFAFF',color: 'black',width: '100%', margin: 'auto' }}>
       <Container fluid className="navbarContainer">
         <Navbar.Brand href="/">
           <img
             src="/Index/logo.png"
             width="auto"
-            height="40"
+            height="42"
             className="d-inline-block align-top"
             alt="React"
           />
@@ -20,32 +20,33 @@ function Navv() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto">
-            <NavDropdown title="Language Solution" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/French">French</NavDropdown.Item>
-              <NavDropdown.Item href="/Spanish">Spanish</NavDropdown.Item>
-              <NavDropdown.Item href="/German">German</NavDropdown.Item>
-              <NavDropdown.Item href="/Russian">Russian</NavDropdown.Item>
-              <NavDropdown.Item href="/English">English</NavDropdown.Item>
-              <NavDropdown.Item href="Mandarin">Mandarin</NavDropdown.Item>
-              <NavDropdown.Item href="/Dutch">Dutch</NavDropdown.Item>
-              <NavDropdown.Item href="/Portuguese">Portuguese</NavDropdown.Item>
-              <NavDropdown.Item href="/Japanese">Japanese</NavDropdown.Item>
-              <NavDropdown.Item href="/Korean">Korean</NavDropdown.Item>
-              <NavDropdown.Item href="Arabic">Arabic</NavDropdown.Item>
+            <NavDropdown title={<span style={{ color: 'black' }}>Language Solution</span>} id="basic-nav-dropdown" style={{color: 'black', margin: '0 0.7rem' }}>
+              <NavDropdown.Item href="/french">French</NavDropdown.Item>
+              <NavDropdown.Item href="/spanish">Spanish</NavDropdown.Item>
+              <NavDropdown.Item href="/german">German</NavDropdown.Item>
+              <NavDropdown.Item href="/russian">Russian</NavDropdown.Item>
+              <NavDropdown.Item href="/english">English</NavDropdown.Item>
+              <NavDropdown.Item href="/mandarin">Mandarin</NavDropdown.Item>
+              <NavDropdown.Item href="/dutch">Dutch</NavDropdown.Item>
+              <NavDropdown.Item href="/portuguese">Portuguese</NavDropdown.Item>
+              <NavDropdown.Item href="/japanese">Japanese</NavDropdown.Item>
+              <NavDropdown.Item href="/korean">Korean</NavDropdown.Item>
+              <NavDropdown.Item href="/arabic">Arabic</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="/Blogs">Blogs</Nav.Link>
-            <Nav.Link href="/MeetTheTutor">Meet the Tutors</Nav.Link>
-            <Nav.Link href="/About">About Us</Nav.Link>
-            <Nav.Link href="/Contact">Contact Us</Nav.Link>
+            <Nav.Link href="/blogs" style={{ margin: '0 0.7rem',color: 'black' }} className="navLinkNavbar">Blogs</Nav.Link>
+            <Nav.Link href="/meetthetutor" style={{ margin: '0 0.7rem',color: 'black' }} className="navLinkNavbar">Meet the Tutors</Nav.Link>
+            <Nav.Link href="/aboutus" style={{ margin: '0 0.7rem',color: 'black' }} className="navLinkNavbar">About Us</Nav.Link>
+            <Nav.Link href="/contactus" style={{ margin: '0 0.7rem',color: 'black' }} className="navLinkNavbar">Contact Us</Nav.Link>
           </Nav>
           <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
             <img
               src="/Index/play.png"
-              width="45"
+              width="58"
               height="auto"
               className="d-inline-block align-top"
               alt="React"
+              style={{ margin: '0 0.7rem' }}
             />
           </Navbar.Brand>
         </Navbar.Collapse>

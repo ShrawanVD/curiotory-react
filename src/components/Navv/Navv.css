@@ -6,7 +6,24 @@
     /* background-color: red; */
     color: black;
     margin: 0rem 0rem;
-    padding: 0rem;
+    padding: 0.1rem 1.1rem 0rem 5rem;
     align-items: center;
     justify-content: center;
+}
+/* .navLinkNavbar {
+    color: black; 
+    margin: 0 0.7rem;
+    text-decoration: none; 
+  }
+  
+  .navLinkNavbar :hover {
+    color: white; 
+  } */
+  
+  
+
+@media screen and (max-width: 990px){
+    .navbarContainer{
+        padding: 0.5rem 1.6rem 0rem;
+    }
 }

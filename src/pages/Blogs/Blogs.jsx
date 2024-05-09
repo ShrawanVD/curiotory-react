@@ -33,7 +33,7 @@ function Blogs() {
   };
 
   const openBlog = (postId) => {
-    window.location.href = `/BlogsId?id=${postId}`;
+    window.location.href = `/blogsId?id=${postId}`;
   };
 
   return (

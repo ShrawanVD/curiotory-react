@@ -54,7 +54,7 @@ function French() {
             Prepare for exams tailored to your proficiency level and achieve
             certification as proof of your French language competence.
           </p>
-          <a href="/TeacherForm" className="btn plain">
+          <a href="/teacherform" className="btn plain">
             Discover More
           </a>
         </div>
