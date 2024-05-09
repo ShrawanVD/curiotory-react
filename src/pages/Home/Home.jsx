@@ -750,7 +750,6 @@ function Home() {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide></SwiperSlide>
                 ...
               </Swiper>
             </div>

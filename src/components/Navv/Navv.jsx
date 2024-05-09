@@ -6,7 +6,7 @@ function Navv() {
 
   return (
     // className="navbarContainer"
-    <Navbar expand="lg" className="bg-body-tertiary navbarContainer" style={{backgroundColor: '#EBFAFF',color: 'black',width: '100%', margin: 'auto' }}>
+    <Navbar expand="lg" className="bg-body-tertiary navbarContainer" style={{backgroundColor: '#EBFAFF',color: 'black',width: '100%', margin: 'auto', padding: '7px 30px 2px' }}>
       <Container fluid className="navbarContainer">
         <Navbar.Brand href="/">
           <img

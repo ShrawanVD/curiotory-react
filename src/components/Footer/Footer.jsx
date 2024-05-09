@@ -60,7 +60,7 @@ function Footer() {
                 <h4>Contact Us</h4>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a href="mailto:Support@curiotory.com" target="_blank">
                       <i className="email fa fa-envelope"></i>
                       Support@curiotory.com
                     </a>
@@ -76,23 +76,23 @@ function Footer() {
               <hr />
               <ul>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in" target="_blank">
                     <i className="fab fa-linkedin iconlinkdin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/curiotory_/" target="_blank">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg" target="_blank">
                     <i className="fa-brands fa-youtube"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/Curiotory/" target="_blank">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
