@@ -22,7 +22,6 @@ import Portuguese from './components/Languages/Portuguese/Portuguese';
 import Russian from './components/Languages/Russian/Russian';
 import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
-import Texttospeech from './services/TextToSpeech/Texttospeech';
 
 export default (
     <Routes>
@@ -51,7 +50,6 @@ export default (
         <Route path="/portuguese" element={<Portuguese />} />
         <Route path="/russian" element={<Russian />} />
         <Route path="/spanish" element={<Spanish />} />
-        <Route path="/text" element={<Texttospeech />} />
 
     </Routes>
 );

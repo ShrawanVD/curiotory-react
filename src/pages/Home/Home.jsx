@@ -670,7 +670,7 @@ function Home() {
                 // pagination={{ clickable: true }}
                 // scrollbar={{ draggable: true }}
                 autoplay={{
-                  delay: 1000,
+                  delay: 3000,
                   disableOnInteraction: false, // Resume autoplay after interaction
                 }}
                 onSwiper={(swiper) => console.log(swiper)}

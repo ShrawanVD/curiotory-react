@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: right;
+  margin-bottom: 15px;
 }
 .speakButton button{
   border-radius: 10px;
