@@ -1,6 +1,6 @@
 import Accordion from "../../components/Accordion";
 import Footer from "../../components/Footer/Footer";
-import Navv from "../../components/Navv/Navv";
+import Covernav from "../../components/Navv/Covernav";
 import "./Home.css";
 import { useState, useEffect } from "react";
 
@@ -84,13 +84,12 @@ function Home() {
 
       {showDiv2 && (
         <div>
-          <Navv />
+          <Covernav />
           <div>
             {/* <!-- cover page section --> */}
-
             <div className="cover-page">
               <div className="mascot-cover">
-                <img src="/mascot/curo2.gif" />
+                <img src="/mascot/coverani.gif" />
               </div>
               <h1>An online language learning platform</h1>
               <div className="coverpage-para">
@@ -107,6 +106,20 @@ function Home() {
                   <button>Get Started</button>
                 </a>
               </div>
+              <iframe src="https://lottie.host/embed/7f7e732e-de0e-44cd-a147-ea6259d8bc76/KREFPi38Qd.json" className="iframeLottie"></iframe>
+              {/* <iframe src="https://lottie.host/embed/5bab4f77-c262-4018-af62-b3b4f41bd254/LEHBLjyLYV.json" className="iframeLottie"></iframe> */}
+              {/* <script
+                src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"
+              ></script>
+              <dotlottie-player
+                src="https://lottie.host/696e7b16-e767-405a-96e3-4fc2e596f401/bmyOwAKBQh.json"
+                background="transparent"
+                speed="1"
+                style={{width: '300px', height: '300px'}}
+                loop
+                autoplay
+              ></dotlottie-player> */}
             </div>
 
             {/* <!-- sliding section --> */}
@@ -285,7 +298,15 @@ function Home() {
 
             {/* <!-- learn foreign language section --> */}
             <div className="learn-foriegn-lang-section">
-              <div className="learn-foriegn-lang">
+              <div className="learn-foriegn-lang"
+              //  style={{
+              //   backgroundImage: "url('/mascot/20imagemascot.png')",
+              //   backgroundSize: "contain",
+              //   backgroundPosition: "center",
+              //   backgroundRepeat: "no-repeat",
+              //   height: "auto",
+              // }}
+              >
                 <div className="learn-foriegn-lang-heading">
                   <h1>Why learn foreign languages?</h1>
                 </div>

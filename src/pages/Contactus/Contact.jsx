@@ -49,9 +49,9 @@ function Contact() {
       <div className={Contactcss.contactUs}>
         <div className={Contactcss.contactusDetails}>
           <img
-            width="143"
-            height="143"
-            src="/contact us/contact us page logo.png"
+            width="auto"
+            height="180px"
+            src="/mascot/CapLift.gif"
           />
           <h1>Contact Us</h1>
           <p>

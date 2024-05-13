@@ -2,7 +2,33 @@
     padding: 0;
     margin: 0;
   }
-  
+
+  /* mascot css starts here */
+.mascotAbout{
+  height:500px;
+  width: auto;
+}
+
+@media screen and (max-width: 1000px){
+  .mascotAbout{
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .mascotAbout{
+    height: 350px;
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 500px){
+  .mascotAbout{
+    height: 300px;
+    max-width: 480px;
+  }
+}
+
+  /* mascot css ends here */
   
   /* heading - top section */
   
@@ -35,7 +61,7 @@
   }
   
   .registerButton {
-    margin-top: 4%;
+    margin-top: -4%;
     border-radius: 25px;
     background-color: #45b9ef;
     padding: 20px;

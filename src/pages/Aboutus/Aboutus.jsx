@@ -1,11 +1,11 @@
-import Footer from '../../components/Footer/Footer';
-import Navv from '../../components/Navv/Navv';
-import Aboutuscss from  './About.module.css';
+import Footer from "../../components/Footer/Footer";
+import Navv from "../../components/Navv/Navv";
+import Aboutuscss from "./About.module.css";
 
 function Aboutus() {
   return (
     <>
-    <Navv />
+      <Navv />
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>
@@ -18,21 +18,37 @@ function Aboutus() {
           <ul>
             {/* + +{" "}  */}
             <li>
-              <span className={Aboutuscss.boldFirst}>30+ years</span> of combined language
-              training experience
+              <span className={Aboutuscss.boldFirst}>30+ years</span> of
+              combined language training experience
             </li>
             <li>
               Network of
-              <span className={Aboutuscss.boldFirst}> 5K+ language specialists</span> & growing
+              <span className={Aboutuscss.boldFirst}>
+                {" "}
+                5K+ language specialists
+              </span>{" "}
+              & growing
             </li>
             <li>
-              Students from <span className={Aboutuscss.boldFirst}>15+ countries</span> on 3
+              Students from{" "}
+              <span className={Aboutuscss.boldFirst}>15+ countries</span> on 3
               continents
             </li>
           </ul>
         </div>
         {/* <!-- <a className="register-button" href="">Get Started</a> --> */}
-        <a className={Aboutuscss.registerButton} href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform" target='_blank'>
+        <div>
+        <img
+              src="/mascot/Trophy.gif"
+              className={Aboutuscss.mascotAbout}
+              type="gif"
+            />
+        </div>
+        <a
+          className={Aboutuscss.registerButton}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+          target="_blank"
+        >
           Get Started
         </a>
       </div>
@@ -229,14 +245,14 @@ function Aboutus() {
             <div className={Aboutuscss.info}>
               <p>
                 Sheetal, CEO of Curiotory, brings two decades of education
-                experience and is celebrated among India&apos;s influential women and
-                business leaders. With an MBA from Symbiosis, a PG in PR &
-                Advertising from MICA, and a diploma in International Telecom
-                System Management from IIT Delhi. She&apos;s a powerhouse in both
-                business and technical domains. Recognized among the 21 Most
-                Influential Women Leaders in India and the 10 Most Inspiring
-                Business Leaders, Sheetal is shaping the future of Curiotory
-                with her leadership and expertise.
+                experience and is celebrated among India&apos;s influential
+                women and business leaders. With an MBA from Symbiosis, a PG in
+                PR & Advertising from MICA, and a diploma in International
+                Telecom System Management from IIT Delhi. She&apos;s a
+                powerhouse in both business and technical domains. Recognized
+                among the 21 Most Influential Women Leaders in India and the 10
+                Most Inspiring Business Leaders, Sheetal is shaping the future
+                of Curiotory with her leadership and expertise.
               </p>
             </div>
           </div>
@@ -252,15 +268,15 @@ function Aboutus() {
             </div>
             <div className={Aboutuscss.info}>
               <p>
-                Ram, Curiotory&apos;s Chief People and Culture Officer, brings over
-                two decades of Telecom industry experience, prioritizing
+                Ram, Curiotory&apos;s Chief People and Culture Officer, brings
+                over two decades of Telecom industry experience, prioritizing
                 customer-centric approaches. With a background at Idea Cellular
-                Ltd., Reliance Communications, and Tata Communications, he&apos;s
-                adept in learning development. Besides, Ram is an avid football
-                enthusiast, adventurer, cyclist, trekker, and sports blogger.
-                Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
-                Jamshedpur, he&apos;s committed to fostering a collaborative internal
-                culture at Curiotory for mutual success.
+                Ltd., Reliance Communications, and Tata Communications,
+                he&apos;s adept in learning development. Besides, Ram is an avid
+                football enthusiast, adventurer, cyclist, trekker, and sports
+                blogger. Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
+                Jamshedpur, he&apos;s committed to fostering a collaborative
+                internal culture at Curiotory for mutual success.
               </p>
             </div>
           </div>
