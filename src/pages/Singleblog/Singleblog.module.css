@@ -49,6 +49,25 @@
     line-height: 1.6;
     text-align: justify ;
 }
+.speakButton{
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.speakButton button{
+  border-radius: 10px;
+  color: white;
+  background-color: #044162;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 1px solid white;
+}
+.speakButton button:hover{
+color: #044162;
+background-color: white;
+border: 1px solid #044162;
+}
 
 #sub-image{
   display: block;
