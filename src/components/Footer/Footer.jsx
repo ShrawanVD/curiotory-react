@@ -55,7 +55,7 @@ function Footer() {
             </div>
 
             {/* Contacting Us */}
-            <div className="ss col-lg-">
+            <div className="ss col-lg-3">
               <div className="single_footer single_footer_address">
                 <h4>Contact Us</h4>
                 <ul>
