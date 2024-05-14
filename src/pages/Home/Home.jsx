@@ -102,9 +102,9 @@ function Home() {
               <div className="coverpage-button">
                 <a
                   target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 >
-                  <button>Get Started</button>
+                  <button>Download Our App</button>
                 </a>
               </div>
               {/* <iframe
@@ -115,7 +115,7 @@ function Home() {
               <Player
                 autoplay
                 loop
-                src="/lottiePlayer/final.json"
+                src="/lottiePlayer/proFinal.json"
               />
               </div>
             </div>
