@@ -103,7 +103,7 @@ ul {
   transition: all 0.3s ease 0s;
   line-height: 36px;
   font-size: 15px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .single_footer ul li a:hover {
   color: black;

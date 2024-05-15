@@ -48,7 +48,7 @@ function Footer() {
                     <a href="/refund">Refund Policy & NDNC</a>
                   </li>
                   <li>
-                    <a href="/terms">Terms and Conditions</a>
+                    <a href="/terms">Terms And Conditions</a>
                   </li>
                 </ul>
               </div>
