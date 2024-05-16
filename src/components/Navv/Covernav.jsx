@@ -1,6 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import "./Navv.css";
-
 function Covernav() {
   return (
      // className="navbarContainer"
@@ -8,6 +7,7 @@ function Covernav() {
     // padding: '0.5rem 0rem 0rem'
     // }}>
     <>
+
     <Navbar
       expand="lg"
       className="bg-body-tertiary navbarContainer"
@@ -24,6 +24,7 @@ function Covernav() {
         fontFamily: "Raleway, Arial, sans-serif",
       }}
     >
+
       <Container fluid className="navbarContainer">
         <Navbar.Brand href="/">
           <img

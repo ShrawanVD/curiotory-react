@@ -24,6 +24,8 @@ import "swiper/css/scrollbar";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AnimCursor from "../../components/AnimatedCursor/AnimCursor";
+
 // import { Settings } from "@mui/icons-material";
 
 function Home() {
@@ -85,6 +87,7 @@ function Home() {
 
       {showDiv2 && (
         <div>
+          <AnimCursor/>
           <Covernav />
           <div>
             {/* <!-- cover page section --> */}

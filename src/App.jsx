@@ -9,9 +9,6 @@ const App = () => {
   return (
     
      <>
-     {/* <Navv/>
-     <Home/>
-     <Footer/> */}
      <BrowserRouter>
       {Routing}
      </BrowserRouter>
