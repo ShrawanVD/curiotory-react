@@ -167,7 +167,7 @@ function Blogs() {
         <div className={Blogscss.blogs} id="blogsSection">
           <div className={Blogscss.blogContainer}>
             {currentPosts.map((post) => (
-              <div key={post.id} className={Blogscss.blogCard} onClick={() => openBlog(post.id)}>
+              <div key={post._id} className={Blogscss.blogCard} onClick={() => openBlog(post._id)}>
                 <img src={post.imageUrl} alt="Blog Image" />
                 <div style={{ fontFamily: "'Poppins', sans-serif" }}>
                   <h2>{post.title}</h2>
