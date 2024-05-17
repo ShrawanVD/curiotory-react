@@ -44,7 +44,7 @@ function ProgressBar() {
             style={{
 
                 height: "100%",
-                backgroundImage: "linear-gradient(to right, #3c59c0, #3563c7, #2d6cce, #2675d4, #1f7ed9, #587dd9, #7a7bd7, #957ad3, #c36db9, #dd6596, #e56972, #dc7651)",
+                backgroundImage: "linear-gradient(to right, #4285f4, #b574df, #ef66b5, #ff6b83, #ff8557, #ff8c45, #ff952f, #fd9f09, #fc8916, #f87322, #f25b2c, #ea4335)",
                 // backgroundColor: "blue",
                 width: `${scrollPercentage}%`,
                 borderTopRightRadius: "5px",

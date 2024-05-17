@@ -37,7 +37,7 @@ ul {
 
 .footer {
   /* background: linear-gradient(105deg, #6e99e6, #093c94); */
-  background: linear-gradient(180deg, #0e6af5 19%, #0ceadc 132%);
+  background: linear-gradient(180deg,#1ebce0 19%, #2d7ffb  132%);
   padding-top: 5rem;
   padding-bottom: 40px;
   padding-left: 0;
@@ -72,7 +72,7 @@ ul {
 
 .single_footer h4 {
   background: transparent;
-  color: white;
+  color: whitesmoke;
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: 700;
@@ -84,11 +84,11 @@ ul {
   display: block;
   height: 2px;
   width: 40px;
-  background: #fff;
+  background: whitesmoke;
   margin-top: 20px;
 }
 .single_footer p {
-  color: #fff;
+  color: whitesmoke;
   background: transparent;
 }
 .single_footer ul {
@@ -98,7 +98,7 @@ ul {
 }
 
 .single_footer ul li a {
-  color: #fff;
+  color: whitesmoke;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 36px;
@@ -111,11 +111,11 @@ ul {
 }
 
 .single_footer_address ul li {
-  color: #fff;
+  color: whitesmoke;
 }
 .single_footer_address ul li span {
   font-weight: 400;
-  color: #fff;
+  color: whitesmoke;
   line-height: 28px;
 }
 .contact_social ul {
@@ -134,7 +134,7 @@ width: 100%;
   justify-content: center;
   align-items: center;
   width: 80%;
-  border: 1px solid rgb(233, 226, 226);
+  border: 1px solid whitesmoke;
 }
 
 /*START SOCIAL PROFILE CSS*/
@@ -161,13 +161,14 @@ width: 100%;
   transition: all 0.3s ease 0s;
   margin: 0px 5px;
   font-size: 18px;
-  color: #fff;
+  /* color: white; */
+  color: whitesmoke;
   border-radius: 30px;
   width: 50px;
   height: 50px;
   line-height: 50px;
   display: block;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 768px) {
   .social_profile ul li a {
@@ -233,7 +234,7 @@ width: 100%;
 /*END SOCIAL PROFILE CSS*/
 .copyright {
   margin-top: 2rem;
-  color: #fff;
+  color: whitesmoke;
   font-size: 15px;
   text-align: center;
   background: transparent;

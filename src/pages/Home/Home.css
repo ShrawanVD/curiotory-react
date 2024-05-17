@@ -83,7 +83,8 @@
   align-items: center;
   text-align: center;
   /* background-color: #ebf8fc !important; */
-  background: linear-gradient(180deg, #4186ef 19%, #16efe1 132%);
+  /* background: linear-gradient(180deg, #4186ef 19%, #16efe1 132%); */
+  background: linear-gradient(180deg, #5597f9 19%, #68e1d9 132%);
 }
 /* #ebf8fc- color mascot backgorund */
 .cover-page h1 {
@@ -133,16 +134,16 @@
   border: none;
   cursor: pointer;
   /* color: #0368ff; */
-  background-color: #0bc4ff;
-    color: #1f2852;
+  background-color: #EA4335;
+    color: #000000;
   margin-bottom: 40px;
   font-weight: bold;
 
 }
 .cover-page .coverpage-button button:hover {
-  /* background-color: #0368ff; */
-  background-color: white;
-  border: 1px solid white;
+  background-color: #d4dbe9;
+  /* background: linear-gradient(to right, #4285f4, #b574df, #ef66b5, #ff6b83, #ff8557, #ff8c45, #ff952f, #fd9f09, #fc8916, #f87322, #f25b2c, #ea4335); */
+  border: 1px solid rgb(0, 0, 0);
   color: black;
   font-weight: bold;
   transition: 0.3s ease-in-out;
