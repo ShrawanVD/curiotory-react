@@ -105,7 +105,7 @@ function Home() {
                   target="_blank"
                   href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 >
-                  <button>Download Our App</button>
+                  <button>Download the app</button>
                 </a>
               </div>
               {/* <iframe
