@@ -28,3 +28,41 @@
         padding: 0.5rem 1.6rem 0rem;
     }
 }
+
+/* login button css  */
+.loginButton{
+    padding: 7px 16px; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(12, 157, 241);
+    color: white;
+    margin-top: -10px;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: bold;
+}
+.loginButton:hover{
+    color: black;
+    background-color: rgb(94, 186, 240);
+}
+
+.loginButtonCovernav{
+    padding: 7px 16px; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 7px;
+    background-color: #2F327C;
+    color: white;
+    font-weight: bold;
+    margin-top: -10px;
+  font-family: Raleway, Arial, sans-serif;
+
+}
+.loginButtonCovernav:hover{
+    color: #2F327C;
+    background-color: white;
+}

@@ -85,6 +85,9 @@ function Covernav() {
             >
               Contact Us
             </Nav.Link>
+            <Nav.Link href="https://curiotory.com/login">           
+            <button className="loginButtonCovernav">Login</button>
+              </Nav.Link>
           </Nav>
           <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
             <img

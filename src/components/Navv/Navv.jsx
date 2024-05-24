@@ -39,7 +39,7 @@ function Navv() {
             <NavDropdown
               title={<span style={{ color: "black" }}>Language Solution</span>}
               id="basic-nav-dropdown"
-              style={{margin: "0 0.7rem" }}
+              style={{ margin: "0 0.7rem" }}
             >
               <NavDropdown.Item href="/french">French</NavDropdown.Item>
               <NavDropdown.Item href="/spanish">Spanish</NavDropdown.Item>
@@ -82,6 +82,10 @@ function Navv() {
             >
               Contact Us
             </Nav.Link>
+            <Nav.Link href="https://curiotory.com/login">           
+            <button className="loginButton">Login</button>
+              </Nav.Link>
+              
           </Nav>
           <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
             <img
