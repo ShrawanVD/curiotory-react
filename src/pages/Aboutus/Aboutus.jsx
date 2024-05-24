@@ -1,11 +1,11 @@
 import Footer from "../../components/Footer/Footer";
-import Navv from "../../components/Navv/Navv";
+import Covernav from "../../components/Navv/Covernav";
 import Aboutuscss from "./About.module.css";
 
 function Aboutus() {
   return (
     <>
-      <Navv />
+      <Covernav />
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>

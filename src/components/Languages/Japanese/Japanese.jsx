@@ -47,7 +47,7 @@ function Japanese() {
       </p>
 
       <p>
-        <a href="/teacherform" className="btn plain">Discover More</a>
+        <a href="/contactus" className="btn plain">Discover More</a>
       </p>
     </div>
   </div>

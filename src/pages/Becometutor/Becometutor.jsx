@@ -1,11 +1,11 @@
-import Navv from "../../components/Navv/Navv";
+import Covernav from "../../components/Navv/Covernav";
 import Footer from "../../components/Footer/Footer";
 import "./Becometutor.css";
 
 function Becometutor() {
   return (
     <div>
-      <Navv />
+      <Covernav />
       <div>
         {/* <!-- first section --> */}
         <div className="become-tutor-first-section">

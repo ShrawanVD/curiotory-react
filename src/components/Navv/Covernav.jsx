@@ -18,7 +18,7 @@ function Covernav() {
         // backdropFilter: "blur(5.1px)",
         // WebkitBackdropFilter: "blur(5.1px)",
         // background: "#4186ef ",
-        background: "#5597f9",
+        background: "#89CFF0",
         color: "white",
         width: "100%",
         margin: "auto",
@@ -29,7 +29,7 @@ function Covernav() {
       <Container fluid className="navbarContainer">
         <Navbar.Brand href="/">
           <img
-            src="/Index/curiotoryWhite.png"
+            src="/Index/logo.png"
             width="auto"
             height="42"
             className="d-inline-block align-top"
@@ -40,7 +40,7 @@ function Covernav() {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto">
             <NavDropdown
-              title={<span style={{ color: "white" }}>Language Solution</span>}
+              title={<span style={{ color: "#2F327C" }}>Language Solution</span>}
               id="basic-nav-dropdown"
               style={{ color: "black", margin: "0 0.7rem" }}
             >
@@ -59,28 +59,28 @@ function Covernav() {
 
             <Nav.Link
               href="/blogs"
-              style={{ margin: "0 0.7rem", color: "#f1f1f1" }}
+              style={{ margin: "0 0.7rem", color: "#2F327C" }}
               className="navLinkNavbar"
             >
               Blogs
             </Nav.Link>
             <Nav.Link
               href="/meetthetutor"
-              style={{ margin: "0 0.7rem", color: "#f1f1f1" }}
+              style={{ margin: "0 0.7rem", color: "#2F327C" }}
               className="navLinkNavbar"
             >
               Meet the Tutors
             </Nav.Link>
             <Nav.Link
               href="/aboutus"
-              style={{ margin: "0 0.7rem", color: "#f1f1f1" }}
+              style={{ margin: "0 0.7rem", color: "#2F327C" }}
               className="navLinkNavbar"
             >
               About Us
             </Nav.Link>
             <Nav.Link
               href="/contactus"
-              style={{ margin: "0 0.7rem", color: "#f1f1f1" }}
+              style={{ margin: "0 0.7rem", color: "#2F327C" }}
               className="navLinkNavbar"
             >
               Contact Us

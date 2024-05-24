@@ -56,7 +56,7 @@ function Spanish() {
             earn certification as tangible evidence of your Spanish language
             competence.
           </p>
-          <a href="/teacherform" className="btn plain">
+          <a href="/contactus" className="btn plain">
             Discover More
           </a>
         </div>

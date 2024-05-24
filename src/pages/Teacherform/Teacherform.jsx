@@ -1,7 +1,7 @@
 import teachercss from './Teacherform.module.css';
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
-import Navv from '../../components/Navv/Navv';
+import Covernav from "../../components/Navv/Covernav";
 
 class Teacherform extends React.Component {
   constructor(props) {
@@ -36,7 +36,7 @@ class Teacherform extends React.Component {
   render() {
     return (
       <div>
-        <Navv />
+        <Covernav />
       <div className={teachercss.content}>
         <div className={teachercss.title}>
           <h1>Teacher Registration Form</h1>

@@ -646,8 +646,7 @@ function Home() {
 
                 <a
                   className="register-button"
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+                  href="/teacherform"
                 >
                   Register as a teacher
                 </a>

@@ -58,7 +58,7 @@ function Dutch() {
           </p>
 
           <p>
-            <a href="/teacherform" className="btn plain">
+            <a href="/contactus" className="btn plain">
               Discover More
             </a>
           </p>
