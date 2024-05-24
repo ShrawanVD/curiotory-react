@@ -105,7 +105,7 @@ function Home() {
                   target="_blank"
                   href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 >
-                  <button>Download Our App</button>
+                  <button>Download the app</button>
                 </a>
               </div>
               {/* <iframe
@@ -646,8 +646,7 @@ function Home() {
 
                 <a
                   className="register-button"
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+                  href="/teacherform"
                 >
                   Register as a teacher
                 </a>
