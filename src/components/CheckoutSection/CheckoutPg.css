@@ -1,0 +1,242 @@
+.checkout-pg {
+  /* margin-top: 2rem; */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.leftpg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.course_details {
+  width: 60%;
+  margin-right: -11rem;
+}
+
+.custom {
+  margin-top: 2rem;
+  border: none;
+}
+
+.card-title {
+  font-weight: bold;
+  font-family: "Poppins", Sans-serif;
+  text-align: left;
+}
+
+.teacher {
+  color: black;
+}
+
+.card-text {
+  text-align: justify;
+  font-family: "Poppins", Sans-serif;
+  margin-bottom: 2rem;
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-justify: inter-word;
+}
+
+small li {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+small li ul {
+  cursor: pointer;
+  color: black;
+  margin-right: 1rem;
+  text-decoration: underline;
+}
+
+/* right section */
+
+.rightpg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7f9;
+  padding: 10rem 0rem;
+}
+
+.master-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 5px;
+  margin-left: 5rem;
+}
+
+.card {
+  width: 70%;
+  background: #ffffff;
+}
+
+/* headings */
+
+.master-container .heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid #efeff3;
+  font-weight: 700;
+  font-size: 11px;
+  color: #63656b;
+}
+
+/* 1st card cart */
+.cart {
+  /* border-radius: 19px 19px 7px 7px; */
+  border-radius: 10px;
+  margin-top: -1rem;
+}
+
+.cart .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3px 8px;
+}
+
+/*Inputs box*/
+.form-container {
+  padding: 0 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0rem 0 0.5rem;
+  width: 100%;
+}
+
+.input {
+  border: 1px solid #d9d7d7;
+  background: none;
+  /* border: 0; */
+  height: 40px;
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  font-family: "Poppins", Sans-serif;
+}
+
+.form-container .input::placeholder {
+  letter-spacing: 1px;
+  font-size: smaller;
+  color: grey;
+  font-family: "Poppins", Sans-serif;
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+/* ---------------- COUPONS IF NEEDED -------------------- */
+
+/* coupons */
+/* .coupons {
+    border-radius: 7px;
+  }
+  
+  .coupons form {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  
+  .coupons form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+    box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
+  } */
+
+/* Checkout */
+.checkout {
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.checkout .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 1rem 12px;
+}
+
+.checkout .details .checkout-span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.checkout .details .checkout-amount {
+  font-weight: bolder;
+}
+
+/* button section */
+.checkout--footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: auto;
+}
+
+.checkout--footer button {
+  width: 70%;
+  margin-top: 1rem;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.checkout--footer .purchase--btn:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+}
+
+.checkout--footer .images {
+  width: 35%;
+  margin-top: 1rem;
+  margin-left: 7rem;
+}

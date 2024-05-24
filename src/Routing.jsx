@@ -22,6 +22,8 @@ import Portuguese from './components/Languages/Portuguese/Portuguese';
 import Russian from './components/Languages/Russian/Russian';
 import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
+import CoursesSection from './components/Courses/CoursesSection';
+import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 
 export default (
     <Routes>
@@ -37,6 +39,8 @@ export default (
         <Route path="/becometutor" element={<Becometutor />} />
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/courses" element={<CoursesSection />} />
+        <Route path="/courses/checkout" element={<CheckoutPg />} />
         
         {/* Languages pages routing */}
         <Route path="/arabic" element={<Arabic />} />
