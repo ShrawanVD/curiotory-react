@@ -240,3 +240,11 @@ small li ul {
   margin-top: 1rem;
   margin-left: 7rem;
 }
+
+
+/* errorrs */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -1rem;
+}

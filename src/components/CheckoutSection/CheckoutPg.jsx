@@ -16,11 +16,41 @@ function CheckoutPg() {
     email: "",
     pass: "",
   });
+  const [errors, setErrors] = useState({
+    fullName: "",
+    phone: "",
+    email: "",
+    password: "",
+  });
 
   // function to handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
+    // let error = "";
+    // if (name === "fullName") {
+    //   // First letter capital validation
+    //   if (!/^[A-Z][a-zA-Z\s]*$/.test(value)) {
+    //     error = "Name should start with a capital letter";
+    //   }
+    // } else if (name === "phone") {
+    //   // Phone number validation
+    //   if (!/^\d{10}$/.test(value)) {
+    //     error = "Enter a valid phone number with 10 digits";
+    //   }
+    // } else if (name === "email") {
+    //   // Email validation
+    //   if (!/\S+@\S+\.\S+/.test(value)) {
+    //     error = "Enter a valid email address";
+    //   }
+    // } else if (name === "password") {
+    //   // Password validation (if any specific requirement, add here)
+    //   if (value.length < 6) {
+    //     error = "Password should be at least 6 characters long";
+    //   }
+    // }
+
     setFormData({ ...formData, [name]: value });
+    // setErrors({ ...errors, [name]: error });
   };
 
   // Check if all fields are filled
@@ -46,15 +76,18 @@ function CheckoutPg() {
   const handlePayment = async () => {
     console.log("in handle function");
     try {
-      const res = await fetch(`https://lms-backend-3nru.onrender.com/api/payment/order`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          amount,
-        }),
-      });
+      const res = await fetch(
+        `https://lms-backend-3nru.onrender.com/api/payment/order`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            amount,
+          }),
+        }
+      );
 
       const data = await res.json();
       console.log(data);
@@ -77,27 +110,30 @@ function CheckoutPg() {
       handler: async (response) => {
         console.log("response", response);
         try {
-          const res = await fetch(`https://lms-backend-3nru.onrender.com/api/payment/verify`, {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify({
-              razorpay_order_id: response.razorpay_order_id,
-              razorpay_payment_id: response.razorpay_payment_id,
-              razorpay_signature: response.razorpay_signature,
-              fullName: formData.fullName,
-              phone: formData.phone,
-              email: formData.email,
-              password: formData.password,
-            }),
-          });
+          const res = await fetch(
+            `https://lms-backend-3nru.onrender.com/api/payment/verify`,
+            {
+              method: "POST",
+              headers: {
+                "content-type": "application/json",
+              },
+              body: JSON.stringify({
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                fullName: formData.fullName,
+                phone: formData.phone,
+                email: formData.email,
+                password: formData.password,
+              }),
+            }
+          );
 
           const verifyData = await res.json();
 
           if (verifyData) {
             toast.success(verifyData.message, {
-              onClose: () => navigate("/", { replace: true }),
+              onClose: () => navigate("https://curiotory.com/login", { replace: true }),
             });
           }
         } catch (error) {
@@ -241,38 +277,58 @@ function CheckoutPg() {
               </label>
               <div className="products">
                 <div class="form-container">
-                  <input
-                    type="text"
-                    className="input"
-                    name="fullName"
-                    placeholder="Full Name"
-                    value={formData.fullName || ""}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="number"
-                    value={formData.phone || ""}
-                    onChange={handleChange}
-                    name="phone"
-                    className="input"
-                    placeholder="Phone"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    className="input"
-                    placeholder="Email"
-                    value={formData.email || ""}
-                    onChange={handleChange}
-                  />
-                  <input
-                    type="password"
-                    name="password"
-                    className="input"
-                    placeholder="New Password"
-                    value={formData.password || ""}
-                    onChange={handleChange}
-                  />
+                  <div>
+                    <input
+                      type="text"
+                      className="input"
+                      name="fullName"
+                      placeholder="Full Name"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                    />
+                    {/* {errors.fullName && (
+                      <span className="error">{errors.fullName}</span>
+                    )} */}
+                  </div>
+                  <div>
+                    <input
+                      type="number"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      name="phone"
+                      className="input"
+                      placeholder="Phone"
+                    />
+                    {/* {errors.phone && (
+                      <span className="error">{errors.phone}</span>
+                    )} */}
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      className="input"
+                      placeholder="Email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    {/* {errors.email && (
+                      <span className="error">{errors.email}</span>
+                    )} */}
+                  </div>
+                  <div>
+                    <input
+                      type="password"
+                      name="password"
+                      className="input"
+                      placeholder="New Password"
+                      value={formData.password}
+                      onChange={handleChange}
+                    />
+                    {/* {errors.password && (
+                      <span className="error">{errors.password}</span>
+                    )} */}
+                  </div>
                 </div>
               </div>
             </div>
