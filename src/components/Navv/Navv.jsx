@@ -82,7 +82,7 @@ function Navv() {
             >
               Contact Us
             </Nav.Link>
-            <Nav.Link href="https://curiotory.com/login">           
+            <Nav.Link href="https://curiotory.com/lms">           
             <button className="loginButton">Login</button>
               </Nav.Link>
               

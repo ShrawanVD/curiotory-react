@@ -85,7 +85,7 @@ function Covernav() {
             >
               Contact Us
             </Nav.Link>
-            <Nav.Link href="https://curiotory.com/login">           
+            <Nav.Link href="https://curiotory.com/lms">           
             <button className="loginButtonCovernav">Login</button>
               </Nav.Link>
           </Nav>
