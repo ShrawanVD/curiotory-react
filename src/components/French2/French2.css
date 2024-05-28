@@ -1,0 +1,63 @@
+.curriculum-container {
+    width: 80%;
+    margin: auto;
+  }
+  .info-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .info-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .module-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  .module h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .module ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .module ul li {
+    margin: 5px 0;
+  }
+  
+  .slick-prev, .slick-next {
+    font-size: 2em;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
