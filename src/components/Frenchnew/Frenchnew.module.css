@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Raleway, Arial, sans-serif; */
+}
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #e8f4ff;
+  color: #000;
+  height: auto;
+}
+.container .imgline img {
+  width: 100%;
+}
+/* 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+} */
+.navList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.2rem;
+}
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #00046c;
+  font-size: 1.15rem;
+}
+.contactUs span {
+  color: #ef4b2b;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logoContainer {
+  flex: 1;
+  text-align: center;
+  /* margin-right: -6rem; */
+}
+
+.logo {
+  height: 50px;
+}
+
+.headerRight .studentPortal {
+  display: none;
+  color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 37%,
+        rgba(9, 9, 121, 1) 72%,
+        rgba(9, 9, 121, 1) 74%
+      )
+      border-box;
+  border-radius: 50em;
+  border: 2.8px solid transparent;
+}
+.headerRight .studentPortal:hover {
+  color: white;
+  background: rgba(9, 9, 121, 1);
+}
+/* .headerRight .studentPortal {
+  color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 37%,
+        rgba(9, 9, 121, 1) 72%,
+        rgba(9, 9, 121, 1) 74%
+      )
+      border-box;
+  border-radius: 50em;
+  border: 2.8px solid transparent;
+}
+.headerRight .studentPortal:hover{
+    color: white;
+    background: rgba(9, 9, 121, 1);
+
+} */
+
+.main {
+  text-align: center;
+  padding: 9rem 1rem 7rem;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.horizontalLine {
+  border: 1px solid white;
+  width: 60%;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.hero .highlight {
+  color: #0c5ba1;
+  font-style: italic;
+}
+
+.stats {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.stats span {
+  margin: 0 10px;
+  font-family: Raleway, Arial, sans-serif;
+}
+.stats span a {
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.hero p {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 1.2em;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p {
+    font-size: 1em;
+  }
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    justify-content: center;
+  }
+  .headerRight {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em;
+  }
+  .hero p {
+    font-size: 0.9em;
+  }
+}
+
+/* why learn french section */
+
+.learnFrenchContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px 1rem;
+  color: #00046c;
+}
+.learnFrenchHeading h2 {
+  text-decoration: 2px underline;
+  font-family: Raleway, Arial, sans-serif;
+}
+.whyLearnFrench {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 2rem;
+}
+
+.whyLearnFrenchLeft,
+.benefitLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.learnFrenchReason {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: justify;
+}
+.benefitRight {
+  display: flex;
+  align-items: left;
+  gap: 40px;
+  text-align: justify;
+}
+
+.learnFrenchIcon {
+  width: 40px;
+  height: 40px;
+}
+.benefitLeftIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.whyLearnFrenchRight,
+.benefitLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Benefits of learning section css */
+.benefitOfLearningSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 20px 1rem;
+  color: #00046c;
+}
+.benefitOfLearningSection h2 {
+  text-decoration: 2px underline;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.learnFrenchMainImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.benefitsLearningFrench {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+.benefitRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .whyLearnFrench {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .benefitsLearningFrench {
+    flex-direction: row;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  .whyLearnFrenchLeft {
+    gap: -10px;
+    padding-right: 14rem;
+  }
+
+  .benefitLeft {
+    gap: -10px;
+    padding-right: 14rem;
+    flex-direction: row;
+  }
+
+  .learnFrenchReason {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .benefitRight {
+    flex: 1 1 calc(50% - 20px);
+    /* border: 1px solid  black; */
+    justify-content: center;
+    margin-left: -10rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .learnFrenchReason {
+    flex: 1 1 calc(50% - 20px);
+  }
+  .benefitRight {
+    flex: 1 1 calc(50% - 20px);
+  }
+}

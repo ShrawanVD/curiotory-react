@@ -24,6 +24,8 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CoursesSection from './components/Courses/CoursesSection';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
+import Frenchnew from './components/Frenchnew/Frenchnew';
+import Coursepage from './pages/Coursepages/Coursepage';
 
 export default (
     <Routes>
@@ -54,6 +56,10 @@ export default (
         <Route path="/portuguese" element={<Portuguese />} />
         <Route path="/russian" element={<Russian />} />
         <Route path="/spanish" element={<Spanish />} />
+
+        <Route path="/french1" element={<Frenchnew />} />
+        <Route path="/course" element={<Coursepage />} />
+
 
     </Routes>
 );
