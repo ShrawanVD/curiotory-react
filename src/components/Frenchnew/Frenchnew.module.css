@@ -312,3 +312,105 @@
     flex: 1 1 calc(50% - 20px);
   }
 }
+
+/* calculator Css  */
+/* FeeCalculator.module.css */
+.calheading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.calculatorContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.calOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionGroup {
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.optionGroup label {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.optionGroup input[type="range"] {
+  width: 100%;
+}
+
+.checkpoints {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 35px;
+}
+
+.checkpoint {
+  position: relative;
+}
+
+.checkpoint::before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  /* background-color: #000; */
+  border-radius: 50%;
+}
+
+.result {
+  font-size: 24px;
+  color: #ff9900;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.calForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.calForm input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.calForm button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #000080;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.calForm button:hover {
+  background-color: #333399;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .calculatorContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calOptions, .calForm {
+    width: 100%;
+    max-width: 400px;
+  }
+}
