@@ -62,7 +62,7 @@ function Meettutor() {
       loadingSpinner.style.display = "block";
     }
 
-    fetch("https://backendapi-ay7s.onrender.com/teachers")
+    fetch("https://backendapi-2-pdxy.onrender.com/teachers")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -98,7 +98,7 @@ function Meettutor() {
     const native = document.getElementById("nativeFilter").value;
 
     fetch(
-      `https://backendapi-ay7s.onrender.com/filterteachers?language=${language}&native=${native}`
+      `https://backendapi-2-pdxy.onrender.com/filterteachers?language=${language}&native=${native}`
     )
       .then((response) => response.json())
       .then((data) => {

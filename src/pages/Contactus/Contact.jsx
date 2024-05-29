@@ -13,7 +13,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "https://backendapi-ay7s.onrender.com/sendMsg",
+        "https://backendapi-2-pdxy.onrender.com/sendMsg",
         {
           method: "POST",
           headers: {

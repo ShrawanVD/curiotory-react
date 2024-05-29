@@ -124,7 +124,7 @@ function Singleblog() {
         const blogId = urlParams.get('id');
 
         // Fetch blog data based on the ID
-        const response = await fetch(`https://backendapi-ay7s.onrender.com/api/blogs/${blogId}`);
+        const response = await fetch(`https://backendapi-2-pdxy.onrender.com/api/blogs/${blogId}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
