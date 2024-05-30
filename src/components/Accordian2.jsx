@@ -39,17 +39,12 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            When is the best age to start learning foreign languages?
+            How long are the courses? 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            As is the case with any other language, a person’s age has an effect
-            on their ability to learn new ones. But that only means anyone can
-            learn – no matter how old or young they are. Kids and young adults
-            learn faster since they can easier pick up new accents and
-            comprehend new sounds. Adults learn smarter as their attention spans
-            are longer.
+          The total course duration is 25 hrs. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -79,19 +74,12 @@ export default function ControlledAccordions() {
               color: "black;",
             }}
           >
-            Why are online platforms the best medium for learning foreign
-            languages?
+           Can I learn at my own pace? 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            The world has gone remote since 2020. Even if the pandemic hadn’t
-            struck, it would have been a matter of time before the learning
-            journeys went the digital route. Because let’s face it – the future
-            of language learning is going to be increasingly contactless. People
-            have lesser time than before to master it. Hence, they rely on
-            platforms like Curiotory to pursue travel and career opportunities
-            from the comfort of their own homes.
+          Yes, we offer self-paced learning options. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -121,19 +109,12 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            But why can’t I just learn foreign languages by myself?
+            Do I need prior knowledge? 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            It is possible to learn a little from various sources around you.
-            For example, you may catch up on some phrases from songs you
-            listened to or through something someone said during a TV show. To
-            gain fluency in the language, however, you would need to gain a
-            strong understanding of grammar along with general, linguistic, and
-            pragmatic competencies. Doing that by yourself Is ten times as hard
-            and would be just as long. By the end of it, there are no proper
-            evaluation methods to assess where you truly stand.
+          No, our courses cater to all levels, including beginners. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -163,15 +144,12 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            Does Curiotory cover critical language skills?
+            What age groups are the courses for? 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            We make sure that you can write, read, listen, and speak the
-            language at the end of the course. We offer various proficiency
-            levels in each language, but we cover grammar, vocabulary,
-            conversational skills, etc.
+          Our courses are for all age groups, from kids to adults. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -201,19 +179,17 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            How does Curiotory select language teachers?
+            Do I need any special software? 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            We follow a thorough verification process before onboarding
-            teachers, and we have an uncompromising stance on only working with
-            native language specialists.
+          You can access our course on Curiotory app, available on google playstore. 
           </Typography>
         </AccordionDetails>
       </Accordion>
 
-      <Accordion
+      {/* <Accordion
         expanded={expanded === "panel6"}
         onChange={handleChange("panel6")}
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
@@ -356,7 +332,7 @@ export default function ControlledAccordions() {
             9373902340
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 }

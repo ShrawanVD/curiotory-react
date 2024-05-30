@@ -1,9 +1,11 @@
 import { useState } from "react";
 import buy from "./CourseDetails.module.css";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Accordian2 from "../../components/Accordian2";
 import Footer2 from "../../components/Footer/Footer2";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const CourseDetails = () => {
   // reviews
@@ -364,7 +366,7 @@ const CourseDetails = () => {
           <div className={buy.content}>
             <div className={buy.textSection}>
               <h1>
-                Say Goodbye to Difficult
+                Say <br/>Goodbye to Difficult
                 <br />
                 <span className={buy.highlight}>English</span> Learning!
               </h1>
@@ -415,18 +417,20 @@ const CourseDetails = () => {
               /> */}
             </div>
             <div className={buy.highlights_section}>
+            <HighlightItem
+                className={buy.item}
+                icon="schedule"
+                title="Beginner Friendly"
+                description="No prior Knowledge required"
+              />
+
               <HighlightItem
                 className={buy.item}
                 icon="support_agent"
                 title="Discover: Books, Travel Guide, Blogs"
                 description="Read Anytime, Anywhere"
               />
-              <HighlightItem
-                className={buy.item}
-                icon="schedule"
-                title="Beginner Friendly"
-                description="No prior Knowledge required"
-              />
+              
 
               {/* <HighlightItem
                 className={buy.item}
@@ -476,7 +480,7 @@ const CourseDetails = () => {
           <h1>Training Syllabus</h1>
 
           {/* icons */}
-          <div className={buy.highlights}>
+          <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
               <p>106 video tutorials</p>
@@ -548,6 +552,63 @@ const CourseDetails = () => {
               View More
             </button>
           )}
+        </div>
+
+        {/*  course - video section */}
+        <div className={buy.container11}>
+          {/* left section */}
+          <div className={buy.left_section}>
+            {/* video */}
+            <div className={buy.video}>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/EQ5g5VDbnG4?si=vsrAzB34Q4naDCE_"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            {/* text */}
+            <p className={buy.description}>
+              This is the description of the course details video. It provides
+              an overview of what the course will cover. This is the description
+              of the course details video. It provides an overview of what the
+              course will cover.
+            </p>
+          </div>
+
+          {/* right section */}
+          <div className={buy.right_section}>
+            <h2 className={buy.heading}>An Introduction to English</h2>
+            <ul className={buy.highlights}>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
+                Easy payment method
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
+                Quality Hours of Course Content
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
+                Lifetime course access
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
+                Learn anytime, anywhere
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
+                24/7 instant email support
+              </li>
+            </ul>
+            <a href="/checkout">
+              <button className={buy.subscribeButton}>Subscribe Today</button>
+            </a>
+          </div>
         </div>
 
         {/* exam education travel section */}
@@ -954,6 +1015,19 @@ const CourseDetails = () => {
         </div>
 
         {/* <!-- FAQ SECTION ENDS --> */}
+
+        {/* subscribe button for the footer */}
+        <a className={buy.button_container} href="/checkout">
+          <img
+            style={{
+              width: "30%",
+              height: "2%",
+              borderRadius: "10px",
+            }}
+            src="/Index/subscribe.png"
+            alt=""
+          />
+        </a>
       </div>
 
       <Footer2 />

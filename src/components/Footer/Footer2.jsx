@@ -8,7 +8,7 @@ function Footer() {
         style={{
           position:"relative",
           background:
-            "linear-gradient(0deg, rgba(255,215,108,1) 45%, rgba(255,189,13,1) 70%)",
+            "linear-gradient(0deg, rgba(255,215,108,1) 45%, rgb(247, 201, 76) 70%)",
         }}
       >
         <div className="container2" style={{
