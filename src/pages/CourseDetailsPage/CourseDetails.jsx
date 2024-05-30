@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import buy from "./CourseDetails.module.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -10,44 +10,62 @@ const CourseDetails = () => {
   const reviews = [
     {
       id: 1,
-      text: "So the course is just as great as Dhruv Rathee himself, I like the way he explain the things by showing his own life experiences and yeah that will help me a lot for sure, mainly the day 3 and 4 part will help me beat the procrastination",
-      name: "Hardeep S.",
+      text: "Curiotory is the best for learn Mandarin! I never thought I could learn a new language but this app makes it so easy. The lessons are really fun and engaging, and I can now speek basic Mandarin thanks to Curiotory!",
+      name: "Amit Sharma ",
       rating: 5,
     },
     {
       id: 2,
-      text: "The entire course was so well-structured. A much needed break from the toxic productivity culture. The work-life balance and the pillars of happiness Dhruv talked about was wonderful. Video production quality was up to the mark. Kudos to Dhruv!",
-      name: "Prithu H.",
+      text: "I absolutely love Curiotory for Mandarin learning! The app is so user-friendly and the lessons are well designed. I feel much more confident in my Chinese-speaking abilities now. Highly recommend!",
+      name: "Riya Patel ",
       rating: 4,
     },
     {
       id: 3,
-      text: "Great insights by Dhruv! He has managed to put the core concepts of not only being productive but also to live a better life",
-      name: "Raghav Goel",
+      text: "Mandarin has always seemed like a difficult language, but Curiotory makes it accessible and enjoyable! The app's interactive features and cultural insights are really helpfull. Now I can order food in Mandarin!",
+      name: "Karan Singh ",
       rating: 5,
     },
     {
       id: 4,
-      text: "I must say this was a life-changing course for me. Understanding the things which TRULY make me happy helped me identify the tasks that I should be",
-      name: "John D.",
+      text: "II'm learning Mandarin with Curiotory and it's been an amazing experience! The lessons are fun and easy to understand. I feel more confident in my language skills after using this app. Highly recommend it!",
+      name: "Shreya Gupta ",
       rating: 4,
     },
     {
-      id: 4,
-      text: "I must say this was a life-changing course for me. Understanding the things which TRULY make me happy helped me identify the tasks that I should be",
-      name: "John D.",
+      id: 5,
+      text: "Curiotory is great for learning Mandarin Chinese! The lessons are very informative and the app's interface is user friendly. I've been using it for a few weeks now and I can already see improvment in my language skills.",
+      name: "Vikram Rao",
       rating: 4,
     },
     {
-      id: 4,
-      text: "I must say this was a life-changing course for me. Understanding the things which TRULY make me happy helped me identify the tasks that I should be",
-      name: "John D.",
+      id: 6,
+      text: "I've always wanted to learn Mandarin and Curiotory has made it possible! The lessons are structured and easy to follow. I'm now able to have basic conversations in Mandarin. Highly recommended!",
+      name: "Neha Gupta ",
       rating: 4,
     },
     {
-      id: 4,
-      text: "I must say this was a life-changing course for me. Understanding the things which TRULY make me happy helped me identify the tasks that I should be",
-      name: "John D.",
+      id: 7,
+      text: "Curiotory is an amazing app for learning Mandarin! The lessons are really interactive and engaging. I've been using it for a while now and I'm impressed with how much I've learn. Definitely worth it!",
+      name: "Rohan Patel",
+      rating: 4,
+    },
+    {
+      id: 8,
+      text: "I'm so glad I found Curiotory for learning Mandarin Chinese! The lessons are well explained and the app is easy to navigate. I've been using it for a few months now and I'm already seeing progress in my language skills.",
+      name: "Aisha Khan ",
+      rating: 4,
+    },
+    {
+      id: 9,
+      text: "I've been using Curiotory to learn Mandarin and I'm really happy with my progress! The lessons are fun and interactive, and I feel more confident in my language abilities. Highly recommend it to anyone interested in learning Mandarin!",
+      name: "Aryan Sharma ",
+      rating: 4,
+    },
+    {
+      id: 10,
+      text: "Curiotory has been a game changer for me in learning Mandarin! The lessons are engaging and the app is easy to use. I've been recommend it to all my friends who want to learn Mandarin. Give it a try!",
+      name: "Sneha Patel",
       rating: 4,
     },
   ];
@@ -215,15 +233,127 @@ const CourseDetails = () => {
     setShowAllProfiles6(!showAllProfiles6);
   };
 
+  // tab section
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case "tab1":
+        return (
+          <div className={buy.tabContent}>
+            <div className={buy.examContent}>
+              <p>Top 5 Universities: </p>
+              <ul>
+                <li>
+                  1.{" "}
+                  <a
+                    href="https://www.topuniversities.com/universities/university-oxford"
+                    style={{ color: "rgb(49, 123, 241)" }}
+                  >
+                    University of Oxford
+                  </a>{" "}
+                  (Oxford, United Kingdom) location{" "}
+                </li>
+                <li>
+                  2.{" "}
+                  <a
+                    href="https://www.topuniversities.com/universities/yale-university"
+                    style={{ color: "rgb(49, 123, 241)" }}
+                  >
+                    Yale University
+                  </a>{" "}
+                  (New Haven, United States){" "}
+                </li>
+                <li>
+                  3.{" "}
+                  <a
+                    href="https://www.topuniversities.com/universities/university-california-berkeley-ucb"
+                    style={{ color: "rgb(49, 123, 241)" }}
+                  >
+                    University of California, Berkeley (UCB)
+                  </a>{" "}
+                  (Berkeley, United States){" "}
+                </li>
+                <li>
+                  4.{" "}
+                  <a
+                    href="https://www.topuniversities.com/universities/harvard-university"
+                    style={{ color: "rgb(49, 123, 241)" }}
+                  >
+                    Harvard University
+                  </a>
+                  (Cambridge, United States){" "}
+                </li>
+                <li>
+                  5.{" "}
+                  <a
+                    href="https://www.topuniversities.com/universities/university-cambridge"
+                    style={{ color: "rgb(49, 123, 241)" }}
+                  >
+                    University of Cambridge
+                  </a>{" "}
+                  (Cambridge, United Kingdom)
+                </li>
+              </ul>
+              <br />
+              <p>
+                Eligibility for top English programs requires excellent academic
+                records and strong English proficiency.{" "}
+              </p>
+            </div>
+          </div>
+        );
+      case "tab2":
+        return (
+          <div className={buy.tabContent}>
+            <p>
+              The IELTS (International English Language Testing System) is a
+              popular English proficiency test for students aiming to study
+              abroad. It assesses academic English skills in speaking, reading,
+              writing, and listening. Accepted in 140 countries, including the
+              US, UK, Canada, and Australia.{" "}
+            </p>
+            <p>
+              The TOEFL® (Test of English as a Foreign
+              Language) assesses Reading, Listening, Speaking, and Writing
+              skills in English, and is accepted by over 11,500 universities in
+              160+ countries, including the USA, UK, and Canada.{" "}
+            </p>
+          </div>
+        );
+      case "tab3":
+        return (
+          <div className={buy.tabContent}>
+            <p>
+              Being proficient in English greatly enhances travel experiences,
+              especially in countries like the US, Australia, Germany, the
+              Netherlands, the UK, Ireland, Singapore, Switzerland and many
+              more. In these places, English is widely spoken and often used in
+              business and education, making navigation, communication, and
+              cultural immersion much smoother. From restaurant menus in Munich
+              to bilingual education in Singapore, English proficiency ensures a
+              seamless and enriching travel experience.
+            </p>
+          </div>
+        );
+      default:
+        return (
+          <div className={buy.tabContent}>
+            <p>Exam Tab Content</p>
+          </div>
+        );
+    }
+  };
+
   return (
     <>
       <div>
         {/* cover page  */}
-        <div className={buy.container}>
+        <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
               <button className={buy.loginButton}>Login</button>
-              <button className={buy.signUpButton}>Sign Up</button>
+              {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
             <img
               src="/Index/logo.png"
@@ -234,15 +364,15 @@ const CourseDetails = () => {
           <div className={buy.content}>
             <div className={buy.textSection}>
               <h1>
-                Be The <br />
-                <span className={buy.highlight}>Best Writer</span> With Our
-                Guidance
+                Say Goodbye to Difficult
+                <br />
+                <span className={buy.highlight}>English</span> Learning!
               </h1>
-              <button className={buy.learnButton}>Let&apos;s Learn </button>
+              <button className={buy.learnButton}>Subsrcibe Now </button>
             </div>
             <div className={buy.imageSection}>
               <img
-                src="/Course/coverRight2.png"
+                src="/mascot/croppedMascotNoBackground.png"
                 alt="Course Cover"
                 className={buy.coverImage}
               />
@@ -253,32 +383,57 @@ const CourseDetails = () => {
         {/* Course highlight section */}
         <div className={buy.highlight_outer}>
           <h1>Course Highlights</h1>
+          <div className={buy.highlightCourseDetails}>
+            <p>
+              Start your A1 English journey with our unique course! Easily learn
+              the basics, excel in A1 exams, and strengthen your English
+              foundation. Boost your confidence and begin your path to fluency.
+              Experience seamless learning and achieve remarkable results. Your
+              English mastery journey begins here!
+            </p>
+          </div>
           <div className={buy.course_highlights}>
             <div className={buy.highlights_section}>
               <HighlightItem
                 className={buy.item}
                 icon="play_circle"
-                title="Learn online"
+                title="25 hours of content"
                 description="At your own schedule"
               />
-              <HighlightItem
-                className={buy.item}
-                icon="support_agent"
-                title="Placement assistance"
-                description="To build your career"
-              />
+
               <HighlightItem
                 className={buy.item}
                 icon="trending_up"
-                title="Beginner friendly"
-                description="No prior knowledge required"
+                title="Practice Reading, writing and Speaking"
+                description="At your own pace"
               />
-              <HighlightItem
+              {/* <HighlightItem
                 className={buy.item}
                 icon="memory"
                 title="Learn AI tools"
                 description="For a competitive edge"
+              /> */}
+            </div>
+            <div className={buy.highlights_section}>
+              <HighlightItem
+                className={buy.item}
+                icon="support_agent"
+                title="Discover: Books, Travel Guide, Blogs"
+                description="Read Anytime, Anywhere"
               />
+              <HighlightItem
+                className={buy.item}
+                icon="schedule"
+                title="Beginner Friendly"
+                description="No prior Knowledge required"
+              />
+
+              {/* <HighlightItem
+                className={buy.item}
+                icon="schedule"
+                title="Beginner Friendly"
+                description="No prior Knowledge required"
+              /> */}
             </div>
             <div className={buy.highlights_section}>
               <HighlightItem
@@ -290,18 +445,10 @@ const CourseDetails = () => {
               <HighlightItem
                 className={buy.item}
                 icon="construction"
-                title="5 projects"
-                description="For hands-on practice"
+                title="Boost Your Vocabulary, Proverbs, and Idioms"
+                description="Sound like native"
               />
-              <HighlightItem
-                className={buy.item}
-                icon="schedule"
-                title="6 weeks duration"
-                description="1 hr/day (flexible schedule)"
-              />
-            </div>
-            <div className={buy.highlights_section}>
-              <HighlightItem
+              {/* <HighlightItem
                 className={buy.item}
                 icon="workspace_premium"
                 title="Certificate of Training"
@@ -318,7 +465,7 @@ const CourseDetails = () => {
                 icon="download"
                 title="Downloadable content"
                 description="With lifetime access"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -403,124 +550,51 @@ const CourseDetails = () => {
           )}
         </div>
 
+        {/* exam education travel section */}
+        <div className={buy.multipleTabsContainer}>
+          <div className={buy.tabsContainer}>
+            <p
+              className={activeTab === "tab1" ? buy.activeTab : buy.tab}
+              onClick={() => setActiveTab("tab1")}
+            >
+              <i
+                className={`fas fa-book-open `}
+                style={{ fontSize: "30px", marginRight: "7px" }}
+              ></i>
+              Exam
+            </p>
+            <p
+              className={activeTab === "tab2" ? buy.activeTab : buy.tab}
+              onClick={() => setActiveTab("tab2")}
+            >
+              <i
+                className={`fas fa-graduation-cap`}
+                style={{ fontSize: "30px", marginRight: "7px" }}
+              ></i>
+              Education
+            </p>
+            <p
+              className={activeTab === "tab3" ? buy.activeTab : buy.tab}
+              onClick={() => setActiveTab("tab3")}
+            >
+              <i
+                className={`fas fa-map-marked-alt`}
+                style={{ fontSize: "30px", marginRight: "7px" }}
+              ></i>
+              Travel
+            </p>
+          </div>
+          <div>{renderContent()}</div>
+        </div>
+
         {/* company section */}
         <div className={buy.company}>
           <h1>
             Companies <span className={buy.yellow}>Hiring</span> French Experts
           </h1>
           <div className={buy.first_row}>
-            {/* first company */}
-            <Card className={buy.cardss}>
-              <Card.Img
-                className={buy.card_img}
-                style={{
-                  width: "80%",
-                  margin: "0 auto",
-                  borderRadius: "7px",
-                }}
-                variant="top"
-                src="/Company/decat.png"
-              />
-              <hr
-                style={{
-                  borderBottom: "1px solid black",
-                }}
-              />
-              <Card.Body
-                style={{
-                  width: "100%",
-                  // height: showAllProfiles1 ? "50rem" : "10rem",
-                }}
-              >
-                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
-                <ul>
-                  {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
-                  ]
-                    .slice(0, showAllProfiles1 ? 9 : 5)
-                    .map((profile, index) => (
-                      <li key={index}>{profile}</li>
-                    ))}
-                </ul>
-                {/* <Card.Text>
-                
-              </Card.Text> */}
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles1}
-                >
-                  {showAllProfiles1 ? "View Less" : "View More"}
-                </Button>
-              </Card.Body>
-            </Card>
-
-            {/* second company */}
-            <Card className={buy.cardss}>
-              <Card.Img
-                className={buy.card_img}
-                style={{
-                  width: "80%",
-                  margin: "0 auto",
-                  borderRadius: "7px",
-                }}
-                variant="top"
-                src="/Company/capg.png"
-              />
-              <hr
-                style={{
-                  borderBottom: "1px solid black",
-                }}
-              />
-              <Card.Body
-                style={{
-                  width: "100%",
-                }}
-              >
-                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
-                <ul>
-                  {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
-                  ]
-                    .slice(0, showAllProfiles2 ? 9 : 5)
-                    .map((profile, index) => (
-                      <li key={index}>{profile}</li>
-                    ))}
-                </ul>
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles2}
-                >
-                  {showAllProfiles2 ? "View Less" : "View More"}
-                </Button>
-              </Card.Body>
-            </Card>
-
-            {/* third company */}
-            <Card className={buy.cardss}>
+            {/* sample company */}
+            {/* <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
                 style={{
@@ -570,6 +644,137 @@ const CourseDetails = () => {
                   {showAllProfiles3 ? "View Less" : "View More"}
                 </Button>
               </Card.Body>
+            </Card> */}
+
+            {/* first company */}
+            <Card className={buy.cardss}>
+              <Card.Img
+                className={buy.card_img}
+                style={{
+                  width: "80%",
+                  margin: "0 auto",
+                  borderRadius: "7px",
+                }}
+                variant="top"
+                src="/Company/google.webp"
+                // google
+              />
+              <hr
+                style={{
+                  borderBottom: "1px solid black",
+                }}
+              />
+              <Card.Body
+                style={{
+                  width: "100%",
+                  // height: showAllProfiles1 ? "50rem" : "10rem",
+                }}
+              >
+                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
+                <ul>
+                  {[
+                    "Content Writer ",
+                    "Marketing Communications Specialist",
+                    "Customer Support Representative",
+                  ]
+                    .slice(0, showAllProfiles1 ? 9 : 5)
+                    .map((profile, index) => (
+                      <li key={index}>{profile}</li>
+                    ))}
+                </ul>
+              </Card.Body>
+            </Card>
+
+            {/* second company */}
+            <Card className={buy.cardss}>
+              <Card.Img
+                className={buy.card_img}
+                style={{
+                  width: "80%",
+                  margin: "0 auto",
+                  borderRadius: "7px",
+                }}
+                variant="top"
+                src="/Company/microsoft.jpg"
+                // Microsoft
+              />
+              <hr
+                style={{
+                  borderBottom: "1px solid black",
+                }}
+              />
+              <Card.Body
+                style={{
+                  width: "100%",
+                }}
+              >
+                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
+                <ul>
+                  {[
+                    "Human Resources Specialist",
+                    "Travel Advisor",
+                    "Customer Service Representative",
+                    "Translator",
+                    "Sales Representative",
+                    "Hotel Manager",
+                    "Travel Coordinator",
+                    "Translator",
+                    "Translator",
+                  ]
+                    .slice(0, showAllProfiles2 ? 3 : 3)
+                    .map((profile, index) => (
+                      <li key={index}>{profile}</li>
+                    ))}
+                </ul>
+                {/* <Button
+                  className={buy.btn_company}
+                  style={{
+                    width: "50%",
+                  }}
+                  variant="primary"
+                  onClick={toggleProfiles2}
+                >
+                  {showAllProfiles2 ? "View Less" : "View More"}
+                </Button> */}
+              </Card.Body>
+            </Card>
+
+            {/* third company */}
+            <Card className={buy.cardss}>
+              <Card.Img
+                className={buy.card_img}
+                style={{
+                  width: "80%",
+                  margin: "0 auto",
+                  borderRadius: "7px",
+                }}
+                variant="top"
+                src="/Company/ibm.png"
+                // IBM
+              />
+              <hr
+                style={{
+                  borderBottom: "1px solid black",
+                }}
+              />
+              <Card.Body
+                style={{
+                  width: "100%",
+                }}
+              >
+                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
+                <ul>
+                  {[
+                    " Technical Content Developer",
+                    "Communication Manager",
+                    "Customer Success Specialist",
+                  ]
+                    .slice(0, showAllProfiles3 ? 3 : 3)
+                    .map((profile, index) => (
+                      <li key={index}>{profile}</li>
+                    ))}
+                </ul>
+              </Card.Body>
             </Card>
           </div>
 
@@ -584,7 +789,8 @@ const CourseDetails = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/air.png"
+                src="/Company/apple.png"
+                // Apple
               />
               <hr
                 style={{
@@ -600,34 +806,15 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
+                    "Content Editor",
+                    "Customer Support Advisor",
+                    "Marketing Copywriter",
                   ]
                     .slice(0, showAllProfiles4 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
-                {/* <Card.Text>
-                
-              </Card.Text> */}
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles4}
-                >
-                  {showAllProfiles4 ? "View Less" : "View More"}
-                </Button>
               </Card.Body>
             </Card>
 
@@ -641,7 +828,8 @@ const CourseDetails = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/dassault.png"
+                src="/Company/amazon.png"
+                // Amazon
               />
               <hr
                 style={{
@@ -657,34 +845,15 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
+                    "Content Moderator",
+                    "Customer Service Associate",
+                    "Marketing Communications Specialist ",
                   ]
-                    .slice(0, showAllProfiles5 ? 9 : 5)
+                    .slice(0, showAllProfiles5 ? 3 : 3)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
-                {/* <Card.Text>
-                
-              </Card.Text> */}
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles5}
-                >
-                  {showAllProfiles5 ? "View Less" : "View More"}
-                </Button>
               </Card.Body>
             </Card>
 
@@ -698,7 +867,8 @@ const CourseDetails = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/electric.png"
+                src="/Company/meta.png"
+                // Facebook
               />
               <hr
                 style={{
@@ -714,34 +884,15 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
+                    "Marketing Communications Specialist ",
+                    "Content Reviewer",
+                    " Customer Support Specialist",
                   ]
                     .slice(0, showAllProfiles6 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
-                {/* <Card.Text>
-                
-              </Card.Text> */}
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles6}
-                >
-                  {showAllProfiles6 ? "View Less" : "View More"}
-                </Button>
               </Card.Body>
             </Card>
           </div>
