@@ -713,11 +713,11 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.webp"
+                src="/Company/google.png"
                 // google
               />
               <hr
@@ -752,11 +752,11 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.jpg"
+                src="/Company/microsoft.png"
                 // Microsoft
               />
               <hr
@@ -806,7 +806,7 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
@@ -846,7 +846,7 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
@@ -885,7 +885,7 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
@@ -924,7 +924,7 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  margin: "0 auto",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
