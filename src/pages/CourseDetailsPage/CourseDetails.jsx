@@ -354,7 +354,7 @@ const CourseDetails = () => {
         <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
-              <button className={buy.loginButton}>Login</button>
+              <a href="https://curiotory.com/lms"><button className={buy.loginButton}>Login</button></a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
             <img
@@ -370,7 +370,7 @@ const CourseDetails = () => {
                 <br />
                 <span className={buy.highlight}>English</span> Learning!
               </h1>
-              <button className={buy.learnButton}>Subsrcibe Now </button>
+              <a href="/checkout"><button className={buy.learnButton}>Subsrcibe Now </button></a>
             </div>
             <div className={buy.imageSection}>
               <img
