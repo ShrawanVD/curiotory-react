@@ -25,6 +25,7 @@ import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Frenchnew from './components/Frenchnew/Frenchnew';
 import CourseDetails from './pages/CourseDetailsPage/CourseDetails';
+import CourseDetails1 from './components/CourseDetails/CourseDetails1';
 
 
 export default (
@@ -41,8 +42,9 @@ export default (
         <Route path="/becometutor" element={<Becometutor />} />
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
-        <Route path="/courses/checkout" element={<CheckoutPg />} />
+        <Route path="/checkout" element={<CheckoutPg />} />
         <Route path="/course" element={<CourseDetails />} />
+        <Route path="/c" element={<CourseDetails1 />} />
         
         
         {/* Languages pages routing */}

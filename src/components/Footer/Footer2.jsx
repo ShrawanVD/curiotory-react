@@ -6,11 +6,14 @@ function Footer() {
       <div
         className="footer"
         style={{
+          position:"relative",
           background:
             "linear-gradient(0deg, rgba(255,215,108,1) 45%, rgba(255,189,13,1) 70%)",
         }}
       >
-        <div className="container2">
+        <div className="container2" style={{
+          marginTop:"2rem"
+        }}>
           <div className="row-up">
             {/* Logo */}
             <div className="ss logo-class col-lg-3">

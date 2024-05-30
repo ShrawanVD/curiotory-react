@@ -1,0 +1,176 @@
+.container11{
+    margin: 5rem 0 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48%;
+}
+
+.right_section{
+    margin-top: -5rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #f9b700;;
+    padding: 3rem;
+    border-radius: 10px;
+    background: rgb(248, 246, 240);
+}
+
+
+/* left section */
+
+.left_section .video{
+    width: 100%;
+}
+
+.left_section .video iframe{
+    margin: 0 auto 2rem 0;
+    border-radius: 15px;
+    width: 100%;
+    height: 50vh;
+}
+
+.description{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: justify;
+}
+
+
+/* right section */
+.heading {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    /* text-transform: uppercase; */
+  }
+  
+  .highlights {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+    color: #333;
+  }
+  
+  .highlights li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    text-align: justify;
+  }
+  
+  .icon {
+    color: green;
+    margin-right: 1rem;
+  }
+  
+  .subscribeButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    /* color: #fff;
+    background-color: green; */
+    background: linear-gradient(
+    90deg,
+    rgba(252, 223, 144, 1) 0%,
+    rgba(249, 181, 0, 1) 47%,
+    rgba(215, 156, 0, 1) 87%
+  );
+  color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .subscribeButton:hover {
+    color: white;
+    font-size: 1.05rem;
+  }
+
+
+
+  /* responsive */
+  @media only screen and (max-width: 1200px) {
+    .left_section .video iframe{
+        margin-left: 3rem;
+    }    
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .container11{
+        flex-direction: column;
+    }   
+    .left_section{
+        margin: 0 0.5rem;
+        width: 90%;
+    }
+    .right_section{
+        margin: 2rem 0.5rem;
+        width: 90%;
+    }
+  }
+
+
+
+
+
+  /* subscribe button for the footer  */
+
+  .button_container{
+    position: absolute;
+    padding: 2rem;
+    border-radius: 10px;
+    z-index: 10;
+    width: 60%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* background: rgb(248, 247, 247); */
+    /* background-color: #faf2d2;  */
+    background-color: #f0f4ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the container */
+  bottom: 0rem;
+  }
+
+  /* this i */
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    /* color: #fff;
+    background-color: green; */
+    /* background: linear-gradient(
+    90deg,
+    rgba(252, 223, 144, 1) 0%,
+    rgba(249, 181, 0, 1) 47%,
+    rgba(215, 156, 0, 1) 87%
+  );
+  color: black; */
+  background-color: #1e3a8a; /* Deep Blue */
+  color: #ffffff; /* White text */
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    color: white;
+    font-size: 1.05rem;
+    background-color: #14295f; 
+  }
