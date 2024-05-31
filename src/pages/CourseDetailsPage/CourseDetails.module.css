@@ -340,12 +340,12 @@
 .first_row {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items:stretch;
 }
 .second_row {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .card_title {
   font-family: "Poppins", Sans-serif;
@@ -667,18 +667,20 @@ color: #ffffff; /* White text */
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0rem;
 }
-
 .textSection {
   margin-bottom: 20px;
   padding: 0rem 5rem 0rem;
+  flex: 1;
+  margin-right: 2rem;
 }
 
 .textSection h1 {
-  font-size: 5.5rem;
+  font-size: 5rem;
   color: #000;
   font-weight: bold;
   line-height: 6rem;
@@ -689,6 +691,14 @@ color: #ffffff; /* White text */
 .highlight {
   color: #f9b500;
   font-weight: bold;
+}
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1.5rem;
+  z-index: 99999;
+  margin-left: 3.4rem;
+  padding: 0rem 5rem 0rem;
 }
 
 .learnButton {
@@ -717,7 +727,8 @@ color: #ffffff; /* White text */
 
 .imageSection {
   position: relative;
-  flex: 70%;
+  /* flex: 70%; */
+  flex: 1;
   text-align: center;
 }
 
@@ -738,6 +749,12 @@ color: #ffffff; /* White text */
   }
   .textSection {
     padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 1200px){
+  .sticky{
+    margin-left: -2.5rem;
   }
 }
 
@@ -762,8 +779,9 @@ color: #ffffff; /* White text */
   }
 
   .learnButton {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
+  
 }
 
 @media (max-width: 700px) {
@@ -775,6 +793,11 @@ color: #ffffff; /* White text */
   .imageSection {
     width: 100%;
     text-align: center;
+  }
+  .sticky{
+    position: sticky;
+    margin: 5rem auto;
+    /* margin-left: 5rem; */
   }
 }
 

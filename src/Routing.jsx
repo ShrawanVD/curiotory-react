@@ -24,7 +24,15 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Frenchnew from './components/Frenchnew/Frenchnew';
-import CourseDetails from './pages/CourseDetailsPage/CourseDetails';
+
+// courses 
+import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
+import JapaneseCourse from './pages/CourseDetailsPage/JapaneseCourse/JapaneseCourse';
+import MandarinCourse from './pages/CourseDetailsPage/MandarinCourse/MandarinCourse';
+import KoreanCourse from './pages/CourseDetailsPage/KoreanCourse/KoreanCourse';
+import FrenchCourse from './pages/CourseDetailsPage/FrenchCourse/FrenchCourse';
+import SpanishCourse from './pages/CourseDetailsPage/SpanishCourse/SpanishCourse';
+import GermanCourse from './pages/CourseDetailsPage/GermanCourse/GermanCourse';
 
 
 export default (
@@ -42,7 +50,6 @@ export default (
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
         <Route path="/checkout" element={<CheckoutPg />} />
-        <Route path="/course" element={<CourseDetails />} />
         
         
         {/* Languages pages routing */}
@@ -57,8 +64,16 @@ export default (
         <Route path="/portuguese" element={<Portuguese />} />
         <Route path="/russian" element={<Russian />} />
         <Route path="/spanish" element={<Spanish />} />
-
         <Route path="/french1" element={<Frenchnew />} />
+
+        {/* courses routing */}
+        <Route path="/course/english" element={<EnglishCourse />} />
+        <Route path="/course/japanese" element={<JapaneseCourse />} />
+        <Route path="/course/mandarin" element={<MandarinCourse />} />
+        <Route path="/course/korean" element={<KoreanCourse />} />
+        <Route path="/course/french" element={<FrenchCourse />} />
+        <Route path="/course/spanish" element={<SpanishCourse />} />
+        <Route path="/course/german" element={<GermanCourse />} />
 
 
     </Routes>
