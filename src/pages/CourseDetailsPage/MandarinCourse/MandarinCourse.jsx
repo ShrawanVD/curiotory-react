@@ -1,13 +1,13 @@
 import { useState } from "react";
-import buy from "./CourseDetails.module.css";
+import buy from "../CourseDetails.module.css";
 // import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Accordian2 from "../../components/Accordian2";
-import Footer2 from "../../components/Footer/Footer2";
+import Accordian2 from "../../../components/Accordian2";
+import Footer2 from "../../../components/Footer/Footer2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-const CourseDetails = () => {
+const MandarinCourse = () => {
   // reviews
   const reviews = [
     {
@@ -246,7 +246,7 @@ const CourseDetails = () => {
             <div className={buy.examContent}>
               <p>Top 5 Universities: </p>
               <ul>
-                <li>
+                {/* <li>
                   1.{" "}
                   <a
                     href="https://www.topuniversities.com/universities/university-oxford"
@@ -256,57 +256,13 @@ const CourseDetails = () => {
                     University of Oxford
                   </a>{" "}
                   (Oxford, United Kingdom) location{" "}
-                </li>
-                <li>
-                  2.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/yale-university"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    Yale University
-                  </a>{" "}
-                  (New Haven, United States){" "}
-                </li>
-                <li>
-                  3.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/university-california-berkeley-ucb"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    University of California, Berkeley (UCB)
-                  </a>{" "}
-                  (Berkeley, United States){" "}
-                </li>
-                <li>
-                  4.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/harvard-university"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    Harvard University
-                  </a>
-                  (Cambridge, United States){" "}
-                </li>
-                <li>
-                  5.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/university-cambridge"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    University of Cambridge
-                  </a>{" "}
-                  (Cambridge, United Kingdom)
-                </li>
+                </li> */}
+                <li>1. Jiangsu University</li>
+                <li>2. Tsinghua University</li>
+                <li>3. Peking University </li>
+                <li>4. Shantou University Medical College</li>
+                <li>5. University of Hong Kong </li>
               </ul>
-              <br />
-              <p>
-                Eligibility for top English programs requires excellent academic
-                records and strong English proficiency.{" "}
-              </p>
             </div>
           </div>
         );
@@ -314,17 +270,12 @@ const CourseDetails = () => {
         return (
           <div className={buy.tabContent}>
             <p>
-              The IELTS (International English Language Testing System) is a
-              popular English proficiency test for students aiming to study
-              abroad. It assesses academic English skills in speaking, reading,
-              writing, and listening. Accepted in 140 countries, including the
-              US, UK, Canada, and Australia.{" "}
-            </p>
-            <p>
-              The TOEFL® (Test of English as a Foreign
-              Language) assesses Reading, Listening, Speaking, and Writing
-              skills in English, and is accepted by over 11,500 universities in
-              160+ countries, including the USA, UK, and Canada.{" "}
+              The HSK (Hanyu Shuiping Kaoshi) certifies Mandarin proficiency for
+              non-Chinese speakers. With six levels, HSK1 (basic) to HSK6
+              (advanced), it measures listening, reading, and writing skills,
+              but not speaking. HSK scores are valuable for applying to Chinese
+              universities and companies, defining your language competency
+              clearly.
             </p>
           </div>
         );
@@ -332,14 +283,13 @@ const CourseDetails = () => {
         return (
           <div className={buy.tabContent}>
             <p>
-              Being proficient in English greatly enhances travel experiences,
-              especially in countries like the US, Australia, Germany, the
-              Netherlands, the UK, Ireland, Singapore, Switzerland and many
-              more. In these places, English is widely spoken and often used in
-              business and education, making navigation, communication, and
-              cultural immersion much smoother. From restaurant menus in Munich
-              to bilingual education in Singapore, English proficiency ensures a
-              seamless and enriching travel experience.
+              Proficiency in Chinese facilitates seamless travel experiences,
+              particularly in China, Taiwan, Hong Kong, and Singapore, where
+              Mandarin is widely spoken. It eases communication with locals,
+              navigation in public transport, and understanding of cultural
+              nuances. From ordering food to bargaining in markets, Chinese
+              proficiency enhances immersion and fosters deeper connections with
+              the rich heritage of these destinations.
             </p>
           </div>
         );
@@ -356,10 +306,13 @@ const CourseDetails = () => {
     <>
       <div>
         {/* cover page  */}
+
         <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
-              <a href="https://curiotory.com/lms"><button className={buy.loginButton}>Login</button></a>
+              <a href="https://curiotory.com/lms">
+                <button className={buy.loginButton}>Login</button>
+              </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
             <img
@@ -369,15 +322,25 @@ const CourseDetails = () => {
             />
           </header>
           <div className={buy.content}>
-            <div className={buy.textSection}>
+            <div className={buy.textSection} style={{
+              marginLeft:"6rem"
+            }}>
               <h1>
-                Say <br/>Goodbye to Difficult
+                <span className={buy.highlight}>Mandarin</span>
                 <br />
-                <span className={buy.highlight}>English</span> Learning!
+                Made Easy:
+                <br />
+                Your Friendly
+                <br />
+                Learning Companion
               </h1>
+              {/* <div className={buy.sticky}>
               <a href="/checkout"><button className={buy.learnButton}>Subsrcibe Now </button></a>
+              </div> */}
             </div>
-            <div className={buy.imageSection}>
+            <div className={buy.imageSection} style={{
+              marginRight:"9rem"
+            }}>
               <img
                 src="/mascot/croppedMascotNoBackground.png"
                 alt="Course Cover"
@@ -387,16 +350,25 @@ const CourseDetails = () => {
           </div>
         </div>
 
+        {/* subscribe button div */}
+        <div className={buy.sticky} style={{
+          marginLeft:"6rem"
+        }}>
+          <a href="/checkout">
+            <button className={buy.learnButton}>Subsrcibe Now </button>
+          </a>
+        </div>
+
         {/* Course highlight section */}
         <div className={buy.highlight_outer}>
           <h1>Course Highlights</h1>
           <div className={buy.highlightCourseDetails}>
             <p>
-              Start your A1 English journey with our unique course! Easily learn
-              the basics, excel in A1 exams, and strengthen your English
-              foundation. Boost your confidence and begin your path to fluency.
-              Experience seamless learning and achieve remarkable results. Your
-              English mastery journey begins here!
+              Begin Your Mandarin Adventure! Easily Learn from Basics to
+              Advanced, Ace Exams, and Build a Strong Mandarin Foundation. Boost
+              Confidence and Kickstart Your Journey to Fluency. Enjoy Smooth
+              Learning and See Amazing Results. Start Your Mandarin Mastery
+              Today!
             </p>
           </div>
           <div className={buy.course_highlights}>
@@ -404,7 +376,7 @@ const CourseDetails = () => {
               <HighlightItem
                 className={buy.item}
                 icon="play_circle"
-                title="25 hours of content"
+                title="30 hours of content"
                 description="At your own schedule"
               />
 
@@ -422,7 +394,7 @@ const CourseDetails = () => {
               /> */}
             </div>
             <div className={buy.highlights_section}>
-            <HighlightItem
+              <HighlightItem
                 className={buy.item}
                 icon="schedule"
                 title="Beginner Friendly"
@@ -435,7 +407,6 @@ const CourseDetails = () => {
                 title="Discover: Books, Travel Guide, Blogs"
                 description="Read Anytime, Anywhere"
               />
-              
 
               {/* <HighlightItem
                 className={buy.item}
@@ -568,26 +539,23 @@ const CourseDetails = () => {
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/EQ5g5VDbnG4?si=vsrAzB34Q4naDCE_"
+                src="https://www.youtube.com/embed/zd9XnZAl8B0?si=D-daAdwvSwzt59YK"
                 title="YouTube video player"
-                frameBorder="0"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
             </div>
             {/* text */}
             <p className={buy.description}>
-              This is the description of the course details video. It provides
-              an overview of what the course will cover. This is the description
-              of the course details video. It provides an overview of what the
-              course will cover.
+              An Introduction to Mandarin Language and its Culture
             </p>
           </div>
 
           {/* right section */}
           <div className={buy.right_section}>
-            <h2 className={buy.heading}>An Introduction to English</h2>
+            <h2 className={buy.heading}>An Introduction to Mandarin Language</h2>
             <ul className={buy.highlights}>
               <li>
                 <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
@@ -596,10 +564,6 @@ const CourseDetails = () => {
               <li>
                 <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
                 Quality Hours of Course Content
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
-                Lifetime course access
               </li>
               <li>
                 <FontAwesomeIcon icon={faCheckCircle} className={buy.icon} />{" "}
@@ -624,20 +588,20 @@ const CourseDetails = () => {
               onClick={() => setActiveTab("tab1")}
             >
               <i
-                className={`fas fa-book-open `}
+                className={`fas fa-graduation-cap`}
                 style={{ fontSize: "30px", marginRight: "7px" }}
               ></i>
-              Exam
+              Education
             </p>
             <p
               className={activeTab === "tab2" ? buy.activeTab : buy.tab}
               onClick={() => setActiveTab("tab2")}
             >
               <i
-                className={`fas fa-graduation-cap`}
+                className={`fas fa-book-open `}
                 style={{ fontSize: "30px", marginRight: "7px" }}
               ></i>
-              Education
+              Exam
             </p>
             <p
               className={activeTab === "tab3" ? buy.activeTab : buy.tab}
@@ -656,62 +620,9 @@ const CourseDetails = () => {
         {/* company section */}
         <div className={buy.company}>
           <h1>
-            Companies <span className={buy.yellow}>Hiring</span> French Experts
+            Companies <span className={buy.yellow}>Hiring</span> Mandarin Experts
           </h1>
           <div className={buy.first_row}>
-            {/* sample company */}
-            {/* <Card className={buy.cardss}>
-              <Card.Img
-                className={buy.card_img}
-                style={{
-                  width: "80%",
-                  margin: "0 auto",
-                  borderRadius: "7px",
-                }}
-                variant="top"
-                src="/Company/loreal.png"
-              />
-              <hr
-                style={{
-                  borderBottom: "1px solid black",
-                }}
-              />
-              <Card.Body
-                style={{
-                  width: "100%",
-                }}
-              >
-                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
-                <ul>
-                  {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
-                  ]
-                    .slice(0, showAllProfiles3 ? 9 : 5)
-                    .map((profile, index) => (
-                      <li key={index}>{profile}</li>
-                    ))}
-                </ul>
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles3}
-                >
-                  {showAllProfiles3 ? "View Less" : "View More"}
-                </Button>
-              </Card.Body>
-            </Card> */}
-
             {/* first company */}
             <Card className={buy.cardss}>
               <Card.Img
@@ -723,7 +634,7 @@ const CourseDetails = () => {
                 }}
                 variant="top"
                 src="/Company/google.png"
-                // google
+                // Alibaba group
               />
               <hr
                 style={{
@@ -739,9 +650,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Content Writer ",
-                    "Marketing Communications Specialist",
-                    "Customer Support Representative",
+                    "Mandarin Language Specialist ",
+                    "Mandarin Business Development Manager",
+                    "Mandarin Customer Service Representative",
                   ]
                     .slice(0, showAllProfiles1 ? 9 : 5)
                     .map((profile, index) => (
@@ -762,7 +673,7 @@ const CourseDetails = () => {
                 }}
                 variant="top"
                 src="/Company/microsoft.png"
-                // Microsoft
+                // Huawei
               />
               <hr
                 style={{
@@ -777,15 +688,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
+                    "Mandarin Translator",
+                    "Mandarin Marketing Specialist",
+                    "Mandarin Technical Support Engineer",
                   ]
                     .slice(0, showAllProfiles2 ? 3 : 3)
                     .map((profile, index) => (
@@ -816,7 +721,7 @@ const CourseDetails = () => {
                 }}
                 variant="top"
                 src="/Company/ibm.png"
-                // IBM
+                // Tencent Holdings
               />
               <hr
                 style={{
@@ -831,9 +736,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    " Technical Content Developer",
-                    "Communication Manager",
-                    "Customer Success Specialist",
+                    "Mandarin Content Moderator",
+                    "Mandarin Social Media Manager",
+                    "Mandarin Game Localization Specialist",
                   ]
                     .slice(0, showAllProfiles3 ? 3 : 3)
                     .map((profile, index) => (
@@ -856,7 +761,7 @@ const CourseDetails = () => {
                 }}
                 variant="top"
                 src="/Company/apple.png"
-                // Apple
+                // Bank of China
               />
               <hr
                 style={{
@@ -872,9 +777,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Content Editor",
-                    "Customer Support Advisor",
-                    "Marketing Copywriter",
+                    "Mandarin Financial Analyst",
+                    "Mandarin Relationship Manager",
+                    "Mandarin Banking Consultant",
                   ]
                     .slice(0, showAllProfiles4 ? 9 : 5)
                     .map((profile, index) => (
@@ -890,12 +795,12 @@ const CourseDetails = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                   margin: "2rem auto 1rem",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
                 src="/Company/amazon.png"
-                // Amazon
+                // Lenevo group
               />
               <hr
                 style={{
@@ -911,9 +816,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Content Moderator",
-                    "Customer Service Associate",
-                    "Marketing Communications Specialist ",
+                    "Mandarin Sales Representative",
+                    "Mandarin Product Manager",
+                    "Mandarin Market Research Analyst ",
                   ]
                     .slice(0, showAllProfiles5 ? 3 : 3)
                     .map((profile, index) => (
@@ -934,7 +839,7 @@ const CourseDetails = () => {
                 }}
                 variant="top"
                 src="/Company/meta.png"
-                // Facebook
+                // BYD Company Limited
               />
               <hr
                 style={{
@@ -950,9 +855,9 @@ const CourseDetails = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Marketing Communications Specialist ",
-                    "Content Reviewer",
-                    " Customer Support Specialist",
+                    "Mandarin Supply Chain Coordinator",
+                    "Mandarin Quality Assurance Engineer",
+                    "Mandarin Sales Account Manager",
                   ]
                     .slice(0, showAllProfiles6 ? 9 : 5)
                     .map((profile, index) => (
@@ -1020,19 +925,6 @@ const CourseDetails = () => {
         </div>
 
         {/* <!-- FAQ SECTION ENDS --> */}
-
-        {/* subscribe button for the footer */}
-        <a className={buy.button_container} href="/checkout">
-          <img
-            style={{
-              width: "30%",
-              height: "2%",
-              borderRadius: "10px",
-            }}
-            src="/Index/subscribe.png"
-            alt=""
-          />
-        </a>
       </div>
 
       <Footer2 />
@@ -1040,4 +932,4 @@ const CourseDetails = () => {
   );
 };
 
-export default CourseDetails;
+export default MandarinCourse;
