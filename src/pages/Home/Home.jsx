@@ -24,6 +24,7 @@ import "swiper/css/scrollbar";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Courselist from "../../components/CourseList/Courselist";
 
 // import { Settings } from "@mui/icons-material";
 
@@ -120,6 +121,8 @@ function Home() {
               />
               </div>
             </div>
+
+            <Courselist/>
 
             {/* <!-- sliding section --> */}
             <div className="sliding-section">

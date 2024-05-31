@@ -2,6 +2,9 @@ import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import "./Navv.css";
 
 function Navv() {
+  const token = localStorage.getItem("token");
+  const loginUrl = token ? "https://curiotory.com/lms/dashboard" : "https://curiotory.com/lms";
+  
   return (
     // className="navbarContainer"
     // <div style={{ backgroundColor: "#4186ef ",
@@ -82,9 +85,9 @@ function Navv() {
             >
               Contact Us
             </Nav.Link>
-            <Nav.Link href="https://curiotory.com/lms">           
-            <button className="loginButton">Login</button>
-              </Nav.Link>
+            <Nav.Link href={loginUrl}>
+              <button className="loginButtonCovernav">{token ? "Dashboard" : "Login"}</button>
+            </Nav.Link>
               
           </Nav>
           <Navbar.Brand href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
