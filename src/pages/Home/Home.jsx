@@ -5,6 +5,7 @@ import "./Home.css";
 import { useState, useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import LazyLoad from "react-lazyload";
+import Courselist from "../../components/CourseList/Courselist";
 
 // adding swiper
 import {
@@ -121,7 +122,7 @@ function Home() {
               </div>
             </div>
 
-            {/* <Courselist/> */}
+            <Courselist/>
 
             {/* <!-- sliding section --> */}
             <div className="sliding-section">
