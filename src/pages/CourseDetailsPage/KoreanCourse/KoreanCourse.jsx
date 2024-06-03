@@ -314,11 +314,11 @@ const KoreanCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -621,12 +621,13 @@ const KoreanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.png"
+                src="/Company/samsung.png"
                 // samsung electronics
               />
               <hr
@@ -660,12 +661,13 @@ const KoreanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "50%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/lg.png"
                 // LG
               />
               <hr
@@ -709,11 +711,12 @@ const KoreanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/hyundai.png"
                 // Hyundai
               />
               <hr
@@ -749,11 +752,12 @@ const KoreanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
+                src="/Company/sk.png"
                 // SK Group
               />
               <hr
@@ -787,12 +791,14 @@ const KoreanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/amazon.png"
+                src="/Company/cj.jpeg"
+                // src="/Company/cj.png"
                 // CJ corporation
               />
               <hr
@@ -826,12 +832,13 @@ const KoreanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
+                src="/Company/kia.png"
                 // Kia corporation
               />
               <hr

@@ -90,107 +90,165 @@ const JapaneseCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Introduction to Japan",
+        topics: [
+            "Japanese Language & Customs",
+            "Geography & History",
+            "Art & Festivals",
+            "Greetings & Politeness",
+            "Basic Phrases",
+            "Practical Sentences",
+            ""
+        ],
+        cnt: "6"
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Japanese Greetings, Writing, and Numbers",
+        topics: [
+            "Greetings Quiz",
+            "First Japanese Letter",
+            "More Letters",
+            "Additional Characters",
+            "Numbers 1-10",
+            "Counting Beyond 10"
+        ],
+        cnt: "6"
     },
     {
-      title: "Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Numbers and Pronunciation",
+        topics: [
+            "Review Numbers & Hiragana",
+            "Katakana Characters",
+            "Katakana Practice",
+            "Vocabulary & Grammar",
+            "Multiple Nouns",
+            "Sentence Structure & Verbs"
+        ],
+        cnt: "6"
     },
     {
-      title: "Java Basics",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Vocabulary & Conversation",
+        topics: [
+            "Basic Words & Phrases",
+            "Vocabulary: This, That",
+            "Listening Activities",
+            "Confirming Information",
+            "Translate to English",
+            "'So desu ka' & Asking Age"
+        ],
+        cnt: "6"
     },
     {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "'Minna no Nihongo' Mastery",
+        topics: [
+            "New Words from 'Minna no Nihongo'",
+            "Grammar Practice",
+            "Polite Expressions",
+            "Listening Activities",
+            "Directional Abbreviations",
+            "Listening for Context"
+        ],
+        cnt: "6"
     },
     {
-      title: "6Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Gender in Japanese",
+        topics: [
+            "Using 'Dore'",
+            "Using 'Dono'",
+            "Contexts for 'Dono' & 'Dore'",
+            "Various Grammar Points",
+            "Review Lessons",
+            "Honorific Prefix 'O'"
+        ],
+        cnt: "6"
     },
     {
-      title: "7Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Articles in Japanese",
+        topics: [
+            "New Words in Lesson 4",
+            "Time-Related Concepts",
+            "Speaking & Listening Practice",
+            "Verb Usage",
+            "Forming Negative Sentences",
+            "Verb Conjugation Practice"
+        ],
+        cnt: "6"
     },
     {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Personal Pronouns",
+        topics: [
+            "Daily Activities",
+            "Time-Related Sentences",
+            "Negative Past Tense",
+            "Common Patterns",
+            "Basic Expressions",
+            "Using 'Kara' & 'Made'"
+        ],
+        cnt: "6"
     },
     {
-      title: "9Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Lesson 5 Essentials",
+        topics: [
+            "Daily Conversation Phrases",
+            "Review Language Concepts",
+            "Negative Past Actions",
+            "Form Questions & Answers",
+            "Enhance Skills",
+            "Ask About Time & Dates"
+        ],
+        cnt: "6"
     },
     {
-      title: "10Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Everyday Japanese: Lesson 6",
+        topics: [
+            "Key Phrases",
+            "Particle 'を'",
+            "Common Items",
+            "Turn Statements to Questions",
+            "Ask 'What did you do?'",
+            "'Nani' & 'Nan' for 'What'"
+        ],
+        cnt: "6"
     },
     {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Sentence Structure & Polite Invitations",
+        topics: [
+            "Structuring Sentences",
+            "Polite Invitations",
+            "Accepting/Declining Invitations",
+            "Agree to Activities",
+            "'O (を)' Prefix",
+            "Sentence Practice"
+        ],
+        cnt: "6"
     },
     {
-      title: "12Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Vocabulary & Grammar Practice",
+        topics: [
+            "Vocabulary from Lesson 7",
+            "Key Grammar Points",
+            "Practice Sentences",
+            "Explain Specific Terms",
+            "Japanese Phrases",
+            "Review Previous Lessons"
+        ],
+        cnt: "6"
     },
-    // Add more modules as needed
-  ];
+    {
+        title: "Essential Rules & Practical Examples",
+        topics: [
+            "Sentence Construction Rules",
+            "Grammar with Examples",
+            "Using 'To Receive'",
+            "Object Receiver Changes",
+            "'Mo' Examples",
+            "Continuing Conversations"
+        ],
+        cnt: "6"
+    }
+];
+
+
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -316,11 +374,11 @@ const JapaneseCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -345,7 +403,9 @@ const JapaneseCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky}>
+        <div className={buy.sticky} style={{
+          marginLeft:"5rem"
+        }}>
           <a href="/checkout">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
@@ -627,7 +687,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/google.png"
-                // Honda
+                // google
               />
               <hr
                 style={{
@@ -643,17 +703,18 @@ const JapaneseCourse = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Corporate Communications Specialist",
-                    "Bilingual HR Specialist",
-                    "Supply Chain Coordinator",
+                    "Language Specialist",
+                    "Customer Support Specialist",
+                    "Content Reviewer",
                   ]
-                    .slice(0, showAllProfiles1 ? 9 : 5)
+                    .slice(0, showAllProfiles4 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
               </Card.Body>
             </Card>
+            
 
             {/* second company */}
             <Card className={buy.cardss}>
@@ -665,7 +726,7 @@ const JapaneseCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/sony.png"
                 // sony
               />
               <hr
@@ -713,7 +774,7 @@ const JapaneseCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/raku.png"
                 // Rakuten
               />
               <hr
@@ -749,12 +810,13 @@ const JapaneseCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"20%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
-                // google
+                src="/Company/honda.png"
+                // Honda
               />
               <hr
                 style={{
@@ -770,11 +832,11 @@ const JapaneseCourse = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "Language Specialist",
-                    "Customer Support Specialist",
-                    "Content Reviewer",
+                    "Corporate Communications Specialist",
+                    "Bilingual HR Specialist",
+                    "Supply Chain Coordinator",
                   ]
-                    .slice(0, showAllProfiles4 ? 9 : 5)
+                    .slice(0, showAllProfiles1 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
@@ -788,6 +850,7 @@ const JapaneseCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"20%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -827,11 +890,12 @@ const JapaneseCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"20%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
+                src="/Company/toyota.png"
                 // Toyota
               />
               <hr

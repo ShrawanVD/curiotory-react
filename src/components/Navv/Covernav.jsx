@@ -28,7 +28,7 @@ function Covernav() {
     >
 
       <Container fluid className="navbarContainer">
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="">
           <img
             src="/Index/logo.png"
             width="auto"

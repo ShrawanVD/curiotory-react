@@ -90,107 +90,351 @@ const MandarinCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Ni Hao - A Comprehensive Guide from Greetings to Tones",
+        topics: [
+            "Mandarin Basics",
+            "Essential Phrases: Greetings",
+            "More Essential Phrases",
+            "Pinyin: Initials and Finals",
+            "Mandarin Tones and Syllables",
+            "More Chinese Syllables"
+        ],
+        cnt: "6"
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Ni Hao - From Syllables to Characters in the Classroom",
+        topics: [
+            "Disyllables Pronunciation",
+            "3rd Tone Syllables, Classroom Expressions",
+            "More Classroom Expressions",
+            "Mandarin Characters Basics",
+            "Single-component Characters"
+        ],
+        cnt: "6"
     },
     {
-      title: "Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Thank You - Exploring Mandarin Dialogues and Pronunciation",
+        topics: [
+            "'Thank You' and Dialogues",
+            "Dialogues and Gestures",
+            "Pinyin Initials and Finals",
+            "More Pinyin Practice",
+            "Chinese Syllables: Initials and Finals"
+        ],
+        cnt: "6"
     },
     {
-      title: "Java Basics",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Thank You - Mandarin Grammar, Expressions, and Character Mastery",
+        topics: [
+            "Grammar Patterns and Pinyin Rules",
+            "Tone Marks",
+            "Classroom Expressions",
+            "Character Strokes",
+            "Single-component Characters"
+        ],
+        cnt: "6"
     },
     {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "What is Your Name - Roleplay, Pronunciation, and Self-Introduction",
+        topics: [
+            "Interrogative Sentences and Roleplay",
+            "More Roleplay Exercises",
+            "Pronunciation: Z, C, S",
+            "Self-Introduction Grammar",
+            "Conversation Tips and Tricks"
+        ],
+        cnt: "6"
     },
     {
-      title: "6Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "What is Your Name - From Initials to Characters and Tone Changes",
+        topics: [
+            "Initials: Z, C, S, J, Q, X",
+            "Six Initials and Rules",
+            "Tone Sandhi of 'bu'",
+            "Pinyin Rules",
+            "Character Strokes and Single-component Characters"
+        ],
+        cnt: "6"
     },
     {
-      title: "7Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "She is my Chinese Teacher - From Classroom to Conversations",
+        topics: [
+            "Classroom Expressions",
+            "Library Conversations",
+            "Basic Conversations",
+            "Interrogative Pronouns",
+            "Interrogative Particle Exercises"
+        ],
+        cnt: "6"
     },
     {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "She is my Chinese Teacher - From Pinyin to HSK 1 Vocabulary",
+        topics: [
+            "Pinyin Initials: Zh, Ch, Sh, R",
+            "Pronunciation of 'yi'",
+            "Y, W Usage",
+            "Character Strokes Practice",
+            "HSK 1 Vocabulary"
+        ],
+        cnt: "6"
     },
     {
-      title: "9Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Her Daughter is Twenty - Age, Office Talk, Numbers, and Vocabulary",
+        topics: [
+            "Describing Age",
+            "Office Conversations",
+            "Numbers below 100",
+            "Retroflex Final, HSK 1 Vocabulary"
+        ],
+        cnt: "5"
     },
     {
-      title: "10Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Her Daughter is Twenty - Pinyin, Vocabulary, and Strokes",
+        topics: [
+            "Aspirated vs Unaspirated Initials",
+            "Pinyin Rules, Syllable Mark",
+            "HSK 1 Vocabulary",
+            "Character Strokes Basics"
+        ],
+        cnt: "5"
     },
     {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "I Can Speak Chinese - Conversational Mandarin: From School to Kitchen, Library, and Beyond",
+        topics: [
+            "'I Can Speak Chinese'",
+            "School Conversations",
+            "Kitchen Conversations",
+            "Library Conversations",
+            "Modal Verbs",
+            "Interrogative Pronouns"
+        ],
+        cnt: "6"
     },
     {
-      title: "12Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "I Can Speak Chinese - Role-playing, Characters, Vocabulary, and HSK 1 Preparation",
+        topics: [
+            "Role-playing Dialogues",
+            "Character Strokes Basics",
+            "Single-component Characters",
+            "HSK 1 Vocabulary",
+            "HSK 1 Exam-style Questions"
+        ],
+        cnt: "6"
     },
-    // Add more modules as needed
-  ];
+    {
+        title: "What is the Date Today - Dates, Banking, Coffee Chats, and HSK 1 Vocabulary",
+        topics: [
+            "'What's the Date Today?'",
+            "Bank Conversations",
+            "Calendar Phrases",
+            "Coffee House Conversations",
+            "Date Expressions",
+            "HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "What is the Date Today - Mastering Months, Days, and Chinese Script Origins",
+        topics: [
+            "Months of the Year",
+            "Days of the Week",
+            "Answering Real-life Questions",
+            "Fill-in-the-blank Exercises",
+            "Radicals in Chinese Characters",
+            "History of Chinese Characters"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "I Would Like Some Tea - Restaurants, Living Rooms, Stores, and HSK 1 Vocabulary",
+        topics: [
+            "Matching Phrases Exercise",
+            "Restaurant Conversations",
+            "Living Room Conversations",
+            "Store Conversations",
+            "Modal Verbs",
+            "Measure Words, HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "I Would Like Some Tea - Money Matters, Real-Life Questions, Characters, and HSK 1 Vocabulary",
+        topics: [
+            "Talking About Money",
+            "Answering Real-life Questions",
+            "Fill-in-the-blanks Exercise",
+            "Single Component Characters",
+            "Chinese Radicals",
+            "HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Where Does Your Son Work? - Home, Travel, Communication, and HSK 1 Vocabulary",
+        topics: [
+            "'Where Does Your Son Work?'",
+            "Everyday Home Conversations",
+            "Railway Station Conversations",
+            "Phone Conversations",
+            "Mandarin Prepositions",
+            "HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Where Does Your Son Work? - Question Practice, Sentence Completion, and Character Structure",
+        topics: [
+            "Practice Asking Questions",
+            "Answer Questions from Dialogues",
+            "Complete the Sentences",
+            "Single Compound Characters",
+            "Structure of Chinese Characters",
+            "Radicals, HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Can I Sit Here? - Situations and Sentence Structure in Office, Gym, and Library",
+        topics: [
+            "Asking 'Can I Sit Here?'",
+            "Office Conversations",
+            "Gym Conversations",
+            "Library Conversations",
+            "'有 (yǒu)' Sentence Usage",
+            "Conjunctions, Modal Verbs, HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Can I Sit Here? - Dialogue Responses, Pronunciation, and Character Evolution",
+        topics: [
+            "Answering Dialogue Questions",
+            "Fill-in-the-blanks Exercise",
+            "Pronunciation of Reduplicated Syllables",
+            "Evolution of Chinese Characters",
+            "Structure and Radicals of Characters",
+            "HSK 1 Vocabulary"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "What is the Time Now - Conversations at Home and Essential Vocabulary",
+        topics: [
+            "Asking and Telling the Time",
+            "Home Conversations",
+            "Time-related Expressions",
+            "HSK 1 Words and Phrases"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "What is the Time Now - Time, Questions, and Characters",
+        topics: [
+            "Time-related Adverbs",
+            "Nouns in Sentences",
+            "Asking and Answering Questions",
+            "Fill-in-the-blanks Exercises",
+            "Neutral Tone Syllables",
+            "Chinese Characters and Radicals"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "What Will the Weather Be Like? - Weather, Travel, Health, and Grammar",
+        topics: [
+            "Discussing Future Weather",
+            "Travel-related Conversations",
+            "Gym-related Dialogues",
+            "Health-related Roleplay",
+            "Interrogative Pronouns",
+            "Adverbs in Sentences"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "What Will the Weather Be Like? - Weather, Pinyin, and Character Insights",
+        topics: [
+            "Predicting Weather",
+            "Fill-in-the-blanks Exercises",
+            "Pinyin System Study",
+            "History of Chinese Writing",
+            "Components of Chinese Characters"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "He is Learning to Cook - Cooking, Calls, Coffee, School, and Exclamations",
+        topics: [
+            "Cooking Techniques and Recipes",
+            "Telephone Conversation Roleplay",
+            "Coffee Shop Dialogues",
+            "School Office Interactions",
+            "Common Exclamations",
+            "Negative Sentences in Present Continuous"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "He is Learning to Cook - Numbers, Comprehension, Characters, and Vocabulary",
+        topics: [
+            "Expressing Telephone Numbers",
+            "Comprehension of Text Content",
+            "Fill-in-the-blanks Exercise",
+            "Radicals of Chinese Characters",
+            "HSK 1 Vocabulary Practice"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "She has bought quite a few clothes - Matching Images, Dorm Chat, Workplace Talk, Shopping, and Character Insights",
+        topics: [
+            "Matching Images with Words",
+            "Dormitory Conversations",
+            "Workplace Dialogue",
+            "Shopping Dialogue",
+            "Usage of '了' (le)",
+            "Meaning of '后' (hòu)"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "She has bought quite a few clothes - Conversations, Vocabulary Expansion, Romanization, Pronunciation, and Character Origins",
+        topics: [
+            "Responding in Conversations",
+            "Vocabulary with Sentence Completion",
+            "Mandarin Romanization System",
+            "Pronunciation with Pinyin",
+            "History of Chinese Characters"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "I came here by air - Images, Meals, Hotels, Business, Phonetics, Negatives",
+        topics: [
+            "Matching Words with Images",
+            "Mealtime Discussion Phrases",
+            "Hotel Dialogues",
+            "Corporate Dialogue",
+            "Mandarin Phonetic System",
+            "Constructing Negative Sentences"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "I came here by air - Scenarios, Vocabulary, Pronunciation, Characters",
+        topics: [
+            "Answering Scenario Questions",
+            "Vocabulary with Sentence Completion",
+            "Mandarin Romanization System",
+            "Pronunciation with Pinyin",
+            "Evolution of Chinese Characters",
+            "Chinese Character Radicals"
+        ],
+        cnt: "6"
+    }
+];
+
+
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -315,11 +559,11 @@ const MandarinCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection} style={{
@@ -629,11 +873,12 @@ const MandarinCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.png"
+                src="/Company/alibaba.png"
                 // Alibaba group
               />
               <hr
@@ -672,7 +917,7 @@ const MandarinCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/huawei.png"
                 // Huawei
               />
               <hr
@@ -715,12 +960,13 @@ const MandarinCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "50%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/pubg.png"
                 // Tencent Holdings
               />
               <hr
@@ -756,11 +1002,12 @@ const MandarinCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"13%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
+                src="/Company/bkc.png"
                 // Bank of China
               />
               <hr
@@ -799,7 +1046,7 @@ const MandarinCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/amazon.png"
+                src="/Company/lenevo.png"
                 // Lenevo group
               />
               <hr
@@ -833,12 +1080,13 @@ const MandarinCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
+                src="/Company/byd.png"
                 // BYD Company Limited
               />
               <hr
