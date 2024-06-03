@@ -13,7 +13,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "https://backendapi-3tnw.onrender.com/sendMsg",
+        "https://backendapi-1bfa.onrender.com/sendMsg",
         {
           method: "POST",
           headers: {
@@ -68,7 +68,7 @@ function Contact() {
         <div className={Contactcss.formSection}>
           <form
             method="POST"
-            action="https://backendapi-3tnw.onrender.com/sendMsg"
+            action="https://backendapi-1bfa.onrender.com/sendMsg"
             id="contactFormUrl"
             className={Contactcss.allForm}
             onSubmit={handleSubmit}

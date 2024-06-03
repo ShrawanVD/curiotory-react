@@ -4,6 +4,7 @@ import Covernav from "../../components/Navv/Covernav";
 import "./Home.css";
 import { useState, useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
+import LazyLoad from "react-lazyload";
 
 // adding swiper
 import {
@@ -24,7 +25,7 @@ import "swiper/css/scrollbar";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Courselist from "../../components/CourseList/Courselist";
+// import Courselist from "../../components/CourseList/Courselist";
 
 // import { Settings } from "@mui/icons-material";
 
@@ -114,15 +115,13 @@ function Home() {
                 className="iframeLottie"
               ></iframe> */}
               <div className="iframeLottie">
-              <Player
-                autoplay
-                loop
-                src="/lottiePlayer/proFinal.json"
-              />
+                <LazyLoad height={200} offset={100}>
+                  <Player autoplay loop src="/lottiePlayer/proFinal.json" />
+                </LazyLoad>
               </div>
             </div>
 
-            <Courselist/>
+            {/* <Courselist/> */}
 
             {/* <!-- sliding section --> */}
             <div className="sliding-section">
@@ -133,129 +132,157 @@ function Home() {
                 <Slider {...settings}>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266pxpx"
-                        src="/Index/Group-292.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266pxpx"
+                          src="/Index/Group-292.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-293.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-293.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-294.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-294.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-295.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-295.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-296.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-296.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-297.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-297.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-298.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-298.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
 
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266pxpx"
-                        src="/Index/Group-292.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266pxpx"
+                          src="/Index/Group-292.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-293.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-293.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-294.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-294.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-295.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-295.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-296.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-296.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-297.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-297.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                   <div className="sliding-card">
                     <a>
-                      <img
-                        width="216px"
-                        height="266px"
-                        src="/Index/Group-298.png"
-                      />
+                      <LazyLoad height={200} offset={100}>
+                        <img
+                          width="216px"
+                          height="266px"
+                          src="/Index/Group-298.png"
+                        />
+                      </LazyLoad>
                     </a>
                   </div>
                 </Slider>
@@ -269,7 +296,9 @@ function Home() {
               </div>
               <div className="lang-card">
                 <div className="cards">
-                  <img width="173" height="187" src="/Index/Picture1.png" />
+                  <LazyLoad height={200} offset={100}>
+                    <img width="173" height="187" src="/Index/Picture1.png" />
+                  </LazyLoad>
                   <h4>Cohorts</h4>
                   <p>
                     There are no age restrictions or skill gaps to learning new
@@ -278,7 +307,10 @@ function Home() {
                   </p>
                 </div>
                 <div className="cards">
-                  <img width="282" height="186" src="/Index/Picture2.png" />
+                  <LazyLoad height={200} offset={100}>
+                    <img width="282" height="186" src="/Index/Picture2.png" />
+                  </LazyLoad>
+
                   <h4>School & College Partnerships</h4>
                   <p>
                     Multilingual students are better equipped to ace academics
@@ -287,7 +319,10 @@ function Home() {
                   </p>
                 </div>
                 <div className="cards">
-                  <img width="151" height="186" src="/Index/Picture3.png" />
+                  <LazyLoad height={200} offset={100}>
+                    <img width="151" height="186" src="/Index/Picture3.png" />
+                  </LazyLoad>
+
                   <h4>Corporate Training</h4>
                   <p>
                     There are no age restrictions or skill gaps to learning new
@@ -647,10 +682,7 @@ function Home() {
                   </ul>
                 </div>
 
-                <a
-                  className="register-button"
-                  href="/teacherform"
-                >
+                <a className="register-button" href="/teacherform">
                   Register as a teacher
                 </a>
               </div>

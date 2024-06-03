@@ -4,8 +4,60 @@ import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+
+const sampleData = [
+  {
+    id: 1,
+    title: "English Course",
+    content:
+      "Start your A1 English journey with our unique course! Easily learn the basics, excel in A1 exams, and strengthen your English foundation. Boost your confidence and begin your path to fluency. Experience seamless learning and achieve remarkable results. Your English mastery journey begins here!",
+    ytLink: "https://www.youtube.com/embed/EQ5g5VDbnG4?si=vsrAzB34Q4naDCE_",
+  },
+  {
+    id: 2,
+    title: "French Course",
+    content:
+      "Bonjour! Start Your French Journey with Our Tailored Course! From  Basics to Advanced, Ace Exams and Fortify Your Foundation. Boost Confidence and Progress Toward Fluency. Seamlessly Learn and  Attain Impressive Results. Your Path to French Mastery Begins Now!",
+    ytLink: "https://www.youtube.com/embed/aXTwNIoym4U?si=HVhipSfvxQLh8bdn",
+  },
+  {
+    id: 3,
+    title: "German Course",
+    content: "Start your German journey with our unique course! Easily learn from basics to advanced levels, excel in exams, and strengthen your German foundation. Boost your confidence and pave your way to fluency. Experience seamless learning and achieve outstanding results. Your path to mastering German begins here!",
+    ytLink: "https://www.youtube.com/embed/BJTxncjyyQI?si=O5plcg3tuPfHXNw-",
+  },
+  {
+    id: 4,
+    title: "Japenese Course",
+    content: "Begin your Japanese journey with our unique course! Easily learn the basics to advance, excel in exams, and strengthen your Japanese foundation. Boost your confidence and start your path to fluency. Experience seamless learning and achieve remarkable results. Your Japanese mastery journey starts here!",
+    ytLink: "https://www.youtube.com/embed/59astp-V2rQ?si=6ARIR9bPEGsen15D",
+  },
+  {
+    id: 5,
+    title: "Korean Course",
+    content: "Kickstart Your Korean Learning Adventure Today! From Beginner to Advanced Levels, Ace Exams, and Fortify Your Korean Skills. Build Confidence and Dive into Fluency. Seamlessly Navigate Your Learning Journey and Witness Extraordinary Progress. Your Path to Korean Proficiency Begins Now!",
+    ytLink: "https://www.youtube.com/embed/TZ1Oy5LUVls?si=7JgbC1PpwNn71-dr",
+  },
+  {
+    id: 6,
+    title: "Mandarian Course",
+    content: " Begin Your Mandarin Adventure! Easily Learn from Basics to Advanced, Ace Exams, and Build a Strong Mandarin Foundation. Boost Confidence and Kickstart Your Journey to Fluency. Enjoy Smooth Learning and See Amazing Results. Start Your Mandarin Mastery Today!",
+    ytLink: "https://www.youtube.com/embed/zd9XnZAl8B0?si=D-daAdwvSwzt59YK",
+  },
+  {
+    id: 7,
+    title: "Spanish Course",
+    content: "Begin your Spanish adventure with our one-of-a-kind course! Quickly grasp the fundamentals to advance, excel in exams, and solidify your Spanish foundation. Gain confidence and set yourself on the path to fluency. Enjoy smooth learning and achieve outstanding results. Your journey to mastering Spanish begins now!",
+    ytLink: "https://www.youtube.com/embed/e3QTQXmqWnM?si=i1GosbSYtNN5olin",
+  },
+];
 
 function CheckoutPg() {
+  // finding the id
+  const { id } = useParams();
+  const item = sampleData.find((data) => data.id === parseInt(id));
+
   // --------------------------------- button enabling - disabling  -------------------------------
 
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
@@ -77,6 +129,7 @@ function CheckoutPg() {
     console.log("in handle function");
     try {
       const res = await fetch(
+        // https://lms-backend-3nru.onrender.com
         `https://lms-backend-3nru.onrender.com/api/payment/order`,
         {
           method: "POST",
@@ -101,39 +154,38 @@ function CheckoutPg() {
   // payment verify function
   const handlePaymentVerify = async (data) => {
     const options = {
-      key: {}.RAZORPAY_KEY_ID,
+      key: "rzp_live_6ht8FWR2aK0Ug5",
       amount: data.amount,
       currency: data.currency,
-      name: "Shrawan",
-      description: "Test Mode",
+      name: "Curiotory",
+      description: "Live Mode",
       order_id: data.id,
       handler: async (response) => {
         console.log("response", response);
         try {
-          const res = await fetch(
-            `https://lms-backend-3nru.onrender.com/api/payment/verify`,
-            {
-              method: "POST",
-              headers: {
-                "content-type": "application/json",
-              },
-              body: JSON.stringify({
-                razorpay_order_id: response.razorpay_order_id,
-                razorpay_payment_id: response.razorpay_payment_id,
-                razorpay_signature: response.razorpay_signature,
-                fullName: formData.fullName,
-                phone: formData.phone,
-                email: formData.email,
-                password: formData.password,
-              }),
-            }
-          );
+          const res = await fetch(`https://lms-backend-3nru.onrender.com/api/payment/verify`, {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify({
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              fullName: formData.fullName,
+              phone: formData.phone,
+              email: formData.email,
+              password: formData.password,
+            }),
+          });
 
           const verifyData = await res.json();
 
           if (verifyData) {
             toast.success(verifyData.message, {
-              onClose: () => navigate("https://curiotory.com/login", { replace: true }),
+              onClose: () =>
+                // navigate("https://curiotory.com/lms", { replace: true }),
+              (window.location.href = "https://curiotory.com/lms")
             });
           }
         } catch (error) {
@@ -175,13 +227,11 @@ function CheckoutPg() {
           <div className="course_details">
             <div class="custom">
               <div class="card-body">
-                <h3 class="card-title">
-                  The Youtube Blueprint: Make Content Creation your Career!
-                </h3>
-                <h6 class="card-title text-muted">
+                <h3 class="card-title">{item.title}</h3>
+                {/* <h6 class="card-title text-muted">
                   by <span className="teacher">Adam Smith</span>
-                </h6>
-                <img
+                </h6> */}
+                {/* <img
                   style={{
                     marginTop: "1rem",
                     marginBottom: "2rem",
@@ -190,17 +240,18 @@ function CheckoutPg() {
                     // height: "60%",
                   }}
                   src="/Index/cc.jpeg"
-                  // src="https://academy.dhruvrathee.com/publicassets/-img_6611-4a677640c26132fdaef8a472992ead8a.JPG"
-                />
-                <p class="card-text">
-                  Have you ever dreamt of becoming a Youtuber? This is your
-                  blueprint to getting there. Whether you want to take up
-                  content creation as a full time career or a part-time job,
-                  this all-in-one course is your perfect plan of action. Learn
-                  to ideate, script, film, and edit amazing videos. Then
-                  understand the secret to getting lakhs of followers and making
-                  money as a content creator. It's time to live your dream life!
-                </p>
+                /> */}
+                <iframe
+                  src={item.ytLink}
+                  style={{
+                    marginTop: "1rem",
+                    marginBottom: "2rem",
+                    borderRadius: "10px",
+                    width: "100%",
+                    height: "15rem",
+                  }}
+                ></iframe>
+                <p class="card-text">{item.content}</p>
                 <hr />
                 <p
                   class="card-text"

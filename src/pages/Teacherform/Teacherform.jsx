@@ -15,7 +15,7 @@ class Teacherform extends React.Component {
     // Creating FormData from form ref
     const formData = new FormData(this.formRef.current);
 
-    fetch('https://backendapi-3tnw.onrender.com/submit_form', {
+    fetch('https://backendapi-1bfa.onrender.com/submit_form', {
       method: 'POST',
       body: formData,
     })

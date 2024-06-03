@@ -347,7 +347,7 @@ const GermanCourse = () => {
         <div className={buy.sticky} style={{
           marginLeft:"7rem"
         }}>
-          <a href="/checkout">
+          <a href="/checkout/3">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
         </div>
@@ -567,7 +567,7 @@ const GermanCourse = () => {
                 24/7 instant email support
               </li>
             </ul>
-            <a href="/checkout">
+            <a href="/checkout/3">
               <button className={buy.subscribeButton}>Subscribe Today</button>
             </a>
           </div>

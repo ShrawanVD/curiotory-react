@@ -348,7 +348,7 @@ const SpanishCourse = () => {
         <div className={buy.sticky} style={{
           marginLeft:"7rem"
         }}>
-          <a href="/checkout">
+          <a href="/checkout/7">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
         </div>
@@ -568,7 +568,7 @@ const SpanishCourse = () => {
                 24/7 instant email support
               </li>
             </ul>
-            <a href="/checkout">
+            <a href="/checkout/7">
               <button className={buy.subscribeButton}>Subscribe Today</button>
             </a>
           </div>

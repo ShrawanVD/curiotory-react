@@ -354,7 +354,7 @@ const MandarinCourse = () => {
         <div className={buy.sticky} style={{
           marginLeft:"6rem"
         }}>
-          <a href="/checkout">
+          <a href="/checkou/6">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
         </div>
@@ -574,7 +574,7 @@ const MandarinCourse = () => {
                 24/7 instant email support
               </li>
             </ul>
-            <a href="/checkout">
+            <a href="/checkout/6">
               <button className={buy.subscribeButton}>Subscribe Today</button>
             </a>
           </div>

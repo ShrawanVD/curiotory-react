@@ -108,7 +108,7 @@ function Blogs() {
     setLoading(true);
     // https://backendapi-ay7s.onrender.com/api/blogs
     
-    fetch("https://backendapi-3tnw.onrender.com/api/blogs")
+    fetch("https://backendapi-1bfa.onrender.com/api/blogs")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

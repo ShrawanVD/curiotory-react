@@ -346,7 +346,7 @@ const JapaneseCourse = () => {
 
         {/* subscribe button div */}
         <div className={buy.sticky}>
-          <a href="/checkout">
+          <a href="/checkout/4">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
         </div>
@@ -566,7 +566,7 @@ const JapaneseCourse = () => {
                 24/7 instant email support
               </li>
             </ul>
-            <a href="/checkout">
+            <a href="/checkout/4">
               <button className={buy.subscribeButton}>Subscribe Today</button>
             </a>
           </div>

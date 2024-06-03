@@ -49,7 +49,7 @@ export default (
         <Route path="/becometutor" element={<Becometutor />} />
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
-        <Route path="/checkout" element={<CheckoutPg />} />
+        <Route path="/checkout/:id" element={<CheckoutPg />} />
         
         
         {/* Languages pages routing */}
