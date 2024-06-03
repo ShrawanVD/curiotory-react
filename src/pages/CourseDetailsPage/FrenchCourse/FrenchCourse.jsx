@@ -90,107 +90,242 @@ const FrenchCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Introduction to French",
+        topics: [
+            "Intro to French & Monuments",
+            "Landmarks & Festivals",
+            "Essential Greetings",
+            "Self-Introduction",
+            "Asking Names",
+            "Irregular Verbs"
+        ],
+        cnt: "6"
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Verb 's'appeler' & Intro",
+        topics: [
+            "Irregular Verb 'Avoir'",
+            "French Alphabet",
+            "Basic Sentences"
+        ],
+        cnt: "3"
     },
     {
-      title: "Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Colors, Nationalities, Numbers",
+        topics: [
+            "Colors",
+            "Numbers",
+            "Days & Months",
+            "Nationalities",
+            "Emotions"
+        ],
+        cnt: "5"
     },
     {
-      title: "Java Basics",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Numbers, Articles, Prepositions",
+        topics: [
+            "Counting 20-100",
+            "Definite & Indefinite Articles",
+            "Prepositions"
+        ],
+        cnt: "3"
     },
     {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Pronouns, ER-verbs, Profession",
+        topics: [
+            "ER Verb Conjugation",
+            "Phrases with ER Verbs",
+            "Professions",
+            "Job Vocabulary"
+        ],
+        cnt: "4"
     },
     {
-      title: "6Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "IR-verbs, Negation, Writing",
+        topics: [
+            "IR Verb Conjugation",
+            "More IR Verbs",
+            "Negative Sentences",
+            "Forms & Documents",
+            "New Words"
+        ],
+        cnt: "5"
     },
     {
-      title: "7Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Reading, House Description",
+        topics: [
+            "Prepositions",
+            "Home Activities Vocabulary",
+            "Kitchen & Bathroom Items",
+            "Country Prepositions"
+        ],
+        cnt: "4"
     },
     {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "RE-verb, Speaking, Writing",
+        topics: [
+            "RE Verb Conjugation",
+            "Classroom Vocabulary",
+            "Pronunciation Rules",
+            "More Pronunciation Practice",
+            "Writing Ads"
+        ],
+        cnt: "5"
     },
     {
-      title: "9Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Possessive Adjectives",
+        topics: [
+            "Possessive Adjectives",
+            "Physical Descriptions"
+        ],
+        cnt: "2"
     },
     {
-      title: "10Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Listening & Speaking",
+        topics: [
+            "Time Concepts",
+            "Reflexive Pronouns",
+            "Daily Routines",
+            "School Day Vocabulary"
+        ],
+        cnt: "4"
     },
     {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Time, Routine, Practice",
+        topics: [
+            "Verb 'Aller'",
+            "Contracted Forms",
+            "Exercises & Quizzes",
+            "Adjectives Practice"
+        ],
+        cnt: "4"
     },
     {
-      title: "12Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Contracted Articles, Future",
+        topics: [
+            "Giving Directions",
+            "Listening Practice",
+            "Unspecified Quantities"
+        ],
+        cnt: "3"
     },
-    // Add more modules as needed
-  ];
+    {
+        title: "Directions, Reading, Listening",
+        topics: [
+            "Common Adverbs"
+        ],
+        cnt: "1"
+    },
+    {
+        title: "Speaking, Adverbs",
+        topics: [
+            "Seasons",
+            "Demonstrative Adjectives",
+            "Postcard Phrases"
+        ],
+        cnt: "3"
+    },
+    {
+        title: "Weather, Writing, Demonstratives",
+        topics: [
+            "Family Vocabulary",
+            "French Shops",
+            "Clothing Vocabulary"
+        ],
+        cnt: "3"
+    },
+    {
+        title: "Vocabulary, Clothes, Demonstratives",
+        topics: [
+            "Past Actions",
+            "Past Tense Questions",
+            "Auxiliary Verbs in Past",
+            "Negative Sentences Present"
+        ],
+        cnt: "4"
+    },
+    {
+        title: "Past Actions, Celebrities",
+        topics: [
+            "Imperfect Tense",
+            "Irregular Verbs",
+            "French Celebrities",
+            "Parisian Facts"
+        ],
+        cnt: "4"
+    },
+    {
+        title: "Louisiana Culture, Invitations",
+        topics: [
+            "Menu Items",
+            "Ordering Food",
+            "Invitation Letters"
+        ],
+        cnt: "3"
+    },
+    {
+        title: "Listening, Negatives, Pronouns",
+        topics: [
+            "Negative Expressions",
+            "Negative Compound Sentences",
+            "Pronoun 'en'"
+        ],
+        cnt: "3"
+    },
+    {
+        title: "French Hobbies & Pastimes",
+        topics: [
+            "French Hobbies",
+            "Usage of 'Y'"
+        ],
+        cnt: "2"
+    },
+    {
+        title: "French Adjectives",
+        topics: [
+            "Comparative Forms",
+            "Superlative Forms",
+            "Common Adjectives",
+            "Adjective Forms & Functions"
+        ],
+        cnt: "4"
+    },
+    {
+        title: "Mastering Text & Commands",
+        topics: [
+            "Understanding Written French",
+            "Giving Commands"
+        ],
+        cnt: "2"
+    },
+    {
+        title: "Pronouns, Phrases, Email",
+        topics: [
+            "Pronouns in Clauses",
+            "Key Phrases",
+            "Informal Email Writing"
+        ],
+        cnt: "3"
+    },
+    {
+        title: "Verb 'Venir' & Achievements",
+        topics: [
+            "Verb 'Venir' Conjugations",
+            "Achievement Expressions"
+        ],
+        cnt: "2"
+    },
+    {
+        title: "Definite Articles, Verb Conjugations",
+        topics: [
+            "Definite Article Usage",
+            "Verb Forms & Conjugations"
+        ],
+        cnt: "2"
+    }
+];
+
+
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -315,11 +450,11 @@ const FrenchCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection} style={{
@@ -631,7 +766,7 @@ const FrenchCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.png"
+                src="/Company/airbus.png"
                 // Airbus
               />
               <hr
@@ -666,11 +801,12 @@ const FrenchCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"17%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/loreal.png"
                 // Loreal
               />
               <hr
@@ -718,7 +854,7 @@ const FrenchCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/accenture.png"
                 // Accenture
               />
               <hr
@@ -758,7 +894,7 @@ const FrenchCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
+                src="/Company/delloite.png"
                 // Deloitte
               />
               <hr
@@ -832,11 +968,12 @@ const FrenchCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"17%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
+                src="/Company/net.png"
                 // Netflix
               />
               <hr

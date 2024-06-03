@@ -316,11 +316,11 @@ const SpanishCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -628,7 +628,7 @@ const SpanishCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.png"
+                src="/Company/delloite.png"
                 // Deloitte
               />
               <hr
@@ -662,12 +662,13 @@ const SpanishCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/boeing.png"
                 // Boeing
               />
               <hr
@@ -710,12 +711,13 @@ const SpanishCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "50%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/pg.png"
                 // Procter & Gamble
               />
               <hr
@@ -750,12 +752,13 @@ const SpanishCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "70%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
+                src="/Company/hilton.png"
                 // Hilton Worldwide
               />
               <hr
@@ -789,12 +792,13 @@ const SpanishCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "70%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/amazon.png"
+                src="/Company/pf.jpeg"
                 // Pfizer
               />
               <hr
@@ -829,11 +833,12 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
+                src="/Company/ge.png"
                 // General Electric (GE) 
               />
               <hr

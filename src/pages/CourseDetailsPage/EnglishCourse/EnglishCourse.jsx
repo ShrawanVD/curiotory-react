@@ -90,107 +90,266 @@ const EnglishCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Start a Comprehensive English Language Journey",
+        topics: [
+            "Comprehensive Introduction",
+            "Self-Introduction",
+            "Daily Routines",
+            "Fundamentals",
+            "Parts of Speech",
+            "Advanced Parts of Speech"
+        ],
+        cnt: "6"
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Pronouns, Subjects, and Vocabulary",
+        topics: [
+            "Pronouns",
+            "Relative and Interrogative Pronouns",
+            "Reflexive and Indefinite Pronouns",
+            "Subjects and Objects",
+            "Simple and Compound Subjects",
+            "Vowels and Consonants",
+            "Vocabulary Expansion"
+        ],
+        cnt: "7"
     },
     {
-      title: "Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Pronouns, Adjectives, Articles, and Pronunciation",
+        topics: [
+            "Pronouns",
+            "Adjectives",
+            "Advanced Adjectives",
+            "Quality, Quantity, Superlative, and Comparative Adjectives",
+            "Articles",
+            "Using 'The'",
+            "Advanced 'The'",
+            "Pronunciation of 'T' and 'D'"
+        ],
+        cnt: "8"
     },
     {
-      title: "Java Basics",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Pronunciation Guide, Idioms, and Communication Tips",
+        topics: [
+            "Tricky Words",
+            "Advanced Pronunciation",
+            "Idioms and Phrases",
+            "Communication Tips",
+            "Common Grammar Errors"
+        ],
+        cnt: "5"
     },
     {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Mastering English Verbs",
+        topics: [
+            "Verbs and Tenses",
+            "Action, Linking, and Auxiliary Verbs",
+            "Helping Verbs 'Is,' 'Am,' 'Are'",
+            "Helping Verbs 'Was' and 'Were'",
+            "Helping Verbs 'Has,' 'Have,' 'Had'",
+            "Auxiliary Verbs 'Do,' 'Does,' 'Did'"
+        ],
+        cnt: "6"
     },
     {
-      title: "6Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Mastering Modal Verbs",
+        topics: [
+            "Modal Verbs 'Can'",
+            "Modal Verbs 'Could'",
+            "Modal Verbs 'Will'",
+            "Modal Verbs 'Would'",
+            "Modal Verbs 'Shall' and 'Should'",
+            "Modal Verbs 'May,' 'Might,' 'Must'"
+        ],
+        cnt: "6"
     },
     {
-      title: "7Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Mastering Adverbs and 'To + Verb' Construction",
+        topics: [
+            "Adverbs",
+            "Types of Adverbs",
+            "Adverb Placement",
+            "Adverb Formation",
+            "'To + Verb' Construction"
+        ],
+        cnt: "5"
     },
     {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Mastering English Prepositions",
+        topics: [
+            "Prepositions",
+            "'Into' vs. 'Inside' and 'With' vs. 'By'",
+            "Preposition 'From'",
+            "'Between' vs. 'Among'",
+            "'Through' vs. 'Across,' 'Onto' vs. 'Upon'",
+            "'Above' vs. 'Over' and 'To'"
+        ],
+        cnt: "6"
     },
     {
-      title: "9Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Differentiating English Prepositions",
+        topics: [
+            "'About' vs. 'After'",
+            "'Against,' 'Around,' 'Along,' and 'Before'",
+            "'Beneath,' 'Beside,' and 'Beyond'",
+            "'During,' 'For,' 'Near,' 'Next to'",
+            "'Out' vs. 'Outside,' 'Past,' 'Towards'",
+            "'Within' vs. 'Without,' 'Behind,' 'Throughout,' 'In Spite Of'"
+        ],
+        cnt: "6"
     },
     {
-      title: "10Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
+        title: "Idioms, Prepositions, Conjunctions, and Paired Words",
+        topics: [
+            "Idioms",
+            "Prepositions and Conjunctions",
+            "Paired Words",
+            "More Paired Words",
+            "Even More Paired Words",
+            "Conjunctions for Time, Cause, and Reason"
+        ],
+        cnt: "6"
     },
     {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+        title: "Conjunctions and Interjections",
+        topics: [
+            "Conjunctions",
+            "Differentiating Phrases and Clauses",
+            "More Conjunctions",
+            "Conjunctions 'Even Though,' 'As If,' 'Otherwise,' 'If,' 'Likewise,' 'Still'",
+            "Interjections",
+            "Advanced Interjections"
+        ],
+        cnt: "6"
     },
     {
-      title: "12Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
+        title: "Interjections, Sentence Types, and Pronunciation",
+        topics: [
+            "Interjections",
+            "More Interjections",
+            "Sentence Types",
+            "Sentence Structure",
+            "Pronunciation",
+            "More Pronunciation"
+        ],
+        cnt: "6"
     },
-    // Add more modules as needed
-  ];
+    {
+        title: "Mispronunciations, Subject-Verb Agreement, and Paired Words",
+        topics: [
+            "Mispronounced Words",
+            "Subject-Verb Agreement",
+            "Paired Words",
+            "Subject-Verb Agreement with Quantity and Amount",
+            "More Subject-Verb Agreement"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "Vocabulary and Present Tenses",
+        topics: [
+            "Vocabulary",
+            "Tenses",
+            "Simple Present Tense",
+            "Present Continuous Tense",
+            "Present Perfect Tense",
+            "Present Perfect Continuous Tense"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Past and Future Tenses",
+        topics: [
+            "Simple Past Tense",
+            "Past Perfect Tense",
+            "Past Continuous Tense",
+            "Past Perfect Continuous Tense",
+            "Simple Future Tense"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "Future Tenses and Active/Passive Voice",
+        topics: [
+            "Future Perfect Tense",
+            "Future Continuous Tense",
+            "Future Perfect Continuous Tense",
+            "Grammar Practice",
+            "Active and Passive Voice",
+            "Advanced Active and Passive Voice"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Passive Voice and Tenses",
+        topics: [
+            "Passive Voice in Negative Sentences",
+            "Negative Questions in Passive Voice",
+            "Present Perfect Tense",
+            "Active and Passive Voices",
+            "Past Continuous"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "Active/Passive Voices and Modal Verbs",
+        topics: [
+            "Past Perfect",
+            "Future Simple",
+            "Future Perfect",
+            "Modal Verbs in Passive Voice",
+            "Advanced Modal Verbs"
+        ],
+        cnt: "5"
+    },
+    {
+        title: "Grammar, Conditionals, and Sentences",
+        topics: [
+            "Active and Passive Voice Review",
+            "Conditionals",
+            "Second Conditional",
+            "Third Conditional",
+            "Advanced Grammar Practice",
+            "Sentence Construction"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Phrasal Verbs, Types of Sentences, and Grammar Practice",
+        topics: [
+            "Phrasal Verbs",
+            "Advanced Phrasal Verbs",
+            "Types of Sentences",
+            "Grammar Practice",
+            "Advanced Grammar Practice",
+            "Practical Grammar Practice"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Speaking, Communication, Writing, and Grammar Practice",
+        topics: [
+            "Speaking Practice",
+            "Practical Communication Skills",
+            "Writing Practice",
+            "Grammar Practice",
+            "Advanced Grammar Practice",
+            "Practical Grammar Practice"
+        ],
+        cnt: "6"
+    },
+    {
+        title: "Recap, Everyday English, and Cultural Insights",
+        topics: [
+            "Recap",
+            "Everyday English",
+            "Cultural Insights"
+        ],
+        cnt: "3"
+    }
+];
+
+
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -363,11 +522,11 @@ const EnglishCourse = () => {
               <a href="https://curiotory.com/lms"><button className={buy.loginButton}>Login</button></a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -392,7 +551,9 @@ const EnglishCourse = () => {
         </div>
         
         {/* subscribe button div */}
-        <div className={buy.sticky}>
+        <div className={buy.sticky} style={{
+          marginLeft:"5rem"
+        }}>
               <a href="/checkout/1"><button className={buy.learnButton}>Subsrcibe Now </button></a>
               </div>
 
@@ -848,6 +1009,7 @@ const EnglishCourse = () => {
           </div>
 
           <div className={buy.second_row}>
+            
             {/* fourth company */}
             <Card className={buy.cardss}>
               <Card.Img

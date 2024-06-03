@@ -315,11 +315,11 @@ const GermanCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <img
+            <a href="/"><img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={buy.logo}
-            />
+            /></a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -626,8 +626,8 @@ const GermanCourse = () => {
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/google.png"
-                // BMW Group
+                src="/Company/lufth.png"
+                // Lufthansa Group
               />
               <hr
                 style={{
@@ -643,11 +643,11 @@ const GermanCourse = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "German Language Specialist",
-                    "Bilingual Customer Service Representative (German)",
-                    "German Content Writer",
+                    "German Language Flight Attendant",
+                    "German Language Sales Representative",
+                    "German Language Communication Specialist",
                   ]
-                    .slice(0, showAllProfiles1 ? 9 : 5)
+                    .slice(0, showAllProfiles6 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
@@ -661,11 +661,12 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/microsoft.png"
+                src="/Company/siemens.png"
                 // Siemens AG 
               />
               <hr
@@ -708,12 +709,13 @@ const GermanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/ibm.png"
+                src="/Company/basf.png"
                 // BASF SE
               />
               <hr
@@ -749,11 +751,12 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/apple.png"
+                src="/Company/volk.png"
                 // Volkswagen Group
               />
               <hr
@@ -788,11 +791,12 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/amazon.png"
+                src="/Company/bayer.png"
                 // Bayer AG
               />
               <hr
@@ -826,13 +830,14 @@ const GermanCourse = () => {
               <Card.Img
                 className={buy.card_img}
                 style={{
-                  width: "80%",
+                  width: "60%",
+                  height:"15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
-                src="/Company/meta.png"
-                // Lufthansa Group
+                src="/Company/bmw.png"
+                // BMW Group
               />
               <hr
                 style={{
@@ -848,11 +853,11 @@ const GermanCourse = () => {
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
                 <ul>
                   {[
-                    "German Language Flight Attendant",
-                    "German Language Sales Representative",
-                    "German Language Communication Specialist",
+                    "German Language Specialist",
+                    "Bilingual Customer Service Representative (German)",
+                    "German Content Writer",
                   ]
-                    .slice(0, showAllProfiles6 ? 9 : 5)
+                    .slice(0, showAllProfiles1 ? 9 : 5)
                     .map((profile, index) => (
                       <li key={index}>{profile}</li>
                     ))}
