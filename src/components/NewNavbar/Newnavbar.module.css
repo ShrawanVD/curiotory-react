@@ -14,15 +14,16 @@
   gap: 27px;
 }
 
-.nav a {
+.nav a, .nav a span {
   text-decoration: none;
   color: #00046c;
   font-size: 1.15rem;
   font-family: Raleway, Arial, sans-serif;
 
 }
-.nav a:hover{
+.nav a:hover, .nav a span:hover{
     color: #ef4b2b;
+    font-weight: 600;
 }
 .contactUs span {
   color: #ef4b2b;

@@ -8,6 +8,7 @@ import LazyLoad from "react-lazyload";
 import Courselist from "../../components/CourseList/Courselist";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import { Link, Element, animateScroll as scroll } from 'react-scroll';
 
 // adding swiper
 import {
@@ -816,7 +817,6 @@ function Home() {
               </Swiper>
             </div>
 
-            {/* <!-- REVIEWS SECTION ENDS --> */}
 
             {/* <!-- FAQ SECTION --> */}
             <div className="faqHeadingDivCss">
