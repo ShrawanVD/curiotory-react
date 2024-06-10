@@ -1,3 +1,5 @@
+// payment verification is remaining
+
 import pay from "./CheckoutPg.module.css";
 import Navv from "../Navv/Navv";
 import React, { useState, useEffect } from "react";
