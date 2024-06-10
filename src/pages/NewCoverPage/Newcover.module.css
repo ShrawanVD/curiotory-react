@@ -282,6 +282,18 @@
   justify-content: center;
 }
 
+.mascotImg{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mascotImg img{
+  height: 420px;
+  width: auto;
+  margin-right: 4rem;
+}
+
 .euroAsianlang {
   display: flex;
   flex-direction: column;
@@ -312,23 +324,46 @@
   text-align: left;
   margin-bottom: 2rem;
 }
-.euroLangList h4 {
-  font-family: Raleway, Arial, sans-serif;
-  color: #226bb4;
-  margin-right: 1rem;
+.euroLangList a{
+  padding: 5px 5px 0px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #226bb4;
   cursor: pointer;
 }
-.euroLangList h4:hover {
-  color: #d94f34;
+.euroLangList a:hover{
+  background-color: #d94f34;
+}
+.euroLangList h4 {
+  font-family: Raleway, Arial, sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.asianLangList a{
+  padding: 4px 5px 0px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #f2ac25;
+  cursor: pointer;
+}
+.asianLangList a:hover{
+  background-color: #d94f34;
 }
 .asianLangList h4 {
   font-family: Raleway, Arial, sans-serif;
-  color: #f2ac25;
-  margin-right: 1rem;
-  cursor: pointer;
+  color: white;
+  font-size: 20px;
 }
-.asianLangList h4:hover {
-  color: #d94f34;
+@media (max-width: 1300px) {
+  .mascotImg img{
+    height: 370px;
+    width: auto;
+    margin-right: 4rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -336,9 +371,10 @@
     flex-direction: column;
   }
   .mascotImg img {
-    height: 300px;
+    height: 370px;
     width: auto;
     margin-bottom: 1rem;
+    margin-right: 0rem;
   }
   .foreignContainer {
     padding: 1rem 5rem;
@@ -349,6 +385,11 @@
 }
 
 @media (max-width: 768px) {
+  .mascotImg img {
+    height: 300px;
+    width: auto;
+
+  }
   .foreignTitle {
     font-size: 20px;
   }

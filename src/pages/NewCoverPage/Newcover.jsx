@@ -366,7 +366,7 @@ function Newcover() {
                  </p>
                  <div className={newcover.mascotLang}>
                    <div className={newcover.mascotImg}>
-                     <img src="/mascot/foreign11.png" alt="curo mascot" />
+                     <img src="/mascot/CapLift_crop.gif" alt="curo mascot" />
                    </div>
                    <div className={newcover.euroAsianlang}>
                      <div className={newcover.euroLang}>
@@ -463,7 +463,7 @@ function Newcover() {
               marginTop:"-2rem"
              }}>
              <div className="stand-out-text">
-                   <h1>What Learner's say!</h1>
+                   <h1>What Learner&apos;s say!</h1>
                  </div>
                <Swiper
                  // install Swiper modules
