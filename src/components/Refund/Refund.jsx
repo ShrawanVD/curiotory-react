@@ -1,11 +1,13 @@
-import Footer from '../Footer/Footer'
-import Navv from '../Navv/Navv'
+// import Footer from '../Footer/Footer'
+// import Navv from '../Navv/Navv'
 import refundcss from './Refund.module.css';
+import Newnavbar from '../NewNavbar/Newnavbar';
+import Footer2 from '../Footer/Footer2';
 
 function Refund() {
   return (
     <div>
-        <Navv />
+        <Newnavbar />
         <div className={refundcss.continerBackground}>
     <div className={refundcss.container}>
       <div className={refundcss.row}>
@@ -97,7 +99,7 @@ function Refund() {
       </div>
     </div>
   </div>
-  <Footer />
+  <Footer2 />
     </div>
   )
 }

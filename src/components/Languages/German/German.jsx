@@ -1,11 +1,13 @@
 import '../Languages.css'
-import Footer from "../../../components/Footer/Footer";
-import Navv from "../../../components/Navv/Navv";
+// import Footer from "../../../components/Footer/Footer";
+// import Navv from "../../../components/Navv/Navv";
+import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../../components/Footer/Footer2";
 
 function German() {
   return (
     <div>
-        <Navv />
+        <Newnavbar />
         <div className="hero">
     <h1>German Language</h1>
   </div>
@@ -66,7 +68,7 @@ function German() {
       and fosters meaningful connections in an interconnected world.
     </p>
   </div>
-  <Footer />
+  <Footer2 />
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import "../Languages.css";
-import Footer from "../../../components/Footer/Footer";
-import Navv from "../../../components/Navv/Navv";
+// import Footer from "../../../components/Footer/Footer";
+// import Navv from "../../../components/Navv/Navv";
+import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../../components/Footer/Footer2";
 
 function French() {
   return (
     <div>
-      <Navv />
+      <Newnavbar />
       <div className="hero">
         <h1>French Language</h1>
       </div>
@@ -69,7 +71,7 @@ function French() {
           diverse fields and enriching global experiences.
         </p>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

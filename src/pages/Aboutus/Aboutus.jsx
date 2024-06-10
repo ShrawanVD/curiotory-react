@@ -1,11 +1,14 @@
-import Footer from "../../components/Footer/Footer";
-import Covernav from "../../components/Navv/Covernav";
+// import Footer from "../../components/Footer/Footer";
+// import Covernav from "../../components/Navv/Covernav";
 import Aboutuscss from "./About.module.css";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Aboutus() {
   return (
     <>
-      <Covernav />
+      {/* <Covernav /> */}
+      <Newnavbar />
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>
@@ -282,7 +285,7 @@ function Aboutus() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 }

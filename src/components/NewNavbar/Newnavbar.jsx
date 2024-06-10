@@ -28,11 +28,13 @@ function Newnavbar() {
         <div className={newnavv.navvbarContainer}>
         <header className={newnavv.header}>
           <div className={newnavv.logoContainer}>
+            <a href="/">
             <img
               src="/Index/logo.png"
               alt="Curiotory Logo"
               className={newnavv.logo}
             />
+            </a>
           </div>
           <div className={newnavv.headerRight}>
             <a href="https://curiotory.com/lms/" className={newnavv.studentPortal}>

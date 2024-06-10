@@ -1,4 +1,5 @@
 // import foot from "./Footer2.module.css";
+import "./Footer.css";
 
 function Footer() {
   return (

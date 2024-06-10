@@ -106,9 +106,11 @@
 
 import singleblogcss from './Singleblog.module.css';
 import { useState, useEffect } from 'react';
-import Navv from '../../components/Navv/Navv';
-import Footer from '../../components/Footer/Footer';
+// import Navv from '../../components/Navv/Navv';
+// import Footer from '../../components/Footer/Footer';
 import { useSpeechSynthesis } from "react-speech-kit";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Singleblog() {
   const [blog, setBlog] = useState(null);
@@ -160,7 +162,7 @@ function Singleblog() {
 
   return (
     <div>
-      <Navv />
+      <Newnavbar />
       <div>
       <div className={singleblogcss.singleBlogContainer}>
       {blog ? (
@@ -185,7 +187,7 @@ function Singleblog() {
       )}
     </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   )
 }

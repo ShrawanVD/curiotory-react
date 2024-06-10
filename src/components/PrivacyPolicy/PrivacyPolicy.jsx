@@ -1,11 +1,13 @@
-import Footer from '../Footer/Footer'
-import Navv from '../Navv/Navv'
+// import Footer from '../Footer/Footer'
+// import Navv from '../Navv/Navv'
 import ppcss from './PrivacyPolicy.module.css'
+import Newnavbar from '../NewNavbar/Newnavbar';
+import Footer2 from '../Footer/Footer2';
 
 function PrivacyPolicy() {
   return (
     <div>
-        <Navv/>
+        <Newnavbar/>
         <div className={ppcss.continerBackground}>
     <div className={ppcss.container}>
       <div className={ppcss.row}>
@@ -267,7 +269,7 @@ function PrivacyPolicy() {
       </div>
     </div>
   </div>
-  <Footer />
+  <Footer2 />
   </div>
   )
 }

@@ -1,11 +1,13 @@
 import Accordion from "../../components/Accordion";
-import Footer from "../../components/Footer/Footer";
-import Covernav from "../../components/Navv/Covernav";
+// import Footer from "../../components/Footer/Footer";
+// import Covernav from "../../components/Navv/Covernav";
 import "./Home.css";
 import { useState, useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import LazyLoad from "react-lazyload";
 import Courselist from "../../components/CourseList/Courselist";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 // adding swiper
 import {
@@ -91,7 +93,7 @@ function Home() {
 
       {showDiv2 && (
         <div>
-          <Covernav />
+          <Newnavbar />
           <div>
             {/* <!-- cover page section --> */}
             <div className="cover-page">
@@ -837,7 +839,7 @@ function Home() {
             {/* <!-- FAQ SECTION ENDS --> */}
           </div>
 
-          <Footer />
+          <Footer2 />
         </div>
       )}
     </>

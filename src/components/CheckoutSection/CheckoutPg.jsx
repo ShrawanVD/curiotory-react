@@ -1,7 +1,8 @@
 // payment verification is remaining
 
 import pay from "./CheckoutPg.module.css";
-import Navv from "../Navv/Navv";
+// import Navv from "../Navv/Navv";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import React, { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -235,7 +236,7 @@ function CheckoutPg() {
 
     <>
 
-      <Navv />
+      <Newnavbar />
 
       <div className={pay.checkout_pg}>
 

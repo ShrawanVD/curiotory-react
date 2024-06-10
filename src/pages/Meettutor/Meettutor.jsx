@@ -1,6 +1,8 @@
 import Meetcss from "./Meettutor.module.css";
-import Navv from "../../components/Navv/Navv";
-import Footer from "../../components/Footer/Footer";
+// import Navv from "../../components/Navv/Navv";
+// import Footer from "../../components/Footer/Footer";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 import { useState, useEffect } from "react";
 
 function Meettutor() {
@@ -111,7 +113,7 @@ function Meettutor() {
 
   return (
     <div>
-      <Navv />
+      <Newnavbar />
       <div>
         <div className={Meetcss.containerFluid}>
           <div className="row">
@@ -207,7 +209,7 @@ function Meettutor() {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

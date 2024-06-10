@@ -1,11 +1,13 @@
-import Footer from '../Footer/Footer'
-import Navv from '../Navv/Navv'
+// import Footer from '../Footer/Footer'
+// import Navv from '../Navv/Navv'
 import termscss from './TermsNCond.module.css'
+import Newnavbar from '../NewNavbar/Newnavbar';
+import Footer2 from '../Footer/Footer2';
 
 function TermsNCond() {
   return (
     <div>
-        <Navv />
+        <Newnavbar />
         <div className={termscss.continerBackground}>
     <div className={termscss.container}>
       <div className={termscss.row}>
@@ -503,7 +505,7 @@ function TermsNCond() {
       </div>
     </div>
   </div>
-  <Footer />
+  <Footer2 />
     </div>
   )
 }

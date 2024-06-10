@@ -1,11 +1,13 @@
-import Footer from '../../components/Footer/Footer';
-import Navv from '../../components/Navv/Navv';
+// import Footer from '../../components/Footer/Footer';
+// import Navv from '../../components/Navv/Navv';
 import './Download.css';
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Download() {
   return (
     <>
-      <Navv />
+      <Newnavbar />
        <div className="enclosed" style={{flex: '7'}}>
       <h2 style={{marginLeft: '-8rem'}}>
         Download
@@ -42,7 +44,7 @@ function Download() {
         </button>
       </a>
     </div>
-    <Footer />
+    <Footer2 />
     </>
   )
 }

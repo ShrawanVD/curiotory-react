@@ -1,11 +1,13 @@
 import "../Languages.css";
-import Footer from "../../../components/Footer/Footer";
-import Navv from "../../../components/Navv/Navv";
+// import Footer from "../../../components/Footer/Footer";
+// import Navv from "../../../components/Navv/Navv";
+import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../../components/Footer/Footer2";
 
 function English() {
   return (
     <div>
-      <Navv />
+      <Newnavbar />
       <div className="hero">
         <h1>English Language</h1>
       </div>
@@ -79,7 +81,7 @@ function English() {
           in today&apos;s globalized world.
         </p>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 .navvbarContainer{
     background: transparent;
+    margin-bottom: 1rem;
 }
 .navList {
   width: 100%;
@@ -21,13 +22,13 @@
 
 }
 .nav a:hover{
-    color: white;
+    color: #ef4b2b;
 }
 .contactUs span {
   color: #ef4b2b;
 }
 .contactUs span:hover {
-    color: white;
+    color: #00046c;
   }
 .header {
   display: flex;
@@ -142,5 +143,6 @@
 
 .dropdownContent a:hover {
   background-color: #ef4b2b;
+  color: white;
   border-radius: 7px;
 }

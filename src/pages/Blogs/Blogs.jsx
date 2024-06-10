@@ -90,9 +90,11 @@
 
 // adding paginator for blogs
 import { useEffect, useState } from "react";
-import Footer from "../../components/Footer/Footer";
-import Covernav from "../../components/Navv/Covernav";
+// import Footer from "../../components/Footer/Footer";
+// import Covernav from "../../components/Navv/Covernav";
 import Blogscss from "./Blogs.module.css";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Blogs() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -144,7 +146,7 @@ function Blogs() {
 
   return (
     <>
-      <Covernav />
+      <Newnavbar />
       <div style={{ backgroundColor: "rgb(253, 250, 250)" }}>
         <div className={Blogscss.blogHeading}>
           <h1>Blogs</h1>
@@ -194,7 +196,7 @@ function Blogs() {
           ))}
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 }

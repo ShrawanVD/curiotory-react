@@ -1,11 +1,13 @@
-import Covernav from "../../components/Navv/Covernav";
-import Footer from "../../components/Footer/Footer";
+// import Covernav from "../../components/Navv/Covernav";
+// import Footer from "../../components/Footer/Footer";
 import "./Becometutor.css";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Becometutor() {
   return (
     <div>
-      <Covernav />
+      <Newnavbar />
       <div>
         {/* become tutor step by step guide */}
         <div className="enroll-container section-1">
@@ -249,7 +251,7 @@ function Becometutor() {
        
 
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import "../Languages.css";
-import Footer from "../../../components/Footer/Footer";
-import Navv from "../../../components/Navv/Navv";
+// import Footer from "../../../components/Footer/Footer";
+// import Navv from "../../../components/Navv/Navv";
+import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../../components/Footer/Footer2";
 
 function Spanish() {
   return (
     <div>
-      <Navv />
+      <Newnavbar />
       <div className="hero">
         <h1>Spanish Language</h1>
       </div>
@@ -75,7 +77,7 @@ function Spanish() {
           borders.
         </p>
       </div>
-      <Footer />
+      <Footer2 />
     </div>
   );
 }

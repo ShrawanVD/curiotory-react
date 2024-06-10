@@ -1,6 +1,8 @@
-import Footer from "../../components/Footer/Footer";
-import Navv from "../../components/Navv/Navv";
+// import Footer from "../../components/Footer/Footer";
+// import Navv from "../../components/Navv/Navv";
 import Contactcss from "./Contact.module.css";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -45,7 +47,7 @@ function Contact() {
 
   return (
     <>
-      <Navv />
+      <Newnavbar />
       <div className={Contactcss.contactUs}>
         <div className={Contactcss.contactusDetails}>
           <img
@@ -89,7 +91,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <Footer />
+      <Footer2 />
     </>
   );
 }

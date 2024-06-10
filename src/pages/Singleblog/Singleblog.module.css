@@ -130,7 +130,7 @@ or somewhere kind off and only the title of htis
   align-items: left;
   padding: 4rem 3rem;
 
-  background: rgba(255, 255, 255, 0.4);
+  background: #ebf8fc;
   box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(1.5px);
   -webkit-backdrop-filter: blur(1.5px);
@@ -337,7 +337,7 @@ ul li.active {
 
 .singleBlogContainer{
     padding: 2rem 13rem;
-    background-color: #ebf8fc;
+    background-color: white;
 }
 
 @media screen and (max-width: 1300px) {
