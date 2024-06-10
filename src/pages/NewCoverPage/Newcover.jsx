@@ -85,7 +85,8 @@ function Newcover() {
              </div>
        
              {/* lottie player animation */}
-             <LazyLoad height={200} offset={100} className={newcover.lottieSection}>
+             <LazyLoad style={{
+             }} height={200} offset={100} className={newcover.lottieSection}>
                <Player
                  autoplay
                  loop
@@ -458,7 +459,12 @@ function Newcover() {
        
              {/* <!-- REVIEWS SECTION --> */}
        
-             <div className="review-swiper-css">
+             <div className="review-swiper-css" style={{
+              marginTop:"-2rem"
+             }}>
+             <div className="stand-out-text">
+                   <h1>What Learner's say!</h1>
+                 </div>
                <Swiper
                  // install Swiper modules
                  modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
