@@ -8,7 +8,7 @@
 }
 
 .coverContainer {
-  /* background-color: rgb(246, 177, 74); */
+  /* background-color: rgb(0, 0, 0); */
   background-image: url("/Index/newcoverimg.png");
   background-size: cover;
   background-position: center;
@@ -86,7 +86,7 @@
 
 /* lottie player starts here */
 .lottieSection {
-  margin: 3rem 0rem;
+  margin: 5rem 0rem 3rem;
 }
 .iframeLottie {
   text-align: center;
