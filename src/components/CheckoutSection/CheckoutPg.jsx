@@ -138,7 +138,8 @@ function CheckoutPg() {
     try {
       const res = await fetch(
         // https://lms-backend-3nru.onrender.com
-        `http://localhost:4000/api/payment/subscription`,
+        `https://lms-backend-3nru.onrender.com/api/payment/subscription`,
+        // `http://localhost:4000/api/payment/subscription`,
         {
           method: "POST",
           headers: {
@@ -170,7 +171,8 @@ function CheckoutPg() {
       handler: async (response) => {
         try {
           const res = await fetch(
-            `http://localhost:4000/api/payment/verification`,
+            `https://lms-backend-3nru.onrender.com/api/payment/verification`,
+            // `https://localhost:4000/api/payment/verification`,
             {
               method: "POST",
               headers: {

@@ -556,7 +556,7 @@ const EnglishCourse = () => {
           }}
         >
           <a href="/checkout/1">
-            <button className={buy.learnButton}>Subsrcibe Now </button>
+            <button className={buy.learnButton}>Subsrcibe Now</button>
           </a>
         </div>
 

@@ -82,8 +82,8 @@ function Newnavbar() {
               </div>
             )}
           </div> */}
+           <a href="/blogs">Blogs</a>
             <a href="/becometutor">Become a Tutor</a>
-            <a href="/blogs">Blogs</a>
             <a href="/aboutus">About us</a>
             <a href="/contactus" className={newnavv.contactUs}>
               <span>Contact us</span>
