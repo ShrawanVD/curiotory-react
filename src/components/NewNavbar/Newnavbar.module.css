@@ -1,0 +1,146 @@
+.navvbarContainer{
+    background: transparent;
+}
+.navList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.2rem;
+}
+.nav {
+  display: flex;
+  gap: 27px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #00046c;
+  font-size: 1.15rem;
+  font-family: Raleway, Arial, sans-serif;
+
+}
+.nav a:hover{
+    color: white;
+}
+.contactUs span {
+  color: #ef4b2b;
+}
+.contactUs span:hover {
+    color: white;
+  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logoContainer {
+  flex: 1;
+  text-align: center;
+  margin-right: -6rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.headerRight .studentPortal {
+  /* display: none; */
+  color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 37%,
+        #EF4B2B 72%,
+        #EF4B2B 74%
+      )
+      border-box;
+  border-radius: 50em;
+  border: 2.8px solid transparent;
+}
+.headerRight .studentPortal:hover {
+  color: white;
+  background: rgba(9, 9, 121, 1);
+}
+
+.imgline img {
+  width: 100%;
+}
+
+@media (max-width:640px){
+.navList {
+  padding: 1.2rem 1rem 0rem;
+}
+
+.logoContainer {
+  flex: 1;
+  margin-right: 0rem;
+}
+.nav{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nav a {
+  font-size: 0.9rem;
+  text-align: center;
+}
+.dropdownContent {
+  position: static;
+}
+.dropdownContent a {
+  font-size: 11px;
+  padding: 5px 4px;
+}
+}
+
+@media (max-width:490px){
+  .studentPortal{
+    display: none;
+  }
+  .dropdownContent a {
+    font-size: 11px;
+    padding: 5px 4px;
+  }
+}
+
+/* dropdown list css */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdownContent {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 7px;
+}
+
+.dropdownContent a {
+  color: #00046c;
+  padding: 8px 7px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.dropdownContent a:hover {
+  background-color: #ef4b2b;
+  border-radius: 7px;
+}

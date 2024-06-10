@@ -28,7 +28,7 @@ function Covernav() {
     >
 
       <Container fluid className="navbarContainer">
-        <Navbar.Brand href="">
+        <Navbar.Brand href="/">
           <img
             src="/Index/logo.png"
             width="auto"
@@ -66,11 +66,11 @@ function Covernav() {
               Blogs
             </Nav.Link>
             <Nav.Link
-              href="/meetthetutor"
+              href="/becometutor"
               style={{ margin: "0 0.7rem", color: "#2F327C" }}
               className="navLinkNavbar"
             >
-              Meet the Tutors
+              Become a Tutor
             </Nav.Link>
             <Nav.Link
               href="/aboutus"

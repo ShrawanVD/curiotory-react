@@ -598,7 +598,7 @@ const MandarinCourse = () => {
         <div className={buy.sticky} style={{
           marginLeft:"6rem"
         }}>
-          <a href="/checkou/6">
+          <a href="/checkout/6">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
         </div>
@@ -703,15 +703,15 @@ const MandarinCourse = () => {
           <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
-              <p>106 video tutorials</p>
+              <p>174 video tutorials</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>construction</span>
-              <p>5 projects</p>
+              <p>Blogs</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>memory</span>
-              <p>2 AI tools covered</p>
+              <p>Books Recommendation</p>
             </div>
           </div>
 

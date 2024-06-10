@@ -511,15 +511,15 @@ const JapaneseCourse = () => {
           <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
-              <p>106 video tutorials</p>
+              <p>78 video tutorials</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>construction</span>
-              <p>5 projects</p>
+              <p>Blog</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>memory</span>
-              <p>2 AI tools covered</p>
+              <p>Books Recommendation</p>
             </div>
           </div>
 

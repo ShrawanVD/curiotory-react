@@ -12,7 +12,7 @@ function Footer() {
         }}
       >
         <div className="container2" style={{
-          marginTop:"2rem"
+          marginTop:"0.5rem"
         }}>
           <div className="row-up">
             {/* Logo */}

@@ -5,11 +5,6 @@
 3.resp of sub button
 */
 
-
-
-
-
-
 .yellow {
   color: #f9b700;
   font-weight: 800;
@@ -153,6 +148,7 @@
 
 .highlights1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 20px;
   margin-bottom: 3rem;
@@ -462,6 +458,7 @@
 
 .left_section .video{
   width: 100%;
+  text-align: center;
 }
 
 .left_section .video iframe{
@@ -554,9 +551,11 @@ color: black;
       width: 90%;
   }
 }
-
-
-
+@media only screen and (max-width: 768px) {
+  .left_section .video iframe{
+      margin-left: 0rem;
+  }    
+}
 
 
 /* subscribe button for the footer  */
@@ -621,7 +620,6 @@ color: #ffffff; /* White text */
   align-items: center;
   padding: 2.9rem 0px 0px;
   /* text-align: center; */
-  /* background-color: #fff5e1; */
   background-color: white;
 }
 
@@ -679,16 +677,15 @@ color: #ffffff; /* White text */
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
   text-align: center;
   padding: 0rem;
 }
 .textSection {
   margin-bottom: 20px;
-  padding: 0rem 5rem 0rem;
+  padding: 0rem 2rem 0rem;
   flex: 1;
-  margin-right: 2rem;
+  margin-right: 0rem;
 }
 
 .textSection h1 {
@@ -780,6 +777,7 @@ color: #ffffff; /* White text */
   .textSection {
     max-width: 50%;
     margin-bottom: 0;
+    margin-top: 1rem;
   }
 
   /* .textSection h1 {
@@ -793,7 +791,9 @@ color: #ffffff; /* White text */
   .learnButton {
     font-size: 1rem;
   }
-  
+  .highlights1{
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 700px) {
@@ -802,14 +802,22 @@ color: #ffffff; /* White text */
     justify-content: space-between;
     padding: 0rem 0.4rem;
   }
+  .textSection{
+    padding: 3rem 1rem 0rem;
+    text-align: center;
+
+  }
+  .textSection h1{
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
   .imageSection {
     width: 100%;
     text-align: center;
   }
   .sticky{
-    position: sticky;
+    position: static;
     margin: 5rem auto;
-    /* margin-left: 5rem; */
   }
 }
 
@@ -818,22 +826,20 @@ color: #ffffff; /* White text */
     width: auto;
     height: 350px;
   }
-  .header {
-    flex-direction: column;
+  .textSection{
+    width: 70%;
+    margin-right: 8.5rem;
   }
-  .authButtons {
+  /* .header {
+    flex-direction: column;
+  } */
+  /* .authButtons {
     top: 200%;
     right: 160px;
-  }
-  .content {
+  } */
+  /* .content {
     margin-top: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .textSection h1 {
-    font-size: 4rem;
-  }
+  } */
 }
 
 /*-------------- review section --------------------- */

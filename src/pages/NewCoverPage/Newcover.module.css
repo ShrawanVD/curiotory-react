@@ -1,0 +1,404 @@
+.mascotDiv{
+  height: 100%;
+  text-align: center;
+  padding-top: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coverContainer {
+  /* background-color: rgb(246, 177, 74); */
+  background-image: url("/Index/newcoverimg.png");
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.coverPage {
+  margin-top: 1rem;
+  text-align: center;
+}
+.mascotCover img {
+  width: 350px;
+  height: auto;
+}
+.coverPage h1 {
+  color: #002e5b;
+  margin-top: 4rem;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 550;
+}
+.coverPage h2 {
+  color: #002e5b;
+  margin-top: 1rem;
+  font-family: Raleway, Arial, sans-serif;
+}
+.coverPage h4 {
+  color: #002e5b;
+  margin-top: 1rem;
+  font-family: Raleway, Arial, sans-serif;
+}
+.coverpageButton button {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 30px;
+  border-radius: 40px 40px 40px 40px;
+  padding: 12px 26px;
+  border: none;
+  cursor: pointer;
+  background: #2f327c;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+.coverpageButton button:hover {
+  background-color: #ef4b2b;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .coverPage {
+    padding: 0rem 2rem;
+  }
+  .coverPage h1 {
+    font-size: 30px;
+  }
+  .coverPage h2 {
+    margin-top: 2rem;
+    font-size: 22px;
+  }
+  .coverPage h4 {
+    font-size: 18px;
+    margin-top: 2rem;
+  }
+  .coverpageButton button {
+    margin-top: 2rem;
+  }
+}
+
+/* lottie player starts here */
+.lottieSection {
+  margin: 3rem 0rem;
+}
+.iframeLottie {
+  text-align: center;
+  width: 1400px;
+  height: 500px;
+}
+
+@media screen and (max-width: 1330px) {
+  .iframeLottie {
+    width: 1200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .iframeLottie {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .iframeLottie {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lottieSection {
+    margin: 0rem;
+  }
+  .iframeLottie {
+    width: 500px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .iframeLottie {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .iframeLottie {
+    width: 380px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .iframeLottie {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+/* lottie player ends here */
+
+/* our solution css */
+.solcontainer {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 20px;
+}
+.solcontainer h2 {
+  font-family: Raleway, Arial, sans-serif;
+}
+.solheader {
+  /* font-size: 25px; */
+  margin-bottom: 2.5rem;
+}
+
+.solution {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.solution2 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.text {
+  max-width: 800px;
+  font-size: 1.2rem;
+  color: #333;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .solution {
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
+
+  .solution2 {
+    flex-direction: column-reverse;
+    padding: 0rem 1rem;
+  }
+
+  .solheader {
+    font-size: 30px;
+  }
+
+  .iconContainer {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .text {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-justify: inter-word;
+  }
+}
+
+/* wondering how learning css ++++ same css for why online lang section */
+.wonderingContainer {
+  margin-top: 5rem;
+  text-align: center;
+  padding: 1rem 10rem;
+}
+.wonderingContainer h2 {
+  font-family: Raleway, Arial, sans-serif;
+}
+.wonderingContainer hr {
+  border: 1px solid #d94f34;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .wonderingContainer {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .wonderingContainer {
+    padding: 1rem 1.5rem;
+  }
+  .wonderingContainer h2 {
+    font-size: 25px;
+  }
+}
+
+/* 11 foreign language css */
+
+.foreignContainer {
+  text-align: center;
+  padding: 1rem 10rem;
+  margin: 0 auto;
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.foreignTitle {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.foreignContainer h2 {
+  font-family: Raleway, Arial, sans-serif;
+  color: #0b2743;
+}
+
+.foreignHighlight {
+  color: orange;
+}
+
+.foreignSubtitle {
+  color: #d94f34;
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+.foreignContainer p {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 19px;
+  padding: 0rem 5rem;
+}
+
+.mascotLang {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.euroAsianlang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.euroLang {
+  margin: 1rem 1rem 2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.euroLangList,
+.asianLangList {
+  display: grid;
+  row-gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.euroLang h3 {
+  /* common for both the lang*/
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: bold;
+  color: #2f327d;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.euroLangList h4 {
+  font-family: Raleway, Arial, sans-serif;
+  color: #226bb4;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.euroLangList h4:hover {
+  color: #d94f34;
+}
+.asianLangList h4 {
+  font-family: Raleway, Arial, sans-serif;
+  color: #f2ac25;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.asianLangList h4:hover {
+  color: #d94f34;
+}
+
+@media (max-width: 1100px) {
+  .mascotLang {
+    flex-direction: column;
+  }
+  .mascotImg img {
+    height: 300px;
+    width: auto;
+    margin-bottom: 1rem;
+  }
+  .foreignContainer {
+    padding: 1rem 5rem;
+  }
+  .foreignContainer p {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .foreignTitle {
+    font-size: 20px;
+  }
+  .foreignContainer {
+    padding: 1rem 5rem;
+  }
+  .foreignContainer p {
+    padding: 1rem 1rem;
+    font-size: 16px;
+  }
+  .euroLang h3{
+    font-size: 23px;
+  }
+  .euroLangList h4{
+    font-size: 19px;
+  }
+  .asianLangList h4{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foreignTitle {
+    font-size: 18px;
+  }
+
+  .foreignSubtitle {
+    font-size: 14px;
+  }
+  .foreignContainer {
+    padding: 1rem 2rem;
+  }
+  .foreignContainer p {
+    padding: 1rem 1rem;
+    font-size: 14px;
+  }
+  .mascotLang {
+    padding: 0rem 2rem;
+  }
+  .euroLang {
+    margin: 1rem 1rem 1rem;
+  }
+  .euroLang h3{
+    font-size: 21px;
+    margin-bottom: 1rem;
+  }
+  .euroLangList h4{
+    font-size: 16px;
+  }
+  .asianLangList h4{
+    font-size: 16px;
+  }
+}

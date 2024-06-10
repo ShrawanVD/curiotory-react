@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Aboutus from './pages/Aboutus/Aboutus';
 import Contact from './pages/Contactus/Contact';
-import Home from './pages/Home/Home';
+// import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
 import Singleblog from './pages/Singleblog/Singleblog';
 import Teacherform from './pages/Teacherform/Teacherform';
@@ -34,10 +34,11 @@ import FrenchCourse from './pages/CourseDetailsPage/FrenchCourse/FrenchCourse';
 import SpanishCourse from './pages/CourseDetailsPage/SpanishCourse/SpanishCourse';
 import GermanCourse from './pages/CourseDetailsPage/GermanCourse/GermanCourse';
 
+import Newcover from './pages/NewCoverPage/Newcover';
 
 export default (
     <Routes>
-        <Route index element={<Home/>} />
+        <Route index element={<Newcover/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/contactus" element={<Contact/>} />
         <Route path="/blogs" element={<Blogs/>} />
@@ -74,6 +75,9 @@ export default (
         <Route path="/course/french" element={<FrenchCourse />} />
         <Route path="/course/spanish" element={<SpanishCourse />} />
         <Route path="/course/german" element={<GermanCourse />} />
+
+        {/* demo routing */}
+        {/* <Route path="/newcover" element={< Newcover />} /> */}
 
 
     </Routes>

@@ -566,7 +566,6 @@
   line-height: 54px;
 }
 .container1 {
-  /* background-color: white; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -574,18 +573,10 @@
   padding: 20px;
   text-align: center;
 }
-/* .container-cards {
-  background-color: white;
-}
-.container-cards img {
-  background-color: white;
-} */
-/* .container-cards img, h1,p{
-    background-color: white;
-} */
-.container-cards h1 {
+.container-cards h3 {
   color: #2f327d;
-  font-family: "Poppins", Sans-serif;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -595,7 +586,8 @@
 .container-cards p {
   text-align: center;
   color: #464646;
-  font-family: "Poppins", Sans-serif;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 25.5px;
@@ -649,11 +641,11 @@
   .learn-foriegn-lang-heading h1 {
     font-size: 40px;
   }
-  .container-cards h1 {
-    font-size: 16px;
+  .container-cards h3 {
+    font-size: 20px;
   }
   .container-cards p {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 972px) {
@@ -667,12 +659,6 @@
   }
   .learn-foriegn-lang-heading h1 {
     font-size: 32px;
-  }
-  .container-cards h1 {
-    font-size: 16px;
-  }
-  .container-cards p {
-    font-size: 14px;
   }
 }
 
@@ -688,20 +674,12 @@
   .learn-foriegn-lang-heading h1 {
     font-size: 32px;
   }
-  .container-cards h1 {
-    font-size: 16px;
-  }
-  .container-cards p {
-    font-size: 14px;
-  }
 }
 @media screen and (max-width: 841px) {
   .learn-foriegn-lang h1 {
     font-size: 28px;
   }
-  .container-cards h1 {
-    font-size: 16px;
-  }
+
   .learn-foriegn-lang-section {
     padding: 2rem 2rem;
   }
@@ -732,11 +710,11 @@
   .learn-foriegn-lang h1 {
     font-size: 22px;
   }
-  .container-cards h1 {
-    font-size: 14px;
+  .container-cards h3 {
+    font-size: 20px;
   }
   .container-cards p {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 508px) {
@@ -745,12 +723,6 @@
   }
   .learn-foriegn-lang h1 {
     font-size: 19px;
-  }
-  .container-cards h1 {
-    font-size: 13px;
-  }
-  .container-cards p {
-    font-size: 11px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -817,8 +789,9 @@
 .foreign-lang-left-container h4 {
   text-align: left;
   color: #464646;
-  font-family: "Poppins", Sans-serif;
-  font-size: 22px;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 20px;
   font-weight: 800;
   line-height: 33px;
   text-align: justify;
@@ -826,8 +799,9 @@
 .foreign-lang-left-container p {
   text-align: left;
   color: #464646;
-  font-family: "Poppins", Sans-serif;
-  font-size: 22px;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 20px;
   font-weight: 500;
   line-height: 33px;
   text-align: justify;
@@ -838,6 +812,8 @@
   background-color: white;
   padding: 0rem 3rem;
   flex: 50%;
+  align-items: center;
+  justify-content: center;
 }
 .foreign-lang-sub-contianer {
   display: flex;
@@ -851,11 +827,17 @@
 }
 .foreign-lang-sub-contianer p {
   font-size: 20px;
-  font-family: "Poppins", Sans-serif;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
   text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-justify: inter-word;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1014,8 +996,7 @@
 }
 
 /* why we stand out section */
-.stand-out-section {
-  /* background-color: #4992ff; */
+/* .stand-out-section {
   background: linear-gradient(180deg, #0e6af5 19%, #0ceadc 132%);
   display: flex;
   padding: 6rem 1rem;
@@ -1024,7 +1005,6 @@
   flex: 30%;
   align-items: center;
   text-align: center;
-  /* background-color: #4992ff; */
 }
 .stand-out-card {
   background-color: white;
@@ -1035,22 +1015,12 @@
   font-size: 68px;
   font-weight: 700;
   line-height: 81.6px;
-  /* background-color: #4992ff; */
 }
-/* .stand-out-images {
-  background-color: #4992ff;
-}
-.stand-out-images img {
-  background-color: #4992ff;
-} */
+
 .stand-out-right-section {
   flex: 55%;
-  /* background-color: #4992ff; */
   margin-right: 30px;
 }
-/* .stand-out-container {
-  background-color: #4992ff;
-} */
 .stand-out-card {
   display: flex;
   margin-bottom: 2rem;
@@ -1129,7 +1099,124 @@
   .stand-out-right-part p {
     font-size: 14px;
   }
+} */
+
+/* ---------------------------------- */
+/* why we stand out section */
+.stand-out-section {
+  background: white;
+  display: flex;
+  padding: 6rem 1rem;
 }
+.stand-out-left-section {
+  flex: 30%;
+  align-items: center;
+  text-align: center;
+}
+.stand-out-card {
+  background-color: #0368FF;
+  border-radius: 10px;
+}
+.stand-out-text h1 {
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 38px;
+  line-height: 81.6px;
+}
+
+.stand-out-right-section {
+  flex: 55%;
+  margin-right: 30px;
+}
+.stand-out-card {
+  display: flex;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid white;
+  justify-content: space-around;
+}
+.stand-out-left-part {
+  padding-right: 20px;
+  background-color: #0368FF;
+  flex: 30%;
+}
+.stand-out-left-part h1 {
+  text-align: left;
+  color: white;
+  font-size: 22px;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+.stand-out-right-part {
+  margin-left: 10px;
+  flex: 70%;
+  background-color: #0368FF;
+}
+.stand-out-right-part p {
+  text-align: left;
+  color: white;
+  font-size: 17px;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 26px;
+  flex: 60%;
+}
+@media screen and (max-width: 854px) {
+  .stand-out-section {
+    padding: 1rem 0rem;
+  }
+  .stand-out-text h1 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .stand-out-images {
+    padding: 8rem 0rem 0rem;
+  }
+  .stand-out-images img {
+    width: 200px;
+    height: 400px;
+  }
+  .stand-out-left-part h1 {
+    font-size: 18px;
+  }
+  .stand-out-right-part p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-justify: inter-word;
+  }
+  /* .stand-out-card {
+    margin-bottom: 1rem;
+  } */
+}
+
+@media screen and (max-width: 450px) {
+  .stand-out-section {
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+  .stand-out-images {
+    display: none;
+  }
+  .stand-out-left-part h1 {
+    font-size: 16px;
+  }
+  .stand-out-right-section {
+    margin-right: 0px;
+  }
+  .stand-out-right-part p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
 
 /* 11 foreign language section */
 .various-lang {
@@ -1515,7 +1602,8 @@
 
 .get-started .left-side .heading h1 {
   color: #2f327d;
-  font-family: "Nunito Sans", Sans-serif;
+  /* font-family: "Nunito Sans", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 45px;
   font-weight: 800;
   line-height: 54px;
@@ -1534,7 +1622,8 @@
 }
 
 .get-started .left-side .info ul li {
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 1.3em;
   line-height: 1.5;
   color: black;
@@ -1560,7 +1649,7 @@
   text-decoration: none;
   font-size: 1.3em;
   transition: background-color 0.3s;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 .get-started .left-side .register-button:hover {
@@ -1848,7 +1937,8 @@
   align-items: center;
 
   color: #2f327d;
-  font-family: "Poppins", Sans-serif;
+  /* font-family: "Poppins", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-weight: bold;
   font-size: larger;
   line-height: 54px;
@@ -1975,7 +2065,8 @@
 }
 
 .faq-heading {
-  font-family: "Nunito Sans", Sans-serif;
+  /* font-family: "Nunito Sans", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 50px;
   font-weight: 800;
 }
@@ -2006,9 +2097,10 @@
 }
 
 .question p {
-  font-family: "Poppins", Sans-serif;
+  /* font-family: "Poppins", Sans-serif; */
   font-size: 1.15em;
   font-weight: 700;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 .answer {

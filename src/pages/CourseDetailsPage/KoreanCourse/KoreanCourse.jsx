@@ -90,106 +90,292 @@ const KoreanCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
+      title: "Introduction to Korean Alphabets (Hangul Consonants)",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Explore Hangul consonants effortlessly",
+        "Master key Korean consonants easily",
+        "Deepen your understanding of Korean consonants",
+        "Discover more Korean consonants",
+        "Master Korean double consonants",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Vowels, Batchim, Rules of Word Formation, and Basic Phrases",
+      topics: [
+        "Master vowels and double vowels in Hangul",
+        "Unravel batchim final consonants",
+        "Craft words by combining linguistic elements",
+        "Enhance skills in Korean word formation",
       ],
       cnt: "4",
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+      title: "Sino and Native Korean Numbers",
+      topics: [
+        "Master Korean numbers easily",
+        "Explore Sino-Korean numbers",
+        "Master daily phrases and number systems",
+        "Master math vocabulary in Korean",
+        "Master counters in Korean",
+        "Explore counters in native and Sino-Korean",
+      ],
+      cnt: "6",
     },
     {
-      title: "Introduction to Python",
+      title: "Introduction to Essential Korean Verbs and Nouns",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Explore key verbs, nouns, and phrases",
+        "Learn more Korean action verbs",
+        "Boost language skills with essential action verbs",
+        "Enhance vocabulary with essential Korean nouns",
+        "Master basic Korean phrases",
+        "Learn key words and phrases for communication",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Constructing Sentences with Future Tense Conjugation",
+      topics: [
+        "Express future actions in Korean",
+        "Conjugate future tense Korean verbs",
+        "Learn more about conjugating tenses",
+        "Learn formal and informal verb conjugation",
+        "Master simple future tense conjugation",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Learn About Various Jobs",
+      topics: [
+        "Explore Korean job titles and career terms",
+        "Enhance skills with job titles and terms",
+        "Learn essential job-related vocabulary",
+        "Unlock a spectrum of job titles",
+        "Refine communication with job-related phrases",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Body Parts in Korean",
+      topics: [
+        "Learn human body part vocabulary",
+        "Master body part vocabulary and medical phrases",
+        "Explore common phrases in healthcare settings",
+        "Understand medical terms for effective communication",
+        "Practice patient-receptionist conversations",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Present Tense - Constructing Sentences with Present Tense Conjugation",
+      topics: [
+        "Master impolite present tense (아/어)",
+        "Learn polite present tense (아요/어요)",
+        "Craft polite sentences (아요/어요)",
+        "Present tense continuous grammar (고 중이에요)",
+        "Understand polite form (ㅂ니다/습니다)",
+        "Delve into polite form present tense",
+        "Navigate present continuous tense (고 있어요)",
+      ],
+      cnt: "7",
+    },
+    {
+      title: "Learning Vocabulary and Grammar in Past Tense",
+      topics: [
+        "Past tense conjugation (아/어)",
+        "Explore past tense (았다/었다)",
+        "Casual and formal past nuances",
+        "Practice various past tense forms",
+        "Craft sentences in past tense",
+        "Learn double past tense",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Differentiating '이다' and '아니다' in Korean",
+      topics: [
+        "Explore 이다/아니다 forms and conjugations",
+        "Master past conjugation of 이다/아니다",
+        "Difference between 아니다 and 없다",
+        "Differentiate 좋다 and 좋아하다",
+        "Practice sentences with 좋다 and 좋아하다",
+        "Learn grammar (이에요/예요)",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Talking About Clothes in Korean",
+      topics: [
+        "Explore color vocabulary",
+        "Learn names of various colors",
+        "Attach colors to nouns",
+        "Unravel outerwear and accessories vocabulary",
+        "Explore clothing-related verbs and adjectives",
+        "Practice sentences about fashion",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Learning About Games",
+      topics: [
+        "Explore sports vocabulary",
+        "Delve deeper into sports vocabulary",
+        "Expand outdoor sports vocabulary",
+        "Continue learning sports vocabulary",
+        "Understand 잘하다 and 못하다",
+        "Master Korean sports-related words",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Days of the Week, Months of the Year, and Frequency",
+      topics: [
+        "Learn days, months, and years in Korean",
+        "Discover days of the week",
+        "Unlock knowledge of Korean months",
+        "Learn time-related vocabulary",
+        "Express dates in Korean",
+        "Practice phrases about days, dates, and months",
+        "Boost skills with practical phrases",
+      ],
+      cnt: "7",
+    },
+    {
+      title: "Talking About Time in Korean",
+      topics: [
+        "Explore time, scheduling, and planning",
+        "Master telling time in hours",
+        "Express minutes in Korean",
+        "Learn time expressions, including seconds",
+        "Essential time expressions for communication",
+        "Master telling time with phrases and expressions",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Discussing Food and Ordering Meals in Korean",
+      topics: [
+        "Explore food-related vocabulary",
+        "Learn cooking and kitchen vocabulary",
+        "Discover non-vegetarian cuisine vocabulary",
+        "Essential phrases for ordering meals",
+        "Dining phrases for a better culinary experience",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Talking About Neighborhood in Korean",
+      topics: [
+        "Master direction vocabulary: left, right, straight",
+        "Unlock direction terms for smooth communication",
+        "Navigate Korea with essential direction phrases",
+        "Polish navigation skills with diverse phrases",
+        "Enhance conversations with essential phrases",
+        "Navigate effortlessly with key direction phrases",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Prepositions and Adverbs in Korean",
+      topics: [
+        "Master Korean prepositions and adverbs",
+        "Explore essential grammar",
+        "Deepen grammar skills",
+        "Expand vocabulary with vital adverbs",
+        "Practice with simple sentences",
+        "Quick guide to prepositions",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Interrogative Words in Korean",
+      topics: [
+        "Discover interrogative words",
+        "Dive deeper into interrogative words",
+        "Learn to ask questions in different ways",
+        "Master question structures",
+        "Boost question-forming skills",
+        "Learn final question grammar",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Talking About Climate in Korean",
+      topics: [
+        "Discover weather vocabulary",
+        "Discover nature vocabulary",
+        "Describe weather",
+        "Learn more about weather",
+        "Continue describing weather",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Important Grammar One Should Know",
+      topics: [
+        "Discover essential grammar",
+        "Master grammar: Or",
+        "Discover grammar: Though",
+        "Learn 'Gee-mal' usage",
+        "Explore advanced grammar",
+        "Continue advanced grammar",
+      ],
+      cnt: "6",
+    },
+    {
+      title: "Learning Nationality in Korean",
+      topics: [
+        "Explore names for nations",
+        "Dive into nationalities",
+        "Learn names of languages",
+        "Explore cultural symbols and traditions",
       ],
       cnt: "4",
     },
     {
-      title: "Java Basics",
+      title: "Learning About Travel and Transportation",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Discover travel and transportation",
+        "Learn vocabulary for travel and transportation",
+        "Boost travel phrases",
+        "Explore additional travel phrases",
       ],
       cnt: "4",
     },
     {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
+      title: "Vocabulary for Hobbies and How to Express It",
+      topics: [
+        "Boost vocabulary with hobbies",
+        "Explore verbs for hobbies",
+        "Discover Korean hobbies",
+        "Explore language exceptions",
+        "Discover verb + 'kee'",
+        "More 'kee' examples",
+      ],
+      cnt: "6",
     },
     {
-      title: "6Introduction to Python",
+      title: "Learning About Family and Its Vocabulary",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Explore family vocabulary: Parents",
+        "Discover family vocabulary: In-Laws",
+        "Explore great-grandparents vocab",
+        "Explore family phrases",
       ],
       cnt: "4",
     },
     {
-      title: "7Introduction to Machine Learning",
+      title: "Shopping and Appearances",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Explore shopping and appearance",
+        "Explore adjectives and market phrases",
+        "Explore payment phrases",
+        "Detailed appearances vocabulary",
+        "Discover appearances vocabulary",
       ],
-      cnt: "4",
+      cnt: "5",
     },
-    {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
-    },
-    {
-      title: "9Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
-    },
-    {
-      title: "10Introduction to Machine Learning",
-      topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
-      ],
-      cnt: "4",
-    },
-    {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
-      cnt: "3",
-    },
-    {
-      title: "12Introduction to Python",
-      topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
-      ],
-      cnt: "4",
-    },
-    // Add more modules as needed
   ];
 
   //   toggling between expand more and expand less
@@ -451,15 +637,15 @@ const KoreanCourse = () => {
           <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
-              <p>106 video tutorials</p>
+              <p>137 video tutorials</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>construction</span>
-              <p>5 projects</p>
+              <p>Blogs</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>memory</span>
-              <p>2 AI tools covered</p>
+              <p>Books Recommendation</p>
             </div>
           </div>
 

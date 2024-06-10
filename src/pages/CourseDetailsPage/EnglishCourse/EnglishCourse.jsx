@@ -90,266 +90,260 @@ const EnglishCourse = () => {
   // modules section
   const modules = [
     {
-        title: "Start a Comprehensive English Language Journey",
-        topics: [
-            "Comprehensive Introduction",
-            "Self-Introduction",
-            "Daily Routines",
-            "Fundamentals",
-            "Parts of Speech",
-            "Advanced Parts of Speech"
-        ],
-        cnt: "6"
+      title: "Start a Comprehensive English Language Journey",
+      topics: [
+        "Comprehensive Introduction",
+        "Self-Introduction",
+        "Daily Routines",
+        "Fundamentals",
+        "Parts of Speech",
+        "Advanced Parts of Speech",
+      ],
+      cnt: "6",
     },
     {
-        title: "Pronouns, Subjects, and Vocabulary",
-        topics: [
-            "Pronouns",
-            "Relative and Interrogative Pronouns",
-            "Reflexive and Indefinite Pronouns",
-            "Subjects and Objects",
-            "Simple and Compound Subjects",
-            "Vowels and Consonants",
-            "Vocabulary Expansion"
-        ],
-        cnt: "7"
+      title: "Pronouns, Subjects, and Vocabulary",
+      topics: [
+        "Pronouns",
+        "Relative and Interrogative Pronouns",
+        "Reflexive and Indefinite Pronouns",
+        "Subjects and Objects",
+        "Simple and Compound Subjects",
+        "Vowels and Consonants",
+        "Vocabulary Expansion",
+      ],
+      cnt: "7",
     },
     {
-        title: "Pronouns, Adjectives, Articles, and Pronunciation",
-        topics: [
-            "Pronouns",
-            "Adjectives",
-            "Advanced Adjectives",
-            "Quality, Quantity, Superlative, and Comparative Adjectives",
-            "Articles",
-            "Using 'The'",
-            "Advanced 'The'",
-            "Pronunciation of 'T' and 'D'"
-        ],
-        cnt: "8"
+      title: "Pronouns, Adjectives, Articles, and Pronunciation",
+      topics: [
+        "Pronouns",
+        "Adjectives",
+        "Advanced Adjectives",
+        "Quality, Quantity, Superlative, and Comparative Adjectives",
+        "Articles",
+        "Using 'The'",
+        "Advanced 'The'",
+        "Pronunciation of 'T' and 'D'",
+      ],
+      cnt: "8",
     },
     {
-        title: "Pronunciation Guide, Idioms, and Communication Tips",
-        topics: [
-            "Tricky Words",
-            "Advanced Pronunciation",
-            "Idioms and Phrases",
-            "Communication Tips",
-            "Common Grammar Errors"
-        ],
-        cnt: "5"
+      title: "Pronunciation Guide, Idioms, and Communication Tips",
+      topics: [
+        "Tricky Words",
+        "Advanced Pronunciation",
+        "Idioms and Phrases",
+        "Communication Tips",
+        "Common Grammar Errors",
+      ],
+      cnt: "5",
     },
     {
-        title: "Mastering English Verbs",
-        topics: [
-            "Verbs and Tenses",
-            "Action, Linking, and Auxiliary Verbs",
-            "Helping Verbs 'Is,' 'Am,' 'Are'",
-            "Helping Verbs 'Was' and 'Were'",
-            "Helping Verbs 'Has,' 'Have,' 'Had'",
-            "Auxiliary Verbs 'Do,' 'Does,' 'Did'"
-        ],
-        cnt: "6"
+      title: "Mastering English Verbs",
+      topics: [
+        "Verbs and Tenses",
+        "Action, Linking, and Auxiliary Verbs",
+        "Helping Verbs 'Is,' 'Am,' 'Are'",
+        "Helping Verbs 'Was' and 'Were'",
+        "Helping Verbs 'Has,' 'Have,' 'Had'",
+        "Auxiliary Verbs 'Do,' 'Does,' 'Did'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Mastering Modal Verbs",
-        topics: [
-            "Modal Verbs 'Can'",
-            "Modal Verbs 'Could'",
-            "Modal Verbs 'Will'",
-            "Modal Verbs 'Would'",
-            "Modal Verbs 'Shall' and 'Should'",
-            "Modal Verbs 'May,' 'Might,' 'Must'"
-        ],
-        cnt: "6"
+      title: "Mastering Modal Verbs",
+      topics: [
+        "Modal Verbs 'Can'",
+        "Modal Verbs 'Could'",
+        "Modal Verbs 'Will'",
+        "Modal Verbs 'Would'",
+        "Modal Verbs 'Shall' and 'Should'",
+        "Modal Verbs 'May,' 'Might,' 'Must'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Mastering Adverbs and 'To + Verb' Construction",
-        topics: [
-            "Adverbs",
-            "Types of Adverbs",
-            "Adverb Placement",
-            "Adverb Formation",
-            "'To + Verb' Construction"
-        ],
-        cnt: "5"
+      title: "Mastering Adverbs and 'To + Verb' Construction",
+      topics: [
+        "Adverbs",
+        "Types of Adverbs",
+        "Adverb Placement",
+        "Adverb Formation",
+        "'To + Verb' Construction",
+      ],
+      cnt: "5",
     },
     {
-        title: "Mastering English Prepositions",
-        topics: [
-            "Prepositions",
-            "'Into' vs. 'Inside' and 'With' vs. 'By'",
-            "Preposition 'From'",
-            "'Between' vs. 'Among'",
-            "'Through' vs. 'Across,' 'Onto' vs. 'Upon'",
-            "'Above' vs. 'Over' and 'To'"
-        ],
-        cnt: "6"
+      title: "Mastering English Prepositions",
+      topics: [
+        "Prepositions",
+        "'Into' vs. 'Inside' and 'With' vs. 'By'",
+        "Preposition 'From'",
+        "'Between' vs. 'Among'",
+        "'Through' vs. 'Across,' 'Onto' vs. 'Upon'",
+        "'Above' vs. 'Over' and 'To'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Differentiating English Prepositions",
-        topics: [
-            "'About' vs. 'After'",
-            "'Against,' 'Around,' 'Along,' and 'Before'",
-            "'Beneath,' 'Beside,' and 'Beyond'",
-            "'During,' 'For,' 'Near,' 'Next to'",
-            "'Out' vs. 'Outside,' 'Past,' 'Towards'",
-            "'Within' vs. 'Without,' 'Behind,' 'Throughout,' 'In Spite Of'"
-        ],
-        cnt: "6"
+      title: "Differentiating English Prepositions",
+      topics: [
+        "'About' vs. 'After'",
+        "'Against,' 'Around,' 'Along,' and 'Before'",
+        "'Beneath,' 'Beside,' and 'Beyond'",
+        "'During,' 'For,' 'Near,' 'Next to'",
+        "'Out' vs. 'Outside,' 'Past,' 'Towards'",
+        "'Within' vs. 'Without,' 'Behind,' 'Throughout,' 'In Spite Of'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Idioms, Prepositions, Conjunctions, and Paired Words",
-        topics: [
-            "Idioms",
-            "Prepositions and Conjunctions",
-            "Paired Words",
-            "More Paired Words",
-            "Even More Paired Words",
-            "Conjunctions for Time, Cause, and Reason"
-        ],
-        cnt: "6"
+      title: "Idioms, Prepositions, Conjunctions, and Paired Words",
+      topics: [
+        "Idioms",
+        "Prepositions and Conjunctions",
+        "Paired Words",
+        "More Paired Words",
+        "Even More Paired Words",
+        "Conjunctions for Time, Cause, and Reason",
+      ],
+      cnt: "6",
     },
     {
-        title: "Conjunctions and Interjections",
-        topics: [
-            "Conjunctions",
-            "Differentiating Phrases and Clauses",
-            "More Conjunctions",
-            "Conjunctions 'Even Though,' 'As If,' 'Otherwise,' 'If,' 'Likewise,' 'Still'",
-            "Interjections",
-            "Advanced Interjections"
-        ],
-        cnt: "6"
+      title: "Conjunctions and Interjections",
+      topics: [
+        "Conjunctions",
+        "Differentiating Phrases and Clauses",
+        "More Conjunctions",
+        "Conjunctions 'Even Though,' 'As If,' 'Otherwise,' 'If,' 'Likewise,' 'Still'",
+        "Interjections",
+        "Advanced Interjections",
+      ],
+      cnt: "6",
     },
     {
-        title: "Interjections, Sentence Types, and Pronunciation",
-        topics: [
-            "Interjections",
-            "More Interjections",
-            "Sentence Types",
-            "Sentence Structure",
-            "Pronunciation",
-            "More Pronunciation"
-        ],
-        cnt: "6"
+      title: "Interjections, Sentence Types, and Pronunciation",
+      topics: [
+        "Interjections",
+        "More Interjections",
+        "Sentence Types",
+        "Sentence Structure",
+        "Pronunciation",
+        "More Pronunciation",
+      ],
+      cnt: "6",
     },
     {
-        title: "Mispronunciations, Subject-Verb Agreement, and Paired Words",
-        topics: [
-            "Mispronounced Words",
-            "Subject-Verb Agreement",
-            "Paired Words",
-            "Subject-Verb Agreement with Quantity and Amount",
-            "More Subject-Verb Agreement"
-        ],
-        cnt: "5"
+      title: "Mispronunciations, Subject-Verb Agreement, and Paired Words",
+      topics: [
+        "Mispronounced Words",
+        "Subject-Verb Agreement",
+        "Paired Words",
+        "Subject-Verb Agreement with Quantity and Amount",
+        "More Subject-Verb Agreement",
+      ],
+      cnt: "5",
     },
     {
-        title: "Vocabulary and Present Tenses",
-        topics: [
-            "Vocabulary",
-            "Tenses",
-            "Simple Present Tense",
-            "Present Continuous Tense",
-            "Present Perfect Tense",
-            "Present Perfect Continuous Tense"
-        ],
-        cnt: "6"
+      title: "Vocabulary and Present Tenses",
+      topics: [
+        "Vocabulary",
+        "Tenses",
+        "Simple Present Tense",
+        "Present Continuous Tense",
+        "Present Perfect Tense",
+        "Present Perfect Continuous Tense",
+      ],
+      cnt: "6",
     },
     {
-        title: "Past and Future Tenses",
-        topics: [
-            "Simple Past Tense",
-            "Past Perfect Tense",
-            "Past Continuous Tense",
-            "Past Perfect Continuous Tense",
-            "Simple Future Tense"
-        ],
-        cnt: "5"
+      title: "Past and Future Tenses",
+      topics: [
+        "Simple Past Tense",
+        "Past Perfect Tense",
+        "Past Continuous Tense",
+        "Past Perfect Continuous Tense",
+        "Simple Future Tense",
+      ],
+      cnt: "5",
     },
     {
-        title: "Future Tenses and Active/Passive Voice",
-        topics: [
-            "Future Perfect Tense",
-            "Future Continuous Tense",
-            "Future Perfect Continuous Tense",
-            "Grammar Practice",
-            "Active and Passive Voice",
-            "Advanced Active and Passive Voice"
-        ],
-        cnt: "6"
+      title: "Future Tenses and Active/Passive Voice",
+      topics: [
+        "Future Perfect Tense",
+        "Future Continuous Tense",
+        "Future Perfect Continuous Tense",
+        "Grammar Practice",
+        "Active and Passive Voice",
+        "Advanced Active and Passive Voice",
+      ],
+      cnt: "6",
     },
     {
-        title: "Passive Voice and Tenses",
-        topics: [
-            "Passive Voice in Negative Sentences",
-            "Negative Questions in Passive Voice",
-            "Present Perfect Tense",
-            "Active and Passive Voices",
-            "Past Continuous"
-        ],
-        cnt: "5"
+      title: "Passive Voice and Tenses",
+      topics: [
+        "Passive Voice in Negative Sentences",
+        "Negative Questions in Passive Voice",
+        "Present Perfect Tense",
+        "Active and Passive Voices",
+        "Past Continuous",
+      ],
+      cnt: "5",
     },
     {
-        title: "Active/Passive Voices and Modal Verbs",
-        topics: [
-            "Past Perfect",
-            "Future Simple",
-            "Future Perfect",
-            "Modal Verbs in Passive Voice",
-            "Advanced Modal Verbs"
-        ],
-        cnt: "5"
+      title: "Active/Passive Voices and Modal Verbs",
+      topics: [
+        "Past Perfect",
+        "Future Simple",
+        "Future Perfect",
+        "Modal Verbs in Passive Voice",
+        "Advanced Modal Verbs",
+      ],
+      cnt: "5",
     },
     {
-        title: "Grammar, Conditionals, and Sentences",
-        topics: [
-            "Active and Passive Voice Review",
-            "Conditionals",
-            "Second Conditional",
-            "Third Conditional",
-            "Advanced Grammar Practice",
-            "Sentence Construction"
-        ],
-        cnt: "6"
+      title: "Grammar, Conditionals, and Sentences",
+      topics: [
+        "Active and Passive Voice Review",
+        "Conditionals",
+        "Second Conditional",
+        "Third Conditional",
+        "Advanced Grammar Practice",
+        "Sentence Construction",
+      ],
+      cnt: "6",
     },
     {
-        title: "Phrasal Verbs, Types of Sentences, and Grammar Practice",
-        topics: [
-            "Phrasal Verbs",
-            "Advanced Phrasal Verbs",
-            "Types of Sentences",
-            "Grammar Practice",
-            "Advanced Grammar Practice",
-            "Practical Grammar Practice"
-        ],
-        cnt: "6"
+      title: "Phrasal Verbs, Types of Sentences, and Grammar Practice",
+      topics: [
+        "Phrasal Verbs",
+        "Advanced Phrasal Verbs",
+        "Types of Sentences",
+        "Grammar Practice",
+        "Advanced Grammar Practice",
+        "Practical Grammar Practice",
+      ],
+      cnt: "6",
     },
     {
-        title: "Speaking, Communication, Writing, and Grammar Practice",
-        topics: [
-            "Speaking Practice",
-            "Practical Communication Skills",
-            "Writing Practice",
-            "Grammar Practice",
-            "Advanced Grammar Practice",
-            "Practical Grammar Practice"
-        ],
-        cnt: "6"
+      title: "Speaking, Communication, Writing, and Grammar Practice",
+      topics: [
+        "Speaking Practice",
+        "Practical Communication Skills",
+        "Writing Practice",
+        "Grammar Practice",
+        "Advanced Grammar Practice",
+        "Practical Grammar Practice",
+      ],
+      cnt: "6",
     },
     {
-        title: "Recap, Everyday English, and Cultural Insights",
-        topics: [
-            "Recap",
-            "Everyday English",
-            "Cultural Insights"
-        ],
-        cnt: "3"
-    }
-];
-
-
+      title: "Recap, Everyday English, and Cultural Insights",
+      topics: ["Recap", "Everyday English", "Cultural Insights"],
+      cnt: "3",
+    },
+  ];
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -519,19 +513,24 @@ const EnglishCourse = () => {
         <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
-              <a href="https://curiotory.com/lms"><button className={buy.loginButton}>Login</button></a>
+              <a href="https://curiotory.com/lms">
+                <button className={buy.loginButton}>Login</button>
+              </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo.png"
+                alt="Curiotory Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
               <h1>
-                Say <br/>Goodbye to Difficult
+                Say <br />
+                Goodbye to Difficult
                 <br />
                 <span className={buy.highlight}>English</span> Learning!
               </h1>
@@ -547,15 +546,19 @@ const EnglishCourse = () => {
               />
             </div>
           </div>
-          
         </div>
-        
+
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"5rem"
-        }}>
-              <a href="/checkout/1"><button className={buy.learnButton}>Subsrcibe Now </button></a>
-              </div>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "5rem",
+          }}
+        >
+          <a href="/checkout/1">
+            <button className={buy.learnButton}>Subsrcibe Now </button>
+          </a>
+        </div>
 
         {/* Course highlight section */}
         <div className={buy.highlight_outer}>
@@ -592,7 +595,7 @@ const EnglishCourse = () => {
               /> */}
             </div>
             <div className={buy.highlights_section}>
-            <HighlightItem
+              <HighlightItem
                 className={buy.item}
                 icon="schedule"
                 title="Beginner Friendly"
@@ -605,7 +608,6 @@ const EnglishCourse = () => {
                 title="Discover: Books, Travel Guide, Blogs"
                 description="Read Anytime, Anywhere"
               />
-              
 
               {/* <HighlightItem
                 className={buy.item}
@@ -658,15 +660,15 @@ const EnglishCourse = () => {
           <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
-              <p>106 video tutorials</p>
+              <p>125 video tutorials</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>construction</span>
-              <p>5 projects</p>
+              <p>Blogs</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>memory</span>
-              <p>2 AI tools covered</p>
+              <p>Books Recommendation</p>
             </div>
           </div>
 
@@ -796,7 +798,6 @@ const EnglishCourse = () => {
               className={activeTab === "tab2" ? buy.activeTab : buy.tab}
               onClick={() => setActiveTab("tab2")}
             >
-              
               <i
                 className={`fas fa-book-open `}
                 style={{ fontSize: "30px", marginRight: "7px" }}
@@ -1009,7 +1010,6 @@ const EnglishCourse = () => {
           </div>
 
           <div className={buy.second_row}>
-            
             {/* fourth company */}
             <Card className={buy.cardss}>
               <Card.Img
@@ -1055,7 +1055,7 @@ const EnglishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                   margin: "2rem auto 1rem",
+                  margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
@@ -1185,7 +1185,6 @@ const EnglishCourse = () => {
         </div>
 
         {/* <!-- FAQ SECTION ENDS --> */}
-
       </div>
 
       <Footer2 />

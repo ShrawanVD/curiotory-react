@@ -78,11 +78,13 @@ function Home() {
       {showDiv1 && (
         <div>
           <div className="mascot-div">
-            <img
-              src="/mascot/newSpare1.gif"
-              className="msacot-video"
-              type="gif"
-            />
+            <LazyLoad height={200} offset={100}>
+              <img
+                src="/mascot/newSpare1.gif"
+                className="msacot-video"
+                type="gif"
+              />
+            </LazyLoad>
           </div>
         </div>
       )}
@@ -94,7 +96,9 @@ function Home() {
             {/* <!-- cover page section --> */}
             <div className="cover-page">
               <div className="mascot-cover">
-                <img src="/mascot/coverani.gif" />
+                <LazyLoad height={200} offset={100}>
+                  <img src="/mascot/coverani.gif" />
+                </LazyLoad>
               </div>
               <h1>An online language learning platform</h1>
               <div className="coverpage-para">
@@ -122,7 +126,7 @@ function Home() {
               </div>
             </div>
 
-            <Courselist/>
+            <Courselist />
 
             {/* <!-- sliding section --> */}
             <div className="sliding-section">
@@ -357,7 +361,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 1.png"
                       />
-                      <h1>Academic Excellence</h1>
+                      <h3>Academic Excellence</h3>
                       <p>
                         Ace exams like SAT & GRE and outperform the rest in
                         school/college interviews.
@@ -369,7 +373,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 2.png"
                       />
-                      <h1>Dream Careers</h1>
+                      <h3>Dream Careers</h3>
                       <p>
                         Boost your resume to world-className standards and apply
                         for international job positions.
@@ -381,7 +385,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 3.png"
                       />
-                      <h1>Real-Life Skills</h1>
+                      <h3>Real-Life Skills</h3>
                       <p>
                         Pick up valuable skills, such as multitasking,
                         problem-solving, conflict management, etc.
@@ -393,7 +397,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 4.png"
                       />
-                      <h1>Cognitive Focus</h1>
+                      <h3>Cognitive Focus</h3>
                       <p>
                         Raise your level of cognitive intelligence and sharpen
                         your overall thinking process.
@@ -405,7 +409,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 5.png"
                       />
-                      <h1>Self-Confidence Boost</h1>
+                      <h3>Self-Confidence Boost</h3>
                       <p>
                         Amplify your confidence levels to easily maximize
                         strengths and manage weaknesses.
@@ -417,7 +421,7 @@ function Home() {
                         height="74"
                         src="/Index/learn foreign - 6.png"
                       />
-                      <h1>Cultural Empathy</h1>
+                      <h3>Cultural Empathy</h3>
                       <p>
                         Gain a deeper cultural perspective of diverse cultures
                         and be more empathetic.
@@ -683,7 +687,7 @@ function Home() {
                   </ul>
                 </div>
 
-                <a className="register-button" href="/teacherform">
+                <a className="register-button" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank">
                   Register as a teacher
                 </a>
               </div>

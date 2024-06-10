@@ -65,11 +65,11 @@ function Navv() {
               Blogs
             </Nav.Link>
             <Nav.Link
-              href="/meetthetutor"
+              href="/becometutor"
               style={{ margin: "0 0.7rem", color: "black" }}
               className="navLinkNavbar"
             >
-              Meet the Tutors
+              Become a Tutors
             </Nav.Link>
             <Nav.Link
               href="/aboutus"

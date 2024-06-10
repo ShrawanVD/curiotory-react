@@ -5,7 +5,7 @@ a:active {
   text-decoration: none;
   outline: none;
 }
-
+ 
 a,
 a:active,
 a:focus {
@@ -22,54 +22,54 @@ a:focus {
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
 }
-
+ 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-
+ 
+ 
 .single_footer img {
   max-width: 100%;
   height: auto;
 }
-
+ 
 .footer {
   /* background: linear-gradient(105deg, #6e99e6, #093c94); */
   background: linear-gradient(180deg,#7bc2e2 19%, #4284a2  132%);
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
 }
-
-
-
+ 
+ 
+ 
 /*END FOOTER SOCIAL DESIGN*/
-
+ 
 /* first seciton - logo */
-
+ 
 .logo-class {
   margin-top: 0.8rem;
   margin-left: 0rem;
 }
-
+ 
 .logo-class img {
   margin-left: 1rem;
 }
-
+ 
 .logo-bio {
   font-size: 1rem;
   margin-top: 1rem;
 }
-
+ 
 .single_footer1 {
   margin-right: 5rem;
   background-color: transparent;
 }
-
-
+ 
+ 
 .single_footer h4 {
   background: transparent;
   color: whitesmoke;
@@ -96,12 +96,12 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+ 
 .single_footer ul li a {
   color: whitesmoke;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  line-height: 36px;
+  line-height: 20px;
   font-size: 15px;
   text-transform: none;
 }
@@ -109,7 +109,7 @@ ul {
   color: black;
   font-weight: 600;
 }
-
+ 
 .single_footer_address ul li {
   color: whitesmoke;
 }
@@ -123,12 +123,12 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+ 
 /* divider */
 .row{
 width: 100%;
 }
-
+ 
 .social_profile hr {
   display: flex;
   justify-content: center;
@@ -136,18 +136,18 @@ width: 100%;
   width: 80%;
   border: 1px solid whitesmoke;
 }
-
+ 
 /*START SOCIAL PROFILE CSS*/
 .social_profile {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 .social_profile ul {
   list-style: outside none none;
-  margin: 2rem 0 0;
+  margin: 0rem 0 0;
   padding: 0;
 }
 .social_profile ul li {
@@ -186,7 +186,7 @@ width: 100%;
 .social_profile ul li:nth-child(1) a:hover {
   background: #0a66c2; /* linkedin */
 }
-
+ 
 .social_profile ul li:nth-child(2) a:hover {
   background: #f09433;
   background: -moz-linear-gradient(
@@ -216,24 +216,25 @@ width: 100%;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   /* instagram */
 }
-
+ 
 .social_profile ul li:nth-child(3) a:hover {
   background: red; /* Youtube */
 }
-
+ 
 .social_profile ul li:nth-child(4) a:hover {
   background: #2f7deb; /* Facebook */
 }
-
+ 
 /* contact us section */
-
+ 
 .email {
   margin-right: 0.7rem;
 }
-
+ 
 /*END SOCIAL PROFILE CSS*/
 .copyright {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
   color: whitesmoke;
   font-size: 15px;
   text-align: center;
@@ -246,15 +247,15 @@ width: 100%;
 .copyright a:hover {
   color: #ff3666;
 }
-
+ 
 /* manually added css */
-
+ 
 .row-up {
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
-
+ 
 @media only screen and (max-width: 1400px) {
   .logo-class {
     margin-left: 4rem;
@@ -272,7 +273,7 @@ width: 100%;
     font-size: 0.8rem;
   }
 }
-
+ 
 @media only screen and (max-width: 1000px) {
     .logo-class {
         margin: 0 auto 1rem;
@@ -280,7 +281,7 @@ width: 100%;
     .logo-class img{
         margin-left: 0rem;
       }
-
+ 
   .row-up {
     display: flex;
     justify-content: center;
