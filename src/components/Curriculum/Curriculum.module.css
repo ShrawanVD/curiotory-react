@@ -1,0 +1,52 @@
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    border: 2px solid #0044cc;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+    color: #EF4B2B;
+    margin-bottom: 10px;
+  }
+  
+  .cefrlText {
+    color: #00046C;
+  }
+  
+  .keySkills {
+    color: #F4AD28;
+  }
+  
+  .cefrLevel {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .modules {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .module {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+  }
+  
+  .module h3,
+  .module h4 {
+    margin: 0;
+  }
+  

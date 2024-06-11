@@ -22,49 +22,60 @@ function Becometutor() {
 
           {/* cards section for becoming tutor */}
           <div className="stepCards">
-
-
-          <div className="flexbox">
-        <div className="flexcard flexcardBlue">
-            <div className="flexcardNumber flexcardNumberBlue">Step 01</div>
-            <div className="flex flexcardTitle">Download curiotory app</div>
-            <div className="downloadButton">
-              <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank"><button className="button2">Download the app</button></a>
-            </div>
-            {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+            <div className="flexbox">
+              <div className="flexcard flexcardBlue">
+                <div className="flexcardNumber flexcardNumberBlue">Step 01</div>
+                <div className="flex flexcardTitle">Download curiotory app</div>
+                <div className="downloadButton">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                    target="_blank"
+                  >
+                    <button className="button2">Download the app</button>
+                  </a>
+                </div>
+                {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
                 temporibus consectetur? Iure id nam fuga asperiores repellat accusantium exercitationem nemo? </div> */}
-        </div>
-        <div className="flexcard flexcardBlue">
-            <div className="flexcardNumber flexcardNumberBlue">Step 02</div>
-            <div className="flex flexcardTitle">Go to menu section of the homepage</div>
-            <div className="step2Img">
-              <img src="/become tutor/step2img.png" alt="step2" />
-            </div>
-            
-        </div>
-        <div className="flexcard flexcardBlue">
-            <div className="flexcardNumber flexcardNumberBlue">Step 03</div>
-            <div className="flex flexcardTitle">Select the “Become a tutor” option</div>
-            <div className="step2Img">
-              <img src="/become tutor/step3.png" alt="step2" />
-            </div>
-             
-        </div>
-        <div className="flexcard flexcardBlue">
-            <div className="flexcardNumber flexcardNumberBlue">Step 04</div>
-            <div className="flex flexcardTitle">Fill up the Form and wait for the revert back</div>
-            <div className="step2Img">
-              <img src="/become tutor/step4.png" alt="step2" />
-            </div>
-            {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
+              </div>
+              <div className="flexcard flexcardBlue">
+                <div className="flexcardNumber flexcardNumberBlue">Step 02</div>
+                <div className="flex flexcardTitle">
+                  Go to menu section of the homepage
+                </div>
+                <div className="step2Img">
+                  <img src="/become tutor/step2img.png" alt="step2" />
+                </div>
+              </div>
+              <div className="flexcard flexcardBlue">
+                <div className="flexcardNumber flexcardNumberBlue">Step 03</div>
+                <div className="flex flexcardTitle">
+                  Select the “Become a tutor” option
+                </div>
+                <div className="step2Img">
+                  <img src="/become tutor/step3.png" alt="step2" />
+                </div>
+              </div>
+              <div className="flexcard flexcardBlue">
+                <div className="flexcardNumber flexcardNumberBlue">Step 04</div>
+                <div className="flex flexcardTitle">
+                  Fill up the Form and wait for the revert back
+                </div>
+                <div className="step2Img">
+                  <img src="/become tutor/step4.png" alt="step2" />
+                </div>
+                {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
                 temporibus consectetur? Iure id nam fuga asperiores repellat accusantium exercitationem nemo?</div> */}
-        </div>
-        </div>
-
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-2 mb-5">
-          <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank"><button className="button2">Download the app</button></a>
+            <a
+              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+              target="_blank"
+            >
+              <button className="button2">Download the app</button>
+            </a>
             {/* <a className="btn btn-primary regTeacherButton" href="TeacherForm">
               Register as a Teacher
             </a> */}
@@ -99,7 +110,11 @@ function Becometutor() {
               </p>
               <br />
             </div>
-            <a className="register-button" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank">
+            <a
+              className="register-button"
+              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+              target="_blank"
+            >
               Register as a teacher
             </a>
           </div>
@@ -247,9 +262,6 @@ function Becometutor() {
         {/* <!-- phases section --> */}
 
         {/* <!-- phases section - section 1 --> */}
-
-       
-
       </div>
       <Footer2 />
     </div>

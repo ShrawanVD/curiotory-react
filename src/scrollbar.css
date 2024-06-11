@@ -1,19 +1,22 @@
 /* scrollbar.css */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 13px;
   }
   
   ::-webkit-scrollbar-track {
+    /* background: #d94f34; */
+    /* background: #226bb4; */
     background: #f1f1f1;
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: #f2ac25; 
     border-radius: 8px;
     border: 3px solid #f1f1f1; 
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #d94f34;
+    /* background: #226bb4; */
   }
   
