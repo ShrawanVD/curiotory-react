@@ -24,6 +24,7 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Frenchnew from './components/Frenchnew/Frenchnew';
+import Curriculum from './components/Curriculum/Curriculum';
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -33,8 +34,8 @@ import KoreanCourse from './pages/CourseDetailsPage/KoreanCourse/KoreanCourse';
 import FrenchCourse from './pages/CourseDetailsPage/FrenchCourse/FrenchCourse';
 import SpanishCourse from './pages/CourseDetailsPage/SpanishCourse/SpanishCourse';
 import GermanCourse from './pages/CourseDetailsPage/GermanCourse/GermanCourse';
-
 import Newcover from './pages/NewCoverPage/Newcover';
+
 
 export default (
     <Routes>
@@ -51,6 +52,7 @@ export default (
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
+        <Route path="/curr" element={<Curriculum />} />
         
         
         {/* Languages pages routing */}

@@ -173,7 +173,7 @@ function CheckoutPg() {
         try {
           const res = await fetch(
             `https://lms-backend-3nru.onrender.com/api/payment/verification`,
-            // `https://localhost:4000/api/payment/verification`,
+            // `http://localhost:4000/api/payment/verification`,
             {
               method: "POST",
               headers: {
