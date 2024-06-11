@@ -35,6 +35,7 @@ import SpanishCourse from './pages/CourseDetailsPage/SpanishCourse/SpanishCourse
 import GermanCourse from './pages/CourseDetailsPage/GermanCourse/GermanCourse';
 
 import Newcover from './pages/NewCoverPage/Newcover';
+import Reviewcourse from './components/Reviewcourse/Reviewcourse';
 
 export default (
     <Routes>
@@ -75,6 +76,8 @@ export default (
         <Route path="/course/french" element={<FrenchCourse />} />
         <Route path="/course/spanish" element={<SpanishCourse />} />
         <Route path="/course/german" element={<GermanCourse />} />
+        <Route path="/review" element={<Reviewcourse />} />
+        
 
         {/* demo routing */}
         {/* <Route path="/newcover" element={< Newcover />} /> */}

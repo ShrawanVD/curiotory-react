@@ -1,19 +1,83 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import fr from "./Frenchnew.module.css";
+import Newnavbar from "../NewNavbar/Newnavbar";
 
 function Frenchnew() {
-  const [proficiency, setProficiency] = useState('A1');
+  const [proficiency, setProficiency] = useState("A1");
   const [duration, setDuration] = useState(3);
-  const [method, setMethod] = useState('Corporate');
+  const [method, setMethod] = useState("Corporate");
   const [fee, setFee] = useState(0);
 
   const feeMap = {
-    A1: { 3: { Corporate: 36000, student: 21000, exam: 25000, job: 25000, travel: 21000, hobby: 21000 } },
-    A2: { 3: { Corporate: 36000, student: 21000, exam: 25000, job: 25000, travel: 21000, hobby: 21000 }, 10: { student: 21000 } },
-    B1: { 3: { Corporate: 38000, student: 24000, exam: 28000, job: 28000, travel: 24000, hobby: 24000 } },
-    B2: { 3: { Corporate: 38000, student: 24000, exam: 28000, job: 28000, travel: 24000, hobby: 24000 } },
-    C1: { 3: { Corporate: 40000, student: 27000, exam: 31000, job: 31000, travel: 27000, hobby: 27000 } },
-    C2: { 3: { Corporate: 40000, student: 27000, exam: 31000, job: 31000, travel: 27000, hobby: 27000 } },
+    A1: {
+      3: {
+        Corporate: 36000,
+        Student: 21000,
+        Exam: 25000,
+        Job: 25000,
+        Travel: 21000,
+        Hobby: 21000,
+      },
+      10: {
+        Corporate: 10000,
+        Student: 21000,
+        Exam: 25000,
+        Job: 25000,
+        Travel: 21000,
+        Hobby: 21000,
+      },
+    },
+    A2: {
+      3: {
+        Corporate: 36000,
+        Student: 21000,
+        Exam: 25000,
+        Job: 25000,
+       Travel: 21000,
+        Hobby: 21000,
+      },
+      10: { Student: 21000 },
+    },
+    B1: {
+      3: {
+        Corporate: 38000,
+        Student: 24000,
+        Exam: 28000,
+        Job: 28000,
+        Travel: 24000,
+        Hobby: 24000,
+      },
+    },
+    B2: {
+      3: {
+        Corporate: 38000,
+        student: 24000,
+        Exam: 28000,
+        Job: 28000,
+        Travel: 24000,
+        Hobby: 24000,
+      },
+    },
+    C1: {
+      3: {
+        Corporate: 40000,
+        Student: 27000,
+        Exam: 31000,
+        Job: 31000,
+        Travel: 27000,
+        Hobby: 27000,
+      },
+    },
+    C2: {
+      3: {
+        Corporate: 40000,
+        Student: 27000,
+        Exam: 31000,
+        Job: 31000,
+        Travel: 27000,
+        Hobby: 27000,
+      },
+    },
   };
 
   const calculateFee = () => {
@@ -21,9 +85,9 @@ function Frenchnew() {
     setFee(baseFee);
   };
 
-  const proficiencyLevels = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+  const proficiencyLevels = ["A1", "A2", "B1", "B2", "C1", "C2"];
   const durationValues = [3, 6, 8, 10, 12, 14, 18];
-  const trainingMethods = ['Corporate', 'student', 'exam', 'job', 'travel', 'hobby'];
+  const trainingMethods = ["Corporate", "Student", "Exam", "Job", "Travel", "Hobby"];
 
   const handleProficiencyChange = (value) => {
     setProficiency(proficiencyLevels[value]);
@@ -36,52 +100,17 @@ function Frenchnew() {
   const handleMethodChange = (value) => {
     setMethod(trainingMethods[value]);
   };
+
+  useEffect(() => {
+    calculateFee();
+  }, [proficiency, duration, method]);
+
   return (
     <>
       <div className={fr.container}>
-        {/* <header className={fr.header}>
-          <div className={fr.headerLeft}>
-            <img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
-              className={fr.logo}
-            />
-          </div>
-          <div className={fr.headerRight}>
-            <a href="#" className={fr.studentPortal}>
-              Student Portal {" >|"}
-            </a>
-          </div>
-        </header> */}
-        <header className={fr.header}>
-          <div className={fr.logoContainer}>
-            <img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
-              className={fr.logo}
-            />
-          </div>
-          <div className={fr.headerRight}>
-            <a href="#" className={fr.studentPortal}>
-              Student Portal
-            </a>
-          </div>
-        </header>
-        <div className={fr.imgline}>
-          <img src="/navbar/navbarLine.png" />
-        </div>
-        <div className={fr.navList}>
-          <nav className={fr.nav}>
-            <a href="#">Solutions</a>
-            <a href="#">Languages</a>
-            <a href="#">Meet Our Tutors</a>
-            <a href="#">Blogs</a>
-            <a href="#">About us</a>
-            <a href="#" className={fr.contactUs}>
-              <span>Contact us</span>
-            </a>
-          </nav>
-        </div>
+        {/* new navbar */}
+        <Newnavbar />
+        {/* language cover page */}
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
@@ -212,83 +241,84 @@ function Frenchnew() {
         </div>
       </div>
 
-      {/* calulator  */}
+      {/* calculator  */}
       <div>
-      <div className={fr.calculatorContainer}>
-      <div className={fr.calOptions}>
-        <h1 className={fr.calheading}>CALCULATE FEES</h1>
-        <p>Below selection will help you get an idea of the proficiency and duration and if you plan to train for a particular purpose</p>
-        
-        <div className={fr.optionGroup}>
-          <label>Proficiency</label>
-          <div className={fr.checkpoints}>
-            {proficiencyLevels.map((level) => (
-              <div key={level} className={fr.checkpoint}>
-                {level}
+        <div className={fr.calculatorContainer}>
+          <div className={fr.calOptions}>
+            <h3 className={fr.calheading}>CALCULATE FEES</h3>
+            <p>
+              Below selection will help you get an idea of the proficiency and
+              duration and if you plan to train for a particular purpose
+            </p>
+
+            <div className={fr.optionGroup}>
+              <label>Proficiency</label>
+              <div className={fr.checkpoints}>
+                {proficiencyLevels.map((level, index) => (
+                  <div key={index} className={fr.checkpoint}>
+                    {level}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <input
-            type="range"
-            min="0"
-            max={proficiencyLevels.length - 1}
-            value={proficiencyLevels.indexOf(proficiency)}
-            onChange={(e) => handleProficiencyChange(e.target.value)}
-          />
-        </div>
+              <input
+                type="range"
+                min="0"
+                max={proficiencyLevels.length - 1}
+                value={proficiencyLevels.indexOf(proficiency)}
+                onChange={(e) => handleProficiencyChange(e.target.value)}
+              />
+            </div>
 
-        <div className={fr.optionGroup}>
-          <label>Duration in Months</label>
-          <div className={fr.checkpoints}>
-            {durationValues.map((months) => (
-              <div key={months} className={fr.checkpoint}>
-                {months}
+            <div className={fr.optionGroup}>
+              <label>Duration in Months</label>
+              <div className={fr.checkpoints}>
+                {durationValues.map((months, index) => (
+                  <div key={index} className={fr.checkpoint}>
+                    {months}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <input
-            type="range"
-            min="0"
-            max={durationValues.length - 1}
-            value={durationValues.indexOf(duration)}
-            onChange={(e) => handleDurationChange(e.target.value)}
-          />
-        </div>
+              <input
+                type="range"
+                min="0"
+                max={durationValues.length - 1}
+                value={durationValues.indexOf(duration)}
+                onChange={(e) => handleDurationChange(e.target.value)}
+              />
+            </div>
 
-        <div className={fr.optionGroup}>
-          <label>Method of Training</label>
-          <div className={fr.checkpoints}>
-            {trainingMethods.map((method) => (
-              <div key={method} className={fr.checkpoint}>
-                {method}
+            <div className={fr.optionGroup}>
+              <label>Method of Training</label>
+              <div className={fr.checkpoints}>
+                {trainingMethods.map((method, index) => (
+                  <div key={index} className={fr.checkpoint}>
+                    {method}
+                  </div>
+                ))}
               </div>
-            ))}
+              <input
+                type="range"
+                min="0"
+                max={trainingMethods.length - 1}
+                value={trainingMethods.indexOf(method)}
+                onChange={(e) => handleMethodChange(e.target.value)}
+              />
+            </div>
           </div>
-          <input
-            type="range"
-            min="0"
-            max={trainingMethods.length - 1}
-            value={trainingMethods.indexOf(method)}
-            onChange={(e) => handleMethodChange(e.target.value)}
-          />
+
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form>
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email-ID" required />
+              <input type="text" placeholder="Contact No." required />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
-
-        <button onClick={calculateFee}>Calculate Fee</button>
-
-        <div className={fr.result}>
-          Your fees is {fee}/-
-        </div>
-      </div>
-
-      <div className={fr.calForm}>
-        <form>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email-ID" required />
-          <input type="text" placeholder="Contact No." required />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
-    </div>
       </div>
     </>
   );

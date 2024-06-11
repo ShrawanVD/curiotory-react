@@ -886,7 +886,7 @@ color: #ffffff; /* White text */
 }
 
 .nameLogo {
-  background-color: #e63946;
+  background-color: #0b2743;
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -902,7 +902,9 @@ color: #ffffff; /* White text */
 .reviewName {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #e63946;
+  color: #0b2743;
+  /* color: #e63946; */
+
 }
 
 .stars {
@@ -916,7 +918,7 @@ color: #ffffff; /* White text */
 
 .reviewQuote {
   font-size: 5rem;
-  color: #e63946;
+  color: #0b2743;
   margin-bottom: -4rem;
 }
 

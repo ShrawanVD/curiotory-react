@@ -6,6 +6,7 @@ import Accordian2 from "../../../components/Accordian2";
 import Footer2 from "../../../components/Footer/Footer2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 
 const GermanCourse = () => {
   // reviews
@@ -868,36 +869,7 @@ const GermanCourse = () => {
         </div>
 
         {/* review section */}
-        <div>
-          <div className={buy.reviewsContainer}>
-            <h1 className={buy.reviewsHeading}>
-              Review of Our Previous Courses
-            </h1>
-            <div className={buy.reviewsGrid}>
-              {reviews.map((review) => (
-                <div key={review.id} className={buy.reviewCard}>
-                  <p className={buy.reviewQuote}>&ldquo;</p>
-                  <p className={buy.reviewText}>{review.text}</p>
-                  <div className={buy.reviewHeader}>
-                    <div className={buy.nameLogo}>{review.name.charAt(0)}</div>
-                    <div>
-                      <div className={buy.reviewName}>{review.name}</div>
-                      <div className={buy.stars}>
-                        {Array(review.rating)
-                          .fill()
-                          .map((_, i) => (
-                            <span key={i} className={buy.star}>
-                              &#9733;
-                            </span>
-                          ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+       <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
         <div className={buy.faqHeadingDivCss}>
