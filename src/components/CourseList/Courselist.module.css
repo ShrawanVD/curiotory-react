@@ -1,12 +1,11 @@
 .courseListContainer {
   padding: 5rem 1rem 3rem;
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 .courseListContainer h2 {
   color: #002e5b;
-  font-weight: bold;
   margin-bottom: 3.5rem;
+  font-family: Raleway, Arial, sans-serif;
 }
 .courseCardContainer {
   display: flex;
@@ -16,6 +15,9 @@
 .courseLangCard {
   cursor: pointer;
 }
+.courseLangCard h4{
+  font-family: Raleway, Arial, sans-serif;
+}
 .courseLangCard img {
   margin-bottom: 2rem;
 }
@@ -24,7 +26,7 @@
   .courseListContainer {
     padding: 5rem 1rem 1rem;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: Raleway, Arial, sans-serif;
   }
   .courseCardContainer {
     display: grid;
@@ -37,17 +39,15 @@
   .courseListContainer {
     padding: 2rem 1rem 3rem;
   }
-    .courseCardContainer {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .courseLangCard h4{
-        font-size: 16px;
-        font-weight: bold;
-    }
+  .courseCardContainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .courseLangCard h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
 }
 
-
 /*  */
-

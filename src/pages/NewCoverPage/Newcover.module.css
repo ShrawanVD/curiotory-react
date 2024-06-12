@@ -1,4 +1,4 @@
-.mascotDiv{
+.mascotDiv {
   height: 100%;
   text-align: center;
   padding-top: 12rem;
@@ -85,8 +85,9 @@
 }
 
 /* lottie player starts here */
-.lottieSection {
-  margin: 5rem 0rem 3rem;
+.lottie{
+  margin: 2rem 0rem 3rem;
+  padding: 2rem 0rem 0rem;
 }
 .iframeLottie {
   text-align: center;
@@ -96,15 +97,16 @@
 
 @media screen and (max-width: 1330px) {
   .iframeLottie {
-    width: 1200px;
+    width: auto;
+    height: auto;
   }
 }
-@media screen and (max-width: 1200px) {
-  .iframeLottie {
+@media screen and (max-width: 1250px) {
+  /* .iframeLottie {
     width: 1000px;
-  }
+  } */
 }
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .iframeLottie {
     width: 700px;
   }
@@ -123,18 +125,22 @@
     width: 400px;
     height: 300px;
   }
-}
+} */
 @media screen and (max-width: 400px) {
-  .iframeLottie {
+  /* .iframeLottie {
     width: 380px;
     height: 300px;
-  }
+  } */
 }
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
   .iframeLottie {
     width: 350px;
     height: 300px;
   }
+} */
+.downloadButton{
+  margin-top: -3rem;
+ text-align: center;
 }
 
 /* lottie player ends here */
@@ -282,13 +288,13 @@
   justify-content: center;
 }
 
-.mascotImg{ 
+.mascotImg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.mascotImg img{
+.mascotImg img {
   height: 420px;
   width: auto;
   margin-right: 4rem;
@@ -324,7 +330,7 @@
   text-align: left;
   margin-bottom: 2rem;
 }
-.euroLangList a{
+.euroLangList a {
   padding: 5px 5px 0px;
   text-align: center;
   border-radius: 10px;
@@ -332,7 +338,7 @@
   background-color: #226bb4;
   cursor: pointer;
 }
-.euroLangList a:hover{
+.euroLangList a:hover {
   background-color: #d94f34;
 }
 .euroLangList h4 {
@@ -341,16 +347,17 @@
   font-size: 20px;
 }
 
-.asianLangList a{
+.asianLangList a {
   padding: 4px 5px 0px;
   text-align: center;
   justify-content: center;
   border-radius: 10px;
   margin-right: 10px;
+  /* background-color: #ffc552; */
   background-color: #f2ac25;
   cursor: pointer;
 }
-.asianLangList a:hover{
+.asianLangList a:hover {
   background-color: #d94f34;
 }
 .asianLangList h4 {
@@ -359,7 +366,7 @@
   font-size: 20px;
 }
 @media (max-width: 1300px) {
-  .mascotImg img{
+  .mascotImg img {
     height: 370px;
     width: auto;
     margin-right: 4rem;
@@ -388,7 +395,6 @@
   .mascotImg img {
     height: 300px;
     width: auto;
-
   }
   .foreignTitle {
     font-size: 20px;
@@ -400,13 +406,13 @@
     padding: 1rem 1rem;
     font-size: 16px;
   }
-  .euroLang h3{
+  .euroLang h3 {
     font-size: 23px;
   }
-  .euroLangList h4{
+  .euroLangList h4 {
     font-size: 19px;
   }
-  .asianLangList h4{
+  .asianLangList h4 {
     font-size: 19px;
   }
 }
@@ -432,14 +438,14 @@
   .euroLang {
     margin: 1rem 1rem 1rem;
   }
-  .euroLang h3{
+  .euroLang h3 {
     font-size: 21px;
     margin-bottom: 1rem;
   }
-  .euroLangList h4{
+  .euroLangList h4 {
     font-size: 16px;
   }
-  .asianLangList h4{
+  .asianLangList h4 {
     font-size: 16px;
   }
 }

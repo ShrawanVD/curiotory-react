@@ -188,9 +188,12 @@
   }
 
   .benefitLeft {
-    gap: -10px;
-    padding-right: 14rem;
+    padding-right: 15rem;
     flex-direction: row;
+  }
+  .benefitLeft img{
+    width: auto;
+    height: 110px;
   }
 
   .learnFrenchReason {
@@ -212,13 +215,15 @@
     flex: 1 1 calc(50% - 20px);
   }
 }
+
+/* calculator css starts here */
 .calculatorContainer {
   display: flex;
   justify-content: space-between;
   margin: 5rem 10rem;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   color: #00046c;
-  border: 1px solid #EFAA2C;
+  border: 1px solid #efaa2c;
   border-radius: 10px;
 }
 
@@ -235,7 +240,8 @@
   text-decoration: 1.5px underline;
 }
 
-.calOptions h3, .calOptions p {
+.calOptions h3,
+.calOptions p {
   font-family: Raleway, Arial, sans-serif;
 }
 
@@ -247,7 +253,7 @@
 .optionGroup label {
   display: block;
   margin-bottom: 1.6rem;
-  color: #E84A31;
+  color: #e84a31;
   font-family: Raleway, Arial, sans-serif;
 }
 
@@ -255,9 +261,9 @@
   -webkit-appearance: none;
   width: 100%;
   height: 20px;
-  background: #454ad7;
+  background: #5c61fb;
   outline: none;
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.3s;
 }
 
@@ -266,14 +272,14 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  background: #E84A31;
+  background: #fe5e46;
   cursor: pointer;
 }
 
 .optionGroup input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: #E84A31;
+  background: #e84a31;
   cursor: pointer;
 }
 
@@ -318,7 +324,7 @@
 }
 
 .calButton:hover {
-  background-color: #E84A31;
+  background-color: #e84a31;
 }
 
 .result {
@@ -338,7 +344,7 @@
   display: flex;
   flex: 35%;
   flex-direction: column;
-  background-color: #EFAA2C;
+  background-color: #efaa2c;
   padding: 2rem 0.7rem;
 }
 
@@ -372,19 +378,67 @@
 }
 
 .calForm button:hover {
-  background-color: #E84A31;
+  background-color: #e84a31;
 }
 
-/* Add media queries for responsiveness */
+@media (max-width: 1350px){
+  .checkpoints {
+    margin-left: -3rem;
+  }
+}
+@media (max-width: 1250px){
+  .checkpoints {
+    margin-left: -2.6rem;
+  }
+  .checkpoint {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1100px){
+  .calculatorContainer{
+    margin: 5rem 5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .calculatorContainer {
     flex-direction: column;
     align-items: center;
+    margin: 5rem 1.5rem;
   }
 
   .calOptions,
   .calForm {
     width: 100%;
-    max-width: 400px;
+  }
+}
+
+@media (max-width: 560px){
+  .checkpoints {
+    margin-left: -2.1rem;
+  }
+}
+
+@media (max-width: 480px){
+  .checkpoints {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 450px){
+.optionGroup input[type="range"]::-webkit-slider-thumb {
+  width: 10px;
+}
+.optionGroup input[type="range"]::-moz-range-thumb {
+  width: 10px;
+}
+  .checkpoints {
+    margin-left: -1.6rem;
+  }
+}
+
+@media (max-width: 411px){
+  .checkpoints {
+    margin-left: -1.2rem;
   }
 }

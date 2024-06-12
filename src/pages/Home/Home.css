@@ -208,10 +208,11 @@
   text-align: center;
 }
 .sliding-section-heading h1 {
-  color: #2f327d;
-  font-family: "Nunito Sans", Sans-serif;
+  /* color: #2f327d; */
+  /* font-family: "Nunito Sans", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-size: 45px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 54px;
 }
 .sliding-container {
@@ -232,13 +233,13 @@
 }
 .sliding-section {
   background-color: white;
-  margin: 5rem 0; /* Adjusted margin for responsiveness */
-  padding: 3rem 0 2rem; /* Adjusted padding for responsiveness */
+  margin: 4rem 0 0rem; 
+  padding: 3rem 0 1rem; 
 }
 
 .sliding-section-heading h1 {
-  font-size: 36px; /* Adjusted font size for responsiveness */
-  line-height: 45px; /* Adjusted line height for responsiveness */
+  font-size: 34px; 
+  line-height: 45px; 
   margin-bottom: 2rem;
 }
 

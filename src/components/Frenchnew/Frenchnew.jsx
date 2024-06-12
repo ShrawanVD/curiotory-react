@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import fr from "./Frenchnew.module.css";
 import Newnavbar from "../NewNavbar/Newnavbar";
+import Carousel from "react-bootstrap/Carousel";
 
 function Frenchnew() {
   const [proficiency, setProficiency] = useState("A1");
@@ -33,7 +34,7 @@ function Frenchnew() {
         Student: 21000,
         Exam: 25000,
         Job: 25000,
-       Travel: 21000,
+        Travel: 21000,
         Hobby: 21000,
       },
       10: { Student: 21000 },
@@ -87,7 +88,14 @@ function Frenchnew() {
 
   const proficiencyLevels = ["A1", "A2", "B1", "B2", "C1", "C2"];
   const durationValues = [3, 6, 8, 10, 12, 14, 18];
-  const trainingMethods = ["Corporate", "Student", "Exam", "Job", "Travel", "Hobby"];
+  const trainingMethods = [
+    "Corporate",
+    "Student",
+    "Exam",
+    "Job",
+    "Travel",
+    "Hobby",
+  ];
 
   const handleProficiencyChange = (value) => {
     setProficiency(proficiencyLevels[value]);
@@ -211,34 +219,97 @@ function Frenchnew() {
       {/* benefits of learning */}
       <div className={fr.benefitOfLearningSection}>
         <h2>Benefits of learning French language</h2>
-        <div className={fr.benefitsLearningFrench}>
-          <div className={fr.benefitLeft}>
-            <img
-              src="/Languages/benefits11.png"
-              alt="Cultural"
-              className={fr.benefitLeftIcon}
-            />
-            <img
-              src="/Languages/benefits12.png"
-              alt="Global"
-              className={fr.benefitLeftIcon}
-            />
-          </div>
-          <div className={fr.benefitRight}>
-            <p>
-              <strong style={{ color: "#EF4B2B" }}>Cultural Riches:</strong>{" "}
-              Learning French opens doors to France&apos;s rich culture,
-              literature, and arts.
-            </p>
-            <p>
-              <strong style={{ color: "#F4AD28" }}>
-                Global Opportunities:
-              </strong>{" "}
-              French is spoken in many countries, enhancing career prospects
-              globally.
-            </p>
-          </div>
-        </div>
+
+        <Carousel
+          interval={4000}
+          controls={true}
+          indicators={false}
+          prevLabel={false}
+          nextLabel={false}
+        >
+          <Carousel.Item>
+            <div className={fr.benefitsLearningFrench}>
+              <div className={fr.benefitLeft}>
+                <img
+                  src="/Languages/langBenefit1.png"
+                  alt="Cultural"
+                  className={fr.benefitLeftIcon}
+                />
+              </div>
+              <div className={fr.benefitRight}>
+                <p>
+                  <strong style={{ color: "#EF4B2B" }}>Cultural Riches:</strong>{" "}
+                  Learning French opens doors to France&apos;s rich culture,
+                  literature, and arts.
+                </p>
+                <p>
+                  <strong style={{ color: "#F4AD28" }}>
+                    Global Opportunities:
+                  </strong>{" "}
+                  French is spoken in many countries, enhancing career prospects
+                  globally.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={fr.benefitsLearningFrench}>
+              <div className={fr.benefitLeft}>
+                <img
+                  src="/Languages/langBenefit2.png"
+                  alt="Cultural"
+                  className={fr.benefitLeftIcon}
+                />
+                {/* <img
+                  src="/Languages/benefits12.png"
+                  alt="Global"
+                  className={fr.benefitLeftIcon}
+                /> */}
+              </div>
+              <div className={fr.benefitRight}>
+                <p>
+                  <strong style={{ color: "#EF4B2B" }}>Travel Ease:</strong>{" "}
+                  Navigate through French-speaking regions with confidence,
+                  making travel more enjoyable.
+                </p>
+                <p>
+                  <strong style={{ color: "#F4AD28" }}>
+                    Intellectual Stimulation:
+                  </strong>{" "}
+                  Mastering a new language sharpens cognitive skills and boosts
+                  brain health.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className={fr.benefitsLearningFrench}>
+              <div className={fr.benefitLeft}>
+                <img
+                  src="/Languages/langBenefit3.png"
+                  alt="Cultural"
+                  className={fr.benefitLeftIcon}
+                />
+              </div>
+              <div className={fr.benefitRight}>
+                <p>
+                  <strong style={{ color: "#EF4B2B" }}>
+                    Language of Diplomacy:
+                  </strong>{" "}
+                  French, pivotal in global diplomacy, offers a unique edge in
+                  diverse professions.
+                </p>
+                <p>
+                  <strong style={{ color: "#F4AD28" }}>
+                    Historical Legacy:
+                  </strong>{" "}
+                  French, rooted in Latin, unveils centuries of European
+                  cultural evolution.
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
       </div>
 
       {/* calculator  */}
