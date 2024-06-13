@@ -19,6 +19,7 @@ function Curriculum() {
       </div>
 
       <Carousel
+      className={styles.carousel}
         fade
         interval={6000}
         controls={true}
