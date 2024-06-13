@@ -36,6 +36,7 @@ import SpanishCourse from './pages/CourseDetailsPage/SpanishCourse/SpanishCourse
 import GermanCourse from './pages/CourseDetailsPage/GermanCourse/GermanCourse';
 import Newcover from './pages/NewCoverPage/Newcover';
 import Reviewcourse from './components/Reviewcourse/Reviewcourse';
+import Careers from './components/Careers/Careers';
 
 
 export default (
@@ -54,7 +55,7 @@ export default (
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
         <Route path="/curr" element={<Curriculum />} />
-        
+        <Route path="/careers" element={<Careers />} />
         
         {/* Languages pages routing */}
         <Route path="/arabic" element={<Arabic />} />

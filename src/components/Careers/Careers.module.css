@@ -1,0 +1,382 @@
+/* .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    color: #2f327d;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+    color: #555;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .step:nth-child(even) .stepContent {
+    order: 2;
+  }
+  
+  .stepContent {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .stepImage {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .button2 {
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    color: white;
+    padding: 0.7em 1.7em;
+    cursor: pointer;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    background: #226bb4;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  }
+  
+  .button2:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  }
+  
+  .button2:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #009087;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button2:hover {
+    color: #ffffff;
+    border: 1px solid #d94f34;
+  }
+  
+  .button2:hover:before {
+    top: -35%;
+    background-color: #d94f34;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button2:hover:after {
+    top: -45%;
+    background-color: #d94f34;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: 'Raleway', Arial, sans-serif;
+  }
+   */
+
+/* ------------------------------------------------- */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/images/hero-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #00046c;
+  margin: 5rem 0 4rem;
+}
+
+.heroContent {
+  /* background: rgba(0, 0, 0, 0.5); */
+  border-radius: 1rem;
+}
+
+.heroContent h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.heroTitle {
+  /* font-size: 5rem; */
+  margin-bottom: 1rem;
+  font-family: "Raleway", Arial, sans-serif;
+  /* color: black; */
+}
+
+
+
+/* steps */
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding: 2rem 2rem 4rem;
+}
+
+.step1, .step2, .step3, .step4 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  background: #f9b700;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 25vw;
+}
+.step4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stepIcon {
+  margin-bottom: 1rem;
+}
+
+.stepIcon img {
+  max-width: 20rem;
+  height: 35rem;
+}
+
+.step1 .stepIcon img{
+    width: 20rem;
+    height: 31rem;
+}
+
+.stepContent {
+  max-width: 600px;
+}
+.stepContent p{
+    text-align: center;
+}
+
+.stepContent4{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -3rem;
+    /* width: 40%; */
+}
+.stepContent4 p{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #00046c;
+  font-weight: 600;
+  /* text-decoration: underline; */
+  font-family: "Raleway", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.firstRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.first,.second,.third{
+    flex: 1;
+}
+
+.step4{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* button */
+.stepContent4 .button2{
+    margin-top: 8rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+
+
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  color: white;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background: black;
+  margin-bottom: 1rem;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #d94f34;
+  background:#10148fdc;
+}
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 1200px) {
+
+    .step1, .step2, .step3 {
+        width: 28vw;
+    }
+    .step4{
+        width: 70vw;
+        padding-top: 4rem;
+    }
+    .stepIcon img {
+        width: 15rem;
+        height: 24rem;
+      }
+      .step1 .stepIcon img{
+        width: 13rem;
+        height: 20rem;
+      }
+}
+
+@media (max-width: 1000px){
+
+
+    /* font resp */
+
+    .hero {
+        margin: 5rem 0 2rem;
+      }
+
+    .heroContent h2{
+        font-size: 1.5rem;
+    }
+
+    .h3{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    .button2, .stepContent4 .button2{
+        font-size: 1.1rem;
+    }
+
+
+
+    /* ---------------- */
+    
+
+    .firstRow{
+        flex-direction: column;
+    }
+    .cover{
+        margin-top: 2rem;
+    }
+    .resp1{
+        margin-top: 0;
+    }
+    
+    .step1, .step2, .step3{
+        width: 90vw;
+    }
+    .step4{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .resp4{
+        margin-top: -2rem;
+    }
+    .stepContent4 .button2{
+        margin-top: 1rem;
+    }
+    .stepIcon img{
+        margin-top: 1rem;
+    }
+}

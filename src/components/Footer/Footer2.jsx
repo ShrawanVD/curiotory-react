@@ -77,9 +77,19 @@ function Footer() {
                       style={{
                         color: "black",
                       }}
-                      href="becometutor"
+                      href="/becometutor"
                     >
                       Become a Tutor
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      style={{
+                        color: "black",
+                      }}
+                      href="/careers"
+                    >
+                      Career with Us
                     </a>
                   </li>
                 </ul>

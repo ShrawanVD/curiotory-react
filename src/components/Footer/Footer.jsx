@@ -30,7 +30,10 @@ function Footer() {
                     <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
                   <li>
-                    <a href="becometutor">Become a Tutor</a>
+                    <a href="/becometutor">Become a Tutor</a>
+                  </li>
+                  <li>
+                    <a href="/careers">Career with Us</a>
                   </li>
                 </ul>
               </div>
