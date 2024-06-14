@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import fr from "./Frenchnew.module.css";
 import Newnavbar from "../NewNavbar/Newnavbar";
-import Curriculum from "../Curriculum/Curriculum";
 import Reviewcourse from "../Reviewcourse/Reviewcourse";
 import Carousel from "react-bootstrap/Carousel";
 import Footer2 from "../Footer/Footer2";
+import FrenchCurr from "../Curriculum/FrenchCurr";
 
 function Frenchnew() {
   const [proficiency, setProficiency] = useState("A1");
@@ -121,6 +121,7 @@ function Frenchnew() {
       <div className={fr.container}>
         {/* new navbar */}
         <Newnavbar />
+
         {/* language cover page */}
         <main className={fr.main}>
           <section className={fr.hero}>
@@ -396,7 +397,7 @@ function Frenchnew() {
       </div>
 
       {/* curriculum */}
-      <Curriculum />
+      <FrenchCurr />
 
       {/* reviews section */}
       <Reviewcourse />

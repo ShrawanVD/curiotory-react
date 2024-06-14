@@ -24,7 +24,6 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Frenchnew from './components/Frenchnew/Frenchnew';
-import Curriculum from './components/Curriculum/Curriculum';
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -38,6 +37,8 @@ import Newcover from './pages/NewCoverPage/Newcover';
 import Reviewcourse from './components/Reviewcourse/Reviewcourse';
 import Careers from './components/Careers/Careers';
 
+// curriculum
+import FrenchCurr from './components/Curriculum/FrenchCurr';
 
 export default (
     <Routes>
@@ -54,7 +55,7 @@ export default (
         <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
-        <Route path="/curr" element={<Curriculum />} />
+        {/* <Route path="/curr" element={<Curriculum />} /> */}
         <Route path="/careers" element={<Careers />} />
         
         {/* Languages pages routing */}
@@ -80,10 +81,10 @@ export default (
         <Route path="/course/spanish" element={<SpanishCourse />} />
         <Route path="/course/german" element={<GermanCourse />} />
         <Route path="/review" element={<Reviewcourse />} />
-        
 
-        {/* demo routing */}
-        {/* <Route path="/newcover" element={< Newcover />} /> */}
+        {/* curriculum */}
+        <Route path="/frenchCurr" element={<FrenchCurr />} />
+
 
 
     </Routes>
