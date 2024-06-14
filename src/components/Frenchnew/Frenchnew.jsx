@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import fr from "./Frenchnew.module.css";
 import Newnavbar from "../NewNavbar/Newnavbar";
-import Reviewcourse from "../Reviewcourse/Reviewcourse";
+import Rev from "../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import Footer2 from "../Footer/Footer2";
 import FrenchCurr from "../Curriculum/FrenchCurr";
@@ -400,20 +400,29 @@ function Frenchnew() {
       <FrenchCurr />
 
       {/* reviews section */}
-      <Reviewcourse />
+      <Rev />
 
       {/* company logo section */}
       <div className={fr.company}>
-        <h2>COMPANIES THAT HIRE FRENCH EXPERTS</h2>
-        <div className={fr.logos}>
-                  <img src="./Company/decat.png" alt="Decathlon" />
-                  <img src="./Company/capg.png" alt="Capgemini" />
-                  <img src="./Company/loreal.png" alt="Loreal" />
-                  <img src="./Company/air.png" alt="Air Liquide" />
-                  <img src="./Company/dassault.png" alt="Dassault Systems" />
-                  <img src="./Company/sch.png" alt="Schneider Electric" />
-        </div>
+    <h2>Companies that Hire French Experts</h2>
+    <div className={fr.scrollContainer}>
+      <div className={`${fr.logos} ${fr.duplicate}`}>
+        <img src="./Company/decat.png" alt="Decathlon" />
+        <img src="./Company/capg.png" alt="Capgemini" />
+        <img src="./Company/loreal.png" alt="Loreal" />
+        <img src="./Company/air.png" alt="Air Liquide" />
+        <img src="./Company/dassault.png" alt="Dassault Systems" />
+        <img src="./Company/sch.png" alt="Schneider Electric" />
+        {/* Duplicate logos for seamless scrolling */}
+        <img src="./Company/decat.png" alt="Decathlon" />
+        <img src="./Company/capg.png" alt="Capgemini" />
+        <img src="./Company/loreal.png" alt="Loreal" />
+        <img src="./Company/air.png" alt="Air Liquide" />
+        <img src="./Company/dassault.png" alt="Dassault Systems" />
+        <img src="./Company/sch.png" alt="Schneider Electric" />
       </div>
+    </div>
+  </div>
 
       {/* footer */}
       <Footer2 />

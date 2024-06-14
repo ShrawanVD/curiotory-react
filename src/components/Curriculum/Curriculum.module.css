@@ -128,4 +128,13 @@
   .respbottomcard2{
     margin: 0.5rem 0;
   }
+  .head h3{
+    font-size: 1.1rem;
+  }
+  .head a button {
+    font-size: 0.9rem;
+    background: #f4ad28;
+    padding: 1px 1rem;
+    border-radius: 5px;
+  }
 }
