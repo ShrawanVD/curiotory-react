@@ -238,7 +238,7 @@
     text-align: justify;
 }
 
-h3 {
+.cover h3 {
   font-size: 1.8rem;
   color: #00046c;
   font-weight: 600;
@@ -247,7 +247,7 @@ h3 {
   margin-bottom: 1rem;
 }
 
-p {
+.stepcontent p {
   font-size: 1.5rem;
   text-align: justify;
   font-family: "Raleway", Arial, sans-serif;
@@ -338,10 +338,10 @@ p {
         font-size: 1.5rem;
     }
 
-    .h3{
+    .cover h3{
         font-size: 1.3rem;
     }
-    p{
+    .stepContent p{
         font-size: 1.1rem;
     }
     .button2, .stepContent4 .button2{
