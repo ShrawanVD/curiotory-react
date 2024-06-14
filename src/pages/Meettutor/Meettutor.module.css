@@ -9,7 +9,7 @@
 
 /* --------------------------------------------- */
 /* .containerFluid {
-  background-color: #ebfaff;
+  background-color: whitesmoke
 } */
 .containerFluid .leftSection {
   flex: 60%;
@@ -20,7 +20,7 @@
 }
 .containerFluid .leftSection h2 {
   color: rgb(37, 37, 113);
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 800;
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -30,7 +30,7 @@
   padding: 1rem 2rem 1rem;
 }
 .containerFluid .leftSection .formGroup label {
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 2rem;
   color: rgb(23, 100, 133);
@@ -39,7 +39,7 @@
   margin: 1rem 0rem;
   background-color: rgb(37, 37, 113);
   border: none;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-size: 1rem;
 }
 .containerFluid .leftSection button:hover {
@@ -75,6 +75,7 @@
 }
 
 .teacherData {
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -116,14 +117,15 @@
   line-height: 2.5rem;
 }
 .infoText h2 {
-  font-family: "Nunito Sans", Sans-serif;
+  /* font-family: "Nunito Sans", Sans-serif; */
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   color: rgb(150, 53, 53);
 }
 .infoText p {
   margin: 0;
   font-size: 18px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: Raleway, Arial, sans-serif;
 }
 
 .videoButton {
@@ -131,7 +133,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 5px;
+  gap: 10px;
   flex: 1;
 }
 
@@ -143,6 +145,7 @@
 
 .customButton button {
   border: 1px solid white;
+  font-family: Raleway, Arial, sans-serif;
   margin-right: 10px;
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
