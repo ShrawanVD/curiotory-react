@@ -210,6 +210,7 @@
 .stepIcon img {
   max-width: 20rem;
   height: 35rem;
+  border-radius: 25px;
 }
 
 .step1 .stepIcon img{
@@ -355,20 +356,22 @@
 
     .firstRow{
         flex-direction: column;
+        align-items: center;
     }
     .cover{
         margin-top: 2rem;
+        margin-left: -1.4rem;
     }
     .resp1{
         margin-top: 0;
     }
     
     .step1, .step2, .step3{
-        width: 90vw;
+        width:95vw;
     }
     .step4{
         flex-direction: column;
-        width: 90vw;
+        width: 95vw;
     }
     .resp4{
         margin-top: -2rem;

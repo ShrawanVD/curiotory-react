@@ -19,14 +19,18 @@ function Curriculum() {
       </div>
 
       <Carousel
+      dark
       className={styles.carousel}
-        fade
-        interval={6000}
+        // fade
+        // interval={6000}
         controls={true}
         indicators={false}
         prevLabel={false}
         nextLabel={false}
+        pause="hover"
 
+        prevIcon={<span aria-hidden="true" className={`carousel-control-prev-icon ${styles.customControlIcon}`} />}
+        nextIcon={<span aria-hidden="true" className={`carousel-control-next-icon ${styles.customControlIcon}`} />}
 
         // prevIcon={<span aria-hidden="true" className={`${styles.carousel-control-prev-icon} ${styles.changed}`} ></span>}
       >
@@ -104,11 +108,7 @@ function Curriculum() {
               </div>
 
               {/* card 2 */}
-              <div
-                className={styles.module}
-                style={{
-                  margin: "0 1rem",
-                }}
+              <div className={`${styles.module} ${styles.respbottomcard2}`}
               >
                 <h3>
                   <strong>Module 2:</strong>
@@ -217,11 +217,7 @@ function Curriculum() {
               </div>
 
               {/* card 2 */}
-              <div
-                className={styles.module}
-                style={{
-                  margin: "0 1rem",
-                }}
+              <div className={`${styles.module} ${styles.respbottomcard2}`}
               >
                 <h3>
                   <strong>Module 2:</strong>
@@ -330,11 +326,7 @@ function Curriculum() {
               </div>
 
               {/* card 2 */}
-              <div
-                className={styles.module}
-                style={{
-                  margin: "0 1rem",
-                }}
+              <div className={`${styles.module} ${styles.respbottomcard2}`}
               >
                 <h3>
                   <strong>Module 2:</strong>
@@ -369,7 +361,6 @@ function Curriculum() {
           </div>
         </Carousel.Item>
 
-        <a class="carousel-control-next" role="button" tabindex="0" href="#"><span aria-hidden="true" class="carousel-control-next-icon"></span></a>
 
 
                   
