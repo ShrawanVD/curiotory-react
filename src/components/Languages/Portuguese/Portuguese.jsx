@@ -4,7 +4,7 @@ import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
-import ArabicCurr from "../../Curriculum/FrenchCurr";
+import ArabicCurr from "../../Curriculum/PortugueseCurr";
 function Portuguese() {
   const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
