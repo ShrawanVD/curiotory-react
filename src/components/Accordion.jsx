@@ -20,7 +20,8 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 1px 6px rgba(0, 0, 0, 0.3)",
+          // rgb(223, 222, 222)
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -60,7 +61,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -102,7 +103,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -144,7 +145,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -182,7 +183,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -219,7 +220,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -255,7 +256,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -291,7 +292,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}
@@ -327,7 +328,7 @@ export default function ControlledAccordions() {
         slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
         sx={{
           fontFamily: "Poppins, Sans-serif",
-          boxShadow: "0px 2px 6px rgba(0, 0, 0, 0.3)",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
           marginBottom: "0 1rem 1rem",
           padding: "0 1rem",
         }}

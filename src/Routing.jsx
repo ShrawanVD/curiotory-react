@@ -21,6 +21,7 @@ import Mandarin from './components/Languages/Mandarin/Mandarin';
 import Portuguese from './components/Languages/Portuguese/Portuguese';
 import Russian from './components/Languages/Russian/Russian';
 import Spanish from './components/Languages/Spanish/Spanish';
+import Danish from './components/Languages/Danish/Danish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Frenchnew from './components/Frenchnew/Frenchnew';
@@ -71,6 +72,7 @@ export default (
         <Route path="/portuguese" element={<Portuguese />} />
         <Route path="/russian" element={<Russian />} />
         <Route path="/spanish" element={<Spanish />} />
+        <Route path="/danish" element={<Danish />} />
         <Route path="/french1" element={<Frenchnew />} />
 
         {/* courses routing */}

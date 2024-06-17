@@ -98,9 +98,12 @@ function Newcover() {
                   <img src="/mascot/coverani.gif" />
                 </LazyLoad>
               </div>
-              <h1>Expand your world with personalized language learning</h1>
-              <h2>Master any language, anytime, anywhere</h2>
-              <h4>Start Your Language Journey Today!</h4>
+              <h1>An Online Language Learning Platform</h1>
+              {/* <h2>Master any language, anytime, anywhere</h2> 
+              <h4>Start Your Language Journey Today!</h4>*/}
+              <h2>Curious about learning new languages? Transform it into a
+              life-changing opportunity.</h2>
+              
               <div className={newcover.coverpageButton}>
                 <a
                   target="_blank"
@@ -513,7 +516,7 @@ function Newcover() {
             </div>
             <div className="stand-out-right-section">
               <div className="stand-out-container">
-                <div className="stand-out-card">
+                <div className="stand-out-card borderone">
                   <div className="stand-out-left-part">
                     <h1>Learning from the best</h1>
                   </div>
@@ -571,7 +574,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
-                <div className="stand-out-card">
+                <div className="stand-out-card borderlast">
                   <div className="stand-out-left-part">
                     <h1>Meaningful preparation</h1>
                   </div>

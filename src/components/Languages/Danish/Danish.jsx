@@ -6,67 +6,67 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/FrenchCurr";
 
-function Mandarin() {
+function Danish() {
   const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
   const [fee, setFee] = useState(0);
 
   const feeMap = {
-    HSK1: {
+    A1: {
       Corporate: 36000,
-      Student: 25000,
-      Exam: 27000,
-      Job: 28000,
-      Travel: 27000,
-      Hobby: 28000,
+      Student: 21000,
+      Exam: 25000,
+      Job: 25000,
+      Travel: 21000,
+      Hobby: 21000,
   },
-  HSK2: {
+  A2: {
+      Corporate: 36000,
+      Student: 21000,
+      Exam: 25000,
+      Job: 25000,
+      Travel: 21000,
+      Hobby: 21000,
+
+  },
+  B1: {
+
       Corporate: 38000,
-      Student: 25000,
-      Exam: 27000,
+      Student: 24000,
+      Exam: 28000,
       Job: 28000,
+      Travel: 24000,
+      Hobby: 24000,
+
+  },
+  B2: {
+
+      Corporate: 38000,
+      student: 24000,
+      Exam: 28000,
+      Job: 28000,
+      Travel: 24000,
+      Hobby: 24000,
+
+  },
+  C1: {
+
+      Corporate: 40000,
+      Student: 27000,
+      Exam: 31000,
+      Job: 31000,
       Travel: 27000,
       Hobby: 27000,
 
   },
-  HSK3: {
+  C2: {
 
       Corporate: 40000,
-      Student: 28000,
-      Exam: 30000,
-      Job: 32000,
-      Travel: 30000,
-      Hobby: 33000,
-
-  },
-  HSK4: {
-
-      Corporate: 42000,
-      student: 30000,
-      Exam: 33000,
-      Job: 33000,
-      Travel: 33000,
-      Hobby: 36000,
-
-  },
-  HSK5: {
-
-      Corporate: 45000,
-      Student: 32000,
-      Exam: 36000,
-      Job: 38000,
-      Travel: 36000,
-      Hobby: 38000,
-
-  },
-  HSK6: {
-
-      Corporate: 45000,
-      Student: 32000,
-      Exam: 36000,
-      Job: 38000,
-      Travel: 36000,
-      Hobby: 38000,
+      Student: 27000,
+      Exam: 31000,
+      Job: 31000,
+      Travel: 27000,
+      Hobby: 27000,
 
   },
   };
@@ -76,7 +76,7 @@ function Mandarin() {
     setFee(baseFee);
   };
 
-  const proficiencyLevels = ["HSK1", "HSK2", "HSK3", "HSK4", "HSK5", "HSK6"];
+  const proficiencyLevels = ["A1", "A2", "B1", "B2", "C1", "C2"];
   const trainingMethods = [
     "Corporate",
     "Student",
@@ -90,6 +90,7 @@ function Mandarin() {
     setProficiency(proficiencyLevels[value]);
   };
 
+
   const handleMethodChange = (value) => {
     setMethod(trainingMethods[value]);
   };
@@ -97,6 +98,7 @@ function Mandarin() {
   useEffect(() => {
     calculateFee();
   }, [proficiency, method]);
+
   return (
     <>
       <div className={fr.container}>
@@ -108,21 +110,18 @@ function Mandarin() {
           <section className={fr.hero}>
             <h1>
               Indulge in the epitome of <br />
-              <span className={fr.highlight}>Mandarin Culture</span>
+              <span className={fr.highlight}>Danish Culture</span>
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
               <span>⭐ 4.5</span>
               <span>• 11,302 students</span>
-              <span>
-                • <a href="#">Average duration: 70Hrs</a>
-              </span>
+              <span>• Average duration: 70Hrs</span>
             </div>
             <p>
-              Learning Mandarin connects you with one of the world's largest
-              economies and a rich cultural heritage. Fluency in Mandarin
-              enhances career prospects and personal experiences across China
-              and beyond
+              Learning Danish offers a gateway to Scandinavia's high-quality
+              lifestyle and robust job market. Fluency in Danish enhances career
+              prospects and enriches personal experiences in Denmark and beyond.
             </p>
           </section>
         </main>
@@ -131,7 +130,7 @@ function Mandarin() {
       {/* Why learn French section */}
       <div className={fr.learnFrenchContainer}>
         <div className={fr.learnFrenchHeading}>
-          <h2>Why Learn Mandarin</h2>
+          <h2>Why Learn Danish</h2>
         </div>
         <div className={fr.whyLearnFrench}>
           <div className={fr.whyLearnFrenchLeft}>
@@ -142,12 +141,13 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence:</span>
-                Mandarin Chinese is the most spoken language in the world with
-                over a billion native speakers. Learning Mandarin opens doors to
-                communication with people not only in China but also in Taiwan,
-                Singapore, Malaysia, and among Chinese diaspora communities
-                worldwide.
+                <span style={{ fontWeight: "bold" }}>
+                  Gateway to Scandinavian Culture:
+                </span>
+                Learning Danish provides insight into Scandinavian culture,
+                traditions, and history, fostering a deeper appreciation for
+                Denmark's contributions to literature, design, and social
+                welfare.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -157,12 +157,13 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism:</span>
-                China is a popular tourist destination with its ancient
-                landmarks like the Great Wall and Forbidden City, vibrant cities
-                such as Beijing and Shanghai, and picturesque landscapes.
-                Knowing Mandarin enriches travel experiences, enabling deeper
-                interactions with locals and cultural immersion.
+                <span style={{ fontWeight: "bold" }}>
+                  Travel and Cultural Immersion:
+                </span>
+                Denmark attracts tourists with its picturesque landscapes,
+                historical sites like Viking ruins, and modern architecture.
+                Knowing Danish enriches travel experiences, allowing for deeper
+                interactions with locals and understanding of Danish culture.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -172,13 +173,11 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
-                  Business Opportunities:
-                </span>
-                China is the world's second-largest economy and a major player
-                in global trade and manufacturing. Proficiency in Mandarin
-                enhances career prospects in diverse industries such as finance,
-                technology, tourism, and international business.
+                <span style={{ fontWeight: "bold" }}>Quality of Life:</span>
+                Denmark consistently ranks high in quality of life indexes due
+                to its healthcare, education system, and work-life balance.
+                Learning Danish enables integration into Danish society,
+                fostering meaningful connections and a comfortable lifestyle.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -188,11 +187,13 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Richness:</span>
-                Mandarin Chinese is intertwined with a rich cultural heritage
-                spanning over 5,000 years. Learning Mandarin allows for a deeper
-                understanding of Chinese history, philosophy, literature
-                (including classical works), art, and traditions.
+                <span style={{ fontWeight: "bold" }}>
+                  Educational Excellence:
+                </span>
+                Danish universities offer a range of programs taught in English
+                and Danish, known for their research excellence and innovation.
+                Learning Danish can facilitate academic exchanges and access to
+                scholarships in Denmark.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -202,12 +203,14 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Personal Growth:</span>
-                Learning Mandarin challenges the mind and expands cognitive
-                abilities, including memory retention, problem-solving skills,
-                and cultural empathy. It promotes personal growth and enhances
-                global perspective through exposure to a different linguistic
-                and cultural framework.
+                <span style={{ fontWeight: "bold" }}>
+                  Business and Career Opportunities:
+                </span>
+                Denmark boasts a strong economy with global companies in
+                industries such as renewable energy, pharmaceuticals, and
+                shipping. Proficiency in Danish enhances career prospects and
+                opens doors to job opportunities in Denmark and other Nordic
+                countries.
               </p>
             </div>
           </div>
@@ -223,7 +226,7 @@ function Mandarin() {
 
       {/* benefits of learning */}
       <div className={fr.benefitOfLearningSection}>
-        <h2>Benefits of learning mandarin language</h2>
+        <h2>Benefits of learning danish language</h2>
 
         <Carousel
           interval={4000}
@@ -246,17 +249,17 @@ function Mandarin() {
                   <strong style={{ color: "#EF4B2B" }}>
                     Basic Communication:
                   </strong>
-                  Learn essential vocabulary, greetings, and basic phrases for
-                  daily interactions. Begin to grasp Mandarin pronunciation
-                  (pinyin) and basic sentence structures.
+                  Learn essential vocabulary and phrases for daily interactions,
+                  greetings, and introductions. Begin to grasp Danish
+                  pronunciation and basic grammar structures.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
                     Cultural Understanding:
                   </strong>
-                  Explore Chinese customs, etiquette, and societal norms. Gain
-                  insights into Chinese festivals, traditions, and everyday life
-                  through language learning.
+                  Explore Danish customs, traditions, and social etiquette.
+                  Understand cultural nuances that shape daily life in Denmark,
+                  such as hygge (coziness) and sustainability practices.
                 </p>
               </div>
             </div>
@@ -270,29 +273,29 @@ function Mandarin() {
                   className={fr.benefitLeftIcon}
                 />
                 {/* <img
-                  src="/Languages/benefits12.png"
-                  alt="Global"
-                  className={fr.benefitLeftIcon}
-                /> */}
+                src="/Languages/benefits12.png"
+                alt="Global"
+                className={fr.benefitLeftIcon}
+              /> */}
               </div>
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Professional Advantages:
+                    Professional Networking:
                   </strong>
-                  Develop language skills for professional contexts, including
-                  business meetings, negotiations, and presentations in
-                  Mandarin. Enhance career prospects in multinational
-                  corporations, Chinese companies, and diplomatic services.
+                  Develop language skills for professional environments,
+                  including job interviews, networking events, and business
+                  correspondence in Danish. Build confidence in conducting
+                  business with Danish-speaking colleagues and clients.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Literary and Media Exploration:
+                    Academic Pursuits:
                   </strong>
-                  Dive deeper into Chinese literature, films, and media. Read
-                  classic Chinese literature, watch Chinese cinema, and engage
-                  with contemporary Chinese culture, including pop culture
-                  trends.
+                  Enhance language proficiency for studying in Danish
+                  universities or pursuing research collaborations. Access
+                  academic resources, participate in seminars, and engage with
+                  Danish scholars and peers.
                 </p>
               </div>
             </div>
@@ -309,22 +312,21 @@ function Mandarin() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Advanced Language Proficiency:
+                    Advanced Language Mastery:
                   </strong>
-                  Master complex grammar structures, including advanced
-                  vocabulary, idiomatic expressions, and formal writing (hanzi
-                  characters). Engage fluently in discussions, debates, and
-                  academic discourse in Mandarin on diverse topics.
+                  Master complex grammar structures, including verb
+                  conjugations, conditional sentences, and passive voice. Engage
+                  fluently in discussions, debates, and presentations on diverse
+                  topics in Danish.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Integration:
+                    Integration and Community Engagement:
                   </strong>
-                  Fully integrate into Chinese society by participating in
-                  cultural activities, volunteering, and joining local
-                  communities. Contribute to and benefit from cultural
-                  exchanges, fostering cross-cultural understanding and global
-                  citizenship.
+                  Fully integrate into Danish society by participating in local
+                  activities, volunteering, and joining cultural clubs.
+                  Contribute to community initiatives and develop lasting
+                  friendships with Danes.
                 </p>
               </div>
             </div>
@@ -359,6 +361,7 @@ function Mandarin() {
                 onChange={(e) => handleProficiencyChange(e.target.value)}
               />
             </div>
+
 
             <div className={fr.optionGroup}>
               <label>Method of Training</label>
@@ -428,4 +431,4 @@ function Mandarin() {
   );
 }
 
-export default Mandarin;
+export default Danish;

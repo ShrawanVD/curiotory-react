@@ -1116,7 +1116,12 @@
 }
 .stand-out-card {
   background-color: #0368FF;
-  border-radius: 10px;
+}
+.borderone{
+  border-radius: 10px 10px 0px 0px;
+}
+.borderlast{
+  border-radius: 0px 0px 10px 10px;
 }
 .stand-out-text h1 {
   font-family: Raleway, Arial, sans-serif;
@@ -2145,6 +2150,7 @@
 
   .image-container img {
     height: 30vw;
+    background-color: rgb(215, 215, 215);
   }
 
   .layout {

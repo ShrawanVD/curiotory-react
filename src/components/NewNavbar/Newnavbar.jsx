@@ -63,6 +63,7 @@ function Newnavbar() {
                 <a href="/korean">Korean</a>
                 <a href="/portuguese">Portuguese</a>
                 <a href="/arabic">Arabic</a>
+                <a href="/danish">Danish</a>
               </div>
             )}
           </div>

@@ -22,25 +22,36 @@
   text-align: center;
 }
 .mascotCover img {
-  width: 350px;
+  width: 480px;
   height: auto;
+}
+@media (max-width:1000px){
+  .mascotCover img{
+    width: 400px;
+  } 
+}
+@media (max-width:600px){
+  .mascotCover img{
+    width: 300px;
+  } 
 }
 .coverPage h1 {
   color: #002e5b;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 550;
 }
 .coverPage h2 {
   color: #002e5b;
   margin-top: 1rem;
+  font-size: 1.30rem;
   font-family: Raleway, Arial, sans-serif;
 }
-.coverPage h4 {
+/* .coverPage h4 {
   color: #002e5b;
   margin-top: 1rem;
   font-family: Raleway, Arial, sans-serif;
-}
+} */
 .coverpageButton button {
   font-family: Raleway, Arial, sans-serif;
   font-size: 18px;
@@ -73,12 +84,12 @@
   }
   .coverPage h2 {
     margin-top: 2rem;
-    font-size: 22px;
+    font-size: 18px;
   }
-  .coverPage h4 {
+  /* .coverPage h4 {
     font-size: 18px;
     margin-top: 2rem;
-  }
+  } */
   .coverpageButton button {
     margin-top: 2rem;
   }
