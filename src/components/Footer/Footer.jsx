@@ -1,7 +1,18 @@
-
 import "./Footer.css";
+import React, { useEffect, useRef } from "react";
 
 function Footer() {
+  const emailRef = useRef(null);
+
+  useEffect(() => {
+    // Ensure emailRef is initialized before accessing current property
+    if (emailRef.current) {
+      const email = "Support@curiotory.com".split("").reverse().join("");
+      emailRef.current.textContent = email.split("").reverse().join("");
+      emailRef.current.href = `mailto:${email.split("").reverse().join("")}`;
+    }
+  }, []);
+
   return (
     <>
       <div className="footer">
@@ -63,9 +74,9 @@ function Footer() {
                 <h4>Contact Us</h4>
                 <ul>
                   <li>
-                    <a href="mailto:Support@curiotory.com" target="_blank">
+                    <a ref={emailRef} target="_blank" rel="noopener noreferrer">
                       <i className="email fa fa-envelope"></i>
-                      Support@curiotory.com
+                      {/* The email will be populated by JavaScript */}
                     </a>
                   </li>
                 </ul>
@@ -79,23 +90,39 @@ function Footer() {
               <hr />
               <ul>
                 <li>
-                  <a href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-linkedin iconlinkdin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/curiotory_/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/curiotory_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg" target="_blank">
+                  <a
+                    href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa-brands fa-youtube"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.facebook.com/Curiotory/" target="_blank">
+                  <a
+                    href="https://www.facebook.com/Curiotory/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
@@ -104,7 +131,9 @@ function Footer() {
 
             {/* copyright */}
             <div className="col-lg-12 col-sm-12 col-xs-12">
-              <p className="copyright">@2024 Chalkboard Academy Private Limited</p>
+              <p className="copyright">
+                @2024 Chalkboard Academy Private Limited
+              </p>
             </div>
           </div>
         </div>

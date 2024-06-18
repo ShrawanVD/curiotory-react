@@ -131,176 +131,11 @@ function Home() {
 
             <Courselist />
 
-            {/* <!-- sliding section --> */}
-            <div className="sliding-section">
-              <div className="sliding-section-heading">
-                <h1>Language we teach</h1>
-              </div>
-              <div className="sliding-container">
-                <Slider {...settings}>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266pxpx"
-                          src="/Index/Group-292.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-293.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-294.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-295.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-296.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-297.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-298.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266pxpx"
-                          src="/Index/Group-292.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-293.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-294.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-295.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-296.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-297.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                  <div className="sliding-card">
-                    <a>
-                      <LazyLoad height={200} offset={100}>
-                        <img
-                          width="216px"
-                          height="266px"
-                          src="/Index/Group-298.png"
-                        />
-                      </LazyLoad>
-                    </a>
-                  </div>
-                </Slider>
-              </div>
-            </div>
 
             {/* <!-- language Solution --> */}
             <div className="lang-sol">
               <div className="heading-lang-sol">
-                <h1>Language Solutions</h1>
+                <h2>Language Solutions</h2>
               </div>
               <div className="lang-card">
                 <div className="cards">
@@ -353,9 +188,10 @@ function Home() {
                 //   height: "auto",
                 // }}
               >
-                <div className="learn-foriegn-lang-heading">
+                {/* <div className="learn-foriegn-lang-heading">
                   <h1>Why learn foreign languages?</h1>
                 </div>
+
                 <div className="learn-foriegn-lang-container">
                   <div className="container1">
                     <div className="container-cards">
@@ -431,7 +267,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 

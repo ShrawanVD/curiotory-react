@@ -1,7 +1,22 @@
 // import foot from "./Footer2.module.css";
 import "./Footer.css";
+import React, { useEffect, useRef } from 'react';
 
 function Footer() {
+
+  const emailRef = useRef(null);
+
+
+  useEffect(() => {
+    // Ensure emailRef is initialized before accessing current property
+    if (emailRef.current) {
+      const email = 'Support@curiotory.com'.split('').reverse().join('');
+      emailRef.current.textContent = email.split('').reverse().join('');
+      emailRef.current.href = `mailto:${email.split('').reverse().join('')}`;
+    }
+  }, []);
+
+
   return (
     <>
       <div

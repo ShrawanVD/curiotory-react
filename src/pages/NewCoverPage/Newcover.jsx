@@ -81,6 +81,7 @@ function Newcover() {
                 src="/mascot/newSpare1.gif"
                 className="msacot-video"
                 type="gif"
+                alt="mascot curo"
               />
             </LazyLoad>
           </div>
@@ -95,7 +96,7 @@ function Newcover() {
             <div className={newcover.coverPage}>
               <div className={newcover.mascotCover}>
                 <LazyLoad height={200} offset={100}>
-                  <img src="/mascot/coverani.gif" />
+                  <img src="/mascot/coverani.gif" alt="mascot curo" />
                 </LazyLoad>
               </div>
               <h1>An Online Language Learning Platform</h1>
@@ -107,6 +108,7 @@ function Newcover() {
               <div className={newcover.coverpageButton}>
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 >
                   <button>Download the app now!</button>
@@ -119,7 +121,7 @@ function Newcover() {
           <Courselist />
 
           {/* lottie player animation */}
-          <div className={newcover.lottie} style={{ background: "#facb6e" }}>
+          <div className={newcover.lottie} >
             <LazyLoad
               height={200}
               offset={100}
@@ -137,6 +139,7 @@ function Newcover() {
             <div className={newcover.coverpageButton}>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
               >
                 <button>Download the app</button>
@@ -151,7 +154,7 @@ function Newcover() {
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
                   <LazyLoad height={200} offset={100}>
-                    <img width="173" height="187" src="/Index/Picture1.png" />
+                    <img width="173" height="187" src="/Index/Picture1.png" alt="1st solution"/>
                   </LazyLoad>
                 </div>
                 <p className={newcover.text}>
@@ -168,14 +171,14 @@ function Newcover() {
                 </p>
                 <div className={newcover.iconContainer}>
                   <LazyLoad height={200} offset={100}>
-                    <img width="282" height="186" src="/Index/Picture2.png" />
+                    <img width="282" height="186" src="/Index/Picture2.png"  alt="2nd solution"/>
                   </LazyLoad>
                 </div>
               </div>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
                   <LazyLoad height={200} offset={100}>
-                    <img width="151" height="186" src="/Index/Picture3.png" />
+                    <img width="151" height="186" src="/Index/Picture3.png" alt="3rd solution" />
                   </LazyLoad>
                 </div>
                 <p className={newcover.text}>
@@ -190,7 +193,7 @@ function Newcover() {
           {/* sliding languages */}
           <div className="sliding-section">
             <div className="sliding-section-heading">
-              <h1>Language we teach</h1>
+              <h2>Languages we teach</h2>
             </div>
             <div className="sliding-container">
               <Slider {...settings}>
@@ -201,6 +204,7 @@ function Newcover() {
                         width="216px"
                         height="266pxpx"
                         src="/Index/Group-292.png"
+                        alt="French"
                       />
                     </LazyLoad>
                   </a>
@@ -212,6 +216,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-293.png"
+                        alt="German"
                       />
                     </LazyLoad>
                   </a>
@@ -223,6 +228,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-294.png"
+                        alt="Dutch"
                       />
                     </LazyLoad>
                   </a>
@@ -234,6 +240,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-295.png"
+                        alt="Portuguese"
                       />
                     </LazyLoad>
                   </a>
@@ -245,6 +252,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-296.png"
+                        alt="Russian"
                       />
                     </LazyLoad>
                   </a>
@@ -256,6 +264,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-297.png"
+                        alt="Japanese"
                       />
                     </LazyLoad>
                   </a>
@@ -267,10 +276,12 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-298.png"
+                        alt="Korean"
                       />
                     </LazyLoad>
                   </a>
                 </div>
+
 
                 <div className="sliding-card">
                   <a>
@@ -279,6 +290,7 @@ function Newcover() {
                         width="216px"
                         height="266pxpx"
                         src="/Index/Group-292.png"
+                        alt="French"
                       />
                     </LazyLoad>
                   </a>
@@ -290,6 +302,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-293.png"
+                        alt="German"
                       />
                     </LazyLoad>
                   </a>
@@ -301,6 +314,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-294.png"
+                        alt="Dutch"
                       />
                     </LazyLoad>
                   </a>
@@ -312,6 +326,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-295.png"
+                        alt="Portuguese"
                       />
                     </LazyLoad>
                   </a>
@@ -323,6 +338,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-296.png"
+                        alt="Russian"
                       />
                     </LazyLoad>
                   </a>
@@ -334,6 +350,7 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-297.png"
+                        alt="Japanese"
                       />
                     </LazyLoad>
                   </a>
@@ -345,10 +362,14 @@ function Newcover() {
                         width="216px"
                         height="266px"
                         src="/Index/Group-298.png"
+                        alt="Korean"
                       />
                     </LazyLoad>
                   </a>
                 </div>
+
+
+                
               </Slider>
             </div>
           </div>
@@ -366,6 +387,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 1.png"
+                  alt="Academic Excellance"
                 />
                 <h3>Academic Excellence</h3>
                 <p>
@@ -378,6 +400,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 2.png"
+                  alt="Dream Careers"
                 />
                 <h3>Dream Careers</h3>
                 <p>
@@ -390,6 +413,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 3.png"
+                  alt="Real-Life Skills"
                 />
                 <h3>Real-Life Skills</h3>
                 <p>
@@ -402,6 +426,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 4.png"
+                  alt="Cognitive Focus"
                 />
                 <h3>Cognitive Focus</h3>
                 <p>
@@ -414,6 +439,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 5.png"
+                  alt="Self-Confidence Boost"
                 />
                 <h3>Self-Confidence Boost</h3>
                 <p>
@@ -426,6 +452,7 @@ function Newcover() {
                   width="97"
                   height="74"
                   src="/Index/learn foreign - 6.png"
+                  alt="Cultural Empathy"
                 />
                 <h3>Cultural Empathy</h3>
                 <p>
@@ -468,6 +495,7 @@ function Newcover() {
                     width="140px"
                     height="83px"
                     src="/Index/why foreign - 1.png"
+                    alt="Generic curriculum"
                   />
                   <p>
                     Generic, one-size-fits-all curriculum instead of
@@ -479,6 +507,7 @@ function Newcover() {
                     width="140px"
                     height="83px"
                     src="/Index/why foreign - 2.png"
+                    alt="Rigid Learning"
                   />
                   <p>
                     Rigid learning assessment by tutors with limited proficiency
@@ -490,6 +519,7 @@ function Newcover() {
                     width="140px"
                     height="83px"
                     src="/Index/why foreign - 3.png"
+                    alt="Outdated technology"
                   />
                   <p>
                     Outdated remote technology set-ups that cause learning
@@ -504,13 +534,14 @@ function Newcover() {
           <div className="stand-out-section">
             <div className="stand-out-left-section">
               <div className="stand-out-text">
-                <h1>Why we stand out</h1>
+                <h2>Why we stand out</h2>
               </div>
               <div className="stand-out-images">
                 <img
                   width="274px"
                   height="446px"
                   src="/Index/why we stand out section.png"
+                  alt="We Stand Out!"
                 />
               </div>
             </div>
@@ -518,7 +549,7 @@ function Newcover() {
               <div className="stand-out-container">
                 <div className="stand-out-card borderone">
                   <div className="stand-out-left-part">
-                    <h1>Learning from the best</h1>
+                    <h2>Learning from the best</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -529,7 +560,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h1>Customize as per your goals</h1>
+                    <h2>Customize as per your goals</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -541,7 +572,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h1>Continuous improvement</h1>
+                    <h2>Continuous improvement</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -553,7 +584,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h1>Everything’s user-friendly</h1>
+                    <h2>Everything’s user-friendly</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -565,7 +596,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h1>Been there, done that</h1>
+                    <h2>Been there, done that</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -576,7 +607,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card borderlast">
                   <div className="stand-out-left-part">
-                    <h1>Meaningful preparation</h1>
+                    <h2>Meaningful preparation</h2>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -674,7 +705,7 @@ function Newcover() {
             {/* style={{background: '#ffc653'}} */}
             <div className="left-side">
               <div className="heading">
-                <h1>Fuel your global dreams by learning foreign languages</h1>
+                <h2>Fuel your global dreams by learning foreign languages</h2>
                 <br />
               </div>
 
@@ -692,13 +723,14 @@ function Newcover() {
                 className="register-button"
                 href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Register as a teacher
               </a>
             </div>
 
             <div className="right-side">
-              <img src="/Index/cropped-img.JPG" alt="" />
+              <img src="/Index/cropped-img.JPG" alt="Register as a Teacher with us" />
             </div>
           </div>
 
@@ -706,12 +738,9 @@ function Newcover() {
 
           <div
             className="review-swiper-css"
-            style={{
-              marginTop: "-2rem",
-            }}
           >
             <div className="stand-out-text">
-              <h1>What Learner&apos;s say!</h1>
+              <h2>What Learner&apos;s say!</h2>
             </div>
             <Swiper
               // install Swiper modules
@@ -738,7 +767,7 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - swapna.png" alt="Swapna Jain" />
+                    <img src="/Index/review - swapna.png" alt="Swapna Jain Review Online Language Learning" />
                   </div>
                   <div className="name">Swapna Jain</div>
                   <div className="designation">
@@ -759,7 +788,7 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - reeva.png" alt="Reeva Arsingha" />
+                    <img src="/Index/review - reeva.png" alt="Reeva Arsingha Review Online Language Learning" />
                   </div>
                   <div className="name">Reeva Arsinghakar</div>
                   <div className="designation">
@@ -780,7 +809,7 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - riya.png" alt="Riya Malhotra" />
+                    <img src="/Index/review - riya.png" alt="Riya Malhotra Review Online Language Learning" />
                   </div>
                   <div className="name">Riya Malhotra</div>
                   <div className="designation">German A1 - Germany</div>
@@ -801,7 +830,7 @@ function Newcover() {
                   <div className="profile-picture">
                     <img
                       src="/Index/review - bhavana.png"
-                      alt="Bhawana Pawar HR"
+                      alt="Bhawana Pawar HR Review Online Language Learning"
                     />
                   </div>
                   <div className="name">Bhawana Pawar HR</div>
@@ -825,16 +854,15 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h1
+              <h2
                 className="faq-heading"
-                style={{ color: "#002e5b", texAlign: "center" }}
               >
                 Frequently Asked Questions
-              </h1>
+              </h2>
             </div>
             <div className="body-faq">
               <div className="image-container">
-                <img src="/Index/faq.png" alt="here is an image" />
+                <img src="/Index/faq.png" alt="FAQ FAQs" />
               </div>
               <div className="layout">
                 <Accordion />
