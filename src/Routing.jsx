@@ -24,7 +24,6 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Danish from './components/Languages/Danish/Danish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
-import Frenchnew from './components/Frenchnew/Frenchnew';
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -73,7 +72,6 @@ export default (
         <Route path="/russian" element={<Russian />} />
         <Route path="/spanish" element={<Spanish />} />
         <Route path="/danish" element={<Danish />} />
-        <Route path="/french1" element={<Frenchnew />} />
 
         {/* courses routing */}
         <Route path="/course/english" element={<EnglishCourse />} />

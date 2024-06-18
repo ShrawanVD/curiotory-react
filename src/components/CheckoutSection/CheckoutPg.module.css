@@ -136,6 +136,8 @@ small li ul {
   padding: 8px 15px;
   letter-spacing: 1px;
   font-family: "Poppins", Sans-serif;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
  
 .form_container .input::placeholder {
