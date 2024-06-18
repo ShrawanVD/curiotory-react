@@ -635,6 +635,9 @@ function Newcover() {
                       <a href="/english">
                         <h4>English</h4>
                       </a>
+                      <a href="/danish">
+                        <h4>Danish</h4>
+                      </a>
                     </div>
                   </div>
                   <div className={newcover.euroLang}>
@@ -652,10 +655,10 @@ function Newcover() {
                       <a href="/arabic">
                         <h4>Arabic</h4>
                       </a>
-                      <a href="/hindi">
+                      <a href="#">
                         <h4>Hindi</h4>
                       </a>
-                      <a href="/sanskrit">
+                      <a href="#">
                         <h4>Sanskrit</h4>
                       </a>
                     </div>

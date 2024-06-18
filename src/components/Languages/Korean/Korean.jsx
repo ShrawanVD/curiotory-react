@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/KoreanCurr";
-
+import axios from 'axios';
 function Korean() {
   const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
   const [fee, setFee] = useState(0);
-
+  const language = "Korean";
   const feeMap = {
     Level1: {
       Corporate: 24000,
@@ -95,6 +95,51 @@ function Korean() {
   useEffect(() => {
     calculateFee();
   }, [proficiency, method]);
+
+  // send the form data to DB
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNo: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const dataToSend = {
+      ...formData,
+      fee,
+      language
+    };
+
+    try {
+      // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
+      
+      const response = await axios.post("https://backendapi-1bfa.onrender.com/enroll", dataToSend);
+
+      if (response.status === 200) {
+        alert("Form submitted successfully");
+        // Optionally, you can reset the form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          contactNo: "",
+        });
+      } else {
+        alert("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Form submission failed");
+    }
+  };
   return (
     <>
       <div className={fr.container}>
@@ -376,18 +421,39 @@ function Korean() {
             </div>
           </div>
 
-          <div className={fr.calForm}>
-            <div className={fr.result}>
-              Your fee is <br />
-              <span>{fee}</span>/-
-            </div>
-            <form>
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email-ID" required />
-              <input type="text" placeholder="Contact No." required />
-              <button type="submit">Schedule an enquiry</button>
-            </form>
-          </div>
+          <div className={fr.calForm}> 
+        <div className={fr.result}> 
+          Your fee is <br />
+          <span>{fee}</span>/-
+        </div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email-ID"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            placeholder="Contact No."
+            name="contactNo"
+            value={formData.contactNo}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Schedule an enquiry</button>
+        </form>
+      </div>
         </div>
       </div>
 
