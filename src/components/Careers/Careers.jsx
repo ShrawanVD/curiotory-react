@@ -93,7 +93,7 @@ function Careers() {
       language: "Nepali",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "10 LPA",
+      salary: "4.5 LPA",
       duration: "3 Months",
     },
     {
