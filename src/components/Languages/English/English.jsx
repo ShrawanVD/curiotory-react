@@ -179,7 +179,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence :</span>
+                <span style={{ fontWeight: "bold" }}>Global Influence : </span>
                 English is one of the most widely spoken languages globally,
                 with over 1.5 billion speakers worldwide. Learning English opens
                 doors to communication with people from diverse linguistic
@@ -194,8 +194,7 @@ function English() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Business and Communication :
-                </span>
+                  Business and Communication : </span>
                 English is the international language of business, science,
                 aviation, diplomacy, and tourism. Proficiency in English
                 enhances career opportunities and facilitates effective
@@ -210,8 +209,7 @@ function English() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Media and Entertainment :
-                </span>
+                  Media and Entertainment : </span>
                 English-language media, including movies, music, and television
                 shows, dominate global entertainment. Learning English provides
                 access to a vast array of cultural content and enhances
@@ -226,8 +224,7 @@ function English() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Cultural and Literary Heritage :
-                </span>
+                  Cultural and Literary Heritage : </span>
                 English literature has a rich tradition spanning from
                 Shakespeare to contemporary authors. Learning English allows for
                 a deeper appreciation of literary classics, modern literature,
@@ -242,8 +239,7 @@ function English() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Education and Academic Pursuits :
-                </span>
+                  Education and Academic Pursuits : </span>
                 Many of the world's top universities and research institutions
                 teach in English. Proficiency in English is essential for
                 academic success, accessing scholarly publications, and
@@ -317,15 +313,12 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Basic Communication
-                  :</strong>{" "}
+                  <strong style={{ color: "#EF4B2B" }}>Basic Communication : </strong>{" "}
                   Learn essential vocabulary, greetings, and phrases for everyday interactions. Develop fundamental skills in listening, speaking, reading, and writing in English.
                 </p>
                 <p>
                   <strong style={{ color: "#F4AD28" }}>
-                  Cultural Understanding
-                  :
-                  </strong>{" "}
+                  Cultural Understanding : </strong>{" "}
                   Gain insights into English-speaking cultures, traditions, and societal norms. Understand cultural nuances that shape interactions and daily life in English-speaking countries.
                 </p>
               </div>
@@ -347,15 +340,12 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Professional Development
-                  :</strong>{" "}
+                  <strong style={{ color: "#EF4B2B" }}>Professional Development : </strong>{" "}
                   Acquire language skills for professional contexts, including business meetings, presentations, and negotiations. Enhance career prospects in various industries and multinational companies where English is the primary language.
                 </p>
                 <p>
                   <strong style={{ color: "#F4AD28" }}>
-                  Literary Exploration
-                  :
-                  </strong>{" "}
+                  Literary Exploration : </strong>{" "}
                   Explore a wide range of English literature, from classic novels to contemporary poetry and drama. Analyze themes, characters, and literary techniques to deepen language proficiency and cultural understanding.
                 </p>
               </div>
@@ -373,16 +363,12 @@ function English() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                  Advanced Language Proficiency
-                  :
-                  </strong>{" "}
+                  Advanced Language Proficiency : </strong>{" "}
                   Master complex grammar structures, idiomatic expressions, and rhetorical devices. Engage fluently in debates, discussions, and academic discourse on diverse topics in English.
                 </p>
                 <p>
                   <strong style={{ color: "#F4AD28" }}>
-                  Cross-Cultural Engagement
-                  :
-                  </strong>{" "}
+                  Cross-Cultural Engagement : </strong>{" "}
                   Fully integrate into English-speaking communities by participating in cultural activities, volunteering, and networking. Develop meaningful connections and contribute to cross-cultural understanding and collaboration.
                 </p>
               </div>

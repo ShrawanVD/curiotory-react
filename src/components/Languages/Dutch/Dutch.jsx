@@ -190,7 +190,7 @@ function Dutch() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Gateway to Europe:</span>
+                <span style={{ fontWeight: "bold" }}>Gateway to Europe : </span>
                 Dutch is spoken not only in the Netherlands but also in Belgium
                 (Flanders) and Suriname. It serves as a gateway to understanding
                 Flemish culture and Dutch-speaking communities worldwide.
@@ -203,7 +203,7 @@ function Dutch() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism:</span>
+                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
                 The Netherlands is a popular tourist destination known for its
                 picturesque cities, tulip fields, and cycling culture. Knowing
                 Dutch enhances travel experiences and allows for meaningful
@@ -217,7 +217,7 @@ function Dutch() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Enrichment:</span>
+                <span style={{ fontWeight: "bold" }}>Cultural Enrichment : </span>
                 Dutch culture is rich in history, art, and literature, with
                 contributions from famous artists like Rembrandt and Van Gogh.
                 Learning Dutch enables deeper engagement with Dutch literature,
@@ -232,8 +232,7 @@ function Dutch() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Educational Opportunities:
-                </span>
+                  Educational Opportunities : </span>
                 Dutch universities are highly ranked globally and offer a wide
                 range of programs in English. Learning Dutch can facilitate
                 access to quality education and scholarships in the Netherlands.
@@ -247,8 +246,7 @@ function Dutch() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Business and Career Opportunities:
-                </span>
+                  Business and Career Opportunities : </span>
                 The Netherlands is a hub for international trade, finance, and
                 technology. Learning Dutch enhances career prospects in
                 industries such as logistics, engineering, and IT, where Dutch
@@ -323,16 +321,14 @@ function Dutch() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Basic Communication:
-                  </strong>
+                    Basic Communication : </strong>
                   Learn essential vocabulary and phrases for everyday
                   interactions, greetings, and introductions. Begin to
                   understand Dutch pronunciation and basic grammar structures.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Travel Readiness:
-                  </strong>
+                    Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
                   shopping. Practice listening and speaking to improve
@@ -358,16 +354,14 @@ function Dutch() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Immersion:
-                  </strong>
+                    Cultural Immersion : </strong>
                   Dive deeper into Dutch culture through literature, music, and
                   traditions. Explore Dutch festivals, cuisine, and customs to
                   gain insights into daily life and social etiquette.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Professional Advantages:
-                  </strong>
+                    Professional Advantages : </strong>
                   Expand vocabulary and improve language proficiency for
                   professional contexts. Enhance communication skills for job
                   interviews, business meetings, and networking in
@@ -388,8 +382,7 @@ function Dutch() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Advanced Language Skills:
-                  </strong>
+                    Advanced Language Skills : </strong>
                   Master complex grammar structures, including verb
                   conjugations, sentence patterns, and idiomatic expressions.
                   Engage in discussions, debates, and presentations in Dutch on
@@ -397,8 +390,7 @@ function Dutch() {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Academic and Research Opportunities:
-                  </strong>
+                    Academic and Research Opportunities : </strong>
                   Gain proficiency to study or conduct research at Dutch
                   universities. Access academic resources, attend lectures, and
                   participate in academic exchanges in Dutch.

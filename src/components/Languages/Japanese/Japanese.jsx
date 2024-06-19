@@ -173,8 +173,7 @@ const handleSubmit = async (e) => {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Cultural Fascination:
-                </span>
+                  Cultural Fascination : </span>
                 Japan boasts a rich cultural heritage spanning centuries,
                 including traditional arts like tea ceremony, ikebana (flower
                 arranging), and kabuki theater, alongside modern cultural
@@ -189,7 +188,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism:</span>
+                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
                 Japan is a popular tourist destination known for its ancient
                 temples, stunning gardens, and bustling cities like Tokyo and
                 Kyoto. Knowing Japanese enhances travel experiences, enabling
@@ -205,8 +204,7 @@ const handleSubmit = async (e) => {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Business Opportunities:
-                </span>
+                  Business Opportunities : </span>
                 Japan is a global economic powerhouse with leading industries in
                 technology, automotive, and finance. Proficiency in Japanese
                 opens doors to career opportunities in Japanese companies and
@@ -220,7 +218,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Academic Pursuits:</span>
+                <span style={{ fontWeight: "bold" }}>Academic Pursuits : </span>
                 Japanese universities are renowned for their academic excellence
                 and research contributions in fields like robotics, engineering,
                 and medicine. Learning Japanese enables access to academic
@@ -235,7 +233,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Personal Growth:</span>
+                <span style={{ fontWeight: "bold" }}>Personal Growth : </span>
                 Learning Japanese challenges and expands cognitive abilities,
                 including memory retention, problem-solving skills, and cultural
                 empathy. It promotes personal growth and enhances global
@@ -311,16 +309,14 @@ const handleSubmit = async (e) => {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Basic Communication:
-                  </strong>
+                    Basic Communication : </strong>
                   Learn essential vocabulary and phrases for greetings,
                   introductions, and everyday interactions. Begin to grasp
                   Japanese pronunciation and basic grammar structures.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Understanding:
-                  </strong>
+                    Cultural Understanding : </strong>
                   Explore Japanese customs, etiquette, and societal norms. Gain
                   insights into Japanese festivals, traditions, and daily life
                   through language learning.
@@ -345,8 +341,7 @@ const handleSubmit = async (e) => {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Professional Advantages:
-                  </strong>
+                    Professional Advantages : </strong>
                   Develop language skills for professional contexts, including
                   job interviews, business meetings, and presentations in
                   Japanese. Enhance career prospects in international business
@@ -354,8 +349,7 @@ const handleSubmit = async (e) => {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Literary and Media Exploration:
-                  </strong>
+                    Literary and Media Exploration : </strong>
                   Dive deeper into Japanese literature, films, and media. Read
                   classic literature by authors like Haruki Murakami, watch
                   Japanese cinema, and engage with contemporary Japanese pop
@@ -376,8 +370,7 @@ const handleSubmit = async (e) => {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Advanced Language Proficiency:
-                  </strong>
+                    Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including keigo (polite
                   language), honorifics, and advanced vocabulary. Engage
                   fluently in discussions, debates, and academic discourse in
@@ -385,8 +378,7 @@ const handleSubmit = async (e) => {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Integration:
-                  </strong>
+                    Cultural Integration : </strong>
                   Fully integrate into Japanese society by participating in
                   cultural activities, volunteering, and joining local
                   communities. Contribute to and benefit from cultural

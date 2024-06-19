@@ -4,39 +4,40 @@ import styles from "./Rev.module.css";
 const reviews = [
   {
     text: "Excellent course material and structure",
-    author: "Aditya",
+    author: "Rohit",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718365641/IMG_0105_1_qjdq4i.png",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/r_yellow_v1qfax.avif",
   },
   {
     text: "Very informative and easy to follow",
     author: "Priya",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718279771/shared_image_1_vx5oda.jpg",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/p_yellow_ndipvh.jpg",
   },
   {
     text: "Great explanations and examples",
-    author: "Abhilasha",
+    author: "Sarang",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718365641/IMG_0105_1_qjdq4i.png",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/s_yellow_ojwbpn.jpg",
   },
   {
-    text: "Helped me a lot in understanding the concepts",
-    author: "Raj",
+    text: "Engaging and interactive sessions",
+    author: "Shivani",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718279771/shared_image_1_vx5oda.jpg",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/s_yellow_ojwbpn.jpg",
   },
   {
     text: "Well-paced and thorough coverage of topics",
     author: "Vikram",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718365641/IMG_0105_1_qjdq4i.png",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/v_yellow_amcacc.jpg",
   },
+  
   {
-    text: "Engaging and interactive sessions",
-    author: "Betal",
+    text: "Helped me a lot in understanding the concepts",
+    author: "Raj",
     image:
-      "https://res.cloudinary.com/dvk1ynowq/image/upload/v1718279771/shared_image_1_vx5oda.jpg",
+      "https://res.cloudinary.com/ddkfnfogy/image/upload/v1718777201/r_yellow_v1qfax.avif",
   },
 ];
 

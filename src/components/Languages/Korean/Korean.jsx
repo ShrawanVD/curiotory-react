@@ -185,7 +185,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Appeal:</span>
+                <span style={{ fontWeight: "bold" }}>Cultural Appeal : </span>
                 Korean culture, including K-pop, K-dramas, and cuisine, has
                 gained immense popularity globally. Learning Korean allows you
                 to deeply engage with these cultural phenomena and understand
@@ -199,7 +199,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism:</span>
+                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
                 South Korea, with its blend of modern cities like Seoul and
                 historical sites like Gyeongbokgung Palace, attracts millions of
                 tourists annually. Knowing Korean enhances travel experiences,
@@ -214,7 +214,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Business and Trade:</span>
+                <span style={{ fontWeight: "bold" }}>Business and Trade : </span>
                 South Korea is a major player in global industries such as
                 electronics, automotive, and entertainment. Proficiency in
                 Korean opens doors to career opportunities in multinational
@@ -230,8 +230,7 @@ function Korean() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Academic Opportunities:
-                </span>
+                  Academic Opportunities : </span>
                 Korean universities are increasingly attracting international
                 students with programs taught in English and Korean. Learning
                 Korean facilitates access to scholarships, research
@@ -245,7 +244,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Strategic Language:</span>
+                <span style={{ fontWeight: "bold" }}>Strategic Language : </span>
                 Korean is considered a critical language for geopolitical
                 reasons, especially in East Asia. Proficiency in Korean enhances
                 understanding of regional dynamics and opens doors to careers in
@@ -320,16 +319,14 @@ function Korean() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Basic Communication:
-                  </strong>
+                    Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to grasp Korean pronunciation
                   (Hangul) and basic grammar structures.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Understanding:
-                  </strong>
+                    Cultural Understanding : </strong>
                   Explore Korean customs, traditions, and social etiquette. Gain
                   insights into Korean holidays, food culture, and societal
                   norms through language learning.
@@ -354,8 +351,7 @@ function Korean() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Professional Advancement:
-                  </strong>
+                    Professional Advancement : </strong>
                   Develop language skills for professional contexts, including
                   job interviews, business meetings, and presentations in
                   Korean. Enhance career prospects in sectors such as
@@ -363,8 +359,7 @@ function Korean() {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Media and Entertainment:
-                  </strong>
+                    Media and Entertainment : </strong>
                   Dive deeper into Korean media, including dramas, films, and
                   music. Improve listening comprehension, expand vocabulary, and
                   engage with Korean pop culture, enhancing language
@@ -385,8 +380,7 @@ function Korean() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Advanced Language Proficiency:
-                  </strong>
+                    Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including honorifics, verb
                   conjugations, and formal expressions. Engage fluently in
                   debates, discussions, and academic discourse in Korean on
@@ -395,8 +389,7 @@ function Korean() {
                 {/* #F4AD28 */}
                 <p>
                   <strong style={{ color: "#F4AD28" }}>
-                    Cultural Integration:
-                  </strong>
+                    Cultural Integration : </strong>
                   Fully integrate into Korean society by participating in
                   cultural activities, volunteering, and joining local
                   communities. Build friendships, contribute to cultural

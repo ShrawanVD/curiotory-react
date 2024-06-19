@@ -188,7 +188,7 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence:</span>
+                <span style={{ fontWeight: "bold" }}>Global Influence : </span>
                 Mandarin Chinese is the most spoken language in the world with
                 over a billion native speakers. Learning Mandarin opens doors to
                 communication with people not only in China but also in Taiwan,
@@ -203,7 +203,7 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism:</span>
+                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
                 China is a popular tourist destination with its ancient
                 landmarks like the Great Wall and Forbidden City, vibrant cities
                 such as Beijing and Shanghai, and picturesque landscapes.
@@ -219,8 +219,7 @@ function Mandarin() {
               />
               <p>
                 <span style={{ fontWeight: "bold" }}>
-                  Business Opportunities:
-                </span>
+                  Business Opportunities : </span>
                 China is the world's second-largest economy and a major player
                 in global trade and manufacturing. Proficiency in Mandarin
                 enhances career prospects in diverse industries such as finance,
@@ -234,7 +233,7 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Richness:</span>
+                <span style={{ fontWeight: "bold" }}>Cultural Richness : </span>
                 Mandarin Chinese is intertwined with a rich cultural heritage
                 spanning over 5,000 years. Learning Mandarin allows for a deeper
                 understanding of Chinese history, philosophy, literature
@@ -248,7 +247,7 @@ function Mandarin() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Personal Growth:</span>
+                <span style={{ fontWeight: "bold" }}>Personal Growth : </span>
                 Learning Mandarin challenges the mind and expands cognitive
                 abilities, including memory retention, problem-solving skills,
                 and cultural empathy. It promotes personal growth and enhances
@@ -324,16 +323,14 @@ function Mandarin() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Basic Communication:
-                  </strong>
+                    Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to grasp Mandarin pronunciation
                   (pinyin) and basic sentence structures.
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Understanding:
-                  </strong>
+                    Cultural Understanding : </strong>
                   Explore Chinese customs, etiquette, and societal norms. Gain
                   insights into Chinese festivals, traditions, and everyday life
                   through language learning.
@@ -358,8 +355,7 @@ function Mandarin() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Professional Advantages:
-                  </strong>
+                    Professional Advantages : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and presentations in
                   Mandarin. Enhance career prospects in multinational
@@ -367,8 +363,7 @@ function Mandarin() {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Literary and Media Exploration:
-                  </strong>
+                    Literary and Media Exploration : </strong>
                   Dive deeper into Chinese literature, films, and media. Read
                   classic Chinese literature, watch Chinese cinema, and engage
                   with contemporary Chinese culture, including pop culture
@@ -389,8 +384,7 @@ function Mandarin() {
               <div className={fr.benefitRight}>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Advanced Language Proficiency:
-                  </strong>
+                    Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including advanced
                   vocabulary, idiomatic expressions, and formal writing (hanzi
                   characters). Engage fluently in discussions, debates, and
@@ -398,8 +392,7 @@ function Mandarin() {
                 </p>
                 <p>
                   <strong style={{ color: "#EF4B2B" }}>
-                    Cultural Integration:
-                  </strong>
+                    Cultural Integration : </strong>
                   Fully integrate into Chinese society by participating in
                   cultural activities, volunteering, and joining local
                   communities. Contribute to and benefit from cultural
