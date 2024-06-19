@@ -37,9 +37,9 @@ import Newcover from './pages/NewCoverPage/Newcover';
 import Reviewcourse from './components/Reviewcourse/Reviewcourse';
 import Careers from './components/Careers/Careers';
 
-// curriculum
-import FrenchCurr from './components/Curriculum/FrenchCurr';
 import Rev from './components/LanguagesReviews/Rev';
+import NotFound from './pages/NotFound/NotFound';
+import NotFoundDev from './pages/NotFound/NotFoundDev';
 
 export default (
     <Routes>
@@ -83,8 +83,9 @@ export default (
         <Route path="/course/german" element={<GermanCourse />} />
         <Route path="/review" element={<Reviewcourse />} />
 
-        {/* curriculum */}
-        <Route path="/frenchCurr" element={<FrenchCurr />} />
+        <Route path="/notfound" element={<NotFound />} />
+        <Route path="/underDevelopment" element={<NotFoundDev />} />
+
 
 
 
