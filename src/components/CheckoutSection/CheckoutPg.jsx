@@ -141,6 +141,7 @@ function CheckoutPg() {
     } catch (error) {
       // console.log(error);
       toast.error("Failed to initiate payment");
+      history.push("/notFound");
     }
   };
   // payment verify function
@@ -184,6 +185,7 @@ function CheckoutPg() {
         } catch (error) {
           // console.log("The post error is: " + error);
           toast.error("Payment verification failed");
+          history.push("/notFound");
         }
       },
       theme: {
@@ -357,4 +359,7 @@ function CheckoutPg() {
     </>
   );
 }
+
+
+
 export default CheckoutPg;

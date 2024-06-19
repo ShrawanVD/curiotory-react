@@ -525,7 +525,7 @@ function Newcover() {
                     <img
                       width="140px"
                       height="83px"
-                      src="/Index/why foreign - 2.png"
+                      src="/Index/why foreign - 1.png"
                       alt="Rigid Learning"
                     />
                   </LazyLoad>
@@ -728,10 +728,10 @@ function Newcover() {
                       <a href="/arabic">
                         <h4>Arabic</h4>
                       </a>
-                      <a href="#">
+                      <a href="/underDevelopment">
                         <h4>Hindi</h4>
                       </a>
-                      <a href="#">
+                      <a href="/underDevelopment">
                         <h4>Sanskrit</h4>
                       </a>
                     </div>
