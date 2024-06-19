@@ -80,66 +80,56 @@ function Careers() {
   const openings = [
     {
       id: 1,
-      title: "Product Management",
+      title: "French Language Interpreter",
+      language: "French",
       company: "Colorbar Cosmetics Private Limited",
-      location: "Delhi",
-      salary: "₹ 15,000/month",
+      Shift: "24/7 rotational shifts",
+      salary: "10 LPA",
       duration: "3 Months",
     },
     {
       id: 2,
-      title: "Secondary Research & Cold Calling",
-      company: "WWF-India",
-      location: "Delhi (Hybrid)",
-      salary: "₹ 5,000-8,000/month",
-      duration: "1 Month",
+      title: "Nepali Language Interpreter",
+      language: "Nepali",
+      company: "Colorbar Cosmetics Private Limited",
+      Shift: "24/7 rotational shifts",
+      salary: "10 LPA",
+      duration: "3 Months",
     },
     {
       id: 3,
-      title: "Community Management And Operations",
-      company: "Monster India",
-      location: "Noida",
-      salary: "₹ 12,000/month",
+      title: "Tamil Language Interpreter",
+      language: "Tamil",
+      company: "Colorbar Cosmetics Private Limited",
+      Shift: "24/7 rotational shifts",
+      salary: "4.5 LPA",
       duration: "3 Months",
     },
     {
       id: 4,
-      title: "Operations",
-      company: "Foundit India",
-      location: "Noida",
-      salary: "₹ 12,000/month",
+      title: "Hindi Language Interpreter",
+      language: "Hindi",
+      company: "Colorbar Cosmetics Private Limited",
+      Shift: "24/7 rotational shifts",
+      salary: "4.5 LPA",
       duration: "3 Months",
     },
     {
       id: 5,
-      title: "Product Management",
+      title: "Bengali Language Interpreter",
+      language: "Bengali",
       company: "Colorbar Cosmetics Private Limited",
-      location: "Delhi",
-      salary: "₹ 15,000/month",
+      Shift: "24/7 rotational shifts",
+      salary: "4.5 LPA",
       duration: "3 Months",
     },
     {
       id: 6,
-      title: "Secondary Research & Cold Calling",
-      company: "WWF-India",
-      location: "Delhi (Hybrid)",
-      salary: "₹ 5,000-8,000/month",
-      duration: "1 Month",
-    },
-    {
-      id: 7,
-      title: "Community Management And Operations",
-      company: "Monster India",
-      location: "Noida",
-      salary: "₹ 12,000/month",
-      duration: "3 Months",
-    },
-    {
-      id: 8,
-      title: "Operations",
-      company: "Foundit India",
-      location: "Noida",
-      salary: "₹ 12,000/month",
+      title: "Urdu Language Interpreter",
+      language: "Urdu",
+      company: "Colorbar Cosmetics Private Limited",
+      Shift: "24/7 rotational shifts",
+      salary: "4.5 LPA",
       duration: "3 Months",
     },
   ];
@@ -243,11 +233,12 @@ function Careers() {
           {openings.map((opening) => (
             <div key={opening.id} className={job.cardopening}>
               <h3>{opening.title}</h3>
-              <p>{opening.company}</p>
+              {/* <p>{opening.company}</p> */}
               <hr/>
-              <p>{opening.location}</p>
-              <p>{opening.salary}</p>
-              <p>{opening.duration}</p>
+              <p>Language: {opening.language}</p>
+              <p>Shift : {opening.Shift}</p>
+              <p>Salary: {opening.salary}</p>
+              {/* <p>{opening.duration}</p> */}
               <div className={job.footeropening}>
                 <button
                   onClick={() => handleViewDetails(opening.id)}
