@@ -383,3 +383,98 @@
         margin-top: 1rem;
     }
 }
+
+
+/* job openings */
+
+/* Career.module.css */
+.applyJobContainer{
+  margin: 2rem 0rem 7rem;
+}
+.opening{
+  text-align: center;
+}
+.opening h2{
+  font-family: "Inter", sans-serif;
+}
+.containeropening {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;  
+  font-family: "Inter", sans-serif;
+}
+
+.cardopening {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 30px 20px;
+  width: calc(25% - 40px); /* Adjust for padding and margin */
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardopening:hover {
+  transform: translateY(-5px);
+}
+
+.cardopening h3 {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+}
+
+.cardopening p {
+  margin: 5px 0;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+}
+
+.footeropening {
+text-align: right;
+}
+
+.internshipTag {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.buttonopening {
+  border: none;
+  background-color: white;
+  color: #007bff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif; 
+}
+
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cardopening {
+      width: calc(33.333% - 40px); /* 3 cardopenings per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .cardopening {
+      width: calc(50% - 40px); /* 2 cardopenings per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .cardopening {
+      width: calc(100% - 40px); /* 1 cardopening per row */
+  }
+}

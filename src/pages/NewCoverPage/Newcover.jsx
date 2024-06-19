@@ -102,9 +102,11 @@ function Newcover() {
               <h1>An Online Language Learning Platform</h1>
               {/* <h2>Master any language, anytime, anywhere</h2> 
               <h4>Start Your Language Journey Today!</h4>*/}
-              <h2>Curious about learning new languages? Transform it into a
-              life-changing opportunity.</h2>
-              
+              <h2>
+                Curious about learning new languages? Transform it into a
+                life-changing opportunity.
+              </h2>
+
               <div className={newcover.coverpageButton}>
                 <a
                   target="_blank"
@@ -121,7 +123,7 @@ function Newcover() {
           <Courselist />
 
           {/* lottie player animation */}
-          <div className={newcover.lottie} >
+          <div className={newcover.lottie}>
             <LazyLoad
               height={200}
               offset={100}
@@ -153,8 +155,13 @@ function Newcover() {
               <h2 className={newcover.solheader}>Our Solutions</h2>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
-                  <LazyLoad height={200} offset={100}>
-                    <img width="173" height="187" src="/Index/Picture1.png" alt="1st solution"/>
+                  <LazyLoad offset={100}>
+                    <img
+                      width="173"
+                      height="187"
+                      src="/Index/Picture1.png"
+                      alt="1st solution"
+                    />
                   </LazyLoad>
                 </div>
                 <p className={newcover.text}>
@@ -170,15 +177,25 @@ function Newcover() {
                   curiosities into life-changing realities.
                 </p>
                 <div className={newcover.iconContainer}>
-                  <LazyLoad height={200} offset={100}>
-                    <img width="282" height="186" src="/Index/Picture2.png"  alt="2nd solution"/>
+                  <LazyLoad offset={100}>
+                    <img
+                      width="282"
+                      height="186"
+                      src="/Index/Picture2.png"
+                      alt="2nd solution"
+                    />
                   </LazyLoad>
                 </div>
               </div>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
                   <LazyLoad height={200} offset={100}>
-                    <img width="151" height="186" src="/Index/Picture3.png" alt="3rd solution" />
+                    <img
+                      width="151"
+                      height="186"
+                      src="/Index/Picture3.png"
+                      alt="3rd solution"
+                    />
                   </LazyLoad>
                 </div>
                 <p className={newcover.text}>
@@ -282,7 +299,6 @@ function Newcover() {
                   </a>
                 </div>
 
-
                 <div className="sliding-card">
                   <a>
                     <LazyLoad height={200} offset={100}>
@@ -367,9 +383,6 @@ function Newcover() {
                     </LazyLoad>
                   </a>
                 </div>
-
-
-                
               </Slider>
             </div>
           </div>
@@ -383,12 +396,14 @@ function Newcover() {
             <hr />
             <div className="container1">
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 1.png"
-                  alt="Academic Excellance"
-                />
+                <LazyLoad  offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 1.png"
+                    alt="Academic Excellance"
+                  />
+                </LazyLoad>
                 <h3>Academic Excellence</h3>
                 <p>
                   Ace exams like SAT & GRE and outperform the rest in
@@ -396,12 +411,15 @@ function Newcover() {
                 </p>
               </div>
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 2.png"
-                  alt="Dream Careers"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 2.png"
+                    alt="Dream Careers"
+                  />
+                </LazyLoad>
+
                 <h3>Dream Careers</h3>
                 <p>
                   Boost your resume to world-className standards and apply for
@@ -409,12 +427,15 @@ function Newcover() {
                 </p>
               </div>
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 3.png"
-                  alt="Real-Life Skills"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 3.png"
+                    alt="Real-Life Skills"
+                  />
+                </LazyLoad>
+
                 <h3>Real-Life Skills</h3>
                 <p>
                   Pick up valuable skills, such as multitasking,
@@ -422,12 +443,15 @@ function Newcover() {
                 </p>
               </div>
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 4.png"
-                  alt="Cognitive Focus"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 4.png"
+                    alt="Cognitive Focus"
+                  />
+                </LazyLoad>
+
                 <h3>Cognitive Focus</h3>
                 <p>
                   Raise your level of cognitive intelligence and sharpen your
@@ -435,12 +459,15 @@ function Newcover() {
                 </p>
               </div>
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 5.png"
-                  alt="Self-Confidence Boost"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 5.png"
+                    alt="Self-Confidence Boost"
+                  />
+                </LazyLoad>
+                
                 <h3>Self-Confidence Boost</h3>
                 <p>
                   Amplify your confidence levels to easily maximize strengths
@@ -448,12 +475,15 @@ function Newcover() {
                 </p>
               </div>
               <div className="container-cards">
-                <img
-                  width="97"
-                  height="74"
-                  src="/Index/learn foreign - 6.png"
-                  alt="Cultural Empathy"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="97"
+                    height="74"
+                    src="/Index/learn foreign - 6.png"
+                    alt="Cultural Empathy"
+                  />
+                </LazyLoad>
+
                 <h3>Cultural Empathy</h3>
                 <p>
                   Gain a deeper cultural perspective of diverse cultures and be
@@ -491,36 +521,44 @@ function Newcover() {
               </div>
               <div className="foreign-lang-right-container">
                 <div className="foreign-lang-sub-contianer">
-                  <img
-                    width="140px"
-                    height="83px"
-                    src="/Index/why foreign - 1.png"
-                    alt="Generic curriculum"
-                  />
+                  <LazyLoad offset={100}>
+                    <img
+                      width="140px"
+                      height="83px"
+                      src="/Index/why foreign - 2.png"
+                      alt="Rigid Learning"
+                    />
+                  </LazyLoad>
                   <p>
                     Generic, one-size-fits-all curriculum instead of
                     personalized courses
                   </p>
                 </div>
                 <div className="foreign-lang-sub-contianer">
-                  <img
-                    width="140px"
-                    height="83px"
-                    src="/Index/why foreign - 2.png"
-                    alt="Rigid Learning"
-                  />
+                  <LazyLoad offset={100}>
+                    <img
+                      width="140px"
+                      height="83px"
+                      src="/Index/why foreign - 2.png"
+                      alt="Rigid Learning"
+                    />
+                  </LazyLoad>
+
                   <p>
                     Rigid learning assessment by tutors with limited proficiency
                     & low experience levels
                   </p>
                 </div>
                 <div className="foreign-lang-sub-contianer">
-                  <img
-                    width="140px"
-                    height="83px"
-                    src="/Index/why foreign - 3.png"
-                    alt="Outdated technology"
-                  />
+                  <LazyLoad offset={100}>
+                    <img
+                      width="140px"
+                      height="83px"
+                      src="/Index/why foreign - 3.png"
+                      alt="Outdated technology"
+                    />
+                  </LazyLoad>
+
                   <p>
                     Outdated remote technology set-ups that cause learning
                     delays & disruptions
@@ -537,12 +575,14 @@ function Newcover() {
                 <h2>Why we stand out</h2>
               </div>
               <div className="stand-out-images">
-                <img
-                  width="274px"
-                  height="446px"
-                  src="/Index/why we stand out section.png"
-                  alt="We Stand Out!"
-                />
+                <LazyLoad offset={100}>
+                  <img
+                    width="274px"
+                    height="446px"
+                    src="/Index/why we stand out section.png"
+                    alt="We Stand Out!"
+                  />
+                </LazyLoad>
               </div>
             </div>
             <div className="stand-out-right-section">
@@ -639,7 +679,9 @@ function Newcover() {
               </p>
               <div className={newcover.mascotLang}>
                 <div className={newcover.mascotImg}>
-                  <img src="/mascot/CapLift_crop.gif" alt="curo mascot" />
+                  <LazyLoad offset={100}>
+                    <img src="/mascot/CapLift_crop.gif" alt="curo mascot" />
+                  </LazyLoad>
                 </div>
                 <div className={newcover.euroAsianlang}>
                   <div className={newcover.euroLang}>
@@ -730,15 +772,16 @@ function Newcover() {
             </div>
 
             <div className="right-side">
-              <img src="/Index/cropped-img.JPG" alt="Register as a Teacher with us" />
+              <img
+                src="/Index/cropped-img.JPG"
+                alt="Register as a Teacher with us"
+              />
             </div>
           </div>
 
           {/* <!-- REVIEWS SECTION --> */}
 
-          <div
-            className="review-swiper-css"
-          >
+          <div className="review-swiper-css">
             <div className="stand-out-text">
               <h2>What Learner&apos;s say!</h2>
             </div>
@@ -767,7 +810,10 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - swapna.png" alt="Swapna Jain Review Online Language Learning" />
+                    <img
+                      src="/Index/review - swapna.png"
+                      alt="Swapna Jain Review Online Language Learning"
+                    />
                   </div>
                   <div className="name">Swapna Jain</div>
                   <div className="designation">
@@ -788,7 +834,10 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - reeva.png" alt="Reeva Arsingha Review Online Language Learning" />
+                    <img
+                      src="/Index/review - reeva.png"
+                      alt="Reeva Arsingha Review Online Language Learning"
+                    />
                   </div>
                   <div className="name">Reeva Arsinghakar</div>
                   <div className="designation">
@@ -809,7 +858,10 @@ function Newcover() {
               <SwiperSlide>
                 <div className="swiper-slide">
                   <div className="profile-picture">
-                    <img src="/Index/review - riya.png" alt="Riya Malhotra Review Online Language Learning" />
+                    <img
+                      src="/Index/review - riya.png"
+                      alt="Riya Malhotra Review Online Language Learning"
+                    />
                   </div>
                   <div className="name">Riya Malhotra</div>
                   <div className="designation">German A1 - Germany</div>
@@ -854,11 +906,7 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h2
-                className="faq-heading"
-              >
-                Frequently Asked Questions
-              </h2>
+              <h2 className="faq-heading">Frequently Asked Questions</h2>
             </div>
             <div className="body-faq">
               <div className="image-container">

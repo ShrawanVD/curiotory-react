@@ -40,6 +40,7 @@ import Careers from './components/Careers/Careers';
 // curriculum
 import FrenchCurr from './components/Curriculum/FrenchCurr';
 import Rev from './components/LanguagesReviews/Rev';
+import Jobdetails from './components/Jobdetails/Jobdetails';
 
 export default (
     <Routes>
@@ -57,6 +58,7 @@ export default (
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/careers/details/:id" element={<Jobdetails />} />
         <Route path="/rev" element={<Rev />} />
         
         {/* Languages pages routing */}

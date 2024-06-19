@@ -77,6 +77,77 @@ import Footer2 from "../Footer/Footer2";
 import job from "./Careers.module.css";
 
 function Careers() {
+  const openings = [
+    {
+      id: 1,
+      title: "Product Management",
+      company: "Colorbar Cosmetics Private Limited",
+      location: "Delhi",
+      salary: "₹ 15,000/month",
+      duration: "3 Months",
+    },
+    {
+      id: 2,
+      title: "Secondary Research & Cold Calling",
+      company: "WWF-India",
+      location: "Delhi (Hybrid)",
+      salary: "₹ 5,000-8,000/month",
+      duration: "1 Month",
+    },
+    {
+      id: 3,
+      title: "Community Management And Operations",
+      company: "Monster India",
+      location: "Noida",
+      salary: "₹ 12,000/month",
+      duration: "3 Months",
+    },
+    {
+      id: 4,
+      title: "Operations",
+      company: "Foundit India",
+      location: "Noida",
+      salary: "₹ 12,000/month",
+      duration: "3 Months",
+    },
+    {
+      id: 5,
+      title: "Product Management",
+      company: "Colorbar Cosmetics Private Limited",
+      location: "Delhi",
+      salary: "₹ 15,000/month",
+      duration: "3 Months",
+    },
+    {
+      id: 6,
+      title: "Secondary Research & Cold Calling",
+      company: "WWF-India",
+      location: "Delhi (Hybrid)",
+      salary: "₹ 5,000-8,000/month",
+      duration: "1 Month",
+    },
+    {
+      id: 7,
+      title: "Community Management And Operations",
+      company: "Monster India",
+      location: "Noida",
+      salary: "₹ 12,000/month",
+      duration: "3 Months",
+    },
+    {
+      id: 8,
+      title: "Operations",
+      company: "Foundit India",
+      location: "Noida",
+      salary: "₹ 12,000/month",
+      duration: "3 Months",
+    },
+  ];
+
+  const handleViewDetails = (id) => {
+    window.location.href = `careers/details/${id}`;
+  };
+
   return (
     <>
       <Newnavbar />
@@ -92,7 +163,6 @@ function Careers() {
 
       <div className={job.steps}>
         <div className={job.firstRow}>
-
           {/* first step */}
           <div className={`${job.resp1} ${job.cover}`}>
             <h3>Step 1:</h3>
@@ -143,7 +213,7 @@ function Careers() {
         <div className={`${job.cover} ${job.resp4}`}>
           <h3>Step 4:</h3>
           <div className={job.step4}>
-            <div className={`${job.stepContent} ${job.stepContent4}`} >
+            <div className={`${job.stepContent} ${job.stepContent4}`}>
               <p>
                 Choose your preferred Job title, read the details and
                 requirements carefully.{" "}
@@ -151,16 +221,43 @@ function Careers() {
               <p>Apply to the Job role by filling up the form given.</p>
               <p>We'll review your profile and connect with you soon.</p>
               <a
-                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
-                  target="_blank"
-                >
-                  <button className={job.button2}>Download the App</button>
-                </a>
+                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                target="_blank"
+              >
+                <button className={job.button2}>Download the App</button>
+              </a>
             </div>
             <div className={job.stepIcon}>
               <img src="/Careers/step4.png" alt="Apply" />
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* job avialable */}
+      <div className={job.applyJobContainer}>
+        <div className={job.opening}>
+          <h2>Latest Opening</h2>
+        </div>
+        <div className={job.containeropening}>
+          {openings.map((opening) => (
+            <div key={opening.id} className={job.cardopening}>
+              <h3>{opening.title}</h3>
+              <p>{opening.company}</p>
+              <hr/>
+              <p>{opening.location}</p>
+              <p>{opening.salary}</p>
+              <p>{opening.duration}</p>
+              <div className={job.footeropening}>
+                <button
+                  onClick={() => handleViewDetails(opening.id)}
+                  className={job.buttonopening}
+                >
+                  View details &gt;
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -170,4 +267,3 @@ function Careers() {
 }
 
 export default Careers;
-
