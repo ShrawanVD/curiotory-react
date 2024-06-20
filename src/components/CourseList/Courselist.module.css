@@ -12,6 +12,17 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+
+.courseCardContainer a{
+  font-weight: 500;
+}
+
+.courseCardContainer a:hover{
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
 .courseLangCard {
   cursor: pointer;
 }

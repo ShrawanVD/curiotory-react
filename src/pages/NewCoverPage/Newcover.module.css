@@ -318,6 +318,7 @@
 }
 .euroLangList a:hover {
   background-color: #d94f34;
+  text-decoration: none;
 }
 .euroLangList h4 {
   font-family: Raleway, Arial, sans-serif;
@@ -337,6 +338,7 @@
 }
 .asianLangList a:hover {
   background-color: #d94f34;
+  text-decoration: none;
 }
 .asianLangList h4 {
   font-family: Raleway, Arial, sans-serif;

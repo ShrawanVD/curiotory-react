@@ -5,19 +5,22 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/curiotory.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content=" Curiotory provides Fun app and live classes. An online language learning platform to easily learn French, Japanese, Mandarin and more online. Learn anytime, anywhere with Curiotory. ">
+  <meta name="description" content="Curiotory provides Fun app and live classes. An online language learning platform to easily learn French, Japanese, Mandarin and more online. Learn anytime, anywhere with Curiotory.">
   <meta name="title" content="Curiotory: Learn Languages">
 
   <!-- Open Graph Meta Tags for Facebook -->
   <meta property="og:title" content="Curiotory: Learn Languages">
-  <meta property="og:description" content="Curiotory provides Fun app and live classes. An online language learning platform to easily learn French, Japanese, Mandarin and more online. Learn anytime, anywhere with Curiotory. ">
+  <meta property="og:description" content="Curiotory provides Fun app and live classes. An online language learning platform to easily learn French, Japanese, Mandarin and more online. Learn anytime, anywhere with Curiotory.">
   <meta property="og:image" content="https://curiotory.com/Index/logo.png">
   <meta property="og:url" content="https://curiotory.com">
 
   <!-- Inline critical CSS -->
   <style>
     /* Critical CSS */
-    body { margin: 0; padding: 0;}
+    body {
+      margin: 0;
+      padding: 0;
+    }
   </style>
 
   <title>Curiotory: Learn Languages Easily Online</title>
@@ -30,17 +33,6 @@
 
   <div id="root"></div>
 
-  <!-- Defer non-critical JS -->
-  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" defer></script>
-  <script defer>
-    var Alert = ReactBootstrap.Alert;
-  </script>
-  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
-
   <!-- External CSS files, consider splitting by media queries if applicable -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
@@ -49,13 +41,26 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  
+
+  <!-- Defer non-critical JS -->
+  <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" defer></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
+
   <!-- Google Tag Manager -->
-  <script defer>
-    (function (w, d, s, l, i) {
+  <script>
+    (function(w, d, s, l, i) {
       w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : "";
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
       j.async = true;
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
@@ -65,7 +70,6 @@
 
   <!-- Main App Script -->
   <script type="module" src="/src/main.jsx" defer></script>
-
 </body>
 
 </html>

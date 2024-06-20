@@ -28,6 +28,7 @@
 .nav a span:hover {
   color: #ef4b2b;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .contactUs span {
@@ -201,6 +202,8 @@
   display: inline-block;
 }
 
+
+
 .dropbtn {
   cursor: pointer;
 }
@@ -233,6 +236,7 @@
   background-color: #ef4b2b;
   color: white;
   border-radius: 7px;
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {
