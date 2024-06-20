@@ -29,8 +29,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer2 from "../../components/Footer/Footer2";
 
 function Newcover() {
-  const [showDiv1, setShowDiv1] = useState(true);
-  const [showDiv2, setShowDiv2] = useState(false);
 
   // for infinite slike
   const settings = {
@@ -59,37 +57,9 @@ function Newcover() {
     ],
   };
 
-  useEffect(() => {
-    // After 1 second, hide div1 and show div2
-    const timer = setTimeout(() => {
-      setShowDiv1(false);
-      setShowDiv2(true);
-    }, 1000);
-
-    // Clear the timer when the component unmounts
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <>
-      {/* mascot splash screen */}
-      {showDiv1 && (
-        <div>
-          <div className={newcover.mascotDiv}>
-            <LazyLoad height={200} offset={100}>
-              <img
-                src="/mascot/newSpare1.gif"
-                className="msacot-video"
-                type="gif"
-                alt="mascot curo"
-              />
-            </LazyLoad>
-          </div>
-        </div>
-      )}
-
-      {showDiv2 && (
-        <div>
+      <div>
           <div className={newcover.coverContainer}>
             <Newnavbar />
             {/* cover page  */}
@@ -100,8 +70,6 @@ function Newcover() {
                 </LazyLoad>
               </div>
               <h1>An Online Language Learning Platform</h1>
-              {/* <h2>Master any language, anytime, anywhere</h2> 
-              <h4>Start Your Language Journey Today!</h4>*/}
               <h2>
                 Curious about learning new languages? Transform it into a
                 life-changing opportunity.
@@ -123,6 +91,7 @@ function Newcover() {
           <Courselist />
 
           {/* lottie player animation */}
+          <div>
           <div className={newcover.lottie}>
             <LazyLoad
               height={200}
@@ -147,6 +116,7 @@ function Newcover() {
                 <button>Download the app</button>
               </a>
             </div>
+          </div>
           </div>
 
           {/* Our solution */}
@@ -589,7 +559,7 @@ function Newcover() {
               <div className="stand-out-container">
                 <div className="stand-out-card borderone">
                   <div className="stand-out-left-part">
-                    <h2>Learning from the best</h2>
+                    <h3>Learning from the best</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -600,7 +570,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Customize as per your goals</h2>
+                    <h3>Customize as per your goals</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -612,7 +582,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Continuous improvement</h2>
+                    <h3>Continuous improvement</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -624,7 +594,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Everything’s user-friendly</h2>
+                    <h3>Everything’s user-friendly</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -636,7 +606,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Been there, done that</h2>
+                    <h3>Been there, done that</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -647,7 +617,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card borderlast">
                   <div className="stand-out-left-part">
-                    <h2>Meaningful preparation</h2>
+                    <h3>Meaningful preparation</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -744,7 +714,6 @@ function Newcover() {
           {/* <!-- GET STARTED SECTION --> */}
 
           <div className="get-started">
-            {/* style={{background: '#ffc653'}} */}
             <div className="left-side">
               <div className="heading">
                 <h2>Fuel your global dreams by learning foreign languages</h2>
@@ -783,7 +752,7 @@ function Newcover() {
 
           <div className="review-swiper-css">
             <div className="stand-out-text">
-              <h2>What Learner&apos;s say!</h2>
+              <h4>What Learner&apos;s say!</h4>
             </div>
             <Swiper
               // install Swiper modules
@@ -906,7 +875,7 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h2 className="faq-heading">Frequently Asked Questions</h2>
+              <h4 className="faq-heading">Frequently Asked Questions</h4>
             </div>
             <div className="body-faq">
               <div className="image-container">
@@ -921,7 +890,6 @@ function Newcover() {
           {/* footer */}
           <Footer2 />
         </div>
-      )}
     </>
   );
 }

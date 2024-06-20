@@ -199,6 +199,7 @@ const EnglishCurr = () => (
       </h3>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/file/d/1ndboc29hqaYU0OyHd6b6zOQngAWJlS7a/view?usp=sharing"
       >
         <button>

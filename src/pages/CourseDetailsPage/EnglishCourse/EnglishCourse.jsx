@@ -340,6 +340,7 @@ const EnglishCourse = () => {
                     href="https://www.topuniversities.com/universities/university-oxford"
                     style={{ color: "rgb(49, 123, 241)" }}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     University of Oxford
                   </a>{" "}
@@ -351,6 +352,7 @@ const EnglishCourse = () => {
                     href="https://www.topuniversities.com/universities/yale-university"
                     style={{ color: "rgb(49, 123, 241)" }}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Yale University
                   </a>{" "}
@@ -362,6 +364,7 @@ const EnglishCourse = () => {
                     href="https://www.topuniversities.com/universities/university-california-berkeley-ucb"
                     style={{ color: "rgb(49, 123, 241)" }}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     University of California, Berkeley (UCB)
                   </a>{" "}
@@ -373,6 +376,7 @@ const EnglishCourse = () => {
                     href="https://www.topuniversities.com/universities/harvard-university"
                     style={{ color: "rgb(49, 123, 241)" }}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Harvard University
                   </a>
@@ -384,6 +388,7 @@ const EnglishCourse = () => {
                     href="https://www.topuniversities.com/universities/university-cambridge"
                     style={{ color: "rgb(49, 123, 241)" }}
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     University of Cambridge
                   </a>{" "}

@@ -51,6 +51,7 @@ function Aboutus() {
           className={Aboutuscss.registerButton}
           href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Get Started
         </a>

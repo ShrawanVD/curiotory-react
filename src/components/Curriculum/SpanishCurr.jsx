@@ -229,6 +229,7 @@ const SpanishCurr = () => (
       </h3>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/file/d/1DetO_TYIoXarDw0poNOsihskaTbddKWE/view?usp=sharing"
       >
         <button>

@@ -1,111 +1,61 @@
 // import foot from "./Footer2.module.css";
 import "./Footer.css";
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 function Footer() {
+  const handleClick = (event) => {
+    event.preventDefault(); // Prevent the default mailto action
+    const href = event.currentTarget.href;
+    const email = href
+      .replace("mailto:", "")
+      .replace(/AT/, "@")
+      .replace(/DOT/, ".");
+    window.location.href = `mailto:${email}`;
+  };
 
   const emailRef = useRef(null);
-
 
   useEffect(() => {
     // Ensure emailRef is initialized before accessing current property
     if (emailRef.current) {
-      const email = 'Support@curiotory.com'.split('').reverse().join('');
-      emailRef.current.textContent = email.split('').reverse().join('');
-      emailRef.current.href = `mailto:${email.split('').reverse().join('')}`;
+      const email = "Support@curiotory.com".split("").reverse().join("");
+      emailRef.current.textContent = email.split("").reverse().join("");
+      emailRef.current.href = `mailto:${email.split("").reverse().join("")}`;
     }
   }, []);
 
-
   return (
     <>
-      <div
-        className="footer"
-        style={{
-          position:"relative",
-          background:
-            "linear-gradient(0deg, rgba(255,215,108,1) 45%, rgb(247, 201, 76) 70%)",
-        }}
-      >
-        <div className="container2" style={{
-          marginTop:"0.5rem"
-        }}>
+      <div className="footer">
+        <div className="container2">
           <div className="row-up">
             {/* Logo */}
             <div className="ss logo-class col-lg-3">
               <div className="single_footer single_footer1">
                 <img src="/Index/logo.png" alt="Logo" />
-                <p
-                  style={{
-                    color: "black",
-                  }}
-                  className="logo-bio"
-                >
-                  An online language learning platform
-                </p>
+                <p className="logo-bio">An online language learning platform</p>
               </div>
             </div>
 
             {/* quick links */}
             <div className="col-lg-3 ss">
               <div className="single_footer">
-                <h4
-                  style={{
-                    color: "black",
-                  }}
-                >
-                  Quick Links
-                </h4>
+                <h4>Quick Links</h4>
                 <ul>
                   <li>
-                    <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="/blogs"
-                    >
-                      Blogs
-                    </a>
+                    <a href="/blogs">Blogs</a>
                   </li>
                   <li>
-                    <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="/aboutus"
-                    >
-                      About Us
-                    </a>
+                    <a href="/aboutus">About Us</a>
                   </li>
                   <li>
-                    <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="/meetthetutor"
-                    >
-                      Meet Our Tutor
-                    </a>
+                    <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
                   <li>
-                    <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="/becometutor"
-                    >
-                      Become a Tutor
-                    </a>
+                    <a href="/becometutor">Become a Tutor</a>
                   </li>
                   <li>
-                    <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="/careers"
-                    >
-                      Career with Us
-                    </a>
+                    <a href="/careers">Career with Us</a>
                   </li>
                 </ul>
               </div>
@@ -114,31 +64,11 @@ function Footer() {
             {/* legal links */}
             <div className="ss col-lg-3">
               <div className="single_footer single_footer_address">
-                <h4
-                  style={{
-                    color: "black",
-                  }}
-                >
-                  Legal
-                </h4>
-                <style>
-                  {`
-          .sngle footer h4::after {
-            content: "";
-            display: block;
-            background: black;
-            height: 2px; /* Example styling */
-            width: 100%; /* Example styling */
-            margin-top: 5px; /* Example styling */
-          }
-        `}
-                </style>
+                <h4>Legal</h4>
+                
                 <ul>
                   <li>
                     <a
-                      style={{
-                        color: "black",
-                      }}
                       href="/privacy"
                     >
                       Privacy Policy
@@ -146,9 +76,6 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      style={{
-                        color: "black",
-                      }}
                       href="/refund"
                     >
                       Refund Policy & NDNC
@@ -156,9 +83,6 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      style={{
-                        color: "black",
-                      }}
                       href="/terms"
                     >
                       Terms And Conditions
@@ -172,23 +96,19 @@ function Footer() {
             <div className="ss col-lg-3">
               <div className="single_footer single_footer_address">
                 <h4
-                  style={{
-                    color: "black",
-                  }}
                 >
                   Contact Us
                 </h4>
                 <ul>
                   <li>
                     <a
-                      style={{
-                        color: "black",
-                      }}
-                      href="mailto:Support@curiotory.com"
+                      href="mailto:SupportATcuriotoryDOTcom"
+                      onClick={handleClick}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <i className="email fa fa-envelope"></i>
-                      Support@curiotory.com
+                      Email us
                     </a>
                   </li>
                 </ul>
@@ -200,40 +120,31 @@ function Footer() {
             {/* social links */}
             <div className="social_profile col-lg-12 col-sm-12 col-xs-12 ">
               <hr
-                style={{
-                  border: "1px solid black",
-                }}
               />
               <ul>
                 <li>
                   <a
-                    style={{
-                      color: "black",
-                    }}
                     href="https://www.linkedin.com/company/chalkboard-academy/?originalSubdomain=in"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-linkedin iconlinkdin"></i>
                   </a>
                 </li>
                 <li>
                   <a
-                    style={{
-                      color: "black",
-                    }}
                     href="https://www.instagram.com/curiotory_/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a
-                    style={{
-                      color: "black",
-                    }}
                     href="https://www.youtube.com/channel/UC9PdKfuTTo4i3sWd_HGQUFg"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fa-brands fa-youtube"></i>
                   </a>
@@ -241,11 +152,9 @@ function Footer() {
 
                 <li>
                   <a
-                    style={{
-                      color: "black",
-                    }}
                     href="https://www.facebook.com/Curiotory/"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>
@@ -256,9 +165,6 @@ function Footer() {
             {/* copyright */}
             <div className="col-lg-12 col-sm-12 col-xs-12">
               <p
-                style={{
-                  color: "black",
-                }}
                 className="copyright"
               >
                 @2024 Chalkboard Academy Private Limited

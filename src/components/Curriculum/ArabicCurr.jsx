@@ -200,6 +200,7 @@ const proficiencyData = [
         <a
           target="_blank"
           href="https://drive.google.com/file/d/1XbnIyUL9GpWKuWgOOB1qCdQwVUxJjdUe/view?usp=sharing"
+          rel="noopener noreferrer"
         >
           <button>
             <strong>

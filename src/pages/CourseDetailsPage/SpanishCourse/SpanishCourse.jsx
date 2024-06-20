@@ -182,17 +182,6 @@ const SpanishCourse = () => {
             <div className={buy.examContent}>
               <p>Top 5 Universities: </p>
               <ul>
-                {/* <li>
-                  1.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/university-oxford"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    University of Oxford
-                  </a>{" "}
-                  (Oxford, United Kingdom) location{" "}
-                </li> */}
                 <li>1. University of Barcelona </li>
                 <li>2. Barcelona School of Economics </li>
                 <li>3. University of Valencia </li>

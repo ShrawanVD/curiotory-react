@@ -30,6 +30,7 @@ function Becometutor() {
                   <a
                     href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <button className="button2">Download the app</button>
                   </a>
@@ -73,6 +74,7 @@ function Becometutor() {
             <a
               href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <button className="button2">Download the app</button>
             </a>
@@ -114,6 +116,7 @@ function Becometutor() {
               className="register-button"
               href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Register as a teacher
             </a>

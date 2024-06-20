@@ -240,17 +240,6 @@ const JapaneseCourse = () => {
             <div className={buy.examContent}>
               <p>Top 5 Universities: </p>
               <ul>
-                {/* <li>
-                  1.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/university-oxford"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    University of Oxford
-                  </a>{" "}
-                  (Oxford, United Kingdom) location{" "}
-                </li> */}
                 <li>1. Sophia University</li>
                 <li>2. Waseda University</li>
                 <li>3. Tokyo University of Foreign Studies</li>

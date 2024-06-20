@@ -171,6 +171,7 @@ const proficiencyData = [
         </h3>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href="https://drive.google.com/file/d/1dCe8Xok6T5vrHzx1Af-ZrNwlps5-9atQ/view?usp=sharing"
         >
           <button>

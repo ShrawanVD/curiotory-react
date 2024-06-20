@@ -169,6 +169,7 @@ function Singleblog() {
         <div className={singleblogcss.blogCard}>
           <h1>{blog.title}</h1>
           <p className={singleblogcss.blogDate}>{blog.date}</p>
+          <hr/>
           <img src={blog.imageUrl} alt="Blog" />
           <div className={singleblogcss.speakButton}>
           {isPlaying ? (

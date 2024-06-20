@@ -211,6 +211,7 @@ const PortugueseCurr = () => (
         </h3>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           href=""
         >
           <button>

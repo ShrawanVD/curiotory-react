@@ -205,6 +205,7 @@ const FrenchCurr = () => (
       </h3>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/file/d/1L6s4jP5igc_etdTb0xVe1PpqDCT62GZ6/view?usp=sharing"
       >
         <button>

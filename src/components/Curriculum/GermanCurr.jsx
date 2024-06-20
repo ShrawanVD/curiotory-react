@@ -228,6 +228,7 @@ const GermanCurr = () => (
       </h3>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/file/d/1w2Yn5r_dZJ9zpSzhnBLgScMtL6drvGK5/view?usp=sharing"
       >
         <button>

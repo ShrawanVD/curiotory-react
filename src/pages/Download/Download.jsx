@@ -20,7 +20,7 @@ function Download() {
       </h2>
 
       <br />
-      <a style={{textDecoration: 'none'}} target="_blank" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN">
+      <a style={{textDecoration: 'none'}} target="_blank" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" rel="noopener noreferrer">
         <button className="download" type="button" >
           <span className="button__text">Curiotory</span>
           <span className="button__icon"

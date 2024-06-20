@@ -36,15 +36,17 @@ ul {
 }
  
 .footer {
-  /* background: linear-gradient(105deg, #6e99e6, #093c94); */
-  background: linear-gradient(180deg,#7bc2e2 19%, #4284a2  132%);
+  position: relative;
+  background: linear-gradient(0deg, rgba(255,215,108,1) 45%, rgb(247, 201, 76) 70%);
   padding-top: 2rem;
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
 }
  
- 
+.container2{
+  margin-top: 0.5rem;
+}
  
 /*END FOOTER SOCIAL DESIGN*/
  
@@ -72,7 +74,7 @@ ul {
  
 .single_footer h4 {
   background: transparent;
-  color: whitesmoke;
+  color: black;
   margin-top: 0;
   margin-bottom: 25px;
   font-weight: 700;
@@ -84,11 +86,12 @@ ul {
   display: block;
   height: 2px;
   width: 40px;
-  background: whitesmoke;
+  background: black;
   margin-top: 20px;
+  
 }
 .single_footer p {
-  color: whitesmoke;
+  color: black;
   background: transparent;
 }
 .single_footer ul {
@@ -98,16 +101,18 @@ ul {
 }
  
 .single_footer ul li a {
-  color: whitesmoke;
+  color: black;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   line-height: 20px;
   font-size: 15px;
   text-transform: none;
+  text-decoration: none;
 }
 .single_footer ul li a:hover {
   color: black;
   font-weight: 600;
+  text-decoration: none;
 }
  
 .single_footer_address ul li {
@@ -134,7 +139,7 @@ width: 100%;
   justify-content: center;
   align-items: center;
   width: 80%;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
 }
  
 /*START SOCIAL PROFILE CSS*/
@@ -161,8 +166,7 @@ width: 100%;
   transition: all 0.3s ease 0s;
   margin: 0px 5px;
   font-size: 18px;
-  /* color: white; */
-  color: whitesmoke;
+  color: black;
   border-radius: 30px;
   width: 50px;
   height: 50px;
@@ -235,7 +239,7 @@ width: 100%;
 .copyright {
   margin-top: 1rem;
   margin-bottom: -1rem;
-  color: whitesmoke;
+  color: black;
   font-size: 15px;
   text-align: center;
   background: transparent;

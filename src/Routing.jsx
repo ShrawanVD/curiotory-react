@@ -4,7 +4,6 @@ import Contact from './pages/Contactus/Contact';
 // import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
 import Singleblog from './pages/Singleblog/Singleblog';
-import Teacherform from './pages/Teacherform/Teacherform';
 import Tutor from './pages/Meettutor/Meettutor';
 import Download from './pages/Download/Download';
 import Refund from './components/Refund/Refund';
@@ -54,7 +53,6 @@ export default (
         <Route path="/privacy" element={<Privacy/>} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/becometutor" element={<Becometutor />} />
-        <Route path="/teacherform" element={<Teacherform />} />
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
         <Route path="/careers" element={<Careers />} />

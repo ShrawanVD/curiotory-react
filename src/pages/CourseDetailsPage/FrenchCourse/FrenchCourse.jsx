@@ -318,17 +318,6 @@ const FrenchCourse = () => {
             <div className={buy.examContent}>
               <p>Top 5 Universities: </p>
               <ul>
-                {/* <li>
-                  1.{" "}
-                  <a
-                    href="https://www.topuniversities.com/universities/university-oxford"
-                    style={{ color: "rgb(49, 123, 241)" }}
-                    target="_blank"
-                  >
-                    University of Oxford
-                  </a>{" "}
-                  (Oxford, United Kingdom) location{" "}
-                </li> */}
                 <li>1. IESEG School of Management</li>
                 <li>2. Skema Business School – Paris Campus </li>
                 <li>3. EPITA Graduate School of Computer Science</li>

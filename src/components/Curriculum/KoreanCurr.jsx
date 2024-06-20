@@ -202,6 +202,7 @@ const KoreanCurr = () => (
       </h3>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         href="https://drive.google.com/file/d/15_lu6ghM_w7aIcrwv1x5GizOoAF75hvp/view?usp=sharing"
       >
         <button>

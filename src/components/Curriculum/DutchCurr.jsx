@@ -212,6 +212,7 @@ const DutchCurr = () => (
       <a
         target="_blank"
         href="https://drive.google.com/file/d/1ciN5htNC2yo2K1oRMBZq71KFHcho6E78/view?usp=sharing"
+        rel="noopener noreferrer"
       >
         <button>
           <strong>
