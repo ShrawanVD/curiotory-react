@@ -53,7 +53,7 @@ const openings = [
     title: "Nepali Language Interpreter",
     language: "Nepali",
     startDate: "Immediately",
-    salary: "10 LPA",
+    salary: "4.5 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
