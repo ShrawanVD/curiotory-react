@@ -693,6 +693,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/airbus.png"
+                alt="company logo"
                 // Airbus
               />
               <hr
@@ -733,6 +734,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/loreal.png"
+                alt="company logo"
                 // Loreal
               />
               <hr
@@ -781,6 +783,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/accenture.png"
+                alt="company logo"
                 // Accenture
               />
               <hr
@@ -821,6 +824,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/delloite.png"
+                alt="company logo"
                 // Deloitte
               />
               <hr
@@ -860,6 +864,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/amazon.png"
+                alt="company logo"
                 // Amazon
               />
               <hr
@@ -900,6 +905,7 @@ const FrenchCourse = () => {
                 }}
                 variant="top"
                 src="/Company/net.png"
+                alt="company logo"
                 // Netflix
               />
               <hr

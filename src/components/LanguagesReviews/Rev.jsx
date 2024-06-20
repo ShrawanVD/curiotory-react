@@ -43,7 +43,7 @@ const reviews = [
 
 const ReviewCard = ({ review }) => (
   <div className={styles.reviewCard}>
-    <img src={review.image} alt={review.author} />
+    <img src={review.image} alt="review image" />
     <p className={styles.reviewText}>"{review.text}"</p>
     <p className={styles.reviewText1}>- {review.author}</p>
   </div>

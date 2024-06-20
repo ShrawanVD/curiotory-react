@@ -58,7 +58,7 @@ function Newnavbar() {
           </button>
         </header>
         <div className={newnavv.imgline}>
-          <img src="/navbar/navbarLine.png" alt="" />
+          <img src="/navbar/navbarLine.png" alt="curiotory color line" />
         </div>
         <div
           className={`${newnavv.navList} ${sideNavOpen ? newnavv.showNav : ""}`}

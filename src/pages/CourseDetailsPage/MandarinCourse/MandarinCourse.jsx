@@ -804,6 +804,7 @@ const MandarinCourse = () => {
                 }}
                 variant="top"
                 src="/Company/alibaba.png"
+                alt="company logo"
                 // Alibaba group
               />
               <hr
@@ -843,6 +844,7 @@ const MandarinCourse = () => {
                 }}
                 variant="top"
                 src="/Company/huawei.png"
+                alt="company logo"
                 // Huawei
               />
               <hr
@@ -892,6 +894,7 @@ const MandarinCourse = () => {
                 }}
                 variant="top"
                 src="/Company/pubg.png"
+                alt="company logo"
                 // Tencent Holdings
               />
               <hr
@@ -933,6 +936,7 @@ const MandarinCourse = () => {
                 }}
                 variant="top"
                 src="/Company/bkc.png"
+                alt="company logo"
                 // Bank of China
               />
               <hr
@@ -1012,6 +1016,7 @@ const MandarinCourse = () => {
                 }}
                 variant="top"
                 src="/Company/byd.png"
+                alt="company logo"
                 // BYD Company Limited
               />
               <hr

@@ -127,7 +127,7 @@ function Becometutor() {
               loading="lazy"
               decoding="async"
               src="/become tutor/section 1 image.svg"
-              alt=""
+              alt="become tutor icon"
             />
           </div>
         </div>
@@ -136,7 +136,7 @@ function Becometutor() {
 
         <div className="second-section-become-tutor">
           <div className="left-side">
-            <img src="/become tutor/section 2 image.svg" alt="" />
+            <img src="/become tutor/section 2 image.svg" alt="become tutor right img" />
           </div>
 
           <div className="right-side">
@@ -183,7 +183,7 @@ function Becometutor() {
               width="463"
               height="611"
               src="/become tutor/section 3 image.svg"
-              alt=""
+              alt="right become tutor"
             />
           </div>
         </div>
@@ -195,7 +195,7 @@ function Becometutor() {
           style={{ marginTop: "5%" }}
         >
           <div className="left-side">
-            <img src="/become tutor/section 4 image.svg" alt="" />
+            <img src="/become tutor/section 4 image.svg" alt="become tutor" />
           </div>
 
           <div className="right-side">
@@ -233,7 +233,7 @@ function Becometutor() {
             <div className="left-side-img">
               <img
                 src="/become tutor/why become tutor with us - image.png"
-                alt=""
+                alt="why become tutor"
               />
             </div>
 

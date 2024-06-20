@@ -43,6 +43,7 @@ function Aboutus() {
         <div>
         <img
               src="/mascot/Trophy.gif"
+              alt="mascot trophy"
               className={Aboutuscss.mascotAbout}
               type="gif"
             />
@@ -157,7 +158,7 @@ function Aboutus() {
 
       <div className={Aboutuscss.originStorySection}>
         <div className={Aboutuscss.leftSide}>
-          <img src="/about us/origin.png" alt="" />
+          <img src="/about us/origin.png" alt="origin" />
         </div>
 
         <div className={Aboutuscss.rightSide}>
@@ -185,7 +186,7 @@ function Aboutus() {
 
         <div className={Aboutuscss.visionOfOurs}>
           <div className={Aboutuscss.leftSide}>
-            <img src="/about us/vision.png" alt="" />
+            <img src="/about us/vision.png" alt="vision" />
           </div>
 
           <div className={Aboutuscss.rightSide}>
@@ -226,7 +227,7 @@ function Aboutus() {
             width="463"
             height="611"
             src="/about us/mission.png"
-            alt=""
+            alt="mission"
           />
         </div>
       </div>
@@ -239,7 +240,7 @@ function Aboutus() {
         <div className={Aboutuscss.persons}>
           <div className={Aboutuscss.sheetalMam}>
             <div className={Aboutuscss.image}>
-              <img src="/about us/Sheetal-mam.jpeg" alt="" />
+              <img src="/about us/Sheetal-mam.jpeg" alt="sheetal" />
             </div>
             <div className={Aboutuscss.name}>
               <h1>
@@ -263,7 +264,7 @@ function Aboutus() {
 
           <div className={Aboutuscss.ramSir}>
             <div className={Aboutuscss.image}>
-              <img src="/about us/Ram-sir.jpg" alt="" />
+              <img src="/about us/Ram-sir.jpg" alt="Ram" />
             </div>
             <div className={Aboutuscss.name}>
               <h1>

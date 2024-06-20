@@ -554,6 +554,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/delloite.png"
+                alt="company logo"
                 // Deloitte
               />
               <hr
@@ -594,6 +595,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/boeing.png"
+                alt="company logo"
                 // Boeing
               />
               <hr
@@ -643,6 +645,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/pg.png"
+                alt="company logo"
                 // Procter & Gamble
               />
               <hr
@@ -684,6 +687,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/hilton.png"
+                alt="company logo"
                 // Hilton Worldwide
               />
               <hr
@@ -724,6 +728,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/pf.jpeg"
+                alt="company logo"
                 // Pfizer
               />
               <hr
@@ -764,6 +769,7 @@ const SpanishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/ge.png"
+                alt="company logo"
                 // General Electric (GE) 
               />
               <hr

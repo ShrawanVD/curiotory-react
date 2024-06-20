@@ -349,7 +349,7 @@ function CheckoutPg() {
               <img
                 className={pay.images}
                 src="https://academy.dhruvrathee.com/_next/static/media/payment-sprite.82bf98c6.svg"
-                alt=""
+                alt="pay image "
               />
             </div>
           </div>

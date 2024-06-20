@@ -805,6 +805,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/samsung.png"
+                alt="company logo"
                 // samsung electronics
               />
               <hr
@@ -845,6 +846,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/lg.png"
+                alt="company logo"
                 // LG
               />
               <hr
@@ -894,6 +896,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/hyundai.png"
+                alt="company logo"
                 // Hyundai
               />
               <hr
@@ -935,6 +938,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/sk.png"
+                alt="company logo"
                 // SK Group
               />
               <hr
@@ -975,6 +979,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/cj.jpeg"
+                alt="company logo"
                 // src="/Company/cj.png"
                 // CJ corporation
               />
@@ -1016,6 +1021,7 @@ const KoreanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/kia.png"
+                alt="company logo"
                 // Kia corporation
               />
               <hr

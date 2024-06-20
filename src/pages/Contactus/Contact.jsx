@@ -54,6 +54,7 @@ function Contact() {
             width="auto"
             height="180px"
             src="/mascot/CapLift_crop.gif"
+            alt="mascot"
           />
           <h1>Contact Us</h1>
           <p>

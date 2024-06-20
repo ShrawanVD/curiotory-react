@@ -1,4 +1,4 @@
-// import Footer from '../../components/Footer/Footer';
+Download// import Footer from '../../components/Footer/Footer';
 // import Navv from '../../components/Navv/Navv';
 import './Download.css';
 import Newnavbar from "../../components/NewNavbar/Newnavbar";

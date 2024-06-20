@@ -828,6 +828,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/google.png"
+                alt="company logo"
                 // google
               />
               <hr
@@ -867,6 +868,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/microsoft.png"
+                alt="company logo"
                 // Microsoft
               />
               <hr
@@ -921,6 +923,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/ibm.png"
+                alt="company logo"
                 // IBM
               />
               <hr
@@ -961,6 +964,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/apple.png"
+                alt="company logo"
                 // Apple
               />
               <hr
@@ -1000,6 +1004,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/amazon.png"
+                alt="company logo"
                 // Amazon
               />
               <hr
@@ -1039,6 +1044,7 @@ const EnglishCourse = () => {
                 }}
                 variant="top"
                 src="/Company/meta.png"
+                alt="company logo"
                 // Facebook
               />
               <hr

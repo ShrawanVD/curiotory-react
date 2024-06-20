@@ -617,6 +617,7 @@ const GermanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/lufth.png"
+                alt="company logo"
                 // Lufthansa Group
               />
               <hr
@@ -657,6 +658,7 @@ const GermanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/siemens.png"
+                alt="company logo"
                 // Siemens AG 
               />
               <hr
@@ -706,6 +708,7 @@ const GermanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/basf.png"
+                alt="company logo"
                 // BASF SE
               />
               <hr
@@ -747,6 +750,7 @@ const GermanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/volk.png"
+                alt="company logo"
                 // Volkswagen Group
               />
               <hr
@@ -827,6 +831,7 @@ const GermanCourse = () => {
                 }}
                 variant="top"
                 src="/Company/bmw.png"
+                alt="company logo"
                 // BMW Group
               />
               <hr

@@ -612,6 +612,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/google.png"
+                alt="company logo"
                 // google
               />
               <hr
@@ -652,6 +653,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/sony.png"
+                alt="company logo"
                 // sony
               />
               <hr
@@ -700,6 +702,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/raku.png"
+                alt="company logo"
                 // Rakuten
               />
               <hr
@@ -741,6 +744,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/honda.png"
+                alt="company logo"
                 // Honda
               />
               <hr
@@ -781,6 +785,7 @@ const JapaneseCourse = () => {
                 }}
                 variant="top"
                 src="/Company/amazon.png"
+                alt="company logo"
                 // Amazon
               />
               <hr

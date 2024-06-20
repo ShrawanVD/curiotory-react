@@ -87,7 +87,6 @@ function Newcover() {
           </div>
         </div>
       )}
-
       {showDiv2 && (
         <div>
           <div className={newcover.coverContainer}>
@@ -100,8 +99,6 @@ function Newcover() {
                 </LazyLoad>
               </div>
               <h1>An Online Language Learning Platform</h1>
-              {/* <h2>Master any language, anytime, anywhere</h2> 
-              <h4>Start Your Language Journey Today!</h4>*/}
               <h2>
                 Curious about learning new languages? Transform it into a
                 life-changing opportunity.
@@ -123,29 +120,31 @@ function Newcover() {
           <Courselist />
 
           {/* lottie player animation */}
-          <div className={newcover.lottie}>
-            <LazyLoad
-              height={200}
-              offset={100}
-              className={newcover.lottieSection}
-            >
-              <Player
-                autoplay
-                loop
-                src="/lottiePlayer/proFinal.json"
-                className={newcover.iframeLottie}
-              />
-            </LazyLoad>
-          </div>
-          <div className={newcover.downloadButton}>
-            <div className={newcover.coverpageButton}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+          <div>
+            <div className={newcover.lottie}>
+              <LazyLoad
+                height={200}
+                offset={100}
+                className={newcover.lottieSection}
               >
-                <button>Download the app</button>
-              </a>
+                <Player
+                  autoplay
+                  loop
+                  src="/lottiePlayer/proFinal.json"
+                  className={newcover.iframeLottie}
+                />
+              </LazyLoad>
+            </div>
+            <div className={newcover.downloadButton}>
+              <div className={newcover.coverpageButton}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                >
+                  <button>Download the app</button>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -396,7 +395,7 @@ function Newcover() {
             <hr />
             <div className="container1">
               <div className="container-cards">
-                <LazyLoad  offset={100}>
+                <LazyLoad offset={100}>
                   <img
                     width="97"
                     height="74"
@@ -467,7 +466,7 @@ function Newcover() {
                     alt="Self-Confidence Boost"
                   />
                 </LazyLoad>
-                
+
                 <h3>Self-Confidence Boost</h3>
                 <p>
                   Amplify your confidence levels to easily maximize strengths
@@ -589,7 +588,7 @@ function Newcover() {
               <div className="stand-out-container">
                 <div className="stand-out-card borderone">
                   <div className="stand-out-left-part">
-                    <h2>Learning from the best</h2>
+                    <h3>Learning from the best</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -600,7 +599,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Customize as per your goals</h2>
+                    <h3>Customize as per your goals</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -612,7 +611,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Continuous improvement</h2>
+                    <h3>Continuous improvement</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -624,7 +623,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Everything’s user-friendly</h2>
+                    <h3>Everything’s user-friendly</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -636,7 +635,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
-                    <h2>Been there, done that</h2>
+                    <h3>Been there, done that</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -647,7 +646,7 @@ function Newcover() {
                 </div>
                 <div className="stand-out-card borderlast">
                   <div className="stand-out-left-part">
-                    <h2>Meaningful preparation</h2>
+                    <h3>Meaningful preparation</h3>
                   </div>
                   <div className="stand-out-right-part">
                     <p>
@@ -783,7 +782,7 @@ function Newcover() {
 
           <div className="review-swiper-css">
             <div className="stand-out-text">
-              <h2>What Learner&apos;s say!</h2>
+              <h4>What Learner&apos;s say!</h4>
             </div>
             <Swiper
               // install Swiper modules
@@ -906,7 +905,7 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h2 className="faq-heading">Frequently Asked Questions</h2>
+              <h4 className="faq-heading">Frequently Asked Questions</h4>
             </div>
             <div className="body-faq">
               <div className="image-container">
