@@ -93,7 +93,7 @@ function Careers() {
       language: "Nepali",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "4.5 LPA",
+      salary: "4.2 LPA",
       duration: "3 Months",
     },
     {
@@ -102,7 +102,7 @@ function Careers() {
       language: "Tamil",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "4.5 LPA",
+      salary: "4.2 LPA",
       duration: "3 Months",
     },
     {
@@ -111,7 +111,7 @@ function Careers() {
       language: "Hindi",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "4.5 LPA",
+      salary: "4.2 LPA",
       duration: "3 Months",
     },
     {
@@ -120,7 +120,7 @@ function Careers() {
       language: "Bengali",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "4.5 LPA",
+      salary: "4.2 LPA",
       duration: "3 Months",
     },
     {
@@ -129,7 +129,7 @@ function Careers() {
       language: "Urdu",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
-      salary: "4.5 LPA",
+      salary: "4.2 LPA",
       duration: "3 Months",
     },
   ];

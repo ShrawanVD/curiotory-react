@@ -603,13 +603,13 @@
 }
 
 .why-with-us .right-side-info li::before {
-  content: "\2605"; /* Unicode character for a star */
-  color: #ffd700; /* Yellow color for the star */
+  content: "\2605";
+  color: #ffd700;
   font-size: 1.5em;
   position: absolute;
-  left: -1.5em; /* to align it to right side and not to collide with the info */
-  top: 50%; /* to make it in same line and not upwards */
-  transform: translateY(-50%); /* to make it in same line and not downwards */
+  left: -1.5em;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* media queries for responsiveness */
@@ -872,14 +872,7 @@
   font-size: 16px;
   font-weight: 400;
   padding: 0rem 1rem 0rem;
-  /* font-size: ; */
 }
-
-/* .flexcardText {
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    font-weight: 300;
-  } */
 
 .flexcardNumber:before {
   content: "";
@@ -890,9 +883,7 @@
   top: 0px;
   border-radius: 50px 0px 0px 50px;
   z-index: -1;
-  /* background: #95B7A2; */ /* background: -webkit-linear-gradient(bottom, #95B7A2, #AED2BC); */
   background: -moz-linear-gradient(bottom, #95b7a2, #aed2bc);
-  /* background: linear-gradient(to top, #95B7A2, #AED2BC); */
 }
 
 .flexcardNumber:after {
@@ -916,29 +907,6 @@
 img.flexcardimgItem {
   width: 50%;
 }
-
-/* GREEN CARD */
-
-/* .flexcardGreen {
-    background: #f9fbfa;
-    box-shadow: 4px 4px 4px #AED2BC;
-  }
-  
-  .flexcardNumberGreen {
-    background: #FCFCFC;
-    background: -webkit-linear-gradient(right, #FCFCFC, #AED2BC);
-    background: -moz-linear-gradient(right, #FCFCFC, #AED2BC);
-    background: linear-gradient(to left, #FCFCFC, #AED2BC);
-    box-shadow: 0px 2px 2px #AED2BC;
-  }
-  
-  .flexcardNumberGreen:before {
-    background: #AED2BC;
-  }
-  
-  .flexcardNumberGreen:after {
-    background: #95b7a2;
-  } */
 
 /* BLUE CARD */
 
@@ -984,63 +952,6 @@ img.flexcardimgItem {
     height: 160px;
   }
 }
-
-/* ORANGE CARD */
-
-/* .flexcardOrange {
-    background: #fdf8f3;
-   box-shadow: 4px -2px 1px #F68404;
-  }
-  
-  .flexcardNumberOrange {
-    background: #FDFFFE;
-    background: -webkit-linear-gradient(right, #FDFFFE, #F68404);
-    background: -moz-linear-gradient(right, #FDFFFE, #F68404);
-    background: linear-gradient(to left, #FDFFFE, #F68404);
-    box-shadow: 0px 2px 2px #F68404;
-  }
-  
-  .flexcardNumberOrange:before {
-    background: #F68404;
-  }
-  
-  .flexcardNumberOrange:after {
-    background: #d06f02;
-  } */
-
-/* PİNK CARD */
-
-/* .flexcardPink {
-    background: #fffafd;
-    position: relative;
-      box-shadow: 2px 2px 1px #F34EAE ;
-      border-radius: 20px 20px 0px 20px;
-  }
-  .flexcardPink:before {
-      content: '';
-      width: 0px;
-      height: 50px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-left: 100px solid transparent;
-      border-bottom: 90px solid #F34EAE;
-  }
-  .flexcardNumberPink {
-    background: #FDFFFE;
-    background: -webkit-linear-gradient(right, #FDFFFE, #F34EAE);
-    background: -moz-linear-gradient(right, #FDFFFE, #F34EAE);
-    background: linear-gradient(to left, #FDFFFE, #F34EAE);
-    box-shadow: 0px 2px 2px #F34EAE;
-  }
-  
-  .flexcardNumberPink:before {
-    background: #F34EAE;
-  }
-  
-  .flexcardNumberPink:after {
-    background: #d24095;
-  } */
 
 /* RESPONSİVE */
 

@@ -20,29 +20,29 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:
@@ -53,7 +53,7 @@ const openings = [
     title: "Nepali Language Interpreter",
     language: "Nepali",
     startDate: "Immediately",
-    salary: "4.5 LPA",
+    salary: "4.2 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -65,29 +65,29 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:
@@ -98,7 +98,7 @@ const openings = [
     title: "Tamil Language Interpreter",
     language: "Tamil",
     startDate: "Immediately",
-    salary: "4.5 LPA",
+    salary: "4.2 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -110,41 +110,41 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
-  
+
   {
     id: 4,
     title: "Hindi Language Interpreter",
     language: "Hindi",
     startDate: "Immediately",
-    salary: "4.5 LPA",
+    salary: "4.2 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -156,29 +156,29 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:
@@ -189,7 +189,7 @@ const openings = [
     title: "Bengali Language Interpreter",
     language: "Bengali",
     startDate: "Immediately",
-    salary: "4.5 LPA",
+    salary: "4.2 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -201,29 +201,29 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:
@@ -234,7 +234,7 @@ const openings = [
     title: "Urdu Language Interpreter",
     language: "Urdu",
     startDate: "Immediately",
-    salary: "4.5 LPA",
+    salary: "4.2 LPA",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -246,29 +246,29 @@ const openings = [
     //   "Operations",
     //   "Sales",
     // ],
-    responsibilities:[
+    responsibilities: [
       "Conduct voice and video calls with clients and customers in the specified languages.",
       "Collect the company-provided system from the Gurugram office.",
       "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months."
+      "Use personal phones to take calls for the initial 4 to 5 months.",
     ],
-    process:[
+    process: [
       "English AMCAT",
       "Language Proficiency Test",
       "HR Round",
-      "Operational Round"
+      "Operational Round",
     ],
-    requirements:[
+    requirements: [
       "Comfortable with voice and video calls.",
       "Ability to work in 24/7 rotational shifts.",
       "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment."
+      "Commitment to undergo training and pass the assessment.",
     ],
-    training:[
+    training: [
       "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment."
+      "Certification upon successful completion of training and assessment.",
     ],
-    additionalInfo:[
+    additionalInfo: [
       "Candidates will collect the company-provided system from the Gurugram office.",
     ],
     whoCanApply:

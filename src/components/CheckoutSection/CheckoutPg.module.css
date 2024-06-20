@@ -218,50 +218,6 @@ small li ul {
   flex-direction: row;
 }
  
-/* Responsive styles */
-/* @media screen and (min-width: 1000px) {
-  .mobile {
-    display: none;
-  }
-}
- 
-@media screen and (max-width: 1200px) {
-  .leftpg {
-    width: 70%;
-    margin-left: -9rem;
-  }
- 
-  .rightpg {
-    width: 55%;
-  }
- 
-  .master_container {
-    width: 100%;
-  }
-}
- 
-@media screen and (max-width: 1000px) {
-  .leftpg {
-    width: 100%;
-    margin-left: -14rem;
-  }
- 
-  .course_details {
-    width: 100%;
-    margin-right: -14rem;
-  }
- 
-  .rightpg {
-    display: none;
-  }
- 
-  .rightpg.visible {
-    display: flex;
-  }
-} */
- 
-/* Responsive styles */
- 
 @media screen and (max-width: 1200px) {
   .leftpg {
     width: 70%;

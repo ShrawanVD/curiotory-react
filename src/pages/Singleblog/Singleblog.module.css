@@ -15,12 +15,10 @@
     margin-bottom: 20px; 
     border-radius: 15px;
     transition: transform 0.3s ease;
-    /* box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2) */
 }
 
 .header img:hover {
     cursor: pointer;
-	/* box-shadow: 0 0 15px 1px black; */
 }
 
 .blog-post {
@@ -28,13 +26,10 @@
     margin-bottom: 5rem;
     padding: 20px;
     border-radius: 10px;
-    /* border: 1px solid black; */
-    /* box-shadow: 20px 20px 25px 0 rgba(0, 0, 0, 0.2) */
 }
 
 .blog-post:hover{
     cursor: pointer;
-	/* box-shadow: 0 0 15px 1px black; */
 }
 
 .blog-post h1 {
@@ -149,8 +144,6 @@ or somewhere kind off and only the title of htis
   border: 1px solid black;
 }
 .blogCard h1 {
-  /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Lobster", sans-serif; */
   font-family: "Lora", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -164,10 +157,6 @@ or somewhere kind off and only the title of htis
   text-align: justify;
   font-family: "Poppins", sans-serif;
 }
-/* .blogCard h3 {
-  text-align: justify;
-  font-family: "Poppins", sans-serif;
-} */
 .blogDate{
   font-family: "Lobster", sans-serif;
   font-weight: 300;

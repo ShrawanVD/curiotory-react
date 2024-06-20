@@ -114,42 +114,9 @@
   }
 }
 @media screen and (max-width: 1250px) {
-  /* .iframeLottie {
-    width: 1000px;
-  } */
 }
-/* @media screen and (max-width: 1000px) {
-  .iframeLottie {
-    width: 700px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .lottieSection {
-    margin: 0rem;
-  }
-  .iframeLottie {
-    width: 500px;
-    height: 340px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .iframeLottie {
-    width: 400px;
-    height: 300px;
-  }
-} */
 @media screen and (max-width: 400px) {
-  /* .iframeLottie {
-    width: 380px;
-    height: 300px;
-  } */
 }
-/* @media screen and (max-width: 380px) {
-  .iframeLottie {
-    width: 350px;
-    height: 300px;
-  }
-} */
 .downloadButton{
   margin-top: -3rem;
  text-align: center;
@@ -167,7 +134,6 @@
   font-family: Raleway, Arial, sans-serif;
 }
 .solheader {
-  /* font-size: 25px; */
   margin-bottom: 2.5rem;
 }
 

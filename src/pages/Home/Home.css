@@ -75,24 +75,16 @@
 /* Base styles for desktop */
 .cover-page {
   padding: 1rem 11rem 0rem;
-  /* padding: 0rem 11rem; */
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-color: #ebf8fc !important; */
-  /* background: linear-gradient(180deg, #4186ef 19%, #16efe1 132%); */
-  /* background: linear-gradient(180deg, #5597f9 19%, #68e1d9 132%); */
   background: #89CFF0;
 }
-/* #ebf8fc- color mascot backgorund */
 .cover-page h1 {
-  /* color: #2f327d; */
   color: #2F327C;
-  /* color:#f1f1f1; */
-  /* font-family: "Nunito Sans", sans-serif; */
   font-size: 68px;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 800;
@@ -108,33 +100,24 @@
 
 .cover-page .coverpage-para p {
   text-align: center;
-  /* color: #0a0a0a; */
   color: white;
-  /* font-family: "Poppins", sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
-  /* margin-top: 20px; */
-  /* background-color: #ebf8fc !important; */
   background-color: transparent;
 }
 
 .cover-page .coverpage-button button {
-  /* font-family: "Poppins", sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   line-height: 30px;
   border-radius: 40px 40px 40px 40px;
-  /* background-color: white; */
-  /* box-shadow: -3px 0px 23px 0px
-    rgba(2.9999999999999893, 103.99999999999986, 255, 0.5); */
   padding: 12px 26px;
   border: none;
   cursor: pointer;
-  /* color: #0368ff; */
   background-color: white;
     color: #2F327C;
   margin-bottom: 40px;
@@ -143,7 +126,6 @@
 }
 .cover-page .coverpage-button button:hover {
   background-color: #2F327C;
-  /* background: linear-gradient(to right, #4285f4, #b574df, #ef66b5, #ff6b83, #ff8557, #ff8c45, #ff952f, #fd9f09, #fc8916, #f87322, #f25b2c, #ea4335); */
   color: white;
   font-weight: bold;
   transition: 0.3s ease-in-out;
@@ -153,7 +135,6 @@
 @media only screen and (max-width: 1024px) {
   .cover-page {
     padding: 6rem 4rem;
-    /* padding: 0rem 4rem; */
   }
   .mascot-cover img {
     margin-bottom: 2rem;
@@ -199,11 +180,7 @@
 }
 
 /* ----sliding section------ */
-/* .sliding-section {
-  background-color: white;
-  margin: 0rem 0rem 0rem;
-  padding: 0rem 0rem 2rem;
-} */
+
 .sliding-section-heading {
   text-align: center;
 }
@@ -534,7 +511,6 @@
 
 /* learn foreign language section starts */
 .learn-foriegn-lang-section {
-  /* background-color: white; */
   padding: 2rem 10rem;
 }
 .learn-foriegn-lang-section .learn-foriegn-lang {
@@ -545,7 +521,6 @@
   border-radius: 40px;
 }
 .learn-foriegn-lang-section .learn-foriegn-lang-container {
-  /* background-color: white; */
   background-color: transparent;
 }
 .learn-foriegn-lang-heading {
@@ -824,7 +799,6 @@
 }
 .foreign-lang-sub-contianer p {
   font-size: 20px;
-  /* font-family: "Poppins", Sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   line-height: 32px;
@@ -996,111 +970,6 @@
   }
 }
 
-/* why we stand out section */
-/* .stand-out-section {
-  background: linear-gradient(180deg, #0e6af5 19%, #0ceadc 132%);
-  display: flex;
-  padding: 6rem 1rem;
-}
-.stand-out-left-section {
-  flex: 30%;
-  align-items: center;
-  text-align: center;
-}
-.stand-out-card {
-  background-color: white;
-}
-.stand-out-text h1 {
-  color: #ffffff;
-  font-family: "Nunito Sans", Sans-serif;
-  font-size: 68px;
-  font-weight: 700;
-  line-height: 81.6px;
-}
-
-.stand-out-right-section {
-  flex: 55%;
-  margin-right: 30px;
-}
-.stand-out-card {
-  display: flex;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  padding: 1rem 1rem;
-  justify-content: space-around;
-}
-.stand-out-left-part {
-  padding-right: 20px;
-  background-color: white;
-  flex: 30%;
-}
-.stand-out-left-part h1 {
-  text-align: left;
-  color: #2f327d;
-  font-family: "Poppins", Sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 26.4px;
-}
-.stand-out-right-part {
-  margin-left: 10px;
-  flex: 70%;
-  background-color: white;
-}
-.stand-out-right-part p {
-  text-align: left;
-  color: #464646;
-  font-family: "Poppins", Sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 26px;
-  flex: 60%;
-}
-@media screen and (max-width: 854px) {
-  .stand-out-section {
-    padding: 1rem 0rem;
-  }
-  .stand-out-text h1 {
-    font-size: 48px;
-    line-height: 78px;
-  }
-  .stand-out-images {
-    padding: 8rem 0rem 0rem;
-  }
-  .stand-out-images img {
-    width: 200px;
-    height: 400px;
-  }
-  .stand-out-left-part h1 {
-    font-size: 18px;
-  }
-  .stand-out-right-part p {
-    font-size: 15px;
-    line-height: 24px;
-  }
-  .stand-out-card {
-    margin-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .stand-out-section {
-    padding: 1rem 1rem;
-    flex-direction: column;
-  }
-  .stand-out-images {
-    display: none;
-  }
-  .stand-out-left-part h1 {
-    font-size: 16px;
-  }
-  .stand-out-right-section {
-    margin-right: 0px;
-  }
-  .stand-out-right-part p {
-    font-size: 14px;
-  }
-} */
 
 /* ---------------------------------- */
 /* why we stand out section */
@@ -1194,9 +1063,6 @@
     hyphens: auto;
     text-justify: inter-word;
   }
-  /* .stand-out-card {
-    margin-bottom: 1rem;
-  } */
 }
 
 @media screen and (max-width: 450px) {
@@ -1246,10 +1112,6 @@
   background-color: white;
 }
 .foreign-lang-border {
-  /* background-image: url('../images/mascot/10mascotimg.png');
-    background-size:contain;
-    background-repeat: no-repeat; */
-  /* justify-content: center; */
   margin: 10rem 10rem;
   padding: 7rem 7rem;
   border: 1px solid #0368ff;

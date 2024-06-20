@@ -1,16 +1,12 @@
 * {
   margin: 0%;
   padding: 0%;
-  /* background-color: #EBFAFF !important; */
 }
 
 /* ------- teachers data section------- */
 
 
 /* --------------------------------------------- */
-/* .containerFluid {
-  background-color: whitesmoke
-} */
 .containerFluid .leftSection {
   flex: 60%;
   padding: 6rem 1rem 1rem;
@@ -80,11 +76,9 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-evenly;
-  /* align-items: flex-start; */
   padding: 10px 2rem;
   margin-bottom: 2rem;
   border-radius: 20px;
-  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -92,16 +86,11 @@
   display: flex;
   flex: 1;
   align-items: center;
-  /* border:3px solid #3f51b5; */
   justify-content: space-around;
   gap: 10px;
   height: 20rem;
   border-radius: 15px;
   padding: 1rem 0.9rem;
-  /* background-color: #ebfaff; */
-  /* background-color: rgb(241, 241, 241); */
-  /* box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.5); */
-  /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; */
 }
 .photoInfo img {
   height: 80%;
@@ -117,7 +106,6 @@
   line-height: 2.5rem;
 }
 .infoText h2 {
-  /* font-family: "Nunito Sans", Sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   color: rgb(150, 53, 53);
