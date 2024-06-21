@@ -221,9 +221,6 @@ const SpanishCurr = () => (
     {/* heading */}
     <div className={styles.head}>
       <h3
-        style={{
-          textDecoration: "underline",
-        }}
       >
         Curriculum
       </h3>

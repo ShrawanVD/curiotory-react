@@ -8,7 +8,9 @@
   margin: 0 auto;
   padding: 1rem 1.3rem 0;
 }
-
+.head h3{
+  text-decoration: underline;
+}
 .head h3,
 .head a button {
   font-family: "Raleway";
@@ -88,9 +90,17 @@
   font-family: "Raleway";
   font-weight: 500;
 }
-
+.title span{
+  color: #EF4B2B;
+}
+.nlistcolor{
+  color: #F4AD28;
+}
 .keySkills {
   color: #f4ad28;
+}
+.hrlinecss{
+  border: 1px solid #F4AD28;
 }
 
 /* text in between */

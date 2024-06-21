@@ -7,16 +7,16 @@ const ProficiencyCardKorean = ({ level, lng, modules }) => (
     {/* first card */}
     <div className={styles.header}>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>TOPIK: </span>
+        <span >TOPIK: </span>
         The Test of Proficiency in Korean
       </p>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>Purpose:</span> Standardizes
+        <span >Purpose:</span> Standardizes
         description of {lng} language proficiency
       </p>
       <p className={styles.title}>
         A total of <strong>six levels</strong> being{" "}
-        <strong style={{ color: "#F4AD28" }}>TOPIK 1, TOPIK 2, TOPIK 3, TOPIK 4, TOPIK 5, TOPIK 6</strong>
+        <strong className={styles.nlistcolor}>TOPIK 1, TOPIK 2, TOPIK 3, TOPIK 4, TOPIK 5, TOPIK 6</strong>
         , with TOPIK 1 being the beginner level and TOPIK 6 the most advanced.
       </p>
       <p className={styles.title}>
@@ -47,7 +47,7 @@ const ProficiencyCardKorean = ({ level, lng, modules }) => (
 
           {/* title */}
           <h4>{module.title}</h4>
-          <hr style={{ borderBottom: "1px solid #F4AD28" }} />
+          <hr className={styles.hrlinecss} />
 
           {/* units - content */}
           {module.content.map((item, idx) => (

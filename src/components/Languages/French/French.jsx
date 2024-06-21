@@ -303,12 +303,12 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Cultural Riches:</strong>{" "}
+                  <strong >Cultural Riches:</strong>{" "}
                   Learning French opens doors to France&apos;s rich culture,
                   literature, and arts.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Global Opportunities:
                   </strong>{" "}
                   French is spoken in many countries, enhancing career prospects
@@ -333,12 +333,12 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Travel Ease:</strong>{" "}
+                  <strong >Travel Ease:</strong>{" "}
                   Navigate through French-speaking regions with confidence,
                   making travel more enjoyable.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Intellectual Stimulation:
                   </strong>{" "}
                   Mastering a new language sharpens cognitive skills and boosts
@@ -358,14 +358,14 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Language of Diplomacy:
                   </strong>{" "}
                   French, pivotal in global diplomacy, offers a unique edge in
                   diverse professions.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Historical Legacy:
                   </strong>{" "}
                   French, rooted in Latin, unveils centuries of European

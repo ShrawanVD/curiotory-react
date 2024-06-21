@@ -14,7 +14,6 @@ function Becometutor() {
           <div className="enroll-title">
             <h1
               className="text-center pl-3 pr-3 display-4 font-weight-bold"
-              style={{ color: "#2f327d" }}
             >
               How we enroll private tutors?
             </h1>
@@ -158,7 +157,7 @@ function Becometutor() {
 
         {/* <!-- third section - same as the first section --> */}
 
-        <div className="third-section" style={{ marginBottom: "0%" }}>
+        <div className="third-section" >
           <div className="left-side">
             <div className="left-main-heading">
               <h2>
@@ -191,8 +190,7 @@ function Becometutor() {
         {/* <!-- fourth section same as the second section --> */}
 
         <div
-          className="second-section-become-tutor"
-          style={{ marginTop: "5%" }}
+          className="second-section-become-tutor secondsectioncss"
         >
           <div className="left-side">
             <img src="/become tutor/section 4 image.svg" alt="become tutor" />
@@ -223,7 +221,7 @@ function Becometutor() {
           <div className="heading">
             <h1
               className="text-center pl-3 pr-3 display-4 font-weight-bold"
-              style={{ color: "#2f327d" }}
+              
             >
               Why become a private tutor with us?
             </h1>

@@ -179,7 +179,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence : </span>
+                <span >Global Influence : </span>
                 English is one of the most widely spoken languages globally,
                 with over 1.5 billion speakers worldwide. Learning English opens
                 doors to communication with people from diverse linguistic
@@ -193,7 +193,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Business and Communication : </span>
                 English is the international language of business, science,
                 aviation, diplomacy, and tourism. Proficiency in English
@@ -208,7 +208,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Media and Entertainment : </span>
                 English-language media, including movies, music, and television
                 shows, dominate global entertainment. Learning English provides
@@ -223,7 +223,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Cultural and Literary Heritage : </span>
                 English literature has a rich tradition spanning from
                 Shakespeare to contemporary authors. Learning English allows for
@@ -238,7 +238,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Education and Academic Pursuits : </span>
                 Many of the world's top universities and research institutions
                 teach in English. Proficiency in English is essential for
@@ -313,11 +313,11 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Basic Communication : </strong>{" "}
+                  <strong >Basic Communication : </strong>{" "}
                   Learn essential vocabulary, greetings, and phrases for everyday interactions. Develop fundamental skills in listening, speaking, reading, and writing in English.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                   Cultural Understanding : </strong>{" "}
                   Gain insights into English-speaking cultures, traditions, and societal norms. Understand cultural nuances that shape interactions and daily life in English-speaking countries.
                 </p>
@@ -340,11 +340,11 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Professional Development : </strong>{" "}
+                  <strong >Professional Development : </strong>{" "}
                   Acquire language skills for professional contexts, including business meetings, presentations, and negotiations. Enhance career prospects in various industries and multinational companies where English is the primary language.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                   Literary Exploration : </strong>{" "}
                   Explore a wide range of English literature, from classic novels to contemporary poetry and drama. Analyze themes, characters, and literary techniques to deepen language proficiency and cultural understanding.
                 </p>
@@ -362,12 +362,12 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                   Advanced Language Proficiency : </strong>{" "}
                   Master complex grammar structures, idiomatic expressions, and rhetorical devices. Engage fluently in debates, discussions, and academic discourse on diverse topics in English.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                   Cross-Cultural Engagement : </strong>{" "}
                   Fully integrate into English-speaking communities by participating in cultural activities, volunteering, and networking. Develop meaningful connections and contribute to cross-cultural understanding and collaboration.
                 </p>

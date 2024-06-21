@@ -132,7 +132,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence : </span>
+                <span >Global Influence : </span>
                 Russian is one of the most widely spoken languages globally,
                 with over 260 million speakers across Russia, Belarus,
                 Kazakhstan, and other former Soviet states. Learning Russian
@@ -147,7 +147,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
+                <span >Travel and Tourism : </span>
                 Russia, with its vast landscapes, historical cities like Moscow
                 and St. Petersburg, and unique cultural heritage, attracts
                 millions of tourists annually. Knowing Russian enriches travel
@@ -161,7 +161,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Richness : </span>
+                <span >Cultural Richness : </span>
                 Russian culture is renowned for its literature, including works
                 by Tolstoy, Dostoevsky, and Chekhov, as well as its
                 contributions to classical music, ballet, and cinema. Learning
@@ -176,7 +176,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Career Opportunities : </span>
                 Proficiency in Russian opens doors to diverse career paths,
                 especially in sectors such as diplomacy, international
@@ -191,7 +191,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Intellectual Challenge : </span>
                 Learning Russian offers intellectual stimulation through its
                 complex grammar, rich vocabulary, and Cyrillic script. Mastering
@@ -266,14 +266,14 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Basic Communication : </strong>
                   Learn essential vocabulary and phrases for daily interactions,
                   greetings, and introductions. Begin to understand Russian
                   pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cultural Understanding : </strong>
                   Explore Russian customs, traditions, and social etiquette.
                   Gain insights into Russian history, holidays, and cultural
@@ -298,7 +298,7 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Advantages : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and correspondence in
@@ -306,7 +306,7 @@ function Russian() {
                   corporations, NGOs, and governmental organizations.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Literary and Artistic Exploration : </strong>
                   Dive deeper into Russian literature, music, and arts. Read
                   iconic works in their original language, appreciate Russian
@@ -327,14 +327,14 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including verb aspects,
                   cases, and advanced vocabulary. Engage fluently in debates,
                   discussions, and presentations on diverse topics in Russian.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Global Perspective : </strong>
                   Gain a broader understanding of global issues from a Russian
                   perspective. Analyze political developments, economic trends,

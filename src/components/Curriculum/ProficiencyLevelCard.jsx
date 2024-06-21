@@ -7,16 +7,16 @@ const ProficiencyLevelCard = ({ level, lng, modules }) => (
     {/* first card */}
     <div className={styles.header}>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>CEFRL: </span>
+        <span >CEFRL: </span>
         Common European Framework of Reference for Languages
       </p>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>Purpose:</span> Standardizes
+        <span >Purpose:</span> Standardizes
         description of {lng} language proficiency
       </p>
       <p className={styles.title}>
         A total of <strong>six levels</strong> being{" "}
-        <strong style={{ color: "#F4AD28" }}>A1, A2, B1, B2, C1, and C2</strong>
+        <strong className={styles.nlistcolor}>A1, A2, B1, B2, C1, and C2</strong>
         , with A1 being the beginner level and C2 the most advanced.
       </p>
       <p className={styles.title}>
@@ -47,7 +47,7 @@ const ProficiencyLevelCard = ({ level, lng, modules }) => (
 
           {/* title */}
           <h4>{module.title}</h4>
-          <hr style={{ borderBottom: "1px solid #F4AD28" }} />
+          <hr className={styles.hrlinecss} />
 
           {/* units - content */}
           {module.content.map((item, idx) => (

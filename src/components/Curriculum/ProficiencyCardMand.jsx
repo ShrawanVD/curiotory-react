@@ -7,16 +7,16 @@ const ProficiencyCardMand = ({ level, lng, modules }) => (
     {/* first card */}
     <div className={styles.header}>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>HSK: </span>
+        <span >HSK: </span>
         The Hanyu Shuiping Kaoshi, translated as the Chinese Proficiency Test
       </p>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>Purpose:</span> Standardizes
+        <span >Purpose:</span> Standardizes
         description of {lng} language proficiency
       </p>
       <p className={styles.title}>
         A total of <strong>six levels</strong> being{" "}
-        <strong style={{ color: "#F4AD28" }}>HSK 1, HSK 2, HSK 3, HSK 4, HSK 5, HSK 6</strong>
+        <strong className={styles.nlistcolor}>HSK 1, HSK 2, HSK 3, HSK 4, HSK 5, HSK 6</strong>
         , with HSK 1 being the beginner level and HSK 6 the most advanced.
       </p>
       <p className={styles.title}>
@@ -47,7 +47,7 @@ const ProficiencyCardMand = ({ level, lng, modules }) => (
 
           {/* title */}
           <h4>{module.title}</h4>
-          <hr style={{ borderBottom: "1px solid #F4AD28" }} />
+          <hr className={styles.hrlinecss} />
 
           {/* units - content */}
           {module.content.map((item, idx) => (

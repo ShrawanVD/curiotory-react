@@ -251,11 +251,17 @@
   .learnFrenchReason {
     flex: 1 1 calc(50% - 20px);
   }
+  .learnFrenchReason span{
+    font-weight: bold;
+  }
   .benefitRight {
     flex: 1 1 calc(50% - 20px);
     /* border: 1px solid  black; */
     justify-content: center;
     margin-left: -10rem;
+  }
+  .benefitRight strong{
+    color: #EF4B2B;
   }
   .whyLearnFrenchLeft {
     flex: 75%;

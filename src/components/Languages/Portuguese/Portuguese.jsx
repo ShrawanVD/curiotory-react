@@ -189,7 +189,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Reach : </span>
+                <span >Global Reach : </span>
                 Portuguese is the sixth most spoken language in the world, with
                 over 260 million speakers across countries like Brazil,
                 Portugal, Mozambique, Angola, and more. Learning Portuguese
@@ -203,7 +203,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
+                <span >Travel and Tourism : </span>
                 Portugal and Brazil attract millions of tourists annually with
                 their stunning landscapes, vibrant cities, and UNESCO World
                 Heritage sites. Knowing Portuguese enriches travel experiences
@@ -217,7 +217,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Business Opportunities : </span>
                 Brazil, the largest Portuguese-speaking country, is a major
                 player in the global economy, particularly in agriculture,
@@ -233,7 +233,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Educational Opportunities : </span>
                 Portuguese is an official language of organizations like the
                 Community of Portuguese Language Countries (CPLP), offering
@@ -248,7 +248,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Enrichment : </span>
+                <span >Cultural Enrichment : </span>
                 Portuguese culture is rich in music (like bossa nova and fado),
                 literature (with writers like José Saramago and Machado de
                 Assis), and arts. Learning Portuguese allows for a deeper
@@ -322,14 +322,14 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Basic Communication : </strong>
                   Learn essential vocabulary and phrases for daily interactions,
                   greetings, and introductions. Begin to grasp Portuguese
                   pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
@@ -355,7 +355,7 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong>
                     Cultural Immersion : </strong>
                   Dive deeper into Portuguese-speaking cultures through
                   literature, music, and traditions. Explore Brazilian and
@@ -363,7 +363,7 @@ function Portuguese() {
                   into cultural norms and social dynamics.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Advantages : </strong>
                   Expand vocabulary and improve language proficiency for
                   professional contexts. Enhance communication skills for
@@ -384,7 +384,7 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong>
                     Advanced Language Skills : </strong>
                   Master complex grammar structures, including verb
                   conjugations, subjunctive mood, and conditional sentences.
@@ -392,7 +392,7 @@ function Portuguese() {
                   Portuguese on diverse topics.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Academic and Research Opportunities : </strong>
                   Gain proficiency to study or conduct research in
                   Portuguese-speaking countries. Access academic resources,

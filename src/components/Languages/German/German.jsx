@@ -190,7 +190,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Business Opportunities : </span>{" "}
                 German is the most widely spoken native language in Europe and
                 the official language of Germany, Austria, Switzerland, and
@@ -205,7 +205,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>{" "}
+                <span >Travel and Tourism : </span>{" "}
                 Germany attracts millions of tourists each year with its vibrant
                 cities, picturesque landscapes, and historical landmarks.
                 Knowing German enhances your travel experience, enabling deeper
@@ -220,7 +220,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Enrichment : </span>{" "}
+                <span >Cultural Enrichment : </span>{" "}
                 German is the language of great classical composers like Bach,
                 Beethoven, and Brahms, as well as philosophers such as Kant,
                 Nietzsche, and Hegel. Learning German allows access to a rich
@@ -235,7 +235,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Education and Research : </span>{" "}
                 Germany is renowned for its higher education institutions and
                 offers numerous scholarships to international students.
@@ -251,7 +251,7 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Career Advantages : </span>{" "}
+                <span>Career Advantages : </span>{" "}
                 Proficiency in German can boost your career prospects,
                 especially in industries such as automotive engineering,
                 renewable energy, and technology where German companies play a
@@ -327,7 +327,7 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Gateway to Europe : </strong>{" "}
                   German is not only spoken in Germany but also in Austria,
                   Switzerland, Luxembourg, and Liechtenstein. Learning German
@@ -335,7 +335,7 @@ const handleSubmit = async (e) => {
                   countries.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Language of Innovation : </strong>{" "}
                   Germany is a hub of technological innovation and research.
                   Learning German can provide access to cutting-edge
@@ -361,14 +361,14 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Academic Excellence : </strong>{" "}
                   Many academic journals and research publications are in
                   German. Proficiency in the language can open doors to
                   prestigious academic institutions and research opportunities.
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Career Opportunities : </strong>{" "}
                   German companies are leaders in global trade, especially in
                   engineering, automotive, and financial sectors. Proficiency in
@@ -389,14 +389,14 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>Cultural Depth : </strong>{" "}
+                  <strong >Cultural Depth : </strong>{" "}
                   German literature, philosophy, and arts have made significant
                   contributions to world culture. Fluency in German allows you
                   to appreciate original works and engage with profound
                   philosophical ideas
                 </p>
                 <p>
-                  <strong style={{ color: "#F4AD28" }}>
+                  <strong >
                     Global Influence : </strong>{" "}
                   Germany plays a pivotal role in European politics, economics,
                   and culture. Mastery of German enables you to understand and

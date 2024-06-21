@@ -187,7 +187,7 @@ function Spanish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Global Communication : </span>
                 Spanish is the second most spoken language in the world by
                 native speakers, with over 580 million speakers worldwide.
@@ -202,7 +202,7 @@ function Spanish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Travel and Tourism : </span>
+                <span >Travel and Tourism : </span>
                 Spanish is the official language of 21 countries, including
                 Spain, Mexico, Argentina, Colombia, and many others across Latin
                 America. Knowing Spanish enhances your travel experiences,
@@ -217,7 +217,7 @@ function Spanish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Enrichment : </span>
+                <span >Cultural Enrichment : </span>
                 Spanish culture is rich and diverse, encompassing literature,
                 music, art, cuisine, and traditions. Learning Spanish allows you
                 to explore and appreciate these cultural aspects firsthand, from
@@ -232,7 +232,7 @@ function Spanish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Career Opportunities : </span>
                 Spanish proficiency is increasingly valuable in many industries,
                 including business, healthcare, education, and international
@@ -248,7 +248,7 @@ function Spanish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Personal Growth : </span>
+                <span >Personal Growth : </span>
                 Learning Spanish is intellectually stimulating and boosts
                 cognitive abilities such as problem-solving and multitasking. It
                 also enhances cross-cultural understanding and empathy,
@@ -322,7 +322,7 @@ function Spanish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cultural Immersion : </strong>
                   Dive deeper into Spanish-speaking cultures through literature,
                   films, and music. Gain insights into cultural norms,
@@ -330,7 +330,7 @@ function Spanish() {
                   Spanish-speaking countries.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Advantages : </strong>
                   Expand vocabulary and improve fluency for professional
                   contexts. Enhance communication skills for business meetings,
@@ -355,7 +355,7 @@ function Spanish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Basic Communication : </strong>
                   Learn essential vocabulary and phrases for everyday
                   conversations, greetings, and introductions. Begin to
@@ -363,7 +363,7 @@ function Spanish() {
                   tense verbs.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
@@ -384,7 +384,7 @@ function Spanish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cultural Immersion : </strong>
                   Dive deeper into Spanish-speaking cultures through literature,
                   films, and music. Gain insights into cultural norms,
@@ -392,7 +392,7 @@ function Spanish() {
                   Spanish-speaking countries.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Advantages : </strong>
                   Expand vocabulary and improve fluency for professional
                   contexts. Enhance communication skills for business meetings,

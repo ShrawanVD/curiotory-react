@@ -188,7 +188,7 @@ function Danish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Gateway to Scandinavian Culture : </span>
                 Learning Danish provides insight into Scandinavian culture,
                 traditions, and history, fostering a deeper appreciation for
@@ -203,7 +203,7 @@ function Danish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Travel and Cultural Immersion : </span>
                 Denmark attracts tourists with its picturesque landscapes,
                 historical sites like Viking ruins, and modern architecture.
@@ -218,7 +218,7 @@ function Danish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Quality of Life : </span>
+                <span >Quality of Life : </span>
                 Denmark consistently ranks high in quality of life indexes due
                 to its healthcare, education system, and work-life balance.
                 Learning Danish enables integration into Danish society,
@@ -232,7 +232,7 @@ function Danish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Educational Excellence : </span>
                 Danish universities offer a range of programs taught in English
                 and Danish, known for their research excellence and innovation.
@@ -247,7 +247,7 @@ function Danish() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Business and Career Opportunities : </span>
                 Denmark boasts a strong economy with global companies in
                 industries such as renewable energy, pharmaceuticals, and
@@ -323,14 +323,14 @@ function Danish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Basic Communication : </strong>
                   Learn essential vocabulary and phrases for daily interactions,
                   greetings, and introductions. Begin to grasp Danish
                   pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cultural Understanding : </strong>
                   Explore Danish customs, traditions, and social etiquette.
                   Understand cultural nuances that shape daily life in Denmark,
@@ -355,7 +355,7 @@ function Danish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Networking : </strong>
                   Develop language skills for professional environments,
                   including job interviews, networking events, and business
@@ -363,7 +363,7 @@ function Danish() {
                   business with Danish-speaking colleagues and clients.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Academic Pursuits : </strong>
                   Enhance language proficiency for studying in Danish
                   universities or pursuing research collaborations. Access
@@ -384,7 +384,7 @@ function Danish() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Advanced Language Mastery : </strong>
                   Master complex grammar structures, including verb
                   conjugations, conditional sentences, and passive voice. Engage
@@ -392,7 +392,7 @@ function Danish() {
                   topics in Danish.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Integration and Community Engagement : </strong>
                   Fully integrate into Danish society by participating in local
                   activities, volunteering, and joining cultural clubs.

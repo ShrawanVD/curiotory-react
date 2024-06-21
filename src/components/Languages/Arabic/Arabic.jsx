@@ -191,7 +191,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Global Influence : </span>
+                <span>Global Influence : </span>
                 Arabic is one of the most widely spoken languages globally, with
                 over 420 million native speakers across the Middle East, North
                 Africa, and beyond. Learning Arabic opens doors to communication
@@ -205,7 +205,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>Cultural Richness : </span>
+                <span>Cultural Richness : </span>
                 Arabic culture is renowned for its contributions to literature,
                 poetry, art, and architecture. Learning Arabic allows for a
                 deeper appreciation of classical Arabic literature, such as
@@ -220,7 +220,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Religious Significance : </span>
                 Arabic is the language of the Quran, making it essential for
                 Muslims worldwide. Understanding Arabic enhances comprehension
@@ -235,7 +235,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span>
                   Business and Diplomacy : </span>
                 Arabic-speaking countries play significant roles in global
                 trade, finance, and diplomacy. Proficiency in Arabic enhances
@@ -250,7 +250,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span style={{ fontWeight: "bold" }}>
+                <span >
                   Intellectual Challenge : </span>
                 Learning Arabic offers cognitive benefits, including improved
                 memory, problem-solving skills, and multitasking abilities.
@@ -325,14 +325,14 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to understand Arabic script
                   (Alphabet) and basic grammar structures.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cultural Understanding : </strong>
                   Explore Arabic customs, traditions, and societal norms. Gain
                   insights into Arabic hospitality, celebrations, and cultural
@@ -357,7 +357,7 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Professional Advancement : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and correspondence in Arabic.
@@ -365,7 +365,7 @@ function Arabic() {
                   and governmental organizations.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Literary Exploration : </strong>
                   Dive deeper into Arabic literature, including classical and
                   contemporary works. Read Arabic poetry, novels, and scholarly
@@ -386,7 +386,7 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including verb
                   conjugations, morphological patterns, and rhetorical devices.
@@ -394,7 +394,7 @@ function Arabic() {
                   discourse in Arabic on diverse topics.
                 </p>
                 <p>
-                  <strong style={{ color: "#EF4B2B" }}>
+                  <strong >
                     Cross-Cultural Engagement : </strong>
                   Fully integrate into Arabic-speaking communities by
                   participating in cultural events, volunteering, and engaging

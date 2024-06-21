@@ -7,17 +7,17 @@ const ProficiencyCardJapanese = ({ level, lng, modules }) => (
     {/* first card */}
     <div className={styles.header}>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>JLPT: </span>
+        <span >JLPT: </span>
         The Japanese-Language Proficiency Test
       </p>
       <p className={styles.title}>
-        <span style={{ color: "#EF4B2B" }}>Purpose:</span> Standardizes
+        <span >Purpose:</span> Standardizes
         description of {lng} language proficiency
       </p>
       <p className={styles.title}>
         A total of <strong>five levels</strong> being{" "}
         {/* <strong style={{ color: "#F4AD28" }}>N1, N2, N3, N4, N5</strong> */}
-        <strong style={{ color: "#F4AD28" }}>N5, N4, N3, N2, N1</strong>
+        <strong className={styles.nlistcolor}>N5, N4, N3, N2, N1</strong>
         , with N5 being the beginner level and N1 the most advanced.
       </p>
       <p className={styles.title}>
@@ -48,7 +48,7 @@ const ProficiencyCardJapanese = ({ level, lng, modules }) => (
 
           {/* title */}
           <h4>{module.title}</h4>
-          <hr style={{ borderBottom: "1px solid #F4AD28" }} />
+          <hr className={styles.hrlinecss}/>
 
           {/* units - content */}
           {module.content.map((item, idx) => (
