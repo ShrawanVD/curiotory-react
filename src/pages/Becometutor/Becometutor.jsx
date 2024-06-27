@@ -2,11 +2,32 @@
 // import Footer from "../../components/Footer/Footer";
 import "./Becometutor.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../components/Footer/Footer2";
+import Accordian4BecomeTutor from "../../components/Accordian4BecomeTutor";
 
 function Becometutor() {
   return (
     <div>
+
+
+   {/* for meta tags  */}
+   <Helmet>
+        <title>
+        Apply For Language Tutor Jobs At Curiotory - Work From Anywhere
+        </title>
+        <meta
+          name="description"
+          content="Accomplish your dream of becoming a language tutor with Curiotory. Have the freedom of having remote language tutor jobs online & join our dynamic team. Apply Now!"
+        />
+        <meta
+          name="keywords"
+          content="language tutor,  language tutor jobs, language tutor jobs online, foreign language tutor jobs, foreign language translator jobs, remote language tutor jobs"
+        />
+      </Helmet>
+
+
+
       <Newnavbar />
       <div>
         {/* become tutor step by step guide */}
@@ -263,6 +284,22 @@ function Becometutor() {
         {/* <!-- phases section --> */}
 
         {/* <!-- phases section - section 1 --> */}
+
+          {/* faq section */}
+      <div>
+        <div className="faqHeadingDivCss">
+          <h2 className="faq_heading">Frequently Asked Questions</h2>
+        </div>
+        <div className="body_faq">
+          <div className="image_container">
+            <img src="/Index/faq.png" alt="FAQ FAQs" />
+          </div>
+          <div className="layout">
+            <Accordian4BecomeTutor />
+          </div>
+        </div>
+      </div>
+
       </div>
       <Footer2 />
     </div>

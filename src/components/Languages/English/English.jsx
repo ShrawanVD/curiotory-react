@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../../components/Footer/Footer2";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/EnglishCurr";
-import axios from 'axios';
+import axios from "axios";
 
 function English() {
   const [proficiency, setProficiency] = useState("A1");
@@ -111,13 +112,16 @@ function English() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -138,6 +142,20 @@ function English() {
   return (
     <>
       <div className={fr.container}>
+        <Helmet>
+          <title>
+            Learn English Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Hello! Ready to impress with your English speaking skills? Curiotory's language learning app combines fun activities and strategies for learning English like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="learn english, learn english online, english learning app, english learning course, Learning English speaking, english speaking app"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -179,7 +197,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Global Influence : </span>
+                <span>Global Influence : </span>
                 English is one of the most widely spoken languages globally,
                 with over 1.5 billion speakers worldwide. Learning English opens
                 doors to communication with people from diverse linguistic
@@ -193,8 +211,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Business and Communication : </span>
+                <span>Business and Communication : </span>
                 English is the international language of business, science,
                 aviation, diplomacy, and tourism. Proficiency in English
                 enhances career opportunities and facilitates effective
@@ -208,8 +225,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Media and Entertainment : </span>
+                <span>Media and Entertainment : </span>
                 English-language media, including movies, music, and television
                 shows, dominate global entertainment. Learning English provides
                 access to a vast array of cultural content and enhances
@@ -223,8 +239,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Cultural and Literary Heritage : </span>
+                <span>Cultural and Literary Heritage : </span>
                 English literature has a rich tradition spanning from
                 Shakespeare to contemporary authors. Learning English allows for
                 a deeper appreciation of literary classics, modern literature,
@@ -238,8 +253,7 @@ function English() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Education and Academic Pursuits : </span>
+                <span>Education and Academic Pursuits : </span>
                 Many of the world's top universities and research institutions
                 teach in English. Proficiency in English is essential for
                 academic success, accessing scholarly publications, and
@@ -269,7 +283,7 @@ function English() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -313,13 +327,16 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >Basic Communication : </strong>{" "}
-                  Learn essential vocabulary, greetings, and phrases for everyday interactions. Develop fundamental skills in listening, speaking, reading, and writing in English.
+                  <strong>Basic Communication : </strong> Learn essential
+                  vocabulary, greetings, and phrases for everyday interactions.
+                  Develop fundamental skills in listening, speaking, reading,
+                  and writing in English.
                 </p>
                 <p>
-                  <strong >
-                  Cultural Understanding : </strong>{" "}
-                  Gain insights into English-speaking cultures, traditions, and societal norms. Understand cultural nuances that shape interactions and daily life in English-speaking countries.
+                  <strong>Cultural Understanding : </strong> Gain insights into
+                  English-speaking cultures, traditions, and societal norms.
+                  Understand cultural nuances that shape interactions and daily
+                  life in English-speaking countries.
                 </p>
               </div>
             </div>
@@ -340,13 +357,18 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >Professional Development : </strong>{" "}
-                  Acquire language skills for professional contexts, including business meetings, presentations, and negotiations. Enhance career prospects in various industries and multinational companies where English is the primary language.
+                  <strong>Professional Development : </strong> Acquire language
+                  skills for professional contexts, including business meetings,
+                  presentations, and negotiations. Enhance career prospects in
+                  various industries and multinational companies where English
+                  is the primary language.
                 </p>
                 <p>
-                  <strong >
-                  Literary Exploration : </strong>{" "}
-                  Explore a wide range of English literature, from classic novels to contemporary poetry and drama. Analyze themes, characters, and literary techniques to deepen language proficiency and cultural understanding.
+                  <strong>Literary Exploration : </strong> Explore a wide range
+                  of English literature, from classic novels to contemporary
+                  poetry and drama. Analyze themes, characters, and literary
+                  techniques to deepen language proficiency and cultural
+                  understanding.
                 </p>
               </div>
             </div>
@@ -362,14 +384,17 @@ function English() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                  Advanced Language Proficiency : </strong>{" "}
-                  Master complex grammar structures, idiomatic expressions, and rhetorical devices. Engage fluently in debates, discussions, and academic discourse on diverse topics in English.
+                  <strong>Advanced Language Proficiency : </strong> Master
+                  complex grammar structures, idiomatic expressions, and
+                  rhetorical devices. Engage fluently in debates, discussions,
+                  and academic discourse on diverse topics in English.
                 </p>
                 <p>
-                  <strong >
-                  Cross-Cultural Engagement : </strong>{" "}
-                  Fully integrate into English-speaking communities by participating in cultural activities, volunteering, and networking. Develop meaningful connections and contribute to cross-cultural understanding and collaboration.
+                  <strong>Cross-Cultural Engagement : </strong> Fully integrate
+                  into English-speaking communities by participating in cultural
+                  activities, volunteering, and networking. Develop meaningful
+                  connections and contribute to cross-cultural understanding and
+                  collaboration.
                 </p>
               </div>
             </div>
@@ -424,39 +449,39 @@ function English() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

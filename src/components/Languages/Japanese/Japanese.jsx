@@ -1,4 +1,5 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../../components/Footer/Footer2";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
@@ -130,6 +131,21 @@ const handleSubmit = async (e) => {
   return (
     <>
       <div className={fr.container}>
+{/* for meta tags  */}
+<Helmet>
+<title>
+Learn Japanese Online Easily With Curiotory's Expert Guidance
+</title>
+<meta
+  name="description"
+  content="Kon'nichiwa! Ready to impress with your Japanese skills? Curiotory's language learning app combines fun activities and strategies for learning Japanese like a pro!"
+/>
+<meta
+  name="keywords"
+  content="learn japanese online, learn japanese online free, learn japanese, learn japanese app, japanese learning website, japanese learning app"
+/>
+</Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 

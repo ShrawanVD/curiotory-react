@@ -1,5 +1,6 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
@@ -149,6 +150,23 @@ function Danish() {
   return (
     <>
       <div className={fr.container}>
+
+{/* for meta tags  */}
+<Helmet>
+<title>
+Learn Danish Online Easily With Curiotory's Expert Guidance
+</title>
+<meta
+  name="description"
+  content="Hej! Ready to impress with your Danish skills? Curiotory's language learning app combines fun activities and strategies for learning Danish like a pro!"
+/>
+<meta
+  name="keywords"
+  content="learn dutch online, learn dutch for free, learn dutch language, learn dutch for beginners, dutch learning app, dutch learning course"
+/>
+</Helmet>
+
+
         {/* new navbar */}
         <Newnavbar />
 

@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/GermanCurr";
-import axios from 'axios';
+import axios from "axios";
 function German() {
   const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
@@ -20,56 +21,47 @@ function German() {
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-  },
-  A2: {
+    },
+    A2: {
       Corporate: 36000,
       Student: 21000,
       Exam: 25000,
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-
-  },
-  B1: {
-
+    },
+    B1: {
       Corporate: 38000,
       Student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  B2: {
-
+    },
+    B2: {
       Corporate: 38000,
       student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  C1: {
-
+    },
+    C1: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  C2: {
-
+    },
+    C2: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -91,7 +83,6 @@ function German() {
     setProficiency(proficiencyLevels[value]);
   };
 
-
   const handleMethodChange = (value) => {
     setMethod(trainingMethods[value]);
   };
@@ -100,54 +91,72 @@ function German() {
     calculateFee();
   }, [proficiency, method]);
 
-  
-// send the form data to DB
-const [formData, setFormData] = useState({
-  name: "",
-  email: "",
-  contactNo: "",
-});
-
-const handleChange = (e) => {
-  setFormData({
-    ...formData,
-    [e.target.name]: e.target.value,
+  // send the form data to DB
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contactNo: "",
   });
-};
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  const dataToSend = {
-    ...formData,
-    fee,
-    language
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
 
-  try {
-    // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-    
-    const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    if (response.status === 200) {
-      alert("Form submitted successfully");
-      // Optionally, you can reset the form after successful submission
-      setFormData({
-        name: "",
-        email: "",
-        contactNo: "",
-      });
-    } else {
+    const dataToSend = {
+      ...formData,
+      fee,
+      language,
+    };
+
+    try {
+      // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
+
+      if (response.status === 200) {
+        alert("Form submitted successfully");
+        // Optionally, you can reset the form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          contactNo: "",
+        });
+      } else {
+        alert("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
       alert("Form submission failed");
     }
-  } catch (error) {
-    console.error("Error submitting form:", error);
-    alert("Form submission failed");
-  }
-};
+  };
   return (
     <>
       <div className={fr.container}>
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn German Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Hallo!
+            Ready to impress with your German skills? Curiotory's language learning app combines fun activities and strategies for learning German online like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="german language course, german learning app, learn german online, german language learning, german language learning app, german language learning online"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -190,12 +199,11 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Business Opportunities : </span>{" "}
-                German is the most widely spoken native language in Europe and
-                the official language of Germany, Austria, Switzerland, and
-                Liechtenstein. Learning German opens up opportunities for
-                business and trade in these economically strong countries
+                <span>Business Opportunities : </span> German is the most widely
+                spoken native language in Europe and the official language of
+                Germany, Austria, Switzerland, and Liechtenstein. Learning
+                German opens up opportunities for business and trade in these
+                economically strong countries
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -205,12 +213,11 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>{" "}
-                Germany attracts millions of tourists each year with its vibrant
-                cities, picturesque landscapes, and historical landmarks.
-                Knowing German enhances your travel experience, enabling deeper
-                interactions with locals and a better understanding of the
-                country's culture
+                <span>Travel and Tourism : </span> Germany attracts millions of
+                tourists each year with its vibrant cities, picturesque
+                landscapes, and historical landmarks. Knowing German enhances
+                your travel experience, enabling deeper interactions with locals
+                and a better understanding of the country's culture
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -220,12 +227,11 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Enrichment : </span>{" "}
-                German is the language of great classical composers like Bach,
-                Beethoven, and Brahms, as well as philosophers such as Kant,
-                Nietzsche, and Hegel. Learning German allows access to a rich
-                cultural heritage spanning literature, music, art, and
-                philosophy.
+                <span>Cultural Enrichment : </span> German is the language of
+                great classical composers like Bach, Beethoven, and Brahms, as
+                well as philosophers such as Kant, Nietzsche, and Hegel.
+                Learning German allows access to a rich cultural heritage
+                spanning literature, music, art, and philosophy.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -235,13 +241,11 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Education and Research : </span>{" "}
-                Germany is renowned for its higher education institutions and
-                offers numerous scholarships to international students.
-                Proficiency in German can enhance academic and research
-                opportunities in fields such as engineering, science, and
-                humanities.
+                <span>Education and Research : </span> Germany is renowned for
+                its higher education institutions and offers numerous
+                scholarships to international students. Proficiency in German
+                can enhance academic and research opportunities in fields such
+                as engineering, science, and humanities.
               </p>
             </div>
             <div className={fr.learnFrenchReason}>
@@ -251,13 +255,12 @@ const handleSubmit = async (e) => {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span>Career Advantages : </span>{" "}
-                Proficiency in German can boost your career prospects,
-                especially in industries such as automotive engineering,
-                renewable energy, and technology where German companies play a
-                significant role globally. Many multinational corporations also
-                seek German-speaking employees for their international
-                operations.
+                <span>Career Advantages : </span> Proficiency in German can
+                boost your career prospects, especially in industries such as
+                automotive engineering, renewable energy, and technology where
+                German companies play a significant role globally. Many
+                multinational corporations also seek German-speaking employees
+                for their international operations.
               </p>
             </div>
           </div>
@@ -283,7 +286,7 @@ const handleSubmit = async (e) => {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -327,20 +330,16 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Gateway to Europe : </strong>{" "}
-                  German is not only spoken in Germany but also in Austria,
-                  Switzerland, Luxembourg, and Liechtenstein. Learning German
-                  gives you access to over 100 million native speakers in these
-                  countries.
+                  <strong>Gateway to Europe : </strong> German is not only
+                  spoken in Germany but also in Austria, Switzerland,
+                  Luxembourg, and Liechtenstein. Learning German gives you
+                  access to over 100 million native speakers in these countries.
                 </p>
                 <p>
-                  <strong >
-                    Language of Innovation : </strong>{" "}
-                  Germany is a hub of technological innovation and research.
-                  Learning German can provide access to cutting-edge
-                  developments in engineering, manufacturing, and scientific
-                  research.
+                  <strong>Language of Innovation : </strong> Germany is a hub of
+                  technological innovation and research. Learning German can
+                  provide access to cutting-edge developments in engineering,
+                  manufacturing, and scientific research.
                 </p>
               </div>
             </div>
@@ -361,19 +360,17 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Academic Excellence : </strong>{" "}
-                  Many academic journals and research publications are in
-                  German. Proficiency in the language can open doors to
-                  prestigious academic institutions and research opportunities.
+                  <strong>Academic Excellence : </strong> Many academic journals
+                  and research publications are in German. Proficiency in the
+                  language can open doors to prestigious academic institutions
+                  and research opportunities.
                 </p>
                 <p>
-                  <strong >
-                    Career Opportunities : </strong>{" "}
-                  German companies are leaders in global trade, especially in
-                  engineering, automotive, and financial sectors. Proficiency in
-                  German enhances your employability and opens doors to
-                  international career paths.
+                  <strong>Career Opportunities : </strong> German companies are
+                  leaders in global trade, especially in engineering,
+                  automotive, and financial sectors. Proficiency in German
+                  enhances your employability and opens doors to international
+                  career paths.
                 </p>
               </div>
             </div>
@@ -389,18 +386,16 @@ const handleSubmit = async (e) => {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >Cultural Depth : </strong>{" "}
-                  German literature, philosophy, and arts have made significant
-                  contributions to world culture. Fluency in German allows you
-                  to appreciate original works and engage with profound
-                  philosophical ideas
+                  <strong>Cultural Depth : </strong> German literature,
+                  philosophy, and arts have made significant contributions to
+                  world culture. Fluency in German allows you to appreciate
+                  original works and engage with profound philosophical ideas
                 </p>
                 <p>
-                  <strong >
-                    Global Influence : </strong>{" "}
-                  Germany plays a pivotal role in European politics, economics,
-                  and culture. Mastery of German enables you to understand and
-                  engage with global issues from a European perspective.
+                  <strong>Global Influence : </strong> Germany plays a pivotal
+                  role in European politics, economics, and culture. Mastery of
+                  German enables you to understand and engage with global issues
+                  from a European perspective.
                 </p>
               </div>
             </div>
@@ -455,39 +450,39 @@ const handleSubmit = async (e) => {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

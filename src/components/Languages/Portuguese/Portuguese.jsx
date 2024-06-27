@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../../components/Footer/Footer2";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/PortugueseCurr";
-import axios from 'axios';
+import axios from "axios";
 
 function Portuguese() {
   const [proficiency, setProficiency] = useState("A1");
@@ -21,56 +22,47 @@ function Portuguese() {
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-  },
-  A2: {
+    },
+    A2: {
       Corporate: 36000,
       Student: 21000,
       Exam: 25000,
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-
-  },
-  B1: {
-
+    },
+    B1: {
       Corporate: 38000,
       Student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  B2: {
-
+    },
+    B2: {
       Corporate: 38000,
       student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  C1: {
-
+    },
+    C1: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  C2: {
-
+    },
+    C2: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -120,13 +112,16 @@ function Portuguese() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -147,6 +142,21 @@ function Portuguese() {
   return (
     <>
       <div className={fr.container}>
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn Portuguese Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="olá! Ready to impress with your Portuguese skills? Curiotory's language learning app combines fun activities and strategies for learning Portuguese like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="learn portuguese , learn  portuguese online, portuguese learning app,"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -189,7 +199,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Global Reach : </span>
+                <span>Global Reach : </span>
                 Portuguese is the sixth most spoken language in the world, with
                 over 260 million speakers across countries like Brazil,
                 Portugal, Mozambique, Angola, and more. Learning Portuguese
@@ -203,7 +213,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 Portugal and Brazil attract millions of tourists annually with
                 their stunning landscapes, vibrant cities, and UNESCO World
                 Heritage sites. Knowing Portuguese enriches travel experiences
@@ -217,8 +227,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Business Opportunities : </span>
+                <span>Business Opportunities : </span>
                 Brazil, the largest Portuguese-speaking country, is a major
                 player in the global economy, particularly in agriculture,
                 mining, and technology. Proficiency in Portuguese enhances
@@ -233,8 +242,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Educational Opportunities : </span>
+                <span>Educational Opportunities : </span>
                 Portuguese is an official language of organizations like the
                 Community of Portuguese Language Countries (CPLP), offering
                 scholarships and academic exchanges. Learning Portuguese opens
@@ -248,7 +256,7 @@ function Portuguese() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Enrichment : </span>
+                <span>Cultural Enrichment : </span>
                 Portuguese culture is rich in music (like bossa nova and fado),
                 literature (with writers like José Saramago and Machado de
                 Assis), and arts. Learning Portuguese allows for a deeper
@@ -278,7 +286,7 @@ function Portuguese() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -322,15 +330,13 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary and phrases for daily interactions,
                   greetings, and introductions. Begin to grasp Portuguese
                   pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong >
-                    Travel Readiness : </strong>
+                  <strong>Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
                   shopping. Practice listening and speaking to improve
@@ -355,16 +361,14 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong>
-                    Cultural Immersion : </strong>
+                  <strong>Cultural Immersion : </strong>
                   Dive deeper into Portuguese-speaking cultures through
                   literature, music, and traditions. Explore Brazilian and
                   Portuguese festivals, cuisine, and customs to gain insights
                   into cultural norms and social dynamics.
                 </p>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Expand vocabulary and improve language proficiency for
                   professional contexts. Enhance communication skills for
                   business meetings, negotiations, and presentations in
@@ -384,16 +388,14 @@ function Portuguese() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong>
-                    Advanced Language Skills : </strong>
+                  <strong>Advanced Language Skills : </strong>
                   Master complex grammar structures, including verb
                   conjugations, subjunctive mood, and conditional sentences.
                   Engage in discussions, debates, and presentations in
                   Portuguese on diverse topics.
                 </p>
                 <p>
-                  <strong >
-                    Academic and Research Opportunities : </strong>
+                  <strong>Academic and Research Opportunities : </strong>
                   Gain proficiency to study or conduct research in
                   Portuguese-speaking countries. Access academic resources,
                   attend lectures, and collaborate with peers and professors in
@@ -433,7 +435,6 @@ function Portuguese() {
               />
             </div>
 
-
             <div className={fr.optionGroup}>
               <label>Method of Training</label>
               <div className={fr.checkpoints}>
@@ -453,39 +454,39 @@ function Portuguese() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

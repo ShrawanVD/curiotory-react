@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/ArabicCurr";
-import axios from 'axios';
+import axios from "axios";
 
 function Arabic() {
   const [proficiency, setProficiency] = useState("A1");
@@ -21,56 +22,47 @@ function Arabic() {
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-  },
-  A2: {
+    },
+    A2: {
       Corporate: 36000,
       Student: 21000,
       Exam: 25000,
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-
-  },
-  B1: {
-
+    },
+    B1: {
       Corporate: 38000,
       Student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  B2: {
-
+    },
+    B2: {
       Corporate: 38000,
       student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  C1: {
-
+    },
+    C1: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  C2: {
-
+    },
+    C2: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -91,7 +83,6 @@ function Arabic() {
   const handleProficiencyChange = (value) => {
     setProficiency(proficiencyLevels[value]);
   };
-
 
   const handleMethodChange = (value) => {
     setMethod(trainingMethods[value]);
@@ -121,13 +112,16 @@ function Arabic() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -149,6 +143,21 @@ function Arabic() {
   return (
     <>
       <div className={fr.container}>
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+          Learn Arabic Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="مرحبًا! Ready to impress with your Arabic skills? Curiotory's language learning app combines fun activities and strategies for learning Arabic like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="learn arabic online, learn arabic language, arabic learning app, learning arabic for beginners, arabic learning for kids, arabic learning course free"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -220,8 +229,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Religious Significance : </span>
+                <span>Religious Significance : </span>
                 Arabic is the language of the Quran, making it essential for
                 Muslims worldwide. Understanding Arabic enhances comprehension
                 of Islamic teachings, rituals, and religious texts, fostering
@@ -235,8 +243,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span>
-                  Business and Diplomacy : </span>
+                <span>Business and Diplomacy : </span>
                 Arabic-speaking countries play significant roles in global
                 trade, finance, and diplomacy. Proficiency in Arabic enhances
                 career opportunities in sectors such as energy, international
@@ -250,8 +257,7 @@ function Arabic() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Intellectual Challenge : </span>
+                <span>Intellectual Challenge : </span>
                 Learning Arabic offers cognitive benefits, including improved
                 memory, problem-solving skills, and multitasking abilities.
                 Mastering Arabic script (Arabic alphabet) and grammar structures
@@ -281,7 +287,7 @@ function Arabic() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -325,15 +331,13 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to understand Arabic script
                   (Alphabet) and basic grammar structures.
                 </p>
                 <p>
-                  <strong >
-                    Cultural Understanding : </strong>
+                  <strong>Cultural Understanding : </strong>
                   Explore Arabic customs, traditions, and societal norms. Gain
                   insights into Arabic hospitality, celebrations, and cultural
                   practices through language learning.
@@ -357,16 +361,14 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Professional Advancement : </strong>
+                  <strong>Professional Advancement : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and correspondence in Arabic.
                   Enhance career prospects in multinational corporations, NGOs,
                   and governmental organizations.
                 </p>
                 <p>
-                  <strong >
-                    Literary Exploration : </strong>
+                  <strong>Literary Exploration : </strong>
                   Dive deeper into Arabic literature, including classical and
                   contemporary works. Read Arabic poetry, novels, and scholarly
                   texts to deepen language proficiency and cultural
@@ -386,16 +388,14 @@ function Arabic() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Advanced Language Proficiency : </strong>
+                  <strong>Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including verb
                   conjugations, morphological patterns, and rhetorical devices.
                   Engage fluently in debates, discussions, and academic
                   discourse in Arabic on diverse topics.
                 </p>
                 <p>
-                  <strong >
-                    Cross-Cultural Engagement : </strong>
+                  <strong>Cross-Cultural Engagement : </strong>
                   Fully integrate into Arabic-speaking communities by
                   participating in cultural events, volunteering, and engaging
                   with local initiatives. Build meaningful relationships and
@@ -435,7 +435,6 @@ function Arabic() {
               />
             </div>
 
-
             <div className={fr.optionGroup}>
               <label>Method of Training</label>
               <div className={fr.checkpoints}>
@@ -455,39 +454,39 @@ function Arabic() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

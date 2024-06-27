@@ -1,13 +1,14 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/FrenchCurr";
-import axios from 'axios';
+import axios from "axios";
 function French() {
-    const [proficiency, setProficiency] = useState("A1");
+  const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
   const [fee, setFee] = useState(0);
   const language = "French";
@@ -20,56 +21,47 @@ function French() {
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-  },
-  A2: {
+    },
+    A2: {
       Corporate: 36000,
       Student: 21000,
       Exam: 25000,
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-
-  },
-  B1: {
-
+    },
+    B1: {
       Corporate: 38000,
       Student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  B2: {
-
+    },
+    B2: {
       Corporate: 38000,
       student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  C1: {
-
+    },
+    C1: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  C2: {
-
+    },
+    C2: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -119,13 +111,16 @@ function French() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -146,6 +141,20 @@ function French() {
   return (
     <>
       <div className={fr.container}>
+        <Helmet>
+          <title>
+            Learn French Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Bonjour! Ready to impress with your French skills? Curiotory's language learning app combines fun activities and strategies for learning French online like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="french language course online, french language course, french learning app, french learning website, learn french online, french phrases to learn"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -259,7 +268,7 @@ function French() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -303,16 +312,12 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >Cultural Riches:</strong>{" "}
-                  Learning French opens doors to France&apos;s rich culture,
-                  literature, and arts.
+                  <strong>Cultural Riches:</strong> Learning French opens doors
+                  to France&apos;s rich culture, literature, and arts.
                 </p>
                 <p>
-                  <strong >
-                    Global Opportunities:
-                  </strong>{" "}
-                  French is spoken in many countries, enhancing career prospects
-                  globally.
+                  <strong>Global Opportunities:</strong> French is spoken in
+                  many countries, enhancing career prospects globally.
                 </p>
               </div>
             </div>
@@ -333,16 +338,12 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >Travel Ease:</strong>{" "}
-                  Navigate through French-speaking regions with confidence,
-                  making travel more enjoyable.
+                  <strong>Travel Ease:</strong> Navigate through French-speaking
+                  regions with confidence, making travel more enjoyable.
                 </p>
                 <p>
-                  <strong >
-                    Intellectual Stimulation:
-                  </strong>{" "}
-                  Mastering a new language sharpens cognitive skills and boosts
-                  brain health.
+                  <strong>Intellectual Stimulation:</strong> Mastering a new
+                  language sharpens cognitive skills and boosts brain health.
                 </p>
               </div>
             </div>
@@ -358,18 +359,12 @@ function French() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Language of Diplomacy:
-                  </strong>{" "}
-                  French, pivotal in global diplomacy, offers a unique edge in
-                  diverse professions.
+                  <strong>Language of Diplomacy:</strong> French, pivotal in
+                  global diplomacy, offers a unique edge in diverse professions.
                 </p>
                 <p>
-                  <strong >
-                    Historical Legacy:
-                  </strong>{" "}
-                  French, rooted in Latin, unveils centuries of European
-                  cultural evolution.
+                  <strong>Historical Legacy:</strong> French, rooted in Latin,
+                  unveils centuries of European cultural evolution.
                 </p>
               </div>
             </div>
@@ -424,39 +419,39 @@ function French() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -491,7 +486,7 @@ function French() {
       {/* footer */}
       <Footer2 />
     </>
-  )
+  );
 }
 
-export default French
+export default French;

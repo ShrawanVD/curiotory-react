@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/RussianCurr";
-import axios from 'axios';
+import axios from "axios";
 
 function Russian() {
   const [proficiency, setProficiency] = useState("A1");
@@ -13,8 +14,7 @@ function Russian() {
   const [fee, setFee] = useState(0);
   const language = "Russian";
 
-  const feeMap = {
-  };
+  const feeMap = {};
 
   const calculateFee = () => {
     const baseFee = feeMap[proficiency]?.[method] || 0;
@@ -34,7 +34,6 @@ function Russian() {
   const handleProficiencyChange = (value) => {
     setProficiency(proficiencyLevels[value]);
   };
-
 
   const handleMethodChange = (value) => {
     setMethod(trainingMethods[value]);
@@ -63,13 +62,16 @@ function Russian() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -90,6 +92,21 @@ function Russian() {
   return (
     <>
       <div className={fr.container}>
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn Russian Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="привет! Ready to impress with your Russian skills? Curiotory's language learning app combines fun activities and strategies for learning English like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="learn Russian Online, learn russian online course, learn russian free, russian learning for beginners, russian learning online, russian learning app"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -132,7 +149,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Global Influence : </span>
+                <span>Global Influence : </span>
                 Russian is one of the most widely spoken languages globally,
                 with over 260 million speakers across Russia, Belarus,
                 Kazakhstan, and other former Soviet states. Learning Russian
@@ -147,7 +164,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 Russia, with its vast landscapes, historical cities like Moscow
                 and St. Petersburg, and unique cultural heritage, attracts
                 millions of tourists annually. Knowing Russian enriches travel
@@ -161,7 +178,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Richness : </span>
+                <span>Cultural Richness : </span>
                 Russian culture is renowned for its literature, including works
                 by Tolstoy, Dostoevsky, and Chekhov, as well as its
                 contributions to classical music, ballet, and cinema. Learning
@@ -176,8 +193,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Career Opportunities : </span>
+                <span>Career Opportunities : </span>
                 Proficiency in Russian opens doors to diverse career paths,
                 especially in sectors such as diplomacy, international
                 relations, journalism, and business. Russian is a critical
@@ -191,8 +207,7 @@ function Russian() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Intellectual Challenge : </span>
+                <span>Intellectual Challenge : </span>
                 Learning Russian offers intellectual stimulation through its
                 complex grammar, rich vocabulary, and Cyrillic script. Mastering
                 Russian provides cognitive benefits and enhances analytical
@@ -222,7 +237,7 @@ function Russian() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -266,15 +281,13 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary and phrases for daily interactions,
                   greetings, and introductions. Begin to understand Russian
                   pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong >
-                    Cultural Understanding : </strong>
+                  <strong>Cultural Understanding : </strong>
                   Explore Russian customs, traditions, and social etiquette.
                   Gain insights into Russian history, holidays, and cultural
                   norms that shape contemporary Russian society.
@@ -298,16 +311,14 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and correspondence in
                   Russian. Enhance career prospects in multinational
                   corporations, NGOs, and governmental organizations.
                 </p>
                 <p>
-                  <strong >
-                    Literary and Artistic Exploration : </strong>
+                  <strong>Literary and Artistic Exploration : </strong>
                   Dive deeper into Russian literature, music, and arts. Read
                   iconic works in their original language, appreciate Russian
                   classical music compositions, and enjoy Russian cinema and
@@ -327,15 +338,13 @@ function Russian() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Advanced Language Proficiency : </strong>
+                  <strong>Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including verb aspects,
                   cases, and advanced vocabulary. Engage fluently in debates,
                   discussions, and presentations on diverse topics in Russian.
                 </p>
                 <p>
-                  <strong >
-                    Global Perspective : </strong>
+                  <strong>Global Perspective : </strong>
                   Gain a broader understanding of global issues from a Russian
                   perspective. Analyze political developments, economic trends,
                   and cultural influences in Russia and Russian-speaking
@@ -375,7 +384,6 @@ function Russian() {
               />
             </div>
 
-
             <div className={fr.optionGroup}>
               <label>Method of Training</label>
               <div className={fr.checkpoints}>
@@ -395,39 +403,39 @@ function Russian() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

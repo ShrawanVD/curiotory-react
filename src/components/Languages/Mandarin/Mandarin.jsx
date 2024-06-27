@@ -1,5 +1,6 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
@@ -146,6 +147,23 @@ function Mandarin() {
   return (
     <>
       <div className={fr.container}>
+
+
+      <Helmet>
+<title>
+Learn Mandarin Online Easily With Curiotory's Expert Guidance
+</title>
+<meta
+  name="description"
+  content="Nǐ hǎo! Ready to impress with your Mandarin skills? Curiotory's language learning app combines fun activities and strategies for learning Mandarin online like a pro!"
+/>
+<meta
+  name="keywords"
+  content="mandarin language app, mandarin language course, learn mandarin online, mandarin language learning, learn chinese, mandarin language learning app"
+/>
+</Helmet>
+
+
         {/* new navbar */}
         <Newnavbar />
 

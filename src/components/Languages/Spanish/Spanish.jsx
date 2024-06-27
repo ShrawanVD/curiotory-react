@@ -1,4 +1,5 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../../components/Footer/Footer2";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
@@ -145,6 +146,24 @@ function Spanish() {
   return (
     <>
       <div className={fr.container}>
+
+{/* for meta tags  */}
+<Helmet>
+<title>
+Learn Spanish Online Easily With Curiotory's Expert Guidance
+</title>
+<meta
+  name="description"
+  content="Hola!
+  Ready to impress with your Spanish skills? Curiotory's language learning app combines fun activities and strategies for learning Spanish like a pro!"
+/>
+<meta
+  name="keywords"
+  content="learn spanish online, learn spanish, best way to learn spanish, learning spanish for beginners, spanish learning app, learn spanish free"
+/>
+</Helmet>
+
+
         {/* new navbar */}
         <Newnavbar />
 

@@ -1,11 +1,12 @@
 import Newnavbar from "../../../components/NewNavbar/Newnavbar";
+import { Helmet } from "react-helmet";
 import Footer2 from "../../../components/Footer/Footer2";
 import fr from "../languagecss.module.css";
 import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/KoreanCurr";
-import axios from 'axios';
+import axios from "axios";
 function Korean() {
   const [proficiency, setProficiency] = useState("A1");
   const [method, setMethod] = useState("Corporate");
@@ -116,13 +117,16 @@ function Korean() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+
+      const response = await axios.post(
+        "https://backendapi-1-nlyi.onrender.com/enroll",
+        dataToSend
+      );
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -143,6 +147,21 @@ function Korean() {
   return (
     <>
       <div className={fr.container}>
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn Korean Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Annyeonghaseyo! Ready to impress with your Korean skills? Curiotory's language learning app combines fun activities and strategies for learning Korean like a pro!"
+          />
+          <meta
+            name="keywords"
+            content="learn korean online, learn korean for free, korean learning app, korean learning websites, korean language learning app, korean learning for beginners"
+          />
+        </Helmet>
+
         {/* new navbar */}
         <Newnavbar />
 
@@ -185,7 +204,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Appeal : </span>
+                <span>Cultural Appeal : </span>
                 Korean culture, including K-pop, K-dramas, and cuisine, has
                 gained immense popularity globally. Learning Korean allows you
                 to deeply engage with these cultural phenomena and understand
@@ -199,7 +218,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 South Korea, with its blend of modern cities like Seoul and
                 historical sites like Gyeongbokgung Palace, attracts millions of
                 tourists annually. Knowing Korean enhances travel experiences,
@@ -214,7 +233,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Business and Trade : </span>
+                <span>Business and Trade : </span>
                 South Korea is a major player in global industries such as
                 electronics, automotive, and entertainment. Proficiency in
                 Korean opens doors to career opportunities in multinational
@@ -229,8 +248,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Academic Opportunities : </span>
+                <span>Academic Opportunities : </span>
                 Korean universities are increasingly attracting international
                 students with programs taught in English and Korean. Learning
                 Korean facilitates access to scholarships, research
@@ -244,7 +262,7 @@ function Korean() {
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Strategic Language : </span>
+                <span>Strategic Language : </span>
                 Korean is considered a critical language for geopolitical
                 reasons, especially in East Asia. Proficiency in Korean enhances
                 understanding of regional dynamics and opens doors to careers in
@@ -274,7 +292,7 @@ function Korean() {
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -318,15 +336,13 @@ function Korean() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to grasp Korean pronunciation
                   (Hangul) and basic grammar structures.
                 </p>
                 <p>
-                  <strong >
-                    Cultural Understanding : </strong>
+                  <strong>Cultural Understanding : </strong>
                   Explore Korean customs, traditions, and social etiquette. Gain
                   insights into Korean holidays, food culture, and societal
                   norms through language learning.
@@ -350,16 +366,14 @@ function Korean() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Professional Advancement : </strong>
+                  <strong>Professional Advancement : </strong>
                   Develop language skills for professional contexts, including
                   job interviews, business meetings, and presentations in
                   Korean. Enhance career prospects in sectors such as
                   technology, hospitality, and international trade.
                 </p>
                 <p>
-                  <strong >
-                    Media and Entertainment : </strong>
+                  <strong>Media and Entertainment : </strong>
                   Dive deeper into Korean media, including dramas, films, and
                   music. Improve listening comprehension, expand vocabulary, and
                   engage with Korean pop culture, enhancing language
@@ -379,8 +393,7 @@ function Korean() {
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Advanced Language Proficiency : </strong>
+                  <strong>Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including honorifics, verb
                   conjugations, and formal expressions. Engage fluently in
                   debates, discussions, and academic discourse in Korean on
@@ -388,8 +401,7 @@ function Korean() {
                 </p>
                 {/* #F4AD28 */}
                 <p>
-                  <strong >
-                    Cultural Integration : </strong>
+                  <strong>Cultural Integration : </strong>
                   Fully integrate into Korean society by participating in
                   cultural activities, volunteering, and joining local
                   communities. Build friendships, contribute to cultural
@@ -448,39 +460,39 @@ function Korean() {
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 
