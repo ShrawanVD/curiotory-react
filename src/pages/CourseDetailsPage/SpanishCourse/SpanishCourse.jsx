@@ -9,7 +9,6 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 
 const SpanishCourse = () => {
-
   //  course highlights section
   const HighlightItem = ({ icon, title, description }) => {
     return (
@@ -241,11 +240,13 @@ const SpanishCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo.png"
+                alt="Curiotory Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -270,9 +271,12 @@ const SpanishCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"7rem"
-        }}>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "7rem",
+          }}
+        >
           <a href="/checkout/7">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
@@ -454,16 +458,14 @@ const SpanishCourse = () => {
           {/* left section */}
           <div className={buy.left_section}>
             {/* video */}
-            <div className={buy.video}>
+            <div className={buy.videoWrapper}>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/e3QTQXmqWnM?si=i1GosbSYtNN5olin"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
             {/* text */}
@@ -539,8 +541,7 @@ const SpanishCourse = () => {
         {/* company section */}
         <div className={buy.company}>
           <h1>
-            Companies <span className={buy.yellow}>Hiring</span> Spanish
-            Experts
+            Companies <span className={buy.yellow}>Hiring</span> Spanish Experts
           </h1>
           <div className={buy.first_row}>
             {/* first company */}
@@ -589,7 +590,7 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "60%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -639,7 +640,7 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "50%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -681,7 +682,7 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "70%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -722,7 +723,7 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "70%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -763,14 +764,14 @@ const SpanishCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
                 src="/Company/ge.png"
                 alt="company logo"
-                // General Electric (GE) 
+                // General Electric (GE)
               />
               <hr
                 style={{
@@ -801,7 +802,7 @@ const SpanishCourse = () => {
         </div>
 
         {/* review section */}
-      <Reviewsection />
+        <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
         <div className={buy.faqHeadingDivCss}>

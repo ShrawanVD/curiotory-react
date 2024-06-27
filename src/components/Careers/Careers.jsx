@@ -1,7 +1,9 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Newnavbar from "../NewNavbar/Newnavbar";
 import Footer2 from "../Footer/Footer2";
 import job from "./Careers.module.css";
+import Accordian3Careers from "../Accordian3Careers";
 
 function Careers() {
   const openings = [
@@ -67,6 +69,21 @@ function Careers() {
 
   return (
     <>
+      {/* for meta tags  */}
+      <Helmet>
+        <title>
+          Find Language Interpreter Jobs: Remote & In-Office Opportunities
+        </title>
+        <meta
+          name="description"
+          content="Want to Land at Your Dream Job as a Language Interpreter? Join Curiotory Today for Hybrid & Remote Language Interpreter Jobs and Take Your Career at a Whole Next Level!"
+        />
+        <meta
+          name="keywords"
+          content="language interpreter jobs, language interpreter jobs remote, language interpreter jobs work from home, language interpreter job vacancy, language interpreter job description, language translator job"
+        />
+      </Helmet>
+
       <Newnavbar />
 
       {/* title section */}
@@ -160,10 +177,14 @@ function Careers() {
         </div>
         <div className={job.containeropening}>
           {openings.map((opening) => (
-            <div key={opening.id} className={job.cardopening}>
+            <div
+              key={opening.id}
+              onClick={() => handleViewDetails(opening.id)}
+              className={job.cardopening}
+            >
               <h3>{opening.title}</h3>
               {/* <p>{opening.company}</p> */}
-              <hr/>
+              <hr />
               <p>Language: {opening.language}</p>
               <p>Shift : {opening.Shift}</p>
               <p>Salary: {opening.salary}</p>
@@ -178,6 +199,21 @@ function Careers() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* faq section */}
+      <div>
+        <div className={job.faqHeadingDivCss}>
+          <h2 className={job.faq_heading}>Frequently Asked Questions</h2>
+        </div>
+        <div className={job.body_faq}>
+          <div className={job.image_container}>
+            <img src="/Index/faq.png" alt="FAQ FAQs" />
+          </div>
+          <div className={job.layout}>
+            <Accordian3Careers />
+          </div>
         </div>
       </div>
 

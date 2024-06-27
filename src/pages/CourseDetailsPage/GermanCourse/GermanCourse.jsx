@@ -305,11 +305,13 @@ const GermanCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo.png"
+                alt="Curiotory Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -334,9 +336,12 @@ const GermanCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"7rem"
-        }}>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "7rem",
+          }}
+        >
           <a href="/checkout/3">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
@@ -518,16 +523,14 @@ const GermanCourse = () => {
           {/* left section */}
           <div className={buy.left_section}>
             {/* video */}
-            <div className={buy.video}>
+            <div className={buy.videoWrapper}>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/BJTxncjyyQI?si=O5plcg3tuPfHXNw-"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
             {/* text */}
@@ -652,14 +655,14 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
                 variant="top"
                 src="/Company/siemens.png"
                 alt="company logo"
-                // Siemens AG 
+                // Siemens AG
               />
               <hr
                 style={{
@@ -702,7 +705,7 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "60%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -744,7 +747,7 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -785,7 +788,7 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "80%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -825,7 +828,7 @@ const GermanCourse = () => {
                 className={buy.card_img}
                 style={{
                   width: "60%",
-                  height:"15%",
+                  height: "15%",
                   margin: "2rem auto 1rem",
                   borderRadius: "7px",
                 }}
@@ -863,7 +866,7 @@ const GermanCourse = () => {
         </div>
 
         {/* review section */}
-       <Reviewsection />
+        <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
         <div className={buy.faqHeadingDivCss}>

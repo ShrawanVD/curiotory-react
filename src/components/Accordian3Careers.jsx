@@ -39,11 +39,17 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            How long are the courses?
+            What is the job of a language interpreter?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>The total course duration is 25 hrs.</Typography>
+          <Typography >
+            The job of a language interpreter is to facilitate communication
+            between people who speak different languages. Interpreters convey
+            spoken or signed messages from one language to another in various
+            settings, such as conferences, meetings, courtrooms, medical
+            appointments, and more.
+          </Typography>
         </AccordionDetails>
       </Accordion>
 
@@ -72,11 +78,18 @@ export default function ControlledAccordions() {
               color: "black;",
             }}
           >
-            Can I learn at my own pace?
+            What are the qualifications for an interpreter job?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Yes, we offer self-paced learning options.</Typography>
+          <Typography>
+            A translator's qualifications typically include fluency in at least
+            two languages, strong listening and memory retention skills,
+            cultural understanding, and a bachelor's degree in languages,
+            linguistics, or a related field. Having a degree from a recognized
+            institution and previous experience in interpreting or translating
+            can enhance prospects.
+          </Typography>
         </AccordionDetails>
       </Accordion>
 
@@ -105,12 +118,18 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            Do I need prior knowledge?
+            Is language interpreter/translator a good career?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            No, our courses cater to all levels, including beginners.
+            Being a language interpreter or translator can be a fulfilling and
+            rewarding career for those who are passionate about languages and
+            cultural exchange. It offers opportunities to work in various
+            settings, such as government agencies, healthcare facilities,
+            international organizations, and corporate environments. The demand
+            for interpreters and translators is growing globally, driven by
+            globalization and increasing multicultural interactions.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -140,12 +159,19 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            What age groups are the courses for?
+            Is language Interpreter a well paid job?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Our courses are for all age groups, from kids to adults.
+            language interpreting can be a well-paying job, especially for
+            interpreters with specialized skills in high-demand languages or
+            industries such as health care, law, or conference interpreting.
+            Experienced interpreters often command higher rates, and those
+            employed by government agencies or large organizations may receive
+            competitive salaries and benefits. In addition, freelancers have the
+            flexibility to set their own prices and deal with multiple clients,
+            which can increase their earning potential.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -175,13 +201,19 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            Do I need any special software?
+            How to make six figures as an Interpreter?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            You can access our course on Curiotory app, available on google
-            playstore.
+            To earn six figures as an interpreter, focus on specializing in
+            high-demand fields, such as legal, medical, or conference
+            interpreting. Earn relevant certifications to improve credibility
+            and qualify for higher paying opportunities. Build a strong
+            portfolio of experience and establish a reputation for reliability
+            and accuracy. Establish active contacts within the industry to
+            connect with potential clients and agencies offering lucrative
+            contracts.
           </Typography>
         </AccordionDetails>
       </Accordion>

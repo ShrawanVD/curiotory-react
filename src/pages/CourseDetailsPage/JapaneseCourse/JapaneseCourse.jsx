@@ -512,16 +512,14 @@ const JapaneseCourse = () => {
           {/* left section */}
           <div className={buy.left_section}>
             {/* video */}
-            <div className={buy.video}>
+            <div className={buy.videoWrapper}>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/59astp-V2rQ?si=6ARIR9bPEGsen15D"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               ></iframe>
             </div>
             {/* text */}

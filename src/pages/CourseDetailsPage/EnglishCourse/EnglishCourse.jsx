@@ -676,16 +676,14 @@ const EnglishCourse = () => {
           {/* left section */}
           <div className={buy.left_section}>
             {/* video */}
-            <div className={buy.video}>
+            <div className={buy.videoWrapper}>
               <iframe
-                width="560"
-                height="315"
                 src="https://www.youtube.com/embed/EQ5g5VDbnG4?si=vsrAzB34Q4naDCE_"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             {/* text */}

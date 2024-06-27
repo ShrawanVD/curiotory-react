@@ -1,10 +1,17 @@
 import styles from "./Jobdetails.module.css";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import Navv from "../NewNavbar/Newnavbar";
 import Footer2 from "../Footer/Footer2";
+
 const openings = [
   {
     id: 1,
+    metaTitle: "Apply For French Interpreter jobs At Curiotory - Hiring Now",
+    metaDesc:
+      "Apply for French language interpreter jobs online for remote and hybrid models. Join our dynamic team at Curiotory and soar new heights in your career! Hiring Now!",
+    metaKey:
+      "french language interpreter, french language interpreter jobs, french translator jobs, french interpreter jobs in India, french interpretation jobs remote, French interpreter jobs work from home",
     title: "French Language Interpreter",
     language: "French",
     startDate: "Immediately",
@@ -50,6 +57,11 @@ const openings = [
   },
   {
     id: 2,
+    metaTitle: "Remote Nepali Language Interpreter Jobs In India ",
+    metaDesc:
+      "Curiotory is hiring Nepali Interpreters pan India, Come and build your career with us and experience a cultural and dynamic working environment. Apply Now!",
+    metaKey:
+      "Nepali language interpreter jobs, Nepali interpreter jobs, Nepali language translator jobs, remote Nepali language interpreter job, Nepali interpreter jobs from home, Nepali language jobs",
     title: "Nepali Language Interpreter",
     language: "Nepali",
     startDate: "Immediately",
@@ -95,6 +107,11 @@ const openings = [
   },
   {
     id: 3,
+    metaTitle: "Tamil Language Interpreter Jobs Available, Apply Now",
+    metaDesc:
+      "Are you a skilled Tamil Interpreter looking for better Tamil Interpreter job opportunities? Then Curiotory is the place for you. Join our team and upskill your career now!",
+    metaKey:
+      "Tamil Language Interpreter jobs, Tamil linguistic jobs, Tamil interpreter jobs, Tamil Language Translator jobs, Tamil translator jobs work from home, Tamil translator jobs online",
     title: "Tamil Language Interpreter",
     language: "Tamil",
     startDate: "Immediately",
@@ -138,9 +155,13 @@ const openings = [
     whoCanApply:
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
-
   {
     id: 4,
+    metaTitle: "Hindi Interpreter Job Positions Open, Hiring Now For Curiotory",
+    metaDesc:
+      "Ready To Elevate Your Career? Apply for Remote Hindi Language Interpreter Jobs and explore rewarding opportunities in your career path with Curiotory. Apply Now!",
+    metaKey:
+      "Hindi Language Interpreter jobs, Hindi Interpreter jobs, Hindi Interpreter jobs from home, Hindi Interpreter jobs work from home, Hindi Interpreter jobs, Hindi Interpreter jobs remote",
     title: "Hindi Language Interpreter",
     language: "Hindi",
     startDate: "Immediately",
@@ -186,6 +207,11 @@ const openings = [
   },
   {
     id: 5,
+    metaTitle: "Bengali Language Interpreter Job Opportunities At Curiotory",
+    metaDesc:
+      "Bengali Interpreter Job Openings at Curiotory. Join the most versatile language interpreting platform and build a valuable and rewarding career with us. Apply Now!",
+    metaKey:
+      "Bengali Language Interpreter jobs, Bengali Interpreter jobs, Bengali Interpreter jobs remote, Bengali Interpreter jobs work from home, remote Bengali Interpreter jobs work from home",
     title: "Bengali Language Interpreter",
     language: "Bengali",
     startDate: "Immediately",
@@ -231,6 +257,12 @@ const openings = [
   },
   {
     id: 6,
+    metaTitle:
+      "Curiotory is Hiring Urdu Language Interpreters: Remote & Onsite ",
+    metaDesc:
+      "Curiotory seeks passionate Urdu language interpreters: remote and onsite Urdu interpreter jobs available. Join our team and apply your skills in diverse settings today!",
+    metaKey:
+      "Urdu Interpreter jobs , Urdu Language Interpreter jobs, Urdu Language translator, Urdu Language translator jobs from home, Urdu interpreter jobs remote, Urdu interpreter job vacancy",
     title: "Urdu Language Interpreter",
     language: "Urdu",
     startDate: "Immediately",
@@ -275,6 +307,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
 ];
+
 function Jobdetails() {
   const { id } = useParams();
   const jobId = parseInt(id, 10);
@@ -285,6 +318,13 @@ function Jobdetails() {
   }
   return (
     <>
+      {/* for meta tags  */}
+      <Helmet>
+        <title>{job.metaTitle}</title>
+        <meta name="description" content={job.metaDesc} />
+        <meta name="keywords" content={job.metaKey} />
+      </Helmet>
+
       <Navv />
       <div className={styles.jobDetails}>
         <h1>{job.title}</h1>
