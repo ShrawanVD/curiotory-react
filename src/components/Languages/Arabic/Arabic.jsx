@@ -7,6 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/ArabicCurr";
 import axios from "axios";
+import config from '../../../services/config';
 
 function Arabic() {
   const [proficiency, setProficiency] = useState("A1");
@@ -119,7 +120,7 @@ function Arabic() {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
       const response = await axios.post(
-        "https://backendapi-1-nlyi.onrender.com/enroll",
+        `${config.apiUrl}/enroll`,
         dataToSend
       );
 

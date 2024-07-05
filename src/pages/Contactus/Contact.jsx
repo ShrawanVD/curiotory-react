@@ -3,6 +3,7 @@
 import Contactcss from "./Contact.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import config from '../../services/config';
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -15,7 +16,7 @@ function Contact() {
 
     try {
       const response = await fetch(
-        "https://backendapi-1bfa.onrender.com/sendMsg",
+        `${config.apiUrl}/sendMsg`,
         {
           method: "POST",
           headers: {

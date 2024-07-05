@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Blogscss from "./Blogs.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import config from '../../services/config';
 
 function Blogs() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -15,9 +16,8 @@ function Blogs() {
 
   const fetchBlogPosts = () => {
     setLoading(true);
-    // https://backendapi-ay7s.onrender.com/api/blogs
     
-    fetch("https://backendapi-1-nlyi.onrender.com/api/blogs")
+    fetch(`${config.apiUrl}/api/blogs`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");

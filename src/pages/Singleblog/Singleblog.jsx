@@ -111,6 +111,7 @@ import { useState, useEffect } from 'react';
 import { useSpeechSynthesis } from "react-speech-kit";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import config from '../../services/config';
 
 function Singleblog() {
   const [blog, setBlog] = useState(null);
@@ -126,7 +127,7 @@ function Singleblog() {
         const blogId = urlParams.get('id');
 
         // Fetch blog data based on the ID
-        const response = await fetch(`https://backendapi-1-nlyi.onrender.com/api/blogs/${blogId}`);
+        const response = await fetch(`${config.apiUrl}/api/blogs/${blogId}`);
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }

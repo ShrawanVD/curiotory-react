@@ -7,6 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/DutchCurr";
 import axios from 'axios';
+import config from '../../../services/config';
 
 function Dutch() {
   const [proficiency, setProficiency] = useState("A1");
@@ -127,7 +128,7 @@ function Dutch() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
       
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");

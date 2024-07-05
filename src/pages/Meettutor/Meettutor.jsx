@@ -4,6 +4,7 @@ import Meetcss from "./Meettutor.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import { useState, useEffect } from "react";
+import config from '../../services/config';
 
 function Meettutor() {
   const [teachers, setTeachers] = useState([]);
@@ -64,7 +65,7 @@ function Meettutor() {
       loadingSpinner.style.display = "block";
     }
 
-    fetch("https://backendapi-1-nlyi.onrender.com/teachers")
+    fetch(`${config.apiUrl}/teachers`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -100,7 +101,7 @@ function Meettutor() {
     const native = document.getElementById("nativeFilter").value;
 
     fetch(
-      `https://backendapi-1-nlyi.onrender.com/filterteachers?language=${language}&native=${native}`
+      `${config.apiUrl}/filterteachers?language=${language}&native=${native}`
     )
       .then((response) => response.json())
       .then((data) => {

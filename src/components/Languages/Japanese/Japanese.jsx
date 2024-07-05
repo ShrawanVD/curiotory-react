@@ -7,6 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/JapaneseCurr";
 import axios from 'axios';
+import config from '../../../services/config';
 
 function Japanese() {
   const [proficiency, setProficiency] = useState("A1");
@@ -110,7 +111,7 @@ const handleSubmit = async (e) => {
   try {
     // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
     
-    const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+    const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
     if (response.status === 200) {
       alert("Form submitted successfully");

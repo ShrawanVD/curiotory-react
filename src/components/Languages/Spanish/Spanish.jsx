@@ -7,6 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/SpanishCurr";
 import axios from 'axios';
+import config from '../../../services/config';
 
 function Spanish() {
   const [proficiency, setProficiency] = useState("A1");
@@ -125,7 +126,7 @@ function Spanish() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
       
-      const response = await axios.post("https://backendapi-1-nlyi.onrender.com/enroll", dataToSend);
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
