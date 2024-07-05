@@ -297,7 +297,7 @@ function English() {
 
       {/* benefits of learning */}
       <div className={fr.benefitOfLearningSection}>
-        <h2>Benefits of learning French language</h2>
+        <h2>Benefits of learning English language</h2>
 
         <Carousel
           interval={4000}
