@@ -4,7 +4,7 @@ function Courselist() {
   return (
     <>
       <div className={list.courseListContainer}>
-        <h2>Learn at just ₹99</h2>
+        <h2>Language learning courses at just ₹99</h2>
         <div className={list.courseCardContainer}>
           <a href="course/french">
             <div className={list.courseLangCard}>
