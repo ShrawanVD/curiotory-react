@@ -41,11 +41,18 @@
   font-family: Raleway, Arial, sans-serif;
   font-weight: 550;
 }
-.coverPage h2 {
+/* .coverPage h2 {
   color: #002e5b;
   margin-top: 1rem;
   font-size: 1.30rem;
   font-family: Raleway, Arial, sans-serif;
+} */
+.coverPage p {
+  color: #002e5b;
+  margin: 1rem 12rem;
+  font-size: 0.8rem;
+  font-family: Raleway, Arial, sans-serif;
+  text-align: center;
 }
 /* .coverPage h4 {
   color: #002e5b;
@@ -427,5 +434,97 @@
   }
   .asianLangList h4 {
     font-size: 16px;
+  }
+}
+
+
+/* newsppr section */
+
+.pprLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pprLayout h3 {
+  font-size: 32px;
+  font-family: Raleway, Arial, sans-serif;
+  color: #0b2743;
+}
+
+.pprContent, .pprContentRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+.pprLeft {
+  margin: 1rem;
+}
+
+.pprContentRight .pprLeft img{
+  width: 40vw;
+  height: 60vh;
+}
+
+.pprLeft img {
+  border-radius: 10px;
+}
+
+.pprRight {
+  margin: 1rem;
+}
+.pprRight p {
+  text-align: justify;
+  font-family: Raleway, Arial, sans-serif;
+  color: #0b2743;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1200px) {
+  .pprLeft img {
+    width: 40vw;
+    height: 50vh;
+  }
+
+  .pprRight p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .pprLayout h3 {
+    font-size: 1.7rem;
+  }
+
+  .pprContent, .pprContentRight {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pprContentRight{
+    flex-direction: column-reverse;
+  }
+
+  .pprContentRight .pprLeft img{
+    width: 100%;
+    height: auto;
+  }
+
+  
+
+  .pprLeft img {
+    width: 100%;
+    height: auto;
+  }
+
+  .pprRight p {
+    font-size: 1rem;
   }
 }

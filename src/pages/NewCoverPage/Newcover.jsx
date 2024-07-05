@@ -98,11 +98,36 @@ function Newcover() {
                   <img src="/mascot/coverani.gif" alt="mascot curo" />
                 </LazyLoad>
               </div>
+              {/* <h1>
+                Learn Languages With Proficiency : <br /> Curiotory The Best
+                Language Learning App
+              </h1> */}
+
               <h1>An Online Language Learning Platform</h1>
+
               <h2>
                 Curious about learning new languages? Transform it into a
                 life-changing opportunity.
               </h2>
+
+              <p>
+                Curiotory, the ultimate language learning software is here at
+                your service to kick start your language learning journey with
+                fun pocket size chapters, curated by the best language experts
+                offering an unforgettable learning experience that comes in
+                handy in all your career and multilingual aspects.
+              </p>
+              <p>
+                Learn at your pace with Bharat’s first language learning
+                platform with language learning courses available for everyone
+                and everybody, right from school going kids, to aspiring
+                teenagers, working professionals and homemakers dreaming to give
+                a new direction to their life! Improvise your existing language
+                skills or learn a new language online with professional
+                certification.! Test your own skills and ability and outperform
+                them through our special language learning exams defined in the
+                curriculum by our highly skilled language tutors!
+              </p>
 
               <div className={newcover.coverpageButton}>
                 <a
@@ -110,7 +135,7 @@ function Newcover() {
                   rel="noopener noreferrer"
                   href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
                 >
-                  <button>Download the app now!</button>
+                  <button>Download the Curiotory app now!</button>
                 </a>
               </div>
             </div>
@@ -148,10 +173,129 @@ function Newcover() {
             </div>
           </div>
 
+          {/* Newsppr section */}
+          {/* <div className={newcover.newsppr}>
+            <div className={newcover.pprLayout}>
+              <h3>Featured in Times Of India</h3>
+
+              <div className={newcover.pprContent}>
+                <div className={newcover.pprLeft}>
+                  <img src="/Index/TOI.webp" alt="Featured in Times of India" />
+                </div>
+                <div className={newcover.pprRight}>
+                  <p>
+                    Meet our versatile and revolutionary Founder & CEO of
+                    Curiotory- The ultimate language learning app, Mrs Sheetal
+                    Ramkumar Featured on Times Of India For{" "}
+                    <a
+                      target="_blank"
+                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                    >
+                      “The Most Inspiring Entrepreneurs to watch in 2024”
+                    </a>
+                    . Her phenomenal leadership skills and vision of building
+                    Bharat’s first language learning app has created a much
+                    greater impact on our team and other aspiring entrepreneurs
+                    too. Her success story is truly inspiring and makes us want
+                    to believe in ourselves too. Under her leadership in
+                    revolutionizing edutech, curiotory has been able to cater to
+                    people all over the world, who are willing to make a change
+                    in their life through language learning and that's how
+                    Curiotory became the forefront of language education. To
+                    dive into the journey of curiotory read more :{" "}
+                    <a
+                      target="_blank"
+                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                    >
+                      Times Of India
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div> */}
+
+          <div className={newcover.newsppr}>
+            <div className={newcover.pprLayout}>
+              <h3>Featured On Top Columns</h3>
+
+              {/* TOI */}
+              <div className={newcover.pprContent}>
+                <div className={newcover.pprLeft}>
+                  <img src="/Index/TOI.webp" alt="Featured in Times of India" />
+                </div>
+                <div className={newcover.pprRight}>
+                  <p>
+                    Meet our versatile and revolutionary Founder & CEO of
+                    Curiotory- The ultimate language learning app, Mrs Sheetal
+                    Ramkumar Featured on Times Of India For{" "}
+                    <a
+                      target="_blank"
+                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                    >
+                      “The Most Inspiring Entrepreneurs to watch in 2024”
+                    </a>
+                    . Her phenomenal leadership skills and vision of building
+                    Bharat’s first language learning app has created a much
+                    greater impact on our team and other aspiring entrepreneurs
+                    too. Her success story is truly inspiring and makes us want
+                    to believe in ourselves too. Under her leadership in
+                    revolutionizing edutech, curiotory has been able to cater to
+                    people all over the world, who are willing to make a change
+                    in their life through language learning and that's how
+                    Curiotory became the forefront of language education. To
+                    dive into the journey of curiotory read more :{" "}
+                    <a
+                      target="_blank"
+                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                    >
+                      Times Of India
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              {/* Eco Times */}
+              <div className={newcover.pprContentRight}>
+                <div className={newcover.pprRight}>
+                  <p>
+                    We are thrilled to announce that Curiotory- The Ultimate
+                    Language Learning Platform is featured in The Economic
+                    Times' prestigious list of{" "}
+                    <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
+                      "The Most Trusted Brands To Watch in 2024"!{" "}
+                    </a>{" "}
+                    This recognition highlights our unwavering commitment to
+                    delivering top-notch services and building trust with our
+                    valued customers. Being spotlighted by such a renowned
+                    publication underscores our dedication to excellence and
+                    innovation. We are immensely grateful to our fantastic team
+                    for their continued support and trust. Stay tuned as we
+                    continue to bring to you the best of linguistics ever known!
+                    Here’s to much more achievements to come in the future for
+                    Curiotory! Want to Read more:{" "}
+                    <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
+                      Economic Times
+                    </a>
+                  </p>
+                </div>
+                <div className={newcover.pprLeft}>
+                  <img src="/Index/ET.webp" alt="New Featured Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Our solution */}
           <div>
             <div className={newcover.solcontainer}>
-              <h2 className={newcover.solheader}>Our Solutions</h2>
+              {/* <h2 className={newcover.solheader}>
+                Our Solutions
+              </h2> */}
+              <h2 className={newcover.solheader}>
+                Key benefits of learning a new language with Curiotory
+              </h2>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
                   <LazyLoad offset={100}>
@@ -209,7 +353,10 @@ function Newcover() {
           {/* sliding languages */}
           <div className="sliding-section">
             <div className="sliding-section-heading">
-              <h2>Languages we teach</h2>
+              {/* <h2>Languages we teach</h2> */}
+              <h2>
+                Languages you can learn to channelize your linguistics career{" "}
+              </h2>
             </div>
             <div className="sliding-container">
               <Slider {...settings}>
@@ -494,8 +641,12 @@ function Newcover() {
 
           {/* Why online lang */}
           <div className={newcover.wonderingContainer}>
-            <h2>
+            {/* <h2>
               Why Online Language Learning Triumphs Over Traditional Centers
+            </h2> */}
+            <h2>
+              Why learning a new language online is preferably more convenient
+              than learning in traditional centers
             </h2>
             <hr />
             <div className="foreign-lang-container">
@@ -752,11 +903,11 @@ function Newcover() {
 
               <div className="info">
                 <ul>
-                  <li>World-className virtual teaching platform</li>
+                  <li>World-class virtual teaching platform</li>
                   <hr className="info-divider" />
                   <li>Course flexibility and customization</li>
                   <hr className="info-divider" />
-                  <li>Free demo className for any language</li>
+                  <li>Free demo class for any language</li>
                 </ul>
               </div>
 
@@ -872,29 +1023,6 @@ function Newcover() {
                       came handy. My tutor, Disha, was kind enough to make
                       adjustments many times so that I could easily recover
                       whenever I missed a session. I am definitely satisfied!”
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="swiper-slide">
-                  <div className="profile-picture">
-                    <img
-                      src="/Index/review - bhavana.png"
-                      alt="Bhawana Pawar HR Review Online Language Learning"
-                    />
-                  </div>
-                  <div className="name">Bhawana Pawar HR</div>
-                  <div className="designation">
-                    Jabil Manufacturing Pvt. Ltd. - Mandarin (Ranjangaon,
-                    Maharashtra)
-                  </div>
-                  <div className="reviews">
-                    <p>
-                      “We are happy to receive Curiotory language service, as
-                      our teams gained a lot of knowledge. It went a long way to
-                      help improve their efficiency at work . We hope to work
-                      again with Curiotory in future &nbsp;.”
                     </p>
                   </div>
                 </div>
