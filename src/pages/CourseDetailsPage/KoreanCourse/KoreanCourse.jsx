@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 import Reviewcourse from "../../../components/Reviewcourse/Reviewcourse";
+import { useEffect } from "react";
 
 const KoreanCourse = () => {
   // reviews
@@ -477,6 +478,24 @@ const KoreanCourse = () => {
         );
     }
   };
+  useEffect(() => {
+    addGTM();
+  }, []);
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
 
   return (
     <>
@@ -785,13 +804,12 @@ const KoreanCourse = () => {
         </div>
 
         {/* company section */}
-        <div className={buy.company}>
+        {/* <div className={buy.company}>
           <h1>
             Companies <span className={buy.yellow}>Hiring</span> Korean
             Experts
           </h1>
           <div className={buy.first_row}>
-            {/* first company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -832,7 +850,6 @@ const KoreanCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* second company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -869,20 +886,9 @@ const KoreanCourse = () => {
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
-                {/* <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles2}
-                >
-                  {showAllProfiles2 ? "View Less" : "View More"}
-                </Button> */}
               </Card.Body>
             </Card>
 
-            {/* third company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -924,7 +930,6 @@ const KoreanCourse = () => {
           </div>
 
           <div className={buy.second_row}>
-            {/* fourth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -965,7 +970,6 @@ const KoreanCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* fifth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -1007,7 +1011,6 @@ const KoreanCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* sixth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -1048,7 +1051,7 @@ const KoreanCourse = () => {
               </Card.Body>
             </Card>
           </div>
-        </div>
+        </div> */}
 
         {/* review section */}
        <Reviewsection />

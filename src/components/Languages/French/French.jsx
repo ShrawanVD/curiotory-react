@@ -91,6 +91,7 @@ function French() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -140,16 +141,36 @@ function French() {
       alert("Form submission failed");
     }
   };
+
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
+
   return (
     <>
       <div className={fr.container}>
         <Helmet>
           <title>
-            Learn French Online Easily With Curiotory's Expert Guidance
+          Learn French Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Bonjour! Ready to impress with your French skills? Curiotory's language learning app combines fun activities and strategies for learning French online like a pro!"
+            content="Bonjour! Want to enchant with your French skills? With Curiotory's language learning app, engaging activities and expert strategies combine to enhance your French learning experience. Learn with Curo now!
+            
+            Join Online French Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -464,7 +485,7 @@ function French() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -474,7 +495,6 @@ function French() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -483,7 +503,7 @@ function French() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

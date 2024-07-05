@@ -12,6 +12,7 @@ function Blogs() {
 
   useEffect(() => {
     fetchBlogPosts();
+    addGTM();
   }, []);
 
   const fetchBlogPosts = () => {
@@ -50,6 +51,23 @@ function Blogs() {
   const currentPosts = blogPosts.slice(startIndex, endIndex);
 
   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
+
 
   return (
     <>

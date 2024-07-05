@@ -4,6 +4,7 @@ import Contactcss from "./Contact.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import config from '../../services/config';
+import { useEffect } from "react";
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -45,7 +46,24 @@ function Contact() {
       window.location.reload();
     }
   };
+  useEffect(() => {
+    addGTM();
+  }, []);
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
 
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <Newnavbar />

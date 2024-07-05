@@ -101,6 +101,7 @@ function Danish() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -148,6 +149,22 @@ function Danish() {
     }
   };
 
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
+
   return (
     <>
       <div className={fr.container}>
@@ -156,10 +173,14 @@ function Danish() {
 <Helmet>
 <title>
 Learn Danish Online Easily With Curiotory's Expert Guidance
+
 </title>
 <meta
   name="description"
-  content="Hej! Ready to impress with your Danish skills? Curiotory's language learning app combines fun activities and strategies for learning Danish like a pro!"
+  content="Learn Danish Online with India's best language learning app, Curiotory—where the synergy of education and technology ensures a seamless learning experience. Mastering Danish is as effortless as enjoying a piece of Danish pastry!
+
+Join Online Danish Classes Now!
+"
 />
 <meta
   name="keywords"
@@ -515,7 +536,7 @@ Learn Danish Online Easily With Curiotory's Expert Guidance
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -525,7 +546,6 @@ Learn Danish Online Easily With Curiotory's Expert Guidance
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -534,7 +554,7 @@ Learn Danish Online Easily With Curiotory's Expert Guidance
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

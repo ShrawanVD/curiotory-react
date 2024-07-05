@@ -92,6 +92,8 @@ function Portuguese() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
+
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -141,17 +143,36 @@ function Portuguese() {
       alert("Form submission failed");
     }
   };
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <div className={fr.container}>
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Portuguese Online Easily With Curiotory's Expert Guidance
+          Learn Portuguese Online Easily With Curiotory's Expert Guidance
+
           </title>
           <meta
             name="description"
-            content="olá! Ready to impress with your Portuguese skills? Curiotory's language learning app combines fun activities and strategies for learning Portuguese like a pro!"
+            content="Olá! Learn Portuguese online with Curiotory's Portuguese language learning course which offers the most precise and unique language lessons to make education more simple yet highly valuable!
+
+Join Online Portuguese Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -499,7 +520,7 @@ function Portuguese() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -509,7 +530,6 @@ function Portuguese() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -518,7 +538,7 @@ function Portuguese() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

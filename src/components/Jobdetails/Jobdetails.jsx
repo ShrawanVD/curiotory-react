@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import Navv from "../NewNavbar/Newnavbar";
 import Footer2 from "../Footer/Footer2";
+import { Hail } from "@mui/icons-material";
 
 const openings = [
   {
@@ -306,6 +307,78 @@ const openings = [
     whoCanApply:
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
+  {
+    id: 7,
+    title: "Inside Sales Executive ",
+    location: "Marathahalli, Bangalore",
+    language: "Proficiency in English and Hindi",
+    startDate: "Immediately",
+    salary: "25k CTC, 21k take home",
+    worksch: " 6 days a week with rotational off days (7 AM to 9 PM)", 
+    qualification: "Graduation",
+    Experience: "Minimum 1 year in sales or a similar role",
+    responsibilities: [
+      "Contact potential and existing customers to inform them about our products and services using scripts",
+      "Answer questions about products or the company",
+      "Ask questions to understand customer requirements and close sales",
+      "Direct prospects to the field sales team when needed",
+      "Enter and update customer information in the database",
+      "Handle grievances to preserve the company’s reputation",
+      "Go the “extra mile” to meet sales quota and facilitate future sales",
+      "Keep records of calls and sales and note useful information",
+    ],
+    requirements: [
+      "Proven experience as an Inside Sales Executive or similar role",
+      "Excellent communication and interpersonal skills",
+      "Outstanding negotiation skills with the ability to resolve issues and address complaints",
+      "Familiarity with CRM tools and practices",
+      "Strong organizational and time management skills",
+      "Goal-oriented and self-motivated",
+    ],
+    Benefits: [
+      "Competitive salary package",
+      "Professional development and growth opportunities",
+      "Supportive and collaborative work environment",
+      "Comprehensive training and ongoing support",
+    ],
+  },
+  {
+    id: 8,
+    title: "Back Office Executives",
+    location: "Marathahalli, Bangalore",
+    language: "Proficiency in English and Hindi",
+    startDate: "Immediately",
+    salary: "Experienced: 25k CTC, 21k in hand, Freshers: 23k CTC, 18k in hand ",
+    worksch: "6 days a week with rotational off days (10 AM to 7 PM)", //
+    qualification: "Graduate / Undergraduate",//
+    Experience: "Freshers and Experienced candidates are welcome",//
+    about:
+      "We are looking for enthusiastic and dedicated Back Office Executives to join our team in Marathahalli, Bangalore. Whether you're a fresher or an experienced professional, we welcome your application. Proficiency in English and Hindi is required. Enjoy competitive salary packages and a supportive work environment. Apply now to be a part of our growing team!",
+    responsibilities: [
+      "Contact potential and existing customers to inform them about our products and services using scripts",
+      "Answer questions about products or the company",
+      "Ask questions to understand customer requirements and close sales",
+      "Direct prospects to the field sales team when needed",
+      "Enter and update customer information in the database",
+      "Handle grievances to preserve the company’s reputation",
+      "Go the “extra mile” to meet sales quota and facilitate future sales",
+      "Keep records of calls and sales and note useful information",
+    ],
+    requirements: [
+      "Proven experience as an Inside Sales Executive or similar role",
+      "Excellent communication and interpersonal skills",
+      "Outstanding negotiation skills with the ability to resolve issues and address complaints",
+      "Familiarity with CRM tools and practices",
+      "Strong organizational and time management skills",
+      "Goal-oriented and self-motivated",
+    ],
+    Benefits: [
+      "Competitive salary package",
+      "Professional development and growth opportunities",
+      "Supportive and collaborative work environment",
+      "Comprehensive training and ongoing support",
+    ],
+  },
 ];
 
 function Jobdetails() {
@@ -328,16 +401,14 @@ function Jobdetails() {
       <Navv />
       <div className={styles.jobDetails}>
         <h1>{job.title}</h1>
+        {job.language && (
         <div>
           <strong>Language:</strong> {job.language}
         </div>
-        <div>
-          <strong>Start Date:</strong> {job.startDate}
-        </div>
-        <div>
-          <strong>Salary:</strong> {job.salary}
-        </div>
-        <hr />
+      )}
+        {/* <div>
+          <strong>Language:</strong> {job.language}
+        </div> */}
         {/* <h2>About the Internship</h2>
         <p>{job.about}</p> */}
         {/* <h2>Skills Required</h2>
@@ -346,38 +417,99 @@ function Jobdetails() {
             <li key={index}>{skill}</li>
           ))}
         </ul> */}
-        <h2>Job responsibilities: </h2>
-        <ul>
-          {job.responsibilities.map((responsibilities, index) => (
-            <li key={index}>{responsibilities}</li>
-          ))}
-        </ul>
-        <h2>Selection process: </h2>
-        <ul>
-          {job.process.map((process, index) => (
-            <li key={index}>{process}</li>
-          ))}
-        </ul>
-        <h2>Requirements: </h2>
-        <ul>
-          {job.requirements.map((requirements, index) => (
-            <li key={index}>{requirements}</li>
-          ))}
-        </ul>
-        <h2>Training and certification: </h2>
-        <ul>
-          {job.training.map((training, index) => (
-            <li key={index}>{training}</li>
-          ))}
-        </ul>
-        <h2>Additional Information:: </h2>
-        <ul>
-          {job.additionalInfo.map((additionalInfo, index) => (
-            <li key={index}>{additionalInfo}</li>
-          ))}
-        </ul>
         {/* <h2>Who Can Apply</h2>
         <p>{job.whoCanApply}</p> */}
+         {job.startDate && (
+        <div>
+          <strong>Start Date:</strong> {job.startDate}
+        </div>
+      )}
+       {job.location && (
+        <div>
+          <strong>Location:</strong> {job.location}
+        </div>
+      )}
+      {job.salary && (
+        <div>
+          <strong>Salary:</strong> {job.salary}
+        </div>
+      )}
+      {job.worksch && (
+        <div>
+          <strong>Work Schedule:</strong> {job.worksch}
+        </div>
+      )}
+      {job.qualification && (
+        <div>
+          <strong>Qualification:</strong> {job.qualification}
+        </div>
+      )}
+      {job.Experience && (
+        <div>
+          <strong>Experience:</strong> {job.Experience}
+        </div>
+      )}
+      <hr />
+      {job.responsibilities && job.responsibilities.length > 0 && (
+        <>
+          <h2>Job responsibilities: </h2>
+          <ul>
+            {job.responsibilities.map((responsibility, index) => (
+              <li key={index}>{responsibility}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {job.process && job.process.length > 0 && (
+        <>
+          <h2>Selection process: </h2>
+          <ul>
+            {job.process.map((process, index) => (
+              <li key={index}>{process}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {job.requirements && job.requirements.length > 0 && (
+        <>
+          <h2>Requirements: </h2>
+          <ul>
+            {job.requirements.map((requirement, index) => (
+              <li key={index}>{requirement}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {job.training && job.training.length > 0 && (
+        <>
+          <h2>Training and certification: </h2>
+          <ul>
+            {job.training.map((training, index) => (
+              <li key={index}>{training}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      {job.additionalInfo && job.additionalInfo.length > 0 && (
+        <>
+          <h2>Additional Information: </h2>
+          <ul>
+            {job.additionalInfo.map((info, index) => (
+              <li key={index}>{info}</li>
+            ))}
+          </ul>
+        </>
+      )}
+            {job.Benefits && job.Benefits.length > 0 && (
+        <>
+          <h2>Benefits: </h2>
+          <ul>
+            {job.Benefits.map((info, index) => (
+              <li key={index}>{info}</li>
+            ))}
+          </ul>
+        </>
+      )}
         <div className={styles.applyButtonContainer}>
           <a
             target="_blank"

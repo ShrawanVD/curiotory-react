@@ -4,8 +4,12 @@ import Newnavbar from "../NewNavbar/Newnavbar";
 import Footer2 from "../Footer/Footer2";
 import job from "./Careers.module.css";
 import Accordian3Careers from "../Accordian3Careers";
+import { useEffect } from "react";
 
 function Careers() {
+  useEffect(() => {
+    addGTM();
+  }, []);
   const openings = [
     {
       id: 1,
@@ -61,26 +65,56 @@ function Careers() {
       salary: "4.2 LPA",
       duration: "3 Months",
     },
+    {
+      id: 7,
+      title: "Inside Sales Executive ",
+      language: "English, Hindi",
+      Shift: "7 AM to 9 PM (rotational)",
+      salary: "25k CTC, 21k in hand",
+    },
+    {
+      id: 8,
+      title: "Back Office Executives",
+      language: "English, Hindi",
+      Shift: "10 AM to 7 PM",
+      salary: "25k CTC, 21k in hand (for Experienced)",
+    },
   ];
 
   const handleViewDetails = (id) => {
     window.location.href = `careers/details/${id}`;
   };
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
 
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       {/* for meta tags  */}
       <Helmet>
         <title>
-          Find Language Interpreter Jobs: Remote & In-Office Opportunities
+          Build Your Dream Language Career With Curiotory : Foreign Language
+          Jobs
         </title>
         <meta
           name="description"
-          content="Want to Land at Your Dream Job as a Language Interpreter? Join Curiotory Today for Hybrid & Remote Language Interpreter Jobs and Take Your Career at a Whole Next Level!"
+          content="Want to shape your language career path? Explore an ocean of language career opportunities at Curiotory where skill developments and opportunities are endless! 
+Apply for remote language jobs or work with us and give an elevated shift to your linguistics career for a life changing opportunity! Join our dynamic team now!"
         />
         <meta
           name="keywords"
-          content="language interpreter jobs, language interpreter jobs remote, language interpreter jobs work from home, language interpreter job vacancy, language interpreter job description, language translator job"
+          content="language career, foreign language jobs, language career opportunities, language jobs remote, linguistics career"
         />
       </Helmet>
 

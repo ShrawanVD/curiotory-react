@@ -60,6 +60,8 @@ function Newcover() {
   };
 
   useEffect(() => {
+    addGTM();
+
     // After 1 second, hide div1 and show div2
     const timer = setTimeout(() => {
       setShowDiv1(false);
@@ -69,6 +71,22 @@ function Newcover() {
     // Clear the timer when the component unmounts
     return () => clearTimeout(timer);
   }, []);
+
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
 
   return (
     <>

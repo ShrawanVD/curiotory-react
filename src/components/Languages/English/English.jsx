@@ -92,6 +92,8 @@ function English() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
+
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -141,16 +143,36 @@ function English() {
       alert("Form submission failed");
     }
   };
+
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
+
   return (
     <>
       <div className={fr.container}>
         <Helmet>
           <title>
-            Learn English Online Easily With Curiotory's Expert Guidance
+          Learn English Online Easily With Curiotory's Expert Guidance
+
           </title>
           <meta
             name="description"
-            content="Hello! Ready to impress with your English speaking skills? Curiotory's language learning app combines fun activities and strategies for learning English like a pro!"
+            content="Hello there! Ready to impress the world with your exceptional English skills? Look no further, because Curiotory's language learning app is here to turn you into an English-speaking expert. Say goodbye to boring textbooks—our app combines engaging activities and effective strategies to help you master English effortlessly. Why wait? Start your English learning journey now and prepare to wow everyone with your linguistic abilities!
+            Join Online English Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -494,7 +516,7 @@ function English() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -504,7 +526,6 @@ function English() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -513,7 +534,7 @@ function English() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

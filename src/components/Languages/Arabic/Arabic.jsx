@@ -91,6 +91,7 @@ function Arabic() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -141,6 +142,22 @@ function Arabic() {
     }
   };
 
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
+
   return (
     <>
       <div className={fr.container}>
@@ -148,10 +165,14 @@ function Arabic() {
         <Helmet>
           <title>
           Learn Arabic Online Easily With Curiotory's Expert Guidance
+
           </title>
           <meta
             name="description"
-            content="مرحبًا! Ready to impress with your Arabic skills? Curiotory's language learning app combines fun activities and strategies for learning Arabic like a pro!"
+            content="Learn Arabic Online With India's leading language learning app Curiotory- which brings the best of two worlds education and technology to make language learning more precise and easy than ever!
+
+Join Online Arabic Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -498,7 +519,7 @@ function Arabic() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -508,7 +529,6 @@ function Arabic() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -517,7 +537,7 @@ function Arabic() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

@@ -5,20 +5,36 @@ import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import { Helmet } from "react-helmet";
 import Footer2 from "../../components/Footer/Footer2";
 import Accordian4BecomeTutor from "../../components/Accordian4BecomeTutor";
+import { useEffect } from "react";
 
 function Becometutor() {
+  useEffect(() => {
+    addGTM();
+  }, []);
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <div>
-
-
-   {/* for meta tags  */}
-   <Helmet>
-        <title>
-        Apply For Language Tutor Jobs At Curiotory - Work From Anywhere
-        </title>
+      {/* for meta tags  */}
+      <Helmet>
+        <title>Here's How You Can Become A Language Tutor At Curiotory</title>
         <meta
           name="description"
-          content="Accomplish your dream of becoming a language tutor with Curiotory. Have the freedom of having remote language tutor jobs online & join our dynamic team. Apply Now!"
+          content="You have exceptional and top notch language skills, you excel in language tutoring, your language learning methods are out of the box!, if you happen to have these skills then boom!
+Curiotry is the place for you! Join our network of the best language tutors from all over the world and have your chance of making a difference in the linguistics world! "
         />
         <meta
           name="keywords"
@@ -26,16 +42,12 @@ function Becometutor() {
         />
       </Helmet>
 
-
-
       <Newnavbar />
       <div>
         {/* become tutor step by step guide */}
         <div className="enroll-container section-1">
           <div className="enroll-title">
-            <h1
-              className="text-center pl-3 pr-3 display-4 font-weight-bold"
-            >
+            <h1 className="text-center pl-3 pr-3 display-4 font-weight-bold">
               How we enroll private tutors?
             </h1>
           </div>
@@ -156,7 +168,10 @@ function Becometutor() {
 
         <div className="second-section-become-tutor">
           <div className="left-side">
-            <img src="/become tutor/section 2 image.svg" alt="become tutor right img" />
+            <img
+              src="/become tutor/section 2 image.svg"
+              alt="become tutor right img"
+            />
           </div>
 
           <div className="right-side">
@@ -178,7 +193,7 @@ function Becometutor() {
 
         {/* <!-- third section - same as the first section --> */}
 
-        <div className="third-section" >
+        <div className="third-section">
           <div className="left-side">
             <div className="left-main-heading">
               <h2>
@@ -210,9 +225,7 @@ function Becometutor() {
 
         {/* <!-- fourth section same as the second section --> */}
 
-        <div
-          className="second-section-become-tutor secondsectioncss"
-        >
+        <div className="second-section-become-tutor secondsectioncss">
           <div className="left-side">
             <img src="/become tutor/section 4 image.svg" alt="become tutor" />
           </div>
@@ -240,10 +253,7 @@ function Becometutor() {
 
         <div className="why-with-us">
           <div className="heading">
-            <h1
-              className="text-center pl-3 pr-3 display-4 font-weight-bold"
-              
-            >
+            <h1 className="text-center pl-3 pr-3 display-4 font-weight-bold">
               Why become a private tutor with us?
             </h1>
           </div>
@@ -285,21 +295,20 @@ function Becometutor() {
 
         {/* <!-- phases section - section 1 --> */}
 
-          {/* faq section */}
-      <div>
-        <div className="faqHeadingDivCss">
-          <h2 className="faq_heading">Frequently Asked Questions</h2>
-        </div>
-        <div className="body_faq">
-          <div className="image_container">
-            <img src="/Index/faq.png" alt="FAQ FAQs" />
+        {/* faq section */}
+        <div>
+          <div className="faqHeadingDivCss">
+            <h2 className="faq_heading">Frequently Asked Questions</h2>
           </div>
-          <div className="layout">
-            <Accordian4BecomeTutor />
+          <div className="body_faq">
+            <div className="image_container">
+              <img src="/Index/faq.png" alt="FAQ FAQs" />
+            </div>
+            <div className="layout">
+              <Accordian4BecomeTutor />
+            </div>
           </div>
         </div>
-      </div>
-
       </div>
       <Footer2 />
     </div>

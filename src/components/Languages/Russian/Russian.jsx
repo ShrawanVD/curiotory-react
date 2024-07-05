@@ -43,6 +43,8 @@ function Russian() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
+
   }, [proficiency, method]);
   // send the form data to DB
   const [formData, setFormData] = useState({
@@ -91,17 +93,35 @@ function Russian() {
       alert("Form submission failed");
     }
   };
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <div className={fr.container}>
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Russian Online Easily With Curiotory's Expert Guidance
+          Learn Russian Online Easily With Curiotory's Expert Guidance
+
           </title>
           <meta
             name="description"
-            content="привет! Ready to impress with your Russian skills? Curiotory's language learning app combines fun activities and strategies for learning English like a pro!"
+            content=" привет! Learn Russian online and advance your career with Curiotory's language learning app-  your essential tool, offering effective methods to accelerate your Russian language learning journey seamlessly.
+            Join Online Russian Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -448,7 +468,7 @@ function Russian() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -458,7 +478,6 @@ function Russian() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -467,7 +486,7 @@ function Russian() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

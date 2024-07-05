@@ -7,7 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/KoreanCurr";
 import axios from "axios";
-import config from '../../../services/config';
+import config from "../../../services/config";
 
 function Korean() {
   const [proficiency, setProficiency] = useState("A1");
@@ -97,6 +97,7 @@ function Korean() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -125,10 +126,7 @@ function Korean() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -146,6 +144,21 @@ function Korean() {
       alert("Form submission failed");
     }
   };
+  const addGTM = () => {
+    const script1 = document.createElement("script");
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement("script");
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <div className={fr.container}>
@@ -156,7 +169,10 @@ function Korean() {
           </title>
           <meta
             name="description"
-            content="Annyeonghaseyo! Ready to impress with your Korean skills? Curiotory's language learning app combines fun activities and strategies for learning Korean like a pro!"
+            content="Annyeonghaseyo! Eager to Learn Korean? With Curiotory's language learning app, mastering Korean is as enjoyable as a K-pop dance routine, blending fun activities and effective strategies seamlessly!
+
+Join Online Korean Classes Now!
+"
           />
           <meta
             name="keywords"
@@ -505,7 +521,7 @@ function Korean() {
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -515,7 +531,6 @@ function Korean() {
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -524,7 +539,7 @@ function Korean() {
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

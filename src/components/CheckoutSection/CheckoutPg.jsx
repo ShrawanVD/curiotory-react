@@ -202,7 +202,25 @@ function CheckoutPg() {
       // Check if page is not being loaded from a cache
       window.location.reload();
     }
+    addGTM();
+
   }, []);
+
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   // --------------------------------- actual code --------------------------------------
   return (
     <>

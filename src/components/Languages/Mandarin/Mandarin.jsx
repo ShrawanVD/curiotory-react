@@ -100,6 +100,8 @@ function Mandarin() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
+
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -146,6 +148,21 @@ function Mandarin() {
       alert("Form submission failed");
     }
   };
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <div className={fr.container}>
@@ -157,7 +174,9 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
 </title>
 <meta
   name="description"
-  content="Nǐ hǎo! Ready to impress with your Mandarin skills? Curiotory's language learning app combines fun activities and strategies for learning Mandarin online like a pro!"
+  content="Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning app offers interactive activities and proven techniques to help you master Mandarin online with professional expertise.
+  Join Online Mandarin Classes Now!
+"
 />
 <meta
   name="keywords"
@@ -515,7 +534,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -525,7 +544,6 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -534,7 +552,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />

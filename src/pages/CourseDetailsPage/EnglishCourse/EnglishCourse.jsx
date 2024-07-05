@@ -7,6 +7,7 @@ import Footer2 from "../../../components/Footer/Footer2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
+import { useEffect } from "react";
 
 const EnglishCourse = () => {
   //  course highlights section
@@ -444,6 +445,24 @@ const EnglishCourse = () => {
         );
     }
   };
+  useEffect(() => {
+    addGTM();
+  }, []);
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
 
   return (
     <>
@@ -757,65 +776,13 @@ const EnglishCourse = () => {
         </div>
 
         {/* company section */}
-        <div className={buy.company}>
+        {/* <div className={buy.company}>
           <h1>
             Companies <span className={buy.yellow}>Hiring</span> English Experts
           </h1>
           <div className={buy.first_row}>
-            {/* sample company */}
-            {/* <Card className={buy.cardss}>
-              <Card.Img
-                className={buy.card_img}
-                style={{
-                  width: "80%",
-                  margin: "0 auto",
-                  borderRadius: "7px",
-                }}
-                variant="top"
-                src="/Company/loreal.png"
-              />
-              <hr
-                style={{
-                  borderBottom: "1px solid black",
-                }}
-              />
-              <Card.Body
-                style={{
-                  width: "100%",
-                }}
-              >
-                <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
-                <ul>
-                  {[
-                    "Human Resources Specialist",
-                    "Travel Advisor",
-                    "Customer Service Representative",
-                    "Translator",
-                    "Sales Representative",
-                    "Hotel Manager",
-                    "Travel Coordinator",
-                    "Translator",
-                    "Translator",
-                  ]
-                    .slice(0, showAllProfiles3 ? 9 : 5)
-                    .map((profile, index) => (
-                      <li key={index}>{profile}</li>
-                    ))}
-                </ul>
-                <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles3}
-                >
-                  {showAllProfiles3 ? "View Less" : "View More"}
-                </Button>
-              </Card.Body>
-            </Card> */}
+           
 
-            {/* first company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -855,7 +822,6 @@ const EnglishCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* second company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -897,20 +863,9 @@ const EnglishCourse = () => {
                       <li key={index}>{profile}</li>
                     ))}
                 </ul>
-                {/* <Button
-                  className={buy.btn_company}
-                  style={{
-                    width: "50%",
-                  }}
-                  variant="primary"
-                  onClick={toggleProfiles2}
-                >
-                  {showAllProfiles2 ? "View Less" : "View More"}
-                </Button> */}
               </Card.Body>
             </Card>
 
-            {/* third company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -951,7 +906,6 @@ const EnglishCourse = () => {
           </div>
 
           <div className={buy.second_row}>
-            {/* fourth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -991,7 +945,6 @@ const EnglishCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* fifth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -1031,7 +984,6 @@ const EnglishCourse = () => {
               </Card.Body>
             </Card>
 
-            {/* sixth company */}
             <Card className={buy.cardss}>
               <Card.Img
                 className={buy.card_img}
@@ -1053,7 +1005,6 @@ const EnglishCourse = () => {
               <Card.Body
                 style={{
                   width: "100%",
-                  // height: showAllProfiles1 ? "50rem" : "10rem",
                 }}
               >
                 <Card.Title className={buy.card_title}>Job Profiles</Card.Title>
@@ -1071,7 +1022,7 @@ const EnglishCourse = () => {
               </Card.Body>
             </Card>
           </div>
-        </div>
+        </div> */}
 
         {/* review section */}
         <Reviewsection />

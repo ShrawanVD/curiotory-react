@@ -99,6 +99,8 @@ function Spanish() {
 
   useEffect(() => {
     calculateFee();
+    addGTM();
+
   }, [proficiency, method]);
   // send the form data to DB
   const [formData, setFormData] = useState({
@@ -144,6 +146,21 @@ function Spanish() {
       alert("Form submission failed");
     }
   };
+  const addGTM = () => {
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SXJ40ZYWNV');
+    `;
+    document.head.appendChild(script2);
+  };
   return (
     <>
       <div className={fr.container}>
@@ -152,11 +169,14 @@ function Spanish() {
 <Helmet>
 <title>
 Learn Spanish Online Easily With Curiotory's Expert Guidance
+
 </title>
 <meta
   name="description"
-  content="Hola!
-  Ready to impress with your Spanish skills? Curiotory's language learning app combines fun activities and strategies for learning Spanish like a pro!"
+  content="Hola! All set to learn Spanish? Start learning now with the Curiotory's language learning app, where captivating activities and expert strategies await to transform you into a Spanish virtuoso!
+  Join Online Spanish Classes Now!
+
+"
 />
 <meta
   name="keywords"
@@ -515,7 +535,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
       <Rev />
 
       {/* company logo section */}
-      <div className={fr.company}>
+      {/* <div className={fr.company}>
         <h2>Companies that Hire French Experts</h2>
         <div className={fr.scrollContainer}>
           <div className={`${fr.logos} ${fr.duplicate}`}>
@@ -525,7 +545,6 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
             <img src="./Company/air.png" alt="Air Liquide" />
             <img src="./Company/dassault.png" alt="Dassault Systems" />
             <img src="./Company/sch.png" alt="Schneider Electric" />
-            {/* Duplicate logos for seamless scrolling */}
             <img src="./Company/decat.png" alt="Decathlon" />
             <img src="./Company/capg.png" alt="Capgemini" />
             <img src="./Company/loreal.png" alt="Loreal" />
@@ -534,7 +553,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
             <img src="./Company/sch.png" alt="Schneider Electric" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* footer */}
       <Footer2 />
