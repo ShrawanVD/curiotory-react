@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/DutchCurr";
-import axios from 'axios';
-import config from '../../../services/config';
+import axios from "axios";
+import config from "../../../services/config";
 
 function Dutch() {
   const [proficiency, setProficiency] = useState("A1");
@@ -17,61 +17,52 @@ function Dutch() {
 
   const feeMap = {
     A1: {
-        Corporate: 36000,
-        Student: 21000,
-        Exam: 25000,
-        Job: 25000,
-        Travel: 21000,
-        Hobby: 21000,
+      Corporate: 36000,
+      Student: 21000,
+      Exam: 25000,
+      Job: 25000,
+      Travel: 21000,
+      Hobby: 21000,
     },
     A2: {
-        Corporate: 36000,
-        Student: 21000,
-        Exam: 25000,
-        Job: 25000,
-        Travel: 21000,
-        Hobby: 21000,
-
+      Corporate: 36000,
+      Student: 21000,
+      Exam: 25000,
+      Job: 25000,
+      Travel: 21000,
+      Hobby: 21000,
     },
     B1: {
-
-        Corporate: 38000,
-        Student: 24000,
-        Exam: 28000,
-        Job: 28000,
-        Travel: 24000,
-        Hobby: 24000,
-
+      Corporate: 38000,
+      Student: 24000,
+      Exam: 28000,
+      Job: 28000,
+      Travel: 24000,
+      Hobby: 24000,
     },
     B2: {
-
-        Corporate: 38000,
-        student: 24000,
-        Exam: 28000,
-        Job: 28000,
-        Travel: 24000,
-        Hobby: 24000,
-
+      Corporate: 38000,
+      student: 24000,
+      Exam: 28000,
+      Job: 28000,
+      Travel: 24000,
+      Hobby: 24000,
     },
     C1: {
-
-        Corporate: 40000,
-        Student: 27000,
-        Exam: 31000,
-        Job: 31000,
-        Travel: 27000,
-        Hobby: 27000,
-
+      Corporate: 40000,
+      Student: 27000,
+      Exam: 31000,
+      Job: 31000,
+      Travel: 27000,
+      Hobby: 27000,
     },
     C2: {
-
-        Corporate: 40000,
-        Student: 27000,
-        Exam: 31000,
-        Job: 31000,
-        Travel: 27000,
-        Hobby: 27000,
-
+      Corporate: 40000,
+      Student: 27000,
+      Exam: 31000,
+      Job: 31000,
+      Travel: 27000,
+      Hobby: 27000,
     },
   };
 
@@ -123,12 +114,12 @@ function Dutch() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
+
       const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
@@ -149,12 +140,12 @@ function Dutch() {
   };
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -167,25 +158,22 @@ function Dutch() {
   return (
     <>
       <div className={fr.container}>
-
-{/* for meta tags  */}
-<Helmet>
-<title>
-Learn Dutch Online Easily With Curiotory's Expert Guidance
-
-</title>
-<meta
-  name="description"
-  content="Hallo! Ready to push your limits and start learning Dutch? Curiotory's language learning app has a range of demanding activities and advanced strategies, to help you to learn Dutch with proficiency. It's time to elevate your language learning journey with India's leading language learning platform!
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn Dutch Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Hallo! Ready to push your limits and start learning Dutch? Curiotory's language learning app has a range of demanding activities and advanced strategies, to help you to learn Dutch with proficiency. It's time to elevate your language learning journey with India's leading language learning platform!
   Join Online Dutch Classes Now!
 "
-/>
-<meta
-  name="keywords"
-  content="learn dutch online, dutch learning app, dutch learning course, learn dutch for beginners, learn dutch free, dutch learning website"
-/>
-</Helmet>
-
+          />
+          <meta
+            name="keywords"
+            content="learn dutch online, dutch learning app, dutch learning course, learn dutch for beginners, learn dutch free, dutch learning website"
+          />
+        </Helmet>
 
         {/* new navbar */}
         <Newnavbar />
@@ -194,8 +182,8 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>Dutch Culture</span>
+              Learn<span className={fr.highlight}> Dutch</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -206,11 +194,20 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
               </span>
             </div>
             <p>
+              Hallo! Ready to push your limits and start learning Dutch?
+              Curiotory's language learning app has a range of demanding
+              activities and advanced strategies, to help you to learn Dutch
+              with proficiency. It's time to elevate your language learning
+              journey with India's leading language learning platform!
+            </p>
+            <p>Join Online Dutch Classes Now!
+            </p>
+            {/* <p>
               Learning Dutch provides access to dynamic business environments in
               the Netherlands and Belgium. Fluency in Dutch enhances career
               opportunities and deepens cultural connections in a thriving part
               of Europe
-            </p>
+            </p> */}
           </section>
         </main>
       </div>
@@ -229,7 +226,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Gateway to Europe : </span>
+                <span>Gateway to Europe : </span>
                 Dutch is spoken not only in the Netherlands but also in Belgium
                 (Flanders) and Suriname. It serves as a gateway to understanding
                 Flemish culture and Dutch-speaking communities worldwide.
@@ -242,7 +239,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 The Netherlands is a popular tourist destination known for its
                 picturesque cities, tulip fields, and cycling culture. Knowing
                 Dutch enhances travel experiences and allows for meaningful
@@ -256,7 +253,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Enrichment : </span>
+                <span>Cultural Enrichment : </span>
                 Dutch culture is rich in history, art, and literature, with
                 contributions from famous artists like Rembrandt and Van Gogh.
                 Learning Dutch enables deeper engagement with Dutch literature,
@@ -270,8 +267,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Educational Opportunities : </span>
+                <span>Educational Opportunities : </span>
                 Dutch universities are highly ranked globally and offer a wide
                 range of programs in English. Learning Dutch can facilitate
                 access to quality education and scholarships in the Netherlands.
@@ -284,8 +280,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Business and Career Opportunities : </span>
+                <span>Business and Career Opportunities : </span>
                 The Netherlands is a hub for international trade, finance, and
                 technology. Learning Dutch enhances career prospects in
                 industries such as logistics, engineering, and IT, where Dutch
@@ -315,7 +310,7 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -359,15 +354,13 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary and phrases for everyday
                   interactions, greetings, and introductions. Begin to
                   understand Dutch pronunciation and basic grammar structures.
                 </p>
                 <p>
-                  <strong >
-                    Travel Readiness : </strong>
+                  <strong>Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
                   shopping. Practice listening and speaking to improve
@@ -392,15 +385,13 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Cultural Immersion : </strong>
+                  <strong>Cultural Immersion : </strong>
                   Dive deeper into Dutch culture through literature, music, and
                   traditions. Explore Dutch festivals, cuisine, and customs to
                   gain insights into daily life and social etiquette.
                 </p>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Expand vocabulary and improve language proficiency for
                   professional contexts. Enhance communication skills for job
                   interviews, business meetings, and networking in
@@ -420,16 +411,14 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Advanced Language Skills : </strong>
+                  <strong>Advanced Language Skills : </strong>
                   Master complex grammar structures, including verb
                   conjugations, sentence patterns, and idiomatic expressions.
                   Engage in discussions, debates, and presentations in Dutch on
                   a variety of topics.
                 </p>
                 <p>
-                  <strong >
-                    Academic and Research Opportunities : </strong>
+                  <strong>Academic and Research Opportunities : </strong>
                   Gain proficiency to study or conduct research at Dutch
                   universities. Access academic resources, attend lectures, and
                   participate in academic exchanges in Dutch.
@@ -487,39 +476,39 @@ Learn Dutch Online Easily With Curiotory's Expert Guidance
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

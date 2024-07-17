@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/SpanishCurr";
-import axios from 'axios';
-import config from '../../../services/config';
+import axios from "axios";
+import config from "../../../services/config";
 
 function Spanish() {
   const [proficiency, setProficiency] = useState("A1");
@@ -22,56 +22,47 @@ function Spanish() {
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-  },
-  A2: {
+    },
+    A2: {
       Corporate: 36000,
       Student: 21000,
       Exam: 25000,
       Job: 25000,
       Travel: 21000,
       Hobby: 21000,
-
-  },
-  B1: {
-
+    },
+    B1: {
       Corporate: 38000,
       Student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  B2: {
-
+    },
+    B2: {
       Corporate: 38000,
       student: 24000,
       Exam: 28000,
       Job: 28000,
       Travel: 24000,
       Hobby: 24000,
-
-  },
-  C1: {
-
+    },
+    C1: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  C2: {
-
+    },
+    C2: {
       Corporate: 40000,
       Student: 27000,
       Exam: 31000,
       Job: 31000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -100,7 +91,6 @@ function Spanish() {
   useEffect(() => {
     calculateFee();
     addGTM();
-
   }, [proficiency, method]);
   // send the form data to DB
   const [formData, setFormData] = useState({
@@ -122,12 +112,12 @@ function Spanish() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
+
       const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
@@ -147,12 +137,12 @@ function Spanish() {
     }
   };
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -164,26 +154,23 @@ function Spanish() {
   return (
     <>
       <div className={fr.container}>
-
-{/* for meta tags  */}
-<Helmet>
-<title>
-Learn Spanish Online Easily With Curiotory's Expert Guidance
-
-</title>
-<meta
-  name="description"
-  content="Hola! All set to learn Spanish? Start learning now with the Curiotory's language learning app, where captivating activities and expert strategies await to transform you into a Spanish virtuoso!
+        {/* for meta tags  */}
+        <Helmet>
+          <title>
+            Learn Spanish Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Hola! All set to learn Spanish? Start learning now with the Curiotory's language learning app, where captivating activities and expert strategies await to transform you into a Spanish virtuoso!
   Join Online Spanish Classes Now!
 
 "
-/>
-<meta
-  name="keywords"
-  content="learn spanish online, learn spanish, best way to learn spanish, learning spanish for beginners, spanish learning app, learn spanish free"
-/>
-</Helmet>
-
+          />
+          <meta
+            name="keywords"
+            content="learn spanish online, learn spanish, best way to learn spanish, learning spanish for beginners, spanish learning app, learn spanish free"
+          />
+        </Helmet>
 
         {/* new navbar */}
         <Newnavbar />
@@ -192,8 +179,8 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>Spanish Culture</span>
+              Learn<span className={fr.highlight}> Spanish</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -204,11 +191,18 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
               </span>
             </div>
             <p>
+              Hola! All set to learn Spanish? Start learning now with the
+              Curiotory's language learning app, where captivating activities
+              and expert strategies await to transform you into a Spanish
+              virtuoso!
+            </p>
+            <p>Join Online Spanish Classes Now!</p>
+            {/* <p>
               Learning Spanish unlocks numerous career opportunities and
               connects you with a vast global community. Fluency in Spanish
               enhances professional prospects and enriches personal experiences
               across multiple continents.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>
@@ -227,8 +221,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Global Communication : </span>
+                <span>Global Communication : </span>
                 Spanish is the second most spoken language in the world by
                 native speakers, with over 580 million speakers worldwide.
                 Learning Spanish opens doors for communication with people from
@@ -242,7 +235,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 Spanish is the official language of 21 countries, including
                 Spain, Mexico, Argentina, Colombia, and many others across Latin
                 America. Knowing Spanish enhances your travel experiences,
@@ -257,7 +250,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Enrichment : </span>
+                <span>Cultural Enrichment : </span>
                 Spanish culture is rich and diverse, encompassing literature,
                 music, art, cuisine, and traditions. Learning Spanish allows you
                 to explore and appreciate these cultural aspects firsthand, from
@@ -272,8 +265,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Career Opportunities : </span>
+                <span>Career Opportunities : </span>
                 Spanish proficiency is increasingly valuable in many industries,
                 including business, healthcare, education, and international
                 relations. It can give you a competitive edge in the job market,
@@ -288,7 +280,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Personal Growth : </span>
+                <span>Personal Growth : </span>
                 Learning Spanish is intellectually stimulating and boosts
                 cognitive abilities such as problem-solving and multitasking. It
                 also enhances cross-cultural understanding and empathy,
@@ -318,7 +310,7 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -362,16 +354,14 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Cultural Immersion : </strong>
+                  <strong>Cultural Immersion : </strong>
                   Dive deeper into Spanish-speaking cultures through literature,
                   films, and music. Gain insights into cultural norms,
                   traditions, and social customs that shape daily life in
                   Spanish-speaking countries.
                 </p>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Expand vocabulary and improve fluency for professional
                   contexts. Enhance communication skills for business meetings,
                   negotiations, and presentations in Spanish-speaking markets.
@@ -395,16 +385,14 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary and phrases for everyday
                   conversations, greetings, and introductions. Begin to
                   understand and use basic grammar structures such as present
                   tense verbs.
                 </p>
                 <p>
-                  <strong >
-                    Travel Readiness : </strong>
+                  <strong>Travel Readiness : </strong>
                   Develop language skills to navigate travel situations
                   confidently, such as asking for directions, ordering food, and
                   shopping. Practice listening and speaking to improve
@@ -424,16 +412,14 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Cultural Immersion : </strong>
+                  <strong>Cultural Immersion : </strong>
                   Dive deeper into Spanish-speaking cultures through literature,
                   films, and music. Gain insights into cultural norms,
                   traditions, and social customs that shape daily life in
                   Spanish-speaking countries.
                 </p>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Expand vocabulary and improve fluency for professional
                   contexts. Enhance communication skills for business meetings,
                   negotiations, and presentations in Spanish-speaking markets.
@@ -472,7 +458,6 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
               />
             </div>
 
-
             <div className={fr.optionGroup}>
               <label>Method of Training</label>
               <div className={fr.checkpoints}>
@@ -492,39 +477,39 @@ Learn Spanish Online Easily With Curiotory's Expert Guidance
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

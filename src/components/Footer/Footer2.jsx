@@ -30,7 +30,7 @@ function Footer() {
         <div className="container2">
           <div className="row-up">
             {/* Logo */}
-            <div className="ss logo-class col-lg-3">
+            <div className="ss logo-class col-lg-2">
               <div className="single_footer single_footer1">
                 <img src="/Index/logo.png" alt="Logo" />
                 <p className="logo-bio">An online language learning platform</p>
@@ -38,7 +38,7 @@ function Footer() {
             </div>
 
             {/* quick links */}
-            <div className="col-lg-3 ss">
+            <div className="col-lg-2 ss">
               <div className="single_footer">
                 <h4>Quick Links</h4>
                 <ul>
@@ -61,8 +61,26 @@ function Footer() {
               </div>
             </div>
 
+            {/* Get curiotory on */}
+            <div className="col-lg-2 ss">
+              <div className="single_footer">
+                <h4>Get curiotory on</h4>
+                <ul>
+                  <li>
+                    <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&pcampaignid=web_share" target="_blank">Andriod</a>
+                  </li>
+                  <li>
+                    <a href="https://open.spotify.com/show/1qL1qOwS5Ptd5Fz2GmxRKh?si=c377a455305e4d33&nd=1&dlsi=81e81a8da74e4d7b" target="_blank">Spotify Podcasts</a>
+                  </li>
+                  <li>
+                    <a href="https://podcasts.apple.com/in/podcast/japanese-verbal-ventures-soundbyte-hub/id1756575417" target="_blank">Apple</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
             {/* legal links */}
-            <div className="ss col-lg-3">
+            <div className="ss col-lg-2">
               <div className="single_footer single_footer_address">
                 <h4>Legal</h4>
                 
@@ -93,7 +111,7 @@ function Footer() {
             </div>
 
             {/* Contacting Us */}
-            <div className="ss col-lg-3">
+            <div className="ss col-lg-2">
               <div className="single_footer single_footer_address">
                 <h4
                 >

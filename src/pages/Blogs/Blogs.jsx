@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import Blogscss from "./Blogs.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
-import config from '../../services/config';
+import config from "../../services/config";
+import { Helmet } from "react-helmet";
 
 function Blogs() {
   const [blogPosts, setBlogPosts] = useState([]);
@@ -17,7 +18,7 @@ function Blogs() {
 
   const fetchBlogPosts = () => {
     setLoading(true);
-    
+
     fetch(`${config.apiUrl}/api/blogs`)
       .then((response) => {
         if (!response.ok) {
@@ -53,12 +54,12 @@ function Blogs() {
   const totalPages = Math.ceil(blogPosts.length / postsPerPage);
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -68,13 +69,33 @@ function Blogs() {
     document.head.appendChild(script2);
   };
 
-
   return (
     <>
+      {/* for meta tags  */}
+      <Helmet>
+        <title>Curiotory Blogs : Welcome to the Curiosity Trail For Readers!</title>
+        <meta
+          name="description"
+          content="Welcome to Curiosity Trail. Here, we ignite your curiosity with engaging articles, tips, and stories that inspire continuous learning and skill upgrading."
+        />
+        <meta
+          name="keywords"
+          content="language blogs, language blog topics, language articles, linguistics blogs, language bloggers, language learning "
+        />
+      </Helmet>
       <Newnavbar />
       <div className={Blogscss.blogbackground}>
         <div className={Blogscss.blogHeading}>
-          <h1>Blogs</h1>
+          <h1>Welcome to the Curiosity Trail!</h1>
+          <p>
+            Welcome to Curiosity Trail, the blog section of Curiotory! Here, we
+            ignite your curiosity with engaging articles, tips, and stories that
+            inspire continuous language learning and skill upgrading. Whether
+            you're passionate about language learning, cultural exploration, or
+            personal development, you'll find a treasure trove of insights and
+            inspiration. Join us on this exciting journey and let's explore the
+            world of knowledge together!
+          </p>
         </div>
         {loading && (
           <div id="loadingSpinner" className={Blogscss.loadingSpinner}>
@@ -96,7 +117,11 @@ function Blogs() {
         <div className={Blogscss.blogs} id="blogsSection">
           <div className={Blogscss.blogContainer}>
             {currentPosts.map((post) => (
-              <div key={post._id} className={Blogscss.blogCard} onClick={() => openBlog(post._id)}>
+              <div
+                key={post._id}
+                className={Blogscss.blogCard}
+                onClick={() => openBlog(post._id)}
+              >
                 <img src={post.imageUrl} alt="Blog Image" />
                 <div className={Blogscss.bloginfo}>
                   <h2>{post.title}</h2>

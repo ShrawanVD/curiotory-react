@@ -54,6 +54,26 @@
   font-family: Raleway, Arial, sans-serif;
   text-align: center;
 }
+@media (max-width:1200px){
+  .coverPage p{
+    margin: 1rem 7rem;
+  }
+}
+@media (max-width:1000px){
+  .coverPage p{
+    margin: 1rem 5rem;
+  }
+}
+@media (max-width:700px){
+  .coverPage p{
+    margin: 1rem 2rem;
+  }
+}
+@media (max-width:470px){
+  .coverPage p{
+    margin: 1rem 0.5rem;
+  }
+}
 /* .coverPage h4 {
   color: #002e5b;
   margin-top: 1rem;

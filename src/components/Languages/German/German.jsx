@@ -7,7 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/GermanCurr";
 import axios from "axios";
-import config from '../../../services/config';
+import config from "../../../services/config";
 
 function German() {
   const [proficiency, setProficiency] = useState("A1");
@@ -92,7 +92,6 @@ function German() {
   useEffect(() => {
     calculateFee();
     addGTM();
-
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -121,10 +120,7 @@ function German() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -144,12 +140,12 @@ function German() {
   };
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -164,8 +160,7 @@ function German() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-          Learn German Online Easily With Curiotory's Expert Guidance
-
+            Learn German Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
@@ -186,8 +181,8 @@ function German() {
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>German Culture</span>
+              Learn<span className={fr.highlight}> German</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -198,11 +193,18 @@ function German() {
               </span>
             </div>
             <p>
+              Hallo! Are you ready to dominate with your German skills and land
+              your dream career? Then Curiotory's language learning app is your
+              secret weapon, with powerful strategies to speed up your german
+              language learning process smoothly.{" "}
+            </p>
+            <p>Join Online German classes Now!</p>
+            {/* <p>
               Learning German boosts career prospects and provides a gateway to
               one of the world's leading economies. Fluency in German enhances
               both professional opportunities and personal experiences across
               Europe and beyond.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>

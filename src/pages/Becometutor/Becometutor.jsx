@@ -12,12 +12,12 @@ function Becometutor() {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -48,8 +48,19 @@ Curiotry is the place for you! Join our network of the best language tutors from
         <div className="enroll-container section-1">
           <div className="enroll-title">
             <h1 className="text-center pl-3 pr-3 display-4 font-weight-bold">
-              How we enroll private tutors?
+              {/* How we enroll private tutors? */}
+              Here's How You Can Become A Language Tutor At Curiotory
             </h1>
+            <p>
+              You have exceptional and top notch language skills, you excel in
+              language tutoring, your language learning methods are out of the
+              box!, if you happen to have these skills then boom!
+            </p>
+            <p>
+              Curiotry is the place for you! Join our network of the best
+              language tutors from all over the world and have your chance of
+              making a difference in the linguistics world!{" "}
+            </p>
           </div>
 
           {/* cards section for becoming tutor */}

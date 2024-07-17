@@ -187,8 +187,8 @@ Join Online Korean Classes Now!
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>Korean Culture</span>
+              Learn<span className={fr.highlight}> Korean</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -199,11 +199,18 @@ Join Online Korean Classes Now!
               </span>
             </div>
             <p>
+              Annyeonghaseyo! Eager to Learn Korean? With Curiotory's language
+              learning app, mastering Korean is as enjoyable as a K-pop dance
+              routine, blending fun activities and effective strategies
+              seamlessly!
+            </p>
+            <p>Join Online Korean Classes Now!</p>
+            {/* <p>
               Learning Korean opens doors to vibrant cultural experiences and
               opportunities in technology and entertainment. Fluency in Korean
               enhances career prospects and personal connections in South Korea
               and beyond.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>

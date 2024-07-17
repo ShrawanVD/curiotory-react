@@ -7,8 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/RussianCurr";
 import axios from "axios";
-import config from '../../../services/config';
-
+import config from "../../../services/config";
 
 function Russian() {
   const [proficiency, setProficiency] = useState("A1");
@@ -44,7 +43,6 @@ function Russian() {
   useEffect(() => {
     calculateFee();
     addGTM();
-
   }, [proficiency, method]);
   // send the form data to DB
   const [formData, setFormData] = useState({
@@ -72,10 +70,7 @@ function Russian() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -94,12 +89,12 @@ function Russian() {
     }
   };
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -114,8 +109,7 @@ function Russian() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-          Learn Russian Online Easily With Curiotory's Expert Guidance
-
+            Learn Russian Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
@@ -136,8 +130,8 @@ function Russian() {
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>Russian Culture</span>
+              Learn<span className={fr.highlight}> Russian</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -148,11 +142,19 @@ function Russian() {
               </span>
             </div>
             <p>
+              {" "}
+              привет! Learn Russian online and advance your career with
+              Curiotory's language learning app- your essential tool, offering
+              effective methods to accelerate your Russian language learning
+              journey seamlessly.
+            </p>
+            <p>Join Online Russian Classes Now!</p>
+            {/* <p>
               Learning Russian opens up a wealth of career opportunities and
               cultural experiences, enhancing your global perspective. Fluency
               in Russian connects you to a vast network of speakers and deepens
               your understanding of a rich cultural heritage.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>

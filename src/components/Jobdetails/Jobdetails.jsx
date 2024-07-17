@@ -379,6 +379,43 @@ const openings = [
       "Comprehensive training and ongoing support",
     ],
   },
+  {
+    id: 9,
+    title: "Customer Support Executive",
+    location: "Koramangala, Bangalore",
+    language: "Proficiency in English and Kannada",
+    startDate: "Immediately",
+    salary: "25k CTC, 21k  in hand ",
+    worksch: "6 days a week with rotational off days ", //
+    qualification: "Graduate / Undergraduate",//
+    Experience: "Freshers and Experienced candidates are welcome (only for male candidate)",//
+    about:
+      "We are looking for enthusiastic and dedicated Back Office Executives to join our team in Marathahalli, Bangalore. Whether you're a fresher or an experienced professional, we welcome your application. Proficiency in English and Hindi is required. Enjoy competitive salary packages and a supportive work environment. Apply now to be a part of our growing team!",
+    responsibilities: [
+      "Handle customer inquiries and provide appropriate solutions",
+      "Manage customer complaints and provide timely resolutions",
+      "Maintain detailed and accurate records of customer interactions",
+      "Collaborate with internal teams to ensure customer satisfaction",
+      "Follow communication procedures, guidelines, and policies",
+    ],
+    requirements: [
+      "Strong communication and interpersonal skills",
+      "Ability to multitask and manage time effectively",
+      "Problem-solving skills and attention to detail",
+      "Basic computer proficiency",
+    ],
+    Benefits: [
+      "Competitive salary package",
+      "Opportunity to work in a dynamic and supportive environment",
+      "Professional growth and development opportunities",
+      "Comprehensive training and ongoing support",
+    ],
+    additionalInfo: [
+      "This position operates on a 24/7 rotational shift basis",
+      "6 days working week with rotational off days",
+      "Only male candidates are eligible for this role",
+    ],
+  },
 ];
 
 function Jobdetails() {

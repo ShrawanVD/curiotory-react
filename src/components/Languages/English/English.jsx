@@ -7,8 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/EnglishCurr";
 import axios from "axios";
-import config from '../../../services/config';
-
+import config from "../../../services/config";
 
 function English() {
   const [proficiency, setProficiency] = useState("A1");
@@ -93,7 +92,6 @@ function English() {
   useEffect(() => {
     calculateFee();
     addGTM();
-
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -122,10 +120,7 @@ function English() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -145,12 +140,12 @@ function English() {
   };
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -165,8 +160,7 @@ function English() {
       <div className={fr.container}>
         <Helmet>
           <title>
-          Learn English Online Easily With Curiotory's Expert Guidance
-
+            Learn English Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
@@ -187,8 +181,8 @@ function English() {
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>English Culture</span>
+              Learn<span className={fr.highlight}> English</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -199,10 +193,20 @@ function English() {
               </span>
             </div>
             <p>
+              Hello there! Ready to impress the world with your exceptional
+              English skills? Look no further, because Curiotory's language
+              learning app is here to turn you into an English-speaking expert.
+              Say goodbye to boring textbooks—our app combines engaging
+              activities and effective strategies to help you master English
+              effortlessly. Why wait? Start your English learning journey now
+              and prepare to wow everyone with your linguistic abilities!
+            </p>
+            <p>Join Online English Classes Now!</p>
+            {/* <p>
               Mastering English provides a global advantage in communication,
               career advancement, and cultural understanding. Fluency in English
               opens doors to diverse opportunities worldwide.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>

@@ -79,18 +79,25 @@ function Careers() {
       Shift: "10 AM to 7 PM",
       salary: "25k CTC, 21k in hand (for Experienced)",
     },
+    {
+      id: 9,
+      title: "Customer Support Executive (only for male candidate)",
+      language: "English and Kannada",
+      Shift: "24/7 rotational",
+      salary: "25k CTC, 21k in hand",
+    },
   ];
 
   const handleViewDetails = (id) => {
     window.location.href = `careers/details/${id}`;
   };
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -123,7 +130,20 @@ Apply for remote language jobs or work with us and give an elevated shift to you
       {/* title section */}
       <div className={job.hero}>
         <div className={job.heroContent}>
-          <h2 className={job.herotitle}>Kick Start Your Journey With Us!</h2>
+          <h2 className={job.herotitle}>
+            Build Your Dream Language Career With Curiotory : Foreign Language
+            Jobs
+          </h2>
+          <p>
+            Want to shape your language career path? Explore an ocean of
+            language career opportunities at Curiotory where skill developments
+            and opportunities are endless!{" "}
+          </p>
+          <p>
+            Apply for remote language jobs or work with us and give an elevated
+            shift to your linguistics career for a life changing opportunity!
+            Join our dynamic team now!
+          </p>
         </div>
       </div>
 

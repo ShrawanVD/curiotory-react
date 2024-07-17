@@ -259,6 +259,9 @@ width: 100%;
   justify-content: center;
   align-items: stretch;
 }
+.ss{
+  margin: 0.5rem 1rem;
+}
  
 @media only screen and (max-width: 1400px) {
   .logo-class {

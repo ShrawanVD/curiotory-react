@@ -7,7 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/FrenchCurr";
 import axios from "axios";
-import config from '../../../services/config';
+import config from "../../../services/config";
 
 function French() {
   const [proficiency, setProficiency] = useState("A1");
@@ -120,10 +120,7 @@ function French() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -143,12 +140,12 @@ function French() {
   };
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -163,7 +160,7 @@ function French() {
       <div className={fr.container}>
         <Helmet>
           <title>
-          Learn French Online Easily With Curiotory's Expert Guidance
+            Learn French Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
@@ -185,8 +182,8 @@ function French() {
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>French Culture</span>
+              Learn<span className={fr.highlight}> French</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -197,11 +194,18 @@ function French() {
               </span>
             </div>
             <p>
+              Bonjour! Want to enchant with your French skills? With Curiotory's
+              language learning app, engaging activities and expert strategies
+              combine to enhance your French learning experience. Learn with
+              Curo now!
+            </p>
+            <p>Join Online French Classes Now!</p>
+            {/* <p>
               Mastering French elevates both career and personal life, offering
               diverse opportunities in India and abroad. Fluency in French
               enhances career prospects and enriches personal experiences
               globally.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>

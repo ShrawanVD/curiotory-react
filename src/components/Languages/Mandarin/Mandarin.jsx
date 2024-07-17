@@ -6,8 +6,8 @@ import { useState, useEffect } from "react";
 import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/MandCurr";
-import axios from 'axios';
-import config from '../../../services/config';
+import axios from "axios";
+import config from "../../../services/config";
 
 function Mandarin() {
   const [proficiency, setProficiency] = useState("A1");
@@ -23,56 +23,47 @@ function Mandarin() {
       Job: 28000,
       Travel: 27000,
       Hobby: 28000,
-  },
-  HSK2: {
+    },
+    HSK2: {
       Corporate: 38000,
       Student: 25000,
       Exam: 27000,
       Job: 28000,
       Travel: 27000,
       Hobby: 27000,
-
-  },
-  HSK3: {
-
+    },
+    HSK3: {
       Corporate: 40000,
       Student: 28000,
       Exam: 30000,
       Job: 32000,
       Travel: 30000,
       Hobby: 33000,
-
-  },
-  HSK4: {
-
+    },
+    HSK4: {
       Corporate: 42000,
       student: 30000,
       Exam: 33000,
       Job: 33000,
       Travel: 33000,
       Hobby: 36000,
-
-  },
-  HSK5: {
-
+    },
+    HSK5: {
       Corporate: 45000,
       Student: 32000,
       Exam: 36000,
       Job: 38000,
       Travel: 36000,
       Hobby: 38000,
-
-  },
-  HSK6: {
-
+    },
+    HSK6: {
       Corporate: 45000,
       Student: 32000,
       Exam: 36000,
       Job: 38000,
       Travel: 36000,
       Hobby: 38000,
-
-  },
+    },
   };
 
   const calculateFee = () => {
@@ -101,7 +92,6 @@ function Mandarin() {
   useEffect(() => {
     calculateFee();
     addGTM();
-
   }, [proficiency, method]);
 
   // send the form data to DB
@@ -124,12 +114,12 @@ function Mandarin() {
     const dataToSend = {
       ...formData,
       fee,
-      language
+      language,
     };
 
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
-      
+
       const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
@@ -149,12 +139,12 @@ function Mandarin() {
     }
   };
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -166,24 +156,21 @@ function Mandarin() {
   return (
     <>
       <div className={fr.container}>
-
-
-      <Helmet>
-<title>
-Learn Mandarin Online Easily With Curiotory's Expert Guidance
-</title>
-<meta
-  name="description"
-  content="Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning app offers interactive activities and proven techniques to help you master Mandarin online with professional expertise.
+        <Helmet>
+          <title>
+            Learn Mandarin Online Easily With Curiotory's Expert Guidance
+          </title>
+          <meta
+            name="description"
+            content="Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning app offers interactive activities and proven techniques to help you master Mandarin online with professional expertise.
   Join Online Mandarin Classes Now!
 "
-/>
-<meta
-  name="keywords"
-  content="mandarin language app, mandarin language course, learn mandarin online, mandarin language learning, learn chinese, mandarin language learning app"
-/>
-</Helmet>
-
+          />
+          <meta
+            name="keywords"
+            content="mandarin language app, mandarin language course, learn mandarin online, mandarin language learning, learn chinese, mandarin language learning app"
+          />
+        </Helmet>
 
         {/* new navbar */}
         <Newnavbar />
@@ -192,8 +179,8 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
         <main className={fr.main}>
           <section className={fr.hero}>
             <h1>
-              Indulge in the epitome of <br />
-              <span className={fr.highlight}>Mandarin Culture</span>
+              Learn<span className={fr.highlight}> Mandarin</span> Online Easily
+              <br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -204,11 +191,17 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
               </span>
             </div>
             <p>
+              Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning
+              app offers interactive activities and proven techniques to help
+              you master Mandarin online with professional expertise.
+            </p>
+            <p>Join Online Mandarin Classes Now!</p>
+            {/* <p>
               Learning Mandarin connects you with one of the world's largest
               economies and a rich cultural heritage. Fluency in Mandarin
               enhances career prospects and personal experiences across China
               and beyond
-            </p>
+            </p> */}
           </section>
         </main>
       </div>
@@ -227,7 +220,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Global Influence : </span>
+                <span>Global Influence : </span>
                 Mandarin Chinese is the most spoken language in the world with
                 over a billion native speakers. Learning Mandarin opens doors to
                 communication with people not only in China but also in Taiwan,
@@ -242,7 +235,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Travel and Tourism : </span>
+                <span>Travel and Tourism : </span>
                 China is a popular tourist destination with its ancient
                 landmarks like the Great Wall and Forbidden City, vibrant cities
                 such as Beijing and Shanghai, and picturesque landscapes.
@@ -257,8 +250,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >
-                  Business Opportunities : </span>
+                <span>Business Opportunities : </span>
                 China is the world's second-largest economy and a major player
                 in global trade and manufacturing. Proficiency in Mandarin
                 enhances career prospects in diverse industries such as finance,
@@ -272,7 +264,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Cultural Richness : </span>
+                <span>Cultural Richness : </span>
                 Mandarin Chinese is intertwined with a rich cultural heritage
                 spanning over 5,000 years. Learning Mandarin allows for a deeper
                 understanding of Chinese history, philosophy, literature
@@ -286,7 +278,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
                 className={fr.learnFrenchIcon}
               />
               <p>
-                <span >Personal Growth : </span>
+                <span>Personal Growth : </span>
                 Learning Mandarin challenges the mind and expands cognitive
                 abilities, including memory retention, problem-solving skills,
                 and cultural empathy. It promotes personal growth and enhances
@@ -317,7 +309,7 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
           nextLabel={false}
           prevIcon={
             <svg
-            className={fr.prevIcon}
+              className={fr.prevIcon}
               xmlns="http://www.w3.org/2000/svg"
               shape-rendering="geometricPrecision"
               text-rendering="geometricPrecision"
@@ -361,15 +353,13 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Basic Communication : </strong>
+                  <strong>Basic Communication : </strong>
                   Learn essential vocabulary, greetings, and basic phrases for
                   daily interactions. Begin to grasp Mandarin pronunciation
                   (pinyin) and basic sentence structures.
                 </p>
                 <p>
-                  <strong >
-                    Cultural Understanding : </strong>
+                  <strong>Cultural Understanding : </strong>
                   Explore Chinese customs, etiquette, and societal norms. Gain
                   insights into Chinese festivals, traditions, and everyday life
                   through language learning.
@@ -393,16 +383,14 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Professional Advantages : </strong>
+                  <strong>Professional Advantages : </strong>
                   Develop language skills for professional contexts, including
                   business meetings, negotiations, and presentations in
                   Mandarin. Enhance career prospects in multinational
                   corporations, Chinese companies, and diplomatic services.
                 </p>
                 <p>
-                  <strong >
-                    Literary and Media Exploration : </strong>
+                  <strong>Literary and Media Exploration : </strong>
                   Dive deeper into Chinese literature, films, and media. Read
                   classic Chinese literature, watch Chinese cinema, and engage
                   with contemporary Chinese culture, including pop culture
@@ -422,16 +410,14 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
               </div>
               <div className={fr.benefitRight}>
                 <p>
-                  <strong >
-                    Advanced Language Proficiency : </strong>
+                  <strong>Advanced Language Proficiency : </strong>
                   Master complex grammar structures, including advanced
                   vocabulary, idiomatic expressions, and formal writing (hanzi
                   characters). Engage fluently in discussions, debates, and
                   academic discourse in Mandarin on diverse topics.
                 </p>
                 <p>
-                  <strong >
-                    Cultural Integration : </strong>
+                  <strong>Cultural Integration : </strong>
                   Fully integrate into Chinese society by participating in
                   cultural activities, volunteering, and joining local
                   communities. Contribute to and benefit from cultural
@@ -491,39 +477,39 @@ Learn Mandarin Online Easily With Curiotory's Expert Guidance
             </div>
           </div>
 
-          <div className={fr.calForm}> 
-        <div className={fr.result}> 
-          Your fee is <br />
-          <span>{fee}</span>/-
-        </div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            placeholder="Email-ID"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Contact No."
-            name="contactNo"
-            value={formData.contactNo}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Schedule an enquiry</button>
-        </form>
-      </div>
+          <div className={fr.calForm}>
+            <div className={fr.result}>
+              Your fee is <br />
+              <span>{fee}</span>/-
+            </div>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email-ID"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Contact No."
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit">Schedule an enquiry</button>
+            </form>
+          </div>
         </div>
       </div>
 

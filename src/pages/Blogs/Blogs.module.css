@@ -15,7 +15,38 @@
   letter-spacing: 10px;
   font-family: "Poppins", Sans-serif;
 }
+.blogHeading p{
+  font-size: 1.2rem;
+  padding: 0rem 10rem;
+}
 
+@media (max-width:1190px){
+  .blogHeading p{
+    padding: 0rem 7rem;
+  }
+}
+@media (max-width:1000px){
+  .blogHeading h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+
+  }
+  .blogHeading p{
+    font-size: 1.1rem;
+    padding: 0rem 4rem;
+  }
+}
+@media (max-width:600px){
+  .blogHeading h1{
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 0rem 1rem;
+  }
+  .blogHeading p{
+    padding: 0rem 2rem;
+  }
+}
 .loadingSpinner {
   margin: 0 auto;
   padding: 5rem 0rem 5rem;

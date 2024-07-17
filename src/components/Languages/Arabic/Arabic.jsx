@@ -7,7 +7,7 @@ import Rev from "../../LanguagesReviews/Rev";
 import Carousel from "react-bootstrap/Carousel";
 import ArabicCurr from "../../Curriculum/ArabicCurr";
 import axios from "axios";
-import config from '../../../services/config';
+import config from "../../../services/config";
 
 function Arabic() {
   const [proficiency, setProficiency] = useState("A1");
@@ -120,10 +120,7 @@ function Arabic() {
     try {
       // Replace 'YOUR_BACKEND_API_URL' with your actual backend API endpoint
 
-      const response = await axios.post(
-        `${config.apiUrl}/enroll`,
-        dataToSend
-      );
+      const response = await axios.post(`${config.apiUrl}/enroll`, dataToSend);
 
       if (response.status === 200) {
         alert("Form submitted successfully");
@@ -143,12 +140,12 @@ function Arabic() {
   };
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -164,8 +161,7 @@ function Arabic() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-          Learn Arabic Online Easily With Curiotory's Expert Guidance
-
+            Learn Arabic Online Easily With Curiotory's Expert Guidance
           </title>
           <meta
             name="description"
@@ -186,9 +182,12 @@ Join Online Arabic Classes Now!
         {/* language cover page */}
         <main className={fr.main}>
           <section className={fr.hero}>
-            <h1>
+            {/* <h1>
               Indulge in the epitome of <br />
               <span className={fr.highlight}>Arabic Culture</span>
+            </h1> */}
+             <h1>
+             Learn<span className={fr.highlight}> Arabic</span> Online Easily<br /> With Curiotory's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -199,11 +198,19 @@ Join Online Arabic Classes Now!
               </span>
             </div>
             <p>
+              Learn Arabic Online With India's leading language learning app
+              Curiotory- which brings the best of two worlds education and
+              technology to make language learning more precise and easy than
+              ever!
+            </p>
+            <p>Join Online Arabic Classes Now!
+            </p>
+            {/* <p>
               Learning Arabic unlocks opportunities in diverse and rapidly
               growing markets across the Middle East and North Africa. Fluency
               in Arabic enhances career prospects and deepens cultural
               understanding in a rich and historically significant region.
-            </p>
+            </p> */}
           </section>
         </main>
       </div>
