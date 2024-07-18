@@ -236,14 +236,15 @@ small li ul {
 @media screen and (max-width: 1000px) {
   .checkout_pg{
     flex-direction: column;
-    width: 100vw;
+    width: 85%;
     padding: 0;
-    margin: 0 auto 0 1rem;
+    margin: 0 auto;
+    align-items: center;
   }
   .leftpg{
     width: 100%;
-    padding: 0.5rem;
-    margin-right: 0;
+    margin-right: 1rem;
+    /* padding: 0.5rem; */
   }
   .course_details{
     width: 100%;
@@ -252,6 +253,7 @@ small li ul {
  
   .rightpg{
     width: 100%;
+    margin-left: 1rem;
   }
   .master_container{
     margin-left: 1.2rem;
