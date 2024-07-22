@@ -66,7 +66,8 @@ const openings = [
     title: "Nepali Language Interpreter",
     language: "Nepali",
     startDate: "Immediately",
-    salary: "4.2 LPA",
+    salary: "5.4 LPA",
+    location: "Work From Home",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -117,6 +118,7 @@ const openings = [
     language: "Tamil",
     startDate: "Immediately",
     salary: "4.2 LPA",
+    location: "Work From Home",
     about:
       "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
     // skills: [
@@ -461,14 +463,15 @@ function Jobdetails() {
           <strong>Start Date:</strong> {job.startDate}
         </div>
       )}
-       {job.location && (
-        <div>
-          <strong>Location:</strong> {job.location}
-        </div>
-      )}
+       
       {job.salary && (
         <div>
           <strong>Salary:</strong> {job.salary}
+        </div>
+      )}
+      {job.location && (
+        <div>
+          <strong>Location:</strong> {job.location}
         </div>
       )}
       {job.worksch && (
