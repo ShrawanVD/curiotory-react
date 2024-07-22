@@ -62,8 +62,10 @@ ul {
 }
  
 .logo-bio {
+  width: 110%;
   font-size: 1rem;
   margin-top: 1rem;
+  margin-left: 2rem;
 }
  
 .single_footer1 {
@@ -307,5 +309,9 @@ width: 100%;
   }
   .social_profile ul li{
     margin: 0 0.1rem;
+  }
+  .logo-bio {
+    margin-top: 1rem;
+    margin-left: 0rem;
   }
 }

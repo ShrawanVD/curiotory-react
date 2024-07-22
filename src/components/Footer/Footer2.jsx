@@ -34,6 +34,7 @@ function Footer() {
               <div className="single_footer single_footer1">
                 <img src="/Index/logo.png" alt="Logo" />
                 <p className="logo-bio">An online language learning platform</p>
+                <img src="/Index/iso.png" alt="ISO" />
               </div>
             </div>
 

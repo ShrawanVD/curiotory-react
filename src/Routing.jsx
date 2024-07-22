@@ -41,6 +41,7 @@ import Jobdetails from './components/Jobdetails/Jobdetails';
 import NotFound from './pages/NotFound/NotFound';
 import NotFoundDev from './pages/NotFound/NotFoundDev';
 
+
 export default (
     <Routes>
         <Route index element={<Newcover/>} />
@@ -85,6 +86,7 @@ export default (
 
         <Route path="*" element={<NotFound />} />
         <Route path="/underDevelopment" element={<NotFoundDev />} />
+
 
 
 

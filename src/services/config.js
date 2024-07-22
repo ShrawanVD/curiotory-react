@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: 'https://backendapi-1-nlyi.onrender.com',
+    apiUrl: 'https://backendapi-l8cm.onrender.com',
   };
   
   export default config;
