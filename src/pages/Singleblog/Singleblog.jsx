@@ -112,6 +112,8 @@ import { useSpeechSynthesis } from "react-speech-kit";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import config from '../../services/config';
+import { Helmet } from "react-helmet";
+
 
 function Singleblog() {
   const [blog, setBlog] = useState(null);
@@ -178,6 +180,17 @@ function Singleblog() {
   };
   return (
     <div>
+      <Helmet>
+        <title>{blog.metaTitle}</title>
+        <meta
+          name="description"
+          content={blog.metaDescr}
+        />
+        <meta
+          name="keywords"
+          content={blog.metaKeywords}
+        />
+      </Helmet>
       <Newnavbar />
       <div>
       <div className={singleblogcss.singleBlogContainer}>

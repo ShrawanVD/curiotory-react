@@ -17,6 +17,7 @@
   align-items: center;
   padding-bottom: 5rem;
 }
+
 .coverPage {
   margin-top: 1rem;
   text-align: center;
@@ -47,6 +48,10 @@
   font-size: 1.30rem;
   font-family: Raleway, Arial, sans-serif;
 } */
+.coverPage .subheadingpara{
+  font-size: 1rem;
+  font-weight: bold;
+ }
 .coverPage p {
   color: #002e5b;
   margin: 1rem 12rem;

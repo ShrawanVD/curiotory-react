@@ -123,10 +123,10 @@ function Newcover() {
 
               <h1>An Online Language Learning Platform</h1>
 
-              <h2>
+              <p className={newcover.subheadingpara}>
                 Curious about learning new languages? Transform it into a
                 life-changing opportunity.
-              </h2>
+              </p>
 
               <p>
                 Curiotory, the ultimate language learning software is here at
