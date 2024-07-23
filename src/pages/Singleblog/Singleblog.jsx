@@ -180,17 +180,13 @@ function Singleblog() {
   };
   return (
     <div>
-      <Helmet>
-        <title>{blog.metaTitle}</title>
-        <meta
-          name="description"
-          content={blog.metaDescr}
-        />
-        <meta
-          name="keywords"
-          content={blog.metaKeywords}
-        />
-      </Helmet>
+       {blog && (
+        <Helmet>
+          <title>{blog.metaTitle}</title>
+          <meta name="description" content={blog.metaDescr} />
+          <meta name="keywords" content={blog.metaKeywords} />
+        </Helmet>
+      )}
       <Newnavbar />
       <div>
       <div className={singleblogcss.singleBlogContainer}>
