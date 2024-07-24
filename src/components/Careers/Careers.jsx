@@ -86,6 +86,13 @@ function Careers() {
       Shift: "24/7 rotational",
       salary: "25k CTC, 21k in hand",
     },
+    {
+      id: 10,
+      title: "Customer Support Executive",
+      language: "Proficiency in Malayalam",
+      Shift: "6 days a week with rotational off days",
+      salary: "3.2 CTC",
+    },
   ];
 
   const handleViewDetails = (id) => {

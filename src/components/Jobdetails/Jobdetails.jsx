@@ -418,6 +418,41 @@ const openings = [
       "Only male candidates are eligible for this role",
     ],
   },
+  {
+    id: 10,
+    title: "Customer Support Executive",
+    location: "Bangalore",
+    language: "Proficiency in Malayalam",
+    startDate: "Immediately",
+    salary: "3.2 CTC ",
+    worksch: "6 days a week with rotational off days ", //
+    qualification: "Graduate",//
+    Experience: "Freshers and Experienced candidates are welcome (only for male candidate)",//
+    responsibilities: [
+      "Handle customer inquiries and provide appropriate solutions",
+      "Manage customer complaints and provide timely resolutions",
+      "Maintain detailed and accurate records of customer interactions",
+      "Collaborate with internal teams to ensure customer satisfaction",
+      "Follow communication procedures, guidelines, and policies",
+    ],
+    requirements: [
+      "Strong communication and interpersonal skills",
+      "Ability to multitask and manage time effectively",
+      "Problem-solving skills and attention to detail",
+      "Basic computer proficiency",
+    ],
+    Benefits: [
+      "Competitive salary package",
+      "Opportunity to work in a dynamic and supportive environment",
+      "Professional growth and development opportunities",
+      "Comprehensive training and ongoing support",
+    ],
+    additionalInfo: [
+      "This position operates on a 24/7 rotational shift basis",
+      "6 days working week with rotational off days",
+      "Only male candidates are eligible for this role",
+    ],
+  },
 ];
 
 function Jobdetails() {
