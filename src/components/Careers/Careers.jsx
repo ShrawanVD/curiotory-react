@@ -13,12 +13,10 @@ function Careers() {
   const openings = [
     {
       id: 1,
-      title: "French Language Interpreter",
-      language: "French",
-      company: "Colorbar Cosmetics Private Limited",
-      Shift: "24/7 rotational shifts",
-      salary: "10 LPA",
-      duration: "3 Months",
+      title: "Customer Support Executive (language: Malayalam)",
+      language: "Proficiency in Malayalam",
+      Shift: "6 days a week with rotational off days",
+      salary: "3.2 CTC",
     },
     {
       id: 2,
@@ -88,11 +86,14 @@ function Careers() {
     },
     {
       id: 10,
-      title: "Customer Support Executive",
-      language: "Proficiency in Malayalam",
-      Shift: "6 days a week with rotational off days",
-      salary: "3.2 CTC",
-    },
+      title: "French Language Interpreter",
+      language: "French",
+      company: "Colorbar Cosmetics Private Limited",
+      Shift: "24/7 rotational shifts",
+      salary: "10 LPA",
+      duration: "3 Months",
+    }
+    
   ];
 
   const handleViewDetails = (id) => {

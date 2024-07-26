@@ -8,53 +8,38 @@ import { Hail } from "@mui/icons-material";
 const openings = [
   {
     id: 1,
-    metaTitle: "Apply For French Interpreter jobs At Curiotory - Hiring Now",
-    metaDesc:
-      "Apply for French language interpreter jobs online for remote and hybrid models. Join our dynamic team at Curiotory and soar new heights in your career! Hiring Now!",
-    metaKey:
-      "french language interpreter, french language interpreter jobs, french translator jobs, french interpreter jobs in India, french interpretation jobs remote, French interpreter jobs work from home",
-    title: "French Language Interpreter",
-    language: "French",
+    title: "Customer Support Executive (language: Malayalam)",
+    location: "Bangalore",
+    language: "Proficiency in Malayalam",
     startDate: "Immediately",
-    salary: "10 LPA",
-    about:
-      "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
-    // skills: [
-    //   "Effective Communication",
-    //   "English Proficiency (Spoken)",
-    //   "MS-Excel",
-    //   "MS-PowerPoint",
-    //   "MS-Word",
-    //   "Operations",
-    //   "Sales",
-    // ],
+    salary: "3.2 CTC ",
+    worksch: "6 days a week with rotational off days ", //
+    qualification: "Graduate",//
+    Experience: "Freshers and Experienced candidates are welcome (only for male candidate)",//
     responsibilities: [
-      "Conduct voice and video calls with clients and customers in the specified languages.",
-      "Collect the company-provided system from the Gurugram office.",
-      "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
-      "Use personal phones to take calls for the initial 4 to 5 months.",
-    ],
-    process: [
-      "English AMCAT",
-      "Language Proficiency Test",
-      "HR Round",
-      "Operational Round",
+      "Handle customer inquiries and provide appropriate solutions",
+      "Manage customer complaints and provide timely resolutions",
+      "Maintain detailed and accurate records of customer interactions",
+      "Collaborate with internal teams to ensure customer satisfaction",
+      "Follow communication procedures, guidelines, and policies",
     ],
     requirements: [
-      "Comfortable with voice and video calls.",
-      "Ability to work in 24/7 rotational shifts.",
-      "Willingness to use personal phone for calls during the initial period.",
-      "Commitment to undergo training and pass the assessment.",
+      "Strong communication and interpersonal skills",
+      "Ability to multitask and manage time effectively",
+      "Problem-solving skills and attention to detail",
+      "Basic computer proficiency",
     ],
-    training: [
-      "5 to 6 weeks of comprehensive training provided by the company.",
-      "Certification upon successful completion of training and assessment.",
+    Benefits: [
+      "Competitive salary package",
+      "Opportunity to work in a dynamic and supportive environment",
+      "Professional growth and development opportunities",
+      "Comprehensive training and ongoing support",
     ],
     additionalInfo: [
-      "Candidates will collect the company-provided system from the Gurugram office.",
+      "This position operates on a 24/7 rotational shift basis",
+      "6 days working week with rotational off days",
+      "Only male candidates are eligible for this role",
     ],
-    whoCanApply:
-      "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
     id: 2,
@@ -420,38 +405,53 @@ const openings = [
   },
   {
     id: 10,
-    title: "Customer Support Executive",
-    location: "Bangalore",
-    language: "Proficiency in Malayalam",
+    metaTitle: "Apply For French Interpreter jobs At Curiotory - Hiring Now",
+    metaDesc:
+      "Apply for French language interpreter jobs online for remote and hybrid models. Join our dynamic team at Curiotory and soar new heights in your career! Hiring Now!",
+    metaKey:
+      "french language interpreter, french language interpreter jobs, french translator jobs, french interpreter jobs in India, french interpretation jobs remote, French interpreter jobs work from home",
+    title: "French Language Interpreter",
+    language: "French",
     startDate: "Immediately",
-    salary: "3.2 CTC ",
-    worksch: "6 days a week with rotational off days ", //
-    qualification: "Graduate",//
-    Experience: "Freshers and Experienced candidates are welcome (only for male candidate)",//
+    salary: "10 LPA",
+    about:
+      "Selected intern's day-to-day responsibilities include:\n1. Monitoring calls for the counselors\n2. Sharing feedback of the team and with the counselors\n3. Creating awareness and promoting a quality environment through huddles\n4. Analyzing the quality of the counseling process\n5. Conducting training sessions for the associates to improve their performance\n6. Participating in calibrations sessions",
+    // skills: [
+    //   "Effective Communication",
+    //   "English Proficiency (Spoken)",
+    //   "MS-Excel",
+    //   "MS-PowerPoint",
+    //   "MS-Word",
+    //   "Operations",
+    //   "Sales",
+    // ],
     responsibilities: [
-      "Handle customer inquiries and provide appropriate solutions",
-      "Manage customer complaints and provide timely resolutions",
-      "Maintain detailed and accurate records of customer interactions",
-      "Collaborate with internal teams to ensure customer satisfaction",
-      "Follow communication procedures, guidelines, and policies",
+      "Conduct voice and video calls with clients and customers in the specified languages.",
+      "Collect the company-provided system from the Gurugram office.",
+      "Undergo 5 to 6 weeks of training. Post-training, clear an assessment to be certified and eligible for taking video calls.",
+      "Use personal phones to take calls for the initial 4 to 5 months.",
+    ],
+    process: [
+      "English AMCAT",
+      "Language Proficiency Test",
+      "HR Round",
+      "Operational Round",
     ],
     requirements: [
-      "Strong communication and interpersonal skills",
-      "Ability to multitask and manage time effectively",
-      "Problem-solving skills and attention to detail",
-      "Basic computer proficiency",
+      "Comfortable with voice and video calls.",
+      "Ability to work in 24/7 rotational shifts.",
+      "Willingness to use personal phone for calls during the initial period.",
+      "Commitment to undergo training and pass the assessment.",
     ],
-    Benefits: [
-      "Competitive salary package",
-      "Opportunity to work in a dynamic and supportive environment",
-      "Professional growth and development opportunities",
-      "Comprehensive training and ongoing support",
+    training: [
+      "5 to 6 weeks of comprehensive training provided by the company.",
+      "Certification upon successful completion of training and assessment.",
     ],
     additionalInfo: [
-      "This position operates on a 24/7 rotational shift basis",
-      "6 days working week with rotational off days",
-      "Only male candidates are eligible for this role",
+      "Candidates will collect the company-provided system from the Gurugram office.",
     ],
+    whoCanApply:
+      "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
 ];
 
