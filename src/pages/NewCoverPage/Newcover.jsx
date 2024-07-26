@@ -129,7 +129,7 @@ function Newcover() {
               </p>
 
               <p>
-                Curiotory, the ultimate language learning software is here at
+                Curiotory, the ultimate language learning app is here at
                 your service to kick start your language learning journey with
                 fun pocket size chapters, curated by the best language experts
                 offering an unforgettable learning experience that comes in
