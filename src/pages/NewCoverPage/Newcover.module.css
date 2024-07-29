@@ -54,10 +54,10 @@
  }
 .coverPage p {
   color: #002e5b;
-  margin: 1rem 12rem;
+  margin: 1rem 20rem;
   font-size: 0.8rem;
   font-family: Raleway, Arial, sans-serif;
-  text-align: center;
+  text-align: justify;
 }
 @media (max-width:1200px){
   .coverPage p{
@@ -84,6 +84,22 @@
   margin-top: 1rem;
   font-family: Raleway, Arial, sans-serif;
 } */
+
+.readMoreBtn{
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
+  border: none;
+  cursor: pointer;
+  /* background-color: #226bb4; */
+  /* color: white; */
+  background: transparent;
+  margin-top: -0.5rem;
+  font-weight: bold;
+}
+
 .coverpageButton button {
   font-family: Raleway, Arial, sans-serif;
   font-size: 18px;
@@ -96,7 +112,7 @@
   cursor: pointer;
   background: #2f327c;
   color: white;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   font-weight: bold;
 }
@@ -124,6 +140,11 @@
   } */
   .coverpageButton button {
     margin-top: 2rem;
+  }
+  .readMoreBtn{
+    margin-top: 0rem;
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
   }
 }
 
@@ -579,4 +600,8 @@
     width: 100%;
     height: 50vh;
   }
+}
+
+.hiddenPara{
+  transition: transform 0.5s ease;
 }

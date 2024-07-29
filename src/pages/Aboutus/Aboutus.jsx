@@ -131,7 +131,7 @@ function Aboutus() {
           speaking a foreign language. But we, at Curiotory, are not in the
           business of merely empowering you to speak a new language. Founded in
           2020, Curiotory is an ambitious, India-based start-up looking to
-          reimagine the EduTech space by ensuring you can speak, read, write and
+          reimagine the upskilling space by ensuring you can speak, read, write and
           listen to new languages. In the process, we enable people of all ages
           to set and achieve breakthrough personal or professional goals.
         </p>

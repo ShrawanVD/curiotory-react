@@ -29,6 +29,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer2 from "../../components/Footer/Footer2";
 
 function Newcover() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
   const [showDiv1, setShowDiv1] = useState(true);
   const [showDiv2, setShowDiv2] = useState(false);
 
@@ -123,19 +129,52 @@ function Newcover() {
 
               <h1>An Online Language Learning Platform</h1>
 
-              <p className={newcover.subheadingpara}>
+              <p
+                className={newcover.subheadingpara}
+                style={{
+                  textAlign: "center",
+                }}
+              >
                 Curious about learning new languages? Transform it into a
                 life-changing opportunity.
               </p>
 
               <p>
-                Curiotory, the ultimate language learning app is here at
-                your service to kick start your language learning journey with
-                fun pocket size chapters, curated by the best language experts
+                Curiotory, the ultimate language learning app is here at your
+                service to kick start your language learning journey with fun
+                pocket size chapters, curated by the best language experts
                 offering an unforgettable learning experience that comes in
                 handy in all your career and multilingual aspects.
               </p>
-              <p>
+
+              <div className={newcover.hiddenPara}>
+                {isVisible && (
+                  <p>
+                    Learn at your pace with Bharat’s first language learning
+                    platform with language learning courses available for
+                    everyone and everybody, right from school going kids, to
+                    aspiring teenagers, working professionals, and homemakers
+                    dreaming to give a new direction to their life! Improvise
+                    your existing language skills or learn a new language online
+                    with professional certification. Test your own skills and
+                    ability and outperform them through our special language
+                    learning exams defined in the curriculum by our highly
+                    skilled language tutors!
+                  </p>
+                )}
+                <button
+                  className={newcover.readMoreBtn}
+                  onClick={toggleVisibility}
+                >
+                  {isVisible ? (
+                    <i class="fa-solid fa-caret-up"></i>
+                  ) : (
+                    <i class="fa-solid fa-caret-down"></i>
+                  )}
+                  {/* {isVisible ? "View Less" : "View More"} */}
+                </button>
+              </div>
+              {/* <p >
                 Learn at your pace with Bharat’s first language learning
                 platform with language learning courses available for everyone
                 and everybody, right from school going kids, to aspiring
@@ -145,7 +184,7 @@ function Newcover() {
                 certification.! Test your own skills and ability and outperform
                 them through our special language learning exams defined in the
                 curriculum by our highly skilled language tutors!
-              </p>
+              </p> */}
 
               <div className={newcover.coverpageButton}>
                 <a
@@ -272,8 +311,10 @@ function Newcover() {
                 </div>
                 <div className={newcover.pprRight}>
                   <p>
-                    <strong className={newcover.iso_head}>Curiotory: ISO Certified and Trusted for Language Learning
-                    Excellence</strong>
+                    <strong className={newcover.iso_head}>
+                      Curiotory: ISO Certified and Trusted for Language Learning
+                      Excellence
+                    </strong>
                     <br />
                     <br />
                     At Curiotory, we are proud to be ISO certified,
