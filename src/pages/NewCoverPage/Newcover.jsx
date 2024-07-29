@@ -167,9 +167,9 @@ function Newcover() {
                   onClick={toggleVisibility}
                 >
                   {isVisible ? (
-                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-chevron-up"></i>
                   ) : (
-                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-chevron-down"></i>
                   )}
                   {/* {isVisible ? "View Less" : "View More"} */}
                 </button>
