@@ -1,9 +1,14 @@
 import React from "react";
 import not from "./NotFound.module.css";
+import Newnavbar from "../../components/NewNavbar/Newnavbar";
+import Footer2 from "../../components/Footer/Footer2";
 
 const NotFoundDev = ({ message = "Page Under Development" }) => (
 
   <div>
+
+<Newnavbar />
+
     <div className={not.error_page}>
       <div className={not.container1}>
         <div className={not.eyes}>
@@ -39,6 +44,8 @@ const NotFoundDev = ({ message = "Page Under Development" }) => (
         </p>
       </div>
     </div>
+
+    <Footer2 />
   </div>
 );
 

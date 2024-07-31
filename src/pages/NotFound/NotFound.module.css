@@ -36,6 +36,7 @@
 }
 .error_page {
   margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 .error_page__heading_title {
   text-transform: capitalize;
