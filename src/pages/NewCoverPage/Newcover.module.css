@@ -7,144 +7,213 @@
   align-items: center;
 }
 
-.coverContainer {
-  /* background-color: rgb(0, 0, 0); */
-  background-image: url("/Index/newcoverimg.png");
-  background-size: cover;
-  background-position: center;
-  height: auto;
-  justify-content: center;
+/* new cover page css */
+.covernewdiv {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  padding-bottom: 5rem;
+  justify-content: space-around;
+  padding: 50px 50px 29px 0px;
 }
 
-.coverPage {
-  margin-top: 1rem;
-  text-align: center;
+.coverleftnewside, .covernewrightside {
+  /* flex: 1 1; */
+  margin: 10px;
+  /* position: relative; */
 }
-.mascotCover img {
-  width: 480px;
-  height: auto;
+.coverleftnewside{
+  flex: 70%;
+  margin-left: 0px;
 }
-@media (max-width:1000px){
-  .mascotCover img{
-    width: 400px;
-  } 
+
+.covernewrightside {
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media (max-width:600px){
-  .mascotCover img{
-    width: 300px;
-  } 
+
+.covernewcard {
+  background-image: url('/Index/coverpageBackground.png'); /* Adjust the color based on your design */
+  padding: 4rem 14rem 4rem 4rem;
+  border-radius: 0px 10px 10px 0px;
+  color: white;
+  position: relative;
+  border-left: 10px solid #e03e00;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
 }
-.coverPage h1 {
-  color: #002e5b;
-  margin-top: 2.5rem;
+.slideIn {
+  animation: slideIn 0.5s forwards;
+}
+
+.slideOut {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.newcardImageContainer {
+  position: absolute;
+  top: -80px; 
+  right: 5px; 
+  z-index: 0;
+}
+
+.newcardImage {
+  width: 145px; 
+  height: 170px; 
+}
+
+.covernewheading {
   font-family: Raleway, Arial, sans-serif;
-  font-weight: 550;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #F4AD28;
 }
-/* .coverPage h2 {
-  color: #002e5b;
-  margin-top: 1rem;
-  font-size: 1.30rem;
+.covernewcard hr {
+  border: 1px solid white;
+}
+
+.covernewsubheading {
   font-family: Raleway, Arial, sans-serif;
-} */
-.coverPage .subheadingpara{
-  font-size: 1rem;
-  font-weight: bold;
- }
-.coverPage p {
-  color: #002e5b;
-  margin: 1rem 20rem;
-  font-size: 0.8rem;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #EF4B2B;
+}
+
+.covernewdescription {
   font-family: Raleway, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
   text-align: justify;
-}
-@media (max-width:1200px){
-  .coverPage p{
-    margin: 1rem 7rem;
-  }
-}
-@media (max-width:1000px){
-  .coverPage p{
-    margin: 1rem 5rem;
-  }
-}
-@media (max-width:700px){
-  .coverPage p{
-    margin: 1rem 2rem;
-  }
-}
-@media (max-width:470px){
-  .coverPage p{
-    margin: 1rem 0.5rem;
-  }
-}
-/* .coverPage h4 {
-  color: #002e5b;
-  margin-top: 1rem;
-  font-family: Raleway, Arial, sans-serif;
-} */
 
-.readMoreBtn{
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 30px;
-  border-radius: 5px;
-  padding: 0.2rem 1rem;
-  border: none;
-  cursor: pointer;
-  /* background-color: #226bb4; */
-  /* color: white; */
-  background: transparent;
-  margin-top: -0.5rem;
-  font-weight: bold;
 }
 
-.coverpageButton button {
+.covernewreadmore {
   font-family: Raleway, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: bold;
+  color: #F4AD28;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.covernewreadmore:hover{
+  color: #e03e00;
   text-decoration: none;
-  line-height: 30px;
-  border-radius: 40px 40px 40px 40px;
-  padding: 12px 26px;
-  border: none;
-  cursor: pointer;
-  background: #2f327c;
-  color: white;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  font-weight: bold;
-}
-.coverpageButton button:hover {
-  background-color: #ef4b2b;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
-  .coverPage {
-    padding: 0rem 2rem;
+.covernewdownloadButton {
+  font-family: Raleway, Arial, sans-serif;
+  background-color: #EF4B2B; /* Adjust the color based on your design */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.covernewdownloadButton:hover {
+  background-color: #e03e00; /* Slightly darker shade for hover effect */
+}
+
+.covernewrightside img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.covernewheading1{
+  font-family: Raleway, Arial, sans-serif;
+  font-size: 28px;
+  margin-bottom: 39px;
+  color: #F4AD28;
+}
+.covernewFirstsubContainer{
+  margin-top: 1rem;
+  display: flex;
+}
+.covernewFirstsubContainerimg{
+  margin-right: 2.6rem;
+}
+.covernewFirstsubContainertext1{
+  color: #417FBE;
+}
+.covernewFirstsubContainertext1 h3,.covernewFirstsubContainertext1 p,.covernewFirstsubContainertext2 h3,.covernewFirstsubContainertext2 p,.covernewFirstsubContainertext3 h3,.covernewFirstsubContainertext3 p{
+  font-family: Raleway, Arial, sans-serif;
+}
+
+.covernewFirstsubContainertext1 h3,.covernewFirstsubContainertext2 h3,.covernewFirstsubContainertext3 h3{
+ font-size: 22px;
+ text-decoration: underline;
+}
+.covernewFirstsubContainertext2{
+  color: #F4AD28;
+  font-family: Raleway, Arial, sans-serif;
+
+}
+.covernewFirstsubContainertext3{
+  color: #EF4B2B;
+  font-family: Raleway, Arial, sans-serif;
+
+}
+
+@media (max-width:1400px){
+  .covernewdiv {
+    padding: 7rem 0px 50px;
   }
-  .coverPage h1 {
-    font-size: 30px;
+}
+@media (max-width: 1350px){
+  .covernewcard {
+    padding: 3rem 12rem 3rem 4rem;
   }
-  .coverPage h2 {
-    margin-top: 2rem;
-    font-size: 18px;
+}
+@media (max-width: 700px){
+  .covernewdiv {
+    padding: 4rem 0px 50px;
+    flex-direction: column;
   }
-  /* .coverPage h4 {
-    font-size: 18px;
-    margin-top: 2rem;
-  } */
-  .coverpageButton button {
-    margin-top: 2rem;
+  .covernewcard {
+    padding: 3rem 5rem 3rem 4rem;
   }
-  .readMoreBtn{
-    margin-top: 0rem;
-    font-size: 1.3rem;
-    margin-bottom: 0rem;
+  .covernewrightside img {
+    width: 60%;
+   display: none;
+  }
+}
+@media (max-width: 500px){
+  .covernewcard {
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .newcardImage{
+    width: 100px;
+    height: 110px;
+  }
+  .newcardImageContainer{
+    position: absolute;
+    top: -60px; 
+    right: 5px; 
+    z-index: -1;
   }
 }
 

@@ -29,6 +29,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer2 from "../../components/Footer/Footer2";
 
 function Newcover() {
+  const [showNewCard, setShowNewCard] = useState(false);
+
+  const handleCardClick = () => {
+    setShowNewCard(!showNewCard);
+  };
+
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -113,92 +119,99 @@ function Newcover() {
       )}
       {showDiv2 && (
         <div>
-          <div className={newcover.coverContainer}>
-            <Newnavbar />
-            {/* cover page  */}
-            <div className={newcover.coverPage}>
-              <div className={newcover.mascotCover}>
-                <LazyLoad height={200} offset={100}>
-                  <img src="/mascot/coverani.gif" alt="mascot curo" />
-                </LazyLoad>
-              </div>
-              {/* <h1>
-                Learn Languages With Proficiency : <br /> Curiotory The Best
-                Language Learning App
-              </h1> */}
-
-              <h1>An Online Language Learning Platform</h1>
-
-              <p
-                className={newcover.subheadingpara}
-                style={{
-                  textAlign: "center",
-                }}
+          <Newnavbar />
+          {/* cover page  */}
+          <div className={newcover.covernewdiv}>
+            <div className={newcover.coverleftnewside}>
+              <div
+                className={`${newcover.covernewcard} ${
+                  showNewCard ? newcover.slideOut : newcover.slideIn
+                }`}
+                onClick={handleCardClick}
               >
-                Curious about learning new languages? Transform it into a
-                life-changing opportunity.
-              </p>
+                {showNewCard ? (
+                  <>
+                    <div className={newcover.newcardImageContainer}>
+                      <img
+                        src="/Index/curoCoversmallimg.png"
+                        alt="top right"
+                        className={newcover.newcardImage}
+                      />
+                    </div>
+                    <h2 className={newcover.covernewheading1}>Why We Stand Out from Competitors:</h2>
+                    <div className={newcover.covernewFirstContainer}>
+                      <div className={newcover.covernewFirstsubContainer}>
+                          <div className={newcover.covernewFirstsubContainerimg}>
+                            <img src="/Index/containercover1.png" alt="time" />
+                          </div>  
+                          <div className={newcover.covernewFirstsubContainertext1}>
+                              <h3>Flexibility and Convenience:</h3>
+                              <p>Learn anytime, anywhere, fitting seamlessly into busy schedules, unlike fixed offline classes.</p>
+                          </div>
+                      </div>
+                      <div className={newcover.covernewFirstsubContainer}>
+                          <div className={newcover.covernewFirstsubContainerimg}>
+                            <img src="/Index/containercover2.png" alt="time" />
+                          </div>  
+                          <div className={newcover.covernewFirstsubContainertext2}>
+                              <h3>Expert Tutors and Cutting-Edge Technology:</h3>
+                              <p>Highly qualified tutors and innovative tools keep students engaged and motivated, ensuring superior learning.</p>
+                          </div>
+                      </div>
+                      <div className={newcover.covernewFirstsubContainer}>
+                          <div className={newcover.covernewFirstsubContainerimg}>
+                            <img src="/Index/containercover3.png" alt="time" />
+                          </div>  
+                          <div className={newcover.covernewFirstsubContainertext3}>
+                              <h3>Culturally Rich Content:</h3>
+                              <p>Lessons include cultural context, preparing learners for real-world communication and interactions.</p>
+                          </div>
+                      </div>
 
-              <p>
-                Curiotory, the ultimate language learning app is here at your
-                service to kick start your language learning journey with fun
-                pocket size chapters, curated by the best language experts
-                offering an unforgettable learning experience that comes in
-                handy in all your career and multilingual aspects.
-              </p>
-
-              <div className={newcover.hiddenPara}>
-                {isVisible && (
-                  <p>
-                    Learn at your pace with Bharat’s first language learning
-                    platform with language learning courses available for
-                    everyone and everybody, right from school going kids, to
-                    aspiring teenagers, working professionals, and homemakers
-                    dreaming to give a new direction to their life! Improvise
-                    your existing language skills or learn a new language online
-                    with professional certification. Test your own skills and
-                    ability and outperform them through our special language
-                    learning exams defined in the curriculum by our highly
-                    skilled language tutors!
-                  </p>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={newcover.newcardImageContainer}>
+                      <img
+                        src="/Index/curoCoversmallimg.png"
+                        alt="top right"
+                        className={newcover.newcardImage}
+                      />
+                    </div>
+                    <h2 className={newcover.covernewheading}>
+                      Expand your world with personalized language learning
+                    </h2>
+                    <hr />
+                    <p className={newcover.covernewsubheading}>
+                      Master any language, anytime, anywhere
+                    </p>
+                    <p className={newcover.covernewdescription}>
+                      Curiotory, the ultimate language learning app is here at
+                      your service to kick start your language learning journey
+                      with fun pocket size chapters, curated by the best
+                      language experts offering an unforgettable learning
+                      experience that comes in handy in all your career and
+                      multilingual aspects.
+                    </p>
+                    <a href="#readmore" className={newcover.covernewreadmore}>
+                      Read more...
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank">
+                    <button className={newcover.covernewdownloadButton}>
+                      Download the app now!
+                    </button>
+                    </a>
+                  </>
                 )}
-                <button
-                  className={newcover.readMoreBtn}
-                  onClick={toggleVisibility}
-                >
-                  {isVisible ? (
-                    <i class="fa-solid fa-chevron-up"></i>
-                  ) : (
-                    <i class="fa-solid fa-chevron-down"></i>
-                  )}
-                  {/* {isVisible ? "View Less" : "View More"} */}
-                </button>
               </div>
-              {/* <p >
-                Learn at your pace with Bharat’s first language learning
-                platform with language learning courses available for everyone
-                and everybody, right from school going kids, to aspiring
-                teenagers, working professionals and homemakers dreaming to give
-                a new direction to their life! Improvise your existing language
-                skills or learn a new language online with professional
-                certification.! Test your own skills and ability and outperform
-                them through our special language learning exams defined in the
-                curriculum by our highly skilled language tutors!
-              </p> */}
-
-              <div className={newcover.coverpageButton}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
-                >
-                  <button>Download the Curiotory app now!</button>
-                </a>
-              </div>
-
-              {/* <div className={newcover.ampLink}>
-                <a href="/ampsite">View AMP version</a>
-              </div> */}
+            </div>
+            <div className={newcover.covernewrightside}>
+              <img
+                src="/Index/coverpagenewimg.png"
+                alt="curiotory cover"
+                className={newcover.rightImage}
+              />
             </div>
           </div>
 
