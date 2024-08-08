@@ -48,7 +48,8 @@
     line-height: 4.6rem;
     text-align: center;
   }
-  
+
+
   .headingTag .stats ul li {
     font-family: "Nunito Sans", Sans-serif;
     font-size: 1.3rem;
@@ -489,7 +490,7 @@
       width: 9rem;
       height: 7rem;
     }
-  
+
     .originStorySection .rightSide h1 {
       font-size: 1.4rem;
       margin-top: 3%;

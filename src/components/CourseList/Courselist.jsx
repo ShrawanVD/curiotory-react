@@ -4,14 +4,7 @@ function Courselist() {
   return (
     <>
       <div className={list.courseListContainer}>
-        <h2>Language learning courses at just ₹99</h2>
         <div className={list.courseCardContainer}>
-          <a href="course/french">
-            <div className={list.courseLangCard}>
-              <img src="./Course/french.png" alt="French" width="180" height="180" />
-              <h4>French</h4>
-            </div>
-          </a>
           {/* <a href="course/german">
             <div className={list.courseLangCard}>
               <img src="./Course/german.png" alt="German" width="150" height="150" />
@@ -24,30 +17,110 @@ function Courselist() {
               <h4>Spanish</h4>
             </div>
           </a> */}
-          <a href="course/english">
-            <div className={list.courseLangCard}>
-              <img src="./Course/english.png" alt="English" width="180" height="180" />
-              <h4>English</h4>
-            </div>
-          </a>
-          <a href="course/mandarin">
-            <div className={list.courseLangCard}>
-              <img src="./Course/mandarin.png" alt="Mandarin" width="180" height="180" />
-              <h4>Mandarin</h4>
-            </div>
-          </a>
-          <a href="course/japanese">
-            <div className={list.courseLangCard}>
-              <img src="./Course/japanese.png" alt="Japanese" width="180" height="180" />
-              <h4>Japanese</h4>
-            </div>
-          </a>
-          <a href="course/korean">
-            <div className={list.courseLangCard}>
-              <img src="./Course/korean.png" alt="Korean" width="180" height="180" />
-              <h4>Korean</h4>
-            </div>
-          </a>
+
+          <div className={list.firstCourseRow}>
+            <a href="course/french">
+              <div className={list.courseLangCard}>
+                <img src="./Course/french.png" alt="French" />
+                <h4>French</h4>
+              </div>
+            </a>
+            <a href="course/english">
+              <div className={list.courseLangCard}>
+                <img src="./Course/english.png" alt="English" />
+                <h4>English</h4>
+              </div>
+            </a>
+            <a href="course/mandarin">
+              <div className={list.courseLangCard}>
+                <img src="./Course/mandarin.png" alt="Mandarin" />
+                <h4>Mandarin</h4>
+              </div>
+            </a>
+          </div>
+
+          <div className={list.secondCourseRow}>
+            <a href="course/japanese">
+              <div className={list.courseLangCard}>
+                <img src="./Course/japanese.png" alt="Japanese" />
+                <h4>Japanese</h4>
+              </div>
+            </a>
+            <a href="course/korean">
+              <div className={list.courseLangCard} id="korean">
+                <img src="./Course/korean.png" alt="Korean" />
+                <h4>Korean</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div className={list.courseList_right_side}>
+          <h4>
+            <span
+              style={{
+                color: "#1F6BB5",
+              }}
+            >
+              Master a new
+            </span>{" "}
+            <br />
+            <span
+              style={{
+                color: "#F4AD28",
+              }}
+            >
+              language for just
+            </span>{" "}
+            <br />
+            <i
+              style={{
+                color: "#EF4B2B",
+              }}
+              class="fa-solid fa-indian-rupee-sign"
+            ></i>{" "}
+            <span
+              style={{
+                color: "#EF4B2B",
+                fontWeight: "bold",
+              }}
+            >
+              99!
+            </span>
+          </h4>
+        </div>
+
+        <div className={list.courseList_right_side1}>
+          <h4>
+            <span
+              style={{
+                color: "#1F6BB5",
+              }}
+            >
+              Master a new{" "}
+            </span>
+            <span
+              style={{
+                color: "#F4AD28",
+              }}
+            >
+              language for just{" "}
+            </span>
+            <i
+              style={{
+                color: "#EF4B2B",
+              }}
+              class="fa-solid fa-indian-rupee-sign"
+            ></i>{" "}
+            <span
+              style={{
+                color: "#EF4B2B",
+                fontWeight: "bold",
+              }}
+            >
+              99!
+            </span>
+          </h4>
         </div>
       </div>
     </>

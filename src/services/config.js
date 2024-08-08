@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: 'https://backendapi-kks4.onrender.com',
+    apiUrl: 'https://curiotory-admin-backend.onrender.com',
   };
   
   export default config;

@@ -5,18 +5,17 @@ import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import { useEffect } from "react";
 function Aboutus() {
-
   useEffect(() => {
     addGTM();
   }, []);
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -39,7 +38,6 @@ function Aboutus() {
         </h1>
         <div className={Aboutuscss.stats}>
           <ul>
-            {/* + +{" "}  */}
             <li>
               <span className={Aboutuscss.boldFirst}>30+ years</span> of
               combined language training experience
@@ -61,12 +59,12 @@ function Aboutus() {
         </div>
         {/* <!-- <a className="register-button" href="">Get Started</a> --> */}
         <div>
-        <img
-              src="/mascot/Trophy.gif"
-              alt="mascot trophy"
-              className={Aboutuscss.mascotAbout}
-              type="gif"
-            />
+          <img
+            src="/mascot/Trophy.gif"
+            alt="mascot trophy"
+            className={Aboutuscss.mascotAbout}
+            type="gif"
+          />
         </div>
         <a
           className={Aboutuscss.registerButton}
@@ -127,13 +125,14 @@ function Aboutus() {
 
       <div className={Aboutuscss.bio}>
         <p>
-          Right about now, more than 1.2 billion people across the world are
-          speaking a foreign language. But we, at Curiotory, are not in the
-          business of merely empowering you to speak a new language. Founded in
-          2020, Curiotory is an ambitious, India-based start-up looking to
-          reimagine the upskilling space by ensuring you can speak, read, write and
-          listen to new languages. In the process, we enable people of all ages
-          to set and achieve breakthrough personal or professional goals.
+        Over a billion people worldwide have embraced the challenge of
+            learning a new language. At Curiotory, we believe in going beyond
+            mere linguistic competence. Founded in 2020, we're an Indian startup
+            dedicated to revolutionizing language learning. Our mission is to
+            equip individuals of all ages with the ability to fluently speak,
+            read, write, and understand new languages. By mastering a new
+            language, we empower our learners to achieve extraordinary personal
+            and professional milestones.
         </p>
       </div>
 
