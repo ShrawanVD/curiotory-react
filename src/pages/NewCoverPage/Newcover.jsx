@@ -127,6 +127,127 @@ function Newcover() {
                 className={`${newcover.covernewcard} ${
                   showNewCard ? newcover.slideOut : newcover.slideIn
                 }`}
+              >
+                {showNewCard ? (
+                  <>
+                    <div className={newcover.newcardImageContainer}>
+                      <img
+                        src="/Index/curoCoversmallimg.png"
+                        alt="top right"
+                        className={newcover.newcardImage}
+                      />
+                    </div>
+                    <h2 className={newcover.covernewheading1}>
+                      Why We Stand Out from Competitors:
+                    </h2>
+                    <div className={newcover.covernewFirstContainer}>
+                      <div className={newcover.covernewFirstsubContainer}>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover1.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext1}
+                        >
+                          <h3>Flexibility and Convenience:</h3>
+                          <p>
+                            Learn anytime, anywhere, fitting seamlessly into
+                            busy schedules, unlike fixed offline classes.
+                          </p>
+                        </div>
+                      </div>
+                      <div className={newcover.covernewFirstsubContainer}>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover2.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext2}
+                        >
+                          <h3>Expert Tutors and Cutting-Edge Technology:</h3>
+                          <p>
+                            Highly qualified tutors and innovative tools keep
+                            students engaged and motivated, ensuring superior
+                            learning.
+                          </p>
+                        </div>
+                      </div>
+                      <div className={newcover.covernewFirstsubContainer}>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover3.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext3}
+                        >
+                          <h3>Culturally Rich Content:</h3>
+                          <p>
+                            Lessons include cultural context, preparing learners
+                            for real-world communication and interactions.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className={newcover.newcardImageContainer}>
+                      <img
+                        src="/Index/curoCoversmallimg.png"
+                        alt="top right"
+                        className={newcover.newcardImage}
+                      />
+                    </div>
+                    <h2 className={newcover.covernewheading}>
+                      Expand your world with personalized language learning
+                    </h2>
+                    <hr />
+                    <p className={newcover.covernewsubheading}>
+                      Master any language, anytime, anywhere
+                    </p>
+                    <p className={newcover.covernewdescription}>
+                      Curiotory, the ultimate language learning app is here at
+                      your service to kick start your language learning journey
+                      with fun pocket size chapters, curated by the best
+                      language experts offering an unforgettable learning
+                      experience that comes in handy in all your career and
+                      multilingual aspects.
+                    </p>
+                    <a href="#readmore" className={newcover.covernewreadmore}>
+                      Read more...
+                    </a>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                      target="_blank"
+                    >
+                      <button className={newcover.covernewdownloadButton}>
+                        Download the app now!
+                      </button>
+                    </a>
+                  </>
+                )}
+
+                {/* Next Icon */}
+                <div
+                  className={newcover.nextIconContainer}
+                  onClick={handleCardClick}
+                >
+                  <i class="fa-solid fa-chevron-right div_next"></i>
+                </div>
+              </div>
+            </div>
+            <div className={newcover.covernewrightside}>
+              <img
+                src="/Index/coverpagenewimg.png"
+                alt="curiotory cover"
+                className={newcover.rightImage}
+              />
+            </div>
+          </div>
+
+          <div className={newcover.covernewdiv1}>
+            <div className={newcover.coverleftnewside}>
+              <div
+                className={`${newcover.covernewcard} ${
+                  showNewCard ? newcover.slideOut : newcover.slideIn
+                }`}
                 onClick={handleCardClick}
               >
                 {showNewCard ? (
@@ -347,7 +468,7 @@ function Newcover() {
             </div>
           </div>
 
-          {/* Our solution */}
+          {/* Key benefits section */}
           <div>
             <div className={newcover.solcontainer}>
               {/* <h2 className={newcover.solheader}>
@@ -382,8 +503,8 @@ function Newcover() {
                 <div className={newcover.iconContainer}>
                   <LazyLoad offset={100}>
                     <img
-                      width="282"
-                      height="186"
+                      width="220"
+                      height="146"
                       src="/Index/Picture2.png"
                       alt="2nd solution"
                     />
@@ -704,76 +825,33 @@ function Newcover() {
             {/* <h2>
               Why Online Language Learning Triumphs Over Traditional Centers
             </h2> */}
-            <h2>
-              Why learning a new language online is preferably more convenient
-              than learning in traditional centers
-            </h2>
-            <hr />
+            <h2 color="#00046C">Why Our Online Language Learning Triumphs</h2>
+            <hr color="#00046C"/>
             <div className="foreign-lang-container">
               <div className="foreign-lang-left-container">
-                <h4>
-                  Traditional language centers, while once the standard, present
-                  limitations such as limited expertise, fixed schedules, lack
-                  of flexibility, and constraints on cultural immersion. In
-                  contrast, online learning offers global access to expertise,
-                  flexible scheduling, anytime-anywhere accessibility, and rich
-                  cultural integration. <br />
-                  With online mode, learners can overcome barriers seamlessly,
-                  fostering fluency in a dynamic and immersive environment.
-                </h4>
-                <br />
-                <p>
-                  This concise comparison highlights the advantages of online
-                  language learning over traditional centers, emphasizing the
-                  benefits of flexibility, accessibility, and cultural
-                  immersion.
-                </p>
+                <ul>
+                  <li>
+                    Personalized curriculums for that focused or targeted
+                    learning or choose from our full length courses as well.
+                  </li>
+                  <li>
+                    Flexible learning and assessments by tutors with native
+                    proficiency and teaching experience
+                  </li>
+                  <li>
+                    No learning delays or disruptions with latest tools for LMS
+                    and passive learning.
+                  </li>
+                </ul>
               </div>
               <div className="foreign-lang-right-container">
-                <div className="foreign-lang-sub-contianer">
-                  <LazyLoad offset={100}>
-                    <img
-                      width="140px"
-                      height="83px"
-                      src="/Index/why foreign - 1.png"
-                      alt="Rigid Learning"
-                    />
-                  </LazyLoad>
-                  <p>
-                    Generic, one-size-fits-all curriculum instead of
-                    personalized courses
-                  </p>
-                </div>
-                <div className="foreign-lang-sub-contianer">
-                  <LazyLoad offset={100}>
-                    <img
-                      width="140px"
-                      height="83px"
-                      src="/Index/why foreign - 2.png"
-                      alt="Rigid Learning"
-                    />
-                  </LazyLoad>
-
-                  <p>
-                    Rigid learning assessment by tutors with limited proficiency
-                    & low experience levels
-                  </p>
-                </div>
-                <div className="foreign-lang-sub-contianer">
-                  <LazyLoad offset={100}>
-                    <img
-                      width="140px"
-                      height="83px"
-                      src="/Index/why foreign - 3.png"
-                      alt="Outdated technology"
-                    />
-                  </LazyLoad>
-
-                  <p>
-                    Outdated remote technology set-ups that cause learning
-                    delays & disruptions
-                  </p>
-                </div>
+                <LazyLoad offset={100}>
+                  <img
+                    width="370"
+                    src="/Index/online.png"
+                    alt="Online Language Learning Triumphs"
+                  />
+                </LazyLoad>
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-.mascotDiv {
+  .mascotDiv {
   height: 100%;
   text-align: center;
   padding-top: 12rem;
@@ -14,6 +14,10 @@
   align-items: center;
   justify-content: space-around;
   padding: 50px 50px 29px 0px;
+}
+
+.covernewdiv1{
+  display: none;
 }
 
 .coverleftnewside, .covernewrightside {
@@ -39,10 +43,30 @@
   border-radius: 0px 10px 10px 0px;
   color: white;
   position: relative;
-  border-left: 10px solid #e03e00;
   width: 100%;
   cursor: pointer;
   z-index: 1;
+}
+
+.covernewcard::before,
+.covernewcard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.covernewcard::before {
+  left: 0;
+  width: 10px; /* Adjust the width of the first column */
+  background-color: #417FBE;
+}
+
+.covernewcard::after {
+  left: 10px; /* Position the second column right after the first */
+  width: 10px; /* Adjust the width of the second column */
+  background-color: #F2AC25;
+  box-shadow: 10px 0 0 #EF4B28; /* The third color column */
 }
 .slideIn {
   animation: slideIn 0.5s forwards;
@@ -73,6 +97,19 @@
     opacity: 1;
   }
 }
+.nextIconContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  margin-left: 87%;
+}
+
+.nextIconContainer i {
+ font-size: 1.5rem;
+}
+
 .newcardImageContainer {
   position: absolute;
   top: -80px; 
@@ -202,6 +239,25 @@
   }
 }
 @media (max-width: 500px){
+
+  .covernewdiv{
+    display: none;
+  }
+  .covernewdiv1{
+   display: inline;
+  }
+
+  .covernewcard::after {
+    display: none;
+  }
+  
+  .covernewcard::before {
+    left: 0;
+    width: 6px; /* Adjust the width of the first column */
+    background-image: linear-gradient(to bottom, #f2ac25, #f4961c, #f47f1b, #f26720, #ef4b28);
+    /* background-color: #b92727; */
+  }
+  
   .covernewcard {
     padding: 3rem 1rem 3rem 1rem;
   }
@@ -281,14 +337,14 @@
 .solution {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
   justify-content: center;
   flex-wrap: wrap;
 }
 .solution2 {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -347,7 +403,7 @@
   font-family: Raleway, Arial, sans-serif;
 }
 .wonderingContainer hr {
-  border: 1px solid #d94f34;
+  border: 1px solid #00046C;
   margin-top: 2rem;
   width: 100%;
 }
