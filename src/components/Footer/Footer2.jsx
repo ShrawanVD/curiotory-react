@@ -186,7 +186,7 @@ function Footer() {
               <p
                 className="copyright"
               >
-                @2024 Chalkboard Academy Private Limited
+                @2024 Chalkbord Academy Private Limited
               </p>
             </div>
           </div>
