@@ -13,13 +13,45 @@ function Careers() {
   const openings = [
     {
       id: 1,
+      title: "Digital Marketing Executive",
+      location: "Pune",
+      salary: "3.2LPA",
+      experience: "0-1 Year",
+      education: "Graduate",
+    },
+    {
+      id: 2,
+      title: "HR Executive",
+      location: "Pune",
+      salary: "3.2LPA",
+      experience: "0-1 Year",
+      education: "Graduate",
+    },
+    {
+      id: 3,
+      title: "Web Developer",
+      location: "Pune",
+      salary: "3.2LPA",
+      experience: "0-1 Year",
+      education: "Graduate",
+    },
+    {
+      id: 4,
+      title: "Android Developer",
+      location: "Pune",
+      salary: "3.2LPA",
+      experience: "0-1 Year",
+      education: "Graduate",
+    },
+    {
+      id: 5,
       title: "Customer Support Executive (language: Malayalam)",
       language: "Proficiency in Malayalam",
       Shift: "6 days a week with rotational off days",
       salary: "3.2 CTC",
     },
     {
-      id: 2,
+      id: 6,
       title: "Nepali Language Interpreter",
       language: "Nepali",
       company: "Colorbar Cosmetics Private Limited",
@@ -28,7 +60,7 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 3,
+      id: 7,
       title: "Tamil Language Interpreter",
       language: "Tamil",
       company: "Colorbar Cosmetics Private Limited",
@@ -37,7 +69,7 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 4,
+      id: 8,
       title: "Hindi Language Interpreter",
       language: "Hindi",
       company: "Colorbar Cosmetics Private Limited",
@@ -46,7 +78,7 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 5,
+      id: 9,
       title: "Bengali Language Interpreter",
       language: "Bengali",
       company: "Colorbar Cosmetics Private Limited",
@@ -55,7 +87,7 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 6,
+      id: 10,
       title: "Urdu Language Interpreter",
       language: "Urdu",
       company: "Colorbar Cosmetics Private Limited",
@@ -64,36 +96,35 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 7,
+      id: 11,
       title: "Inside Sales Executive ",
       language: "English, Hindi",
       Shift: "7 AM to 9 PM (rotational)",
       salary: "25k CTC, 21k in hand",
     },
     {
-      id: 8,
+      id: 12,
       title: "Back Office Executives",
       language: "English, Hindi",
       Shift: "10 AM to 7 PM",
       salary: "25k CTC, 21k in hand (for Experienced)",
     },
     {
-      id: 9,
+      id: 13,
       title: "Customer Support Executive (only for male candidate)",
       language: "English and Kannada",
       Shift: "24/7 rotational",
       salary: "25k CTC, 21k in hand",
     },
     {
-      id: 10,
+      id: 14,
       title: "French Language Interpreter",
       language: "French",
       company: "Colorbar Cosmetics Private Limited",
       Shift: "24/7 rotational shifts",
       salary: "10 LPA",
       duration: "3 Months",
-    }
-    
+    },
   ];
 
   const handleViewDetails = (id) => {
@@ -245,12 +276,20 @@ Apply for remote language jobs or work with us and give an elevated shift to you
               className={job.cardopening}
             >
               <h3>{opening.title}</h3>
-              {/* <p>{opening.company}</p> */}
               <hr />
-              <p>Language: {opening.language}</p>
-              <p>Shift : {opening.Shift}</p>
-              <p>Salary: {opening.salary}</p>
-              {/* <p>{opening.duration}</p> */}
+              {[1, 2, 3, 4].includes(opening.id) ? (
+                <>
+                  <p>Location: {opening.location}</p>
+                  <p>Experience: {opening.experience}</p>
+                  <p>Salary: {opening.salary}</p>
+                </>
+              ) : (
+                <>
+                  <p>Language: {opening.language}</p>
+                  <p>Shift: {opening.shift}</p>
+                  <p>Salary: {opening.salary}</p>
+                </>
+              )}
               <div className={job.footeropening}>
                 <button
                   onClick={() => handleViewDetails(opening.id)}

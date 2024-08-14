@@ -8,6 +8,143 @@ import { Hail } from "@mui/icons-material";
 const openings = [
   {
     id: 1,
+    title: "Digital Marketing Executive",
+    location: "Hybrid/Remote",
+    salary: "₹3.2 LPA",
+    experience: "0-1 Year",
+    availability: "Immediate Joiners Preferred",
+    responsibilities: [
+      "Proven work experience as a Digital Marketing Manager or similar role",
+      "Demonstrable experience in developing and implementing successful digital marketing strategies",
+      "Strong understanding of digital marketing channels, trends, and best practices",
+      "Experience in website optimization, SEO, SEM, social media, and email marketing",
+      "Proficiency in using digital marketing tools and analytics platforms",
+      "Analytical mindset with the ability to track and measure marketing performance",
+      "Strong project management and organizational skills",
+      "Excellent communication and collaboration abilities"
+    ],
+    qualification: [
+      "Graduate or undergraduate in Marketing, Business, or a related field.", 
+      "Basic understanding of digital marketing, social media, and paid advertising.",
+      "Familiarity with SEO, SEM, Google Ads, and Facebook Ads is a plus.",
+      "Strong willingness to learn and adapt quickly.",
+      "Ability to work independently and in a remote team environment."
+    ],
+    Benefits: [
+      "Flexible working hours.",
+      "Opportunity to gain hands-on experience in digital marketing.",
+      "Supportive work environment with learning opportunities."
+    ]
+  },
+  {
+    id: 2,
+    title: "HR Executive",
+    location: "Pune",
+    salary: "₹3.2 LPA",
+    experience: "0-1 Year",
+    availability: "Immediate Joiners Preferred",
+    responsibilities: [
+      "Assist in sourcing, screening, and shortlisting candidates for various roles.",
+      "Schedule and coordinate interviews with potential candidates.",
+      "Support the onboarding process for new hires, ensuring a smooth transition.",
+      "Help address employee queries and concerns in a timely manner.",
+      "Assist in organizing team-building activities and employee engagement programs.",
+      "Maintain a positive work environment by supporting HR policies and practices.",
+      "Maintain employee records and ensure they are up-to-date.",
+      "Assist in payroll processing and ensure timely updates of employee data.",
+      "Support in managing employee benefits, leave records, and attendance tracking.",
+      "Help in coordinating performance appraisal processes.",
+      "Support in collecting and compiling performance data.",
+      "Assist in creating reports related to employee performance and development.",
+      "Ensure that the company complies with all labor laws and HR regulations.",
+      "Assist in managing employee documentation and ensuring adherence to company policies."
+    ],
+    qualification: [
+      "Graduate or undergraduate in Human Resources, Business Administration, or a related field.",
+      "Basic understanding of HR functions and best practices.",
+      "Strong communication and interpersonal skills.",
+      "Ability to work independently and as part of a team."
+    ],
+    Benefits: [
+      "Opportunity to gain hands-on experience in HR management.",
+      "Supportive work environment with career growth opportunities.",
+      "Exposure to various HR processes and functions."
+    ]
+  },
+  {
+    id: 3,
+    title: "Web Developer",
+    location: "Pune",
+    salary: "₹3.2 LPA",
+    experience: "0-1 Year",
+    education: "Graduate/Undergraduate",
+    availability: "Immediate Joiners Preferred",
+    responsibilities: [
+      "Strong understanding of computer science fundamentals along with design patterns and data structures.",
+      "Detailed experience with coding and the ability to troubleshoot and analyze web applications using React JS, Angular, JavaScript, HTML5, CSS and comparable languages.",
+      "Knowledge of ReactJS will be a plus point.",
+      "Continued education and research into UI development trends and current design strategy and technology.",
+      "Professional written and interpersonal skills.",
+      "Ability to prioritize and manage multiple milestones and projects efficiently.",
+      "Advanced problem-solving skills and the ability to optimize code for the best possible outcome.",
+      "Ability to work effectively in a collaborative environment to create top-performing interfaces.",
+      "Any experience in backend technology like NodeJS, Java will be good to have.",
+      "Hands-on coding activity will be conducted as part of the evaluation process.",
+      "AdTech Domain knowledge is a big advantage."
+    ],
+    qualification: [
+      "Graduate or undergraduate in Computer Science, Information Technology, or a related field.",
+      "Basic understanding of programming languages and software development principles.",
+      "Familiarity with software development tools and version control systems.",
+      "Strong analytical and problem-solving skills.",
+      "Ability to work independently and collaboratively within a team."
+    ],
+    benefits: [
+      "Opportunity to work on diverse and challenging software projects.",
+      "Supportive work environment with opportunities for career growth.",
+      "Exposure to the latest tools and technologies in software development."
+    ]
+  },
+  {
+    id: 4,
+    title: "Android Developer",
+    location: "Pune",
+    salary: "₹3.2 LPA",
+    experience: "0-1 Year",
+    education: "Graduate",
+    availability: "Immediate Joiners Preferred",
+    responsibilities: [
+      "Experience in developing Android apps in Kotlin. Knowledge of Kotlin in depth including Kotlin coroutines.",
+      "Experience in Java application development, with extensive use of Java I/O, Collections, Algorithms and well-known application frameworks.",
+      "Knowledge of design patterns like MVC and MVVM.",
+      "Android SDK toolchain and Android Studio IDE.",
+      "Strong in Object oriented concepts.",
+      "Knowledge of JNI and using Native development kit.",
+      "Well-versed in developing rich GUIs for Android.",
+      "Proficient in using UI Layout editor.",
+      "Android component lifecycle, Intents and filters, collection views, adapters.",
+      "Usage of common libraries like Gson, Dagger2, Retrofit, Volley, etc.",
+      "Local data storage using Realm, Room for database, Live data.",
+      "Localization support, payment gateway integration, analytics integration, deep linking.",
+      "Integrating Google Supporting libraries (like Google Play services, Maps, etc.).",
+      "Integrating services from Firebase and Google APIs.",
+      "Complete knowledge of Git usage (including merge conflict resolution, pull requests)."
+    ],
+    qualification: [
+      "Graduate or undergraduate in Computer Science, Information Technology, or a related field.",
+      "Basic understanding of Android SDK, Java/Kotlin, and mobile app development.",
+      "Familiarity with RESTful APIs and third-party libraries.",
+      "Strong problem-solving skills and attention to detail.",
+      "Ability to work independently and as part of a team."
+    ],
+    Benefits: [
+      "Opportunity to work on exciting and challenging Android projects.",
+      "Supportive work environment with career growth opportunities.",
+      "Exposure to the latest tools and technologies in mobile app development."
+    ]
+  },
+  {
+    id: 5,
     title: "Customer Support Executive (language: Malayalam)",
     location: "Bangalore",
     language: "Proficiency in Malayalam",
@@ -42,7 +179,7 @@ const openings = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     metaTitle: "Remote Nepali Language Interpreter Jobs In India ",
     metaDesc:
       "Curiotory is hiring Nepali Interpreters pan India, Come and build your career with us and experience a cultural and dynamic working environment. Apply Now!",
@@ -93,7 +230,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
-    id: 3,
+    id: 7,
     metaTitle: "Tamil Language Interpreter Jobs Available, Apply Now",
     metaDesc:
       "Are you a skilled Tamil Interpreter looking for better Tamil Interpreter job opportunities? Then Curiotory is the place for you. Join our team and upskill your career now!",
@@ -144,7 +281,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
-    id: 4,
+    id: 8,
     metaTitle: "Hindi Interpreter Job Positions Open, Hiring Now For Curiotory",
     metaDesc:
       "Ready To Elevate Your Career? Apply for Remote Hindi Language Interpreter Jobs and explore rewarding opportunities in your career path with Curiotory. Apply Now!",
@@ -194,7 +331,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
-    id: 5,
+    id: 9,
     metaTitle: "Bengali Language Interpreter Job Opportunities At Curiotory",
     metaDesc:
       "Bengali Interpreter Job Openings at Curiotory. Join the most versatile language interpreting platform and build a valuable and rewarding career with us. Apply Now!",
@@ -244,7 +381,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
-    id: 6,
+    id: 10,
     metaTitle:
       "Curiotory is Hiring Urdu Language Interpreters: Remote & Onsite ",
     metaDesc:
@@ -295,7 +432,7 @@ const openings = [
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
   {
-    id: 7,
+    id: 11,
     title: "Inside Sales Executive ",
     location: "Marathahalli, Bangalore",
     language: "Proficiency in English and Hindi",
@@ -330,7 +467,7 @@ const openings = [
     ],
   },
   {
-    id: 8,
+    id: 12,
     title: "Back Office Executives",
     location: "Marathahalli, Bangalore",
     language: "Proficiency in English and Hindi",
@@ -367,7 +504,7 @@ const openings = [
     ],
   },
   {
-    id: 9,
+    id: 13,
     title: "Customer Support Executive",
     location: "Koramangala, Bangalore",
     language: "Proficiency in English and Kannada",
@@ -404,7 +541,7 @@ const openings = [
     ],
   },
   {
-    id: 10,
+    id: 14,
     metaTitle: "Apply For French Interpreter jobs At Curiotory - Hiring Now",
     metaDesc:
       "Apply for French language interpreter jobs online for remote and hybrid models. Join our dynamic team at Curiotory and soar new heights in your career! Hiring Now!",
@@ -453,6 +590,11 @@ const openings = [
     whoCanApply:
       "Only those candidates can apply who:\n1. are available for full time (in-office) internship\n2. can start the internship between 16th Jun'24 and 24th Jul'24\n3. are available for duration of 6 months\n4. have relevant skills and interests",
   },
+  
+  
+  
+  
+
 ];
 
 function Jobdetails() {
@@ -514,9 +656,14 @@ function Jobdetails() {
           <strong>Work Schedule:</strong> {job.worksch}
         </div>
       )}
-      {job.qualification && (
+      {job.qualification && job.qualification.length > 0 && (
         <div>
-          <strong>Qualification:</strong> {job.qualification}
+          <h2>Qualification: </h2>
+          <ul>
+            {job.qualification.map((qualification, index) => (
+              <li key={index}>{qualification}</li>
+            ))}
+          </ul>
         </div>
       )}
       {job.Experience && (
