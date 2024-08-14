@@ -85,7 +85,7 @@ function Courselist() {
                 fontWeight: "bold",
               }}
             >
-              99!
+              1499!
             </span>
           </h4>
         </div>
@@ -118,7 +118,7 @@ function Courselist() {
                 fontWeight: "bold",
               }}
             >
-              99!
+              1499!
             </span>
           </h4>
         </div>

@@ -116,82 +116,158 @@ function CheckoutPg() {
     }
   }, [formData]);
   // ---------------------------- razorpay code: ---------------------------------------------
-  const [amount, setamount] = useState(99);
+  // const [amount, setamount] = useState(99);
+  // const navigate = useNavigate();
+  // // handlePayment Function
+  // const handlePayment = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       // https://lms-backend-3nru.onrender.com
+  //       `https://lms-backend-1-deyq.onrender.com/api/payment/subscription`,
+  //       // `http://localhost:4000/api/payment/subscription`,
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           amount,
+  //         }),
+  //       }
+  //     );
+  //     const data = await res.json();
+  //     // console.log(data);
+  //     handlePaymentVerify(data.data);
+  //   } catch (error) {
+  //     // console.log(error);
+  //     toast.error("Failed to initiate payment");
+  //     history.push("/notFound");
+  //   }
+  // };
+  // // payment verify function
+  // const handlePaymentVerify = async (data) => {
+  //   const options = {
+  //     key: "rzp_live_6ht8FWR2aK0Ug5", // live id
+  //     // key: "rzp_test_JPJHlewmYtVhHY",  // demo curiotory id
+  //     name: "Curiotory",
+  //     description: "Buy this Exciting Language Course",
+  //     subscription_id: data.id,
+  //     handler: async (response) => {
+  //       try {
+  //         const res = await fetch(
+  //           `https://lms-backend-1-deyq.onrender.com/api/payment/verification`,
+  //           // `https://localhost:4000/api/payment/verification`,
+  //           {
+  //             method: "POST",
+  //             headers: {
+  //               "content-type": "application/json",
+  //             },
+  //             body: JSON.stringify({
+  //               razorpay_subscription_id: response.razorpay_subscription_id,
+  //               razorpay_payment_id: response.razorpay_payment_id,
+  //               razorpay_signature: response.razorpay_signature,
+  //               fullName: formData.fullName,
+  //               phone: formData.phone,
+  //               email: formData.email,
+  //               password: formData.password,
+  //             }),
+  //           }
+  //         );
+  //         const verifyData = await res.json();
+  //         // console.log(verifyData);
+  //         if (verifyData) {
+  //           toast.success(verifyData.message, {
+  //             onClose: () =>
+  //               // navigate("https://curiotory.com/lms", { replace: true }),
+  //               (window.location.href = "https://curiotory.com/lms"),
+  //           });
+  //         }
+  //       } catch (error) {
+  //         // console.log("The post error is: " + error);
+  //         toast.error("Payment verification failed");
+  //         history.push("/notFound");
+  //       }
+  //     },
+  //     theme: {
+  //       color: "#5f63b8",
+  //     },
+  //   };
+  //   const rzp1 = new window.Razorpay(options);
+  //   rzp1.open();
+  // };
+  const [amount, setamount] = useState(1499);
+
   const navigate = useNavigate();
+
   // handlePayment Function
   const handlePayment = async () => {
+    console.log("in handle function");
     try {
-      const res = await fetch(
-        // https://lms-backend-3nru.onrender.com
-        `https://lms-backend-1-deyq.onrender.com/api/payment/subscription`,
-        // `http://localhost:4000/api/payment/subscription`,
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({
-            amount,
-          }),
-        }
-      );
+      const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/order`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          amount,
+        }),
+      });
+
       const data = await res.json();
-      // console.log(data);
+      console.log(data);
       handlePaymentVerify(data.data);
     } catch (error) {
-      // console.log(error);
+      console.log(error);
       toast.error("Failed to initiate payment");
-      history.push("/notFound");
     }
   };
+
   // payment verify function
   const handlePaymentVerify = async (data) => {
     const options = {
-      key: "rzp_live_6ht8FWR2aK0Ug5", // live id
-      // key: "rzp_test_JPJHlewmYtVhHY",  // demo curiotory id
+      key: {}.RAZORPAY_KEY_ID,
+      amount: data.amount,
+      currency: data.currency,
       name: "Curiotory",
-      description: "Buy this Exciting Language Course",
-      subscription_id: data.id,
+      description: "",
+      order_id: data.id,
       handler: async (response) => {
+        console.log("response", response);
         try {
-          const res = await fetch(
-            `https://lms-backend-1-deyq.onrender.com/api/payment/verification`,
-            // `https://localhost:4000/api/payment/verification`,
-            {
-              method: "POST",
-              headers: {
-                "content-type": "application/json",
-              },
-              body: JSON.stringify({
-                razorpay_subscription_id: response.razorpay_subscription_id,
-                razorpay_payment_id: response.razorpay_payment_id,
-                razorpay_signature: response.razorpay_signature,
-                fullName: formData.fullName,
-                phone: formData.phone,
-                email: formData.email,
-                password: formData.password,
-              }),
-            }
-          );
+          const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/verify`, {
+            method: "POST",
+            headers: {
+              "content-type": "application/json",
+            },
+            body: JSON.stringify({
+              razorpay_order_id: response.razorpay_order_id,
+              razorpay_payment_id: response.razorpay_payment_id,
+              razorpay_signature: response.razorpay_signature,
+              fullName: formData.fullName,
+              phone: formData.phone,
+              email: formData.email,
+              password: formData.password,
+            }),
+          });
+
           const verifyData = await res.json();
-          // console.log(verifyData);
+
           if (verifyData) {
             toast.success(verifyData.message, {
-              onClose: () =>
-                // navigate("https://curiotory.com/lms", { replace: true }),
-                (window.location.href = "https://curiotory.com/lms"),
+              onClose: () => navigate("/", { replace: true }),
             });
           }
         } catch (error) {
-          // console.log("The post error is: " + error);
+          console.log("The post error is: " + error);
           toast.error("Payment verification failed");
-          history.push("/notFound");
         }
       },
+
       theme: {
         color: "#5f63b8",
       },
     };
+
     const rzp1 = new window.Razorpay(options);
     rzp1.open();
   };
@@ -349,7 +425,7 @@ function CheckoutPg() {
               </label>
               <div className={pay.details}>
                 <span className={pay.checkout_span}>Total Fee:</span>
-                <span className={pay.checkout_amount}>99 Rs</span>
+                <span className={pay.checkout_amount}>1499 Rs</span>
               </div>
             </div>
             <div className={pay.checkout_footer}>
