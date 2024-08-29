@@ -161,11 +161,11 @@ function Dutch() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Dutch Online Easily With Curiotory's Expert Guidance
+            Learn Dutch Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Hallo! Ready to push your limits and start learning Dutch? Curiotory's language learning app has a range of demanding activities and advanced strategies, to help you to learn Dutch with proficiency. It's time to elevate your language learning journey with India's leading language learning platform!
+            content="Hallo! Ready to push your limits and start learning Dutch? Qurocity's language learning app has a range of demanding activities and advanced strategies, to help you to learn Dutch with proficiency. It's time to elevate your language learning journey with India's leading language learning platform!
   Join Online Dutch Classes Now!
 "
           />
@@ -183,7 +183,7 @@ function Dutch() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Dutch</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -195,7 +195,7 @@ function Dutch() {
             </div>
             <p>
               Hallo! Ready to push your limits and start learning Dutch?
-              Curiotory's language learning app has a range of demanding
+              Qurocity's language learning app has a range of demanding
               activities and advanced strategies, to help you to learn Dutch
               with proficiency. It's time to elevate your language learning
               journey with India's leading language learning platform!

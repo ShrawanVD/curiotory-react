@@ -109,11 +109,11 @@ function Russian() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Russian Online Easily With Curiotory's Expert Guidance
+            Learn Russian Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content=" привет! Learn Russian online and advance your career with Curiotory's language learning app-  your essential tool, offering effective methods to accelerate your Russian language learning journey seamlessly.
+            content=" привет! Learn Russian online and advance your career with Qurocity's language learning app-  your essential tool, offering effective methods to accelerate your Russian language learning journey seamlessly.
             Join Online Russian Classes Now!
 "
           />
@@ -131,7 +131,7 @@ function Russian() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Russian</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -144,7 +144,7 @@ function Russian() {
             <p>
               {" "}
               привет! Learn Russian online and advance your career with
-              Curiotory's language learning app- your essential tool, offering
+              Qurocity's language learning app- your essential tool, offering
               effective methods to accelerate your Russian language learning
               journey seamlessly.
             </p>

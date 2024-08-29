@@ -30,11 +30,11 @@ function Becometutor() {
     <div>
       {/* for meta tags  */}
       <Helmet>
-        <title>Here's How You Can Become A Language Tutor At Curiotory</title>
+        <title>Here's How You Can Become A Language Tutor At Qurocity</title>
         <meta
           name="description"
           content="You have exceptional and top notch language skills, you excel in language tutoring, your language learning methods are out of the box!, if you happen to have these skills then boom!
-Curiotry is the place for you! Join our network of the best language tutors from all over the world and have your chance of making a difference in the linguistics world! "
+Qurocity is the place for you! Join our network of the best language tutors from all over the world and have your chance of making a difference in the linguistics world! "
         />
         <meta
           name="keywords"
@@ -49,7 +49,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
           <div className="enroll-title">
             <h1 className="text-center pl-3 pr-3 display-4 font-weight-bold">
               {/* How we enroll private tutors? */}
-              Here's How You Can Become A Language Tutor At Curiotory
+              Here's How You Can Become A Language Tutor At Qurocity
             </h1>
             <p>
               You have exceptional and top notch language skills, you excel in
@@ -68,10 +68,10 @@ Curiotry is the place for you! Join our network of the best language tutors from
             <div className="flexbox">
               <div className="flexcard flexcardBlue">
                 <div className="flexcardNumber flexcardNumberBlue">Step 01</div>
-                <div className="flex flexcardTitle">Download curiotory app</div>
+                <div className="flex flexcardTitle">Download Qurocity app</div>
                 <div className="downloadButton">
                   <a
-                    href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                    href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -115,7 +115,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
 
           <div className="text-center mt-2 mb-5">
             <a
-              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -144,7 +144,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
               <p>
                 Passionate about starting or skyrocketing your career while
                 making a positive impact? You’re at the right place – at the
-                right time. If you have the skills, Curiotory makes it easy and
+                right time. If you have the skills, Qurocity makes it easy and
                 rewarding to become a private tutor.
               </p>
               <p>
@@ -157,7 +157,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
             </div>
             <a
               className="register-button"
-              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+              href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -194,7 +194,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
             <br />
             <p>
               What’s a rewarding career if it doesn’t positively impact the
-              lives of others and society at large? At Curiotory, you’re not
+              lives of others and society at large? At Qurocity, you’re not
               just a mere instructor. You’re a mentor who empowers kids to be
               more empathetic and inclusive, helping turn their curiosities into
               invaluable opportunities.
@@ -216,7 +216,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
               <br />
               <p>
                 We ensure web/mobile-friendly learning journeys for kids.
-                Curiotory’s cutting-edge platform makes it effortless for them
+                Qurocity’s cutting-edge platform makes it effortless for them
                 to access your content on PCs, laptops, mobile devices, etc.
               </p>
             </div>
@@ -253,7 +253,7 @@ Curiotry is the place for you! Join our network of the best language tutors from
             <br />
             <p>
               We believe in the power of data to transform teaching experiences.
-              Curiotory provides access to a wide range of real-time analytics
+              Qurocity provides access to a wide range of real-time analytics
               to understand learning outcomes and proactively plan remedial
               measures.
             </p>

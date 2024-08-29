@@ -116,6 +116,130 @@ function CheckoutPg() {
     }
   }, [formData]);
   // ---------------------------- razorpay code: ---------------------------------------------
+
+  const [amount, setAmount] = useState(1499); // Initial amount
+  const [couponCode, setCouponCode] = useState("");
+  const [discountedAmount, setDiscountedAmount] = useState(amount); // Final amount after applying discount
+  const [couponMessage, setCouponMessage] = useState("");
+
+  const navigate = useNavigate();
+
+  // Handle Coupon Code Application
+  // const applyCoupon = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       // `http://localhost:4000/api/payment/coupon/validate`,
+  //       `https://lms-backend-1-deyq.onrender.com/api/payment/coupon/validate`,
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           couponCode,
+  //           originalAmount: amount, // Pass the original amount here
+  //         }),
+  //       }
+  //     );
+
+  //     const data = await res.json();
+  //     // Log the data to see its structure
+  //     console.log("API response:", JSON.stringify(data, null, 2));
+
+  //     if (data.valid) {
+  //       const newAmount = data.finalAmount; // Calculate discounted amount
+  //       setDiscountedAmount(newAmount > 0 ? newAmount : 0); // Ensure amount doesn’t go below zero
+  //       setCouponMessage(`Coupon applied! You saved ₹${data.discount}`);
+  //     } else {
+  //       setCouponMessage("Invalid or expired coupon code");
+  //     }
+  //   } catch (error) {
+  //     setCouponMessage("Failed to apply coupon code");
+  //   }
+  // };
+
+  // Handle Payment Function
+  const handlePayment = async () => {
+    const discountedAmount = 1299; // Hard-coded amount
+
+    console.log("The discouted amount is: " + discountedAmount);
+
+    try {
+      const res = await fetch(
+        `http://localhost:4000/api/payment/order`,
+        // `https://lms-backend-1-deyq.onrender.com/api/payment/order`,
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ amount: discountedAmount }), // Use discounted amount
+        }
+      );
+
+      const data = await res.json();
+
+      console.log("API response:", JSON.stringify(data, null, 2));
+      // console.log("Order Data Sent to Razorpay:", {
+      //   amount: discountedAmount * 100, // Amount in paise
+      //   currency: "INR",
+      //   order_id: data.data.id, // Razorpay order ID
+      // });
+
+      handlePaymentVerify(data.data);
+    } catch (error) {
+      toast.error("Failed to initiate payment");
+    }
+  };
+
+  // Payment Verify Function
+  const handlePaymentVerify = async (data) => {
+    const options = {
+      key: "RAZORPAY_KEY_ID",
+      amount: data.amount,
+      currency: data.currency,
+      name: "Qurocity",
+      description: "",
+      order_id: data.id,
+      handler: async (response) => {
+        try {
+          const res = await fetch(
+            `https://lms-backend-1-deyq.onrender.com/api/payment/verify`,
+            {
+              method: "POST",
+              headers: {
+                "content-type": "application/json",
+              },
+              body: JSON.stringify({
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                fullName: formData.fullName,
+                phone: formData.phone,
+                email: formData.email,
+                password: formData.password,
+              }),
+            }
+          );
+
+          const verifyData = await res.json();
+
+          if (verifyData) {
+            toast.success(verifyData.message, {
+              onClose: () => navigate("/", { replace: true }),
+            });
+          }
+        } catch (error) {
+          toast.error("Payment verification failed");
+        }
+      },
+      theme: { color: "#5f63b8" },
+    };
+
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+  };
+
   // const [amount, setamount] = useState(99);
   // const navigate = useNavigate();
   // // handlePayment Function
@@ -148,8 +272,8 @@ function CheckoutPg() {
   // const handlePaymentVerify = async (data) => {
   //   const options = {
   //     key: "rzp_live_6ht8FWR2aK0Ug5", // live id
-  //     // key: "rzp_test_JPJHlewmYtVhHY",  // demo curiotory id
-  //     name: "Curiotory",
+  //     // key: "rzp_test_JPJHlewmYtVhHY",  // demo Qurocity id
+  //     name: "Qurocity",
   //     description: "Buy this Exciting Language Course",
   //     subscription_id: data.id,
   //     handler: async (response) => {
@@ -178,8 +302,8 @@ function CheckoutPg() {
   //         if (verifyData) {
   //           toast.success(verifyData.message, {
   //             onClose: () =>
-  //               // navigate("https://curiotory.com/lms", { replace: true }),
-  //               (window.location.href = "https://curiotory.com/lms"),
+  //               // navigate("https://Qurocity.com/lms", { replace: true }),
+  //               (window.location.href = "https://Qurocity.com/lms"),
   //           });
   //         }
   //       } catch (error) {
@@ -195,82 +319,83 @@ function CheckoutPg() {
   //   const rzp1 = new window.Razorpay(options);
   //   rzp1.open();
   // };
-  const [amount, setamount] = useState(1499);
+  // const [amount, setamount] = useState(1499);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  // handlePayment Function
-  const handlePayment = async () => {
-    console.log("in handle function");
-    try {
-      const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/order`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          amount,
-        }),
-      });
+  // // handlePayment Function
+  // const handlePayment = async () => {
+  //   console.log("in handle function");
+  //   try {
+  //     const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/order`, {
+  //       method: "POST",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         amount,
+  //       }),
+  //     });
 
-      const data = await res.json();
-      console.log(data);
-      handlePaymentVerify(data.data);
-    } catch (error) {
-      console.log(error);
-      toast.error("Failed to initiate payment");
-    }
-  };
+  //     const data = await res.json();
+  //     console.log(data);
+  //     handlePaymentVerify(data.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast.error("Failed to initiate payment");
+  //   }
+  // };
 
-  // payment verify function
-  const handlePaymentVerify = async (data) => {
-    const options = {
-      key: {}.RAZORPAY_KEY_ID,
-      amount: data.amount,
-      currency: data.currency,
-      name: "Curiotory",
-      description: "",
-      order_id: data.id,
-      handler: async (response) => {
-        console.log("response", response);
-        try {
-          const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/verify`, {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-            },
-            body: JSON.stringify({
-              razorpay_order_id: response.razorpay_order_id,
-              razorpay_payment_id: response.razorpay_payment_id,
-              razorpay_signature: response.razorpay_signature,
-              fullName: formData.fullName,
-              phone: formData.phone,
-              email: formData.email,
-              password: formData.password,
-            }),
-          });
+  // // payment verify function
+  // const handlePaymentVerify = async (data) => {
+  //   const options = {
+  //     key: {}.RAZORPAY_KEY_ID,
+  //     amount: data.amount,
+  //     currency: data.currency,
+  //     name: "Qurocity",
+  //     description: "",
+  //     order_id: data.id,
+  //     handler: async (response) => {
+  //       console.log("response", response);
+  //       try {
+  //         const res = await fetch(`https://lms-backend-1-deyq.onrender.com/api/payment/verify`, {
+  //           method: "POST",
+  //           headers: {
+  //             "content-type": "application/json",
+  //           },
+  //           body: JSON.stringify({
+  //             razorpay_order_id: response.razorpay_order_id,
+  //             razorpay_payment_id: response.razorpay_payment_id,
+  //             razorpay_signature: response.razorpay_signature,
+  //             fullName: formData.fullName,
+  //             phone: formData.phone,
+  //             email: formData.email,
+  //             password: formData.password,
+  //           }),
+  //         });
 
-          const verifyData = await res.json();
+  //         const verifyData = await res.json();
 
-          if (verifyData) {
-            toast.success(verifyData.message, {
-              onClose: () => navigate("/", { replace: true }),
-            });
-          }
-        } catch (error) {
-          console.log("The post error is: " + error);
-          toast.error("Payment verification failed");
-        }
-      },
+  //         if (verifyData) {
+  //           toast.success(verifyData.message, {
+  //             onClose: () => navigate("/", { replace: true }),
+  //           });
+  //         }
+  //       } catch (error) {
+  //         console.log("The post error is: " + error);
+  //         toast.error("Payment verification failed");
+  //       }
+  //     },
 
-      theme: {
-        color: "#5f63b8",
-      },
-    };
+  //     theme: {
+  //       color: "#5f63b8",
+  //     },
+  //   };
 
-    const rzp1 = new window.Razorpay(options);
-    rzp1.open();
-  };
+  //   const rzp1 = new window.Razorpay(options);
+  //   rzp1.open();
+  // };
+
   // used to reload the page after the payment is done
   useEffect(() => {
     // Reload the page once after the initial render
@@ -279,16 +404,15 @@ function CheckoutPg() {
       window.location.reload();
     }
     addGTM();
-
   }, []);
 
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -416,6 +540,16 @@ function CheckoutPg() {
                       onChange={handleChange}
                     />
                   </div>
+                  {/* <div>
+                    <input
+                      type="text"
+                      placeholder="Enter Coupon Code"
+                      value={couponCode}
+                      onChange={(e) => setCouponCode(e.target.value)}
+                    />
+                    <button onClick={applyCoupon}>Apply Coupon</button>
+                    {couponMessage && <p>{couponMessage}</p>}
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -453,7 +587,5 @@ function CheckoutPg() {
     </>
   );
 }
-
-
 
 export default CheckoutPg;

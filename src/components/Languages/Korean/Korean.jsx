@@ -165,11 +165,11 @@ function Korean() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Korean Online Easily With Curiotory's Expert Guidance
+            Learn Korean Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Annyeonghaseyo! Eager to Learn Korean? With Curiotory's language learning app, mastering Korean is as enjoyable as a K-pop dance routine, blending fun activities and effective strategies seamlessly!
+            content="Annyeonghaseyo! Eager to Learn Korean? With Qurocity's language learning app, mastering Korean is as enjoyable as a K-pop dance routine, blending fun activities and effective strategies seamlessly!
 
 Join Online Korean Classes Now!
 "
@@ -188,7 +188,7 @@ Join Online Korean Classes Now!
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Korean</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -199,7 +199,7 @@ Join Online Korean Classes Now!
               </span>
             </div>
             <p>
-              Annyeonghaseyo! Eager to Learn Korean? With Curiotory's language
+              Annyeonghaseyo! Eager to Learn Korean? With Qurocity's language
               learning app, mastering Korean is as enjoyable as a K-pop dance
               routine, blending fun activities and effective strategies
               seamlessly!

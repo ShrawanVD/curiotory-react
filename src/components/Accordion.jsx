@@ -91,7 +91,7 @@ export default function ControlledAccordions() {
             journeys went the digital route. Because let’s face it – the future
             of language learning is going to be increasingly contactless. People
             have lesser time than before to master it. Hence, they rely on
-            platforms like Curiotory to pursue travel and career opportunities
+            platforms like Qurocity to pursue travel and career opportunities
             from the comfort of their own homes.
           </Typography>
         </AccordionDetails>
@@ -164,7 +164,7 @@ export default function ControlledAccordions() {
               color: "#2F327D;",
             }}
           >
-            Does Curiotory cover critical language skills?
+            Does Qurocity cover critical language skills?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -202,7 +202,7 @@ export default function ControlledAccordions() {
               color: "#2F327D;",
             }}
           >
-            How does Curiotory select language teachers?
+            How does Qurocity select language teachers?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -239,7 +239,7 @@ export default function ControlledAccordions() {
               color: "#2F327D;",
             }}
           >
-            What would be my tech needs to attend online classes at Curiotory?
+            What would be my tech needs to attend online classes at Qurocity?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -347,7 +347,7 @@ export default function ControlledAccordions() {
               color: "#2F327D;",
             }}
           >
-            What is the easiest way to contact Curiotory?
+            What is the easiest way to contact Qurocity?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>

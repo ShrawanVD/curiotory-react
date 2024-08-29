@@ -38,18 +38,18 @@ function PrivacyPolicy() {
           </div>
           <div className={ppcss.policyContent}>
             <p>
-              Chalkbord Academy Pvt Ltd. (“Curiotory” or “We”) is a private limited company incorporated
+              Chalkbord Academy Pvt Ltd. (“Qurocity” or “We”) is a private limited company incorporated
               under the Companies Act of India with registered office at A1/101, Gera Song of Joy, Grant
               Road, Kharadi, Pune – 411014.
             </p>
             <p>
               If you are reading this, it’s because you want to know what information we are collecting about
-              users (“You”) on www.Curiotory.com, and on Curiotory App (“App”), what we are doing with it,
+              users (“You”) on www.qurocity.ai, and on Qurocity App (“App”), what we are doing with it,
               and what your options are. If you have any questions or concerns after reading this, please
-              email us at support@Curiotory.com.
+              email us at support@curiotory.com.
             </p>
             <p>
-              This Privacy Policy (“Policy”) applies to the services extended by the Curiotory Site and App
+              This Privacy Policy (“Policy”) applies to the services extended by the Qurocity Site and App
               (“Services”). This Policy describes only our online information collection and use practices at the
               Site and the App; it doesn’t apply to information we collect about you offline, such as over the
               phone or in person. By using our Services, you consent to this Policy. We reserve the right to
@@ -64,12 +64,12 @@ function PrivacyPolicy() {
           <div className={ppcss.policyContent}>
             <h5>COLLECTION OF YOUR INFORMATION BY US :-</h5>
             <p>
-              When you use Curiotory, You provide us with two types of information: (i) information you submit
+              When you use Qurocity, You provide us with two types of information: (i) information you submit
               via the Service and (ii) information regarding your use of the Service collected by us as you
               interact with the Service.
             </p>
             <p>
-              Curiotory stores your IP address when you login to the website or download the app. Also, your
+              Qurocity stores your IP address when you login to the website or download the app. Also, your
               device ID and type are stored in case of app. We also use cookies for data collection. A cookie
               stores small bits of information stored by your browser which can be later used for providing
               customised services . Although you can disable cookies whenever you want through your
@@ -114,11 +114,11 @@ function PrivacyPolicy() {
           <div className={ppcss.policyContent}>
             <h5>USE OF YOUR INFORMATION BY US :-</h5>
             <p>
-              Curiotory may use the information collected by you for the following purposes:
+              Qurocity may use the information collected by you for the following purposes:
             </p>
             <p>Authentication: Your personal information helps us identify you uniquely and authenticate your
-              use of Curiotory services by creating an account</p>
-            <p>Personalisation: Based on the data on your activity patterns and responses, Curiotory
+              use of Qurocity services by creating an account</p>
+            <p>Personalisation: Based on the data on your activity patterns and responses, Qurocity
               customises the content and its delivery to you so that the learning experience can be made
               more meaningful.</p>
             <p>Notifications: Your email address and phone number stored by us can be used to send you
@@ -131,7 +131,7 @@ function PrivacyPolicy() {
           <div className={ppcss.policyContent}>
             <h5>SHARING OF YOUR INFORMATION WITH THIRD PARTIE :-</h5>
             <p>
-              Curiotory gives highest importance to the safety of your information. However, there are certain
+              Qurocity gives highest importance to the safety of your information. However, there are certain
               cases where we might have to share your data with third parties as necessitated by law or
               despite our best intentions, we may be intercepted by ill-willed entities. Therefore, it is advisable
               to be fully aware of the risks associated with sharing your personal information with us.
@@ -142,7 +142,7 @@ function PrivacyPolicy() {
               process
             </p>
             <p>WITH EMPLOYEES, CONTRACTORS, AND AFFILIATED ORGANIZATIONS: Strictly on a
-              need-to-know basis in order to process it on Curiotory’s behalf or to facilitate smooth functioning
+              need-to-know basis in order to process it on Qurocity’s behalf or to facilitate smooth functioning
               of our Services, such as providing network services, IT support, and customer service.</p>
             <p>WITH PARENT COMPANY, SUBSIDIARY, INVESTOR, OR ACQUIRER: In the event of
               corporate sale, merger, reorganization, sale of assets, dissolution, or bankruptcy, your
@@ -154,7 +154,7 @@ function PrivacyPolicy() {
           <div className={ppcss.policyContent}>
             <h5>AGGREGATED STATISTICS :-</h5>
             <p>
-              Curiotory may collect statistics about the behavior of users to its Services. When in the
+              Qurocity may collect statistics about the behavior of users to its Services. When in the
               aggregate form and not pointing to a particular individual, we may display this information
               publicly or provide it to others.
             </p>
@@ -212,7 +212,7 @@ function PrivacyPolicy() {
             <h5>SECURITY OF YOUR INFORMATION :-
             </h5>
             <p>
-              At Curiotory, we are committed to the security of your privacy which is why we have taken
+              At Qurocity, we are committed to the security of your privacy which is why we have taken
               adequate measures to ensure that your information is safe with us. However, since no system
               can guarantee 100% safety against hackers, we advise you to use the website and app
               assuming that the details you share with us maybe compromised in case of a cyber security
@@ -233,7 +233,7 @@ function PrivacyPolicy() {
 
             </p>
             <p>
-              This Policy covers the use of cookies by Curiotory and does not cover the use of cookies by any
+              This Policy covers the use of cookies by Qurocity and does not cover the use of cookies by any
               third-parties. We have no control over the privacy practices or the content of any of our business
               partners, advertisers, sponsors, or other website to which we provide links. As such, we are not
               responsible for the content or the privacy policies of those third-party website. You should check
@@ -246,7 +246,7 @@ function PrivacyPolicy() {
             <h5>UPDATION/DELETION OF YOUR INFORMATION :-</h5>
             <p>
               Once you update/delete your personally identifiable information through your account settings
-              like name and e-mail address in the Curiotory website or app, this old/deleted information is not
+              like name and e-mail address in the Qurocity website or app, this old/deleted information is not
               stored in any form at our end. You have every right to cease to hold an account with us as and
               when you want. However, the past activity data associated with your account is intact in
               anonymous form with us and we may utilise it for research and analysis purposes in order to
@@ -258,7 +258,7 @@ function PrivacyPolicy() {
             <h5>REVISION OF POLICY :-
             </h5>
             <p>
-              Curiotory reserves the right to revise this privacy policy as and when needed and a notice of
+              Qurocity reserves the right to revise this privacy policy as and when needed and a notice of
               revision, in case of material changes, will be provided on the website. However, it is your
               responsibility to stay updated on any policy revisions and we will take your continued use of our
               services as the acceptance of the new policies.
@@ -269,7 +269,7 @@ function PrivacyPolicy() {
             <h5>DEVELOPED BY :-
             </h5>
             <p>
-              This Application is developed by Curiotory Developers.
+              This Application is developed by Qurocity Developers.
 
             </p>
           </div>

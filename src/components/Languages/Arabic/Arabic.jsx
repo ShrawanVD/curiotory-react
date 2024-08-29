@@ -161,11 +161,11 @@ function Arabic() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Arabic Online Easily With Curiotory's Expert Guidance
+            Learn Arabic Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Learn Arabic Online With India's leading language learning app Curiotory- which brings the best of two worlds education and technology to make language learning more precise and easy than ever!
+            content="Learn Arabic Online With India's leading language learning app Qurocity- which brings the best of two worlds education and technology to make language learning more precise and easy than ever!
 
 Join Online Arabic Classes Now!
 "
@@ -187,7 +187,7 @@ Join Online Arabic Classes Now!
               <span className={fr.highlight}>Arabic Culture</span>
             </h1> */}
              <h1>
-             Learn<span className={fr.highlight}> Arabic</span> Online Easily<br /> With Curiotory's Expert Guidance
+             Learn<span className={fr.highlight}> Arabic</span> Online Easily<br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -199,7 +199,7 @@ Join Online Arabic Classes Now!
             </div>
             <p>
               Learn Arabic Online With India's leading language learning app
-              Curiotory- which brings the best of two worlds education and
+              Qurocity- which brings the best of two worlds education and
               technology to make language learning more precise and easy than
               ever!
             </p>

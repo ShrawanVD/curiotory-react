@@ -180,7 +180,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            You can access our course on Curiotory app, available on google
+            You can access our course on Qurocity app, available on google
             playstore.
           </Typography>
         </AccordionDetails>

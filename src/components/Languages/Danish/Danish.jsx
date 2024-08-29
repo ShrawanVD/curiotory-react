@@ -161,11 +161,11 @@ function Danish() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Danish Online Easily With Curiotory's Expert Guidance
+            Learn Danish Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Learn Danish Online with India's best language learning app, Curiotory—where the synergy of education and technology ensures a seamless learning experience. Mastering Danish is as effortless as enjoying a piece of Danish pastry!
+            content="Learn Danish Online with India's best language learning app, Qurocity—where the synergy of education and technology ensures a seamless learning experience. Mastering Danish is as effortless as enjoying a piece of Danish pastry!
 
 Join Online Danish Classes Now!
 "
@@ -184,7 +184,7 @@ Join Online Danish Classes Now!
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Danish</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -194,7 +194,7 @@ Join Online Danish Classes Now!
             </div>
             <p>
               Learn Danish Online with India's best language learning app,
-              Curiotory—where the synergy of education and technology ensures a
+              Qurocity—where the synergy of education and technology ensures a
               seamless learning experience. Mastering Danish is as effortless as
               enjoying a piece of Danish pastry!
             </p>

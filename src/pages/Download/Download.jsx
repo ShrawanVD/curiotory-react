@@ -19,9 +19,9 @@ function Download() {
       </h2>
 
       <br />
-      <a style={{textDecoration: 'none'}} target="_blank" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" rel="noopener noreferrer">
+      <a style={{textDecoration: 'none'}} target="_blank" href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en" rel="noopener noreferrer">
         <button className="download" type="button" >
-          <span className="button__text">Curiotory</span>
+          <span className="button__text">Qurocity</span>
           <span className="button__icon"
             ><svg
               xmlns="http://www.w3.org/2000/svg"

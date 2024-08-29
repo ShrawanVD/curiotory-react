@@ -34,6 +34,12 @@ ul {
   max-width: 100%;
   height: auto;
 }
+.single_footer .logofooter{
+  margin-top: 0rem;
+  margin-left: 2rem;
+  height: auto;
+  width: auto;
+}
  
 .footer {
   position: relative;
@@ -288,7 +294,7 @@ width: 100%;
         margin: 0 auto 1rem;
       }
     .logo-class img{
-        margin-left: 0rem;
+        margin-left: -1rem;
       }
  
   .row-up {
@@ -313,5 +319,10 @@ width: 100%;
   .logo-bio {
     margin-top: 1rem;
     margin-left: 0rem;
+  }
+
+  .logo-class .logofooter{
+    width: 10rem;
+    margin-left: -0.4rem;
   }
 }

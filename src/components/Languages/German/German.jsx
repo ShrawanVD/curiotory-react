@@ -160,11 +160,11 @@ function German() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn German Online Easily With Curiotory's Expert Guidance
+            Learn German Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content=" Hallo! Are you ready to dominate with your German skills and land your dream career? Then Curiotory's language learning app is your secret weapon, with powerful strategies to speed up your german language learning process smoothly.
+            content=" Hallo! Are you ready to dominate with your German skills and land your dream career? Then Qurocity's language learning app is your secret weapon, with powerful strategies to speed up your german language learning process smoothly.
             Join Online German classes Now!
  "
           />
@@ -182,7 +182,7 @@ function German() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> German</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -194,7 +194,7 @@ function German() {
             </div>
             <p>
               Hallo! Are you ready to dominate with your German skills and land
-              your dream career? Then Curiotory's language learning app is your
+              your dream career? Then Qurocity's language learning app is your
               secret weapon, with powerful strategies to speed up your german
               language learning process smoothly.{" "}
             </p>

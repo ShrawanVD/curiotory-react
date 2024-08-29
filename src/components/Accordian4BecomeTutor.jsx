@@ -147,7 +147,7 @@ export default function ControlledAccordions() {
               </li>
               <li>
                 <strong>Create a Profile</strong>: Sign up on language learning
-                platforms Curiotory, like Tutor.com, Chegg Tutors, or Wyzant.
+                platforms Qurocity, like Tutor.com, Chegg Tutors, or Wyzant.
                 Complete your profile with your qualifications and teaching
                 experience.
               </li>
@@ -195,14 +195,14 @@ export default function ControlledAccordions() {
               color: "black",
             }}
           >
-            Why choose Curiotory for becoming a language tutor?
+            Why choose Qurocity for becoming a language tutor?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Curiotory is India's thriving Edu-Tech network which helps you
+            Qurocity is India's thriving Edu-Tech network which helps you
             supercharge your career growth. <br />
-            With Curiotory - The ultimate language learning platform by your
+            With Qurocity - The ultimate language learning platform by your
             side you will be able to -
             <ul style={{
                 listStyleType:"circle"
@@ -223,7 +223,7 @@ export default function ControlledAccordions() {
                 Enjoy the flexibility to set your own schedule and balance work
                 with personal commitments.
               </li>
-              <li>Why worry? When you have Curiotory!</li>
+              <li>Why worry? When you have Qurocity!</li>
             </ul>
           </Typography>
         </AccordionDetails>

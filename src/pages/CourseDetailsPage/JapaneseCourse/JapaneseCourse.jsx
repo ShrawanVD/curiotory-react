@@ -313,14 +313,14 @@ const JapaneseCourse = () => {
         <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
-              <a href="https://curiotory.com/lms">
+              <a href="https://qurocity.ai/lms">
                 <button className={buy.loginButton}>Login</button>
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
             <a href="/"><img
-              src="/Index/logo.png"
-              alt="Curiotory Logo"
+              src="/Index/logo-course.png"
+              alt="Qurocity Logo"
               className={buy.logo}
             /></a>
           </header>

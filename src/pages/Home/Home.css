@@ -101,7 +101,7 @@
 .cover-page .coverpage-para p {
   text-align: center;
   color: white;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
@@ -109,7 +109,7 @@
 }
 
 .cover-page .coverpage-button button {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
@@ -210,10 +210,11 @@
 }
 
 .sliding-section-heading h2{
+  color: #00046C;
   font-size: 34px; 
   line-height: 45px; 
   margin-bottom: 2rem;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
 .sliding-container {
@@ -546,9 +547,9 @@
   text-align: center;
 }
 .container-cards h3 {
-  color: #2f327d;
+  color: #00046C;
   /* font-family: "Poppins", Sans-serif; */
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 26.4px;
@@ -557,9 +558,9 @@
 }
 .container-cards p {
   text-align: center;
-  color: #464646;
+  color: #00046C;
   /* font-family: "Poppins", Sans-serif; */
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 25.5px;
@@ -762,11 +763,11 @@
 }
 .foreign-lang-left-container ul li {
   text-align: left;
-  color: #0368FF;
+  color: #00046C;
   /* font-family: "Poppins", Sans-serif; */
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 1.2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 33px;
   text-align: justify;
   margin: 1rem auto;
@@ -775,7 +776,7 @@
   text-align: left;
   color: #464646;
   /* font-family: "Poppins", Sans-serif; */
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 33px;
@@ -793,7 +794,7 @@
 }
 .foreign-lang-sub-contianer p {
   font-size: 20px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
@@ -997,7 +998,8 @@
   text-align: center;
 }
 .stand-out-card {
-  background-color: #0368FF;
+  /* background-color: #0368FF; */
+  /* background: white; */
 }
 .borderone{
   border-radius: 10px 10px 0px 0px;
@@ -1005,45 +1007,53 @@
 .borderlast{
   border-radius: 0px 0px 10px 10px;
 }
-.stand-out-text h4 {
+.stand-out-text h2 {
   font-family: Raleway, Arial, sans-serif;
-  font-size: 38px;
+  font-size: 2rem;
   line-height: 81.6px;
+  color: #00046C;
 }
 
 .stand-out-right-section {
   flex: 55%;
   margin-right: 30px;
 }
+
+.divider-stand-out-card{
+  border: 1px solid #00046c45;
+  max-width: 100%;
+  margin: 0 1rem 1.5em;
+}
+
 .stand-out-card {
   display: flex;
   padding: 1rem 1rem;
-  border-bottom: 1px solid white;
+  /* border-bottom: 2px solid #00046C; */
   justify-content: space-around;
 }
 .stand-out-left-part {
   padding-right: 20px;
-  background-color: #0368FF;
+  /* background-color: #0368FF; */
   flex: 30%;
 }
 .stand-out-left-part h3 {
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: #00046C;
   font-size: 21px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 700;
   line-height: 26.4px;
 }
 .stand-out-right-part {
   margin-left: 10px;
   flex: 70%;
-  background-color: #0368FF;
+  /* background-color: #0368FF; */
 }
 .stand-out-right-part p {
   text-align: left;
-  color: white;
+  color: #00046C;
   font-size: 17px;
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   line-height: 26px;
   flex: 60%;
@@ -1490,7 +1500,7 @@
 }
 
 .get-started .left-side .heading h2 {
-  color: #2f327d;
+  color: #00046C;
   /* font-family: "Nunito Sans", Sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-size: 45px;
@@ -1515,7 +1525,7 @@
   font-family: Raleway, Arial, sans-serif;
   font-size: 1.3em;
   line-height: 1.5;
-  color: black;
+  color: #00046C;
   margin-bottom: 10px;
 }
 
@@ -1826,7 +1836,7 @@
   justify-content: center;
   align-items: center;
 
-  color: #2f327d;
+  color: #00046C;
   /* font-family: "Poppins", Sans-serif; */
   font-family: Raleway, Arial, sans-serif;
   font-weight: bold;
@@ -1868,16 +1878,20 @@
 .name {
   font-weight: bold;
   margin-bottom: 10px;
+  color: #00046C;
 }
 
 .designation {
   color: #555;
   margin-bottom: 10px;
+  color: #00046C;
 }
 
-.reviews {
+.reviews p{
+  font-size: 1.1rem;
   text-align: justify;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  color: #00046C;
 }
 
 /* media queries */
@@ -1906,6 +1920,9 @@
     overflow: hidden;
     margin-bottom: 15px;
     text-align: center;
+  }
+  .review-swiper-css{
+    margin-top: 1rem;
   }
 
   .reviews {

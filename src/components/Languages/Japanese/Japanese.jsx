@@ -150,11 +150,11 @@ function Japanese() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Japanese Online Easily With Curiotory's Expert Guidance
+            Learn Japanese Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Kon'nichiwa! Ever dreamt of mastering Japanese effortlessly? Curiotory's app makes it easier with its 'pro-level' activities and strategies so you can learn japanese language easily!
+            content="Kon'nichiwa! Ever dreamt of mastering Japanese effortlessly? Qurocity's app makes it easier with its 'pro-level' activities and strategies so you can learn japanese language easily!
 
 Join Online Japanese Classes Now!
 "
@@ -173,7 +173,7 @@ Join Online Japanese Classes Now!
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Japanese</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -185,7 +185,7 @@ Join Online Japanese Classes Now!
             </div>
             <p>
               Kon'nichiwa! Ever dreamt of mastering Japanese effortlessly?
-              Curiotory's app makes it easier with its 'pro-level' activities
+              Qurocity's app makes it easier with its 'pro-level' activities
               and strategies so you can learn japanese language easily!
             </p>
             <p>Join Online Japanese Classes Now!</p>

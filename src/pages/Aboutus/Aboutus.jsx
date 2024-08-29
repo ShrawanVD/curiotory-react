@@ -31,49 +31,30 @@ function Aboutus() {
       {/* <!-- Heading section - top --> */}
 
       <div className={Aboutuscss.headingTag}>
-        <h1>
-          We are one of the India&apos;s <br />
-          fastest growing language <br />
+        <h1 className={Aboutuscss.big}>
+          We are one of the India&apos;s fastest <br /> growing language
           learning platforms
         </h1>
+
+        <h1 className={Aboutuscss.small}>
+          We are one of the India&apos;s fastest growing language
+          learning platforms
+        </h1>
+        
         <div className={Aboutuscss.stats}>
-          <ul>
-            <li>
-              <span className={Aboutuscss.boldFirst}>30+ years</span> of
-              combined language training experience
-            </li>
-            <li>
-              Network of
-              <span className={Aboutuscss.boldFirst}>
-                {" "}
-                5K+ language specialists
-              </span>{" "}
-              & growing
-            </li>
-            <li>
-              Students from{" "}
-              <span className={Aboutuscss.boldFirst}>15+ countries</span> on 3
-              continents
-            </li>
-          </ul>
+          <img src="/about us/about-us.png" alt="" />
         </div>
         {/* <!-- <a className="register-button" href="">Get Started</a> --> */}
-        <div>
-          <img
-            src="/mascot/Trophy.gif"
-            alt="mascot trophy"
-            className={Aboutuscss.mascotAbout}
-            type="gif"
-          />
+        <div className={Aboutuscss.regbtn}>
+          <a
+            className={Aboutuscss.registerButton}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Started
+          </a>
         </div>
-        <a
-          className={Aboutuscss.registerButton}
-          href="https://docs.google.com/forms/d/e/1FAIpQLSezEFqtQiqJFcT8NcVjkoYIjZylKeMNOqP1fRuh8CxFhfgxkg/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get Started
-        </a>
       </div>
 
       {/* <!-- sidebar to be opened after clicking the register button --> */}
@@ -125,16 +106,72 @@ function Aboutus() {
 
       <div className={Aboutuscss.bio}>
         <p>
-        Over a billion people worldwide have embraced the challenge of
-            learning a new language. At Curiotory, we believe in going beyond
-            mere linguistic competence. Founded in 2020, we're an Indian startup
-            dedicated to revolutionizing language learning. Our mission is to
-            equip individuals of all ages with the ability to fluently speak,
-            read, write, and understand new languages. By mastering a new
-            language, we empower our learners to achieve extraordinary personal
-            and professional milestones.
+          Over a billion people worldwide have embraced the challenge of
+          learning a new language. At Curiotory, we believe in going beyond mere
+          linguistic competence. Founded in 2020, we're an Indian startup
+          dedicated to revolutionizing language learning. <br />
+          <br />
+          Our mission is to equip individuals of all ages with the ability to
+          fluently speak, read, write, and understand new languages. By
+          mastering a new language, we empower our learners to achieve
+          extraordinary personal and professional milestones.
         </p>
       </div>
+
+      {/* --------------- what brings us here section --------------------------- */}
+
+      <div className={Aboutuscss.bring}>
+        <h2>WHAT BRINGS US HERE?</h2>
+
+        <div className={`${Aboutuscss.section} ${Aboutuscss.right}`}>
+          <div className={Aboutuscss.numberBlock}>
+            <span>01</span>
+          </div>
+          <div className={Aboutuscss.textBlock}>
+            <h3>Our Vision</h3>
+            <hr className={Aboutuscss.divider} />
+            <p>
+              To empower individuals and institutions to harness the power of
+              learning foreign languages, turning simple curiosities into
+              career-defining and life-changing experiences.
+            </p>
+          </div>
+        </div>
+
+        <div className={`${Aboutuscss.section} ${Aboutuscss.left}`}>
+          <div className={Aboutuscss.numberBlock}>
+            <span>02</span>
+          </div>
+          <div className={Aboutuscss.textBlock}>
+            <h3>Our Mission</h3>
+            <hr className={Aboutuscss.divider} />
+            <p>
+              To create transformative multilingual journeys that foster a more
+              inclusive and empathetic society— where language is not a barrier
+              or a threat, but a bridge that connects people and cultures.
+            </p>
+          </div>
+        </div>
+
+        <div className={`${Aboutuscss.section} ${Aboutuscss.right}`}>
+          <div className={Aboutuscss.numberBlock}>
+            <span>03</span>
+          </div>
+          <div className={Aboutuscss.textBlock}>
+            <h3>Our Values</h3>
+            <hr className={Aboutuscss.divider} />
+            <p>
+              We believe in the power of language to unite, inspire, and
+              transform. Our core values are built around inclusivity, empathy,
+              and growth, ensuring that every learning experience bridges
+              cultures, breaks down barriers, and fosters understanding across
+              diverse communities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* -------------------------------------------------------------- */}
 
       {/* <!-- tabular section --> */}
 
@@ -142,32 +179,84 @@ function Aboutus() {
         <table>
           <tr>
             <td>
-              India’s fastest-growing language learning partner for individuals,
-              educational institutions, and corporate companies
+              <p>
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  India’s fastest-growing language learning partner
+                </span>{" "}
+                for individuals, educational institutions, and corporate
+                companies
+              </p>
             </td>
             <td>
-              One platform that offers customizable and scalable Asian,
-              European, and Indian Sign language courses
+              <p>
+                A massive and still growing ecosystem of Indian and{" "}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  native private tutors
+                </span>{" "}
+                with a proven track record
+              </p>
             </td>
           </tr>
           <tr>
             <td>
-              Live and interactive lectures Hundreds of students from 15 +
-              countries across 3 continents on-board
+              <p>
+                One platform that offers{" "}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  customizable and scalable
+                </span>{" "}
+                Asian, European, and Indian Sign language courses
+              </p>
             </td>
             <td>
-              A massive and still growing ecosystem of Indian and native private
-              tutors with a proven track record
+              <p>
+                World-class preparation for{" "}
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  globally-recognized language certifications
+                </span>
+              </p>
             </td>
           </tr>
           <tr>
             <td>
-              World-class preparation for globally-recognized language
-              certifications
+              <p>
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  Live and interactive lectures
+                </span>{" "}
+                Hundreds of students from 15 + countries across 3 continents
+                on-board
+              </p>
             </td>
             <td>
-              Real-time analytics and custom reports to enhance learning
-              outcomes
+              <p>
+                <span
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
+                  Real-time analytics and custom reports
+                </span>{" "}
+                to enhance learning outcomes
+              </p>
             </td>
           </tr>
         </table>
@@ -176,31 +265,32 @@ function Aboutus() {
       {/* <!-- origin story section --> */}
 
       <div className={Aboutuscss.originStorySection}>
-        <div className={Aboutuscss.leftSide}>
-          <img src="/about us/origin.png" alt="origin" />
-        </div>
-
         <div className={Aboutuscss.rightSide}>
           <h1>Origin Story</h1>
           <br />
           <br />
           <p>
-            Like any good origin story, ours also started with addressing a
-            problem. In 2020, with the pandemic taking a severe toll, we
-            realized that individuals, whether kids or adults, need to be
-            empowered to control their destinies. Considering how quickly the
-            world is shrinking, we know that learning new languages can truly
-            help unlock and maximize human potential. <br />
+            Like any great origin story, ours began with a challenge. In the
+            chaos of 2020, as the pandemic disrupted lives globally, we saw an
+            urgent need: the need for people—whether children or adults—to take
+            control of their futures.
             <br />
-            Just over two years later, we’re now one of India’s fastest-growing
-            language learning partners of choice.
+            <br />
+            As the world became more interconnected, we realized that mastering
+            new languages could unlock limitless opportunities, enabling
+            individuals to thrive in a rapidly changing world.
+            <br />
+            <br />
+            Fast forward just over 4 years, and we’ve become one of India’s
+            fastest-growing language learning platforms, empowering countless
+            learners to reach their full potential.
           </p>
         </div>
       </div>
 
       {/* <!-- vision section --> */}
 
-      <div className={Aboutuscss.visionSection}>
+      {/* <div className={Aboutuscss.visionSection}>
         <h1>Why we are here</h1>
 
         <div className={Aboutuscss.visionOfOurs}>
@@ -222,11 +312,11 @@ function Aboutus() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* <!-- mission section --> */}
 
-      <div className={Aboutuscss.missionSection}>
+      {/* <div className={Aboutuscss.missionSection}>
         <div className={Aboutuscss.leftSide}>
           <h1>
             Our <span className={Aboutuscss.boldFirst}>Mission</span> <br />
@@ -249,11 +339,11 @@ function Aboutus() {
             alt="mission"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* <!-- founder sections --> */}
 
-      <div className={Aboutuscss.founderSection}>
+      {/* <div className={Aboutuscss.founderSection}>
         <h1>Meet our Founders</h1>
 
         <div className={Aboutuscss.persons}>
@@ -268,7 +358,7 @@ function Aboutus() {
             </div>
             <div className={Aboutuscss.info}>
               <p>
-                Sheetal, CEO of Curiotory, brings two decades of education
+                Sheetal, CEO of Qurocity, brings two decades of education
                 experience and is celebrated among India&apos;s influential
                 women and business leaders. With an MBA from Symbiosis, a PG in
                 PR & Advertising from MICA, and a diploma in International
@@ -276,7 +366,7 @@ function Aboutus() {
                 powerhouse in both business and technical domains. Recognized
                 among the 21 Most Influential Women Leaders in India and the 10
                 Most Inspiring Business Leaders, Sheetal is shaping the future
-                of Curiotory with her leadership and expertise.
+                of Qurocity with her leadership and expertise.
               </p>
             </div>
           </div>
@@ -292,7 +382,7 @@ function Aboutus() {
             </div>
             <div className={Aboutuscss.info}>
               <p>
-                Ram, Curiotory&apos;s Chief People and Culture Officer, brings
+                Ram, Qurocity&apos;s Chief People and Culture Officer, brings
                 over two decades of Telecom industry experience, prioritizing
                 customer-centric approaches. With a background at Idea Cellular
                 Ltd., Reliance Communications, and Tata Communications,
@@ -300,12 +390,91 @@ function Aboutus() {
                 football enthusiast, adventurer, cyclist, trekker, and sports
                 blogger. Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
                 Jamshedpur, he&apos;s committed to fostering a collaborative
-                internal culture at Curiotory for mutual success.
+                internal culture at Qurocity for mutual success.
               </p>
             </div>
           </div>
         </div>
+      </div> */}
+
+      <div className={Aboutuscss.foundersSection}>
+        <h2>MEET OUR FOUNDERS</h2>
+
+        <div className={Aboutuscss.founderCard} style={{
+          background:"#303143"
+        }}>
+          <img
+            src="/about us/Sheetal-mam.png"
+            alt="Sheetal Ramkumar"
+            className={Aboutuscss.founderImage}
+          />
+          <div className={Aboutuscss.founderInfo}>
+            <h3>Sheetal Ramkumar</h3>
+            <hr className={Aboutuscss.founder_divider} />
+            <p>
+              Sheetal, CEO of Curiotory, brings two decades of education
+              experience and is celebrated among India's influential women and
+              business leaders. With an MBA from Symbiosis, a PG in PR &
+              Advertising from MICA, and a diploma in International Telecom
+              System Management from IIT Delhi. She's a powerhouse in both
+              business and technical domains. Recognized among the 21 Most
+              Influential Women Leaders in India and the 10 Most Inspiring
+              Business Leaders, Sheetal is shaping the future of Curiotory with
+              her leadership and expertise.
+            </p>
+          </div>
+        </div>
+
+        <div className={`${Aboutuscss.founderCard} ${Aboutuscss.right1}`} style={{
+          background:"#54364E"
+        }}>
+          <img
+            src="/about us/Ram-sir.png"
+            alt="Ramkumar Kayarat"
+            className={Aboutuscss.founderImage}
+          />
+          <div className={Aboutuscss.founderInfo}>
+            <h3>Ramkumar Kayarat</h3>
+            <hr className={Aboutuscss.founder_divider} />
+            <p>
+              Ram, Curiotory's Chief People and Culture Officer, brings over two
+              decades of Telecom industry experience, prioritizing
+              customer-centric approaches. With a background at Idea Cellular
+              Ltd., Reliance Communications, and Tata Communications, he's adept
+              in learning development. Besides, Ram is an avid football
+              enthusiast, adventurer, cyclist, trekker, and sports blogger.
+              Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
+              Jamshedpur, he's committed to fostering a collaborative internal
+              culture at Curiotory for mutual success.
+            </p>
+          </div>
+        </div>
+        <div className={Aboutuscss.right2} style={{
+          background:"#54364E"
+        }}>
+        <img
+            src="/about us/Ram-sir.png"
+            alt="Ramkumar Kayarat"
+            className={Aboutuscss.founderImage}
+          />
+          <div className={Aboutuscss.founderInfo}>
+            <h3>Ramkumar Kayarat</h3>
+            <hr className={Aboutuscss.founder_divider} />
+            <p>
+              Ram, Curiotory's Chief People and Culture Officer, brings over two
+              decades of Telecom industry experience, prioritizing
+              customer-centric approaches. With a background at Idea Cellular
+              Ltd., Reliance Communications, and Tata Communications, he's adept
+              in learning development. Besides, Ram is an avid football
+              enthusiast, adventurer, cyclist, trekker, and sports blogger.
+              Holding an MBA from IIM Ahmedabad and a PGCBM from XLRI
+              Jamshedpur, he's committed to fostering a collaborative internal
+              culture at Curiotory for mutual success.
+            </p>
+          </div>
+        </div>
       </div>
+
       <Footer2 />
     </>
   );

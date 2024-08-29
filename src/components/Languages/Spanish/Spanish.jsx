@@ -157,11 +157,11 @@ function Spanish() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Spanish Online Easily With Curiotory's Expert Guidance
+            Learn Spanish Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Hola! All set to learn Spanish? Start learning now with the Curiotory's language learning app, where captivating activities and expert strategies await to transform you into a Spanish virtuoso!
+            content="Hola! All set to learn Spanish? Start learning now with the Qurocity's language learning app, where captivating activities and expert strategies await to transform you into a Spanish virtuoso!
   Join Online Spanish Classes Now!
 
 "
@@ -180,7 +180,7 @@ function Spanish() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Spanish</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -192,7 +192,7 @@ function Spanish() {
             </div>
             <p>
               Hola! All set to learn Spanish? Start learning now with the
-              Curiotory's language learning app, where captivating activities
+              Qurocity's language learning app, where captivating activities
               and expert strategies await to transform you into a Spanish
               virtuoso!
             </p>

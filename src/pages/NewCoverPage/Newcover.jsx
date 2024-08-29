@@ -130,13 +130,13 @@ function Newcover() {
               >
                 {showNewCard ? (
                   <>
-                    <div className={newcover.newcardImageContainer}>
+                    {/* <div className={newcover.newcardImageContainer}>
                       <img
                         src="/Index/curoCoversmallimg.png"
                         alt="top right"
                         className={newcover.newcardImage}
                       />
-                    </div>
+                    </div> */}
                     <h2 className={newcover.covernewheading1}>
                       Why We Stand Out from Competitors:
                     </h2>
@@ -188,13 +188,13 @@ function Newcover() {
                   </>
                 ) : (
                   <>
-                    <div className={newcover.newcardImageContainer}>
+                    {/* <div className={newcover.newcardImageContainer}>
                       <img
                         src="/Index/curoCoversmallimg.png"
                         alt="top right"
                         className={newcover.newcardImage}
                       />
-                    </div>
+                    </div> */}
                     <h2 className={newcover.covernewheading}>
                       Expand your world with personalized language learning
                     </h2>
@@ -203,7 +203,7 @@ function Newcover() {
                       Master any language, anytime, anywhere
                     </p>
                     <p className={newcover.covernewdescription}>
-                      Curiotory, the ultimate language learning app is here at
+                      Qurocity, the ultimate language learning app is here at
                       your service to kick start your language learning journey
                       with fun pocket size chapters, curated by the best
                       language experts offering an unforgettable learning
@@ -214,7 +214,7 @@ function Newcover() {
                       Read more...
                     </a>
                     <a
-                      href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                      href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                       target="_blank"
                     >
                       <button className={newcover.covernewdownloadButton}>
@@ -229,14 +229,16 @@ function Newcover() {
                   className={newcover.nextIconContainer}
                   onClick={handleCardClick}
                 >
-                  <i class="fa-solid fa-chevron-right div_next"></i>
+                  <i style={{
+                    color:"#00046C"
+                  }} class="fa-solid fa-chevron-right div_next"></i>
                 </div>
               </div>
             </div>
             <div className={newcover.covernewrightside}>
               <img
                 src="/Index/coverpagenewimg.png"
-                alt="curiotory cover"
+                alt="Qurocity cover"
                 className={newcover.rightImage}
               />
             </div>
@@ -252,54 +254,71 @@ function Newcover() {
               >
                 {showNewCard ? (
                   <>
-                    <div className={newcover.newcardImageContainer}>
+                    {/* <div className={newcover.newcardImageContainer}>
                       <img
                         src="/Index/curoCoversmallimg.png"
                         alt="top right"
                         className={newcover.newcardImage}
                       />
-                    </div>
-                    <h2 className={newcover.covernewheading1}>Why We Stand Out from Competitors:</h2>
+                    </div> */}
+                    <h2 className={newcover.covernewheading1}>
+                      Why We Stand Out from Competitors:
+                    </h2>
                     <div className={newcover.covernewFirstContainer}>
                       <div className={newcover.covernewFirstsubContainer}>
-                          <div className={newcover.covernewFirstsubContainerimg}>
-                            <img src="/Index/containercover1.png" alt="time" />
-                          </div>  
-                          <div className={newcover.covernewFirstsubContainertext1}>
-                              <h3>Flexibility and Convenience:</h3>
-                              <p>Learn anytime, anywhere, fitting seamlessly into busy schedules, unlike fixed offline classes.</p>
-                          </div>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover1.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext1}
+                        >
+                          <h3>Flexibility and Convenience:</h3>
+                          <p>
+                            Learn anytime, anywhere, fitting seamlessly into
+                            busy schedules, unlike fixed offline classes.
+                          </p>
+                        </div>
                       </div>
                       <div className={newcover.covernewFirstsubContainer}>
-                          <div className={newcover.covernewFirstsubContainerimg}>
-                            <img src="/Index/containercover2.png" alt="time" />
-                          </div>  
-                          <div className={newcover.covernewFirstsubContainertext2}>
-                              <h3>Expert Tutors and Cutting-Edge Technology:</h3>
-                              <p>Highly qualified tutors and innovative tools keep students engaged and motivated, ensuring superior learning.</p>
-                          </div>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover2.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext2}
+                        >
+                          <h3>Expert Tutors and Cutting-Edge Technology:</h3>
+                          <p>
+                            Highly qualified tutors and innovative tools keep
+                            students engaged and motivated, ensuring superior
+                            learning.
+                          </p>
+                        </div>
                       </div>
                       <div className={newcover.covernewFirstsubContainer}>
-                          <div className={newcover.covernewFirstsubContainerimg}>
-                            <img src="/Index/containercover3.png" alt="time" />
-                          </div>  
-                          <div className={newcover.covernewFirstsubContainertext3}>
-                              <h3>Culturally Rich Content:</h3>
-                              <p>Lessons include cultural context, preparing learners for real-world communication and interactions.</p>
-                          </div>
+                        <div className={newcover.covernewFirstsubContainerimg}>
+                          <img src="/Index/containercover3.png" alt="time" />
+                        </div>
+                        <div
+                          className={newcover.covernewFirstsubContainertext3}
+                        >
+                          <h3>Culturally Rich Content:</h3>
+                          <p>
+                            Lessons include cultural context, preparing learners
+                            for real-world communication and interactions.
+                          </p>
+                        </div>
                       </div>
-
                     </div>
                   </>
                 ) : (
                   <>
-                    <div className={newcover.newcardImageContainer}>
+                    {/* <div className={newcover.newcardImageContainer}>
                       <img
                         src="/Index/curoCoversmallimg.png"
                         alt="top right"
                         className={newcover.newcardImage}
                       />
-                    </div>
+                    </div> */}
                     <h2 className={newcover.covernewheading}>
                       Expand your world with personalized language learning
                     </h2>
@@ -308,7 +327,7 @@ function Newcover() {
                       Master any language, anytime, anywhere
                     </p>
                     <p className={newcover.covernewdescription}>
-                      Curiotory, the ultimate language learning app is here at
+                      Qurocity, the ultimate language learning app is here at
                       your service to kick start your language learning journey
                       with fun pocket size chapters, curated by the best
                       language experts offering an unforgettable learning
@@ -318,10 +337,13 @@ function Newcover() {
                     <a href="#readmore" className={newcover.covernewreadmore}>
                       Read more...
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN" target="_blank">
-                    <button className={newcover.covernewdownloadButton}>
-                      Download the app now!
-                    </button>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
+                      target="_blank"
+                    >
+                      <button className={newcover.covernewdownloadButton}>
+                        Download the app now!
+                      </button>
                     </a>
                   </>
                 )}
@@ -330,11 +352,27 @@ function Newcover() {
             <div className={newcover.covernewrightside}>
               <img
                 src="/Index/coverpagenewimg.png"
-                alt="curiotory cover"
+                alt="Qurocity cover"
                 className={newcover.rightImage}
               />
             </div>
           </div>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=9373902340&text=Hello%21%20Can you assist me in..."
+            target="_blank" className={newcover.whtsapp_href}
+          >
+            <div className={newcover.whatsapp}>
+              <img
+                width="65"
+                height="65"
+                src="https://img.icons8.com/color/48/whatsapp--v1.png"
+                alt="whatsapp--v1"
+              />
+
+              <p>Contact Us</p>
+            </div>
+          </a>
 
           {/* course list */}
           <Courselist />
@@ -360,7 +398,7 @@ function Newcover() {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                 >
                   <button>Download the app</button>
                 </a>
@@ -381,7 +419,7 @@ function Newcover() {
                 <div className={newcover.pprRight}>
                   <p>
                     Meet our versatile and revolutionary Founder & CEO of
-                    Curiotory- The ultimate language learning app, Mrs Sheetal
+                    Qurocity- The ultimate language learning app, Mrs Sheetal
                     Ramkumar Featured on Times Of India For{" "}
                     <a
                       target="_blank"
@@ -394,11 +432,11 @@ function Newcover() {
                     greater impact on our team and other aspiring entrepreneurs
                     too. Her success story is truly inspiring and makes us want
                     to believe in ourselves too. Under her leadership in
-                    revolutionizing edutech, curiotory has been able to cater to
+                    revolutionizing edutech, Qurocity has been able to cater to
                     people all over the world, who are willing to make a change
                     in their life through language learning and that's how
-                    Curiotory became the forefront of language education. To
-                    dive into the journey of curiotory read more :{" "}
+                    Qurocity became the forefront of language education. To
+                    dive into the journey of Qurocity read more :{" "}
                     <a
                       target="_blank"
                       href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
@@ -409,11 +447,13 @@ function Newcover() {
                 </div>
               </div>
 
+              <hr className={newcover.newsppr_hr} />
+
               {/* Eco Times */}
               <div className={newcover.pprContentRight}>
                 <div className={newcover.pprRight}>
                   <p>
-                    We are thrilled to announce that Curiotory- The Ultimate
+                    We are thrilled to announce that Qurocity- The Ultimate
                     Language Learning Platform is featured in The Economic
                     Times' prestigious list of{" "}
                     <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
@@ -427,7 +467,7 @@ function Newcover() {
                     for their continued support and trust. Stay tuned as we
                     continue to bring to you the best of linguistics ever known!
                     Here’s to much more achievements to come in the future for
-                    Curiotory! Want to Read more:{" "}
+                    Qurocity! Want to Read more:{" "}
                     <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
                       Economic Times
                     </a>
@@ -438,20 +478,22 @@ function Newcover() {
                 </div>
               </div>
 
+              <hr className={newcover.newsppr_hr} />
+
               {/* ISO certified: */}
               <div className={newcover.iso}>
                 <div className={newcover.pprLeft}>
-                  <img src="/Index/ISO-curiotory.jpg" alt="ISO - Curiotory" />
+                  <img src="/Index/ISO-Qurocity.jpg" alt="ISO - Qurocity" />
                 </div>
                 <div className={newcover.pprRight}>
                   <p>
                     <strong className={newcover.iso_head}>
-                      Curiotory: ISO Certified and Trusted for Language Learning
+                      Qurocity: ISO Certified and Trusted for Language Learning
                       Excellence
                     </strong>
                     <br />
                     <br />
-                    At Curiotory, we are proud to be ISO certified,
+                    At Qurocity, we are proud to be ISO certified,
                     demonstrating our unwavering commitment to quality and
                     excellence in language education. This prestigious
                     compliance certification reflects our dedication to
@@ -459,12 +501,15 @@ function Newcover() {
                     continuous improvement. With precise quality assurance
                     systems in place, our ISO certification ensures that you
                     receive a world-class learning experience according to your
-                    needs. Trust Curiotory to be your partner in achieving your
+                    needs. Trust Qurocity to be your partner in achieving your
                     language learning goals with the assurance of our trusted
                     and credible standards.
                   </p>
                 </div>
               </div>
+
+              <hr className={newcover.newsppr_hr} />
+              
             </div>
           </div>
 
@@ -475,7 +520,7 @@ function Newcover() {
                 Our Solutions
               </h2> */}
               <h2 className={newcover.solheader}>
-                Key benefits of learning a new language with Curiotory
+                Key benefits of learning a new language with Qurocity
               </h2>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
@@ -826,7 +871,7 @@ function Newcover() {
               Why Online Language Learning Triumphs Over Traditional Centers
             </h2> */}
             <h2 color="#00046C">Why Our Online Language Learning Triumphs</h2>
-            <hr color="#00046C"/>
+            <hr color="#00046C" />
             <div className="foreign-lang-container">
               <div className="foreign-lang-left-container">
                 <ul>
@@ -860,7 +905,9 @@ function Newcover() {
           <div className="stand-out-section">
             <div className="stand-out-left-section">
               <div className="stand-out-text">
-                <h2>Why we stand out</h2>
+                <h2 style={{
+                  marginBottom:"2rem"
+                }}>Why we stand out</h2>
               </div>
               <div className="stand-out-images">
                 <LazyLoad offset={100}>
@@ -886,6 +933,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
                     <h3>Customize as per your goals</h3>
@@ -898,6 +946,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
                     <h3>Continuous improvement</h3>
@@ -910,6 +959,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
                     <h3>Everything’s user-friendly</h3>
@@ -922,6 +972,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
                 <div className="stand-out-card">
                   <div className="stand-out-left-part">
                     <h3>Been there, done that</h3>
@@ -933,6 +984,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
                 <div className="stand-out-card borderlast">
                   <div className="stand-out-left-part">
                     <h3>Meaningful preparation</h3>
@@ -945,6 +997,7 @@ function Newcover() {
                     </p>
                   </div>
                 </div>
+                <hr className="divider-stand-out-card" />
               </div>
             </div>
           </div>
@@ -954,14 +1007,17 @@ function Newcover() {
             <div className={newcover.foreignContainer}>
               <h2 className={newcover.foreignTitle}>
                 11{" "}
-                <span className={newcover.foreignHighlight}>
+                <span className={newcover.foreignHighlight} style={{
+                  fontWeight:"bold",
+
+                }}>
                   foreign language
                 </span>{" "}
                 learning courses for unlocking attractive opportunities.
               </h2>
               <p className={newcover.foreignSubtitle}>
                 However, like any life-changing skill, learning new languages is
-                a journey that demands proper guidance and expertise. Curiotory
+                a journey that demands proper guidance and expertise. Qurocity
                 can provide the ideal platform for learning languages the right
                 way.
               </p>
@@ -1051,7 +1107,7 @@ function Newcover() {
 
               <a
                 className="register-button"
-                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1071,7 +1127,10 @@ function Newcover() {
 
           <div className="review-swiper-css">
             <div className="stand-out-text">
-              <h4>What Learner&apos;s say!</h4>
+              <h4 style={{
+                fontSize:"2rem",
+                color:"#00046C"
+              }}>What Learner&apos;s say!</h4>
             </div>
             <Swiper
               // install Swiper modules
@@ -1111,9 +1170,9 @@ function Newcover() {
                     <p>
                       Being part of a big organization, one of my 2023 goals was
                       to learn a foreign language. So, I got to learn from Priya
-                      Nagpal, my Korean tutor at Curiotory. And what an
+                      Nagpal, my Korean tutor at Qurocity. And what an
                       experience it has been! I like everything about the
-                      course.I would recommend Curiotory and Priya Nagpal to
+                      course.I would recommend Qurocity and Priya Nagpal to
                       everyone!
                     </p>
                   </div>
@@ -1133,7 +1192,7 @@ function Newcover() {
                   </div>
                   <div className="reviews">
                     <p>
-                      “Firstly, it was a lot of fun to learn with Curiotory. The
+                      “Firstly, it was a lot of fun to learn with Qurocity. The
                       teaching process was perfect, and the tutor ensured I was
                       thoroughly engaged. So I enjoyed it a lot! Their material
                       helped me a lot too. Moreover, the platform is very
@@ -1171,7 +1230,9 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h4 className="faq-heading">Frequently Asked Questions</h4>
+              <h4 style={{
+                color:"#00046C"
+              }} className="faq-heading">Frequently Asked Questions</h4>
             </div>
             <div className="body-faq">
               <div className="image-container">

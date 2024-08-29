@@ -14,61 +14,61 @@ const GermanCourse = () => {
   const reviews = [
     {
       id: 1,
-      text: "Curiotory is the best for learn Mandarin! I never thought I could learn a new language but this app makes it so easy. The lessons are really fun and engaging, and I can now speek basic Mandarin thanks to Curiotory!",
+      text: "Qurocity is the best for learn Mandarin! I never thought I could learn a new language but this app makes it so easy. The lessons are really fun and engaging, and I can now speek basic Mandarin thanks to Qurocity!",
       name: "Amit Sharma ",
       rating: 5,
     },
     {
       id: 2,
-      text: "I absolutely love Curiotory for Mandarin learning! The app is so user-friendly and the lessons are well designed. I feel much more confident in my Chinese-speaking abilities now. Highly recommend!",
+      text: "I absolutely love Qurocity for Mandarin learning! The app is so user-friendly and the lessons are well designed. I feel much more confident in my Chinese-speaking abilities now. Highly recommend!",
       name: "Riya Patel ",
       rating: 4,
     },
     {
       id: 3,
-      text: "Mandarin has always seemed like a difficult language, but Curiotory makes it accessible and enjoyable! The app's interactive features and cultural insights are really helpfull. Now I can order food in Mandarin!",
+      text: "Mandarin has always seemed like a difficult language, but Qurocity makes it accessible and enjoyable! The app's interactive features and cultural insights are really helpfull. Now I can order food in Mandarin!",
       name: "Karan Singh ",
       rating: 5,
     },
     {
       id: 4,
-      text: "II'm learning Mandarin with Curiotory and it's been an amazing experience! The lessons are fun and easy to understand. I feel more confident in my language skills after using this app. Highly recommend it!",
+      text: "II'm learning Mandarin with Qurocity and it's been an amazing experience! The lessons are fun and easy to understand. I feel more confident in my language skills after using this app. Highly recommend it!",
       name: "Shreya Gupta ",
       rating: 4,
     },
     {
       id: 5,
-      text: "Curiotory is great for learning Mandarin Chinese! The lessons are very informative and the app's interface is user friendly. I've been using it for a few weeks now and I can already see improvment in my language skills.",
+      text: "Qurocity is great for learning Mandarin Chinese! The lessons are very informative and the app's interface is user friendly. I've been using it for a few weeks now and I can already see improvment in my language skills.",
       name: "Vikram Rao",
       rating: 4,
     },
     {
       id: 6,
-      text: "I've always wanted to learn Mandarin and Curiotory has made it possible! The lessons are structured and easy to follow. I'm now able to have basic conversations in Mandarin. Highly recommended!",
+      text: "I've always wanted to learn Mandarin and Qurocity has made it possible! The lessons are structured and easy to follow. I'm now able to have basic conversations in Mandarin. Highly recommended!",
       name: "Neha Gupta ",
       rating: 4,
     },
     {
       id: 7,
-      text: "Curiotory is an amazing app for learning Mandarin! The lessons are really interactive and engaging. I've been using it for a while now and I'm impressed with how much I've learn. Definitely worth it!",
+      text: "Qurocity is an amazing app for learning Mandarin! The lessons are really interactive and engaging. I've been using it for a while now and I'm impressed with how much I've learn. Definitely worth it!",
       name: "Rohan Patel",
       rating: 4,
     },
     {
       id: 8,
-      text: "I'm so glad I found Curiotory for learning Mandarin Chinese! The lessons are well explained and the app is easy to navigate. I've been using it for a few months now and I'm already seeing progress in my language skills.",
+      text: "I'm so glad I found Qurocity for learning Mandarin Chinese! The lessons are well explained and the app is easy to navigate. I've been using it for a few months now and I'm already seeing progress in my language skills.",
       name: "Aisha Khan ",
       rating: 4,
     },
     {
       id: 9,
-      text: "I've been using Curiotory to learn Mandarin and I'm really happy with my progress! The lessons are fun and interactive, and I feel more confident in my language abilities. Highly recommend it to anyone interested in learning Mandarin!",
+      text: "I've been using Qurocity to learn Mandarin and I'm really happy with my progress! The lessons are fun and interactive, and I feel more confident in my language abilities. Highly recommend it to anyone interested in learning Mandarin!",
       name: "Aryan Sharma ",
       rating: 4,
     },
     {
       id: 10,
-      text: "Curiotory has been a game changer for me in learning Mandarin! The lessons are engaging and the app is easy to use. I've been recommend it to all my friends who want to learn Mandarin. Give it a try!",
+      text: "Qurocity has been a game changer for me in learning Mandarin! The lessons are engaging and the app is easy to use. I've been recommend it to all my friends who want to learn Mandarin. Give it a try!",
       name: "Sneha Patel",
       rating: 4,
     },
@@ -319,15 +319,15 @@ const GermanCourse = () => {
         <div className={buy.coverContainer}>
           <header className={buy.header}>
             <div className={buy.authButtons}>
-              <a href="https://curiotory.com/lms">
+              <a href="https://qurocity.ai/lms">
                 <button className={buy.loginButton}>Login</button>
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
             <a href="/">
               <img
-                src="/Index/logo.png"
-                alt="Curiotory Logo"
+                src="/Index/logo-course.png"
+                alt="Qurocity Logo"
                 className={buy.logo}
               />
             </a>

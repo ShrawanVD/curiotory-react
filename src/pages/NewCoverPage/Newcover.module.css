@@ -37,6 +37,46 @@
   justify-content: center;
 }
 
+.whtsapp_href .whatsapp{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2rem;
+  width: fit-content;
+  z-index: 1000000;
+  position:fixed;
+  right:0;
+  bottom:0;
+  margin:0 1rem 2rem 0;
+  padding: 1rem;
+  background-color: #4caf50;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.whtsapp_href .whatsapp img {
+  fill: #fff;
+  width: 60px;
+  height: 60px;
+  margin-left: -2rem;
+}
+.whtsapp_href .whatsapp:hover {
+  background-color: #46ab4b;
+}
+
+.whtsapp_href .whatsapp p{
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.whtsapp_href .whatsapp p:hover{
+  text-decoration: none;
+}
+
 .covernewcard {
   background-image: url('/Index/coverpageBackground.png'); /* Adjust the color based on your design */
   padding: 4rem 14rem 4rem 4rem;
@@ -103,7 +143,7 @@
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 10;
-  margin-left: 87%;
+  margin-left: 77%;
 }
 
 .nextIconContainer i {
@@ -126,17 +166,17 @@
   font-family: Raleway, Arial, sans-serif;
   font-size: 28px;
   margin-bottom: 10px;
-  color: #F4AD28;
+  color: #00046C;
 }
 .covernewcard hr {
-  border: 1px solid white;
+  border: 1px solid #00046C;
 }
 
 .covernewsubheading {
   font-family: Raleway, Arial, sans-serif;
   font-size: 24px;
   margin-bottom: 10px;
-  color: #EF4B2B;
+  color: #00046C;
 }
 
 .covernewdescription {
@@ -144,25 +184,27 @@
   font-size: 16px;
   margin-bottom: 10px;
   text-align: justify;
+  color: #00046C;
 
 }
 
 .covernewreadmore {
   font-family: Raleway, Arial, sans-serif;
   font-size: bold;
-  color: #F4AD28;
+  color: #00046C;
   display: block;
   margin-bottom: 2rem;
 }
 
 .covernewreadmore:hover{
-  color: #e03e00;
+  display: block;
+  color: #0b0b10;
   text-decoration: none;
 }
 
 .covernewdownloadButton {
   font-family: Raleway, Arial, sans-serif;
-  background-color: #EF4B2B; /* Adjust the color based on your design */
+  background-color: #00046C; /* Adjust the color based on your design */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -171,7 +213,7 @@
 }
 
 .covernewdownloadButton:hover {
-  background-color: #e03e00; /* Slightly darker shade for hover effect */
+  background-color: #040750; /* Slightly darker shade for hover effect */
 }
 
 .covernewrightside img {
@@ -184,7 +226,7 @@
   font-family: Raleway, Arial, sans-serif;
   font-size: 28px;
   margin-bottom: 39px;
-  color: #F4AD28;
+  color: #00046C;
 }
 .covernewFirstsubContainer{
   margin-top: 1rem;
@@ -194,7 +236,7 @@
   margin-right: 2.6rem;
 }
 .covernewFirstsubContainertext1{
-  color: #417FBE;
+  color: #00046C;
 }
 .covernewFirstsubContainertext1 h3,.covernewFirstsubContainertext1 p,.covernewFirstsubContainertext2 h3,.covernewFirstsubContainertext2 p,.covernewFirstsubContainertext3 h3,.covernewFirstsubContainertext3 p{
   font-family: Raleway, Arial, sans-serif;
@@ -205,12 +247,12 @@
  text-decoration: underline;
 }
 .covernewFirstsubContainertext2{
-  color: #F4AD28;
+  color: #00046C;
   font-family: Raleway, Arial, sans-serif;
 
 }
 .covernewFirstsubContainertext3{
-  color: #EF4B2B;
+  color: #00046C;
   font-family: Raleway, Arial, sans-serif;
 
 }
@@ -332,6 +374,7 @@
 }
 .solheader {
   margin-bottom: 2.5rem;
+  color: #00046C;
 }
 
 .solution {
@@ -359,7 +402,7 @@
 .text {
   max-width: 800px;
   font-size: 1.2rem;
-  color: #333;
+  color: #00046C;
   font-family: Raleway, Arial, sans-serif;
 }
 
@@ -401,6 +444,7 @@
 }
 .wonderingContainer h2 {
   font-family: Raleway, Arial, sans-serif;
+  color: #00046C;
 }
 .wonderingContainer hr {
   border: 1px solid #00046C;
@@ -435,18 +479,19 @@
 .foreignTitle {
   font-size: 32px;
   margin-bottom: 10px;
+  color: #00046C;
 }
 .foreignContainer h2 {
   font-family: Raleway, Arial, sans-serif;
-  color: #0b2743;
+  color: #00046C;
 }
 
 .foreignHighlight {
-  color: orange;
+  color: #00046C;
 }
 
 .foreignSubtitle {
-  color: #d94f34;
+  color: #00046C;
   margin-top: 1rem;
   margin-bottom: 20px;
 }
@@ -501,7 +546,7 @@
   /* common for both the lang*/
   font-family: Raleway, Arial, sans-serif;
   font-weight: bold;
-  color: #2f327d;
+  color: #00046C;
   text-align: left;
   margin-bottom: 2rem;
 }
@@ -640,7 +685,7 @@
 .pprLayout h3 {
   font-size: 32px;
   font-family: Raleway, Arial, sans-serif;
-  color: #0b2743;
+  color: #00046C;
 }
 
 .pprContent, .pprContentRight, .iso {
@@ -648,7 +693,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 2rem;
   margin: 2rem;
   border-radius: 10px;
@@ -673,7 +718,7 @@
 .pprRight p {
   text-align: justify;
   font-family: Raleway, Arial, sans-serif;
-  color: #0b2743;
+  color: #00046C;
   font-size: 1.3rem;
 }
 
@@ -684,6 +729,14 @@
   /* width: 25vw;
   height: 70vh; */
 }
+
+.newsppr_hr{
+  width: 90%;
+  /* color: #E9E9E9; */
+  margin: 0 auto;
+  border: 0.5px solid rgb(196, 196, 196);
+}
+
 
 @media (max-width: 1200px) {
   .pprLeft img {

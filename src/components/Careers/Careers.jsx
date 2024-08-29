@@ -11,56 +11,63 @@ function Careers() {
     addGTM();
   }, []);
   const openings = [
+    // {
+    //   id: 1,
+    //   title: "Digital Marketing Executive",
+    //   location: "Pune",
+    //   salary: "3.2LPA",
+    //   experience: "0-1 Year",
+    //   education: "Graduate",
+    // },
+    // {
+    //   id: 2,
+    //   title: "HR Executive",
+    //   location: "Pune",
+    //   salary: "3.2LPA",
+    //   experience: "0-1 Year",
+    //   education: "Graduate",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Web Developer",
+    //   location: "Pune",
+    //   salary: "3.2LPA",
+    //   experience: "0-1 Year",
+    //   education: "Graduate",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Android Developer",
+    //   location: "Pune",
+    //   salary: "3.2LPA",
+    //   experience: "0-1 Year",
+    //   education: "Graduate",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Customer Support Executive (language: Malayalam)",
+    //   language: "Proficiency in Malayalam",
+    //   Shift: "6 days a week with rotational off days",
+    //   salary: "3.2 CTC",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Nepali Language Interpreter",
+    //   language: "Nepali",
+    //   company: "Colorbar Cosmetics Private Limited",
+    //   Shift: "24/7 rotational shifts",
+    //   salary: "5.4 LPA",
+    //   duration: "3 Months",
+    // },
     {
       id: 1,
-      title: "Digital Marketing Executive",
-      location: "Pune",
-      salary: "3.2LPA",
-      experience: "0-1 Year",
-      education: "Graduate",
+      title: "English Teacher",
+      language: "English",
+      Shift: "24/7 rotational shifts",
+      salary: "5.4 LPA",
     },
     {
       id: 2,
-      title: "HR Executive",
-      location: "Pune",
-      salary: "3.2LPA",
-      experience: "0-1 Year",
-      education: "Graduate",
-    },
-    {
-      id: 3,
-      title: "Web Developer",
-      location: "Pune",
-      salary: "3.2LPA",
-      experience: "0-1 Year",
-      education: "Graduate",
-    },
-    {
-      id: 4,
-      title: "Android Developer",
-      location: "Pune",
-      salary: "3.2LPA",
-      experience: "0-1 Year",
-      education: "Graduate",
-    },
-    {
-      id: 5,
-      title: "Customer Support Executive (language: Malayalam)",
-      language: "Proficiency in Malayalam",
-      Shift: "6 days a week with rotational off days",
-      salary: "3.2 CTC",
-    },
-    {
-      id: 6,
-      title: "Nepali Language Interpreter",
-      language: "Nepali",
-      company: "Colorbar Cosmetics Private Limited",
-      Shift: "24/7 rotational shifts",
-      salary: "5.4 LPA",
-      duration: "3 Months",
-    },
-    {
-      id: 7,
       title: "Tamil Language Interpreter",
       language: "Tamil",
       company: "Colorbar Cosmetics Private Limited",
@@ -69,7 +76,7 @@ function Careers() {
       duration: "3 Months",
     },
     {
-      id: 8,
+      id: 3,
       title: "Hindi Language Interpreter",
       language: "Hindi",
       company: "Colorbar Cosmetics Private Limited",
@@ -77,47 +84,47 @@ function Careers() {
       salary: "4.2 LPA",
       duration: "3 Months",
     },
+    // {
+    //   id: 9,
+    //   title: "Bengali Language Interpreter",
+    //   language: "Bengali",
+    //   company: "Colorbar Cosmetics Private Limited",
+    //   Shift: "24/7 rotational shifts",
+    //   salary: "4.2 LPA",
+    //   duration: "3 Months",
+    // },
+    // {
+    //   id: 10,
+    //   title: "Urdu Language Interpreter",
+    //   language: "Urdu",
+    //   company: "Colorbar Cosmetics Private Limited",
+    //   Shift: "24/7 rotational shifts",
+    //   salary: "4.2 LPA",
+    //   duration: "3 Months",
+    // },
     {
-      id: 9,
-      title: "Bengali Language Interpreter",
-      language: "Bengali",
-      company: "Colorbar Cosmetics Private Limited",
-      Shift: "24/7 rotational shifts",
-      salary: "4.2 LPA",
-      duration: "3 Months",
-    },
-    {
-      id: 10,
-      title: "Urdu Language Interpreter",
-      language: "Urdu",
-      company: "Colorbar Cosmetics Private Limited",
-      Shift: "24/7 rotational shifts",
-      salary: "4.2 LPA",
-      duration: "3 Months",
-    },
-    {
-      id: 11,
+      id: 4,
       title: "Inside Sales Executive ",
       language: "English, Hindi",
       Shift: "7 AM to 9 PM (rotational)",
       salary: "25k CTC, 21k in hand",
     },
+    // {
+    //   id: 12,
+    //   title: "Back Office Executives",
+    //   language: "English, Hindi",
+    //   Shift: "10 AM to 7 PM",
+    //   salary: "25k CTC, 21k in hand (for Experienced)",
+    // },
+    // {
+    //   id: 13,
+    //   title: "Customer Support Executive (only for male candidate)",
+    //   language: "English and Kannada",
+    //   Shift: "24/7 rotational",
+    //   salary: "25k CTC, 21k in hand",
+    // },
     {
-      id: 12,
-      title: "Back Office Executives",
-      language: "English, Hindi",
-      Shift: "10 AM to 7 PM",
-      salary: "25k CTC, 21k in hand (for Experienced)",
-    },
-    {
-      id: 13,
-      title: "Customer Support Executive (only for male candidate)",
-      language: "English and Kannada",
-      Shift: "24/7 rotational",
-      salary: "25k CTC, 21k in hand",
-    },
-    {
-      id: 14,
+      id: 5,
       title: "French Language Interpreter",
       language: "French",
       company: "Colorbar Cosmetics Private Limited",
@@ -150,12 +157,12 @@ function Careers() {
       {/* for meta tags  */}
       <Helmet>
         <title>
-          Build Your Dream Language Career With Curiotory : Foreign Language
+          Build Your Dream Language Career With Qurocity : Foreign Language
           Jobs
         </title>
         <meta
           name="description"
-          content="Want to shape your language career path? Explore an ocean of language career opportunities at Curiotory where skill developments and opportunities are endless! 
+          content="Want to shape your language career path? Explore an ocean of language career opportunities at Qurocity where skill developments and opportunities are endless! 
 Apply for remote language jobs or work with us and give an elevated shift to your linguistics career for a life changing opportunity! Join our dynamic team now!"
         />
         <meta
@@ -170,12 +177,12 @@ Apply for remote language jobs or work with us and give an elevated shift to you
       <div className={job.hero}>
         <div className={job.heroContent}>
           <h2 className={job.herotitle}>
-            Build Your Dream Language Career With Curiotory : Foreign Language
+            Build Your Dream Language Career With Qurocity : Foreign Language
             Jobs
           </h2>
           <p>
             Want to shape your language career path? Explore an ocean of
-            language career opportunities at Curiotory where skill developments
+            language career opportunities at Qurocity where skill developments
             and opportunities are endless!{" "}
           </p>
           <p>
@@ -195,9 +202,9 @@ Apply for remote language jobs or work with us and give an elevated shift to you
             <h3>Step 1:</h3>
             <div className={job.step1}>
               <div className={job.stepContent}>
-                <p>Download Curiotory App</p>
+                <p>Download Qurocity App</p>
                 <a
-                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -249,7 +256,7 @@ Apply for remote language jobs or work with us and give an elevated shift to you
               <p>Apply to the Job role by filling up the form given.</p>
               <p>We'll review your profile and connect with you soon.</p>
               <a
-                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en-IN"
+                href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -277,7 +284,7 @@ Apply for remote language jobs or work with us and give an elevated shift to you
             >
               <h3>{opening.title}</h3>
               <hr />
-              {[1, 2, 3, 4].includes(opening.id) ? (
+              {[].includes(opening.id) ? (
                 <>
                   <p>Location: {opening.location}</p>
                   <p>Experience: {opening.experience}</p>
@@ -286,7 +293,7 @@ Apply for remote language jobs or work with us and give an elevated shift to you
               ) : (
                 <>
                   <p>Language: {opening.language}</p>
-                  <p>Shift: {opening.shift}</p>
+                  <p>Shift: {opening.Shift}</p>
                   <p>Salary: {opening.salary}</p>
                 </>
               )}

@@ -160,11 +160,11 @@ function English() {
       <div className={fr.container}>
         <Helmet>
           <title>
-            Learn English Online Easily With Curiotory's Expert Guidance
+            Learn English Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Hello there! Ready to impress the world with your exceptional English skills? Look no further, because Curiotory's language learning app is here to turn you into an English-speaking expert. Say goodbye to boring textbooks—our app combines engaging activities and effective strategies to help you master English effortlessly. Why wait? Start your English learning journey now and prepare to wow everyone with your linguistic abilities!
+            content="Hello there! Ready to impress the world with your exceptional English skills? Look no further, because Qurocity's language learning app is here to turn you into an English-speaking expert. Say goodbye to boring textbooks—our app combines engaging activities and effective strategies to help you master English effortlessly. Why wait? Start your English learning journey now and prepare to wow everyone with your linguistic abilities!
             Join Online English Classes Now!
 "
           />
@@ -182,7 +182,7 @@ function English() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> English</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -194,7 +194,7 @@ function English() {
             </div>
             <p>
               Hello there! Ready to impress the world with your exceptional
-              English skills? Look no further, because Curiotory's language
+              English skills? Look no further, because Qurocity's language
               learning app is here to turn you into an English-speaking expert.
               Say goodbye to boring textbooks—our app combines engaging
               activities and effective strategies to help you master English

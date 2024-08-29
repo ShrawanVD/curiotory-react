@@ -32,7 +32,7 @@ function Footer() {
             {/* Logo */}
             <div className="ss logo-class col-lg-2">
               <div className="single_footer single_footer1">
-                <img src="/Index/logo.png" alt="Logo" />
+                <img className="logofooter" src="/Index/logo-footer.png" alt="Logo" />
                 <p className="logo-bio">An online language learning platform</p>
                 <img src="/Index/iso.png" alt="ISO" />
               </div>
@@ -62,10 +62,10 @@ function Footer() {
               </div>
             </div>
 
-            {/* Get curiotory on */}
+            {/* Get Qurocity on */}
             <div className="col-lg-2 ss">
               <div className="single_footer">
-                <h4>Get curiotory on</h4>
+                <h4>Get Qurocity on</h4>
                 <ul>
                   <li>
                     <a href="https://play.google.com/store/apps/details?id=stage.curiotory.com&pcampaignid=web_share" target="_blank">Andriod</a>
@@ -152,7 +152,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/curiotory_/"
+                    href="https://www.instagram.com/qurocity_?igsh=MTRxM3A5eXdkNzFzMQ=="
                     target="_blank"
                     rel="noopener noreferrer"
                   >

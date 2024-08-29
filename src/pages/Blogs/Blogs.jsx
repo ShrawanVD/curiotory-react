@@ -73,10 +73,10 @@ function Blogs() {
     <>
       {/* for meta tags  */}
       <Helmet>
-        <title>Curiotory Blogs : Welcome to the Curiosity Trail For Readers!</title>
+        <title>Qurocity Blogs : Welcome to the Qurocity Trail For Readers!</title>
         <meta
           name="description"
-          content="Welcome to Curiosity Trail. Here, we ignite your curiosity with engaging articles, tips, and stories that inspire continuous learning and skill upgrading."
+          content="Welcome to Qurocity Trail. Here, we ignite your Qurocity with engaging articles, tips, and stories that inspire continuous learning and skill upgrading."
         />
         <meta
           name="keywords"
@@ -86,10 +86,10 @@ function Blogs() {
       <Newnavbar />
       <div className={Blogscss.blogbackground}>
         <div className={Blogscss.blogHeading}>
-          <h1>Welcome to the Curiosity Trail!</h1>
+          <h1>Welcome to the Qurocity Trail!</h1>
           <p>
-            Welcome to Curiosity Trail, the blog section of Curiotory! Here, we
-            ignite your curiosity with engaging articles, tips, and stories that
+            Welcome to Qurocity Trail, the blog section of Qurocity! Here, we
+            ignite your Qurocity with engaging articles, tips, and stories that
             inspire continuous language learning and skill upgrading. Whether
             you're passionate about language learning, cultural exploration, or
             personal development, you'll find a treasure trove of insights and

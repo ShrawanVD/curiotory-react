@@ -160,11 +160,11 @@ function French() {
       <div className={fr.container}>
         <Helmet>
           <title>
-            Learn French Online Easily With Curiotory's Expert Guidance
+            Learn French Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Bonjour! Want to enchant with your French skills? With Curiotory's language learning app, engaging activities and expert strategies combine to enhance your French learning experience. Learn with Curo now!
+            content="Bonjour! Want to enchant with your French skills? With Qurocity's language learning app, engaging activities and expert strategies combine to enhance your French learning experience. Learn with Curo now!
             
             Join Online French Classes Now!
 "
@@ -183,7 +183,7 @@ function French() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> French</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -194,7 +194,7 @@ function French() {
               </span>
             </div>
             <p>
-              Bonjour! Want to enchant with your French skills? With Curiotory's
+              Bonjour! Want to enchant with your French skills? With Qurocity's
               language learning app, engaging activities and expert strategies
               combine to enhance your French learning experience. Learn with
               Curo now!

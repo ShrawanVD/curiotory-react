@@ -40,9 +40,9 @@ function TermsNCond() {
           <div className={termscss.policyContent}>
             <h5>OVERVIEW :-</h5>
             <p>
-              This website is operated by Curiotory Pvt Ltd . Throughout the
-              site, the terms “we”, “us” and “our” refer to Curiotory Pvt Ltd
-              . Curiotory Pvt Ltd offers this website, including all
+              This website is operated by Qurocity Pvt Ltd . Throughout the
+              site, the terms “we”, “us” and “our” refer to Qurocity Pvt Ltd
+              . Qurocity Pvt Ltd offers this website, including all
               information, tools and services available from this site to you,
               the user, conditioned upon your acceptance of all terms,
               conditions, policies and notices stated here.
@@ -393,7 +393,7 @@ function TermsNCond() {
               and non-infringement.
             </p>
             <p>
-              In no case shall Curiotory Pvt Ltd , our directors, officers,
+              In no case shall Qurocity Pvt Ltd , our directors, officers,
               employees, affiliates, agents, contractors, interns, suppliers,
               service providers or licensors be liable for any injury, loss,
               claim, or any direct, indirect, incidental, punitive, special,
@@ -418,7 +418,7 @@ function TermsNCond() {
           <div className={termscss.policyContent}>
             <h5>INDEMNIFICATION :-</h5>
             <p>
-              You agree to indemnify, defend and hold harmless Curiotory Pvt
+              You agree to indemnify, defend and hold harmless Qurocity Pvt
               Ltd and our parent, subsidiaries, affiliates, partners,
               officers, directors, agents, contractors, licensors, service
               providers, subcontractors, suppliers, interns and employees,

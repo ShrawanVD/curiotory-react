@@ -85,22 +85,22 @@ function Refund() {
             <ul>
               <li>
                 By using the website and/or registering yourself at
-                www.curiotory.com, you authorize us to contact you via email
+                www.qurocity.ai, you authorize us to contact you via email
                 or phone call or sms and offer you our services, imparting
                 product knowledge, offer promotional offers running on website
                 & offers offered by the associated third parties, for which
                 reasons, personally identifiable information may be collected.
                 And irrespective of the fact if also you have registered
                 yourself under DND or DNC or NCPR service, you still authorize
-                us to give you a call from Curiotory Pvt Ltd for the above
+                us to give you a call from Qurocity Pvt Ltd for the above
                 mentioned purposes till 365 days of your registration with us.
-                Curiotory collects personally identifiable information when
-                you register for a Curiotory account, when you use certain
-                Curiotory products or services, when you visit Curiotory
+                Qurocity collects personally identifiable information when
+                you register for a Qurocity account, when you use certain
+                Qurocity products or services, when you visit Qurocity
                 pages, and when you enter promotions. When you register with
-                Curiotory, we ask for your first name, last name, contact no,
+                Qurocity, we ask for your first name, last name, contact no,
                 email, Date of birth and gender. Once you register with
-                Curiotory and sign in to our services, you are not anonymous
+                Qurocity and sign in to our services, you are not anonymous
                 to us. Also during registration, you may be requested to
                 register your mobile phone and email id, pager, or other
                 device to receive text messages, notifications, and other

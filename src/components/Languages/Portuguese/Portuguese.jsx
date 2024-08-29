@@ -159,11 +159,11 @@ function Portuguese() {
         {/* for meta tags  */}
         <Helmet>
           <title>
-            Learn Portuguese Online Easily With Curiotory's Expert Guidance
+            Learn Portuguese Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Olá! Learn Portuguese online with Curiotory's Portuguese language learning course which offers the most precise and unique language lessons to make education more simple yet highly valuable!
+            content="Olá! Learn Portuguese online with Qurocity's Portuguese language learning course which offers the most precise and unique language lessons to make education more simple yet highly valuable!
 
 Join Online Portuguese Classes Now!
 "
@@ -183,7 +183,7 @@ Join Online Portuguese Classes Now!
             <h1>
               Learn<span className={fr.highlight}> Portuguese</span> Online
               Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -194,7 +194,7 @@ Join Online Portuguese Classes Now!
               </span>
             </div>
             <p>
-              "Olá! Learn Portuguese online with Curiotory's Portuguese language
+              "Olá! Learn Portuguese online with Qurocity's Portuguese language
               learning course which offers the most precise and unique language
               lessons to make education more simple yet highly valuable!
             </p>

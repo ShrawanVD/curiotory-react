@@ -19,39 +19,51 @@ function Courselist() {
           </a> */}
 
           <div className={list.firstCourseRow}>
-            <a href="course/french">
-              <div className={list.courseLangCard}>
-                <img src="./Course/french.png" alt="French" />
-                <h4>French</h4>
-              </div>
-            </a>
-            <a href="course/english">
-              <div className={list.courseLangCard}>
-                <img src="./Course/english.png" alt="English" />
-                <h4>English</h4>
-              </div>
-            </a>
             <a href="course/mandarin">
               <div className={list.courseLangCard}>
                 <img src="./Course/mandarin.png" alt="Mandarin" />
-                <h4>Mandarin</h4>
+                {/* <h4>Mandarin</h4> */}
               </div>
             </a>
-          </div>
-
-          <div className={list.secondCourseRow}>
             <a href="course/japanese">
               <div className={list.courseLangCard}>
                 <img src="./Course/japanese.png" alt="Japanese" />
-                <h4>Japanese</h4>
+                {/* <h4>Japanese</h4> */}
               </div>
             </a>
             <a href="course/korean">
               <div className={list.courseLangCard} id="korean">
                 <img src="./Course/korean.png" alt="Korean" />
-                <h4>Korean</h4>
+                {/* <h4>Korean</h4> */}
               </div>
             </a>
+          </div>
+
+          <div className={list.secondCourseRow}>
+          <a href="course/french">
+              <div className={list.courseLangCard}>
+                <img src="./Course/french.png" alt="French" />
+                {/* <h4>French</h4> */}
+              </div>
+            </a>
+              <div className={list.courseLangCard} style={{
+                cursor:"arrow"
+              }}>
+                <img src="./Course/german.png" alt="German" />
+              </div>
+            {/* <a href="course/german">
+              <div className={list.courseLangCard}>
+                <img src="./Course/german.png" alt="German" />
+                <h4>German</h4>
+              </div>
+            </a> */}
+            <a href="course/english">
+              <div className={list.courseLangCard}>
+                <img src="./Course/english.png" alt="English" />
+                {/* <h4>English</h4> */}
+              </div>
+            </a>
+            
           </div>
         </div>
 

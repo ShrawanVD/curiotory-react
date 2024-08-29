@@ -158,11 +158,11 @@ function Mandarin() {
       <div className={fr.container}>
         <Helmet>
           <title>
-            Learn Mandarin Online Easily With Curiotory's Expert Guidance
+            Learn Mandarin Online Easily With Qurocity's Expert Guidance
           </title>
           <meta
             name="description"
-            content="Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning app offers interactive activities and proven techniques to help you master Mandarin online with professional expertise.
+            content="Nǐ hǎo! Hoping to Learn Mandarin? Qurocity's language learning app offers interactive activities and proven techniques to help you master Mandarin online with professional expertise.
   Join Online Mandarin Classes Now!
 "
           />
@@ -180,7 +180,7 @@ function Mandarin() {
           <section className={fr.hero}>
             <h1>
               Learn<span className={fr.highlight}> Mandarin</span> Online Easily
-              <br /> With Curiotory's Expert Guidance
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -191,7 +191,7 @@ function Mandarin() {
               </span>
             </div>
             <p>
-              Nǐ hǎo! Hoping to Learn Mandarin? Curiotory's language learning
+              Nǐ hǎo! Hoping to Learn Mandarin? Qurocity's language learning
               app offers interactive activities and proven techniques to help
               you master Mandarin online with professional expertise.
             </p>

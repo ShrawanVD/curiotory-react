@@ -15,6 +15,7 @@
   }
 }
 
+
 @media screen and (max-width: 550px){
   .mascotAbout{
     height: 350px;
@@ -31,37 +32,68 @@
   /* mascot css ends here */
   
   /* heading - top section */
+ 
   
-  .headingTag {
+  .headingTag h1 {
+    color: #2f327d;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 2.1rem;
+    /* font-weight: 600; */
+    line-height: 4rem;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  
-  .headingTag h1 {
-    margin: 5rem 0 3rem;
-    color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
-    font-size: 3.7rem;
-    font-weight: 750;
-    line-height: 4.6rem;
-    text-align: center;
+
+  .headingTag .small{
+    display: none;
+  }
+
+  .headingTag .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+    width: 100%;
+    overflow: hidden; /* Ensure no overflow occurs */
+}
+
+.headingTag .stats img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 125vh; /* Ensure the image doesn't exceed viewport height */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin: 1rem auto;
+}
+
+
+
+  /* .headingTag .stats {
+    display: flex;
+    align-items: center;
+    min-width: 90vw;
   }
 
 
-  .headingTag .stats ul li {
-    font-family: "Nunito Sans", Sans-serif;
-    font-size: 1.3rem;
-    margin: 2% 2em;
-    color: #464646;
-  }
+  .headingTag .stats img {
+    margin: 1rem auto 3rem;
+    min-width: 100%;
+    height: 120vh;
+  } */
   
   .boldFirst {
     font-weight: 900;
   }
+
+  .regbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0;
+  }
   
-  .registerButton {
+  .regbtn .registerButton {
     margin-top: -4%;
     border-radius: 25px;
     background-color: #45b9ef;
@@ -75,13 +107,88 @@
     color: black;
     font-size: 1.2em;
     font-weight: bolder;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;
   }
   
   .registerButton:hover {
     background-color: black;
     color: white;
   }
+
+  /* Media queries for responsiveness */
+  
+  @media screen and (max-width: 1200px) {
+    .headingTag h1 {
+      font-size: 40px;
+      line-height: 50px;
+      margin-top: 3%;
+    }
+  
+    .headingTag .stats ul li {
+      font-size: 1.2em;
+    }
+  
+    .registerButton {
+      font-size: 1em;
+      padding: 15px;
+      margin-bottom: 3%;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .headingTag h1{
+      font-size: 1.2rem;
+      margin: 1rem;
+    }
+
+    .headingTag .small{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .headingTag .big{
+      display: none;
+    }
+    
+        .headingTag .stats img {
+            width: 100%;
+            height: auto; /* Adjust height automatically to maintain aspect ratio */
+            margin: 0; /* Adjust margin for better alignment on small screens */
+        }
+    }
+  
+  @media screen and (max-width: 500px) {
+    .headingTag h1 {
+      /* font-size: 2rem; */
+      /* margin-top: 3%; */
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .headingTag h1 {
+      /* font-size: 1.5rem;
+      line-height: 50px;
+      margin-top: 3%; */
+    }
+  
+    /* .headingTag .stats ul li {
+      text-align: justify;
+      margin-left: 10%;
+      font-size: 1.2em;
+    } */
+  
+    .registerButton {
+      font-size: 1.2em;
+      padding: 10px;
+      margin-bottom: 3%;
+    }
+  }
+
+  
   
   /* sidebar  */
   .sidebar {
@@ -101,7 +208,7 @@
   
   .sidebar h1 {
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-size: 2rem;
     font-weight: 750;
     line-height: 4.6rem;
@@ -149,7 +256,7 @@
     cursor: pointer;
     font-size: 1.2em;
     font-weight: bolder;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     transition: background-color 0.3s;
   }
   
@@ -158,101 +265,37 @@
     color: white;
   }
   
-  /* Media queries for responsiveness */
   
-  @media screen and (max-width: 1200px) {
-    .headingTag h1 {
-      font-size: 40px;
-      line-height: 50px;
-      margin-top: 3%;
-    }
-  
-    .headingTag .stats ul li {
-      font-size: 1.2em;
-    }
-  
-    .registerButton {
-      font-size: 1em;
-      padding: 15px;
-      margin-bottom: 3%;
-    }
-  }
-  
-  @media screen and (max-width: 850px) {
-    .headingTag h1 {
-      font-size: 40px;
-      line-height: 50px;
-      margin-top: 3%;
-    }
-  
-    .headingTag .stats ul li {
-      font-size: 1.2em;
-    }
-  
-    .registerButton {
-      font-size: 1em;
-      padding: 15px;
-      margin-bottom: 3%;
-    }
-  }
-  
-  @media screen and (max-width: 500px) {
-    .headingTag h1 {
-      font-size: 2rem;
-      margin-top: 3%;
-    }
-  }
-  
-  @media screen and (max-width: 450px) {
-    .headingTag h1 {
-      font-size: 1.5rem;
-      line-height: 50px;
-      margin-top: 3%;
-    }
-  
-    .headingTag .stats ul li {
-      text-align: justify;
-      margin-left: 10%;
-      font-size: 1.2em;
-    }
-  
-    .registerButton {
-      font-size: 1.2em;
-      padding: 10px;
-      margin-bottom: 3%;
-    }
-  }
   
   /* bio section */
   
   .bio {
-    margin: 10% 10%;
+    margin: 4% 10%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .bio p {
-    text-align: center;
-    color: #464646;
-    font-family: "Poppins", Sans-serif;
-    font-size: 1.5rem;
+    text-align: left;
+    color: #00046C;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1.2rem;
     font-weight: bold;
-    line-height: 2rem;
   }
   
   /* Media queries for responsiveness */
   
   @media screen and (max-width: 1200px) {
     .bio p {
-      font-size: 1.2em;
+      font-size: 1rem;
       text-align: justify;
     }
   }
   
   @media screen and (max-width: 850px) {
     .bio p {
-      font-size: 1.2em;
+      font-size: 1rem;
       text-align: justify;
       line-height: 1.5em;
     }
@@ -263,7 +306,7 @@
       padding: 0 2%;
     }
     .bio p {
-      font-size: 1.2em;
+      font-size: 1rem;
       text-align: justify;
     }
   }
@@ -276,34 +319,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #0368ff;
+    border: 1px solid #00046C;
     border-radius: 20px;
   }
   
   table {
     width: 100%;
-    border: 1px solid #0368ff;
+    border: 1px solid #00046C;
     border-collapse: collapse;
     border-radius: 20px;
     overflow: hidden;
   }
   
   td {
-    padding: 5%;
-    border: 1px solid #0368ff;
+    padding: 3%;
+    border: 1px solid #00046C;
     border-collapse: collapse;
     font-size: 1.2rem;
-    color: #464646;
-    font-family: "Poppins", Sans-serif;
+    color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
     font-weight: 400;
-    line-height: 25.5px;
+    line-height: 28px;
     text-align: justify;
   }
   
   
   /* Media query for responsiveness */
   
-  @media (max-width: 550px) {
+  @media (max-width: 650px) {
   
     table, tr, td {
       display: block;
@@ -318,7 +361,12 @@
     /* Remove borders between rows */
     td {
       border: none;
-      border-bottom: 1px solid #0368ff;
+      border-bottom: 1px solid #00046C;
+      
+    }
+    td p{
+      font-size: 0.9rem;
+      color: #00046C;
     }
   
     /* last row last column last child --> made it border none */
@@ -340,34 +388,34 @@
   /* origin section */
   
   .originStorySection {
-    margin: 14% 15% 5%;
+    margin: 5% 15% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .originStorySection .leftSide {
-    /* width: 50%; */
+    width: auto;
     margin-right: 10%;
     box-sizing: border-box;
   }
   
   .originStorySection .rightSide h1 {
-    color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
-    font-size: 3.5em;
+    color: #00046C;
+    font-family: "Poppins", Sans-serif;;
+    font-size: 2.7rem;
     font-weight: 600;
     text-align: justify;
   }
   
   .originStorySection .rightSide p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
     margin-top: 0;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     text-align: justify;
-    color: #464646;
+    color: #00046C;
   }
   
   /* Media queries for responsiveness */
@@ -492,12 +540,13 @@
     }
 
     .originStorySection .rightSide h1 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin-top: 3%;
+      text-align: center;
     }
   
     .originStorySection .rightSide p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       line-height: 20px
     }
   }
@@ -583,7 +632,7 @@
   
   .visionSection h1 {
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-size: 3.5em;
     font-weight: 600;
     text-align: justify;
@@ -604,7 +653,7 @@
   
   .visionOfOurs .rightSide h1 {
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-size: 2.2em;
     font-weight: 600;
     text-align: justify;
@@ -615,7 +664,7 @@
     line-height: 1.5;
     margin-bottom: 20px;
     margin-top: 0;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     text-align: justify;
     color: #464646;
   }
@@ -860,7 +909,7 @@
   
   .missionSection .leftSide h1{
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-size: 2.2em;
     font-weight: 600;
     text-align: justify;
@@ -870,7 +919,7 @@
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     text-align: justify;
   }
   
@@ -1079,18 +1128,144 @@
   }
   
   /* founder's section */
+
+
+  .foundersSection {
+    text-align: center;
+    padding: 40px;
+}
+
+.foundersSection h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1b2e59;
+    margin-bottom: 30px;
+}
+
+.founderCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #162348;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    gap: 3rem;
+    margin: 1.5rem 9rem;
+}
+
+.founderImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.founderInfo {
+    flex: 1;
+    text-align: left;
+}
+.right1{
+  flex-direction: row-reverse;
+}
+
+
+/* .right .founderInfo{
+  order: 2;
+} */
+
+.founder_divider{
+  border: 1px solid white;
+}
+
+.founderInfo h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.founderInfo p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.right2{
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .founderCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1rem 0.2rem;
+    }
+
+    .foundersSection h2{
+        font-size: 1.3rem;
+    }
+
+    .founderInfo h3 {
+      font-size: 1.1rem;
+  }
+
+  .founderInfo p{
+    font-size: 0.9rem;
+  }
+
+    .right1{
+      
+      display: none;
+    }
+
+    .right2{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #162348;
+      color: #fff;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+      gap: 3rem;
+      flex-direction: column;
+      margin: 1rem 0.2rem;
+    }
+
+    .founderImage {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .founderInfo {
+        text-align: center;
+    }
+
+}
+
+
+
   
-  .founderSection {
+  /* .founderSection {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, white 50%, #ebfaff 50%);
+    background: white;
   }
   
   .founderSection h1 {
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-size: 2.8em;
     font-weight: 600;
     text-align: justify;
@@ -1100,11 +1275,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin: 10%; */
     width: 80%;
   }
   
-  /* sheetal mam's section */
   
   .founderSection .persons .sheetalMam {
     display: flex;
@@ -1130,7 +1303,7 @@
   .founderSection .persons .sheetalMam .name h1 {
     margin-top: 5%;
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-weight: 600;
     text-align: justify;
     font-size: 2rem;
@@ -1146,7 +1319,6 @@
     line-height: 27.5px;
   }
   
-  /* ram sir's section */
   
   .founderSection .persons .ramSir {
     display: flex;
@@ -1172,7 +1344,7 @@
   .founderSection .persons .ramSir h1 {
     margin-top: 5%;
     color: #2f327d;
-    font-family: "Nunito Sans", Sans-serif;
+    font-family: "Poppins", Sans-serif;;
     font-weight: 600;
     text-align: justify;
     font-size: 2rem;
@@ -1188,7 +1360,6 @@
     line-height: 27.5px;
   }
   
-  /* Media queries for responsiveness */
   
   @media screen and (max-width: 1100px) {
     .founderSection {
@@ -1484,3 +1655,145 @@
       font-size: 0.9rem;
     }
   }
+ */
+
+
+  /* brings us here section  */
+
+
+
+
+
+.bring {
+  text-align: center;
+  padding: 40px;
+
+}
+
+.bring h2 {
+  font-size: 2.5rem;
+  color: #1b2e59;
+  margin-bottom: 30px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  background-color: #00046C;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  gap: 5rem;
+  margin: 1.5rem 9rem;
+}
+
+.numberBlock {
+  background-color: #3b82f6;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform: skew(-10deg, 0deg); /* Slanting effect diagonally */
+}
+
+.numberBlock span{
+  color: #00046C;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 5rem;
+}
+
+
+
+.divider{
+  max-width: 100%;
+  color: white;
+  border: 1px solid white;
+}
+
+.textBlock {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.textBlock h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.textBlock p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.left .numberBlock {
+  /* order: 2; */
+  margin-left: 10rem;
+}
+
+.right .numberBlock {
+  order: 1;
+  margin-right: 10rem;
+}
+
+
+
+@media (max-width: 768px) {
+.bring h2{
+  font-size: 1.2rem;
+}
+
+  .section {
+      flex-direction: column;
+      height: auto;
+      margin: 1rem 0.2rem;
+  }
+
+  .numberBlock {
+      width: 100%;
+      height: 50px;
+      transform: skew(0deg, 0deg);
+  }
+
+  .numberBlock span{
+    font-size: 2rem;
+  }
+
+
+  .left .numberBlock,
+  .right .numberBlock {
+      margin: 0;
+  }
+
+  .right{
+    flex-direction: column-reverse;
+  }
+
+  .textBlock {
+      text-align: center;
+      padding: 0 15px 15px;
+      margin-top: -3rem;
+  }
+
+  .textBlock h3{
+    font-size: 1.1rem;
+  }
+  .textBlock p{
+    font-size: 0.9rem;
+  }
+}
+
+
