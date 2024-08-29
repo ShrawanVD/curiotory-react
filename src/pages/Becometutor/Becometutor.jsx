@@ -57,14 +57,62 @@ Qurocity is the place for you! Join our network of the best language tutors from
               box!, if you happen to have these skills then boom!
             </p>
             <p>
-              Curiotry is the place for you! Join our network of the best
+              Qurocity is the place for you! Join our network of the best
               language tutors from all over the world and have your chance of
               making a difference in the linguistics world!{" "}
             </p>
           </div>
 
           {/* cards section for becoming tutor */}
-          <div className="stepCards">
+
+          <div class="stepsSection">
+            <div class="stepCard">
+              <div class="stepHeader">
+                <div class="stepNumber">Step 1</div>
+              </div>
+              <div class="stepContent">
+                <h3>Download Qurocity App from Playstore</h3>
+                <div className="downloadButton">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="button2">Download the app</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="stepCard">
+              <div class="stepHeader">
+                <div class="stepNumber">Step 2</div>
+              </div>
+              <div class="stepContent">
+                <h3>Go to menu section of the homepage</h3>
+                <img src="/become tutor/step2img.png" alt="step2" />
+              </div>
+            </div>
+            <div class="stepCard">
+              <div class="stepHeader">
+                <div class="stepNumber">Step 3</div>
+              </div>
+              <div class="stepContent">
+                <h3>Select the "Become a tutor" option</h3>
+                <img src="/become tutor/step3.png" alt="step3" />
+              </div>
+            </div>
+            <div class="stepCard">
+              <div class="stepHeader">
+                <div class="stepNumber">Step 4</div>
+              </div>
+              <div class="stepContent">
+                <h3>Fill up the Form and wait for the revert back</h3>
+                <img src="/become tutor/step4.png" alt="step4" />
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="stepCards">
             <div className="flexbox">
               <div className="flexcard flexcardBlue">
                 <div className="flexcardNumber flexcardNumberBlue">Step 01</div>
@@ -78,8 +126,6 @@ Qurocity is the place for you! Join our network of the best language tutors from
                     <button className="button2">Download the app</button>
                   </a>
                 </div>
-                {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
-                temporibus consectetur? Iure id nam fuga asperiores repellat accusantium exercitationem nemo? </div> */}
               </div>
               <div className="flexcard flexcardBlue">
                 <div className="flexcardNumber flexcardNumberBlue">Step 02</div>
@@ -107,13 +153,11 @@ Qurocity is the place for you! Join our network of the best language tutors from
                 <div className="step2Img">
                   <img src="/become tutor/step4.png" alt="step2" />
                 </div>
-                {/* <div className="flex flexcardText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae,
-                temporibus consectetur? Iure id nam fuga asperiores repellat accusantium exercitationem nemo?</div> */}
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="text-center mt-2 mb-5">
+          <div className="text-center mt-5 mb-5">
             <a
               href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
               target="_blank"
@@ -138,7 +182,6 @@ Qurocity is the place for you! Join our network of the best language tutors from
             </div>
             <div className="left-sub-heading">
               <h5>Join one of India’s fastest-growing Edu-Tech platform</h5>
-              <br />
             </div>
             <div className="left-paragraph">
               <p>
@@ -160,6 +203,9 @@ Qurocity is the place for you! Join our network of the best language tutors from
               href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+              }}
             >
               Register as a teacher
             </a>
@@ -187,16 +233,16 @@ Qurocity is the place for you! Join our network of the best language tutors from
 
           <div className="right-side">
             <h1>
-              Don’t just teach <br />
-              <span className="bold-second">- enrichen lives</span>
+              Don’t just teach -  
+              <span className="bold-second"> Enrichen Lives</span>
             </h1>
             <br />
             <br />
             <p>
               What’s a rewarding career if it doesn’t positively impact the
-              lives of others and society at large? At Qurocity, you’re not
-              just a mere instructor. You’re a mentor who empowers kids to be
-              more empathetic and inclusive, helping turn their curiosities into
+              lives of others and society at large? At Qurocity, you’re not just
+              a mere instructor. You’re a mentor who empowers kids to be more
+              empathetic and inclusive, helping turn their curiosities into
               invaluable opportunities.
             </p>
           </div>
@@ -208,7 +254,7 @@ Qurocity is the place for you! Join our network of the best language tutors from
           <div className="left-side">
             <div className="left-main-heading">
               <h2>
-                Go <span className="bold-first">high-tech</span> <br />
+                Go <span className="bold-first">high-tech </span>
                 with ease
               </h2>
             </div>
@@ -216,8 +262,8 @@ Qurocity is the place for you! Join our network of the best language tutors from
               <br />
               <p>
                 We ensure web/mobile-friendly learning journeys for kids.
-                Qurocity’s cutting-edge platform makes it effortless for them
-                to access your content on PCs, laptops, mobile devices, etc.
+                Qurocity’s cutting-edge platform makes it effortless for them to
+                access your content on PCs, laptops, mobile devices, etc.
               </p>
             </div>
           </div>
@@ -244,17 +290,15 @@ Qurocity is the place for you! Join our network of the best language tutors from
           <div className="right-side">
             <h1>
               Get data to
-              <span className="bold-second">
-                make <br />
-                life simpler
+              <span className="bold-second"> make life simpler
               </span>
             </h1>
             <br />
             <br />
             <p>
               We believe in the power of data to transform teaching experiences.
-              Qurocity provides access to a wide range of real-time analytics
-              to understand learning outcomes and proactively plan remedial
+              Qurocity provides access to a wide range of real-time analytics to
+              understand learning outcomes and proactively plan remedial
               measures.
             </p>
           </div>
@@ -264,7 +308,7 @@ Qurocity is the place for you! Join our network of the best language tutors from
 
         <div className="why-with-us">
           <div className="heading">
-            <h1 className="text-center pl-3 pr-3 display-4 font-weight-bold">
+            <h1 className="text-center  ">
               Why become a private tutor with us?
             </h1>
           </div>

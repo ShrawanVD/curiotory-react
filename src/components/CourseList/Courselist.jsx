@@ -46,17 +46,12 @@ function Courselist() {
                 {/* <h4>French</h4> */}
               </div>
             </a>
-              <div className={list.courseLangCard} style={{
-                cursor:"arrow"
-              }}>
-                <img src="./Course/german.png" alt="German" />
-              </div>
-            {/* <a href="course/german">
+            <a href="course/german">
               <div className={list.courseLangCard}>
                 <img src="./Course/german.png" alt="German" />
                 <h4>German</h4>
               </div>
-            </a> */}
+            </a>
             <a href="course/english">
               <div className={list.courseLangCard}>
                 <img src="./Course/english.png" alt="English" />

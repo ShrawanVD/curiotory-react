@@ -92,106 +92,242 @@ const GermanCourse = () => {
   // modules section
   const modules = [
     {
-      title: "Introduction to Machine Learning",
+      title: "Introduction to German Language",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Overview of German language and culture",
+        "Basic greetings and expressions",
+        "German alphabet pronunciation",
+        "Simple sentence structure and word order",
       ],
       cnt: "4",
     },
     {
-      title: "Data and Interpretation",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
+      title: "Alphabets and Introduction to Verbs",
+      topics: [
+        "German alphabet and sounds",
+        "Personal pronouns",
+        "The verb 'sein' (to be)",
+        "The verb 'haben' (to have)",
+        "The verb 'gehen' (to go)",
+      ],
+      cnt: "5",
+    },
+    {
+      title: "Possessive Pronouns",
+      topics: [
+        "Usage of possessive pronouns",
+        "Possessive article in Nominativ case",
+        "Comparison with other pronouns",
+        "Examples in sentences",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Nominativ Case and Articles",
+      topics: [
+        "Understanding the Nominativ case",
+        "Definite articles (der, die, das)",
+        "Indefinite articles (ein, eine)",
+      ],
       cnt: "3",
     },
     {
-      title: "Introduction to Python",
+      title: "Ja/Nein Frage and W-Frage",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Formulating yes/no questions",
+        "Formulating W-questions (who, what, where, etc.)",
       ],
-      cnt: "4",
+      cnt: "2",
     },
     {
-      title: "Java Basics",
+      title: "Nominativ and Accusative Case",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Differences between Nominativ and Accusative cases",
+        "Accusative pronouns (mich, dich, ihn, etc.)",
+        "Nominativ pronouns (ich, du, er, etc.)",
       ],
-      cnt: "4",
-    },
-    {
-      title: "Working with ReactJS",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
       cnt: "3",
     },
     {
-      title: "6Introduction to Python",
+      title: "Food and Drinks Vocabulary",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Common food and drink vocabulary",
+        "Nouns related to food and drinks",
+        "Plural forms of food-related nouns",
+        "Phrases for ordering food",
       ],
       cnt: "4",
     },
     {
-      title: "7Introduction to Machine Learning",
+      title: "Modal Verbs (mögen, wollen, können)",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Usage of modal verbs: mögen (like), wollen (want), können (can)",
+        "Conjugation of modal verbs",
+        "Examples in sentences",
       ],
-      cnt: "4",
-    },
-    {
-      title: "Computer Fundamentals",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
       cnt: "3",
     },
     {
-      title: "9Introduction to Python",
+      title: "Reflexive Verbs",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Introduction to reflexive verbs",
+        "Common reflexive verbs (sich freuen, sich waschen)",
+        "Reflexive pronouns (mich, dich, sich)",
+        "Usage in sentences",
       ],
       cnt: "4",
     },
     {
-      title: "10Introduction to Machine Learning",
+      title: "Time Expressions",
       topics: [
-        "Get Started with Internshala Trainings",
-        "What is Machine Learning",
-        "How Machine Learning Works",
-        "Types of Machine Learning – Supervised and Unsupervised",
+        "Vocabulary and phrases related to time",
+        "Expressions for telling time",
+      ],
+      cnt: "2",
+    },
+    {
+      title: "Separable Verbs",
+      topics: [
+        "Understanding separable verbs (e.g., aufstehen, einkaufen)",
+        "Common examples of separable verbs",
+        "Placement of the prefix in sentences",
+        "Usage in different tenses",
       ],
       cnt: "4",
     },
     {
-      title: "11Object Oriented Programming",
-      topics: ["Data Collection", "Data Cleaning", "Data Visualization"],
+      title: "Expressing Likes and Dislikes",
+      topics: [
+        "Phrases for expressing preferences",
+        "Usage of adjectives in expressing likes and dislikes",
+        "Common verbs for expressing opinions",
+        "Examples in sentences",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Making Plans Using Modal Verbs",
+      topics: [
+        "Making plans with modal verbs",
+        "Conjugation and usage of modal verbs for future plans",
+        "Examples of planning phrases",
+      ],
       cnt: "3",
     },
     {
-      title: "12Introduction to Python",
+      title: "Imperative Forms of Verbs",
       topics: [
-        "Python Basics",
-        "Data Types and Variables",
-        "Control Structures",
-        "Functions and Modules",
+        "Formation of imperative forms (commands)",
+        "Common imperative verbs (e.g., komm, mach)",
+        "Usage in giving instructions",
+        "Examples in sentences",
       ],
       cnt: "4",
     },
-    // Add more modules as needed
+    {
+      title: "A Day at Work + Introduction to Prepositions",
+      topics: [
+        "Vocabulary related to work",
+        "Basic prepositions (in, an, auf, etc.)",
+        "Describing daily routines",
+        "Usage of prepositions in work contexts",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Degrees of Comparison",
+      topics: [
+        "Comparative forms of adjectives",
+        "Superlative forms of adjectives",
+        "Usage in sentences to compare",
+        "Examples of adjectives in comparison",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Prepositions of Place",
+      topics: [
+        "Common prepositions of place (e.g., neben, vor, hinter)",
+        "Usage of prepositions in describing locations",
+        "Examples in sentences",
+      ],
+      cnt: "3",
+    },
+    {
+      title: "Review of Grammar Topics",
+      topics: [
+        "Recap of key grammar points covered",
+        "Common mistakes and corrections",
+        "Practice exercises",
+      ],
+      cnt: "3",
+    },
+    {
+      title: "Introduction to Past Tense Partizip II",
+      topics: [
+        "Formation of Partizip II (past participle)",
+        "Usage in forming past tense",
+        "Examples in sentences",
+        "Common irregular verbs",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Connectors und, oder, and aber",
+      topics: [
+        "Usage of connectors: und (and), oder (or), aber (but)",
+        "Sentence structure with connectors",
+        "Examples in sentences",
+      ],
+      cnt: "3",
+    },
+    {
+      title: "Discussion of Accusative, Dativ and Wechsel Prepositions",
+      topics: [
+        "Overview of Accusative prepositions (für, ohne)",
+        "Overview of Dativ prepositions (mit, nach)",
+        "Overview of Wechsel prepositions (in, auf)",
+      ],
+      cnt: "3",
+    },
+    {
+      title: "Studium und Beruf",
+      topics: [
+        "Vocabulary related to studies (Studium) and professions (Beruf)",
+        "Discussing education and careers",
+        "Common phrases for talking about jobs",
+        "Examples of career-related sentences",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Subordinate Clauses with Weil",
+      topics: [
+        "Formation of subordinate clauses with 'weil' (because)",
+        "Usage in sentences",
+        "Examples of complex sentences",
+        "Common mistakes to avoid",
+      ],
+      cnt: "4",
+    },
+    {
+      title: "Sätze Verbinden mit Denn",
+      topics: [
+        "Using 'denn' to connect sentences",
+        "Examples and practice sentences",
+        "Differences between 'denn' and 'weil'",
+      ],
+      cnt: "3",
+    },
+    {
+      title: "Review of Grammar Topics",
+      topics: [
+        "Comprehensive review of all grammar topics covered",
+        "Practice exercises",
+        "Common mistakes and corrections",
+      ],
+      cnt: "3",
+    },
   ];
 
   //   toggling between expand more and expand less
@@ -248,11 +384,11 @@ const GermanCourse = () => {
             <div className={buy.examContent}>
               <p>Top 5 Universities: </p>
               <ul>
-                <li>1. Technical University of Munich </li>
-                <li>2. Heidelberg University </li>
-                <li>3. University of Hamburg </li>
-                <li>4. Ludwig Maximilian University of Munich </li>
-                <li>5. RWTH Aachen University </li>
+                <li>1. LMU Munich </li>
+                <li>2. Technical University of Munich </li>
+                <li>3. University of Heidelberg </li>
+                <li>4. Humboldt University of Berlin </li>
+                <li>5. University of Freiburg </li>
               </ul>
             </div>
           </div>
@@ -261,12 +397,14 @@ const GermanCourse = () => {
         return (
           <div className={buy.tabContent}>
             <p>
-              The Goethe-Zertifikat, offered by the Goethe-Institute, assesses
-              German language skills from beginner (A1) to advanced (C2).
-              Covering reading, writing, listening, and speaking, this exam
-              enhances job prospects, academic opportunities in Germany, and
-              signifies personal and professional growth. There are six levels:
-              A1, A2, B1, B2, C1, and C2.
+              The Goethe-Institut offers German proficiency exams that assess
+              skills in reading, listening, writing, and speaking. The exams
+              range from A1 (beginner) to C2 (proficient), following the Common
+              European Framework of Reference for Languages (CEFR). Achieving
+              higher levels on these exams can open up educational and
+              professional opportunities in German-speaking countries, provide a
+              standardized measure of language ability, enhance cultural
+              integration, and support personal growth.
             </p>
           </div>
         );
@@ -274,13 +412,15 @@ const GermanCourse = () => {
         return (
           <div className={buy.tabContent}>
             <p>
-              Proficiency in German significantly enhances travel experiences,
-              particularly in Germany, Austria, Switzerland, and parts of
-              Belgium and Luxembourg. It simplifies communication with locals,
-              helps in navigating public transport, and helps understanding
-              signs and menus. German proficiency allows deeper cultural
-              immersion, making interactions more meaningful and enjoyable, and
-              ensuring a smoother journey through these German-speaking regions.
+              Being proficient in German greatly enhances your travel experience
+              in Germany and other German-speaking countries. It simplifies
+              communication, navigation, and cultural interactions, allowing you
+              to understand signs, menus, and local customs more effectively.
+              This proficiency makes your journey more seamless and enjoyable,
+              especially in cities like Berlin, Munich, and Vienna, where
+              English might not be as commonly spoken. It also proves
+              advantageous in smaller towns and rural areas, ensuring a richer
+              and more authentic experience.
             </p>
           </div>
         );
@@ -296,12 +436,12 @@ const GermanCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -313,6 +453,22 @@ const GermanCourse = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Learn German Online- Language Learning Classes by Qurocity
+        </title>
+        <meta
+          name="description"
+          content="Learn German online easily with Qurocity. A German language course which
+ makes learning German easier than ever with fun and interactive sessions."
+        />
+        <meta
+          name="keywords"
+          content="german learning, learn german, german language app, german language
+ course, german Learning classes, learn german online, german language learning"
+        />
+      </Helmet>
+
       <div>
         {/* cover page  */}
 
@@ -333,12 +489,18 @@ const GermanCourse = () => {
             </a>
           </header>
           <div className={buy.content}>
-            <div className={buy.textSection}>
+            <div
+              className={buy.textSection}
+              style={{
+                marginLeft: "5rem",
+              }}
+            >
               <h1>
-                Discover <br />
-                How Fun and Easy
+                Hallo! <br />
+                Let's Simplify Your
                 <br />
-                <span className={buy.highlight}>German </span> Can Be!
+                <span className={buy.highlight}> German </span>
+                Learning Journey!
               </h1>
               {/* <div className={buy.sticky}>
               <a href="/checkout"><button className={buy.learnButton}>Subsrcibe Now </button></a>
@@ -371,11 +533,11 @@ const GermanCourse = () => {
           <h1>Course Highlights</h1>
           <div className={buy.highlightCourseDetails}>
             <p>
-              Start your German journey with our unique course! Easily learn
-              from basics to advanced levels, excel in exams, and strengthen
-              your German foundation. Boost your confidence and pave your way to
-              fluency. Experience seamless learning and achieve outstanding
-              results. Your path to mastering German begins here!
+              Elevate your German skills with Qurocity’s expertly crafted
+              course. From foundational basics to advanced fluency, engage with
+              interactive lessons and receive tailored feedback from seasoned
+              instructors. Experience a seamless learning journey and achieve
+              outstanding results. Join our German learning course now!
             </p>
           </div>
           <div className={buy.course_highlights}>
@@ -466,15 +628,15 @@ const GermanCourse = () => {
           <div className={buy.highlights1}>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>play_circle</span>
-              <p>106 video tutorials</p>
+              <p>25 video tutorials</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>construction</span>
-              <p>5 projects</p>
+              <p>Blogs</p>
             </div>
             <div className={buy.highlight_item2}>
               <span className={`material-icons ${buy.icon}`}>memory</span>
-              <p>2 AI tools covered</p>
+              <p>Book Recommendation</p>
             </div>
           </div>
 

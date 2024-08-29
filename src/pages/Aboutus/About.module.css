@@ -270,14 +270,14 @@
   /* bio section */
   
   .bio {
-    margin: 4% 10%;
+    margin: 2rem 11.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .bio p {
-    text-align: left;
+    text-align: justify;
     color: #00046C;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 1.2rem;
@@ -388,7 +388,7 @@
   /* origin section */
   
   .originStorySection {
-    margin: 5% 15% 5%;
+    margin: 5% 12rem 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,7 +405,7 @@
     font-family: "Poppins", Sans-serif;;
     font-size: 2.7rem;
     font-weight: 600;
-    text-align: justify;
+    text-align: center;
   }
   
   .originStorySection .rightSide p {
@@ -1159,11 +1159,13 @@
 
 .founderImage {
     width: 150px;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    margin-right: 20px;
+    /* border-radius: 10%; */
+    margin-right: 10px;
     flex-shrink: 0;
+    /* margin-bottom: -1.5rem; */
+    /* overflow: hidden; */
 }
 
 .founderInfo {
@@ -1242,7 +1244,7 @@
     }
 
     .founderImage {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         margin-right: 0;
     }
 

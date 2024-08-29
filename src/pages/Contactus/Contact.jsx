@@ -1,5 +1,6 @@
-// import Footer from "../../components/Footer/Footer";
-// import Navv from "../../components/Navv/Navv";
+import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Contactcss from "./Contact.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
@@ -29,26 +30,46 @@ function Contact() {
 
       if (response.ok) {
         const data = await response.json();
-        if (data.message) {
-          alert(data.message);
-        } else {
-          alert("Form submitted successfully!");
-        }
-        window.location.reload();
+        const message = data.message || "Form submitted successfully!";
+        toast.success(message, {
+          position: "bottom-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        // Optionally, reset form fields
+        e.target.reset();
       } else {
-        // console.error('Error:', response.statusText);
-        alert("Form submitted successfully!");
-        window.location.reload();
+        toast.error("Form submission failed. Please try again.", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       }
     } catch (error) {
-      // console.error('Error:', error);
-      alert("Form submitted successfully!");
-      window.location.reload();
+      toast.error("An error occurred. Please try again.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
     }
   };
+
   useEffect(() => {
     addGTM();
   }, []);
+
   const addGTM = () => {
     const script1 = document.createElement('script');
     script1.async = true;
@@ -64,6 +85,7 @@ function Contact() {
     `;
     document.head.appendChild(script2);
   };
+
   return (
     <>
       <Newnavbar />
@@ -83,7 +105,9 @@ function Contact() {
             <span id="mobile-span">Mobile no. – 93739 02340</span> <br />
             <span id="email-span">
               E-mail Address -
-              <a href="mailto:Support@curiotory.com">Support@curiotory.com</a>
+  <a style={{
+                color:"#00046C"
+              }} href="mailto:Support@curiotory.com"> Support@curiotory.com</a>
             </span>
           </p>
         </div>
@@ -107,13 +131,23 @@ function Contact() {
             <br />
             <textarea name="msg" autoComplete="msg" required></textarea>
             <br />
-            <button type="submit">Submit</button>
+            <button style={{
+              margin:"1rem auto",
+              display:"flex",
+              justifyContent:"center",
+              alignItems:"center",
+              width:"7rem"
+            }} className={Contactcss.submmit} type="submit">Submit</button>
           </form>
         </div>
       </div>
       <Footer2 />
+
+      {/* ToastContainer for displaying toasts */}
+      <ToastContainer />
     </>
   );
 }
 
 export default Contact;
+

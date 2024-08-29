@@ -16,41 +16,43 @@
   text-align: center;
 }
 
-.become-tutor-first-section .left-side .left-main-heading {
-  color: #2f327d;
-  font-family: "Nunito Sans", Sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-  text-align: justify;
+.become-tutor-first-section .left-side .left-main-heading h2 {
+  color: #00046C;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.7rem;
+  text-align: left;
 }
 
 .bold-first {
-  font-weight: 900;
-  font-size: larger;
+  font-weight: 600;
 }
 
-.become-tutor-first-section .left-side .left-sub-heading {
-  font-size: 1.5em;
-  margin: 2% 0;
-  font-family: "Nunito Sans", Sans-serif;
+.become-tutor-first-section .left-side .left-sub-heading h5{
+  font-size: 1.3rem;
+  margin: 6% 0 2%;
+  font-family: "Raleway", Arial, sans-serif;
   text-align: justify;
+  color: #00046C;
 }
 
-.become-tutor-first-section .left-side .left-paragraph {
-  font-size: 1.2em;
+.become-tutor-first-section .left-side .left-paragraph p{
+  font-size: 1.1rem;
   line-height: 1.5;
   margin-bottom: 20px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   text-align: justify;
+  color: #00046C;
 }
 
 .become-tutor-first-section .right-side img {
   width: 80%;
+  height: 70%;
+  margin-left: 3rem;
 }
 
 .register-button {
   border-radius: 25px;
-  background-color: black;
+  background-color: #00046C;
   padding: 20px;
   cursor: pointer;
   display: inline-block;
@@ -60,13 +62,13 @@
   transition: background-color 0.3s;
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
-  font-family: "Nunito Sans", Sans-serif;
+  font-size: 1rem;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
 .register-button:hover {
-  background-color: #45b9ef;
-  color: black;
+  background-color: #060830;
+  color: white;
 }
 
 /* For screens up to 1200px */
@@ -120,6 +122,7 @@
     width: 80%;
   }
   .become-tutor-first-section .left-side .left-main-heading h2 {
+    text-align: center;
     font-size: 1.3rem;
     margin-bottom: 4%;
   }
@@ -127,11 +130,11 @@
     font-size: 1.2rem;
   }
   .become-tutor-first-section .left-side .left-paragraph p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .register-button {
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -147,14 +150,16 @@
   .become-tutor-first-section .right-side img {
     margin-left: 5%;
     margin-bottom: 10%;
-    width: 70%;
+    width: 22rem;
+    height: 18rem;
+    margin-left: -1rem;
   }
   .become-tutor-first-section .left-side .left-main-heading h2 {
     font-size: 1.3rem;
     margin-bottom: 4%;
   }
   .become-tutor-first-section .left-side .left-sub-heading h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .become-tutor-first-section .left-side .left-paragraph p {
     font-size: 1rem;
@@ -165,66 +170,62 @@
 }
 
 /* For screens up to 400px */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .become-tutor-first-section .left-side {
     order: 2;
     width: 90vw;
   }
   .become-tutor-first-section .right-side img {
-    margin-left: 20%;
+    /* margin-left: 20%;
     margin-bottom: 10%;
-    width: 50%;
+    width: 50%; */
   }
   .become-tutor-first-section .left-side .left-main-heading h2 {
-    font-size: 1.3rem;
     margin-bottom: 4%;
   }
-  .become-tutor-first-section .left-side .left-sub-heading h5 {
-    font-size: 1.2rem;
-  }
-  .become-tutor-first-section .left-side .left-paragraph p {
-    font-size: 1rem;
-  }
-  .register-button {
-    font-size: 1rem;
-  }
+  
 }
 
 /* second and fourth section of the become tutor page */
 
 .second-section-become-tutor {
-  margin: 20% 7% 5%;
+  margin: 10% 7% 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .secondsectioncss{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .second-section-become-tutor .left-side {
-  width: 50%;
   margin-right: 10%;
-  box-sizing: border-box;
 }
 
+/* .second-section-become-tutor .left-side img{
+  width: 40vw;
+  height: 100vh;
+  margin-right: 10%;
+  box-sizing: border-box;
+} */
+
+
 .second-section-become-tutor .right-side h1 {
-  color: #2f327d;
-  font-family: "Nunito Sans", Sans-serif;
-  font-size: 2.5em;
-  font-weight: 600;
+  color: #00046C;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.7rem;
   text-align: justify;
 }
 
 .second-section-become-tutor .right-side p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-bottom: 20px;
-  font-family: "Nunito Sans", Sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   text-align: justify;
+  color: #00046C;
 }
 
 .bold-second {
-  font-weight: 900;
-  font-size: larger;
+  font-weight: 600;
 }
 
 /* Media queries for responsiveness */
@@ -244,7 +245,7 @@
   }
 
   .second-section-become-tutor .right-side h1 {
-    font-size: 40px;
+    font-size: 1.7rem;
     line-height: 50px;
     margin-top: 3%;
   }
@@ -324,13 +325,13 @@
   }
 
   .second-section-become-tutor .right-side h1 {
-    font-size: 1.5rem;
-    margin-top: 3%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 10%;
   }
 
   .second-section-become-tutor .right-side p {
-    font-size: 1em;
-    line-height: 20px;
+    font-size: 1rem;
   }
 }
 
@@ -341,15 +342,6 @@
     height: 7rem;
   }
 
-  .second-section-become-tutor .right-side h1 {
-    font-size: 1.4rem;
-    margin-top: 3%;
-  }
-
-  .second-section-become-tutor .right-side p {
-    font-size: 1rem;
-    line-height: 20px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -372,12 +364,13 @@
 
   .second-section-become-tutor .left-side img {
     margin-top: 4%;
-    width: 12rem;
-    height: 10rem;
+    width: 22rem;
+    height: 18rem;
+    margin-left: -5rem;
   }
 
   .second-section-become-tutor .right-side h1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 5%;
     margin-bottom: -9%;
     line-height: 40px;
@@ -385,7 +378,6 @@
 
   .second-section-become-tutor .right-side p {
     font-size: 1rem;
-    line-height: 20px;
   }
 }
 
@@ -407,8 +399,10 @@
 
   .second-section-become-tutor .left-side img {
     margin-top: 4%;
-    width: 10rem;
-    height: 8rem;
+    width: 17rem;
+    height: 15rem;
+    text-align: center;
+    margin-left: -3.1rem;
   }
   .second-section-become-tutor .right-side h1 {
     font-size: 1.3rem;
@@ -436,12 +430,11 @@
   box-sizing: border-box;
 }
 
-.third-section .left-side .left-main-heading {
-  color: #2f327d;
-  font-family: "Nunito Sans", Sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
-  text-align: justify;
+.third-section .left-side .left-main-heading h2 {
+  color: #00046C;
+    font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.7rem;
+  text-align: left
 }
 
 .third-section .left-side .left-sub-heading {
@@ -451,13 +444,15 @@
   text-align: justify;
 }
 
-.third-section .left-side .left-paragraph {
+.third-section .left-side .left-paragraph p{
   font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 20px;
-  font-family: "Nunito Sans", Sans-serif;
+  color: #00046C;
+    font-family: "Raleway", Arial, sans-serif;
   text-align: justify;
 }
+
 
 .third-section .right-side img {
   width: 80%;
@@ -495,67 +490,46 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 6%;
   }
   .third-section .left-side {
     order: 2;
     width: 90vw;
   }
+  .third-section .right-side {
+    order: 1;
+  }
   .third-section .right-side img {
-    margin: -35% 0;
-    width: 80%;
+    width: 22rem;
+    height: 18rem;
+    margin-left: -5rem;
   }
   .third-section .left-side .left-main-heading h2 {
     font-size: 1.3rem;
+    margin-top: 2rem;
     margin-bottom: 4%;
+    text-align: center;
   }
   .third-section .left-side .left-paragraph p {
     font-size: 1rem;
+    margin: auto 1rem;
+    text-align: justify;
   }
 }
 
 /* For screens up to 500px */
 @media screen and (max-width: 500px) {
   .third-section {
-    padding: 6%;
+    /* padding: 6%; */
   }
   .third-section .left-side {
-    order: 2;
     width: 90vw;
   }
   .third-section .right-side img {
-    margin: -65% 0;
-    width: 70%;
+    /* margin: -65% 0; */
+    /* width: 70%; */
   }
   .third-section .left-side .left-main-heading h2 {
-    font-size: 1.3rem;
     margin-bottom: 4%;
-  }
-  .third-section .left-side .left-paragraph p {
-    font-size: 1rem;
-  }
-}
-
-/* For screens up to 400px */
-@media screen and (max-width: 400px) {
-  .third-section .left-side {
-    order: 2;
-    width: 90vw;
-  }
-  .third-section .right-side {
-    padding: -50%;
-    height: fit-content;
-  }
-  .third-section .right-side img {
-    margin-left: 20%;
-    width: 50%;
-  }
-  .third-section .left-side .left-main-heading h2 {
-    font-size: 1.3rem;
-    margin-bottom: 4%;
-  }
-  .third-section .left-side .left-paragraph p {
-    font-size: 1rem;
   }
 }
 
@@ -566,8 +540,15 @@
   margin: 15% 0 10%;
 }
 
+.why-with-us .heading h1{
+  font-size: 1.9rem;
+  font-weight: normal;
+  color: #00046C;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
 .why-with-us .background {
-  background-color: #2f327d;
+  background-color: #00046C;
   height: 10%;
   margin-top: 10%;
   display: flex;
@@ -585,13 +566,14 @@
 
 .why-with-us .left-side-img img {
   width: 30vw;
+  height: auto;
 }
 
 .why-with-us .right-side-info {
   color: #fff;
   font-family: "Nunito Sans", Sans-serif;
   text-align: justify;
-  font-size: 1.3rem;
+  text-align: center;
 }
 
 .why-with-us .right-side-info ul {
@@ -600,8 +582,12 @@
 }
 
 .why-with-us .right-side-info ul li {
-  margin-bottom: 10px;
+  color: white;
+  text-align: justify;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
   position: relative;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
 .why-with-us .right-side-info li::before {
@@ -670,6 +656,13 @@
 }
 
 @media screen and (max-width: 650px) {
+  .why-with-us .heading h1{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #00046C;
+      font-family: "Raleway", Arial, sans-serif;
+  }
+
   .why-with-us .right-side-info {
     font-size: 1rem;
   }
@@ -685,9 +678,9 @@
     padding: 0 7%;
   }
 
-  .why-with-us .right-side-info {
-    font-size: 0.9rem;
-  }
+  .why-with-us .right-side-info ul li{
+    font-size: 1rem;
+  } 
 }
 
 @media screen and (max-width: 450px) {
@@ -695,8 +688,8 @@
     margin-top: -1%;
     width: 80vw;
   }
-  .why-with-us .right-side-info {
-    font-size: 0.8rem;
+  .why-with-us .right-side-info ul li {
+    font-size: 1rem;
   }
 }
 
@@ -714,12 +707,14 @@
   color: #2f327d;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .enroll-title p{
   font-size: 1.2rem;
   font-weight: normal;
   padding: 0rem 10rem;
+  text-align: center;
 }
 
 @media (max-width: 1200px){
@@ -739,7 +734,7 @@
 @media (max-width: 600px){
   
 .enroll-title h1{
-  font-size: 2.2rem;
+  font-size: 1.3rem;
 }
   .enroll-title p{
     font-size: 1rem;
@@ -747,12 +742,6 @@
   }
 }
 
-@media (max-width: 400px){
-  .enroll-title p{
-    font-size: 1rem;
-    padding: 0rem 1rem;
-  }
-}
 
 .enroll-container .enroll-title {
   color: #2f327d;
@@ -870,167 +859,7 @@
   height: auto;
 }
 
-/* cards step by step tutor reg css */
 
-.stepCards {
-  padding: 2rem 2rem;
-}
-
-.flexbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.flexcard {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 20%;
-  align-items: baseline;
-  height: 400px;
-  border-radius: 20px;
-  height: auto;
-  padding-bottom: 2rem;
-}
-
-.flexcardNumber {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  margin: 10px 0px;
-  border-radius: 0px 50px 50px 0px;
-  font-family: "Jost", sans-serif;
-  color: black;
-  /* text-shadow: 0px 3px 5px black; */
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
-}
-
-.flexcardTitle {
-  font-family: "Jost", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0rem 1rem 0rem;
-}
-
-.flexcardNumber:before {
-  content: "";
-  width: 34px;
-  height: 90px;
-  position: absolute;
-  left: -33px;
-  top: 0px;
-  border-radius: 50px 0px 0px 50px;
-  z-index: -1;
-  background: -moz-linear-gradient(bottom, #95b7a2, #aed2bc);
-}
-
-.flexcardNumber:after {
-  content: "";
-  width: 25px;
-  height: 40px;
-  position: absolute;
-  left: -25px;
-  bottom: -40px;
-  border-radius: 50px 0px 0px 50px;
-  z-index: -1;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 10px auto;
-}
-
-img.flexcardimgItem {
-  width: 50%;
-}
-
-/* BLUE CARD */
-
-.flexcardBlue {
-  background: #f7ffff;
-  box-shadow: 4px 8px 1px #f2ac25;
-}
-
-.flexcardNumberBlue {
-  background: #fdfffe;
-  background: -webkit-linear-gradient(right, #fdfffe, #f2ac25);
-  background: -moz-linear-gradient(right, #fdfffe, #f2ac25);
-  background: linear-gradient(to left, #fdfffe, #f2ac25);
-  box-shadow: 0px 2px 2px #f2ac25;
-}
-
-.flexcardNumberBlue:before {
-  background: #f2ac25;
-}
-
-.flexcardNumberBlue:after {
-  background: #f2ac25;
-}
-
-.step2Img {
-  padding: 0rem 0.2rem;
-  margin: 0rem auto;
-}
-.step2Img img {
-  height: 210px;
-  width: auto;
-  border-radius: 10px;
-}
-
-@media (max-width: 1472px) {
-  .step2Img img {
-    height: 180px;
-  }
-}
-
-@media (max-width: 1275px) {
-  .step2Img img {
-    height: 160px;
-  }
-}
-
-/* RESPONSİVE */
-
-@media only screen and (max-width: 1000px) {
-  .flexcard {
-    width: 35%;
-    margin-top: 20px;
-  }
-
-  img.flexcardimgItem {
-    width: 30%;
-  }
-  .step2Img img {
-    height: 210px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .flexcard {
-    width: 70%;
-    align-items: center;
-  }
-}
-
-@media (max-width: 476px) {
-  .stepCards {
-    padding: 2rem 0.5rem;
-  }
-  .flexcard {
-    width: 80%;
-    align-items: center;
-  }
-}
 
 /* download button css */
 
@@ -1052,12 +881,12 @@ img.flexcardimgItem {
   background: #226bb4;
   /* background: #ccba33; */
   border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; */
 }
 
 .button2:active {
   color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+  /* box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; */
 }
 
 .button2:before {
@@ -1092,7 +921,7 @@ img.flexcardimgItem {
 
 .button2:hover {
   color: #ffffff;
-  border: 1px solid #d94f34;
+  /* border: 1px solid #d94f34; */
 }
 
 .button2:hover:before {
@@ -1336,3 +1165,245 @@ color: #2f327d;
 }
 
 /* faq section ends */
+
+
+
+
+
+
+/* _------------------ step by step cards */
+
+/* cards step by step tutor reg css */
+.stepsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.stepCard {
+  background-color: #00046C;
+  color: white;
+  border-radius: 15px;
+  width: 22%;
+  margin: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stepHeader {
+  position: relative;
+  background-color: #00046C;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  height: 50px;
+}
+
+.stepNumber {
+  background-color: #F39C12;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #00046C;
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  border-radius: 5px;
+}
+
+.stepContent {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stepContent h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.stepContent img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .stepCard {
+    width: 45%;
+  }
+}
+
+@media (max-width: 700px) {
+  .stepCard {
+    width: 90%;
+  }
+
+  .stepNumber {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+
+  .stepContent h3 {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* .stepCards {
+  padding: 2rem 2rem;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flexcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20%;
+  align-items: baseline;
+  height: 400px;
+  border-radius: 20px;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+.flexcardNumber {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px 0px;
+  border-radius: 0px 50px 50px 0px;
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+}
+
+.flexcardTitle {
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0rem 1rem 0rem;
+}
+
+.flexcardNumber:before {
+  content: "";
+  width: 34px;
+  height: 90px;
+  position: absolute;
+  left: -33px;
+  top: 0px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: -1;
+  background: -moz-linear-gradient(bottom, #95b7a2, #aed2bc);
+}
+
+.flexcardNumber:after {
+  content: "";
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  left: -25px;
+  bottom: -40px;
+  border-radius: 50px 0px 0px 50px;
+  z-index: -1;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+img.flexcardimgItem {
+  width: 50%;
+}
+
+BLUE CARD
+
+.flexcardBlue {
+  background: #f7ffff;
+  box-shadow: 4px 8px 1px #00046C;
+}
+
+.flexcardNumberBlue {
+  background: #00046C;
+}
+
+.flexcardNumberBlue:before {
+  background: #00046C;
+}
+
+.flexcardNumberBlue:after {
+  background: #00046C;
+}
+
+.step2Img {
+  padding: 0rem 0.2rem;
+  margin: 0rem auto;
+}
+.step2Img img {
+  height: 210px;
+  width: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1472px) {
+  .step2Img img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 1275px) {
+  .step2Img img {
+    height: 160px;
+  }
+}
+
+RESPONSİVE
+
+@media only screen and (max-width: 1000px) {
+  .flexcard {
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  img.flexcardimgItem {
+    width: 30%;
+  }
+  .step2Img img {
+    height: 210px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .flexcard {
+    width: 70%;
+    align-items: center;
+  }
+}
+
+@media (max-width: 476px) {
+  .stepCards {
+    padding: 2rem 0.5rem;
+  }
+  .flexcard {
+    width: 80%;
+    align-items: center;
+  }
+} */
