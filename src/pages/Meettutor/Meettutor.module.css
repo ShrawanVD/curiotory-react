@@ -15,10 +15,10 @@
   justify-content: center;
 }
 .containerFluid .leftSection h2 {
-  color: rgb(37, 37, 113);
-  font-family: Raleway, Arial, sans-serif;
   font-weight: 800;
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
   margin-bottom: 1rem;
 }
 .containerFluid .leftSection .formGroup {
@@ -26,10 +26,10 @@
   padding: 1rem 2rem 1rem;
 }
 .containerFluid .leftSection .formGroup label {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: rgb(23, 100, 133);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
 }
 .containerFluid .leftSection button {
   margin: 1rem 0rem;
@@ -106,14 +106,16 @@
   line-height: 2.5rem;
 }
 .infoText h2 {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 700;
-  color: rgb(150, 53, 53);
+  font-size: 1.4rem;
+    color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
+  font-weight: 600;
 }
 .infoText p {
   margin: 0;
-  font-size: 18px;
-  font-family: Raleway, Arial, sans-serif;
+  font-size: 1.1rem;
+    color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
 }
 
 .videoButton {
@@ -125,24 +127,89 @@
   flex: 1;
 }
 
+/* .videoButton iframe {
+  width: 70%;
+  height: 17rem;
+  border-radius: 15px;
+}
+
+.customButton{
+  width: 70%;
+}
+
+.customButton button {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.3rem;
+  width: 48%;
+  color: #00046C;
+  border: 1px solid transparent;
+  font-family: "Raleway", Arial, sans-serif;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.btn1{
+  margin-right: 5px;
+}
+.btn2{
+  margin-left: 5px;
+} */
+
+.videoButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .videoButton iframe {
   width: 70%;
   height: 17rem;
   border-radius: 15px;
 }
 
+.customButton {
+  display: flex;
+  justify-content: space-between; /* Ensure buttons are spaced out evenly */
+  width: 70%; /* Same width as iframe */
+}
+
+.customButton a {
+  flex: 1; /* Ensure each button takes equal space */
+  margin: 0 0.3rem; /* Adjust spacing between buttons */
+}
+
 .customButton button {
-  border: 1px solid white;
-  font-family: Raleway, Arial, sans-serif;
-  margin-right: 10px;
-  padding: 0.3rem 0.6rem;
+  width: 100%; /* Make buttons take full width of their container */
+  padding: 0.5rem; /* Adjust padding as needed */
+  color: #00046C;
+  border: 1px solid transparent;
+  font-family: "Raleway", Arial, sans-serif;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
 }
+
 .customButton button:hover {
-  background-color: #3f51b5;
+  background-color: #f0f0f0; /* Change background on hover */
+  color: #000; /* Change text color on hover */
+}
+
+
+
+
+/* .customButton button {
+  margin-right: 10px;
+  padding: 0.3rem 0.6rem;
+  color: #00046C;
+  border: 1px solid transparent;
+  font-family: "Raleway", Arial, sans-serif;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+} */
+.customButton button:hover {
+  background-color: #00046C;
   color: rgb(230, 226, 226);
-  border: 1px solid #3f51b5;
+  border: 1px solid #00046C;
 }
 
 /* Responsive adjustments */
@@ -162,10 +229,43 @@
     width: 90%;
   }
 
+  .customButton{
+    width: 100%;
+  }
+
+  .customButton button {
+    padding: 0.3rem;
+  }
+  
+
   .photoInfo img {
     width: auto;
     height: auto;
   }
+
+  .infoText h2 {
+    font-size: 1rem;
+      color: #00046C;;
+      font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
+  }
+  .infoText p {
+    margin: 0;
+    font-size: 0.9rem;
+      color: #00046C;;
+      font-family: "Raleway", Arial, sans-serif;
+  }
+
+  .leftSection h2{
+    font-size: 1.3rem;
+  }
+
+  .containerFluid .leftSection .formGroup label{
+    font-size: 1.1rem;
+  }
+
+
+
 }
 
 /* Further small screen adjustments */
@@ -197,13 +297,24 @@
     height: 60%;
   }
   .infoText h2 {
-    font-size: 24px;
+    font-size: 1.8rem;
+    color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
   }
   .infoText p {
-    font-size: 15px;
+    font-size: 1.1rem;
+    color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
   }
   .videoButton iframe {
     width: 95%;
+  }
+  .customButton{
+    width: 97%;
+  }
+
+  .customButton button {
+    padding: 0.3rem;
   }
 }
 @media screen and (max-width: 1101px) {
@@ -430,4 +541,64 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+
+
+
+/* pagination */
+
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.paginationControls button {
+  background-color: #00046C;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.paginationControls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginationControls .icon {
+  font-size: 18px;
+}
+
+.paginationControls .icon-prev,
+.paginationControls .icon-next {
+  display: inline-block;
+  margin: 0;
+}
+
+.paginationControls .icon-prev::before {
+  content: "\f053"; /* FontAwesome left arrow */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.paginationControls .icon-next::before {
+  content: "\f054"; /* FontAwesome right arrow */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+
+.noResultsMessage{
+  text-align: center;
+  font-size: 1.1rem;
+  color: #00046C;;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 600;
 }
