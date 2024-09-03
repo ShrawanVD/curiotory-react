@@ -257,6 +257,14 @@
 
 }
 
+@media (max-width:1650px){
+  .covernewdiv{
+    padding: 5rem 0px 50px;
+  }
+}
+  
+
+
 @media (max-width:1400px){
   .covernewdiv {
     padding: 7rem 0px 50px;

@@ -1,3 +1,7 @@
+.newnewnav{
+  z-index: 10000;
+}
+
 .navvbarContainer {
   background: transparent;
   margin-bottom: 1rem;
@@ -203,6 +207,7 @@
 
   .dropdownContent {
     grid-template-columns: repeat(2, 1fr); 
+    z-index: 100000000000;
   }
 
   .dropdownContent a {

@@ -1,5 +1,6 @@
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import newcover from "./Newcover.module.css";
+import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Courselist from "../../components/CourseList/Courselist";
@@ -102,6 +103,49 @@ function Newcover() {
 
   return (
     <>
+
+<Helmet>
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Learn Korean",
+          "item": "https://qurocity.ai/korean"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn English",
+          "item": "https://qurocity.ai/english"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Learn French",
+          "item": "https://qurocity.ai/french"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Learn German",
+          "item": "https://qurocity.ai/german"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Learn Spanish",
+          "item": "https://qurocity.ai/spanish"
+        }
+      ]
+    })}
+  </script>
+</Helmet>
+
+
       {/* mascot splash screen */}
       {showDiv1 && (
         <div>
@@ -119,7 +163,7 @@ function Newcover() {
       )}
       {showDiv2 && (
         <div>
-          <Newnavbar />
+          <Newnavbar className={newcover.newnewnav} />
           {/* cover page  */}
           <div className={newcover.covernewdiv}>
             <div className={newcover.coverleftnewside}>
@@ -229,9 +273,12 @@ function Newcover() {
                   className={newcover.nextIconContainer}
                   onClick={handleCardClick}
                 >
-                  <i style={{
-                    color:"#00046C"
-                  }} class="fa-solid fa-chevron-right div_next"></i>
+                  <i
+                    style={{
+                      color: "#00046C",
+                    }}
+                    class="fa-solid fa-chevron-right div_next"
+                  ></i>
                 </div>
               </div>
             </div>
@@ -360,7 +407,8 @@ function Newcover() {
 
           <a
             href="https://api.whatsapp.com/send?phone=9373902340&text=Hello%21%20Can you assist me in..."
-            target="_blank" className={newcover.whtsapp_href}
+            target="_blank"
+            className={newcover.whtsapp_href}
           >
             <div className={newcover.whatsapp}>
               <img
@@ -435,8 +483,8 @@ function Newcover() {
                     revolutionizing edutech, Qurocity has been able to cater to
                     people all over the world, who are willing to make a change
                     in their life through language learning and that's how
-                    Qurocity became the forefront of language education. To
-                    dive into the journey of Qurocity read more :{" "}
+                    Qurocity became the forefront of language education. To dive
+                    into the journey of Qurocity read more :{" "}
                     <a
                       target="_blank"
                       href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
@@ -493,23 +541,21 @@ function Newcover() {
                     </strong>
                     <br />
                     <br />
-                    At Qurocity, we are proud to be ISO certified,
-                    demonstrating our unwavering commitment to quality and
-                    excellence in language education. This prestigious
-                    compliance certification reflects our dedication to
-                    providing top-notch courses, reliable service, and
-                    continuous improvement. With precise quality assurance
-                    systems in place, our ISO certification ensures that you
-                    receive a world-class learning experience according to your
-                    needs. Trust Qurocity to be your partner in achieving your
-                    language learning goals with the assurance of our trusted
-                    and credible standards.
+                    At Qurocity, we are proud to be ISO certified, demonstrating
+                    our unwavering commitment to quality and excellence in
+                    language education. This prestigious compliance
+                    certification reflects our dedication to providing top-notch
+                    courses, reliable service, and continuous improvement. With
+                    precise quality assurance systems in place, our ISO
+                    certification ensures that you receive a world-class
+                    learning experience according to your needs. Trust Qurocity
+                    to be your partner in achieving your language learning goals
+                    with the assurance of our trusted and credible standards.
                   </p>
                 </div>
               </div>
 
               <hr className={newcover.newsppr_hr} />
-              
             </div>
           </div>
 
@@ -905,9 +951,13 @@ function Newcover() {
           <div className="stand-out-section">
             <div className="stand-out-left-section">
               <div className="stand-out-text">
-                <h2 style={{
-                  marginBottom:"2rem"
-                }}>Why we stand out</h2>
+                <h2
+                  style={{
+                    marginBottom: "2rem",
+                  }}
+                >
+                  Why we stand out
+                </h2>
               </div>
               <div className="stand-out-images">
                 <LazyLoad offset={100}>
@@ -1007,10 +1057,12 @@ function Newcover() {
             <div className={newcover.foreignContainer}>
               <h2 className={newcover.foreignTitle}>
                 11{" "}
-                <span className={newcover.foreignHighlight} style={{
-                  fontWeight:"bold",
-
-                }}>
+                <span
+                  className={newcover.foreignHighlight}
+                  style={{
+                    fontWeight: "bold",
+                  }}
+                >
                   foreign language
                 </span>{" "}
                 learning courses for unlocking attractive opportunities.
@@ -1127,10 +1179,14 @@ function Newcover() {
 
           <div className="review-swiper-css">
             <div className="stand-out-text">
-              <h4 style={{
-                fontSize:"2rem",
-                color:"#00046C"
-              }}>What Learner&apos;s say!</h4>
+              <h4
+                style={{
+                  fontSize: "2rem",
+                  color: "#00046C",
+                }}
+              >
+                What Learner&apos;s say!
+              </h4>
             </div>
             <Swiper
               // install Swiper modules
@@ -1230,9 +1286,14 @@ function Newcover() {
           {/* <!-- FAQ SECTION --> */}
           <div>
             <div className="faqHeadingDivCss">
-              <h4 style={{
-                color:"#00046C"
-              }} className="faq-heading">Frequently Asked Questions</h4>
+              <h4
+                style={{
+                  color: "#00046C",
+                }}
+                className="faq-heading"
+              >
+                Frequently Asked Questions
+              </h4>
             </div>
             <div className="body-faq">
               <div className="image-container">

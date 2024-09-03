@@ -7,6 +7,202 @@ import Accordian3Careers from "../Accordian3Careers";
 import { useEffect } from "react";
 
 function Careers() {
+
+
+  
+  const structuredData = [
+    {
+      "@context" : "https://schema.org",
+      "@type" : "JobPosting",
+      "title" : "English Teacher",
+      "description" : "Join our team as an English Teacher with 24/7 rotational shifts. Work from our office and engage with students dynamically.",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "name" : "Job ID",
+        "value" : "1",
+      },
+      "datePosted" : "2024-09-03",  // Use the actual posting date
+      "employmentType" : "FULL_TIME",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Qurocity",
+        "sameAs" : "https://qurocity.com",
+      },
+      "jobLocation" : {
+        "@type" : "Place",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressLocality": "Pune",
+          "addressRegion" : "MH",
+          "addressCountry" : "IN",
+        },
+      },
+      "baseSalary" : {
+        "@type" : "MonetaryAmount",
+        "currency" : "INR",
+        "value" : {
+          "@type": "QuantitativeValue",
+          "value" : 540000,
+          "unitText" : "YEAR",
+        },
+      },
+      "workHours": "24/7 rotational shifts",
+      "workLocation" : "Work From Office",
+    },
+    {
+      "@context" : "https://schema.org",
+      "@type" : "JobPosting",
+      "title" : "Tamil Language Interpreter",
+      "description" : "We are looking for a Tamil Language Interpreter for Colorbar Cosmetics Private Limited. The role is for 3 months with 24/7 rotational shifts.",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "name" : "Job ID",
+        "value" : "2",
+      },
+      "datePosted" : "2024-09-03",
+      "employmentType" : "CONTRACTOR",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Colorbar Cosmetics Private Limited",
+      },
+      "jobLocation" : {
+        "@type" : "Place",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressLocality" : "Pune",
+          "addressRegion" : "MH",
+          "addressCountry" : "IN",
+        },
+      },
+      "baseSalary" : {
+        "@type" : "MonetaryAmount",
+        "currency" : "INR",
+        "value" : {
+          "@type" : "QuantitativeValue",
+          "value" : 420000,
+          "unitText" : "YEAR",
+        },
+      },
+      "workHours" : "24/7 rotational shifts",
+      "employmentDuration" : "3 Months",
+    },
+    {
+      "@context" : "https://schema.org",
+      "@type" : "JobPosting",
+      "title" : "Hindi Language Interpreter",
+      "description" : "Join Colorbar Cosmetics Private Limited as a Hindi Language Interpreter for a 3-month contract role with 24/7 rotational shifts.",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "name" : "Job ID",
+        "value" : "3",
+      },
+      "datePosted" : "2024-09-03",
+      "employmentType" : "CONTRACTOR",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Colorbar Cosmetics Private Limited",
+      },
+      "jobLocation" : {
+        "@type" : "Place",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressLocality" : "Pune",
+          "addressRegion" : "MH",
+          "addressCountry" : "IN",
+        },
+      },
+      "baseSalary" : {
+        "@type" : "MonetaryAmount",
+        "currency" : "INR",
+        "value" : {
+          "@type" : "QuantitativeValue",
+          "value" : 420000,
+          "unitText" : "YEAR",
+        },
+      },
+      "workHours" : "24/7 rotational shifts",
+      "employmentDuration" : "3 Months",
+    },
+    {
+      "@context" : "https://schema.org",
+      "@type" : "JobPosting",
+      "title" : "Inside Sales Executive",
+      "description" : "Join our dynamic team as an Inside Sales Executive with rotational shifts from 7 AM to 9 PM. Fluency in English and Hindi is a must.",
+      "identifier" :{
+        "@type" : "PropertyValue",
+        "name" : "Job ID",
+        "value" : "4",
+      },
+      "datePosted" : "2024-09-03",
+      "employmentType" : "FULL_TIME",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Qurocity",
+        "sameAs" : "https://qurocity.com",
+      },
+      "jobLocation" : {
+        "@type" : "Place",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressLocality" : "Pune",
+          "addressRegion" : "MH",
+          "addressCountry" : "IN",
+        },
+      },
+      "baseSalary" : {
+        "@type" : "MonetaryAmount",
+        "currency" : "INR",
+        "value" : {
+          "@type" : "QuantitativeValue",
+          "value" : 25000 * 12,
+          "unitText" : "YEAR",
+        },
+      },
+      "workHours" : "7 AM to 9 PM (rotational)",
+    },
+    {
+      "@context" : "https://schema.org",
+      "@type" : "JobPosting",
+      "title" : "French Language Interpreter",
+      "description" : "We are hiring a French Language Interpreter for Colorbar Cosmetics Private Limited for a 3-month contract role with 24/7 rotational shifts.",
+      "identifier" : {
+        "@type" : "PropertyValue",
+        "name" : "Job ID",
+        "value" : "5",
+      },
+      "datePosted" : "2024-09-03",
+      "employmentType" : "CONTRACTOR",
+      "hiringOrganization" : {
+        "@type" : "Organization",
+        "name" : "Colorbar Cosmetics Private Limited",
+      },
+      "jobLocation" : {
+        "@type" : "Place",
+        "address" : {
+          "@type" : "PostalAddress",
+          "addressLocality" : "Pune",
+          "addressRegion" : "MH",
+          "addressCountry" : "IN",
+        },
+      },
+      "baseSalary" : {
+        "@type" : "MonetaryAmount",
+        "currency" : "INR",
+        "value" : {
+          "@type" : "QuantitativeValue",
+          "value" : 1000000,
+          "unitText" : "YEAR",
+        },
+      },
+      "workHours" : "24/7 rotational shifts",
+      "employmentDuration" : "3 Months",
+    }
+  ];
+
+
+
+
+
   useEffect(() => {
     addGTM();
   }, []);
@@ -157,8 +353,7 @@ function Careers() {
       {/* for meta tags  */}
       <Helmet>
         <title>
-          Build Your Dream Language Career With Qurocity : Foreign Language
-          Jobs
+          Build Your Dream Language Career With Qurocity : Foreign Language Jobs
         </title>
         <meta
           name="description"
@@ -169,6 +364,9 @@ Apply for remote language jobs or work with us and give an elevated shift to you
           name="keywords"
           content="language career, foreign language jobs, language career opportunities, language jobs remote, linguistics career"
         />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
 
       <Newnavbar />
