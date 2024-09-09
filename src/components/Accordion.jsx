@@ -352,7 +352,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Email: support@curiotory.com
+            Email: partner@qurocity.ai
             <br />
             9373902340
           </Typography>

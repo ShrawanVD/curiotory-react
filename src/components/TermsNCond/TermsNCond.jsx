@@ -514,7 +514,7 @@ function TermsNCond() {
             <h5>CONTACT INFORMATION :-</h5>
             <p>
               Questions about the Terms of Service should be sent to us at
-              support@curiotory.com
+              partner@qurocity.ai
             </p>
           </div>
         </div>

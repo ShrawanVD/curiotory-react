@@ -40,7 +40,7 @@ const NotFoundDev = ({ message = "Page Under Development" }) => (
           marginLeft:"1rem",
           marginRight:"1rem"
         }}>
-          If you need further assistance, please mail us at: <a href="mailto:support@curiotory.com">support@curiotory.com</a>.
+          If you need further assistance, please mail us at: <a href="mailto:partner@qurocity.ai">partner@qurocity.ai</a>.
         </p>
       </div>
     </div>

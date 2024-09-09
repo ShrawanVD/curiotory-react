@@ -46,7 +46,7 @@ function Refund() {
               </li>
               <li>
                 If you wish to cancel a course, then a refund request email
-                has to be sent to support@curiotory.com from your registered
+                has to be sent to partner@qurocity.ai from your registered
                 email ID with all the student details including Name, School,
                 Class, Phone number, bank details for crediting the fees and
                 the course you wish to cancel. A Refund Request will be deemed

@@ -46,7 +46,7 @@ function PrivacyPolicy() {
               If you are reading this, it’s because you want to know what information we are collecting about
               users (“You”) on www.qurocity.ai, and on Qurocity App (“App”), what we are doing with it,
               and what your options are. If you have any questions or concerns after reading this, please
-              email us at support@curiotory.com.
+              email us at partner@qurocity.ai.
             </p>
             <p>
               This Privacy Policy (“Policy”) applies to the services extended by the Qurocity Site and App
@@ -203,7 +203,7 @@ function PrivacyPolicy() {
             <p>
               The Service Provider will retain User Provided data for as long as you use the Application and
               for a reasonable time thereafter. If you&apos;d like us to delete User Provided Data that you have
-              provided via the Application, please contact us at support@curiotory.com and we will respond in
+              provided via the Application, please contact us at partner@qurocity.ai and we will respond in
               a reasonable time.
 
             </p>
@@ -278,7 +278,7 @@ function PrivacyPolicy() {
             </h5>
             <p>
               If you still have questions regarding privacy issues and how we handle your information that we
-              store, please feel free to reach us at support@curiotory.com
+              store, please feel free to reach us at partner@qurocity.ai
 
             </p>
           </div>

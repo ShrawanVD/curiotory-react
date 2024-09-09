@@ -18,7 +18,7 @@ function Footer() {
   useEffect(() => {
     // Ensure emailRef is initialized before accessing current property
     if (emailRef.current) {
-      const email = "Support@curiotory.com".split("").reverse().join("");
+      const email = "partner@qurocity.ai".split("").reverse().join("");
       emailRef.current.textContent = email.split("").reverse().join("");
       emailRef.current.href = `mailto:${email.split("").reverse().join("")}`;
     }

@@ -107,7 +107,7 @@ function Contact() {
               E-mail Address -
   <a style={{
                 color:"#00046C"
-              }} href="mailto:Support@curiotory.com"> Support@curiotory.com</a>
+              }} href="mailto:partner@qurocity.ai"> partner@qurocity.ai</a>
             </span>
           </p>
         </div>

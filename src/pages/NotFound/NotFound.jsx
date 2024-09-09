@@ -81,7 +81,7 @@ const NotFound = ({ message = "Page Not Found" }) => (
           }}
         >
           If you need further assistance, please mail us at:{" "}
-          <a href="mailto:support@curiotory.com">support@curiotory.com</a>.
+          <a href="mailto:partner@qurocity.ai">partner@qurocity.ai</a>.
         </p>
       </div>
     </div>
