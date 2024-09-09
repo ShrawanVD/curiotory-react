@@ -121,7 +121,8 @@ function Footer() {
                 <ul>
                   <li>
                     <a
-                      href="mailto:SupportATcuriotoryDOTcom"
+                      // href="mailto:SupportATcuriotoryDOTcom"
+                      href="mailto:partnerATqurocityDOTai"
                       onClick={handleClick}
                       target="_blank"
                       rel="noopener noreferrer"
