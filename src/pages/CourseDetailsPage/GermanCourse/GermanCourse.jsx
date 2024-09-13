@@ -468,6 +468,9 @@ const GermanCourse = () => {
           content="german learning, learn german, german language app, german language
  course, german Learning classes, learn german online, german language learning"
         />
+        <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/course/german" />
+      </Helmet>
       </Helmet>
 
       <div>

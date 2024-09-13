@@ -6,6 +6,7 @@ import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import config from '../../services/config';
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   const handleSubmit = async (e) => {
@@ -88,6 +89,9 @@ function Contact() {
 
   return (
     <>
+    <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/contactus" />
+      </Helmet>
       <Newnavbar />
       <div className={Contactcss.contactUs}>
         <div className={Contactcss.contactusDetails}>

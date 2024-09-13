@@ -174,6 +174,7 @@ Join Online Arabic Classes Now!
             name="keywords"
             content="learn arabic online, learn arabic language, arabic learning app, learning arabic for beginners, arabic learning for kids, arabic learning course free"
           />
+          <link rel="canonical" href="https://qurocity.ai/arabic" />
         </Helmet>
 
         {/* new navbar */}

@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const sampleData = [
   {
     id: 1,
@@ -424,6 +425,9 @@ function CheckoutPg() {
   // --------------------------------- actual code --------------------------------------
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/checkout" />
+      </Helmet>
       <Navv />
       <div className={pay.checkout_pg}>
         {/* left section */}

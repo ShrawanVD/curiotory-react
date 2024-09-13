@@ -41,14 +41,6 @@ function Newnavbar() {
               />
             </a>
           </div>
-          {/* <div className={newnavv.headerRight}>
-            <a
-              href="https://qurocity.ai/lms/"
-              className={newnavv.studentPortal}
-            >
-              Student Portal
-            </a>
-          </div> */}
 
           <a href="https://qurocity.ai/lms/" className={newnavv.Btn}>
             <div className={newnavv.sign}>
@@ -81,9 +73,11 @@ function Newnavbar() {
             &#9776;
           </button>
         </header>
+
         <div className={newnavv.imgline}>
           <img src="/navbar/navbarLine.png" alt="Qurocity color line" />
         </div>
+
         <div
           className={`${newnavv.navList} ${sideNavOpen ? newnavv.showNav : ""}`}
         >

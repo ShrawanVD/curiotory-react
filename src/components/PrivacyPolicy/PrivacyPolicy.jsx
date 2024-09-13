@@ -4,6 +4,7 @@ import ppcss from './PrivacyPolicy.module.css'
 import Newnavbar from '../NewNavbar/Newnavbar';
 import Footer2 from '../Footer/Footer2';
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function PrivacyPolicy() {
   useEffect(() => {
@@ -26,6 +27,9 @@ function PrivacyPolicy() {
   };
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/privacy" />
+      </Helmet>
         <Newnavbar/>
         <div className={ppcss.continerBackground}>
     <div className={ppcss.container}>

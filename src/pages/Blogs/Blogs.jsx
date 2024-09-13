@@ -82,6 +82,7 @@ function Blogs() {
           name="keywords"
           content="language blogs, language blog topics, language articles, linguistics blogs, language bloggers, language learning "
         />
+        <link rel="canonical" href={`https://qurocity.ai/blogsId?id=${postId}`} />
       </Helmet>
       <Newnavbar />
       <div className={Blogscss.blogbackground}>

@@ -105,6 +105,7 @@ function Newcover() {
     <>
 
 <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/" />
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org/",

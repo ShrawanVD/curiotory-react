@@ -4,6 +4,7 @@ import termscss from './TermsNCond.module.css'
 import Newnavbar from '../NewNavbar/Newnavbar';
 import Footer2 from '../Footer/Footer2';
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function TermsNCond() {
   useEffect(() => {
@@ -26,6 +27,9 @@ function TermsNCond() {
   };
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/terms" />
+      </Helmet>
         <Newnavbar />
         <div className={termscss.continerBackground}>
     <div className={termscss.container}>

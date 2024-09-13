@@ -4,6 +4,9 @@ import Aboutuscss from "./About.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import { useEffect } from "react";
+
+import { Helmet } from "react-helmet";
+
 function Aboutus() {
   useEffect(() => {
     addGTM();
@@ -26,6 +29,12 @@ function Aboutus() {
   };
   return (
     <>
+
+
+<Helmet>
+        <link rel="canonical" href="https://qurocity.ai/aboutus" />
+      </Helmet>
+
       {/* <Covernav /> */}
       <Newnavbar />
       {/* <!-- Heading section - top --> */}

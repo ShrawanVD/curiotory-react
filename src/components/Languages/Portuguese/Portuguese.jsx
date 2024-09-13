@@ -172,6 +172,7 @@ Join Online Portuguese Classes Now!
             name="keywords"
             content="learn portuguese , learn  portuguese online, portuguese learning app,"
           />
+          <link rel="canonical" href="https://qurocity.ai/portuguese" />
         </Helmet>
 
         {/* new navbar */}

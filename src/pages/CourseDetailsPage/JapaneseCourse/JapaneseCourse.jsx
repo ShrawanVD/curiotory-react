@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const JapaneseCourse = () => {
 
@@ -307,6 +308,9 @@ const JapaneseCourse = () => {
 
   return (
     <>
+    <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/course/japanese" />
+      </Helmet>
       <div>
         {/* cover page  */}
 

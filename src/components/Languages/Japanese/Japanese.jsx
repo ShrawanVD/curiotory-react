@@ -163,6 +163,7 @@ Join Online Japanese Classes Now!
             name="keywords"
             content="learn japanese online, learn japanese online free, learn japanese, learn japanese app, japanese learning website, japanese learning app"
           />
+          <link rel="canonical" href="https://qurocity.ai/japanese" />
         </Helmet>
 
         {/* new navbar */}

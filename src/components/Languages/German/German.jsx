@@ -172,6 +172,7 @@ function German() {
             name="keywords"
             content="german language course, german learning app, learn german online, german language learning, german language learning app, german language learning online"
           />
+           <link rel="canonical" href="https://qurocity.ai/german" />
         </Helmet>
 
         {/* new navbar */}

@@ -4,6 +4,7 @@ import refundcss from './Refund.module.css';
 import Newnavbar from '../NewNavbar/Newnavbar';
 import Footer2 from '../Footer/Footer2';
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function Refund() {
   useEffect(() => {
@@ -26,6 +27,9 @@ function Refund() {
   };
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/refund" />
+      </Helmet>
         <Newnavbar />
         <div className={refundcss.continerBackground}>
     <div className={refundcss.container}>

@@ -9,6 +9,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 import Reviewcourse from "../../../components/Reviewcourse/Reviewcourse";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const KoreanCourse = () => {
   // reviews
@@ -499,6 +500,10 @@ const KoreanCourse = () => {
 
   return (
     <>
+
+<Helmet>
+        <link rel="canonical" href="https://qurocity.ai/course/korean" />
+      </Helmet>
       <div>
         {/* cover page  */}
 

@@ -121,6 +121,7 @@ function Russian() {
             name="keywords"
             content="learn Russian Online, learn russian online course, learn russian free, russian learning for beginners, russian learning online, russian learning app"
           />
+          <link rel="canonical" href="https://qurocity.ai/russian" />
         </Helmet>
 
         {/* new navbar */}

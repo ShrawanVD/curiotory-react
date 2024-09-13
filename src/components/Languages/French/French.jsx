@@ -173,6 +173,7 @@ function French() {
             name="keywords"
             content="french language course online, french language course, french learning app, french learning website, learn french online, french phrases to learn"
           />
+          <link rel="canonical" href="https://qurocity.ai/french" />
         </Helmet>
 
         {/* new navbar */}

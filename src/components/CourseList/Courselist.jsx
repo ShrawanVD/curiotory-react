@@ -49,7 +49,6 @@ function Courselist() {
             <a href="course/german">
               <div className={list.courseLangCard}>
                 <img src="./Course/german.png" alt="German" />
-                <h4>German</h4>
               </div>
             </a>
             <a href="course/english">

@@ -172,6 +172,7 @@ function English() {
             name="keywords"
             content="learn english, learn english online, english learning app, english learning course, Learning English speaking, english speaking app"
           />
+          <link rel="canonical" href="https://qurocity.ai/english" />
         </Helmet>
 
         {/* new navbar */}

@@ -4,6 +4,7 @@ import Meetcss from "./Meettutor.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
 import config from "../../services/config";
+import { Helmet } from "react-helmet";
 
 function Meettutor() {
   const [allTeachers, setAllTeachers] = useState([]); // Store all fetched teachers
@@ -102,6 +103,9 @@ function Meettutor() {
 
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/meetthetutor" />
+      </Helmet>
       <Newnavbar />
       <div className={Meetcss.containerFluid}>
         <div className="row">

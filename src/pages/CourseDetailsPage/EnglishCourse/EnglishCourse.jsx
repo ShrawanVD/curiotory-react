@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const EnglishCourse = () => {
   //  course highlights section
@@ -449,12 +450,12 @@ const EnglishCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -466,6 +467,10 @@ const EnglishCourse = () => {
 
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/course/english" />
+      </Helmet>
+
       <div>
         {/* cover page  */}
 

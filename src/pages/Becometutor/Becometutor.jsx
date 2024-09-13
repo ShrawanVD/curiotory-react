@@ -40,6 +40,9 @@ Qurocity is the place for you! Join our network of the best language tutors from
           name="keywords"
           content="language tutor,  language tutor jobs, language tutor jobs online, foreign language tutor jobs, foreign language translator jobs, remote language tutor jobs"
         />
+        <Helmet>
+        <link rel="canonical" href="https://qurocity.ai/becometutor" />
+      </Helmet>
       </Helmet>
 
       <Newnavbar />
