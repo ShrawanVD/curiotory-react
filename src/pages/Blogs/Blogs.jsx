@@ -40,7 +40,7 @@ function Blogs() {
   };
 
   const openBlog = (postId) => {
-    window.location.href = `/blogs?id=${postId}`;
+    window.location.href = `/blogsId?id=${postId}`;
   };
 
   const paginate = (pageNumber) => {
