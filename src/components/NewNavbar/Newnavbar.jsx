@@ -91,7 +91,7 @@ function Newnavbar() {
               </a>
               {dropdownOpen && (
                 <div className={newnavv.dropdownContent}>
-                  <a href="/english">
+                  <a href="/learnenglish">
                     <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -106,7 +106,7 @@ function Newnavbar() {
                     </span>{" "}
                     English
                   </a>
-                  <a href="/spanish">
+                  <a href="/learnspanish">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -119,7 +119,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Spanish</a>
-                  <a href="/french">
+                  <a href="/learnfrench">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -132,7 +132,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}French</a>
-                  <a href="/german">
+                  <a href="/learngerman">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -145,7 +145,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}German</a>
-                  <a href="/russian">
+                  <a href="/learnrussian">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -158,7 +158,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Russian</a>
-                  <a href="/mandarin">
+                  <a href="/learnmandarin">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -171,7 +171,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Mandarin</a>
-                  <a href="/dutch">
+                  <a href="/learndutch">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -184,7 +184,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Dutch</a>
-                  <a href="/japanese">
+                  <a href="/learnjapanese">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -197,7 +197,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Japanese</a>
-                  <a href="/korean">
+                  <a href="/learnkorean">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -210,7 +210,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Korean</a>
-                  <a href="/portuguese">
+                  <a href="/learnportuguese">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -223,7 +223,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Portuguese</a>
-                  <a href="/arabic">
+                  <a href="/learnarabic">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely
@@ -236,7 +236,7 @@ function Newnavbar() {
                     >
                       Learn
                     </span>{" "}Arabic</a>
-                  <a href="/danish">
+                  <a href="/learndanish">
                   <span
                       style={{
                         position: "absolute", // Positioning it absolutely

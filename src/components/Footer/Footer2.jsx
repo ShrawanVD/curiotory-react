@@ -52,8 +52,11 @@ function Footer() {
                   <li>
                     <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="/becometutor">Become a Tutor</a>
+                  </li> */}
+                  <li>
+                    <a href="/life">Life at Qurocity</a>
                   </li>
                   <li>
                     <a href="/careers">Career with Us</a>

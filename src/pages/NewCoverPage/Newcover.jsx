@@ -1084,28 +1084,28 @@ function Newcover() {
                   <div className={newcover.euroLang}>
                     <h3>European Languages</h3>
                     <div className={newcover.euroLangList}>
-                      <a href="/french">
+                      <a href="/learnfrench">
                         <h4>French</h4>
                       </a>
-                      <a href="/german">
+                      <a href="/learngerman">
                         <h4>German</h4>
                       </a>
-                      <a href="/russian">
+                      <a href="/learnrussian">
                         <h4>Russian</h4>
                       </a>
-                      <a href="/spanish">
+                      <a href="/learnspanish">
                         <h4>Spanish</h4>
                       </a>
-                      <a href="/dutch">
+                      <a href="/learndutch">
                         <h4>Dutch</h4>
                       </a>
-                      <a href="/portuguese">
+                      <a href="/learnportuguese">
                         <h4>Portuguese</h4>
                       </a>
-                      <a href="/english">
+                      <a href="/learnenglish">
                         <h4>English</h4>
                       </a>
-                      <a href="/danish">
+                      <a href="/learndanish">
                         <h4>Danish</h4>
                       </a>
                     </div>
@@ -1113,16 +1113,16 @@ function Newcover() {
                   <div className={newcover.euroLang}>
                     <h3>Asian Languages</h3>
                     <div className={newcover.asianLangList}>
-                      <a href="/japanese">
+                      <a href="/learnjapanese">
                         <h4>Japanese</h4>
                       </a>
-                      <a href="/mandarin">
+                      <a href="/learnmandarin">
                         <h4>Mandarin</h4>
                       </a>
-                      <a href="/korean">
+                      <a href="/learnkorean">
                         <h4>Korean</h4>
                       </a>
-                      <a href="/arabic">
+                      <a href="/learnarabic">
                         <h4>Arabic</h4>
                       </a>
                       <a href="/underDevelopment">

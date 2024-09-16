@@ -23,6 +23,7 @@ import Spanish from './components/Languages/Spanish/Spanish';
 import Danish from './components/Languages/Danish/Danish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
+import Life from './pages/LifeAtQurocity/life';
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -56,23 +57,24 @@ export default (
         <Route path="/becometutor" element={<Becometutor />} />
         <Route path="/download" element={<Download />} />
         <Route path="/checkout/:id" element={<CheckoutPg />} />
+        <Route path="/life" element={<Life />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/details/:id" element={<Jobdetails />} />
         <Route path="/rev" element={<Rev />} />
         
         {/* Languages pages routing */}
-        <Route path="/arabic" element={<Arabic />} />
-        <Route path="/dutch" element={<Dutch />} />
-        <Route path="/english" element={<English />} />
-        <Route path="/french" element={<French />} />
-        <Route path="/german" element={<German />} />
-        <Route path="/japanese" element={<Japanese />} />
-        <Route path="/korean" element={<Korean />} />
-        <Route path="/mandarin" element={<Mandarin />} />
-        <Route path="/portuguese" element={<Portuguese />} />
-        <Route path="/russian" element={<Russian />} />
-        <Route path="/spanish" element={<Spanish />} />
-        <Route path="/danish" element={<Danish />} />
+        <Route path="/learnarabic" element={<Arabic />} />
+        <Route path="/learndutch" element={<Dutch />} />
+        <Route path="/learnenglish" element={<English />} />
+        <Route path="/learnfrench" element={<French />} />
+        <Route path="/learngerman" element={<German />} />
+        <Route path="/learnjapanese" element={<Japanese />} />
+        <Route path="/learnkorean" element={<Korean />} />
+        <Route path="/learnmandarin" element={<Mandarin />} />
+        <Route path="/learnportuguese" element={<Portuguese />} />
+        <Route path="/learnrussian" element={<Russian />} />
+        <Route path="/learnspanish" element={<Spanish />} />
+        <Route path="/learndanish" element={<Danish />} />
 
         {/* courses routing */}
         <Route path="/course/english" element={<EnglishCourse />} />

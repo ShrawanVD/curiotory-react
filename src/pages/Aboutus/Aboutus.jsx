@@ -29,9 +29,7 @@ function Aboutus() {
   };
   return (
     <>
-
-
-<Helmet>
+      <Helmet>
         <link rel="canonical" href="https://qurocity.ai/aboutus" />
       </Helmet>
 
@@ -46,10 +44,10 @@ function Aboutus() {
         </h1>
 
         <h1 className={Aboutuscss.small}>
-          We are one of the India&apos;s fastest growing language
-          learning platforms
+          We are one of the India&apos;s fastest growing language learning
+          platforms
         </h1>
-        
+
         <div className={Aboutuscss.stats}>
           <img src="/about us/about-us.png" alt="" />
         </div>
@@ -409,9 +407,12 @@ function Aboutus() {
       <div className={Aboutuscss.foundersSection}>
         <h2>MEET OUR FOUNDERS</h2>
 
-        <div className={Aboutuscss.founderCard} style={{
-          background:"#303143"
-        }}>
+        <div
+          className={Aboutuscss.founderCard}
+          style={{
+            background: "#303143",
+          }}
+        >
           <img
             src="/about us/Sheetal-mam.png"
             alt="Sheetal Ramkumar"
@@ -434,9 +435,12 @@ function Aboutus() {
           </div>
         </div>
 
-        <div className={`${Aboutuscss.founderCard} ${Aboutuscss.right1}`} style={{
-          background:"#54364E"
-        }}>
+        <div
+          className={`${Aboutuscss.founderCard} ${Aboutuscss.right1}`}
+          style={{
+            background: "#54364E",
+          }}
+        >
           <img
             src="/about us/Ram-sir.png"
             alt="Ramkumar Kayarat"
@@ -458,10 +462,13 @@ function Aboutus() {
             </p>
           </div>
         </div>
-        <div className={Aboutuscss.right2} style={{
-          background:"#54364E"
-        }}>
-        <img
+        <div
+          className={Aboutuscss.right2}
+          style={{
+            background: "#54364E",
+          }}
+        >
+          <img
             src="/about us/Ram-sir.png"
             alt="Ramkumar Kayarat"
             className={Aboutuscss.founderImage}
