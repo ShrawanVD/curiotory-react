@@ -29,9 +29,11 @@
   font-family: "Raleway", Arial, sans-serif;
 }
 
-.submmit{
-  width: fit-content
+.submitButton{
+  width: 10vw
 }
+
+
 
 /* Media queries for responsiveness */
 

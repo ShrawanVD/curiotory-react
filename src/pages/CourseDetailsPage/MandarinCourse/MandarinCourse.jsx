@@ -494,12 +494,12 @@ const MandarinCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -510,8 +510,12 @@ const MandarinCourse = () => {
   };
   return (
     <>
-    <Helmet>
+      <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/mandarin" />
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
       </Helmet>
       <div>
         {/* cover page  */}

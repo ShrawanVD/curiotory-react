@@ -171,6 +171,19 @@ function Mandarin() {
             content="mandarin language app, mandarin language course, learn mandarin online, mandarin language learning, learn chinese, mandarin language learning app"
           />
           <link rel="canonical" href="https://qurocity.ai/mandarin" />
+          {/* Google Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+          ></script>
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+          </script>
         </Helmet>
 
         {/* new navbar */}
@@ -192,9 +205,9 @@ function Mandarin() {
               </span>
             </div>
             <p>
-              Nǐ hǎo! Hoping to Learn Mandarin? Qurocity's language learning
-              app offers interactive activities and proven techniques to help
-              you master Mandarin online with professional expertise.
+              Nǐ hǎo! Hoping to Learn Mandarin? Qurocity's language learning app
+              offers interactive activities and proven techniques to help you
+              master Mandarin online with professional expertise.
             </p>
             <p>Join Online Mandarin Classes Now!</p>
             {/* <p>

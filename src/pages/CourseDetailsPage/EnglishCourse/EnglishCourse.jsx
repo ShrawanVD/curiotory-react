@@ -469,6 +469,10 @@ const EnglishCourse = () => {
     <>
       <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/english" />
+        {/* Google Ads Conversion Tracking Script */}
+  <script>
+    {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+  </script>
       </Helmet>
 
       <div>

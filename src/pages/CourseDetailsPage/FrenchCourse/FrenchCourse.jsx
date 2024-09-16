@@ -10,9 +10,7 @@ import Reviewsection from "../../../components/Reviewcourse/Reviewcourse";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-
 const FrenchCourse = () => {
-
   //  course highlights section
   const HighlightItem = ({ icon, title, description }) => {
     return (
@@ -29,242 +27,203 @@ const FrenchCourse = () => {
   // modules section
   const modules = [
     {
-        title: "Introduction to French",
-        topics: [
-            "Intro to French & Monuments",
-            "Landmarks & Festivals",
-            "Essential Greetings",
-            "Self-Introduction",
-            "Asking Names",
-            "Irregular Verbs"
-        ],
-        cnt: "6"
+      title: "Introduction to French",
+      topics: [
+        "Intro to French & Monuments",
+        "Landmarks & Festivals",
+        "Essential Greetings",
+        "Self-Introduction",
+        "Asking Names",
+        "Irregular Verbs",
+      ],
+      cnt: "6",
     },
     {
-        title: "Verb 's'appeler' & Intro",
-        topics: [
-            "Irregular Verb 'Avoir'",
-            "French Alphabet",
-            "Basic Sentences"
-        ],
-        cnt: "3"
+      title: "Verb 's'appeler' & Intro",
+      topics: ["Irregular Verb 'Avoir'", "French Alphabet", "Basic Sentences"],
+      cnt: "3",
     },
     {
-        title: "Colors, Nationalities, Numbers",
-        topics: [
-            "Colors",
-            "Numbers",
-            "Days & Months",
-            "Nationalities",
-            "Emotions"
-        ],
-        cnt: "5"
+      title: "Colors, Nationalities, Numbers",
+      topics: [
+        "Colors",
+        "Numbers",
+        "Days & Months",
+        "Nationalities",
+        "Emotions",
+      ],
+      cnt: "5",
     },
     {
-        title: "Numbers, Articles, Prepositions",
-        topics: [
-            "Counting 20-100",
-            "Definite & Indefinite Articles",
-            "Prepositions"
-        ],
-        cnt: "3"
+      title: "Numbers, Articles, Prepositions",
+      topics: [
+        "Counting 20-100",
+        "Definite & Indefinite Articles",
+        "Prepositions",
+      ],
+      cnt: "3",
     },
     {
-        title: "Pronouns, ER-verbs, Profession",
-        topics: [
-            "ER Verb Conjugation",
-            "Phrases with ER Verbs",
-            "Professions",
-            "Job Vocabulary"
-        ],
-        cnt: "4"
+      title: "Pronouns, ER-verbs, Profession",
+      topics: [
+        "ER Verb Conjugation",
+        "Phrases with ER Verbs",
+        "Professions",
+        "Job Vocabulary",
+      ],
+      cnt: "4",
     },
     {
-        title: "IR-verbs, Negation, Writing",
-        topics: [
-            "IR Verb Conjugation",
-            "More IR Verbs",
-            "Negative Sentences",
-            "Forms & Documents",
-            "New Words"
-        ],
-        cnt: "5"
+      title: "IR-verbs, Negation, Writing",
+      topics: [
+        "IR Verb Conjugation",
+        "More IR Verbs",
+        "Negative Sentences",
+        "Forms & Documents",
+        "New Words",
+      ],
+      cnt: "5",
     },
     {
-        title: "Reading, House Description",
-        topics: [
-            "Prepositions",
-            "Home Activities Vocabulary",
-            "Kitchen & Bathroom Items",
-            "Country Prepositions"
-        ],
-        cnt: "4"
+      title: "Reading, House Description",
+      topics: [
+        "Prepositions",
+        "Home Activities Vocabulary",
+        "Kitchen & Bathroom Items",
+        "Country Prepositions",
+      ],
+      cnt: "4",
     },
     {
-        title: "RE-verb, Speaking, Writing",
-        topics: [
-            "RE Verb Conjugation",
-            "Classroom Vocabulary",
-            "Pronunciation Rules",
-            "More Pronunciation Practice",
-            "Writing Ads"
-        ],
-        cnt: "5"
+      title: "RE-verb, Speaking, Writing",
+      topics: [
+        "RE Verb Conjugation",
+        "Classroom Vocabulary",
+        "Pronunciation Rules",
+        "More Pronunciation Practice",
+        "Writing Ads",
+      ],
+      cnt: "5",
     },
     {
-        title: "Possessive Adjectives",
-        topics: [
-            "Possessive Adjectives",
-            "Physical Descriptions"
-        ],
-        cnt: "2"
+      title: "Possessive Adjectives",
+      topics: ["Possessive Adjectives", "Physical Descriptions"],
+      cnt: "2",
     },
     {
-        title: "Listening & Speaking",
-        topics: [
-            "Time Concepts",
-            "Reflexive Pronouns",
-            "Daily Routines",
-            "School Day Vocabulary"
-        ],
-        cnt: "4"
+      title: "Listening & Speaking",
+      topics: [
+        "Time Concepts",
+        "Reflexive Pronouns",
+        "Daily Routines",
+        "School Day Vocabulary",
+      ],
+      cnt: "4",
     },
     {
-        title: "Time, Routine, Practice",
-        topics: [
-            "Verb 'Aller'",
-            "Contracted Forms",
-            "Exercises & Quizzes",
-            "Adjectives Practice"
-        ],
-        cnt: "4"
+      title: "Time, Routine, Practice",
+      topics: [
+        "Verb 'Aller'",
+        "Contracted Forms",
+        "Exercises & Quizzes",
+        "Adjectives Practice",
+      ],
+      cnt: "4",
     },
     {
-        title: "Contracted Articles, Future",
-        topics: [
-            "Giving Directions",
-            "Listening Practice",
-            "Unspecified Quantities"
-        ],
-        cnt: "3"
+      title: "Contracted Articles, Future",
+      topics: [
+        "Giving Directions",
+        "Listening Practice",
+        "Unspecified Quantities",
+      ],
+      cnt: "3",
     },
     {
-        title: "Directions, Reading, Listening",
-        topics: [
-            "Common Adverbs"
-        ],
-        cnt: "1"
+      title: "Directions, Reading, Listening",
+      topics: ["Common Adverbs"],
+      cnt: "1",
     },
     {
-        title: "Speaking, Adverbs",
-        topics: [
-            "Seasons",
-            "Demonstrative Adjectives",
-            "Postcard Phrases"
-        ],
-        cnt: "3"
+      title: "Speaking, Adverbs",
+      topics: ["Seasons", "Demonstrative Adjectives", "Postcard Phrases"],
+      cnt: "3",
     },
     {
-        title: "Weather, Writing, Demonstratives",
-        topics: [
-            "Family Vocabulary",
-            "French Shops",
-            "Clothing Vocabulary"
-        ],
-        cnt: "3"
+      title: "Weather, Writing, Demonstratives",
+      topics: ["Family Vocabulary", "French Shops", "Clothing Vocabulary"],
+      cnt: "3",
     },
     {
-        title: "Vocabulary, Clothes, Demonstratives",
-        topics: [
-            "Past Actions",
-            "Past Tense Questions",
-            "Auxiliary Verbs in Past",
-            "Negative Sentences Present"
-        ],
-        cnt: "4"
+      title: "Vocabulary, Clothes, Demonstratives",
+      topics: [
+        "Past Actions",
+        "Past Tense Questions",
+        "Auxiliary Verbs in Past",
+        "Negative Sentences Present",
+      ],
+      cnt: "4",
     },
     {
-        title: "Past Actions, Celebrities",
-        topics: [
-            "Imperfect Tense",
-            "Irregular Verbs",
-            "French Celebrities",
-            "Parisian Facts"
-        ],
-        cnt: "4"
+      title: "Past Actions, Celebrities",
+      topics: [
+        "Imperfect Tense",
+        "Irregular Verbs",
+        "French Celebrities",
+        "Parisian Facts",
+      ],
+      cnt: "4",
     },
     {
-        title: "Louisiana Culture, Invitations",
-        topics: [
-            "Menu Items",
-            "Ordering Food",
-            "Invitation Letters"
-        ],
-        cnt: "3"
+      title: "Louisiana Culture, Invitations",
+      topics: ["Menu Items", "Ordering Food", "Invitation Letters"],
+      cnt: "3",
     },
     {
-        title: "Listening, Negatives, Pronouns",
-        topics: [
-            "Negative Expressions",
-            "Negative Compound Sentences",
-            "Pronoun 'en'"
-        ],
-        cnt: "3"
+      title: "Listening, Negatives, Pronouns",
+      topics: [
+        "Negative Expressions",
+        "Negative Compound Sentences",
+        "Pronoun 'en'",
+      ],
+      cnt: "3",
     },
     {
-        title: "French Hobbies & Pastimes",
-        topics: [
-            "French Hobbies",
-            "Usage of 'Y'"
-        ],
-        cnt: "2"
+      title: "French Hobbies & Pastimes",
+      topics: ["French Hobbies", "Usage of 'Y'"],
+      cnt: "2",
     },
     {
-        title: "French Adjectives",
-        topics: [
-            "Comparative Forms",
-            "Superlative Forms",
-            "Common Adjectives",
-            "Adjective Forms & Functions"
-        ],
-        cnt: "4"
+      title: "French Adjectives",
+      topics: [
+        "Comparative Forms",
+        "Superlative Forms",
+        "Common Adjectives",
+        "Adjective Forms & Functions",
+      ],
+      cnt: "4",
     },
     {
-        title: "Mastering Text & Commands",
-        topics: [
-            "Understanding Written French",
-            "Giving Commands"
-        ],
-        cnt: "2"
+      title: "Mastering Text & Commands",
+      topics: ["Understanding Written French", "Giving Commands"],
+      cnt: "2",
     },
     {
-        title: "Pronouns, Phrases, Email",
-        topics: [
-            "Pronouns in Clauses",
-            "Key Phrases",
-            "Informal Email Writing"
-        ],
-        cnt: "3"
+      title: "Pronouns, Phrases, Email",
+      topics: ["Pronouns in Clauses", "Key Phrases", "Informal Email Writing"],
+      cnt: "3",
     },
     {
-        title: "Verb 'Venir' & Achievements",
-        topics: [
-            "Verb 'Venir' Conjugations",
-            "Achievement Expressions"
-        ],
-        cnt: "2"
+      title: "Verb 'Venir' & Achievements",
+      topics: ["Verb 'Venir' Conjugations", "Achievement Expressions"],
+      cnt: "2",
     },
     {
-        title: "Definite Articles, Verb Conjugations",
-        topics: [
-            "Definite Article Usage",
-            "Verb Forms & Conjugations"
-        ],
-        cnt: "2"
-    }
-];
-
-
+      title: "Definite Articles, Verb Conjugations",
+      topics: ["Definite Article Usage", "Verb Forms & Conjugations"],
+      cnt: "2",
+    },
+  ];
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -368,12 +327,12 @@ const FrenchCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -385,8 +344,12 @@ const FrenchCourse = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/french" />
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
       </Helmet>
       <div>
         {/* cover page  */}
@@ -399,16 +362,21 @@ const FrenchCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo-course.png"
-              alt="Qurocity Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo-course.png"
+                alt="Qurocity Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
-            <div className={buy.textSection} style={{
-              marginLeft:"5rem"
-            }}>
+            <div
+              className={buy.textSection}
+              style={{
+                marginLeft: "5rem",
+              }}
+            >
               <h1>
                 Bonjour! <br />
                 Let's Simplify
@@ -420,9 +388,12 @@ const FrenchCourse = () => {
               <a href="/checkout"><button className={buy.learnButton}>Subsrcibe Now </button></a>
               </div> */}
             </div>
-            <div className={buy.imageSection} style={{
-              marginRight:"8.5rem"
-            }}>
+            <div
+              className={buy.imageSection}
+              style={{
+                marginRight: "8.5rem",
+              }}
+            >
               <img
                 src="/mascot/croppedMascotNoBackground.png"
                 alt="Course Cover"
@@ -433,9 +404,12 @@ const FrenchCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"5rem"
-        }}>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "5rem",
+          }}
+        >
           <a href="/checkout/2">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>

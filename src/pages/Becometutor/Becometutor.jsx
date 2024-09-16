@@ -40,9 +40,22 @@ Qurocity is the place for you! Join our network of the best language tutors from
           name="keywords"
           content="language tutor,  language tutor jobs, language tutor jobs online, foreign language tutor jobs, foreign language translator jobs, remote language tutor jobs"
         />
-        <Helmet>
+        
         <link rel="canonical" href="https://qurocity.ai/becometutor" />
-      </Helmet>
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
+      
       </Helmet>
 
       <Newnavbar />

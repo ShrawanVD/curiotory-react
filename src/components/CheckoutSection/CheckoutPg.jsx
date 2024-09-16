@@ -427,6 +427,19 @@ function CheckoutPg() {
     <>
       <Helmet>
         <link rel="canonical" href="https://qurocity.ai/checkout" />
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
       </Helmet>
       <Navv />
       <div className={pay.checkout_pg}>

@@ -1,4 +1,5 @@
 // import foot from "./Footer2.module.css";
+import { Helmet } from "react-helmet";
 import "./Footer.css";
 import React, { useEffect, useRef } from "react";
 
@@ -26,6 +27,22 @@ function Footer() {
 
   return (
     <>
+    <Helmet>
+      {/* Google Tag (gtag.js) */}
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
+    </Helmet>
+
       <div className="footer">
         <div className="container2">
           <div className="row-up">

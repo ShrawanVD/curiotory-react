@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Meetcss from "./Meettutor.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
@@ -14,7 +13,6 @@ function Meettutor() {
   const [paginationEnabled, setPaginationEnabled] = useState(true); // Manage pagination state
   const itemsPerPage = 11;
   const [noResults, setNoResults] = useState(false);
-
 
   useEffect(() => {
     fetchTeachers();
@@ -41,12 +39,12 @@ function Meettutor() {
     event.preventDefault();
     const language = document.getElementById("languageFilter").value;
     const native = document.getElementById("nativeFilter").value;
-  
+
     let url = `${config.apiUrl}/filterteachers?`;
     if (language) url += `language=${language}&`;
     if (native) url += `native=${native}&`;
     url += `page=${currentPage}&limit=${itemsPerPage}`;
-  
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
@@ -56,7 +54,6 @@ function Meettutor() {
       })
       .catch((error) => console.error("Error fetching data:", error));
   };
-
 
   useEffect(() => {
     updateCurrentPageTeachers();
@@ -96,7 +93,10 @@ function Meettutor() {
   };
 
   const handlePageChange = (newPage) => {
-    if (newPage > 0 && newPage <= Math.ceil(allTeachers.length / itemsPerPage)) {
+    if (
+      newPage > 0 &&
+      newPage <= Math.ceil(allTeachers.length / itemsPerPage)
+    ) {
       setCurrentPage(newPage);
     }
   };
@@ -105,6 +105,19 @@ function Meettutor() {
     <div>
       <Helmet>
         <link rel="canonical" href="https://qurocity.ai/meetthetutor" />
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
       </Helmet>
       <Newnavbar />
       <div className={Meetcss.containerFluid}>
@@ -114,7 +127,11 @@ function Meettutor() {
             <form onSubmit={handleSubmit}>
               <div className={Meetcss.formGroup}>
                 <label htmlFor="languageFilter">Language</label>
-                <select className="form-control" id="languageFilter" name="languageFilter">
+                <select
+                  className="form-control"
+                  id="languageFilter"
+                  name="languageFilter"
+                >
                   <option value="">None</option>
                   <option value="English">English</option>
                   <option value="French">French</option>
@@ -127,14 +144,20 @@ function Meettutor() {
               </div>
               <div className={Meetcss.formGroup}>
                 <label htmlFor="nativeFilter">Native</label>
-                <select className="form-control" id="nativeFilter" name="nativeFilter">
+                <select
+                  className="form-control"
+                  id="nativeFilter"
+                  name="nativeFilter"
+                >
                   <option value="None">None</option>
                   <option value="Native">Native</option>
                   <option value="Indian">Indian</option>
                 </select>
               </div>
               <div className={Meetcss.meetTutorButtonCss}>
-                <button type="submit" className="btn btn-primary">FILTER</button>
+                <button type="submit" className="btn btn-primary">
+                  FILTER
+                </button>
               </div>
             </form>
           </div>
@@ -166,9 +189,13 @@ function Meettutor() {
               <div className={Meetcss.photoInfo}>
                 <img src={teacher.imgurl} alt="Teacher" />
                 <div className={Meetcss.infoText}>
-                  <h2 style={{
-                    color:"#00046C"
-                  }}>{teacher.name}</h2>
+                  <h2
+                    style={{
+                      color: "#00046C",
+                    }}
+                  >
+                    {teacher.name}
+                  </h2>
                   <p>Language : {teacher.language}</p>
                   <p>Proficiency level : {teacher.proflevel}</p>
                   <p>No of students taught till date : {teacher.noStud}</p>
@@ -195,34 +222,31 @@ function Meettutor() {
             </div>
           ))}
           {noResults && (
-          <div className={Meetcss.noResultsMessage}>
-            No tutors found matching your criteria.
-          </div>
-        )}
+            <div className={Meetcss.noResultsMessage}>
+              No tutors found matching your criteria.
+            </div>
+          )}
         </div>
       </div>
 
-
-{paginationEnabled && (
-       <div className={Meetcss.paginationControls}>
-         <button
-           onClick={() => handlePageChange(currentPage - 1)}
-           disabled={currentPage === 1}
-         >
-          <i class="fa-solid fa-chevron-left"></i>
-         </button>
-         <button
-           onClick={() => handlePageChange(currentPage + 1)}
-           disabled={
-             currentPage === Math.ceil(allTeachers.length / itemsPerPage)
-           }
-         >
-          <i class="fa-solid fa-chevron-right"></i>
-         </button>
-       </div>
-     )}
-
-      
+      {paginationEnabled && (
+        <div className={Meetcss.paginationControls}>
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={
+              currentPage === Math.ceil(allTeachers.length / itemsPerPage)
+            }
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      )}
 
       <Footer2 />
     </div>

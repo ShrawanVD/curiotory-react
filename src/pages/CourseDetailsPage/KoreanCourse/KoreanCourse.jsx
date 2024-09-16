@@ -172,7 +172,8 @@ const KoreanCourse = () => {
       cnt: "5",
     },
     {
-      title: "Present Tense - Constructing Sentences with Present Tense Conjugation",
+      title:
+        "Present Tense - Constructing Sentences with Present Tense Conjugation",
       topics: [
         "Master impolite present tense (아/어)",
         "Learn polite present tense (아요/어요)",
@@ -483,12 +484,12 @@ const KoreanCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -500,9 +501,12 @@ const KoreanCourse = () => {
 
   return (
     <>
-
-<Helmet>
+      <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/korean" />
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
       </Helmet>
       <div>
         {/* cover page  */}
@@ -515,11 +519,13 @@ const KoreanCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo-course.png"
-              alt="Qurocity Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo-course.png"
+                alt="Qurocity Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -544,9 +550,12 @@ const KoreanCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"8rem"
-        }}>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "8rem",
+          }}
+        >
           <a href="/checkout/5">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
@@ -1059,7 +1068,7 @@ const KoreanCourse = () => {
         </div> */}
 
         {/* review section */}
-       <Reviewsection />
+        <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
         <div className={buy.faqHeadingDivCss}>

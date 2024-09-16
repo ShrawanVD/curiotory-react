@@ -172,7 +172,20 @@ function German() {
             name="keywords"
             content="german language course, german learning app, learn german online, german language learning, german language learning app, german language learning online"
           />
-           <link rel="canonical" href="https://qurocity.ai/german" />
+          <link rel="canonical" href="https://qurocity.ai/german" />
+          {/* Google Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+          ></script>
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+          </script>
         </Helmet>
 
         {/* new navbar */}

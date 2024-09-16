@@ -4,6 +4,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Helmet } from "react-helmet";
 
 export default function ControlledAccordions() {
   const [expanded, setExpanded] = React.useState(false);
@@ -14,6 +15,21 @@ export default function ControlledAccordions() {
 
   return (
     <div>
+      <Helmet>
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
+      </Helmet>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -138,9 +154,11 @@ export default function ControlledAccordions() {
             students. Deliver Quality Sessions: Provide engaging and informative
             lessons tailored to your students' needs to build positive reviews
             and retain clients.
-            <ul style={{
-                listStyleType:"circle"
-            }}>
+            <ul
+              style={{
+                listStyleType: "circle",
+              }}
+            >
               <li>
                 <strong>Choose Your Subject</strong>: Select a subject or skill
                 you're knowledgeable and passionate about.
@@ -202,11 +220,13 @@ export default function ControlledAccordions() {
           <Typography>
             Qurocity is India's thriving Edu-Tech network which helps you
             supercharge your career growth. <br />
-            With Qurocity - The ultimate language learning platform by your
-            side you will be able to -
-            <ul style={{
-                listStyleType:"circle"
-            }}>
+            With Qurocity - The ultimate language learning platform by your side
+            you will be able to -
+            <ul
+              style={{
+                listStyleType: "circle",
+              }}
+            >
               <li>
                 Earn competitive income by tutoring students conveniently from
                 home or online.

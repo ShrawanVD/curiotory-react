@@ -2,9 +2,25 @@ import React from "react";
 import not from "./NotFound.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 
 const NotFound = ({ message = "Page Not Found" }) => (
   <div>
+    <Helmet>
+      {/* Google Tag (gtag.js) */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+      ></script>
+      <script>
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+      </script>
+    </Helmet>
     <Newnavbar />
 
     <div className={not.error_page}>

@@ -11,7 +11,6 @@ import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
 const JapaneseCourse = () => {
-
   //  course highlights section
   const HighlightItem = ({ icon, title, description }) => {
     return (
@@ -28,165 +27,163 @@ const JapaneseCourse = () => {
   // modules section
   const modules = [
     {
-        title: "Introduction to Japan",
-        topics: [
-            "Japanese Language & Customs",
-            "Geography & History",
-            "Art & Festivals",
-            "Greetings & Politeness",
-            "Basic Phrases",
-            "Practical Sentences",
-            ""
-        ],
-        cnt: "6"
+      title: "Introduction to Japan",
+      topics: [
+        "Japanese Language & Customs",
+        "Geography & History",
+        "Art & Festivals",
+        "Greetings & Politeness",
+        "Basic Phrases",
+        "Practical Sentences",
+        "",
+      ],
+      cnt: "6",
     },
     {
-        title: "Japanese Greetings, Writing, and Numbers",
-        topics: [
-            "Greetings Quiz",
-            "First Japanese Letter",
-            "More Letters",
-            "Additional Characters",
-            "Numbers 1-10",
-            "Counting Beyond 10"
-        ],
-        cnt: "6"
+      title: "Japanese Greetings, Writing, and Numbers",
+      topics: [
+        "Greetings Quiz",
+        "First Japanese Letter",
+        "More Letters",
+        "Additional Characters",
+        "Numbers 1-10",
+        "Counting Beyond 10",
+      ],
+      cnt: "6",
     },
     {
-        title: "Numbers and Pronunciation",
-        topics: [
-            "Review Numbers & Hiragana",
-            "Katakana Characters",
-            "Katakana Practice",
-            "Vocabulary & Grammar",
-            "Multiple Nouns",
-            "Sentence Structure & Verbs"
-        ],
-        cnt: "6"
+      title: "Numbers and Pronunciation",
+      topics: [
+        "Review Numbers & Hiragana",
+        "Katakana Characters",
+        "Katakana Practice",
+        "Vocabulary & Grammar",
+        "Multiple Nouns",
+        "Sentence Structure & Verbs",
+      ],
+      cnt: "6",
     },
     {
-        title: "Vocabulary & Conversation",
-        topics: [
-            "Basic Words & Phrases",
-            "Vocabulary: This, That",
-            "Listening Activities",
-            "Confirming Information",
-            "Translate to English",
-            "'So desu ka' & Asking Age"
-        ],
-        cnt: "6"
+      title: "Vocabulary & Conversation",
+      topics: [
+        "Basic Words & Phrases",
+        "Vocabulary: This, That",
+        "Listening Activities",
+        "Confirming Information",
+        "Translate to English",
+        "'So desu ka' & Asking Age",
+      ],
+      cnt: "6",
     },
     {
-        title: "'Minna no Nihongo' Mastery",
-        topics: [
-            "New Words from 'Minna no Nihongo'",
-            "Grammar Practice",
-            "Polite Expressions",
-            "Listening Activities",
-            "Directional Abbreviations",
-            "Listening for Context"
-        ],
-        cnt: "6"
+      title: "'Minna no Nihongo' Mastery",
+      topics: [
+        "New Words from 'Minna no Nihongo'",
+        "Grammar Practice",
+        "Polite Expressions",
+        "Listening Activities",
+        "Directional Abbreviations",
+        "Listening for Context",
+      ],
+      cnt: "6",
     },
     {
-        title: "Gender in Japanese",
-        topics: [
-            "Using 'Dore'",
-            "Using 'Dono'",
-            "Contexts for 'Dono' & 'Dore'",
-            "Various Grammar Points",
-            "Review Lessons",
-            "Honorific Prefix 'O'"
-        ],
-        cnt: "6"
+      title: "Gender in Japanese",
+      topics: [
+        "Using 'Dore'",
+        "Using 'Dono'",
+        "Contexts for 'Dono' & 'Dore'",
+        "Various Grammar Points",
+        "Review Lessons",
+        "Honorific Prefix 'O'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Articles in Japanese",
-        topics: [
-            "New Words in Lesson 4",
-            "Time-Related Concepts",
-            "Speaking & Listening Practice",
-            "Verb Usage",
-            "Forming Negative Sentences",
-            "Verb Conjugation Practice"
-        ],
-        cnt: "6"
+      title: "Articles in Japanese",
+      topics: [
+        "New Words in Lesson 4",
+        "Time-Related Concepts",
+        "Speaking & Listening Practice",
+        "Verb Usage",
+        "Forming Negative Sentences",
+        "Verb Conjugation Practice",
+      ],
+      cnt: "6",
     },
     {
-        title: "Personal Pronouns",
-        topics: [
-            "Daily Activities",
-            "Time-Related Sentences",
-            "Negative Past Tense",
-            "Common Patterns",
-            "Basic Expressions",
-            "Using 'Kara' & 'Made'"
-        ],
-        cnt: "6"
+      title: "Personal Pronouns",
+      topics: [
+        "Daily Activities",
+        "Time-Related Sentences",
+        "Negative Past Tense",
+        "Common Patterns",
+        "Basic Expressions",
+        "Using 'Kara' & 'Made'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Lesson 5 Essentials",
-        topics: [
-            "Daily Conversation Phrases",
-            "Review Language Concepts",
-            "Negative Past Actions",
-            "Form Questions & Answers",
-            "Enhance Skills",
-            "Ask About Time & Dates"
-        ],
-        cnt: "6"
+      title: "Lesson 5 Essentials",
+      topics: [
+        "Daily Conversation Phrases",
+        "Review Language Concepts",
+        "Negative Past Actions",
+        "Form Questions & Answers",
+        "Enhance Skills",
+        "Ask About Time & Dates",
+      ],
+      cnt: "6",
     },
     {
-        title: "Everyday Japanese: Lesson 6",
-        topics: [
-            "Key Phrases",
-            "Particle 'を'",
-            "Common Items",
-            "Turn Statements to Questions",
-            "Ask 'What did you do?'",
-            "'Nani' & 'Nan' for 'What'"
-        ],
-        cnt: "6"
+      title: "Everyday Japanese: Lesson 6",
+      topics: [
+        "Key Phrases",
+        "Particle 'を'",
+        "Common Items",
+        "Turn Statements to Questions",
+        "Ask 'What did you do?'",
+        "'Nani' & 'Nan' for 'What'",
+      ],
+      cnt: "6",
     },
     {
-        title: "Sentence Structure & Polite Invitations",
-        topics: [
-            "Structuring Sentences",
-            "Polite Invitations",
-            "Accepting/Declining Invitations",
-            "Agree to Activities",
-            "'O (を)' Prefix",
-            "Sentence Practice"
-        ],
-        cnt: "6"
+      title: "Sentence Structure & Polite Invitations",
+      topics: [
+        "Structuring Sentences",
+        "Polite Invitations",
+        "Accepting/Declining Invitations",
+        "Agree to Activities",
+        "'O (を)' Prefix",
+        "Sentence Practice",
+      ],
+      cnt: "6",
     },
     {
-        title: "Vocabulary & Grammar Practice",
-        topics: [
-            "Vocabulary from Lesson 7",
-            "Key Grammar Points",
-            "Practice Sentences",
-            "Explain Specific Terms",
-            "Japanese Phrases",
-            "Review Previous Lessons"
-        ],
-        cnt: "6"
+      title: "Vocabulary & Grammar Practice",
+      topics: [
+        "Vocabulary from Lesson 7",
+        "Key Grammar Points",
+        "Practice Sentences",
+        "Explain Specific Terms",
+        "Japanese Phrases",
+        "Review Previous Lessons",
+      ],
+      cnt: "6",
     },
     {
-        title: "Essential Rules & Practical Examples",
-        topics: [
-            "Sentence Construction Rules",
-            "Grammar with Examples",
-            "Using 'To Receive'",
-            "Object Receiver Changes",
-            "'Mo' Examples",
-            "Continuing Conversations"
-        ],
-        cnt: "6"
-    }
-];
-
-
+      title: "Essential Rules & Practical Examples",
+      topics: [
+        "Sentence Construction Rules",
+        "Grammar with Examples",
+        "Using 'To Receive'",
+        "Object Receiver Changes",
+        "'Mo' Examples",
+        "Continuing Conversations",
+      ],
+      cnt: "6",
+    },
+  ];
 
   //   toggling between expand more and expand less
   const [showAll, setShowAll] = useState(false);
@@ -291,12 +288,12 @@ const JapaneseCourse = () => {
     addGTM();
   }, []);
   const addGTM = () => {
-    const script1 = document.createElement('script');
+    const script1 = document.createElement("script");
     script1.async = true;
     script1.src = "https://www.googletagmanager.com/gtag/js?id=G-SXJ40ZYWNV";
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
+    const script2 = document.createElement("script");
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -308,8 +305,12 @@ const JapaneseCourse = () => {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/japanese" />
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
       </Helmet>
       <div>
         {/* cover page  */}
@@ -322,11 +323,13 @@ const JapaneseCourse = () => {
               </a>
               {/* <button className={buy.signUpButton}>Sign Up</button> */}
             </div>
-            <a href="/"><img
-              src="/Index/logo-course.png"
-              alt="Qurocity Logo"
-              className={buy.logo}
-            /></a>
+            <a href="/">
+              <img
+                src="/Index/logo-course.png"
+                alt="Qurocity Logo"
+                className={buy.logo}
+              />
+            </a>
           </header>
           <div className={buy.content}>
             <div className={buy.textSection}>
@@ -351,9 +354,12 @@ const JapaneseCourse = () => {
         </div>
 
         {/* subscribe button div */}
-        <div className={buy.sticky} style={{
-          marginLeft:"5rem"
-        }}>
+        <div
+          className={buy.sticky}
+          style={{
+            marginLeft: "5rem",
+          }}
+        >
           <a href="/checkout/4">
             <button className={buy.learnButton}>Subsrcibe Now </button>
           </a>
@@ -862,7 +868,7 @@ const JapaneseCourse = () => {
         </div> */}
 
         {/* review section */}
-       <Reviewsection />
+        <Reviewsection />
 
         {/* <!-- FAQ SECTION --> */}
         <div className={buy.faqHeadingDivCss}>

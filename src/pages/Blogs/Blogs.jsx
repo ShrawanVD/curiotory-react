@@ -40,7 +40,7 @@ function Blogs() {
   };
 
   const openBlog = (postId) => {
-    window.location.href = `/blogsId?id=${postId}`;
+    window.location.href = `/blogs?id=${postId}`;
   };
 
   const paginate = (pageNumber) => {
@@ -83,6 +83,19 @@ function Blogs() {
           content="language blogs, language blog topics, language articles, linguistics blogs, language bloggers, language learning "
         />
         <link rel="canonical" href="https://qurocity.ai/blogs" />
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
       </Helmet>
       <Newnavbar />
       <div className={Blogscss.blogbackground}>

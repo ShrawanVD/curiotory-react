@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import life from "./life.module.css";
 import Footer2 from "../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 
 function Life() {
   // Sample image URLs (replace these with your actual images)
@@ -58,6 +59,22 @@ function Life() {
 
   return (
     <>
+      <Helmet>
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
+      </Helmet>
+
       <Newnavbar />
 
       <div className={life.heading}>

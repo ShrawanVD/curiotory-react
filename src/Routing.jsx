@@ -24,6 +24,7 @@ import Danish from './components/Languages/Danish/Danish';
 import Becometutor from './pages/Becometutor/Becometutor';
 import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Life from './pages/LifeAtQurocity/life';
+import Account from './pages/AccountDeletion/account';
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -61,6 +62,7 @@ export default (
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/details/:id" element={<Jobdetails />} />
         <Route path="/rev" element={<Rev />} />
+        <Route path="/account-deletion" element={<Account />} />
         
         {/* Languages pages routing */}
         <Route path="/learnarabic" element={<Arabic />} />

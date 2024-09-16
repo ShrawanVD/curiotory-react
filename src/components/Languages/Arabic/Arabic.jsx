@@ -175,6 +175,19 @@ Join Online Arabic Classes Now!
             content="learn arabic online, learn arabic language, arabic learning app, learning arabic for beginners, arabic learning for kids, arabic learning course free"
           />
           <link rel="canonical" href="https://qurocity.ai/arabic" />
+          {/* Google Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+          ></script>
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+          </script>
         </Helmet>
 
         {/* new navbar */}
@@ -187,8 +200,9 @@ Join Online Arabic Classes Now!
               Indulge in the epitome of <br />
               <span className={fr.highlight}>Arabic Culture</span>
             </h1> */}
-             <h1>
-             Learn<span className={fr.highlight}> Arabic</span> Online Easily<br /> With Qurocity's Expert Guidance
+            <h1>
+              Learn<span className={fr.highlight}> Arabic</span> Online Easily
+              <br /> With Qurocity's Expert Guidance
             </h1>
             <hr className={fr.horizontalLine} />
             <div className={fr.stats}>
@@ -204,8 +218,7 @@ Join Online Arabic Classes Now!
               technology to make language learning more precise and easy than
               ever!
             </p>
-            <p>Join Online Arabic Classes Now!
-            </p>
+            <p>Join Online Arabic Classes Now!</p>
             {/* <p>
               Learning Arabic unlocks opportunities in diverse and rapidly
               growing markets across the Middle East and North Africa. Fluency

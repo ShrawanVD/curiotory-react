@@ -174,6 +174,19 @@ function Dutch() {
             content="learn dutch online, dutch learning app, dutch learning course, learn dutch for beginners, learn dutch free, dutch learning website"
           />
           <link rel="canonical" href="https://qurocity.ai/dutch" />
+          {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
         </Helmet>
 
         {/* new navbar */}

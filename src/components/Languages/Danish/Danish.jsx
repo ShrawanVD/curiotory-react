@@ -175,6 +175,19 @@ Join Online Danish Classes Now!
             content="learn dutch online, learn dutch for free, learn dutch language, learn dutch for beginners, dutch learning app, dutch learning course"
           />
           <link rel="canonical" href="https://qurocity.ai/danish" />
+          {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
         </Helmet>
 
         {/* new navbar */}

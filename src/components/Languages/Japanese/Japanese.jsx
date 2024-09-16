@@ -164,6 +164,19 @@ Join Online Japanese Classes Now!
             content="learn japanese online, learn japanese online free, learn japanese, learn japanese app, japanese learning website, japanese learning app"
           />
           <link rel="canonical" href="https://qurocity.ai/japanese" />
+          {/* Google Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+          ></script>
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+          </script>
         </Helmet>
 
         {/* new navbar */}
@@ -186,8 +199,8 @@ Join Online Japanese Classes Now!
             </div>
             <p>
               Kon'nichiwa! Ever dreamt of mastering Japanese effortlessly?
-              Qurocity's app makes it easier with its 'pro-level' activities
-              and strategies so you can learn japanese language easily!
+              Qurocity's app makes it easier with its 'pro-level' activities and
+              strategies so you can learn japanese language easily!
             </p>
             <p>Join Online Japanese Classes Now!</p>
             {/* <p>

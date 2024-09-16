@@ -173,6 +173,19 @@ function English() {
             content="learn english, learn english online, english learning app, english learning course, Learning English speaking, english speaking app"
           />
           <link rel="canonical" href="https://qurocity.ai/english" />
+          {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+        ></script>
+        <script>
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+        </script>
         </Helmet>
 
         {/* new navbar */}

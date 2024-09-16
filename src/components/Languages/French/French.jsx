@@ -174,6 +174,19 @@ function French() {
             content="french language course online, french language course, french learning app, french learning website, learn french online, french phrases to learn"
           />
           <link rel="canonical" href="https://qurocity.ai/french" />
+          {/* Google Tag (gtag.js) */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=AW-16458367327"
+          ></script>
+          <script>
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16458367327');
+    `}
+          </script>
         </Helmet>
 
         {/* new navbar */}

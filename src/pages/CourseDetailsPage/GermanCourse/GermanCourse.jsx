@@ -468,9 +468,11 @@ const GermanCourse = () => {
           content="german learning, learn german, german language app, german language
  course, german Learning classes, learn german online, german language learning"
         />
-        <Helmet>
         <link rel="canonical" href="https://qurocity.ai/course/german" />
-      </Helmet>
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
       </Helmet>
 
       <div>
