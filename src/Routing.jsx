@@ -91,7 +91,7 @@ export default (
         <Route path="/course/german" element={<GermanCourse />} />
         <Route path="/review" element={<Reviewcourse />} />
 
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
         <Route path="/underDevelopment" element={<NotFoundDev />} />
 
 
