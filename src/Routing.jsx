@@ -4,6 +4,7 @@ import Contact from './pages/Contactus/Contact';
 // import Home from './pages/Home/Home';
 import Blogs from './pages/Blogs/Blogs';
 import Singleblog from './pages/Singleblog/Singleblog';
+import BlogRedirect from './components/BlogRedirect/BlogRedirect';
 import Tutor from './pages/Meettutor/Meettutor';
 import Download from './pages/Download/Download';
 import Refund from './components/Refund/Refund';
@@ -52,6 +53,7 @@ export default (
         <Route path="/blogs" element={<Blogs/>} />
         {/* <Route path="/blogs/:urlTitle-:id" element={<Singleblog />} /> */}
         <Route path="/blogs/:slug" element={<Singleblog />} />
+        <Route path="/blogsId" element={<BlogRedirect />} />
 
         {/* <Route path="/blogsId" element={<Singleblog/>} /> */}
         <Route path="/meetthetutor" element={<Tutor/>} />
