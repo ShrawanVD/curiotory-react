@@ -173,7 +173,7 @@ function Dutch() {
             name="keywords"
             content="learn dutch online, dutch learning app, dutch learning course, learn dutch for beginners, learn dutch free, dutch learning website"
           />
-          <link rel="canonical" href="https://qurocity.ai/dutch" />
+          <link rel="canonical" href="https://qurocity.ai/learndutch" />
           {/* Google Tag (gtag.js) */}
         <script
           async

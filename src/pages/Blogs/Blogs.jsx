@@ -39,8 +39,8 @@ function Blogs() {
       });
   };
 
-  const openBlog = (postId) => {
-    window.location.href = `/blogsId?id=${postId}`;
+  const openBlog = (urlTitle,postId) => {
+    window.location.href = `/blogs/${urlTitle}-${postId}`;
   };
 
   const paginate = (pageNumber) => {
@@ -134,7 +134,7 @@ function Blogs() {
               <div
                 key={post._id}
                 className={Blogscss.blogCard}
-                onClick={() => openBlog(post._id)}
+                onClick={() => openBlog(post.urlTitle,post._id)}
               >
                 <img src={post.imageUrl} alt="Blog Image" />
                 <div className={Blogscss.bloginfo}>

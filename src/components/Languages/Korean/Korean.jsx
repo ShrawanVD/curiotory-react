@@ -178,7 +178,7 @@ Join Online Korean Classes Now!
             name="keywords"
             content="learn korean online, learn korean for free, korean learning app, korean learning websites, korean language learning app, korean learning for beginners"
           />
-          <link rel="canonical" href="https://qurocity.ai/korean" />
+          <link rel="canonical" href="https://qurocity.ai/learnkorean" />
           {/* Google Tag (gtag.js) */}
           <script
             async

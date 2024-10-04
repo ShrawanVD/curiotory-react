@@ -172,7 +172,7 @@ function English() {
             name="keywords"
             content="learn english, learn english online, english learning app, english learning course, Learning English speaking, english speaking app"
           />
-          <link rel="canonical" href="https://qurocity.ai/english" />
+          <link rel="canonical" href="https://qurocity.ai/learnenglish" />
           {/* Google Tag (gtag.js) */}
         <script
           async

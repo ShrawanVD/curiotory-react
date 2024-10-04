@@ -170,7 +170,7 @@ function Spanish() {
             name="keywords"
             content="learn spanish online, learn spanish, best way to learn spanish, learning spanish for beginners, spanish learning app, learn spanish free"
           />
-          <link rel="canonical" href="https://qurocity.ai/spanish" />
+          <link rel="canonical" href="https://qurocity.ai/learnspanish" />
           {/* Google Tag (gtag.js) */}
         <script
           async

@@ -50,7 +50,10 @@ export default (
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/contactus" element={<Contact/>} />
         <Route path="/blogs" element={<Blogs/>} />
-        <Route path="/blogsId" element={<Singleblog/>} />
+        {/* <Route path="/blogs/:urlTitle-:id" element={<Singleblog />} /> */}
+        <Route path="/blogs/:slug" element={<Singleblog />} />
+
+        {/* <Route path="/blogsId" element={<Singleblog/>} /> */}
         <Route path="/meetthetutor" element={<Tutor/>} />
         <Route path="/refund" element={<Refund/>} />
         <Route path="/privacy" element={<Privacy/>} />
@@ -88,7 +91,7 @@ export default (
         <Route path="/course/german" element={<GermanCourse />} />
         <Route path="/review" element={<Reviewcourse />} />
 
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="/underDevelopment" element={<NotFoundDev />} />
 
 

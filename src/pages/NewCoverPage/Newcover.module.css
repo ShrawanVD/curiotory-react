@@ -163,7 +163,7 @@
 }
 
 .covernewheading {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 28px;
   margin-bottom: 10px;
   color: #00046C;
@@ -173,23 +173,23 @@
 }
 
 .covernewsubheading {
-  font-family: Raleway, Arial, sans-serif;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
   color: #00046C;
 }
 
 .covernewdescription {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
   text-align: justify;
   color: #00046C;
 
 }
 
 .covernewreadmore {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: bold;
   color: #00046C;
   display: block;
@@ -203,7 +203,7 @@
 }
 
 .covernewdownloadButton {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   background-color: #00046C; /* Adjust the color based on your design */
   color: white;
   border: none;
@@ -222,39 +222,63 @@
   display: block;
 }
 
-.covernewheading1{
-  font-family: Raleway, Arial, sans-serif;
-  font-size: 28px;
-  margin-bottom: 39px;
+.covernewheading1, .covernewheading{
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
   color: #00046C;
 }
+
+.divi{
+  margin: 1.3rem 0;
+}
+
+.covernewFirstContainer p{
+  color: #00046C;
+  font-size: 1rem;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.covernewheading2{
+  color: #00046C;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
 .covernewFirstsubContainer{
   margin-top: 1rem;
   display: flex;
 }
-.covernewFirstsubContainerimg{
-  margin-right: 2.6rem;
-}
-.covernewFirstsubContainertext1{
+
+.covernewFirstsubContainer p{
+  font-size: 0.9rem;
   color: #00046C;
-}
-.covernewFirstsubContainertext1 h3,.covernewFirstsubContainertext1 p,.covernewFirstsubContainertext2 h3,.covernewFirstsubContainertext2 p,.covernewFirstsubContainertext3 h3,.covernewFirstsubContainertext3 p{
-  font-family: Raleway, Arial, sans-serif;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
-.covernewFirstsubContainertext1 h3,.covernewFirstsubContainertext2 h3,.covernewFirstsubContainertext3 h3{
- font-size: 22px;
- text-decoration: underline;
-}
-.covernewFirstsubContainertext2{
+.covernewheadingsub{
+  font-size:1.2rem;
   color: #00046C;
-  font-family: Raleway, Arial, sans-serif;
-
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
 }
-.covernewFirstsubContainertext3{
-  color: #00046C;
-  font-family: Raleway, Arial, sans-serif;
 
+.covernewsubheadingsub{
+  font-size: 1rem;
+  color: #00046C;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
+}
+
+.covernewdescriptionsub{
+  font-size: 0.9rem;
+  color: #00046C;
+  text-align: justify;
+  font-family: "Raleway", Arial, sans-serif;
+  margin-bottom: 2rem;
 }
 
 @media (max-width:1650px){
@@ -288,13 +312,16 @@
    display: none;
   }
 }
-@media (max-width: 500px){
+@media (max-width: 550px){
 
   .covernewdiv{
     display: none;
   }
   .covernewdiv1{
-   display: inline;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
   }
 
   .covernewcard::after {

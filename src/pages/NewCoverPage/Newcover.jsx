@@ -32,6 +32,16 @@ import Footer2 from "../../components/Footer/Footer2";
 function Newcover() {
   const [showNewCard, setShowNewCard] = useState(false);
 
+  // Handle next slide (right arrow)
+  const handleNext = () => {
+    setShowNewCard(true); // Show the second card
+  };
+
+  // Handle previous slide (left arrow)
+  const handlePrev = () => {
+    setShowNewCard(false); // Show the first card
+  };
+
   const handleCardClick = () => {
     setShowNewCard(!showNewCard);
   };
@@ -103,58 +113,55 @@ function Newcover() {
 
   return (
     <>
+      <Helmet>
+        {/* Canonical Link */}
+        <link rel="canonical" href="https://qurocity.ai/" />
 
-<Helmet>
-  {/* Canonical Link */}
-  <link rel="canonical" href="https://qurocity.ai/" />
+        {/* Breadcrumb Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Learn Korean",
+                item: "https://qurocity.ai/korean",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Learn English",
+                item: "https://qurocity.ai/english",
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Learn French",
+                item: "https://qurocity.ai/french",
+              },
+              {
+                "@type": "ListItem",
+                position: 4,
+                name: "Learn German",
+                item: "https://qurocity.ai/german",
+              },
+              {
+                "@type": "ListItem",
+                position: 5,
+                name: "Learn Spanish",
+                item: "https://qurocity.ai/spanish",
+              },
+            ],
+          })}
+        </script>
 
-  {/* Breadcrumb Schema Markup */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Learn Korean",
-          "item": "https://qurocity.ai/korean"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Learn English",
-          "item": "https://qurocity.ai/english"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Learn French",
-          "item": "https://qurocity.ai/french"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Learn German",
-          "item": "https://qurocity.ai/german"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Learn Spanish",
-          "item": "https://qurocity.ai/spanish"
-        }
-      ]
-    })}
-  </script>
-
-  {/* Google Ads Conversion Tracking Script */}
-  <script>
-    {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
-  </script>
-</Helmet>
-
-
+        {/* Google Ads Conversion Tracking Script */}
+        <script>
+          {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
+        </script>
+      </Helmet>
 
       {/* mascot splash screen */}
       {showDiv1 && (
@@ -192,52 +199,25 @@ function Newcover() {
                       />
                     </div> */}
                     <h2 className={newcover.covernewheading1}>
-                      Why We Stand Out from Competitors:
+                      What Makes Qurocity the Top Choice for Language Learning:
                     </h2>
+
+                    <hr className={newcover.divi} />
                     <div className={newcover.covernewFirstContainer}>
-                      <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover1.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext1}
-                        >
-                          <h3>Flexibility and Convenience:</h3>
-                          <p>
-                            Learn anytime, anywhere, fitting seamlessly into
-                            busy schedules, unlike fixed offline classes.
-                          </p>
-                        </div>
-                      </div>
-                      <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover2.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext2}
-                        >
-                          <h3>Expert Tutors and Cutting-Edge Technology:</h3>
-                          <p>
-                            Highly qualified tutors and innovative tools keep
-                            students engaged and motivated, ensuring superior
-                            learning.
-                          </p>
-                        </div>
-                      </div>
-                      <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover3.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext3}
-                        >
-                          <h3>Culturally Rich Content:</h3>
-                          <p>
-                            Lessons include cultural context, preparing learners
-                            for real-world communication and interactions.
-                          </p>
-                        </div>
-                      </div>
+                      <p>
+                        At Qurocity, we stand out from competitors by offering a
+                        flexible and convenient language learning course that
+                        allows you to learn languages online at home, fitting
+                        seamlessly into your busy schedule, unlike traditional
+                        fixed offline classes. Our platform features highly
+                        qualified tutors and cutting-edge technology, ensuring
+                        engaging and motivating language lessons that enhance
+                        your learning experience. Moreover, our foreign language
+                        courses are enriched with culturally rich content,
+                        preparing you for real-world communication and
+                        interactions, making our language learning platform the
+                        ideal choice for beginners and seasoned learners alike.
+                      </p>
                     </div>
                   </>
                 ) : (
@@ -250,26 +230,28 @@ function Newcover() {
                       />
                     </div> */}
                     <h2 className={newcover.covernewheading}>
-                      Expand your world with personalized language learning
+                      Achieve Global Excellence with Qurocity’s Language
+                      Learning Courses
                     </h2>
-                    <hr />
+                    <hr className={newcover.divi} />
                     <p className={newcover.covernewsubheading}>
-                      Master any language, anytime, anywhere
+                      Learn Asian, European and Many More Second Languages
+                      Anytime, Anywhere
                     </p>
                     <p className={newcover.covernewdescription}>
-                      Qurocity, the ultimate language learning app is here at
-                      your service to kick start your language learning journey
-                      with fun pocket size chapters, curated by the best
-                      language experts offering an unforgettable learning
-                      experience that comes in handy in all your career and
-                      multilingual aspects.
+                      Qurocity, your go-to app for second language learning, is
+                      here to transform your language journey! Our dynamic
+                      foreign language courses feature bite-sized, interactive
+                      lessons, audiobooks, cultural blogs and more crafted by
+                      top language experts. Whether you're looking to upskill
+                      for your career, connect with new cultures, or simply
+                      enjoy the art of language, Qurocity offers an unparalleled
+                      learning experience that fits right in your pocket.
                     </p>
-                    <a href="#readmore" className={newcover.covernewreadmore}>
-                      Read more...
-                    </a>
                     <a
                       href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                       target="_blank"
+                      className={newcover.firstBtn}
                     >
                       <button className={newcover.covernewdownloadButton}>
                         Download the app now!
@@ -318,52 +300,26 @@ function Newcover() {
                         className={newcover.newcardImage}
                       />
                     </div> */}
-                    <h2 className={newcover.covernewheading1}>
-                      Why We Stand Out from Competitors:
+                    <h2 className={newcover.covernewheading2}>
+                      What Makes Qurocity the Top Choice for Language Learning:
                     </h2>
                     <div className={newcover.covernewFirstContainer}>
                       <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover1.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext1}
-                        >
-                          <h3>Flexibility and Convenience:</h3>
-                          <p>
-                            Learn anytime, anywhere, fitting seamlessly into
-                            busy schedules, unlike fixed offline classes.
-                          </p>
-                        </div>
-                      </div>
-                      <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover2.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext2}
-                        >
-                          <h3>Expert Tutors and Cutting-Edge Technology:</h3>
-                          <p>
-                            Highly qualified tutors and innovative tools keep
-                            students engaged and motivated, ensuring superior
-                            learning.
-                          </p>
-                        </div>
-                      </div>
-                      <div className={newcover.covernewFirstsubContainer}>
-                        <div className={newcover.covernewFirstsubContainerimg}>
-                          <img src="/Index/containercover3.png" alt="time" />
-                        </div>
-                        <div
-                          className={newcover.covernewFirstsubContainertext3}
-                        >
-                          <h3>Culturally Rich Content:</h3>
-                          <p>
-                            Lessons include cultural context, preparing learners
-                            for real-world communication and interactions.
-                          </p>
-                        </div>
+                        <p>
+                          At Qurocity, we stand out from competitors by offering
+                          a flexible and convenient language learning course
+                          that allows you to learn languages online at home,
+                          fitting seamlessly into your busy schedule, unlike
+                          traditional fixed offline classes. Our platform
+                          features highly qualified tutors and cutting-edge
+                          technology, ensuring engaging and motivating language
+                          lessons that enhance your learning experience.
+                          Moreover, our foreign language courses are enriched
+                          with culturally rich content, preparing you for
+                          real-world communication and interactions, making our
+                          language learning platform the ideal choice for
+                          beginners and seasoned learners alike.
+                        </p>
                       </div>
                     </div>
                   </>
@@ -376,27 +332,30 @@ function Newcover() {
                         className={newcover.newcardImage}
                       />
                     </div> */}
-                    <h2 className={newcover.covernewheading}>
-                      Expand your world with personalized language learning
+                    <h2 className={newcover.covernewheadingsub}>
+                      Achieve Global Excellence with Qurocity’s Language
+                      Learning Courses
                     </h2>
                     <hr />
-                    <p className={newcover.covernewsubheading}>
-                      Master any language, anytime, anywhere
+                    <p className={newcover.covernewsubheadingsub}>
+                      Learn Asian, European and Many More Second Languages
+                      Anytime, Anywhere
                     </p>
-                    <p className={newcover.covernewdescription}>
-                      Qurocity, the ultimate language learning app is here at
-                      your service to kick start your language learning journey
-                      with fun pocket size chapters, curated by the best
-                      language experts offering an unforgettable learning
-                      experience that comes in handy in all your career and
-                      multilingual aspects.
+                    <p className={newcover.covernewdescriptionsub}>
+                      Qurocity, your go-to app for second language learning, is
+                      here to transform your language journey! Our dynamic
+                      foreign language courses feature bite-sized, interactive
+                      lessons, audiobooks, cultural blogs and more crafted by
+                      top language experts. Whether you're looking to upskill
+                      for your career, connect with new cultures, or simply
+                      enjoy the art of language, Qurocity offers an unparalleled
+                      learning experience that fits right in your pocket.
                     </p>
-                    <a href="#readmore" className={newcover.covernewreadmore}>
-                      Read more...
-                    </a>
+
                     <a
                       href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
                       target="_blank"
+                      className={newcover.firstBtn}
                     >
                       <button className={newcover.covernewdownloadButton}>
                         Download the app now!
@@ -406,10 +365,43 @@ function Newcover() {
                 )}
               </div>
             </div>
+            {/* Next Icon */}
+            {/* <div
+              className={newcover.nextIconContainer1}
+              onClick={handleCardClick}
+            >
+              <i
+                style={{
+                  color: "#00046C",
+                }}
+                class="fa-solid fa-chevron-right div_next"
+              ></i>
+            </div> */}
+
+            {/* Left Arrow */}
+            {showNewCard && (
+              <div className={newcover.prevIconContainer} onClick={handlePrev}>
+                <i
+                  style={{ color: "#00046C" }}
+                  className="fa-solid fa-chevron-left div_prev"
+                ></i>
+              </div>
+            )}
+
+            {/* Right Arrow */}
+            {!showNewCard && (
+              <div className={newcover.nextIconContainer1} onClick={handleNext}>
+                <i
+                  style={{ color: "#00046C" }}
+                  className="fa-solid fa-chevron-right div_next"
+                ></i>
+              </div>
+            )}
             <div className={newcover.covernewrightside}>
               <img
                 src="/Index/coverpagenewimg.png"
                 alt="Qurocity cover"
+                color="black"
                 className={newcover.rightImage}
               />
             </div>
@@ -576,7 +568,7 @@ function Newcover() {
                 Our Solutions
               </h2> */}
               <h2 className={newcover.solheader}>
-                Key benefits of learning a new language with Qurocity
+              Key Features of Qurocity’s Foreign Language Courses
               </h2>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
@@ -637,7 +629,7 @@ function Newcover() {
             <div className="sliding-section-heading">
               {/* <h2>Languages we teach</h2> */}
               <h2>
-                Languages you can learn to channelize your linguistics career{" "}
+              Foreign Languages to channelize your linguistics career{" "}
               </h2>
             </div>
             <div className="sliding-container">

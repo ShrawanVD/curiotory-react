@@ -68,7 +68,7 @@ function Courselist() {
                 color: "#1F6BB5",
               }}
             >
-              Master a new
+              Language Learning
             </span>{" "}
             <br />
             <span
@@ -76,7 +76,7 @@ function Courselist() {
                 color: "#F4AD28",
               }}
             >
-              language for just
+              Courses At Just
             </span>{" "}
             <br />
             <i
@@ -103,14 +103,14 @@ function Courselist() {
                 color: "#1F6BB5",
               }}
             >
-              Master a new{" "}
+              Language Learning{" "}
             </span>
             <span
               style={{
                 color: "#F4AD28",
               }}
             >
-              language for just{" "}
+              Courses At Just{" "}
             </span>
             <i
               style={{

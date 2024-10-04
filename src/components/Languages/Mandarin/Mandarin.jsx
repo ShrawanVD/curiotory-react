@@ -170,7 +170,7 @@ function Mandarin() {
             name="keywords"
             content="mandarin language app, mandarin language course, learn mandarin online, mandarin language learning, learn chinese, mandarin language learning app"
           />
-          <link rel="canonical" href="https://qurocity.ai/mandarin" />
+          <link rel="canonical" href="https://qurocity.ai/learnmandarin" />
           {/* Google Tag (gtag.js) */}
           <script
             async

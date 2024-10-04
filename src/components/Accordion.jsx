@@ -363,6 +363,121 @@ export default function ControlledAccordions() {
               color: "#2F327D;",
             }}
           >
+            Which Foreign Languages are in demand in India?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            In India, languages like German, Japanese, and French are among the
+            highest paid due to the demand for skilled professionals in
+            multinational companies and sectors like IT and tourism. Mastering
+            these languages can lead to lucrative job opportunities in
+            translation, teaching, and international business.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion
+        expanded={expanded === "panel10"}
+        onChange={handleChange("panel10")}
+        slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
+        sx={{
+          fontFamily: "Poppins, Sans-serif",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
+          marginBottom: "0 1rem 1rem",
+          padding: "0 1rem",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography
+            sx={{
+              width: "90%",
+              flexShrink: 0,
+              fontSize: "1.15rem",
+              fontWeight: "700",
+              color: "#2F327D;",
+            }}
+          >
+            What are the benefits of learning a foreign language?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Learning a foreign language enhances cognitive abilities, improves
+            communication skills, and opens up global job opportunities. It also
+            allows for deeper cultural understanding and enriches travel
+            experiences.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion
+        expanded={expanded === "panel11"}
+        onChange={handleChange("panel11")}
+        slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
+        sx={{
+          fontFamily: "Poppins, Sans-serif",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
+          marginBottom: "0 1rem 1rem",
+          padding: "0 1rem",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography
+            sx={{
+              width: "90%",
+              flexShrink: 0,
+              fontSize: "1.15rem",
+              fontWeight: "700",
+              color: "#2F327D;",
+            }}
+          >
+            Why is language learning important?
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Language learning is important as it fosters communication and
+            understanding across cultures, enhancing personal and professional
+            relationships. It also boosts cognitive skills and opens up diverse
+            opportunities in education, travel, and employment.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion
+        expanded={expanded === "panel12"}
+        onChange={handleChange("panel12")}
+        slotProps={{ transition: { timeout: 800, unmountOnExit: true } }}
+        sx={{
+          fontFamily: "Poppins, Sans-serif",
+          boxShadow: "0px 1px 5px rgb(215, 215, 215)",
+          marginBottom: "0 1rem 1rem",
+          padding: "0 1rem",
+        }}
+      >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel4bh-content"
+          id="panel4bh-header"
+        >
+          <Typography
+            sx={{
+              width: "90%",
+              flexShrink: 0,
+              fontSize: "1.15rem",
+              fontWeight: "700",
+              color: "#2F327D;",
+            }}
+          >
             What is the easiest way to contact Qurocity?
           </Typography>
         </AccordionSummary>
