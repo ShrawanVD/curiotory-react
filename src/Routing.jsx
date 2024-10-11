@@ -27,6 +27,9 @@ import CheckoutPg from './components/CheckoutSection/CheckoutPg';
 import Life from './pages/LifeAtQurocity/life';
 import Account from './pages/AccountDeletion/account';
 
+import Press from './pages/Press/press';
+import Presssignle from './pages/PressSingle/presssignle'
+
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
 import JapaneseCourse from './pages/CourseDetailsPage/JapaneseCourse/JapaneseCourse';
@@ -54,6 +57,9 @@ export default (
         {/* <Route path="/blogs/:urlTitle-:id" element={<Singleblog />} /> */}
         <Route path="/blogs/:slug" element={<Singleblog />} />
         <Route path="/blogsId" element={<BlogRedirect />} />
+
+        <Route path="/press/:slug" element={<Presssignle />} />
+        <Route path="/press" element={<Press />} />
 
         {/* <Route path="/blogsId" element={<Singleblog/>} /> */}
         <Route path="/meetthetutor" element={<Tutor/>} />

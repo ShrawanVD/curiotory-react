@@ -73,17 +73,6 @@ border: 1px solid #044162;
 }
 
 
-
-
-/* 
-
-Now see the herirarchy of my project, 
-
-i have a blogs.html file in my project which aims for displaying all the current blogs which i have in my database
-or somewhere kind off and only the title of htis 
-
-*/
-
 .blogs-container {
   padding: 2rem 4rem;
   display: flex;

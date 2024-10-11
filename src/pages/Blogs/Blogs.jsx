@@ -39,7 +39,7 @@ function Blogs() {
       });
   };
 
-  const openBlog = (urlTitle,postId) => {
+  const openBlog = (urlTitle, postId) => {
     window.location.href = `/blogs/${urlTitle}-${postId}`;
   };
 
@@ -73,7 +73,9 @@ function Blogs() {
     <>
       {/* for meta tags  */}
       <Helmet>
-        <title>Qurocity Blogs : Welcome to the Qurocity Trail For Readers!</title>
+        <title>
+          Qurocity Blogs : Welcome to the Qurocity Trail For Readers!
+        </title>
         <meta
           name="description"
           content="Welcome to Qurocity Trail. Here, we ignite your Qurocity with engaging articles, tips, and stories that inspire continuous learning and skill upgrading."
@@ -134,7 +136,7 @@ function Blogs() {
               <div
                 key={post._id}
                 className={Blogscss.blogCard}
-                onClick={() => openBlog(post.urlTitle,post._id)}
+                onClick={() => openBlog(post.urlTitle, post._id)}
               >
                 <img src={post.imageUrl} alt="Blog Image" />
                 <div className={Blogscss.bloginfo}>
@@ -147,6 +149,8 @@ function Blogs() {
               </div>
             ))}
           </div>
+
+          {/*  this is the worst plahce */}
         </div>
         <div className={Blogscss.pagination}>
           {Array.from({ length: totalPages }, (_, index) => (

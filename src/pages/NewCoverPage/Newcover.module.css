@@ -391,6 +391,7 @@
   margin-bottom: 5rem;
   font-weight: bold;
 }
+
 .coverpageButton button:hover {
   background-color: #ef4b2b;
   color: white;
@@ -404,9 +405,11 @@
   text-align: center;
   padding: 20px;
 }
+
 .solcontainer h2 {
   font-family: Raleway, Arial, sans-serif;
 }
+
 .solheader {
   margin-bottom: 2.5rem;
   color: #00046C;
@@ -419,6 +422,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .solution2 {
   display: flex;
   align-items: center;
@@ -426,6 +430,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .iconContainer {
   position: relative;
   display: flex;
@@ -461,6 +466,7 @@
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   .text {
     text-align: justify;
     -webkit-hyphens: auto;
@@ -469,6 +475,7 @@
     hyphens: auto;
     text-justify: inter-word;
   }
+  
 }
 
 /* wondering how learning css ++++ same css for why online lang section */
