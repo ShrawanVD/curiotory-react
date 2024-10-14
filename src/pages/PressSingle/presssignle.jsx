@@ -4,6 +4,7 @@ import single from "./presssingle.module.css";
 import config from "../../services/config";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
+import { Helmet } from "react-helmet";
 
 const SinglePress = () => {
   const { slug } = useParams();
@@ -34,6 +35,13 @@ const SinglePress = () => {
 
   return (
     <>
+      {press && (
+        <Helmet>
+          <title>{press.metaTitle}</title>
+          <meta name="description" content={press.metaDescr} />
+          <meta name="keywords" content={press.metaKeywords} />
+        </Helmet>
+      )}
       <Newnavbar />
       <div className={single.wrapper}>
         {press ? (
@@ -45,9 +53,10 @@ const SinglePress = () => {
             </div>
             <h1 className={single.title}>{press.title}</h1>
             <hr className={single.separator} />
-            <div className={single.content}>
-              {press.content}
-            </div>
+            <div
+              className={single.content}
+              dangerouslySetInnerHTML={{ __html: press.content }}
+            />
           </div>
         ) : (
           <div className={single.loading}>

@@ -68,8 +68,8 @@ const Press = () => {
               <div className={prs.date}>{press.date}</div>
               <h2 className={prs.title}>{press.title}</h2>
               <p className={prs.description}>
-                {press.description.length > 150
-                  ? `${press.description.substring(0, 150)}...`
+                {press.description.length > 550
+                  ? `${press.description.substring(0, 550)}...`
                   : press.description}
               </p>
               <div className={prs.buttons}>

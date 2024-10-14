@@ -158,6 +158,9 @@ function Footer() {
                   <li>
                     <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
+                  <li>
+                    <a href="/press">Press Release</a>
+                  </li>
                   {/* <li>
                     <a href="/becometutor">Become a Tutor</a>
                   </li> */}
