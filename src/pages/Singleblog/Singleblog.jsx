@@ -58,6 +58,7 @@ function Singleblog() {
     <div>
       {blog && (
         <Helmet>
+          <link rel="canonical" href={`https://qurocity.ai/blogs/${slug}-${id}`} />
           <title>{blog.metaTitle}</title>
           <meta name="description" content={blog.metaDescr} />
           <meta name="keywords" content={blog.metaKeywords} />

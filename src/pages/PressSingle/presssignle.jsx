@@ -37,6 +37,7 @@ const SinglePress = () => {
     <>
       {press && (
         <Helmet>
+          <link rel="canonical" href={`https://qurocity.ai/press/${slug}-${id}`} />
           <title>{press.metaTitle}</title>
           <meta name="description" content={press.metaDescr} />
           <meta name="keywords" content={press.metaKeywords} />
