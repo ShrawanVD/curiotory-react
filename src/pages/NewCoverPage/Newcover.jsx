@@ -7,6 +7,7 @@ import Courselist from "../../components/CourseList/Courselist";
 import Accordion from "../../components/Accordion";
 import { useState, useEffect } from "react";
 import "../Home/Home.css";
+import Popup from "../../components/Popup/Popup";
 
 // adding swiper
 import {
@@ -28,8 +29,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer2 from "../../components/Footer/Footer2";
+import CounsellingForm from "../../components/CounsellingForm/CounsellingForm";
 
 function Newcover() {
+  // pop up
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  // ----------------
+
   const [showNewCard, setShowNewCard] = useState(false);
 
   // Handle next slide (right arrow)
@@ -83,17 +91,25 @@ function Newcover() {
   };
 
   useEffect(() => {
-    addGTM();
-
-    // After 1 second, hide div1 and show div2
+    // Show main content after splash screen duration
     const timer = setTimeout(() => {
       setShowDiv1(false);
       setShowDiv2(true);
-    }, 1000);
 
-    // Clear the timer when the component unmounts
+      // Show popup a few seconds after splash screen hides
+      const popupTimer = setTimeout(() => {
+        setShowPopup(true);
+      }, 3000); // Adjust this delay as needed
+
+      return () => clearTimeout(popupTimer);
+    }, 2000); // Splash screen duration (2 seconds)
+
     return () => clearTimeout(timer);
   }, []);
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   const addGTM = () => {
     const script1 = document.createElement("script");
@@ -424,6 +440,9 @@ function Newcover() {
             </div>
           </a>
 
+          {/* counselling form */}
+          <CounsellingForm />
+
           {/* course list */}
           <Courselist />
 
@@ -568,7 +587,7 @@ function Newcover() {
                 Our Solutions
               </h2> */}
               <h2 className={newcover.solheader}>
-              Key Features of Qurocity’s Foreign Language Courses
+                Key Features of Qurocity’s Foreign Language Courses
               </h2>
               <div className={newcover.solution}>
                 <div className={newcover.iconContainer}>
@@ -628,9 +647,7 @@ function Newcover() {
           <div className="sliding-section">
             <div className="sliding-section-heading">
               {/* <h2>Languages we teach</h2> */}
-              <h2>
-              Foreign Languages to channelize your linguistics career{" "}
-              </h2>
+              <h2>Foreign Languages to channelize your linguistics career </h2>
             </div>
             <div className="sliding-container">
               <Slider {...settings}>
@@ -1311,6 +1328,9 @@ function Newcover() {
           <Footer2 />
         </div>
       )}
+
+      {/* Show popup after delay */}
+      {/* {showPopup && <Popup onClose={closePopup} />} */}
     </>
   );
 }

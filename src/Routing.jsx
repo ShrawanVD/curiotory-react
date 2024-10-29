@@ -29,6 +29,9 @@ import Account from './pages/AccountDeletion/account';
 
 import Press from './pages/Press/press';
 import Presssignle from './pages/PressSingle/presssignle'
+import Popup from './components/Popup/Popup'
+import CounsellingForm from  './components/CounsellingForm/CounsellingForm'
+
 
 // courses 
 import EnglishCourse from './pages/CourseDetailsPage/EnglishCourse/EnglishCourse';
@@ -74,6 +77,9 @@ export default (
         <Route path="/careers/details/:id" element={<Jobdetails />} />
         <Route path="/rev" element={<Rev />} />
         <Route path="/account-deletion" element={<Account />} />
+
+        <Route path="/popup" element={<Popup />} />
+        <Route path="/CounsellingForm" element={<CounsellingForm />} />
         
         {/* Languages pages routing */}
         <Route path="/learnarabic" element={<Arabic />} />
