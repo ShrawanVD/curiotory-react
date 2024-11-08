@@ -441,7 +441,7 @@ function Newcover() {
           </a>
 
           {/* counselling form */}
-          <CounsellingForm />
+          {/* <CounsellingForm /> */}
 
           {/* course list */}
           <Courselist />
@@ -1220,7 +1220,6 @@ function Newcover() {
                 disableOnInteraction: false, // Resume autoplay after interaction
               }}
               onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
               breakpoints={{
                 // when window width is >= 768px
                 768: {
@@ -1323,6 +1322,9 @@ function Newcover() {
               </div>
             </div>
           </div>
+
+          {/* counselling form */}
+          <CounsellingForm />
 
           {/* footer */}
           <Footer2 />

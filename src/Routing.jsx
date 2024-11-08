@@ -49,11 +49,16 @@ import Rev from './components/LanguagesReviews/Rev';
 import Jobdetails from './components/Jobdetails/Jobdetails';
 import NotFound from './pages/NotFound/NotFound';
 import NotFoundDev from './pages/NotFound/NotFoundDev';
+import InquiryForm from './pages/InquiryForm/InquiryForm';
+import OneSession from './pages/OneSession/OneSession';
+import ReviewSession from './components/ReviewSession/ReviewSession';
+import Thankyou from './pages/Thankyou/Thankyou';
 
 
 export default (
     <Routes>
         <Route index element={<Newcover/>} />
+        <Route path="/one-on-one-session" element={<OneSession/>} />
         <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/contactus" element={<Contact/>} />
         <Route path="/blogs" element={<Blogs/>} />
@@ -80,6 +85,7 @@ export default (
 
         <Route path="/popup" element={<Popup />} />
         <Route path="/CounsellingForm" element={<CounsellingForm />} />
+        <Route path="/inquiry" element={<InquiryForm />} />
         
         {/* Languages pages routing */}
         <Route path="/learnarabic" element={<Arabic />} />
@@ -104,9 +110,11 @@ export default (
         <Route path="/course/spanish" element={<SpanishCourse />} />
         <Route path="/course/german" element={<GermanCourse />} />
         <Route path="/review" element={<Reviewcourse />} />
+        <Route path="/reviewsession" element={<ReviewSession />} />
 
         <Route path="*" element={<NotFound />} />
         <Route path="/underDevelopment" element={<NotFoundDev />} />
+        <Route path="/thankyou" element={<Thankyou />} />
 
 
 

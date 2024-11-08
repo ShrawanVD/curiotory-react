@@ -1,21 +1,147 @@
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay for focus */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #e9e8fce9;
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-image: url('/path-to-your-background/surprise-theme-bg.jpg'); /* Surprise theme background */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
   .popup-content {
-    background: white;
+    width: 50%; /* Adjust for smaller desktops */
+  }
+}
+
+@media (max-width: 900px) {
+  .popup-content {
+    width: 60%; /* Adjust for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-content {
+    width: 80%; /* Adjust for small tablets */
     padding: 20px;
-    border-radius: 5px;
-    width: 300px;
+  }
+
+  .popup-email-input {
+    width: 55%; /* Adjust email input size */
+  }
+
+  .popup-signup-btn {
+    width: 35%; /* Adjust button size */
+  }
+}
+
+@media (max-width: 490px) {
+  .popup-content {
+    width: 90%; /* For small mobile screens */
+    padding: 15px;
+  }
+
+  .popup-email-input {
+    width: 30%; /* Adjust email input size */
+  }
+
+  .popup-signup-btn {
+    width: 55%; /* Adjust button size */
+    font-size: 0.8rem;
+  }
+
+  .popup-logo {
+    width: 35%; /* Adjust logo size for small screens */
+  }
+
+  .popup-content h2 {
+    font-size: 1.2rem;
     text-align: center;
   }
   
+  .popup-content p {
+    font-size: 0.9rem
+  }
+}
+
+/* Logo styling */
+.popup-logo {
+  width: 15%;
+  margin-bottom: 1.5rem;
+}
+
+/* Heading and paragraph */
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #545454;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Email input and button styling */
+.popup-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.popup-email-input {
+  width: 40%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-signup-btn {
+  background-color: #ff6b6b; /* Bright, attention-grabbing color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30%;
+}
+
+.popup-signup-btn:hover {
+  background-color: #ff4c4c; /* Slight hover effect */
+}
+
+/* No Thanks button */
+.popup-close-btn {
+  background: none;
+  color: #ff6b6b;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.popup-close-btn:hover {
+  color: #ff4c4c;
+}
