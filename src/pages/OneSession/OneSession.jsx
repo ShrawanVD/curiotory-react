@@ -130,49 +130,26 @@ function OneSession() {
 
   return (
     <>
+    {/* Google Tag Manager (noscript) */}
+    <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PDFXMX24"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
       <Helmet>
         {/* Canonical Link */}
         <link rel="canonical" href="https://qurocity.ai/" />
 
-        {/* Breadcrumb Schema Markup */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Learn Korean",
-                item: "https://qurocity.ai/korean",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Learn English",
-                item: "https://qurocity.ai/english",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Learn French",
-                item: "https://qurocity.ai/french",
-              },
-              {
-                "@type": "ListItem",
-                position: 4,
-                name: "Learn German",
-                item: "https://qurocity.ai/german",
-              },
-              {
-                "@type": "ListItem",
-                position: 5,
-                name: "Learn Spanish",
-                item: "https://qurocity.ai/spanish",
-              },
-            ],
-          })}
+        {/* Google Tag Manager */}
+        <script>
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'}); var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PDFXMX24');`}
         </script>
+
+
+       
 
         {/* Google Ads Conversion Tracking Script */}
         <script>

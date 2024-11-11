@@ -37,6 +37,15 @@ const Press = () => {
 
   return (
     <>
+    {/* Google Tag Manager (noscript) */}
+    <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PDFXMX24"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        ></iframe>
+      </noscript>
       <Newnavbar />
       <div className={prs.blogbackground}>
         <div className={prs.blogHeading}>
