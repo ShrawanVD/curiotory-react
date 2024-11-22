@@ -11,7 +11,7 @@ const DownloadMarkettingLeads = () => {
     // `${config.apiUrl}/download-leads`
 
     try {
-      const response = await fetch('http://localhost:3000/download-leads', {
+      const response = await fetch(`${config.apiUrl}/download-leads`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
