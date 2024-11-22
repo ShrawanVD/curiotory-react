@@ -53,6 +53,7 @@ import InquiryForm from './pages/InquiryForm/InquiryForm';
 import OneSession from './pages/OneSession/OneSession';
 import ReviewSession from './components/ReviewSession/ReviewSession';
 import Thankyou from './pages/Thankyou/Thankyou';
+import DownloadMarkettingLeads from './pages/DownloadMarkettingLeads/DownloadMarkettingLeads';
 
 
 export default (
@@ -86,6 +87,7 @@ export default (
         <Route path="/popup" element={<Popup />} />
         <Route path="/CounsellingForm" element={<CounsellingForm />} />
         <Route path="/inquiry" element={<InquiryForm />} />
+        <Route path="/download-leads" element={<DownloadMarkettingLeads />} />
         
         {/* Languages pages routing */}
         <Route path="/learnarabic" element={<Arabic />} />

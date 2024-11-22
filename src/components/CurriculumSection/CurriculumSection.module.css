@@ -1,0 +1,166 @@
+/* General container styles */
+.curriculumContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #00046c;
+    border: 1px solid #00046c;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 1215px;
+    margin: 2rem auto 4rem;
+  }
+  
+  /* Sidebar styles */
+  .curriculumSidebar {
+    width: 50%;
+    border-right: 2px solid #00046c;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+  }
+
+ 
+  
+
+  
+  
+  .curriculumSidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* .curriculumSidebar li {
+    cursor: pointer;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+
+  
+  .curriculumSidebar li:hover{
+    color: #0f2058;
+  }
+  .curriculumSidebar li.active {
+    color: #1a3fb8;
+  } */
+
+
+  /* Sidebar list item default style */
+.curriculumSidebar li {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  border-radius: 8px; /* Rounded corners for box effect */
+}
+
+/* Hover effect */
+.curriculumSidebar li:hover {
+  background-color: #f0f4ff; /* Light blue background on hover */
+  /* background-color: #faf3ee; Light blue background on hover */
+  color: #1a3fb8; /* Text color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Active list item style */
+.curriculumSidebar li.active {
+  background-color: #f4a261; /* Highlight background for active item */
+  color: #ffffff; /* Text color for active item */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for active item */
+  border: 2px solid #00046c; /* Border to make it more defined */
+  transform: translateY(-2px); /* Slight lift for active item */
+}
+
+  
+
+
+  
+/* Content for larger screens (beside sidebar) */
+.curriculumContent {
+    width: 50%; /* Keep width */
+    padding-left: 20px; /* Maintain spacing */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+  }
+  
+
+
+  .curriculumContentBoxLargeScreen {
+    padding: 10px;
+    text-align: center; /* Center text alignment */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20%;
+  }
+  
+  
+  /* Content for smaller screens (below sidebar item) */
+  .curriculumContentBoxSmallScreen {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+  }
+  
+  .curriculumContentBoxSmallScreen.showContent {
+    display: block; /* Show only when active */
+  }
+  
+  /* Media Query for screens below 900px */
+  @media (max-width: 900px) {
+    .curriculumContainer {
+      flex-direction: column;
+    }
+  
+    .curriculumSidebar {
+      width: 100%;
+      border-right: none;
+    }
+  
+    .curriculumSidebar li {
+      padding: 15px 10px;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .curriculumSidebar li.active {
+      background-color: #e0e0e0;
+      color: #1a3fb8;
+    }
+  
+    .curriculumContent {
+      display: none; /* Hide right-side content */
+    }
+  }
+  
+
+  /* Hide the small-screen content section for larger screens */
+@media (min-width: 901px) {
+    .curriculumContentBoxSmallScreen {
+      display: none !important;
+    }
+  }
+  
+  /* Ensure only large-screen content displays above 900px */
+  @media (min-width: 901px) {
+    .curriculumContent {
+      display: block;
+    }
+  }
+  
+  /* Ensure small-screen behavior only applies for small screens */
+  @media (max-width: 900px) {
+    .curriculumContent {
+      display: none; /* Hide large-screen content */
+    }
+  }
+  

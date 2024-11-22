@@ -255,9 +255,9 @@ function Newnavbar() {
             <a href="/blogs">Blogs</a>
             <a href="/becometutor">Become a Tutor</a>
             <a href="/aboutus">About us</a>
-            <a href="/contactus" className={newnavv.contactUs}>
-              <span>Contact us</span>
-            </a>
+            <a href="/one-on-one-session" className={newnavv.contactUs}>
+                  <span>1-on-1 Session</span>
+                </a>
 
             <a
               href="https://qurocity.ai/lms/"
@@ -454,8 +454,8 @@ function Newnavbar() {
                 <a href="/blogs">Blogs</a>
                 <a href="/becometutor">Become a Tutor</a>
                 <a href="/aboutus">About us</a>
-                <a href="/contactus" className={newnavv.contactUs}>
-                  <span>Contact us</span>
+                <a href="/one-on-one-session" className={newnavv.contactUs}>
+                  <span>1-on-1 Session</span>
                 </a>
                 <a
                   href="https://qurocity.ai/lms/"

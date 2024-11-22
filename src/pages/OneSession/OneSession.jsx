@@ -4,7 +4,8 @@ import { Helmet } from "react-helmet";
 import LazyLoad from "react-lazyload";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Courselist from "../../components/CourseList/Courselist";
-import Accordion from "../../components/Accordion";
+import Accordion from "../../components/AccordianSession";
+
 import { useState, useEffect } from "react";
 import "../Home/Home.css";
 import Popup from "../../components/Popup/Popup";
@@ -31,6 +32,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer2 from "../../components/Footer/Footer2";
 import CounsellingForm from "../../components/CounsellingForm/CounsellingForm";
+
+import { FaCheckCircle } from "react-icons/fa"; // Example for vector icons
+import CurriculumSection from "../../components/CurriculumSection/CurriculumSection";
 
 function OneSession() {
   // pop up
@@ -130,8 +134,8 @@ function OneSession() {
 
   return (
     <>
-    {/* Google Tag Manager (noscript) */}
-    <noscript>
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-PDFXMX24"
           height="0"
@@ -148,9 +152,6 @@ function OneSession() {
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'}); var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl; f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PDFXMX24');`}
         </script>
 
-
-       
-
         {/* Google Ads Conversion Tracking Script */}
         <script>
           {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
@@ -162,100 +163,32 @@ function OneSession() {
         {/* cover page  */}
         <div className={newcover.covernewdiv}>
           <div className={newcover.coverleftnewside}>
-            <div
-              className={`${newcover.covernewcard} ${
-                showNewCard ? newcover.slideOut : newcover.slideIn
-              }`}
-            >
-              {showNewCard ? (
-                <>
-                  {/* <div className={newcover.newcardImageContainer}>
-                      <img
-                        src="/Index/curoCoversmallimg.png"
-                        alt="top right"
-                        className={newcover.newcardImage}
-                      />
-                    </div> */}
-                  <h2 className={newcover.covernewheading1}>
-                    What Makes Qurocity the Top Choice for Language Learning:
-                  </h2>
-
-                  <hr className={newcover.divi} />
-                  <div className={newcover.covernewFirstContainer}>
-                    <p>
-                      At Qurocity, we stand out from competitors by offering a
-                      flexible and convenient language learning course that
-                      allows you to learn languages online at home, fitting
-                      seamlessly into your busy schedule, unlike traditional
-                      fixed offline classes. Our platform features highly
-                      qualified tutors and cutting-edge technology, ensuring
-                      engaging and motivating language lessons that enhance your
-                      learning experience. Moreover, our foreign language
-                      courses are enriched with culturally rich content,
-                      preparing you for real-world communication and
-                      interactions, making our language learning platform the
-                      ideal choice for beginners and seasoned learners alike.
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {/* <div className={newcover.newcardImageContainer}>
-                      <img
-                        src="/Index/curoCoversmallimg.png"
-                        alt="top right"
-                        className={newcover.newcardImage}
-                      />
-                    </div> */}
-                  <h2 className={newcover.covernewheading}>
-                    Achieve Global Excellence with Qurocity’s Language Learning
-                    Courses
-                  </h2>
-                  <hr className={newcover.divi} />
-                  <p className={newcover.covernewsubheading}>
-                    Learn Asian, European and Many More Second Languages
-                    Anytime, Anywhere
-                  </p>
-                  <p className={newcover.covernewdescription}>
-                    Qurocity, your go-to app for second language learning, is
-                    here to transform your language journey! Our dynamic foreign
-                    language courses feature bite-sized, interactive lessons,
-                    audiobooks, cultural blogs and more crafted by top language
-                    experts. Whether you're looking to upskill for your career,
-                    connect with new cultures, or simply enjoy the art of
-                    language, Qurocity offers an unparalleled learning
-                    experience that fits right in your pocket.
-                  </p>
-                  {/* <a
-                      href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
-                      target="_blank"
-                      className={newcover.firstBtn}
-                    >
-                      <button className={newcover.covernewdownloadButton}>
-                        Download the app now!
-                      </button>
-                    </a> */}
-                </>
-              )}
-
-              {/* Next Icon */}
-              <div
-                className={newcover.nextIconContainer}
-                onClick={handleCardClick}
-              >
-                <i
-                  style={{
-                    color: "#00046C",
-                  }}
-                  class="fa-solid fa-chevron-right div_next"
-                ></i>
-              </div>
+            <div className={`${newcover.covernewcard} `}>
+              <h2 className={newcover.covernewheading}>
+                Get ahead in your language journey With our customized
+                One-on-one sessions
+              </h2>
+              <hr className={newcover.divi} />
+              <p className={newcover.covernewsubheading}>
+                Get personal guidance like never before.
+              </p>
+              <p className={newcover.covernewdescription}>
+                Experience the best language training, whether you're preparing
+                for exams, planning to study abroad, or simply looking to
+                develop an additional skill. Our expert instructors tailor each
+                session to meet your unique needs, ensuring you're confident and
+                fully prepared for any challenge. Whether it's mastering complex
+                grammar, expanding your vocabulary, or perfecting pronunciation,
+                we provide support every step of the way. With flexible learning
+                options and engaging resources, you’ll experience language
+                learning that fits your lifestyle and goals.
+              </p>
             </div>
           </div>
           <div className={newcover.covernewrightside}>
             <img
-              src="/Index/coverpagenewimg.png"
-              alt="Qurocity cover"
+              src="https://res.cloudinary.com/dvk1ynowq/image/upload/v1731586916/design_qw6htq.jpg"
+              alt="Qurocity cove"
               className={newcover.rightImage}
             />
           </div>
@@ -263,120 +196,32 @@ function OneSession() {
 
         <div className={newcover.covernewdiv1}>
           <div className={newcover.coverleftnewside}>
-            <div
-              className={`${newcover.covernewcard} ${
-                showNewCard ? newcover.slideOut : newcover.slideIn
-              }`}
-              onClick={handleCardClick}
-            >
-              {showNewCard ? (
-                <>
-                  {/* <div className={newcover.newcardImageContainer}>
-                      <img
-                        src="/Index/curoCoversmallimg.png"
-                        alt="top right"
-                        className={newcover.newcardImage}
-                      />
-                    </div> */}
-                  <h2 className={newcover.covernewheading2}>
-                    What Makes Qurocity the Top Choice for Language Learning:
-                  </h2>
-                  <div className={newcover.covernewFirstContainer}>
-                    <div className={newcover.covernewFirstsubContainer}>
-                      <p>
-                        At Qurocity, we stand out from competitors by offering a
-                        flexible and convenient language learning course that
-                        allows you to learn languages online at home, fitting
-                        seamlessly into your busy schedule, unlike traditional
-                        fixed offline classes. Our platform features highly
-                        qualified tutors and cutting-edge technology, ensuring
-                        engaging and motivating language lessons that enhance
-                        your learning experience. Moreover, our foreign language
-                        courses are enriched with culturally rich content,
-                        preparing you for real-world communication and
-                        interactions, making our language learning platform the
-                        ideal choice for beginners and seasoned learners alike.
-                      </p>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {/* <div className={newcover.newcardImageContainer}>
-                      <img
-                        src="/Index/curoCoversmallimg.png"
-                        alt="top right"
-                        className={newcover.newcardImage}
-                      />
-                    </div> */}
-                  <h2 className={newcover.covernewheadingsub}>
-                    Achieve Global Excellence with Qurocity’s Language Learning
-                    Courses
-                  </h2>
-                  <hr />
-                  <p className={newcover.covernewsubheadingsub}>
-                    Learn Asian, European and Many More Second Languages
-                    Anytime, Anywhere
-                  </p>
-                  <p className={newcover.covernewdescriptionsub}>
-                    Qurocity, your go-to app for second language learning, is
-                    here to transform your language journey! Our dynamic foreign
-                    language courses feature bite-sized, interactive lessons,
-                    audiobooks, cultural blogs and more crafted by top language
-                    experts. Whether you're looking to upskill for your career,
-                    connect with new cultures, or simply enjoy the art of
-                    language, Qurocity offers an unparalleled learning
-                    experience that fits right in your pocket.
-                  </p>
-
-                  <a
-                    href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
-                    target="_blank"
-                    className={newcover.firstBtn}
-                  >
-                    <button className={newcover.covernewdownloadButton}>
-                      Download the app now!
-                    </button>
-                  </a>
-                </>
-              )}
+            <div className={`${newcover.covernewcard} `}>
+              <h2 className={newcover.covernewheadingsub}>
+                Get ahead in your language journey With our customized
+                One-on-one sessions
+              </h2>
+              <hr />
+              <p className={newcover.covernewsubheadingsub}>
+                Get personal guidance like never before.
+              </p>
+              <p className={newcover.covernewdescriptionsub}>
+                Experience the best language training, whether you're preparing
+                for exams, planning to study abroad, or simply looking to
+                develop an additional skill. Our expert instructors tailor each
+                session to meet your unique needs, ensuring you're confident and
+                fully prepared for any challenge. Whether it's mastering complex
+                grammar, expanding your vocabulary, or perfecting pronunciation,
+                we provide support every step of the way. With flexible learning
+                options and engaging resources, you’ll experience language
+                learning that fits your lifestyle and goals.
+              </p>
             </div>
           </div>
-          {/* Next Icon */}
-          {/* <div
-              className={newcover.nextIconContainer1}
-              onClick={handleCardClick}
-            >
-              <i
-                style={{
-                  color: "#00046C",
-                }}
-                class="fa-solid fa-chevron-right div_next"
-              ></i>
-            </div> */}
 
-          {/* Left Arrow */}
-          {showNewCard && (
-            <div className={newcover.prevIconContainer} onClick={handlePrev}>
-              <i
-                style={{ color: "#00046C" }}
-                className="fa-solid fa-chevron-left div_prev"
-              ></i>
-            </div>
-          )}
-
-          {/* Right Arrow */}
-          {!showNewCard && (
-            <div className={newcover.nextIconContainer1} onClick={handleNext}>
-              <i
-                style={{ color: "#00046C" }}
-                className="fa-solid fa-chevron-right div_next"
-              ></i>
-            </div>
-          )}
           <div className={newcover.covernewrightside}>
             <img
-              src="/Index/coverpagenewimg.png"
+              src="https://res.cloudinary.com/dvk1ynowq/image/upload/v1731586916/design_qw6htq.jpg"
               alt="Qurocity cover"
               color="black"
               className={newcover.rightImage}
@@ -407,143 +252,17 @@ function OneSession() {
         {/* course list */}
         {/* <Courselist /> */}
 
-        {/* lottie player animation */}
-        {/* <div>
-            <div className={newcover.lottie}>
-              <LazyLoad
-                height={200}
-                offset={100}
-                className={newcover.lottieSection}
-              >
-                <Player
-                  autoplay
-                  loop
-                  src="/lottiePlayer/proFinal.json"
-                  className={newcover.iframeLottie}
-                />
-              </LazyLoad>
-            </div>
-            <div className={newcover.downloadButton}>
-              <div className={newcover.coverpageButton}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://play.google.com/store/apps/details?id=stage.curiotory.com&hl=en"
-                >
-                  <button>Download the app</button>
-                </a>
-              </div>
-            </div>
-          </div> */}
 
-        {/* Newsppr section */}
-        {/* <div className={newcover.newsppr}>
-            <div className={newcover.pprLayout}>
-              <h3>Featured in Top Columns</h3>
 
-              TOI
-              <div className={newcover.pprContent}>
-                <div className={newcover.pprLeft}>
-                  <img src="/Index/TOI.webp" alt="Featured in Times of India" />
-                </div>
-                <div className={newcover.pprRight}>
-                  <p>
-                    Meet our versatile and revolutionary Founder & CEO of
-                    Qurocity- The ultimate language learning app, Mrs Sheetal
-                    Ramkumar Featured on Times Of India For{" "}
-                    <a
-                      target="_blank"
-                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
-                    >
-                      “The Most Inspiring Entrepreneurs to watch in 2024”
-                    </a>
-                    . Her phenomenal leadership skills and vision of building
-                    Bharat’s first language learning app has created a much
-                    greater impact on our team and other aspiring entrepreneurs
-                    too. Her success story is truly inspiring and makes us want
-                    to believe in ourselves too. Under her leadership in
-                    revolutionizing edutech, Qurocity has been able to cater to
-                    people all over the world, who are willing to make a change
-                    in their life through language learning and that's how
-                    Qurocity became the forefront of language education. To dive
-                    into the journey of Qurocity read more :{" "}
-                    <a
-                      target="_blank"
-                      href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
-                    >
-                      Times Of India
-                    </a>
-                  </p>
-                </div>
-              </div>
 
-              <hr className={newcover.newsppr_hr} />
+        {/* <CurriculumSection className={newcover.video1}/>
+        <AccordianSessionCurr className={newcover.video2} /> */}
 
-              Eco Times
-              <div className={newcover.pprContentRight}>
-                <div className={newcover.pprRight}>
-                  <p>
-                    We are thrilled to announce that Qurocity- The Ultimate
-                    Language Learning Platform is featured in The Economic
-                    Times' prestigious list of{" "}
-                    <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
-                      "The Most Trusted Brands To Watch in 2024"!{" "}
-                    </a>{" "}
-                    This recognition highlights our unwavering commitment to
-                    delivering top-notch services and building trust with our
-                    valued customers. Being spotlighted by such a renowned
-                    publication underscores our dedication to excellence and
-                    innovation. We are immensely grateful to our fantastic team
-                    for their continued support and trust. Stay tuned as we
-                    continue to bring to you the best of linguistics ever known!
-                    Here’s to much more achievements to come in the future for
-                    Qurocity! Want to Read more:{" "}
-                    <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
-                      Economic Times
-                    </a>
-                  </p>
-                </div>
-                <div className={newcover.pprLeft}>
-                  <img src="/Index/ET.webp" alt="New Featured Image" />
-                </div>
-              </div>
 
-              <hr className={newcover.newsppr_hr} />
-
-              ISO certified:
-              <div className={newcover.iso}>
-                <div className={newcover.pprLeft}>
-                  <img src="/Index/ISO-Qurocity.jpg" alt="ISO - Qurocity" />
-                </div>
-                <div className={newcover.pprRight}>
-                  <p>
-                    <strong className={newcover.iso_head}>
-                      Qurocity: ISO Certified and Trusted for Language Learning
-                      Excellence
-                    </strong>
-                    <br />
-                    <br />
-                    At Qurocity, we are proud to be ISO certified, demonstrating
-                    our unwavering commitment to quality and excellence in
-                    language education. This prestigious compliance
-                    certification reflects our dedication to providing top-notch
-                    courses, reliable service, and continuous improvement. With
-                    precise quality assurance systems in place, our ISO
-                    certification ensures that you receive a world-class
-                    learning experience according to your needs. Trust Qurocity
-                    to be your partner in achieving your language learning goals
-                    with the assurance of our trusted and credible standards.
-                  </p>
-                </div>
-              </div>
-
-              <hr className={newcover.newsppr_hr} />
-            </div>
-          </div> */}
-
-        <div>
+         <div>
           <h2 className={newcover.hheader}>
-          Learn from the Best Teachers at Qurocity and Master Your Language Skills
+            Learn from the Best Teachers at Qurocity and Master Your Language
+            Skills
           </h2>
           <div className={newcover.container}>
             <div className={newcover.leftContent}>
@@ -574,6 +293,7 @@ function OneSession() {
               <iframe
                 width="560"
                 height="315"
+                // src="https://www.youtube.com/embed/-P0pUL1r7uA?si=k7Dhlu3HFsu4OXP-"
                 src="https://www.youtube.com/embed/dmXcB8_Vd0I?si=yulLT9X1msSmzT4D"
                 title="YouTube video player"
                 frameBorder="0"
@@ -582,68 +302,177 @@ function OneSession() {
               ></iframe>
             </div>
           </div>
+        </div> 
+
+{/* single youtube video section */}
+        <div className={newcover.engulf1}>
+        <div className={newcover.rightContent1}>
+          <iframe
+            width="760"
+            height="415"
+            src="https://www.youtube.com/embed/-P0pUL1r7uA?si=k7Dhlu3HFsu4OXP-"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
         </div>
 
-        {/* Key benefits section */}
-        <div>
-          <div className={newcover.solcontainer}>
-            {/* <h2 className={newcover.solheader}>
-                Our Solutions
-              </h2> */}
-            <h2 className={newcover.solheader}>
-              Key Features of Qurocity’s Foreign Language Courses
-            </h2>
-            <div className={newcover.solution}>
-              <div className={newcover.iconContainer}>
-                <LazyLoad offset={100}>
-                  <img
-                    width="173"
-                    height="187"
-                    src="/Index/Picture1.png"
-                    alt="1st solution"
-                  />
-                </LazyLoad>
+        {/* curriculum section */}
+        {/* <div className={newcover.engulf}>
+          <h2 className={newcover.curriculumHeader}>
+            Personalized one on one sessions curriculum
+          </h2>
+          <div className={newcover.curriculumContainer}>
+            <div className={newcover.curriculumContent}>
+              <div className={newcover.leftCurriculum}>
+                <ul>
+                  <li>
+                    <strong>Focus on all 4 aspects of language:</strong>{" "}
+                    Reading, Writing, Listening & Speaking.
+                  </li>
+                  <li>
+                    <strong>Preparation as per your needs and goals.</strong>
+                  </li>
+                  <li>
+                    <strong>Exam preparation:</strong> Multiple paper solving,
+                    quizzes, and tests.
+                  </li>
+                  <li>
+                    <strong>Weekly and quarterly tests.</strong>
+                  </li>
+                  <li>
+                    <strong>
+                      Performance tracking and real-time feedback.
+                    </strong>
+                  </li>
+                  <li>
+                    <strong>On time doubt solving.</strong>
+                  </li>
+                  <li>
+                    <strong>Real time classes:</strong> Focus on fluency and
+                    pronunciation.
+                  </li>
+                  <li>
+                    <strong>Sessions duration:</strong> Up to 50-70 hours.
+                  </li>
+                </ul>
               </div>
-              <p className={newcover.text}>
-                There are no age restrictions or skill gaps to learning new
-                languages. We help you take control of your life and unlock your
-                growth potential.
-              </p>
-            </div>
-            <div className={newcover.solution2}>
-              <p className={newcover.text}>
-                Multilingual students are better equipped to ace academics and
-                internationalize their careers. We help turn simple curiosities
-                into life-changing realities.
-              </p>
-              <div className={newcover.iconContainer}>
-                <LazyLoad offset={100}>
-                  <img
-                    width="220"
-                    height="146"
-                    src="/Index/Picture2.png"
-                    alt="2nd solution"
-                  />
-                </LazyLoad>
+              <div className={newcover.rightCurriculum}>
+                <img
+                  src="https://res.cloudinary.com/dvk1ynowq/image/upload/v1731587257/2148888815_gkepoo.jpg"
+                  alt="Curriculum Illustration"
+                  className={newcover.curriculumImage}
+                />
               </div>
             </div>
-            <div className={newcover.solution}>
-              <div className={newcover.iconContainer}>
-                <LazyLoad height={200} offset={100}>
-                  <img
-                    width="151"
-                    height="186"
-                    src="/Index/Picture3.png"
-                    alt="3rd solution"
-                  />
-                </LazyLoad>
+          </div>
+        </div> */}
+
+        {/* curriculum section */}
+        <h2 className={newcover.hheader}>
+            Learn from the Best Teachers at Qurocity and Master Your Language
+            Skills
+          </h2>
+        <CurriculumSection/>
+
+        {/* Newsppr section */}
+        <div className={newcover.newsppr}>
+          <div className={newcover.pprLayout}>
+            <h3>Featured in Top Columns</h3>
+            {/* TOI */}
+            <div className={newcover.pprContent}>
+              <div className={newcover.pprLeft}>
+                <img src="/Index/TOI.webp" alt="Featured in Times of India" />
               </div>
-              <p className={newcover.text}>
-                There are no age restrictions or skill gaps to learning new
-                languages. We help you take control of your life and unlock your
-                growth potential.
-              </p>
+              <div className={newcover.pprRight}>
+                <p>
+                  Meet our versatile and revolutionary Founder & CEO of
+                  Qurocity- The ultimate language learning app, Mrs Sheetal
+                  Ramkumar Featured on Times Of India For{" "}
+                  <a
+                    target="_blank"
+                    href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                  >
+                    “The Most Inspiring Entrepreneurs to watch in 2024”
+                  </a>
+                  . Her phenomenal leadership skills and vision of building
+                  Bharat’s first language learning app has created a much
+                  greater impact on our team and other aspiring entrepreneurs
+                  too. Her success story is truly inspiring and makes us want to
+                  believe in ourselves too. Under her leadership in
+                  revolutionizing edutech, Qurocity has been able to cater to
+                  people all over the world, who are willing to make a change in
+                  their life through language learning and that's how Qurocity
+                  became the forefront of language education. To dive into the
+                  journey of Qurocity read more :{" "}
+                  <a
+                    target="_blank"
+                    href="https://timesofindia.indiatimes.com/business/india-business/most-inspiring-entrepreneurs-to-watch-in-2024/articleshow/111340764.cms"
+                  >
+                    Times Of India
+                  </a>
+                </p>
+              </div>
             </div>
+            <hr className={newcover.newsppr_hr} />
+            {/* Eco Times */}
+            <div className={newcover.pprContentRight}>
+              <div className={newcover.pprRight}>
+                <p>
+                  We are thrilled to announce that Qurocity- The Ultimate
+                  Language Learning Platform is featured in The Economic Times'
+                  prestigious list of{" "}
+                  <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
+                    "The Most Trusted Brands To Watch in 2024"!{" "}
+                  </a>{" "}
+                  This recognition highlights our unwavering commitment to
+                  delivering top-notch services and building trust with our
+                  valued customers. Being spotlighted by such a renowned
+                  publication underscores our dedication to excellence and
+                  innovation. We are immensely grateful to our fantastic team
+                  for their continued support and trust. Stay tuned as we
+                  continue to bring to you the best of linguistics ever known!
+                  Here’s to much more achievements to come in the future for
+                  Qurocity! Want to Read more:{" "}
+                  <a href="https://economictimes.indiatimes.com/news/india/most-trusted-brands-to-watch-in-2024/articleshow/111409176.cms?from=mdr">
+                    Economic Times
+                  </a>
+                </p>
+              </div>
+              <div className={newcover.pprLeft}>
+                <img src="/Index/ET.webp" alt="New Featured Image" />
+              </div>
+            </div>
+            <hr className={newcover.newsppr_hr} />
+            {/* ISO certified: */}
+            <div className={newcover.iso}>
+              <div className={newcover.pprLeft}>
+                <img src="/Index/ISO-Qurocity.jpg" alt="ISO - Qurocity" />
+              </div>
+              <div className={newcover.pprRight}>
+                <p>
+                  <strong className={newcover.iso_head}>
+                    Qurocity: ISO Certified and Trusted for Language Learning
+                    Excellence
+                  </strong>
+                  <br />
+                  <br />
+                  At Qurocity, we are proud to be ISO certified, demonstrating
+                  our unwavering commitment to quality and excellence in
+                  language education. This prestigious compliance certification
+                  reflects our dedication to providing top-notch courses,
+                  reliable service, and continuous improvement. With precise
+                  quality assurance systems in place, our ISO certification
+                  ensures that you receive a world-class learning experience
+                  according to your needs. Trust Qurocity to be your partner in
+                  achieving your language learning goals with the assurance of
+                  our trusted and credible standards.
+                </p>
+              </div>
+            </div>
+            {/* <hr className={newcover.newsppr_hr} /> */}
           </div>
         </div>
 
@@ -1196,9 +1025,12 @@ function OneSession() {
 
         {/* <!-- FAQ SECTION --> */}
         <div>
-          <div className="faqHeadingDivCss" style={{
-            marginTop:"8rem"
-          }}>
+          <div
+            className="faqHeadingDivCss"
+            style={{
+              marginTop: "8rem",
+            }}
+          >
             <h4
               style={{
                 color: "#00046C",

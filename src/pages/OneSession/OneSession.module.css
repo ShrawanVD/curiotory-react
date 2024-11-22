@@ -629,6 +629,13 @@
     font-size: 16px;
   }
 }
+
+
+/* newsppr section */
+
+.newsppr{
+  margin: 10rem auto 2rem;
+}
 .pprLayout {
   display: flex;
   justify-content: center;
@@ -655,11 +662,13 @@
   margin: 1rem;
 }
 .pprContentRight .pprLeft img {
-  width: 40vw;
-  height: 60vh;
+  width: 30vw;
+  height: 50vh;
 }
 .pprLeft img {
   border-radius: 10px;
+  width: 30vw;
+  height: 50vh;
 }
 .pprRight {
   margin: 1rem;
@@ -668,7 +677,7 @@
   text-align: justify;
   font-family: Raleway, Arial, sans-serif;
   color: #00046c;
-  font-size: 1.3rem;
+  font-size: 1.07rem;
 }
 .iso .pprLeft img {
   width: 30vw;
@@ -733,8 +742,26 @@
 
 
 
-/*  */
-/* Main container */
+/* curriculum section */
+
+@media (min-width: 900px){
+  .video1{
+    display: block;
+  }
+  .video2{
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .video1{
+    display: none;
+  }
+  .video2{
+    display: block;
+  }
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -758,6 +785,7 @@
     color: #00046C;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 10rem;
   }
   
   /* Styling for ul in the left content */
@@ -788,7 +816,46 @@
     max-width: 100%;
     border-radius: 10px;
   }
+
+  /* single video section */
+
+  .engulf1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto -2rem;
+  }
+.rightContent1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightContent1 iframe{
+  max-width: 100%;
+  border-radius: 10px;
+}
   
+@media (max-width: 900px) {
+
+.engulf1{
+  margin: 1.5rem 1rem;
+}
+
+.rightContent1 iframe{
+  height:30rem;
+}
+
+}
+@media (max-width: 500px) {
+
+.rightContent1 iframe{
+  height:20rem;
+}
+
+}
+
+
   /* Responsive design for mobile and smaller screens */
   @media (max-width: 900px) {
     .container {
@@ -821,3 +888,96 @@
     }
   }
   
+
+/* Curriculum container */
+
+.curriculumContainer {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #00046C;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1215px;
+  margin: 0 auto;
+}
+
+/* Curriculum header styling */
+.curriculumHeader {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #00046C;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10rem;
+}
+
+/* Curriculum content area */
+.curriculumContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Left curriculum (list) styling */
+.leftCurriculum {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.leftCurriculum ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.leftCurriculum ul li {
+  font-size: 1rem;
+  font-family: 'Raleway', sans-serif;
+  color: #00046C;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Right curriculum (image) styling */
+.rightCurriculum {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculumImage {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .engulf{
+    margin: 3rem 1rem 1rem;
+  }
+  .curriculumContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftCurriculum {
+    order: 2;
+    padding: 0;
+  }
+
+  .rightCurriculum {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .curriculumHeader {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .leftCurriculum ul li {
+    font-size: 0.9rem;
+  }
+}
+
+

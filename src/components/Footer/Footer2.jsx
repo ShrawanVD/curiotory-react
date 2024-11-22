@@ -153,9 +153,6 @@ function Footer() {
                     <a href="/blogs">Blogs</a>
                   </li>
                   <li>
-                    <a href="/aboutus">About Us</a>
-                  </li>
-                  <li>
                     <a href="/meetthetutor">Meet Our Tutor</a>
                   </li>
                   <li>
@@ -169,6 +166,9 @@ function Footer() {
                   </li>
                   <li>
                     <a href="/careers">Career with Us</a>
+                  </li>
+                  <li>
+                    <a href="/contactus">Contact Us</a>
                   </li>
                 </ul>
               </div>

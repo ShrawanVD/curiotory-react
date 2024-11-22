@@ -41,10 +41,12 @@ function Blogs() {
 
   const openBlog = (urlTitle, postId) => {
     window.location.href = `/blogs/${urlTitle}-${postId}`;
+    window.scrollTo(0, 0);  // Scroll to top when a blog is clicked
   };
 
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
+    window.scrollTo(0, 0);  // Scroll to top on page change
   };
 
   const startIndex = (currentPage - 1) * postsPerPage;

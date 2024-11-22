@@ -65,7 +65,7 @@ function CounsellingForm() {
     // `${config.apiUrl}/counseling`
 
     try {
-      const response = await fetch(`${config.apiUrl}/counseling`, {
+      const response = await fetch("http://localhost:3000/counseling", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
