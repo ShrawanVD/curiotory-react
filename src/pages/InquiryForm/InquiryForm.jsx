@@ -36,7 +36,7 @@ const languages = [
   "Danish",
 ];
 
-const InquiryForm = () => {
+function InquiryForm () {
   const [selectedLanguages, setSelectedLanguages] = useState([]);
 
   const [userId, setUserId] = useState(null);
@@ -71,7 +71,7 @@ const InquiryForm = () => {
   
     // Submit form data to the backend
     try {
-      const response = await fetch("http://localhost:3000/inquiry", {
+      const response = await fetch(`${config.apiUrl}/inquiry`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

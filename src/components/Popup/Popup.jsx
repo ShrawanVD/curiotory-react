@@ -9,11 +9,12 @@ function Popup({ onClose }) {
   const [userId, setUserId] = useState(null); // Store user ID
 
   // "http://localhost:3000/popup"
-    // `${config.apiUrl}/popup`
+    `${config.apiUrl}/popup`
 
   const handleSignup = async () => {
     try {
-      const response = await fetch("http://localhost:3000/popup", {
+
+      const response = await fetch(`${config.apiUrl}/popup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

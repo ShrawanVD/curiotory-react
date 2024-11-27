@@ -54,6 +54,7 @@ function Newcover() {
     setShowNewCard(!showNewCard);
   };
 
+
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -99,7 +100,7 @@ function Newcover() {
       // Show popup a few seconds after splash screen hides
       const popupTimer = setTimeout(() => {
         setShowPopup(true);
-      }, 3000); // Adjust this delay as needed
+      }, 2000); // Adjust this delay as needed
 
       return () => clearTimeout(popupTimer);
     }, 2000); // Splash screen duration (2 seconds)
@@ -190,6 +191,7 @@ function Newcover() {
         <script>
           {`gtag('event', 'conversion', {'send_to': 'AW-16458367327/a0t5CM_Xm9MZEN-C-6c9'});`}
         </script>
+
       </Helmet>
 
       {/* mascot splash screen */}
@@ -207,9 +209,12 @@ function Newcover() {
           </div>
         </div>
       )}
+
+      {/* content */}
       {showDiv2 && (
         <div>
           <Newnavbar className={newcover.newnewnav} />
+
           {/* cover page  */}
           <div className={newcover.covernewdiv}>
             <div className={newcover.coverleftnewside}>
@@ -312,6 +317,7 @@ function Newcover() {
             </div>
           </div>
 
+          {/* mobile screen first content */}
           <div className={newcover.covernewdiv1}>
             <div className={newcover.coverleftnewside}>
               <div
@@ -436,6 +442,8 @@ function Newcover() {
             </div>
           </div>
 
+          
+          {/* whtsapp icon */}
           <a
             href="https://api.whatsapp.com/send?phone=9373902340&text=Hello%21%20Can you assist me in..."
             target="_blank"
@@ -1345,7 +1353,7 @@ function Newcover() {
       )}
 
       {/* Show popup after delay */}
-      {/* {showPopup && <Popup onClose={closePopup} />} */}
+      {showPopup && <Popup onClose={closePopup} />}
     </>
   );
 }
