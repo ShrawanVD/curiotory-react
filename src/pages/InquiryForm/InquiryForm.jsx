@@ -1,14 +1,20 @@
-import React from 'react';
+import React from "react";
 import { useState, useEffect } from "react";
-import { FormControl, Select, MenuItem, Checkbox, ListItemText, OutlinedInput } from '@mui/material';
-import iForm from './InquiryForm.module.css';
+import {
+  FormControl,
+  Select,
+  MenuItem,
+  Checkbox,
+  ListItemText,
+  OutlinedInput,
+} from "@mui/material";
+import iForm from "./InquiryForm.module.css";
 import Newnavbar from "../../components/NewNavbar/Newnavbar";
 import Footer2 from "../../components/Footer/Footer2";
-import { useLocation } from 'react-router-dom';
-import config from '../../services/config';
+import { useLocation } from "react-router-dom";
+import config from "../../services/config";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
+import "react-toastify/dist/ReactToastify.css";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -36,7 +42,7 @@ const languages = [
   "Danish",
 ];
 
-function InquiryForm () {
+function InquiryForm() {
   const [selectedLanguages, setSelectedLanguages] = useState([]);
 
   const [userId, setUserId] = useState(null);
@@ -49,13 +55,15 @@ function InquiryForm () {
   }, [location]);
 
   const handleLanguageChange = (event) => {
-    const { target: { value } } = event;
+    const {
+      target: { value },
+    } = event;
     setSelectedLanguages(typeof value === "string" ? value.split(",") : value);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     // Collect other form data here
     const formData = {
       name: e.target.name.value,
@@ -66,9 +74,9 @@ function InquiryForm () {
       userId: userId, // Include userId in the form data
     };
 
-     // "http://localhost:3000/inquiry"
+    // "http://localhost:3000/inquiry"
     // `${config.apiUrl}/inquiry`
-  
+
     // Submit form data to the backend
     try {
       const response = await fetch(`${config.apiUrl}/inquiry`, {
@@ -78,7 +86,7 @@ function InquiryForm () {
         },
         body: JSON.stringify(formData),
       });
-  
+
       if (response.ok) {
         const data = await response.json();
         const message = data.message || "Will connect you shortly, Thankyou!";
@@ -117,19 +125,30 @@ function InquiryForm () {
       });
     }
   };
-  
 
   return (
     <>
       <Newnavbar />
       <div className={iForm.inquiryFormContainer}>
-        <h2>Want to start learning a language quickly and speak in it fluently too?</h2>
-        <p>Then you’re at the right place. Whether getting a personal tutor, knowing your career options, or getting help in the language exam, our one-on-one sessions are there for you to be the ultimate game changer! Sign up now and you will hear from us at the speed of a lightning bolt!</p>
-        
+        <h2>
+          Want to start learning a language quickly and speak in it fluently
+          too?
+        </h2>
+        <p>
+          Then you’re at the right place. Whether getting a personal tutor,
+          knowing your career options, or getting help in the language exam, our
+          one-on-one sessions are there for you to be the ultimate game changer!
+          Sign up now and you will hear from us at the speed of a lightning
+          bolt!
+        </p>
+
         <form className={iForm.inquiryForm} onSubmit={handleSubmit}>
-          <div className={iForm.formRow} style={{
-            marginTop:"1rem"
-          }}>
+          <div
+            className={iForm.formRow}
+            style={{
+              marginTop: "1rem",
+            }}
+          >
             <div className={iForm.formGroup}>
               <label htmlFor="name">Name</label>
               <input type="text" id="name" placeholder="Name" />
@@ -145,7 +164,7 @@ function InquiryForm () {
               <label htmlFor="phone">Phone No</label>
               <input type="tel" id="phone" placeholder="Phone Number" />
             </div>
-            
+
             <div className={iForm.formGroup}>
               <label htmlFor="language">Language</label>
               <FormControl sx={{ width: "100%" }} variant="outlined" required>
@@ -157,7 +176,11 @@ function InquiryForm () {
                   input={<OutlinedInput />}
                   renderValue={(selected) => {
                     if (selected.length === 0) {
-                      return <span style={{ color: "rgba(0,0,0,0.6)" }}>Languages</span>;
+                      return (
+                        <span style={{ color: "rgba(0,0,0,0.6)" }}>
+                          Languages
+                        </span>
+                      );
                     }
                     return selected.join(", ");
                   }}
@@ -166,7 +189,9 @@ function InquiryForm () {
                 >
                   {languages.map((language) => (
                     <MenuItem key={language} value={language}>
-                      <Checkbox checked={selectedLanguages.includes(language)} />
+                      <Checkbox
+                        checked={selectedLanguages.includes(language)}
+                      />
                       <ListItemText primary={language} />
                     </MenuItem>
                   ))}
@@ -175,24 +200,42 @@ function InquiryForm () {
             </div>
           </div>
 
-          <div className={iForm.formGroup}  style={{
-            margin:"0rem 1rem"
-          }}>
+          <div
+            className={iForm.formGroup}
+            style={{
+              margin: "0rem 1rem",
+            }}
+          >
             <label htmlFor="message">Your Message</label>
-            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Enter your message"
+            ></textarea>
           </div>
 
-          <button type="submit" className={iForm.submitBtn}>Submit</button>
+          <button type="submit" className={iForm.submitBtn}>
+            Submit
+          </button>
         </form>
 
         <div className={iForm.contactInfo}>
-          <p>Corp. Off. No 16A, Floor 2, Tower A, Downtown City Vista, Fountain Road, Ashoka Nagar, Kharadi, Pune – 411014 <br />
-          Mobile no. – 93739 02340 <br />
-              E-mail Address - <a style={{
-                color:"#00046C",
-                fontFamily:"Raleway, sans-serif"
-              }} href="mailto:partner@qurocity.ai"> partner@qurocity.ai</a>
-            </p>
+          <p>
+            Corp. Off. No 16A, Floor 2, Tower A, Downtown City Vista, Fountain
+            Road, Ashoka Nagar, Kharadi, Pune – 411014 <br />
+            Mobile no. – 93739 02340 <br />
+            E-mail Address -{" "}
+            <a
+              style={{
+                color: "#00046C",
+                fontFamily: "Raleway, sans-serif",
+              }}
+              href="mailto:partner@qurocity.ai"
+            >
+              {" "}
+              partner@qurocity.ai
+            </a>
+          </p>
         </div>
       </div>
       <Footer2 />
@@ -201,6 +244,6 @@ function InquiryForm () {
       <ToastContainer />
     </>
   );
-};
+}
 
 export default InquiryForm;
